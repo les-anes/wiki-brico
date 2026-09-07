@@ -1,0 +1,90 @@
+{
+  "id": "per-raccord-a-glissement",
+  "title": "PER : raccord à glissement",
+  "description": "Assembler un tube PER par déplacement d’une douille, avec une pince à évaser et un outil de glissement adaptés.",
+  "category": "plomberie",
+  "topicPath": ["Arrivée d’eau", "PER", "Raccord à glissement"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 60,
+  "cost": null,
+  "image": "/images/plomberie/per.jpg",
+  "imageAlt": "Réseau en PER et cuivre",
+  "tools": [
+    "Coupe-tube PER",
+    "Pince à évaser et tête du système",
+    "Pince à glissement avec embouts compatibles",
+    "Mètre"
+  ],
+  "materials": [
+    {
+      "name": "Tube PER compatible avec le système choisi",
+      "quantity": "Longueur mesurée"
+    },
+    {
+      "name": "Raccord et douille de la même gamme",
+      "quantity": "1 ensemble par jonction"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Préparer le montage",
+      "description": "Isoler le réseau et couper le tube perpendiculairement. Vérifier la référence des accessoires et la place nécessaire pour manœuvrer les deux outils."
+    },
+    {
+      "title": "Enfiler la douille",
+      "description": "Passer la douille sur le tube avant de l’élargir, dans le sens prescrit par sa notice. L’écarter de l’extrémité pour laisser travailler la tête d’expansion."
+    },
+    {
+      "title": "Évaser puis insérer",
+      "description": "Monter la tête compatible et réaliser l’expansion selon le cycle prévu. Introduire ensuite le raccord dans le tube jusqu’à la position de préparation indiquée pour cette gamme."
+    },
+    {
+      "title": "Faire coulisser la douille",
+      "description": "Équiper la pince des embouts adaptés. En gardant tube et raccord alignés, pousser la douille jusqu’à la position finale définie par la notice."
+    },
+    {
+      "title": "Vérifier la liaison",
+      "description": "Contrôler la position de la douille avant l’essai d’étanchéité. Chez RAUTITAN, la douille rejoint le collet ; les têtes QC1 ont une procédure d’expansion propre, à ne pas généraliser aux autres outils."
+    }
+  ],
+  "mistakes": [
+    "Oublier la douille avant l’évasement.",
+    "Multiplier les expansions sans suivre le cycle fabricant.",
+    "Utiliser une pince de sertissage radial à la place d’une pince à glissement."
+  ],
+  "safety": [
+    "Fermer l’alimentation, ouvrir un point de puisage et vérifier la décompression avant de couper. Laisser refroidir un réseau chaud.",
+    "Garder les assemblages visibles pendant le contrôle. Un examen visuel ne remplace pas l’essai d’étanchéité prévu pour le système : appliquer son protocole, sans improviser de pression ni de durée.",
+    "Cette fiche concerne l’eau sanitaire, pas le gaz. Protéger les yeux pendant les coupes et tenir les doigts hors des mâchoires."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-07",
+  "scope": "Principe du raccord PER à douille coulissante. L’orientation de la douille, l’expansion et la position finale dépendent du système ; ne pas mélanger les composants de gammes différentes.",
+  "sources": [
+    {
+      "title": "L’Entrepôt du Bricolage — Démonstration de montage PER à glissement",
+      "url": "https://blog.entrepot-du-bricolage.fr/comment-poser-un-raccord-per-a-glissement/",
+      "note": "Tutoriel original : succession des opérations ; les cotes restent propres au raccord montré.",
+      "accessedAt": "2026-09-07"
+    },
+    {
+      "title": "REHAU — RAUTITAN à douilles coulissantes",
+      "url": "https://www.rehau.com/be-fr/rautitan-raccordement-a-douilles-coulissantes",
+      "note": "Particularités du système et des têtes QC1.",
+      "accessedAt": "2026-09-07"
+    }
+  ],
+  "estimatesNote": "Durée indicative de préparation et de réalisation pour un petit projet accessible, hors essai réglementé, séchage et travaux de reprise. Budget à chiffrer selon dimensions, matériel et location d’outillage.",
+  "imageCredit": {
+    "author": "Tomwsulcer",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PEX_pipes_and_valves_in_basement_ceiling_for_exterior_water_spigot.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/PEX_pipes_and_valves_in_basement_ceiling_for_exterior_water_spigot.jpg",
+    "caption": "Réseau en PER et cuivre ; photo de contexte, pas une démonstration du raccord décrit.",
+    "changes": "Fichier original conservé ; recadrage d’affichage dans les cartes.",
+    "accessedAt": "2026-09-07"
+  },
+  "relatedCategories": [],
+  "journeys": ["renover-une-salle-de-bains"]
+}

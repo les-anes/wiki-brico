@@ -2,7 +2,7 @@
   "id": "peindre-un-mur",
   "title": "Peindre un mur comme un pro",
   "description": "Préparer le support, choisir le bon rouleau et obtenir une finition uniforme.",
-  "category": "peinture",
+  "category": "finitions",
   "difficulty": "Débutant",
   "durationMinutes": 180,
   "cost": {
@@ -46,5 +46,8 @@
     "En cas de doute sur le support ou les réseaux cachés, demander l’avis d’un professionnel."
   ],
   "status": "draft",
-  "updatedAt": "2026-09-07"
+  "updatedAt": "2026-09-07",
+  "relatedCategories": [],
+  "journeys": ["renover-une-chambre", "amenager-des-combles"],
+  "topicPath": ["Peinture"]
 }

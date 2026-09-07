@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowDown,
   ArrowRight,
@@ -7,52 +7,24 @@ import {
   Check,
   ChevronRight,
   Clock3,
-  Droplets,
-  Hammer,
   House,
-  Layers3,
   Menu,
-  PaintRoller,
   Search,
   ShieldCheck,
   Sparkles,
-  Trees,
   Wrench,
   X,
-  Zap,
   BookOpen,
   Euro,
   BarChart3,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CategoryNavigation } from "@/components/category-navigation";
+import { CatalogPage } from "@/components/catalog-page";
 import { tutorials } from "@/data";
+import { categories, navigationCategories, journeys } from "@/data/taxonomy";
+import { belongsToCategory, catalogHref, duration } from "@/lib/catalog";
 import type { Tutorial } from "@/types";
-const categories = [
-  { id: "plomberie", name: "Plomberie", icon: Droplets },
-  { id: "electricite", name: "Électricité", icon: Zap },
-  { id: "maconnerie", name: "Gros œuvre", icon: Hammer },
-  { id: "menuiserie", name: "Menuiserie", icon: Wrench },
-  { id: "peinture", name: "Peinture", icon: PaintRoller },
-  { id: "revetements", name: "Sols & murs", icon: Layers3 },
-  { id: "charpente", name: "Charpente", icon: Trees },
-  { id: "toiture", name: "Toiture", icon: House },
-];
-const duration = (minutes: number) =>
-  minutes < 60
-    ? `${minutes} min`
-    : `${Math.floor(minutes / 60)} h${minutes % 60 ? ` ${minutes % 60}` : ""}`;
-const currentSlug = () => {
-  try {
-    return decodeURIComponent(location.hash.slice(1));
-  } catch {
-    return location.hash.slice(1);
-  }
-};
-const normalize = (s: string) =>
-  s
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase();
 function readSaved(): string[] {
   try {
     const value: unknown = JSON.parse(
@@ -67,61 +39,55 @@ function readSaved(): string[] {
 }
 export default function App() {
   const [query, setQuery] = useState("");
-  const [category, setCategory] = useState("all");
-  const [difficulty, setDifficulty] = useState("all");
-  const [savedOnly, setSavedOnly] = useState(false);
   const [saved, setSaved] = useState<string[]>(readSaved);
   const [menu, setMenu] = useState(false);
-  const [slug, setSlug] = useState(currentSlug);
+  const [hash, setHash] = useState(() => location.hash);
+  const lastCatalog = useRef(catalogHref());
+  const route = hash.slice(1).split("?")[0];
+  const previousRoute = useRef(route);
+  const isCatalog = route === "tutoriels";
+  if (isCatalog) lastCatalog.current = hash;
+  const selected = tutorials.find((t) => route === `tutoriel/${t.id}`);
+  function navigate(href: string, replace = false) {
+    if (replace) history.replaceState(null, "", href);
+    else if (location.hash !== href) location.hash = href;
+    setHash(href);
+    setMenu(false);
+  }
   useEffect(() => {
     const listener = () => {
-      setSlug(currentSlug());
-      if (!location.hash || location.hash.startsWith("#tutoriel/"))
-        window.scrollTo(0, 0);
+      setHash(location.hash);
+      setMenu(false);
     };
     window.addEventListener("hashchange", listener);
     return () => window.removeEventListener("hashchange", listener);
   }, []);
-  const selected = tutorials.find((t) => slug === `tutoriel/${t.id}`);
+  useEffect(() => {
+    if (previousRoute.current === route) return;
+    previousRoute.current = route;
+    window.scrollTo(0, 0);
+    document.querySelector<HTMLElement>("main")?.focus({ preventScroll: true });
+  }, [route]);
   useEffect(() => {
     document.title = selected
       ? `${selected.title} — WikiBrico`
-      : "WikiBrico — Le savoir-faire se partage.";
-  }, [selected]);
+      : isCatalog
+        ? "On s’y met ce week-end ? — WikiBrico"
+        : "WikiBrico — Le savoir-faire se partage.";
+  }, [selected, isCatalog]);
   function toggleSaved(id: string) {
     setSaved((current) => {
       const next = current.includes(id)
-        ? current.filter((s) => s !== id)
+        ? current.filter((value) => value !== id)
         : [...current, id];
       try {
         localStorage.setItem("wikibrico:saved", JSON.stringify(next));
       } catch {
-        /* Browsing still works when storage is unavailable. */
+        /* Storage is optional. */
       }
       return next;
     });
   }
-  function catalog(onlySaved = false) {
-    location.hash = "";
-    setSavedOnly(onlySaved);
-    setMenu(false);
-    setTimeout(
-      () =>
-        document
-          .getElementById("tutoriels")
-          ?.scrollIntoView({ behavior: "smooth" }),
-      30,
-    );
-  }
-  const filtered = tutorials.filter(
-    (t) =>
-      (category === "all" || t.category === category) &&
-      (difficulty === "all" || t.difficulty === difficulty) &&
-      (!savedOnly || saved.includes(t.id)) &&
-      normalize(
-        `${t.title} ${t.description} ${t.category} ${t.tools.join(" ")}`,
-      ).includes(normalize(query)),
-  );
   return (
     <>
       <header className="site-header">
@@ -137,28 +103,19 @@ export default function App() {
             className={menu ? "nav open" : "nav"}
             aria-label="Navigation principale"
           >
-            <button onClick={() => catalog()}>Les tutoriels</button>
-            <button
-              onClick={() => {
-                location.hash = "";
-                setMenu(false);
-                setTimeout(
-                  () =>
-                    document
-                      .getElementById("categories")
-                      ?.scrollIntoView({ behavior: "smooth" }),
-                  30,
-                );
-              }}
-            >
-              Les catégories
-            </button>
-            <a href="#a-propos" onClick={() => setMenu(false)}>
-              L’esprit WikiBrico <ArrowUpRight size={13} />
-            </a>
+            <CategoryNavigation
+              categories={navigationCategories}
+              onSelect={(category, topicPath = []) =>
+                navigate(catalogHref({ category, topicPath }))
+              }
+            />
           </nav>
-          <button className="saved-nav" onClick={() => catalog(true)}>
-            <Bookmark size={17} /> <span>Mes favoris</span>
+          <button
+            className="saved-nav"
+            onClick={() => navigate(catalogHref({ savedOnly: true }))}
+          >
+            <Bookmark size={17} />
+            <span>Mes favoris</span>
             <span className="count">{saved.length}</span>
           </button>
           <Button
@@ -178,14 +135,22 @@ export default function App() {
           tutorial={selected}
           saved={saved.includes(selected.id)}
           onSave={() => toggleSaved(selected.id)}
+          returnHref={lastCatalog.current}
         />
-      ) : slug.startsWith("tutoriel/") ? (
+      ) : isCatalog ? (
+        <CatalogPage
+          hash={hash}
+          saved={saved}
+          toggleSaved={toggleSaved}
+          navigate={navigate}
+        />
+      ) : route.startsWith("tutoriel/") ? (
         <main className="container empty">
           <h1>Tutoriel introuvable</h1>
-          <a href="#">Revenir au catalogue</a>
+          <a href={catalogHref()}>Revenir au catalogue</a>
         </main>
       ) : (
-        <main>
+        <main tabIndex={-1}>
           <section className="hero container">
             <div className="hero-copy">
               <div className="eyebrow">
@@ -207,7 +172,7 @@ export default function App() {
                 className="search-box"
                 onSubmit={(e) => {
                   e.preventDefault();
-                  catalog();
+                  navigate(catalogHref({ query }));
                 }}
               >
                 <Search size={20} />
@@ -227,8 +192,11 @@ export default function App() {
                   <button
                     key={s}
                     onClick={() => {
-                      setQuery(s === "Peinture" ? "peindre" : s);
-                      catalog();
+                      navigate(
+                        catalogHref({
+                          query: s === "Peinture" ? "peindre" : s,
+                        }),
+                      );
                     }}
                   >
                     {s}
@@ -296,190 +264,82 @@ export default function App() {
               <button
                 className="text-link"
                 onClick={() => {
-                  setCategory("all");
-                  catalog();
+                  navigate(catalogHref());
                 }}
               >
                 Explorer les tutoriels <ArrowRight size={16} />
               </button>
             </div>
             <div className="category-grid">
-              {categories.map(({ id, name, icon: Icon }) => (
-                <button
-                  key={id}
-                  className={`category-tile ${category === id ? "active" : ""}`}
-                  aria-pressed={category === id}
-                  onClick={() => {
-                    setCategory(category === id ? "all" : id);
-                    catalog();
-                  }}
-                >
-                  <Icon size={25} strokeWidth={1.5} />
-                  <span>{name}</span>
-                  <small>
-                    {tutorials.filter((t) => t.category === id).length
-                      ? `${tutorials.filter((t) => t.category === id).length} tutos`
-                      : "À venir"}
-                  </small>
-                </button>
-              ))}
+              {categories
+                .filter((c) => c.kind === "trade")
+                .map(({ id, name, icon: Icon }) => (
+                  <button
+                    key={id}
+                    className="category-tile"
+                    onClick={() => {
+                      navigate(catalogHref({ category: id }));
+                    }}
+                  >
+                    <Icon size={25} strokeWidth={1.5} />
+                    <span>{name}</span>
+                    <small>
+                      {tutorials.filter((t) => belongsToCategory(t, id)).length
+                        ? `${tutorials.filter((t) => belongsToCategory(t, id)).length} tutos`
+                        : "À venir"}
+                    </small>
+                  </button>
+                ))}
             </div>
           </section>
-          <section className="container tutorials-section" id="tutoriels">
+          <section className="container discovery-section">
             <div className="section-heading">
               <div>
-                <span className="eyebrow">UN PROJET APRÈS L’AUTRE</span>
-                <h2>
-                  {savedOnly
-                    ? "Vos projets de côté"
-                    : "On s’y met ce week-end ?"}
-                </h2>
+                <span className="eyebrow">PLUSIEURS FAÇONS D’APPRENDRE</span>
+                <h2>Un chantier en tête ?</h2>
                 <p>
-                  Des projets accessibles pour se lancer et prendre confiance.
+                  Explorez par pièce, préparez vos travaux ou apprenez un geste.
                 </p>
               </div>
-              <span className="result-count">
-                {filtered.length} tutoriel{filtered.length > 1 ? "s" : ""}
-              </span>
             </div>
-            <div className="filters">
-              <div className="filter-tabs">
-                <button
-                  className={category === "all" && !savedOnly ? "active" : ""}
-                  onClick={() => {
-                    setCategory("all");
-                    setSavedOnly(false);
-                  }}
+            <div className="journey-grid">
+              {journeys.map((j) => (
+                <a
+                  className="journey-card"
+                  key={j.id}
+                  href={catalogHref({ journey: j.id })}
                 >
-                  Tous les projets
-                </button>
-                <button
-                  className={difficulty === "Débutant" ? "active" : ""}
-                  onClick={() =>
-                    setDifficulty(
-                      difficulty === "Débutant" ? "all" : "Débutant",
-                    )
-                  }
-                >
-                  Pour débuter <Sparkles size={13} />
-                </button>
-                <button
-                  className={savedOnly ? "active" : ""}
-                  onClick={() => setSavedOnly(!savedOnly)}
-                >
-                  Mes favoris
-                </button>
-              </div>
-              <label className="difficulty-filter">
-                Difficulté{" "}
-                <select
-                  aria-label="Filtrer par difficulté"
-                  value={difficulty}
-                  onChange={(e) => setDifficulty(e.target.value)}
-                >
-                  <option value="all">Tous les niveaux</option>
-                  <option>Débutant</option>
-                  <option>Intermédiaire</option>
-                  <option>Avancé</option>
-                </select>
-              </label>
-            </div>
-            {(query || category !== "all") && (
-              <div className="active-filters">
-                <span>
-                  {query && `Recherche : « ${query} » `}
-                  {category !== "all" &&
-                    categories.find((c) => c.id === category)?.name}
-                </span>
-                <button
-                  onClick={() => {
-                    setQuery("");
-                    setCategory("all");
-                  }}
-                >
-                  Effacer <X size={14} />
-                </button>
-              </div>
-            )}
-            <div className="tutorial-grid">
-              {filtered.map((t) => (
-                <article className="tutorial-card" key={t.id}>
-                  <div className="card-image">
-                    <a
-                      href={`#tutoriel/${t.id}`}
-                      tabIndex={-1}
-                      aria-hidden="true"
-                    >
-                      <img src={t.image} alt={t.imageAlt} loading="lazy" />
-                    </a>
-                    <span className="category-badge">
-                      {categories.find((c) => c.id === t.category)?.name}
-                    </span>
-                    <button
-                      className={`save-button ${saved.includes(t.id) ? "is-saved" : ""}`}
-                      aria-label={`${saved.includes(t.id) ? "Retirer des" : "Ajouter aux"} favoris : ${t.title}`}
-                      aria-pressed={saved.includes(t.id)}
-                      onClick={() => toggleSaved(t.id)}
-                    >
-                      <Bookmark
-                        size={17}
-                        fill={saved.includes(t.id) ? "currentColor" : "none"}
-                      />
-                    </button>
-                  </div>
-                  <div className="card-body">
-                    <span
-                      className={`level ${t.difficulty === "Débutant" ? "beginner" : ""}`}
-                    >
-                      <BarChart3 size={12} />
-                      {t.difficulty}
-                    </span>
-                    <h3>
-                      <a href={`#tutoriel/${t.id}`}>{t.title}</a>
-                    </h3>
-                    <p>{t.description}</p>
-                    <div className="card-meta">
-                      <span>
-                        <Clock3 size={14} />
-                        {duration(t.durationMinutes)}
-                      </span>
-                      <span>
-                        <Euro size={14} />
-                        {t.cost.min}–{t.cost.max} €
-                      </span>
-                      <a
-                        href={`#tutoriel/${t.id}`}
-                        aria-label={`Lire : ${t.title}`}
-                      >
-                        <ArrowUpRight size={19} />
-                      </a>
-                    </div>
-                  </div>
-                </article>
+                  <House size={24} />
+                  <h3>{j.title}</h3>
+                  <p>{j.description}</p>
+                  <span>
+                    Explorer le parcours <ArrowRight size={15} />
+                  </span>
+                </a>
               ))}
             </div>
-            {!filtered.length && (
-              <div className="empty">
-                <Search size={30} />
-                <h3>Aucun tutoriel pour le moment</h3>
-                <p>
-                  {savedOnly
-                    ? "Enregistrez un projet avec l’icône marque-page pour le retrouver ici."
-                    : "Cette bibliothèque démarre tout juste. Essayez une autre catégorie ou une autre recherche."}
-                </p>
-                <Button
-                  variant="outline"
-                  onClick={() => {
-                    setCategory("all");
-                    setQuery("");
-                    setDifficulty("all");
-                    setSavedOnly(false);
-                  }}
-                >
-                  Voir tous les projets
-                </Button>
+            <div className="transversal-links">
+              {categories
+                .filter((c) => c.kind === "transversal")
+                .map(({ id, name, icon: Icon }) => (
+                  <a href={catalogHref({ category: id })} key={id}>
+                    <Icon size={22} />
+                    <span>{name}</span>
+                    <ArrowRight size={17} />
+                  </a>
+                ))}
+            </div>
+            <div className="catalog-invitation">
+              <div>
+                <h2>Votre prochain projet commence ici.</h2>
+                <p>{tutorials.length} tutoriels à explorer à votre rythme.</p>
               </div>
-            )}
+              <Button asChild>
+                <a href={catalogHref()}>
+                  Explorer tous les tutoriels <ArrowRight size={16} />
+                </a>
+              </Button>
+            </div>
           </section>
           <section className="container about" id="a-propos">
             <div className="about-icon">
@@ -500,7 +360,9 @@ export default function App() {
                 prévoir, comprendre et avancer à son rythme.
               </p>
               <span className="draft-note">
-                Bibliothèque de démonstration · 6 exemples éditoriaux à valider.
+                Bibliothèque en construction ·{" "}
+                {tutorials.filter((t) => t.status === "draft").length}{" "}
+                brouillons éditoriaux à valider.
               </span>
             </div>
             <ArrowDown className="about-arrow" size={40} strokeWidth={1} />
@@ -512,6 +374,7 @@ export default function App() {
           Wiki<span>Brico</span>.
         </a>
         <p>Le plaisir d’apprendre. La fierté de faire.</p>
+        <a href={catalogHref()}>Les tutoriels</a>
         <span>Fait pour les mains curieuses. © {new Date().getFullYear()}</span>
       </footer>
     </>
@@ -521,17 +384,27 @@ function TutorialPage({
   tutorial: t,
   saved,
   onSave,
+  returnHref,
 }: {
   tutorial: Tutorial;
   saved: boolean;
   onSave: () => void;
+  returnHref: string;
 }) {
   return (
-    <main className="container detail">
-      <a className="breadcrumb" href="#">
-        Accueil <ChevronRight size={14} /> Les tutoriels{" "}
-        <ChevronRight size={14} />{" "}
-        {categories.find((c) => c.id === t.category)?.name}
+    <main className="container detail" tabIndex={-1}>
+      <nav className="breadcrumb" aria-label="Fil d’Ariane">
+        <a href="#">Accueil</a>
+        <ChevronRight size={14} />
+        <a href={returnHref}>Les tutoriels</a>
+        <ChevronRight size={14} />
+        <a href={catalogHref({ category: t.category, topicPath: t.topicPath })}>
+          {categories.find((c) => c.id === t.category)?.name}
+          {t.topicPath && ` › ${t.topicPath.join(" › ")}`}
+        </a>
+      </nav>
+      <a className="back-to-catalog" href={returnHref}>
+        ← Revenir aux tutoriels
       </a>
       <div className="detail-heading">
         <div>
@@ -550,18 +423,23 @@ function TutorialPage({
           avant utilisation.
         </div>
       )}
-      <img className="detail-image" src={t.image} alt={t.imageAlt} />
+      <figure>
+        <img className="detail-image" src={t.image} alt={t.imageAlt} />
+      </figure>
       <div className="detail-stats">
         <span>
-          <BarChart3 /> {t.difficulty}
+          <BarChart3 /> {t.difficulty ?? "Niveau à préciser"}
         </span>
         <span>
           <Clock3 /> {duration(t.durationMinutes)}
         </span>
         <span>
-          <Euro /> {t.cost.min}–{t.cost.max} € <small>budget indicatif</small>
+          <Euro />{" "}
+          {t.cost ? `${t.cost.min}–${t.cost.max} €` : "Budget à préciser"}{" "}
+          {t.cost && <small>budget indicatif</small>}
         </span>
       </div>
+      {t.estimatesNote && <p className="estimates-note">{t.estimatesNote}</p>}
       <div className="detail-layout">
         <aside>
           <h2>Avant de commencer</h2>
@@ -616,6 +494,60 @@ function TutorialPage({
               ))}
             </ul>
           </section>
+          {!!t.shoppingLinks?.length && (
+            <section className="tutorial-shopping">
+              <h2>Où trouver le matériel</h2>
+              <ul>
+                {t.shoppingLinks.map((link) => (
+                  <li key={link.url}>
+                    <a href={link.url} target="_blank" rel="noreferrer">
+                      <span>{link.material}</span>
+                      <small>{link.retailer} ↗</small>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+          {!!t.dtuReferences?.length && (
+            <section className="tutorial-sources">
+              <h2>Références DTU</h2>
+              <ul>
+                {t.dtuReferences.map((reference) => (
+                  <li key={reference.url}>
+                    <a href={reference.url} target="_blank" rel="noreferrer">
+                      {reference.reference} — {reference.title} ↗
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+          {((t.relatedCategories?.length ?? 0) > 0 ||
+            (t.journeys?.length ?? 0) > 0) && (
+            <section className="related-discovery">
+              <h2>Retrouvez aussi ce tutoriel</h2>
+              <div>
+                {t.relatedCategories?.map((entry) => (
+                  <a
+                    key={entry.category}
+                    href={catalogHref({
+                      category: entry.category,
+                      topicPath: entry.topicPath,
+                    })}
+                  >
+                    {categories.find((c) => c.id === entry.category)?.name} ›{" "}
+                    {entry.topicPath.join(" › ")}
+                  </a>
+                ))}
+                {t.journeys?.map((id) => (
+                  <a key={id} href={catalogHref({ journey: id })}>
+                    {journeys.find((j) => j.id === id)?.title}
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
           <p className="updated">
             Mis à jour le {new Date(t.updatedAt).toLocaleDateString("fr-FR")}
           </p>

@@ -1,0 +1,90 @@
+{
+  "id": "dimensionnement-plomberie",
+  "title": "Dimensionnage d’un réseau de plomberie",
+  "description": "Construire une méthode de dimensionnement : besoins, simultanéité, diamètre intérieur et pertes de pression.",
+  "category": "plomberie",
+  "topicPath": ["Arrivée d’eau", "Dimensionnage"],
+  "difficulty": "Avancé",
+  "durationMinutes": 120,
+  "cost": null,
+  "image": "/images/plomberie/cuivre.jpg",
+  "imageAlt": "Canalisations en cuivre",
+  "tools": [
+    "Plan coté et mètre",
+    "Fiches de débit des équipements",
+    "Calculatrice ou tableur",
+    "Abaques fabricant ou outil de calcul hydraulique"
+  ],
+  "materials": [
+    {
+      "name": "Aucun matériau à acheter pendant la pré-étude",
+      "quantity": "Établir d’abord le dimensionnement"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Dessiner les tronçons",
+      "description": "Représenter compteur, production d’eau chaude, collecteurs et appareils. Numéroter chaque tronçon et noter longueur, dénivelé, matériau et accessoires."
+    },
+    {
+      "title": "Évaluer la demande",
+      "description": "Noter le débit nécessaire à chaque appareil d’après sa documentation. Calculer les besoins par tronçon, en distinguant eau froide et eau chaude. La simultanéité dépend du nombre d’appareils et de l’usage : éviter un coefficient choisi au hasard."
+    },
+    {
+      "title": "Estimer un diamètre intérieur",
+      "description": "La relation Q = v × π × D² / 4 relie débit, vitesse et diamètre intérieur. Exemple purement pédagogique : 12 L/min donnent 0,0002 m³/s ; à une vitesse choisie de 1 m/s, D vaut environ 16 mm. Ce résultat n’est pas une prescription de diamètre commercial."
+    },
+    {
+      "title": "Vérifier les pertes",
+      "description": "Utiliser les abaques ou un calculateur avec le matériau, le diamètre intérieur, la température, le débit et la longueur. Ajouter les pertes des raccords et appareils ; tenir compte du dénivelé et de la pression disponible en puisage."
+    },
+    {
+      "title": "Vérifier le point défavorisé",
+      "description": "Contrôler que la pression restante au robinet le plus défavorisé répond à sa notice. Ajuster les diamètres et vérifier les composants, dont le réducteur de pression, sur leurs courbes constructeur. Consigner les hypothèses avant achat."
+    }
+  ],
+  "mistakes": [
+    "Confondre diamètre extérieur, intérieur et désignation nominale.",
+    "Additionner tous les débits sans examiner l’usage simultané.",
+    "Croire qu’augmenter le diamètre crée de la pression à l’arrivée."
+  ],
+  "safety": [
+    "Faire confirmer le calcul si la pression disponible est inconnue, si plusieurs logements sont alimentés ou si le réseau comporte des équipements particuliers.",
+    "Les valeurs de l’exemple illustrent une formule ; elles ne remplacent ni les règles de conception applicables ni les exigences des appareils."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-07",
+  "scope": "Pré-étude d’un réseau domestique d’eau sanitaire. Cette fiche explique la démarche ; elle ne fournit pas de diamètre réglementaire universel et ne remplace pas le calcul du chantier.",
+  "sources": [
+    {
+      "title": "Caleffi — Dimensionnement des réducteurs de pression",
+      "url": "https://www.caleffi.com/sites/default/files/media/external-file/01026_fr.pdf",
+      "note": "Méthode débit, simultanéité et pertes ; les tableaux concernent le composant décrit.",
+      "accessedAt": "2026-09-07"
+    },
+    {
+      "title": "Caleffi — Pipe Sizer",
+      "url": "https://www.caleffi.com/fr-be/news-events/29-04-2016/caleffi-pipe-sizer",
+      "note": "Paramètres nécessaires au calcul des conduites et pertes linéaires.",
+      "accessedAt": "2026-09-07"
+    }
+  ],
+  "estimatesNote": "Durée indicative pour préparer une première étude domestique. Le budget des travaux ne peut être établi sans plan ni choix des composants.",
+  "imageCredit": {
+    "author": "Santeri Viinamäki",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Copper_water_pipes.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Copper_water_pipes.jpg",
+    "caption": "Canalisations en cuivre ; photo de contexte, pas une démonstration du système Profipress.",
+    "changes": "Version 1280 px fournie par Wikimedia ; recadrage d’affichage dans les cartes.",
+    "accessedAt": "2026-09-07"
+  },
+  "relatedCategories": [
+    {
+      "category": "preparer-chantier",
+      "topicPath": ["Plans"]
+    }
+  ],
+  "journeys": ["renover-une-salle-de-bains"]
+}

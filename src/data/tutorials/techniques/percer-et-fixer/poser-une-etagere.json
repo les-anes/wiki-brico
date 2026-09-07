@@ -1,22 +1,26 @@
 {
-  "id": "poser-du-parquet",
-  "title": "Poser un parquet flottant",
-  "description": "Préparer son sol et comprendre les grandes étapes de pose d’un parquet.",
-  "category": "revetements",
-  "difficulty": "Intermédiaire",
-  "durationMinutes": 480,
+  "id": "poser-une-etagere",
+  "title": "Poser une étagère murale",
+  "description": "Une étagère bien droite, solidement fixée et prête à accueillir vos idées.",
+  "category": "techniques",
+  "difficulty": "Débutant",
+  "durationMinutes": 60,
   "cost": {
-    "min": 150,
-    "max": 350,
+    "min": 20,
+    "max": 50,
     "currency": "EUR"
   },
-  "image": "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1000&q=85",
-  "imageAlt": "Intérieur avec un sol en bois",
-  "tools": ["Mètre", "Scie", "Cales de pose"],
+  "image": "https://images.unsplash.com/photo-1594620302200-9a762244a156?auto=format&fit=crop&w=1000&q=85",
+  "imageAlt": "Étagères en bois dans un intérieur",
+  "tools": ["Niveau à bulle", "Perceuse", "Détecteur de réseaux"],
   "materials": [
     {
-      "name": "Parquet et sous-couche",
-      "quantity": "Surface de la pièce + chutes"
+      "name": "Étagère et équerres",
+      "quantity": "1 ensemble"
+    },
+    {
+      "name": "Fixations adaptées au support",
+      "quantity": "Selon les équerres"
     }
   ],
   "steps": [
@@ -42,5 +46,8 @@
     "En cas de doute sur le support ou les réseaux cachés, demander l’avis d’un professionnel."
   ],
   "status": "draft",
-  "updatedAt": "2026-09-07"
+  "updatedAt": "2026-09-07",
+  "relatedCategories": [],
+  "journeys": ["renover-une-chambre", "amenager-des-combles"],
+  "topicPath": ["Percer et fixer"]
 }

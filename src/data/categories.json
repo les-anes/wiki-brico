@@ -1,0 +1,234 @@
+[
+  {
+    "id": "structure",
+    "name": "Structure & gros œuvre",
+    "shortName": "Gros œuvre",
+    "icon": "Hammer",
+    "kind": "trade",
+    "topics": [
+      ["Fondations"],
+      ["Murs porteurs"],
+      ["Ouvertures"],
+      ["Linteaux"],
+      ["Poutres"],
+      ["Solives"],
+      ["Planchers"],
+      ["Trémies"],
+      ["Escaliers"]
+    ]
+  },
+  {
+    "id": "toiture",
+    "name": "Toiture & étanchéité",
+    "shortName": "Toiture",
+    "icon": "House",
+    "kind": "trade",
+    "topics": [
+      ["Charpente"],
+      ["Couverture"],
+      ["Gouttières"],
+      ["Fenêtres de toit"],
+      ["Étanchéité"],
+      ["Infiltrations"]
+    ]
+  },
+  {
+    "id": "isolation",
+    "name": "Isolation & performance thermique",
+    "shortName": "Isolation",
+    "icon": "ShieldCheck",
+    "kind": "trade",
+    "topics": [
+      ["Murs"],
+      ["Toiture"],
+      ["Sols"],
+      ["Ponts thermiques"],
+      ["Pare-vapeur"],
+      ["Étanchéité à l’air"]
+    ]
+  },
+  {
+    "id": "cloisons",
+    "name": "Cloisons, plafonds & doublages",
+    "shortName": "Cloisons",
+    "icon": "Layers3",
+    "kind": "trade",
+    "topics": [
+      ["Ossatures bois"],
+      ["Ossatures métal"],
+      ["Placo"],
+      ["Faux plafonds"],
+      ["Gaines techniques"],
+      ["Enduits"]
+    ]
+  },
+  {
+    "id": "electricite",
+    "name": "Électricité",
+    "shortName": "Électricité",
+    "icon": "Zap",
+    "kind": "trade",
+    "topics": [
+      ["Tableau électrique"],
+      ["Circuits"],
+      ["Prises"],
+      ["Éclairage"],
+      ["Mise à la terre"],
+      ["Réseau informatique"],
+      ["Domotique"]
+    ]
+  },
+  {
+    "id": "plomberie",
+    "name": "Plomberie & eau",
+    "shortName": "Plomberie",
+    "icon": "Droplets",
+    "kind": "trade",
+    "topics": [
+      ["Arrivée d’eau", "PEHD"],
+      ["Arrivée d’eau", "PER", "Raccord à sertir"],
+      ["Arrivée d’eau", "PER", "Raccord à glissement"],
+      ["Arrivée d’eau", "PER", "Raccord à compression"],
+      ["Arrivée d’eau", "Cuivre"],
+      ["Arrivée d’eau", "Raccord PER vers cuivre"],
+      ["Arrivée d’eau", "Dimensionnage"],
+      ["Gestion des évacuations"],
+      ["Arrivée d’eau", "Multicouche"],
+      ["Arrivée d’eau", "Nourrices"],
+      ["Chauffe-eau"],
+      ["Robinetterie"]
+    ]
+  },
+  {
+    "id": "assainissement",
+    "name": "Assainissement & eaux pluviales",
+    "shortName": "Assainissement",
+    "icon": "Waves",
+    "kind": "trade",
+    "topics": [
+      ["Tout-à-l’égout"],
+      ["Fosse"],
+      ["Microstation"],
+      ["Drainage"],
+      ["Évacuations extérieures"],
+      ["Récupération d’eau"]
+    ]
+  },
+  {
+    "id": "chauffage",
+    "name": "Chauffage, ventilation & confort",
+    "shortName": "Chauffage",
+    "icon": "Wind",
+    "kind": "trade",
+    "topics": [
+      ["Radiateurs"],
+      ["Plancher chauffant"],
+      ["PAC"],
+      ["Poêle"],
+      ["VMC"],
+      ["Ventilation"],
+      ["Climatisation"]
+    ]
+  },
+  {
+    "id": "menuiseries",
+    "name": "Menuiseries",
+    "shortName": "Menuiseries",
+    "icon": "DoorOpen",
+    "kind": "trade",
+    "topics": [
+      ["Fenêtres"],
+      ["Portes"],
+      ["Portes coulissantes"],
+      ["Volets"],
+      ["Isolation des ouvertures"],
+      ["Quincaillerie"]
+    ]
+  },
+  {
+    "id": "finitions",
+    "name": "Sols, murs & finitions",
+    "shortName": "Finitions",
+    "icon": "PaintRoller",
+    "kind": "trade",
+    "topics": [
+      ["Parquet"],
+      ["Carrelage"],
+      ["Tomettes"],
+      ["Peinture"],
+      ["Papier peint"],
+      ["Enduits décoratifs"],
+      ["Plinthes"]
+    ]
+  },
+  {
+    "id": "cuisine-salle-de-bains",
+    "name": "Cuisine & salle de bains",
+    "shortName": "Cuisine & bains",
+    "icon": "Bath",
+    "kind": "trade",
+    "topics": [
+      ["Douche"],
+      ["Baignoire"],
+      ["WC"],
+      ["Lavabos"],
+      ["Meubles"],
+      ["Plans de travail"],
+      ["Crédences"],
+      ["Étanchéité sous carrelage"],
+      ["Joints sanitaires"]
+    ]
+  },
+  {
+    "id": "exterieurs",
+    "name": "Extérieurs",
+    "shortName": "Extérieurs",
+    "icon": "Trees",
+    "kind": "trade",
+    "topics": [
+      ["Terrasse"],
+      ["Façade"],
+      ["Clôture"],
+      ["Portail"],
+      ["Allées"],
+      ["Jardin"],
+      ["Dépendances"],
+      ["Éclairage extérieur"]
+    ]
+  },
+  {
+    "id": "preparer-chantier",
+    "name": "Préparer son chantier",
+    "shortName": "Préparer son chantier",
+    "icon": "ClipboardList",
+    "kind": "transversal",
+    "topics": [
+      ["Diagnostic"],
+      ["Ordre des travaux"],
+      ["Budget"],
+      ["Plans"],
+      ["Métrés"],
+      ["Matériaux"],
+      ["Location d’outils"]
+    ]
+  },
+  {
+    "id": "techniques",
+    "name": "Techniques & savoir-faire",
+    "shortName": "Savoir-faire",
+    "icon": "Wrench",
+    "kind": "transversal",
+    "topics": [
+      ["Percer et fixer"],
+      ["Visser"],
+      ["Scier"],
+      ["Souder"],
+      ["Faire du mortier"],
+      ["Poser une cheville"],
+      ["Faire un joint"],
+      ["Utiliser un niveau"],
+      ["Poncer"],
+      ["Faire un enduit"]
+    ]
+  }
+]

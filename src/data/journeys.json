@@ -1,0 +1,17 @@
+[
+  {
+    "id": "renover-une-chambre",
+    "title": "Rénover une chambre",
+    "description": "Préparer les murs, rafraîchir les couleurs et refaire le sol. Une sélection de gestes utiles pour votre projet."
+  },
+  {
+    "id": "amenager-des-combles",
+    "title": "Aménager des combles",
+    "description": "Des tutoriels de finition pour avancer après les études de structure, d’isolation et de ventilation. Ce parcours ne couvre pas encore tous les travaux."
+  },
+  {
+    "id": "renover-une-salle-de-bains",
+    "title": "Rénover une salle de bains",
+    "description": "Comprendre les arrivées d’eau, préparer les évacuations et soigner les joints. À adapter au plan de votre pièce."
+  }
+]

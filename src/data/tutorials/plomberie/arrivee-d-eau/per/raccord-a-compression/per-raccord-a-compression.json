@@ -1,0 +1,96 @@
+{
+  "id": "per-raccord-a-compression",
+  "title": "PER : raccord à compression",
+  "description": "Raccorder un tube PER avec un écrou et une bague de compression, en conservant l’assemblage accessible.",
+  "category": "plomberie",
+  "topicPath": ["Arrivée d’eau", "PER", "Raccord à compression"],
+  "difficulty": "Débutant",
+  "durationMinutes": 45,
+  "cost": null,
+  "image": "/images/plomberie/per.jpg",
+  "imageAlt": "Réseau en PER et cuivre",
+  "tools": [
+    "Pince coupe-tube PER",
+    "Deux clés plates adaptées",
+    "Mètre",
+    "Chiffon et bac de récupération"
+  ],
+  "materials": [
+    {
+      "name": "Tube PER compatible",
+      "quantity": "Longueur mesurée"
+    },
+    {
+      "name": "Raccord PER à compression complet",
+      "quantity": "1 par jonction"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Identifier les dimensions",
+      "description": "Vérifier diamètre extérieur et épaisseur du PER ainsi que l’usage prévu. Prévoir un emplacement accessible pour contrôler et démonter le raccord."
+    },
+    {
+      "title": "Couper proprement",
+      "description": "Fermer l’eau et décomprimer. Faire une coupe droite à la pince, nettoyer l’extrémité et la préparer suivant la notice sans rayer les surfaces de contact."
+    },
+    {
+      "title": "Monter les pièces",
+      "description": "Passer l’écrou puis la bague sur le tube. Introduire l’insert du raccord dans le tube jusqu’à la position prescrite, sans inverser ni remplacer les pièces du kit."
+    },
+    {
+      "title": "Serrer sans tordre",
+      "description": "Engager l’écrou à la main. Maintenir le corps avec une clé et serrer l’écrou avec l’autre selon la notice. Le tube ne doit pas tourner avec l’écrou."
+    },
+    {
+      "title": "Vérifier l’étanchéité",
+      "description": "Procéder au contrôle prévu pour le réseau. En présence d’une fuite, couper l’eau et décomprimer avant inspection ; un serrage excessif peut endommager le montage."
+    }
+  ],
+  "mistakes": [
+    "Cacher le raccord dans une paroi inaccessible.",
+    "Ajouter du ruban PTFE sur la bague ou la portée de compression.",
+    "Confondre raccord PER et raccord multicouche de même diamètre extérieur."
+  ],
+  "safety": [
+    "Fermer l’alimentation, ouvrir un point de puisage et vérifier la décompression avant de couper. Laisser refroidir un réseau chaud.",
+    "Garder les assemblages visibles pendant le contrôle. Un examen visuel ne remplace pas l’essai d’étanchéité prévu pour le système : appliquer son protocole, sans improviser de pression ni de durée.",
+    "Cette fiche concerne l’eau sanitaire, pas le gaz. Protéger les yeux pendant les coupes et tenir les doigts hors des mâchoires."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-07",
+  "scope": "Raccord PER mécanique avec écrou, bague et insert. Les composants et le serrage varient selon la référence ; aucun nombre de tours universel n’est proposé.",
+  "sources": [
+    {
+      "title": "L’Entrepôt du Bricolage — Montage PER à compression",
+      "url": "https://blog.entrepot-du-bricolage.fr/comment-poser-un-raccord-per-a-compression/",
+      "note": "Démonstration originale : écrou, bague, insert, contre-serrage et accessibilité.",
+      "accessedAt": "2026-09-07"
+    },
+    {
+      "title": "Somatherm — Exemple de raccord PER à compression",
+      "url": "https://www.somatherm.fr/produit/raccord-per-a-compression-te-reduit/",
+      "note": "Illustration de l’importance du couple diamètre extérieur / épaisseur.",
+      "accessedAt": "2026-09-07"
+    },
+    {
+      "title": "Conex Bänninger — Compression",
+      "url": "https://conexbanninger.com/fr/ranges/compression/conex-compression/",
+      "note": "Pas de PTFE sur la connexion à compression ; inserts et dimensions propres à la gamme.",
+      "accessedAt": "2026-09-07"
+    }
+  ],
+  "estimatesNote": "Durée indicative de préparation et de réalisation pour un petit projet accessible, hors essai réglementé, séchage et travaux de reprise. Budget à chiffrer selon dimensions, matériel et location d’outillage.",
+  "imageCredit": {
+    "author": "Tomwsulcer",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PEX_pipes_and_valves_in_basement_ceiling_for_exterior_water_spigot.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/PEX_pipes_and_valves_in_basement_ceiling_for_exterior_water_spigot.jpg",
+    "caption": "Réseau en PER et cuivre ; photo de contexte, pas une démonstration du raccord décrit.",
+    "changes": "Fichier original conservé ; recadrage d’affichage dans les cartes.",
+    "accessedAt": "2026-09-07"
+  },
+  "relatedCategories": [],
+  "journeys": ["renover-une-salle-de-bains"]
+}

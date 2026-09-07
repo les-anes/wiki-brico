@@ -1,22 +1,22 @@
 {
-  "id": "renover-un-meuble",
-  "title": "Donner une seconde vie à un meuble",
-  "description": "Les bases pour préparer et rafraîchir un petit meuble en bois.",
-  "category": "menuiserie",
-  "difficulty": "Intermédiaire",
-  "durationMinutes": 240,
+  "id": "refaire-joints-silicone",
+  "title": "Refaire les joints de sa salle de bain",
+  "description": "Retirer un joint usé et retrouver des raccords propres autour de sa baignoire.",
+  "category": "cuisine-salle-de-bains",
+  "difficulty": "Débutant",
+  "durationMinutes": 90,
   "cost": {
-    "min": 30,
-    "max": 80,
+    "min": 15,
+    "max": 30,
     "currency": "EUR"
   },
-  "image": "https://images.unsplash.com/photo-1538688423619-a81d3f23454b?auto=format&fit=crop&w=1000&q=85",
-  "imageAlt": "Meuble en bois dans une pièce chaleureuse",
-  "tools": ["Cale à poncer", "Pinceau", "Chiffon"],
+  "image": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1000&q=85",
+  "imageAlt": "Salle de bain lumineuse",
+  "tools": ["Grattoir à joints", "Pistolet à cartouche", "Chiffon"],
   "materials": [
     {
-      "name": "Finition adaptée au bois",
-      "quantity": "Selon la surface"
+      "name": "Mastic sanitaire compatible",
+      "quantity": "1 cartouche"
     }
   ],
   "steps": [
@@ -42,5 +42,13 @@
     "En cas de doute sur le support ou les réseaux cachés, demander l’avis d’un professionnel."
   ],
   "status": "draft",
-  "updatedAt": "2026-09-07"
+  "updatedAt": "2026-09-07",
+  "relatedCategories": [
+    {
+      "category": "techniques",
+      "topicPath": ["Faire un joint"]
+    }
+  ],
+  "journeys": ["renover-une-salle-de-bains"],
+  "topicPath": ["Joints sanitaires"]
 }

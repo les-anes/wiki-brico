@@ -1,0 +1,94 @@
+{
+  "id": "plomberie-cuivre",
+  "title": "Plomberie en cuivre",
+  "description": "Préparer et raccorder une canalisation en cuivre sans flamme, avec un système à sertir pour eau sanitaire.",
+  "category": "plomberie",
+  "topicPath": ["Arrivée d’eau", "Cuivre"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 60,
+  "cost": null,
+  "image": "/images/plomberie/cuivre.jpg",
+  "imageAlt": "Canalisations en cuivre",
+  "tools": [
+    "Coupe-tube cuivre",
+    "Ébavureur intérieur et extérieur",
+    "Mètre et marqueur",
+    "Sertisseuse et mâchoires compatibles"
+  ],
+  "materials": [
+    {
+      "name": "Tube cuivre accepté par le système",
+      "quantity": "Longueur mesurée"
+    },
+    {
+      "name": "Raccords à sertir pour eau sanitaire",
+      "quantity": "Selon le tracé"
+    },
+    {
+      "name": "Colliers et protections de passage",
+      "quantity": "Selon le support et la notice"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Identifier le réseau",
+      "description": "Vérifier le diamètre, l’état du cuivre et la destination du raccord. Chez Viega, Profipress et Profipress S n’ont pas les mêmes domaines d’emploi."
+    },
+    {
+      "title": "Mesurer et couper",
+      "description": "Après isolement, mesurer en tenant compte des emboîtements. Couper au coupe-tube, puis ébavurer et nettoyer l’intérieur comme l’extérieur."
+    },
+    {
+      "title": "Repérer l’emboîtement",
+      "description": "Vérifier que le joint du raccord est présent, propre et intact. Reporter la profondeur requise sur le tube avant insertion."
+    },
+    {
+      "title": "Assembler et sertir",
+      "description": "Enfoncer le tube jusqu’au repère, placer la mâchoire prescrite et réaliser un cycle complet. Vérifier que le tube n’a pas reculé pendant la manipulation."
+    },
+    {
+      "title": "Maintenir et contrôler",
+      "description": "Fixer le réseau sans imposer d’effort aux raccords. Effectuer l’essai d’étanchéité puis le rinçage selon les prescriptions du système avant mise en service."
+    }
+  ],
+  "mistakes": [
+    "Laisser des bavures qui peuvent blesser le joint.",
+    "Sertir sans repère de profondeur.",
+    "Choisir un raccord solaire ou gaz pour un réseau d’eau potable sans vérifier son usage."
+  ],
+  "safety": [
+    "Fermer l’alimentation, ouvrir un point de puisage et vérifier la décompression avant de couper. Laisser refroidir un réseau chaud.",
+    "Garder les assemblages visibles pendant le contrôle. Un examen visuel ne remplace pas l’essai d’étanchéité prévu pour le système : appliquer son protocole, sans improviser de pression ni de durée.",
+    "Cette fiche concerne l’eau sanitaire, pas le gaz. Protéger les yeux pendant les coupes et tenir les doigts hors des mâchoires."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-07",
+  "scope": "Initiation au cuivre à sertir, illustrée par Viega Profipress pour eau potable. La brasure et les réseaux de gaz ne sont pas couverts.",
+  "sources": [
+    {
+      "title": "Viega — Profipress et Profipress S",
+      "url": "https://www.viega.fr/fr/produits/Technique%20de%20sertissage/Profipress-et-Profipress-S.html",
+      "note": "Montage en trois phases et domaines d’emploi distincts.",
+      "accessedAt": "2026-09-07"
+    },
+    {
+      "title": "Viega — Catalogue et documents Profipress",
+      "url": "https://www.viega.fr/fr/produits/Catalogue/Systemes-de-tuyauterie/Profipress.html",
+      "note": "Compatibilité du système, documents et consignes techniques.",
+      "accessedAt": "2026-09-07"
+    }
+  ],
+  "estimatesNote": "Durée indicative de préparation et de réalisation pour un petit projet accessible, hors essai réglementé, séchage et travaux de reprise. Budget à chiffrer selon dimensions, matériel et location d’outillage.",
+  "imageCredit": {
+    "author": "Santeri Viinamäki",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Copper_water_pipes.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Copper_water_pipes.jpg",
+    "caption": "Canalisations en cuivre ; photo de contexte, pas une démonstration du système Profipress.",
+    "changes": "Version 1280 px fournie par Wikimedia ; recadrage d’affichage dans les cartes.",
+    "accessedAt": "2026-09-07"
+  },
+  "relatedCategories": [],
+  "journeys": ["renover-une-salle-de-bains"]
+}

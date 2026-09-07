@@ -1,6 +1,6 @@
 # WikiBrico
 
-Squelette d’une encyclopédie DIY : React 19, TypeScript, Vite 6, Tailwind CSS 3 et composants locaux suivant les conventions shadcn/ui (Radix Slot, CVA, tokens CSS, `components.json`, alias `@/`).
+Encyclopédie DIY statique : React 19, TypeScript, Vite 6, Tailwind CSS 3 et composants suivant les conventions shadcn/ui.
 
 ## Démarrer
 
@@ -9,22 +9,104 @@ npm install
 npm run dev
 npm run build
 npm run preview
+npm run check:site
 ```
 
-Le catalogue comprend recherche insensible aux accents, catégories, filtre de difficulté, favoris dans le navigateur et fiches de tutoriels accessibles par URL `/#tutoriel/identifiant`. Interface responsive en français.
+## Pages et navigation
 
-## Ajouter un tutoriel
+- `/#` : accueil, univers de travaux, parcours et rubriques transversales.
+- `/#tutoriels` : catalogue « On s’y met ce week-end ? », recherche, filtres, catégories, sous-catégories, parcours et favoris.
+- `/#tutoriel/identifiant` : fiche détaillée, références DTU, liens de matériel et liens vers ses autres classements.
 
-Dupliquer un fichier de `src/data/tutorials/`. Le nom du fichier doit correspondre à son `id`. Tous les JSON sont importés automatiquement par Vite ; aucun serveur ni base de données nécessaire. Le contrat TypeScript se trouve dans `src/types.ts`. Exécuter `npm run validate:data` pour vérifier le contenu ; cette validation est aussi exécutée au build.
+Les filtres sont dans l’URL : `/#tutoriels?categorie=plomberie`, `/#tutoriels?parcours=renover-une-chambre` ou `/#tutoriels?favoris=1`. Les niveaux de sous-catégorie utilisent des paramètres `sujet` répétés. Les liens et le bouton Retour conservent la sélection ; les favoris sont stockés dans le navigateur. La recherche remplace l’entrée d’historique courante pour ne pas créer une étape par lettre.
 
-Champs obligatoires : `id`, `title`, `description`, `category`, `difficulty`, `durationMinutes`, `cost` (`min`, `max`, `currency`), `image`, `imageAlt`, `tools`, `materials` (`name`, `quantity`), `steps` (`title`, `description`), `mistakes`, `safety`, `status`, `updatedAt`.
+Le favicon SVG local `public/favicon.svg` reprend la maison du logo.
 
-Catégories : `plomberie`, `electricite`, `maconnerie` (gros œuvre), `menuiserie`, `peinture`, `revetements`, `charpente`, `toiture`. Difficultés : `Débutant`, `Intermédiaire`, `Avancé`. Coûts en EUR ; durée en minutes ; date au format YYYY-MM-DD.
+## Catégories et parcours
 
-Les six exemples ont le statut `draft` : ils illustrent le format, restent visibles dans cette démonstration et affichent un avertissement sur leur fiche. Les étapes sont volontairement éditoriales et doivent être complétées et vérifiées avant utilisation. Le statut `published` supprime la mention de brouillon ; il ne constitue pas une validation technique automatique.
+`src/data/categories.json` définit les 12 grandes catégories, les deux rubriques transversales, les libellés courts de navigation et les chemins de sous-catégories. `src/data/taxonomy.ts` associe les icônes et choisit les cinq accès principaux de la barre du haut. Les autres sont dans « Autres ».
 
-## Déploiement et limites
+`src/data/journeys.json` définit les parcours. Les sélections initiales « Rénover une chambre », « Aménager des combles » et « Rénover une salle de bains » utilisent les tutoriels existants. Elles ne prétendent pas couvrir intégralement ces chantiers. Ajouter un parcours dans ce fichier puis son identifiant dans le champ `journeys` des tutoriels concernés.
 
-Publier le dossier `dist/`. La navigation par fragment fonctionne sur un hébergement statique sans configuration de réécriture. Pour un référencement individuel des tutoriels, prévoir un pré-rendu avec de vraies routes : les fragments ne sont pas des pages SEO indépendantes. `SITE_URL=https://votre-domaine.fr npm run build` génère un sitemap de l’accueil ; sans domaine configuré, seul robots.txt est généré.
+## Un tutoriel, plusieurs accès
 
-Les images d’illustration proviennent d’Unsplash et les polices de Google Fonts : une connexion est nécessaire à leur chargement. Pour une version autonome, placer les images dans `public/images` et héberger les polices localement. Aucun compte utilisateur, backend ou service d’envoi n’est connecté.
+Chaque tutoriel possède un seul fichier JSON et un identifiant stable. Son classement principal détermine le dossier :
+
+```text
+src/data/tutorials/
+├── plomberie/arrivee-d-eau/per/raccord-a-sertir/per-raccord-a-sertir.json
+├── plomberie/gestion-des-evacuations/gestion-evacuations.json
+├── cloisons/enduits/reboucher-un-trou.json
+├── finitions/peinture/peindre-un-mur.json
+├── finitions/parquet/poser-du-parquet.json
+├── techniques/percer-et-fixer/poser-une-etagere.json
+└── cuisine-salle-de-bains/joints-sanitaires/refaire-joints-silicone.json
+```
+
+Le chemin est `catégorie/topicPath-en-slugs/id.json`. L’import Vite est récursif. Les titres et identifiants des tutoriels ne changent pas lors d’un déplacement, donc leurs liens et favoris restent valides.
+
+`relatedCategories` fournit les autres classements, sans dupliquer le contenu. Exemple du dimensionnage :
+
+```json
+{
+  "category": "plomberie",
+  "topicPath": ["Arrivée d’eau", "Dimensionnage"],
+  "relatedCategories": [
+    { "category": "preparer-chantier", "topicPath": ["Plans"] }
+  ],
+  "journeys": ["renover-une-salle-de-bains"]
+}
+```
+
+Le catalogue compte chaque tutoriel une seule fois, même lorsqu’il est accessible par plusieurs chemins. Les filtres de catégorie et parcours se combinent.
+
+## Ajouter et vérifier les contenus
+
+Dupliquer un JSON existant dans le dossier voulu. Champs : `id`, `title`, `description`, `category`, `topicPath`, `relatedCategories`, `journeys`, `difficulty`, `durationMinutes`, `cost`, `image`, `imageAlt`, `tools`, `materials`, `steps`, `mistakes`, `safety`, `status`, `updatedAt`. Le contrat est dans `src/types.ts`.
+
+- `draft` : exemple éditorial non terminé ; durée, niveau et coût peuvent être `null`.
+- `documented` : synthèse de sources consultées, sans validation professionnelle du chantier. Exige `scope`, `estimatesNote`, `sources` et `imageCredit`. Le coût peut rester `null`.
+- `published` : état éditorial avec niveau, durée et coût renseignés ; ce statut ne constitue pas une certification technique.
+
+Les 14 tutoriels actuels comprennent 8 fiches plomberie documentées et 6 anciens brouillons. Les durées sont des estimations et les budgets non chiffrables restent à préciser.
+
+`npm run validate:data` vérifie récursivement chemins, identifiants, classifications principales et secondaires, parcours, sources et présence des images locales. Cette validation est aussi exécutée au build. `npm run check:site` contrôle le rendu des pages et les principaux cas de filtrage, sans navigateur.
+
+## Images et déploiement
+
+Les huit fiches documentées utilisent cinq photos Wikimedia Commons locales dans `public/images/plomberie/`, avec licences et crédits dans les JSON. Les légendes et crédits ne sont pas affichés sur le site. Les images d’accueil et des anciens brouillons utilisent encore Unsplash ; les polices utilisent Google Fonts.
+
+Publier `dist/`. La navigation par fragment fonctionne sans réécriture serveur. Les fragments ne sont pas des pages SEO indépendantes : prévoir un pré-rendu et de vraies routes pour le référencement individuel. `SITE_URL=https://votre-domaine.fr npm run build` génère le sitemap de l’accueil ; sans cette variable, seul robots.txt est généré.
+
+## Travailler avec OpenSpec
+
+OpenSpec est installé comme dépendance de développement à version fixée. Utiliser la version du projet :
+
+```sh
+npm run openspec -- list
+npm run validate:specs
+```
+
+`openspec/config.yaml` décrit le contexte et les conventions de WikiBrico. Les spécifications du socle existant sont dans `openspec/specs/`. Les changements en cours vont dans `openspec/changes/`, puis dans son dossier `archive/` une fois terminés.
+
+Les skills Codex sont dans `.agents/skills/`. Après rechargement du projet ou ouverture d’une nouvelle session, utiliser :
+
+- `$openspec-explore` pour explorer une idée.
+- `$openspec-propose` suivi du besoin pour préparer la proposition, les specs, la conception et les tâches.
+- `$openspec-apply-change` pour implémenter un changement préparé.
+- `$openspec-update-change` pour ajuster un changement.
+- `$openspec-sync-specs` pour intégrer ses évolutions aux specs de référence.
+- `$openspec-archive-change` pour archiver un changement terminé.
+
+Exemple : `$openspec-propose Ajouter un tableau comparatif des raccords PEHD dans les tutoriels de plomberie`.
+
+Versionner `openspec/` et `.agents/skills/` avec le code. La validation OpenSpec contrôle les documents ; elle complète les contrôles de données, de rendu et de compilation.
+
+## Fiches simples et liens
+
+La fiche PEHD définit l’acronyme dès l’introduction et propose six étapes courtes. Le périmètre `scope` et les `sources` de recherche restent des données éditoriales, sans affichage dans la page.
+
+- `dtuReferences` : collection optionnelle de `{ reference, title, url, scope, accessedAt }`. Seuls les DTU vérifiés sont affichés dans « Références DTU », avec un lien vers leur éditeur (AFNOR ou CSTB). `scope` consigne la portée et les limites de la consultation ; un résumé ne vaut pas lecture du texte intégral.
+- `shoppingLinks` : collection optionnelle de `{ material, retailer, url }`, affichée dans « Où trouver le matériel ». Enseignes autorisées : Leroy Merlin (`leroymerlin.fr`), Brico Dépôt (`bricodepot.fr`), Brico Cash (`bricocash.fr`) et Castorama (`castorama.fr`). Vérifier le vendeur direct et la destination lors de la rédaction ; les vendeurs tiers de marketplace sont exclus.
+
+La validation analyse les domaines HTTPS, et rejette les imitations de domaines. Elle ne peut pas vérifier automatiquement la portée d’un DTU ni le vendeur actuel d’une page : ces vérifications restent éditoriales. Les rubriques vides sont masquées et les crédits photo restent uniquement dans les données éditoriales.

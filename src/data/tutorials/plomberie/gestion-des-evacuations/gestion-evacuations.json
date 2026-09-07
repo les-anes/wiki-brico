@@ -1,0 +1,97 @@
+{
+  "id": "gestion-evacuations",
+  "title": "Gestion des évacuations",
+  "description": "Préparer une petite évacuation gravitaire : pente, accès d’entretien, ventilation et assemblage du PVC.",
+  "category": "plomberie",
+  "topicPath": ["Gestion des évacuations"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 180,
+  "cost": null,
+  "image": "/images/plomberie/evacuation.jpg",
+  "imageAlt": "Évacuation et siphon sous évier",
+  "tools": [
+    "Mètre et niveau ou laser",
+    "Coupe-tube ou scie adaptée",
+    "Ébavureur et chanfreineur",
+    "Crayon et chiffon propre"
+  ],
+  "materials": [
+    {
+      "name": "Tube PVC d’évacuation et raccords compatibles",
+      "quantity": "Selon le plan et les diamètres retenus"
+    },
+    {
+      "name": "Siphon et accès de visite",
+      "quantity": "Selon les appareils et le tracé"
+    },
+    {
+      "name": "Colliers et accessoires de dilatation",
+      "quantity": "Selon la notice"
+    },
+    {
+      "name": "Colle et nettoyant prescrits pour le système",
+      "quantity": "Si assemblage à coller"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Relever le parcours",
+      "description": "Repérer appareils, siphons, chute, accès de nettoyage et ventilation. Déterminer les diamètres à partir de la configuration complète ; le diamètre de sortie d’un appareil ne suffit pas à dimensionner un collecteur."
+    },
+    {
+      "title": "Tracer une pente continue",
+      "description": "Vérifier les hauteurs disponibles avant achat. Le guide Nicoll cité recommande au moins 1 cm/m ; les exigences du projet restent à vérifier. À 2 cm/m sur 3 m, la dénivellation est de 6 cm. Éviter les points bas et contre-pentes."
+    },
+    {
+      "title": "Préparer à blanc",
+      "description": "Couper droit, ébavurer, chanfreiner puis positionner les éléments sans colle. Repérer les emboîtements et l’orientation. Prévoir des supports qui conservent la pente et permettent la dilatation prescrite."
+    },
+    {
+      "title": "Assembler selon le système",
+      "description": "Pour un système GIRPI à coller : surfaces propres et sèches, préparation avec le produit prescrit, application sur les deux parties puis emboîtement droit sans rotation. Respecter les délais de la colle. Un raccord à joint ne se colle pas."
+    },
+    {
+      "title": "Tester l’écoulement",
+      "description": "Après le délai requis, faire couler l’eau et observer chaque jonction. Vérifier vidange, absence de suintement et conservation de la garde d’eau. Des glouglous ou odeurs nécessitent un diagnostic, notamment de la ventilation."
+    }
+  ],
+  "mistakes": [
+    "Compter sur la colle pour corriger un mauvais alignement.",
+    "Oublier les accès d’entretien ou neutraliser la ventilation.",
+    "Fermer un coffrage avant les essais."
+  ],
+  "safety": [
+    "Ventiler pendant l’emploi des colles et nettoyants, respecter leur fiche de sécurité et éloigner les sources d’inflammation.",
+    "Ne pas intervenir sur une canalisation ancienne suspecte ou une chute collective sans identification et accord des responsables du réseau."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-07",
+  "scope": "Réseau intérieur gravitaire en PVC d’évacuation. Les colonnes communes, les pompes de relevage et l’assainissement extérieur demandent une étude distincte.",
+  "sources": [
+    {
+      "title": "Nicoll — Guide PVC évacuation GTEVAC12",
+      "url": "https://www.nicoll.fr/sites/default/files/products/GTEVAC12.pdf",
+      "note": "Guide ancien : conception, ventilation, pente ; vérifier les documents actuels pour le chantier.",
+      "accessedAt": "2026-09-07"
+    },
+    {
+      "title": "GIRPI — Mise en œuvre du système d’évacuation",
+      "url": "https://girpi.com/systeme-devacuation",
+      "note": "Préparation et assemblage du PVC avec les produits du système.",
+      "accessedAt": "2026-09-07"
+    }
+  ],
+  "estimatesNote": "Durée indicative de préparation et de réalisation pour un petit projet accessible, hors essai réglementé, séchage et travaux de reprise. Budget à chiffrer selon dimensions, matériel et location d’outillage.",
+  "imageCredit": {
+    "author": "247homerescue",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:247_Home_Rescue_back_of_sink_plumbing.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/247_Home_Rescue_back_of_sink_plumbing.jpg",
+    "caption": "Évacuation et siphon sous évier ; photo de contexte, pas un plan de pose.",
+    "changes": "Fichier original conservé ; recadrage d’affichage dans les cartes.",
+    "accessedAt": "2026-09-07"
+  },
+  "relatedCategories": [],
+  "journeys": ["renover-une-salle-de-bains"]
+}

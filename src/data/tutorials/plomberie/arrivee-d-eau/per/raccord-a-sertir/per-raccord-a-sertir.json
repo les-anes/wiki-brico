@@ -1,0 +1,84 @@
+{
+  "id": "per-raccord-a-sertir",
+  "title": "PER : raccord à sertir",
+  "description": "Préparer le PER, vérifier l’emboîtement et réaliser un sertissage radial avec un ensemble tube, raccord et outillage compatible.",
+  "category": "plomberie",
+  "topicPath": ["Arrivée d’eau", "PER", "Raccord à sertir"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 45,
+  "cost": null,
+  "image": "/images/plomberie/per.jpg",
+  "imageAlt": "Réseau en PER et cuivre",
+  "tools": [
+    "Pince coupe-tube PER",
+    "Outil d’ébavurage adapté au PER",
+    "Sertisseuse entretenue et mâchoire homologuée pour le raccord",
+    "Mètre et marqueur"
+  ],
+  "materials": [
+    {
+      "name": "Tube PER de dimensions compatibles",
+      "quantity": "Longueur mesurée"
+    },
+    {
+      "name": "Raccord PER à sertir de la gamme retenue",
+      "quantity": "1 par jonction"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifier l’ensemble",
+      "description": "Lire le diamètre et l’épaisseur sur le tube. La fiche Ayor citée indique les profils H, U ou RF pour sa gamme ; ce n’est pas une équivalence valable pour tous les raccords PER."
+    },
+    {
+      "title": "Couper et préparer",
+      "description": "Après isolement du réseau, faire une coupe perpendiculaire à la pince. Pour cette gamme, ébavurer puis éliminer les aspérités et les copeaux sans endommager le tube."
+    },
+    {
+      "title": "Enfoncer le raccord",
+      "description": "Insérer le tube jusqu’au fond. Vérifier sa présence dans les fenêtres de contrôle : elles permettent de détecter une insertion trop courte."
+    },
+    {
+      "title": "Effectuer le sertissage",
+      "description": "Positionner la mâchoire du bon diamètre sur la bague à l’emplacement prescrit. Exécuter le cycle complet de l’outil, sans déplacer le tube."
+    },
+    {
+      "title": "Inspecter et tester",
+      "description": "Vérifier l’assemblage puis appliquer le protocole d’essai du système. Si le cycle a échoué, suivre les instructions de reprise du fabricant plutôt que multiplier les sertissages au hasard."
+    }
+  ],
+  "mistakes": [
+    "Employer une mâchoire uniquement parce que son diamètre correspond.",
+    "Sertir un tube insuffisamment engagé.",
+    "Réutiliser un raccord coupé ou endommagé."
+  ],
+  "safety": [
+    "Fermer l’alimentation, ouvrir un point de puisage et vérifier la décompression avant de couper. Laisser refroidir un réseau chaud.",
+    "Garder les assemblages visibles pendant le contrôle. Un examen visuel ne remplace pas l’essai d’étanchéité prévu pour le système : appliquer son protocole, sans improviser de pression ni de durée.",
+    "Cette fiche concerne l’eau sanitaire, pas le gaz. Protéger les yeux pendant les coupes et tenir les doigts hors des mâchoires."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-07",
+  "scope": "Exemple basé sur les raccords PER à sertir Somatherm/Ayor de la fiche du 24 février 2022. Vérifier la notice livrée avec la référence achetée.",
+  "sources": [
+    {
+      "title": "Ayor / Somatherm — Raccords PER à sertir",
+      "url": "https://www.ayor.fr/upload/medias/Large/Document/Fiches%20Techniques%20Manuelles/FT_Manuelles_PRO/S_raccords%20PER%20sertir.pdf",
+      "note": "Page 1 : préparation, fenêtres de contrôle et profils annoncés.",
+      "accessedAt": "2026-09-07"
+    }
+  ],
+  "estimatesNote": "Durée indicative de préparation et de réalisation pour un petit projet accessible, hors essai réglementé, séchage et travaux de reprise. Budget à chiffrer selon dimensions, matériel et location d’outillage.",
+  "imageCredit": {
+    "author": "Tomwsulcer",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PEX_pipes_and_valves_in_basement_ceiling_for_exterior_water_spigot.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/PEX_pipes_and_valves_in_basement_ceiling_for_exterior_water_spigot.jpg",
+    "caption": "Réseau en PER et cuivre ; photo de contexte, pas une démonstration du raccord décrit.",
+    "changes": "Fichier original conservé ; recadrage d’affichage dans les cartes.",
+    "accessedAt": "2026-09-07"
+  },
+  "relatedCategories": [],
+  "journeys": ["renover-une-salle-de-bains"]
+}

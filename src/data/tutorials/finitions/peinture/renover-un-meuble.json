@@ -1,22 +1,22 @@
 {
-  "id": "reboucher-un-trou",
-  "title": "Reboucher un trou dans un mur",
-  "description": "Retrouver un support lisse avant de passer à la peinture.",
-  "category": "maconnerie",
-  "difficulty": "Débutant",
-  "durationMinutes": 45,
+  "id": "renover-un-meuble",
+  "title": "Donner une seconde vie à un meuble",
+  "description": "Les bases pour préparer et rafraîchir un petit meuble en bois.",
+  "category": "finitions",
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 240,
   "cost": {
-    "min": 10,
-    "max": 25,
+    "min": 30,
+    "max": 80,
     "currency": "EUR"
   },
-  "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=85",
-  "imageAlt": "Détails de rénovation intérieure",
-  "tools": ["Couteau à enduire", "Cale à poncer"],
+  "image": "https://images.unsplash.com/photo-1538688423619-a81d3f23454b?auto=format&fit=crop&w=1000&q=85",
+  "imageAlt": "Meuble en bois dans une pièce chaleureuse",
+  "tools": ["Cale à poncer", "Pinceau", "Chiffon"],
   "materials": [
     {
-      "name": "Enduit de rebouchage",
-      "quantity": "Selon le volume à combler"
+      "name": "Finition adaptée au bois",
+      "quantity": "Selon la surface"
     }
   ],
   "steps": [
@@ -42,5 +42,13 @@
     "En cas de doute sur le support ou les réseaux cachés, demander l’avis d’un professionnel."
   ],
   "status": "draft",
-  "updatedAt": "2026-09-07"
+  "updatedAt": "2026-09-07",
+  "relatedCategories": [
+    {
+      "category": "techniques",
+      "topicPath": ["Poncer"]
+    }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "topicPath": ["Peinture"]
 }

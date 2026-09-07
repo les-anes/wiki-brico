@@ -1,5 +1,5 @@
 import type { Tutorial } from "@/types";
-const files = import.meta.glob("./tutorials/*.json", {
+const files = import.meta.glob("./tutorials/**/*.json", {
   eager: true,
   import: "default",
 });

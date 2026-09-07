@@ -1,22 +1,22 @@
 {
-  "id": "refaire-joints-silicone",
-  "title": "Refaire les joints de sa salle de bain",
-  "description": "Retirer un joint usé et retrouver des raccords propres autour de sa baignoire.",
-  "category": "plomberie",
-  "difficulty": "Débutant",
-  "durationMinutes": 90,
+  "id": "poser-du-parquet",
+  "title": "Poser un parquet flottant",
+  "description": "Préparer son sol et comprendre les grandes étapes de pose d’un parquet.",
+  "category": "finitions",
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 480,
   "cost": {
-    "min": 15,
-    "max": 30,
+    "min": 150,
+    "max": 350,
     "currency": "EUR"
   },
-  "image": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1000&q=85",
-  "imageAlt": "Salle de bain lumineuse",
-  "tools": ["Grattoir à joints", "Pistolet à cartouche", "Chiffon"],
+  "image": "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1000&q=85",
+  "imageAlt": "Intérieur avec un sol en bois",
+  "tools": ["Mètre", "Scie", "Cales de pose"],
   "materials": [
     {
-      "name": "Mastic sanitaire compatible",
-      "quantity": "1 cartouche"
+      "name": "Parquet et sous-couche",
+      "quantity": "Surface de la pièce + chutes"
     }
   ],
   "steps": [
@@ -42,5 +42,8 @@
     "En cas de doute sur le support ou les réseaux cachés, demander l’avis d’un professionnel."
   ],
   "status": "draft",
-  "updatedAt": "2026-09-07"
+  "updatedAt": "2026-09-07",
+  "relatedCategories": [],
+  "journeys": ["renover-une-chambre", "amenager-des-combles"],
+  "topicPath": ["Parquet"]
 }
