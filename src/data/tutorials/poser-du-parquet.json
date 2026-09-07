@@ -1,0 +1,46 @@
+{
+  "id": "poser-du-parquet",
+  "title": "Poser un parquet flottant",
+  "description": "Préparer son sol et comprendre les grandes étapes de pose d’un parquet.",
+  "category": "revetements",
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 480,
+  "cost": {
+    "min": 150,
+    "max": 350,
+    "currency": "EUR"
+  },
+  "image": "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1000&q=85",
+  "imageAlt": "Intérieur avec un sol en bois",
+  "tools": ["Mètre", "Scie", "Cales de pose"],
+  "materials": [
+    {
+      "name": "Parquet et sous-couche",
+      "quantity": "Surface de la pièce + chutes"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Préparer son projet",
+      "description": "Examiner le support, mesurer la zone de travail et consulter les notices des produits choisis. Cet exemple présente la structure éditoriale ; les gestes techniques restent à documenter."
+    },
+    {
+      "title": "Réunir le matériel et protéger la zone",
+      "description": "Préparer les outils et matériaux listés. Protéger les surfaces voisines et prévoir les équipements de protection indiqués par les fabricants."
+    },
+    {
+      "title": "Réaliser et contrôler",
+      "description": "Cette étape est à compléter et à faire vérifier par une personne compétente avant publication. Respecter les conditions d’application et les temps de séchage des produits."
+    }
+  ],
+  "mistakes": [
+    "Commencer sans vérifier la nature et l’état du support.",
+    "Négliger les instructions et temps de séchage du fabricant."
+  ],
+  "safety": [
+    "Exemple éditorial non validé : ne constitue pas un guide technique complet.",
+    "En cas de doute sur le support ou les réseaux cachés, demander l’avis d’un professionnel."
+  ],
+  "status": "draft",
+  "updatedAt": "2026-09-07"
+}

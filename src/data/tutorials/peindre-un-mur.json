@@ -1,0 +1,50 @@
+{
+  "id": "peindre-un-mur",
+  "title": "Peindre un mur comme un pro",
+  "description": "Préparer le support, choisir le bon rouleau et obtenir une finition uniforme.",
+  "category": "peinture",
+  "difficulty": "Débutant",
+  "durationMinutes": 180,
+  "cost": {
+    "min": 35,
+    "max": 70,
+    "currency": "EUR"
+  },
+  "image": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1000&q=85",
+  "imageAlt": "Un rouleau de peinture sur un mur",
+  "tools": ["Rouleau et bac", "Pinceau à rechampir", "Bâche"],
+  "materials": [
+    {
+      "name": "Peinture murale",
+      "quantity": "Selon la surface et le rendement fabricant"
+    },
+    {
+      "name": "Ruban de masquage",
+      "quantity": "1 rouleau"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Préparer son projet",
+      "description": "Examiner le support, mesurer la zone de travail et consulter les notices des produits choisis. Cet exemple présente la structure éditoriale ; les gestes techniques restent à documenter."
+    },
+    {
+      "title": "Réunir le matériel et protéger la zone",
+      "description": "Préparer les outils et matériaux listés. Protéger les surfaces voisines et prévoir les équipements de protection indiqués par les fabricants."
+    },
+    {
+      "title": "Réaliser et contrôler",
+      "description": "Cette étape est à compléter et à faire vérifier par une personne compétente avant publication. Respecter les conditions d’application et les temps de séchage des produits."
+    }
+  ],
+  "mistakes": [
+    "Commencer sans vérifier la nature et l’état du support.",
+    "Négliger les instructions et temps de séchage du fabricant."
+  ],
+  "safety": [
+    "Exemple éditorial non validé : ne constitue pas un guide technique complet.",
+    "En cas de doute sur le support ou les réseaux cachés, demander l’avis d’un professionnel."
+  ],
+  "status": "draft",
+  "updatedAt": "2026-09-07"
+}
