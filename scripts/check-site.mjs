@@ -100,7 +100,13 @@ try {
     "PER",
   ]);
   for (const tutorial of tutorials) {
+    assert.equal(tutorial.status, "documented", `${tutorial.id}: fiche complétée`);
+    assert.equal(tutorial.imageOrigin, "original", `${tutorial.id}: illustration locale`);
+    assert(!tutorial.imageCredit, `${tutorial.id}: pas de crédit photographique obsolète`);
+    assert(tutorial.steps.length >= 5 && tutorial.steps.length <= 6, `${tutorial.id}: étapes courtes`);
+    assert.equal(tutorial.mistakes.length, 3, `${tutorial.id}: erreurs essentielles`);
     const html = render(`#tutoriel/${tutorial.id}`);
+    assert(html.includes(tutorial.image), `${tutorial.id}: illustration rendue`);
     assert(!html.includes("Tutoriel introuvable"), tutorial.id);
     assert(html.includes("Revenir aux tutoriels"), tutorial.id);
     assert(!html.includes("Ce que couvre ce guide"), tutorial.id);

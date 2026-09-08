@@ -3,12 +3,15 @@
   "title": "Amener l’eau du compteur à la maison en PEHD",
   "description": "Le PEHD, c’est le polyéthylène haute densité : le tuyau qui amène l’eau potable du compteur à la maison. Voici comment préparer le passage et le raccorder, sans soudure.",
   "category": "plomberie",
-  "topicPath": ["Arrivée d’eau", "PEHD"],
+  "topicPath": [
+    "Arrivée d’eau",
+    "PEHD"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 120,
   "cost": null,
-  "image": "/images/plomberie/pehd.png",
-  "imageAlt": "Tube PEHD de chantier avec couche extérieure blanche",
+  "image": "/images/plomberie/tube-pehd-dessin.png",
+  "imageAlt": "Illustration stylisée au trait et à la gouache d’un tube PEHD noir enroulé, avec des bandes bleues sur fond ivoire.",
   "tools": [
     "Mètre et marqueur",
     "Coupe-tube pour tuyau plastique",
@@ -21,7 +24,7 @@
       "quantity": "Longueur du trajet + remontées"
     },
     {
-      "name": "Raccords à compression Plasson Série 7",
+      "name": "Raccords à compression pour tube PEHD",
       "quantity": "Au diamètre du tube ; exemple ci-dessous en Ø25"
     },
     {
@@ -37,8 +40,12 @@
       "quantity": "1 passage étanche"
     },
     {
-      "name": "Sable de pose et grillage avertisseur bleu",
+      "name": "Sable de pose",
       "quantity": "Sur le parcours enterré"
+    },
+    {
+      "name": "Grillage avertisseur bleu",
+      "quantity": "Sur le parcours enterré, à la hauteur prévue"
     }
   ],
   "steps": [
@@ -56,11 +63,11 @@
     },
     {
       "title": "Prépare les raccords",
-      "description": "Coupe l’eau, ouvre un robinet pour enlever la pression, puis coupe le tube bien droit et nettoie ses bouts. Sur le raccord Plasson Série 7, desserre l’écrou jusqu’au dernier filet sans l’enlever. Le joint bloque l’eau, la bague retient le tuyau et l’écrou maintient l’ensemble : pas de soudure."
+      "description": "Coupe l’eau, ouvre un robinet pour enlever la pression, puis coupe le tube bien droit et nettoie ses bouts. Prépare le raccord en suivant l’ordre des pièces indiqué sur son emballage. Le joint bloque l’eau, la bague retient le tuyau et l’écrou maintient l’ensemble : pas de soudure."
     },
     {
       "title": "Emboîte et serre",
-      "description": "Enfonce le tube en tournant jusqu’à la butée, en passant bien au-delà du joint, puis serre fermement l’écrou à la main pour cet exemple en Ø25. Relie les extrémités à la sortie privée du compteur et à la vanne de la maison avec les transitions adaptées, en suivant leur notice pour les joints. Pour les raccordements à visser, une clé tient le corps et l’autre serre, sans tordre le tube."
+      "description": "Enfonce le tube jusqu’à la butée du raccord, puis serre l’écrou comme indiqué sur son emballage. Relie les extrémités à la sortie privée du compteur et à la vanne de la maison avec les transitions et joints adaptés. Pour les raccordements à visser, une clé tient le corps et l’autre serre, sans tordre le tube."
     },
     {
       "title": "Vérifie avant de reboucher",
@@ -78,7 +85,7 @@
     "Protège du gel les parties exposées, y compris près du compteur."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-07",
+  "updatedAt": "2026-09-08",
   "scope": "Récapitulatif pour une alimentation privée enterrée en eau froide potable, en France, après compteur. La limite d’intervention et les équipements au compteur sont à confirmer avec le service des eaux. Le dimensionnement et le terrassement dépendent du terrain ; cette fiche ne constitue pas un plan d’exécution.",
   "sources": [
     {
@@ -125,16 +132,6 @@
     }
   ],
   "estimatesNote": "Prévois environ 2 h de montage, hors tranchée, essais et remblaiement. À titre de repère, 1,70 € TTC/m représente 85 € pour 50 m de tube seul : prix à vérifier, raccords et terrassement en plus.",
-  "imageCredit": {
-    "author": "GordonJ86",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Site_Photo_of_HDPE_Pipe.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Site_Photo_of_HDPE_Pipe.jpg",
-    "caption": "Tube PEHD de chantier avec couche extérieure blanche : illustration industrielle du matériau, pas un exemple de branchement domestique à reproduire.",
-    "changes": "Fichier original conservé ; recadrage d’affichage dans les cartes.",
-    "accessedAt": "2026-09-07"
-  },
   "relatedCategories": [],
   "journeys": [],
   "dtuReferences": [
@@ -162,5 +159,6 @@
       "retailer": "Leroy Merlin",
       "url": "https://www.leroymerlin.fr/produits/raccord-a-compression-plasson-coude-egal-25mm-63775544.html"
     }
-  ]
+  ],
+  "imageOrigin": "original"
 }

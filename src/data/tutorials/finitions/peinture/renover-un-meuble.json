@@ -1,54 +1,115 @@
 {
   "id": "renover-un-meuble",
-  "title": "Donner une seconde vie à un meuble",
-  "description": "Les bases pour préparer et rafraîchir un petit meuble en bois.",
+  "title": "Repeindre un petit meuble en bois",
+  "description": "Un petit meuble en bois peut changer d’allure avec un nettoyage soigné et deux couches de peinture. On part ici d’un meuble verni en bon état, sans cire ni peinture qui s’écaille.",
   "category": "finitions",
-  "difficulty": "Intermédiaire",
-  "durationMinutes": 240,
-  "cost": {
-    "min": 30,
-    "max": 80,
-    "currency": "EUR"
-  },
-  "image": "https://images.unsplash.com/photo-1538688423619-a81d3f23454b?auto=format&fit=crop&w=1000&q=85",
-  "imageAlt": "Meuble en bois dans une pièce chaleureuse",
-  "tools": ["Cale à poncer", "Pinceau", "Chiffon"],
+  "difficulty": "Débutant",
+  "durationMinutes": 150,
+  "cost": null,
+  "image": "/images/tutoriels/renover-un-meuble.png",
+  "imageAlt": "Un petit meuble en bois partiellement peint en vert et un pinceau, dessinés sur fond ivoire.",
+  "tools": [
+    "Tournevis",
+    "Pinceau plat et mélangeur manuel",
+    "Cale à poncer",
+    "Éponge et chiffons"
+  ],
   "materials": [
     {
-      "name": "Finition adaptée au bois",
-      "quantity": "Selon la surface"
+      "name": "Peinture pour meuble compatible avec un ancien vernis",
+      "quantity": "Pour deux couches, selon la surface et le rendement du pot"
+    },
+    {
+      "name": "Nettoyant dégraissant pour le support",
+      "quantity": "Selon sa dilution"
+    },
+    {
+      "name": "Papier abrasif fin",
+      "quantity": "Quelques feuilles"
+    },
+    {
+      "name": "Bâche et ruban de masquage",
+      "quantity": "Pour le sol et les zones à garder"
+    },
+    {
+      "name": "Sous-couche compatible avec le bois et la peinture",
+      "quantity": "Seulement si le système choisi la demande"
     }
   ],
   "steps": [
     {
-      "title": "Préparer son projet",
-      "description": "Examiner le support, mesurer la zone de travail et consulter les notices des produits choisis. Cet exemple présente la structure éditoriale ; les gestes techniques restent à documenter."
+      "title": "Démonte les petits éléments",
+      "description": "Retire les poignées et sors les tiroirs pour peindre plus facilement. Protège le sol et masque les parties que tu veux garder brutes."
     },
     {
-      "title": "Réunir le matériel et protéger la zone",
-      "description": "Préparer les outils et matériaux listés. Protéger les surfaces voisines et prévoir les équipements de protection indiqués par les fabricants."
+      "title": "Dégraisse le bois",
+      "description": "Nettoie le meuble avec le produit adapté, rince sans détremper le bois et laisse sécher. La peinture adhère mal sur la graisse ou la cire."
     },
     {
-      "title": "Réaliser et contrôler",
-      "description": "Cette étape est à compléter et à faire vérifier par une personne compétente avant publication. Respecter les conditions d’application et les temps de séchage des produits."
+      "title": "Ponce légèrement",
+      "description": "Matifie le vernis au papier fin, sans chercher à enlever tout le bois de surface. Dépoussière soigneusement, surtout dans les angles."
+    },
+    {
+      "title": "Prépare l’accroche",
+      "description": "Vérifie sur le pot que ta peinture accepte ce support préparé. Applique la sous-couche demandée, notamment sur un bois qui risque de tacher la peinture, puis laisse sécher."
+    },
+    {
+      "title": "Applique deux couches fines",
+      "description": "Mélange la peinture puis étale-la au pinceau dans le sens du bois. Respecte le séchage entre couches et le léger ponçage intermédiaire si le pot le demande."
+    },
+    {
+      "title": "Laisse durcir avant de remonter",
+      "description": "Attends le délai d’utilisation indiqué pour éviter que les tiroirs collent ou que les objets marquent la peinture. Remonte ensuite les poignées et les tiroirs."
     }
   ],
   "mistakes": [
-    "Commencer sans vérifier la nature et l’état du support.",
-    "Négliger les instructions et temps de séchage du fabricant."
+    "Peindre directement sur du gras ou de la cire.",
+    "Poncer trop fort les arêtes ou un placage fin.",
+    "Reposer des objets sur une peinture encore fragile."
   ],
   "safety": [
-    "Exemple éditorial non validé : ne constitue pas un guide technique complet.",
-    "En cas de doute sur le support ou les réseaux cachés, demander l’avis d’un professionnel."
+    "Aère et porte un masque antipoussière au ponçage.",
+    "Un meuble à ancienne peinture inconnue sort de ce cas : vérifie notamment le risque de plomb avant de poncer."
   ],
-  "status": "draft",
-  "updatedAt": "2026-09-07",
+  "status": "documented",
+  "updatedAt": "2026-09-08",
   "relatedCategories": [
     {
       "category": "techniques",
-      "topicPath": ["Poncer"]
+      "topicPath": [
+        "Poncer"
+      ]
     }
   ],
-  "journeys": ["renover-une-chambre"],
-  "topicPath": ["Peinture"]
+  "journeys": [
+    "renover-une-chambre"
+  ],
+  "topicPath": [
+    "Peinture"
+  ],
+  "scope": "Petit meuble intérieur en bois verni, sain et stable, usage décoratif peu sollicité. Hors décapage, bois ciré, restauration patrimoniale et plan de travail ; aucun DTU du bâtiment applicable au mobilier n’a été retenu.",
+  "estimatesNote": "Compte environ 2 h 30 de travail pour un petit chevet, hors séchage et durcissement. Le coût dépend de la peinture et d’une éventuelle sous-couche.",
+  "sources": [
+    {
+      "title": "Libéron — Peinture meuble à la caséine",
+      "url": "https://www.liberon.fr/products/peinture-meuble-signe-caseine-mat-queue-de-pie",
+      "note": "Préparation du bois verni, bois tanniques, deux couches et usage intérieur ; la protection supplémentaire concerne les meubles fortement sollicités.",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "title": "Leroy Merlin — Peinture pour meuble en bois — exemple en 0,5 l",
+      "url": "https://www.leroymerlin.fr/produits/peinture-meuble-et-objet-caseine-liberon-layette-mat-0-5l-73325413.html",
+      "note": "Lien d’achat vérifié : offre directe de l’enseigne, sans affiliation ; disponibilité et vendeur à revérifier lors d’une future révision.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "dtuReferences": [],
+  "shoppingLinks": [
+    {
+      "material": "Peinture pour meuble en bois — exemple en 0,5 l",
+      "retailer": "Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/peinture-meuble-et-objet-caseine-liberon-layette-mat-0-5l-73325413.html"
+    }
+  ],
+  "imageOrigin": "original"
 }

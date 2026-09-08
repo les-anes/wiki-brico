@@ -1,60 +1,62 @@
 {
   "id": "dimensionnement-plomberie",
-  "title": "Dimensionnage d’un réseau de plomberie",
-  "description": "Construire une méthode de dimensionnement : besoins, simultanéité, diamètre intérieur et pertes de pression.",
+  "title": "Préparer le dimensionnement de son réseau d’eau",
+  "description": "Avant d’acheter les tuyaux, dessine ce qu’ils doivent alimenter et mesure les trajets. Ces quelques relevés permettent de choisir les diamètres avec un plombier, sans acheter trop petit au hasard.",
   "category": "plomberie",
-  "topicPath": ["Arrivée d’eau", "Dimensionnage"],
-  "difficulty": "Avancé",
-  "durationMinutes": 120,
+  "topicPath": [
+    "Arrivée d’eau",
+    "Dimensionnage"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 90,
   "cost": null,
-  "image": "/images/plomberie/cuivre.jpg",
-  "imageAlt": "Canalisations en cuivre",
+  "image": "/images/tutoriels/dimensionnement-plomberie.png",
+  "imageAlt": "Trois bouts de tuyaux de diamètres différents avec un mètre ruban, dessinés sur fond ivoire.",
   "tools": [
-    "Plan coté et mètre",
-    "Fiches de débit des équipements",
-    "Calculatrice ou tableur",
-    "Abaques fabricant ou outil de calcul hydraulique"
+    "Mètre",
+    "Papier, crayon ou plan numérique",
+    "Notices des équipements à alimenter"
   ],
   "materials": [
     {
-      "name": "Aucun matériau à acheter pendant la pré-étude",
-      "quantity": "Établir d’abord le dimensionnement"
+      "name": "Aucun tuyau à acheter à cette étape",
+      "quantity": "Prépare d’abord ton relevé"
     }
   ],
   "steps": [
     {
-      "title": "Dessiner les tronçons",
-      "description": "Représenter compteur, production d’eau chaude, collecteurs et appareils. Numéroter chaque tronçon et noter longueur, dénivelé, matériau et accessoires."
+      "title": "Dessine ton réseau",
+      "description": "Place le compteur, le chauffe-eau et chaque point d’eau sur le plan. Trace séparément l’eau froide et l’eau chaude, avec les embranchements prévus."
     },
     {
-      "title": "Évaluer la demande",
-      "description": "Noter le débit nécessaire à chaque appareil d’après sa documentation. Calculer les besoins par tronçon, en distinguant eau froide et eau chaude. La simultanéité dépend du nombre d’appareils et de l’usage : éviter un coefficient choisi au hasard."
+      "title": "Mesure les trajets",
+      "description": "Note la longueur de chaque tronçon et la hauteur à monter entre les étages. Ajoute les coudes, les vannes et les équipements traversés par l’eau."
     },
     {
-      "title": "Estimer un diamètre intérieur",
-      "description": "La relation Q = v × π × D² / 4 relie débit, vitesse et diamètre intérieur. Exemple purement pédagogique : 12 L/min donnent 0,0002 m³/s ; à une vitesse choisie de 1 m/s, D vaut environ 16 mm. Ce résultat n’est pas une prescription de diamètre commercial."
+      "title": "Liste les besoins",
+      "description": "Relève dans les notices le débit et la pression demandés par tes équipements. Note les usages simultanés habituels, par exemple une douche pendant que l’évier coule."
     },
     {
-      "title": "Vérifier les pertes",
-      "description": "Utiliser les abaques ou un calculateur avec le matériau, le diamètre intérieur, la température, le débit et la longueur. Ajouter les pertes des raccords et appareils ; tenir compte du dénivelé et de la pression disponible en puisage."
+      "title": "Fais relever la pression disponible",
+      "description": "Demande au service des eaux les informations au compteur et fais mesurer la pression pendant un puisage. Une pression mesurée tous robinets fermés ne décrit pas à elle seule ce qui reste quand l’eau coule."
     },
     {
-      "title": "Vérifier le point défavorisé",
-      "description": "Contrôler que la pression restante au robinet le plus défavorisé répond à sa notice. Ajuster les diamètres et vérifier les composants, dont le réducteur de pression, sur leurs courbes constructeur. Consigner les hypothèses avant achat."
+      "title": "Fais confirmer les diamètres",
+      "description": "Transmets le plan et les relevés à un plombier pour vérifier la pression restante au point le plus défavorisé. Fais noter le matériau, le diamètre extérieur et l’épaisseur de chaque tube avant les achats : c’est le diamètre intérieur qui détermine le passage de l’eau."
     }
   ],
   "mistakes": [
-    "Confondre diamètre extérieur, intérieur et désignation nominale.",
-    "Additionner tous les débits sans examiner l’usage simultané.",
-    "Croire qu’augmenter le diamètre crée de la pression à l’arrivée."
+    "Choisir tous les tuyaux d’après le diamètre de sortie du compteur.",
+    "Oublier les longues distances et les étages.",
+    "Confondre le diamètre extérieur indiqué en magasin avec le passage intérieur."
   ],
   "safety": [
-    "Faire confirmer le calcul si la pression disponible est inconnue, si plusieurs logements sont alimentés ou si le réseau comporte des équipements particuliers.",
-    "Les valeurs de l’exemple illustrent une formule ; elles ne remplacent ni les règles de conception applicables ni les exigences des appareils."
+    "N’interviens pas sur les éléments réservés au service des eaux pour faire tes mesures.",
+    "Si le débit manque déjà, fais rechercher la cause avant de remplacer les tuyaux."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-07",
-  "scope": "Pré-étude d’un réseau domestique d’eau sanitaire. Cette fiche explique la démarche ; elle ne fournit pas de diamètre réglementaire universel et ne remplace pas le calcul du chantier.",
+  "updatedAt": "2026-09-08",
+  "scope": "Préparation des données de dimensionnement d’une distribution intérieure domestique. Cette fiche ne calcule pas les diamètres et ne constitue pas un plan d’exécution.",
   "sources": [
     {
       "title": "Caleffi — Dimensionnement des réducteurs de pression",
@@ -69,22 +71,27 @@
       "accessedAt": "2026-09-07"
     }
   ],
-  "estimatesNote": "Durée indicative pour préparer une première étude domestique. Le budget des travaux ne peut être établi sans plan ni choix des composants.",
-  "imageCredit": {
-    "author": "Santeri Viinamäki",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Copper_water_pipes.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Copper_water_pipes.jpg",
-    "caption": "Canalisations en cuivre ; photo de contexte, pas une démonstration du système Profipress.",
-    "changes": "Version 1280 px fournie par Wikimedia ; recadrage d’affichage dans les cartes.",
-    "accessedAt": "2026-09-07"
-  },
+  "estimatesNote": "Compte environ 1 h 30 pour relever un petit logement, hors mesure de pression et étude. Aucun matériau n’est à acheter avant la confirmation des diamètres.",
   "relatedCategories": [
     {
       "category": "preparer-chantier",
-      "topicPath": ["Plans"]
+      "topicPath": [
+        "Plans"
+      ]
     }
   ],
-  "journeys": ["renover-une-salle-de-bains"]
+  "journeys": [
+    "renover-une-salle-de-bains"
+  ],
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 60.11 P1-1",
+      "title": "Calcul des réseaux d’alimentation en eau froide et chaude sanitaire",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-6011-p11/travaux-de-batiment-regles-de-calcul-des-installations-de-plomberie-sanitai/fa155244/323122",
+      "scope": "Édition août 2013. Réseaux intérieurs d’alimentation en eau froide et chaude ; la fiche prépare les relevés et ne remplace pas le calcul. Présentation de l’éditeur consultée, texte intégral non consulté.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "shoppingLinks": [],
+  "imageOrigin": "original"
 }

@@ -1,53 +1,124 @@
 {
   "id": "peindre-un-mur",
-  "title": "Peindre un mur comme un pro",
-  "description": "Préparer le support, choisir le bon rouleau et obtenir une finition uniforme.",
+  "title": "Repeindre un mur intérieur au rouleau",
+  "description": "Pour un mur net et sans grosses traces, le plus utile est de bien le préparer et de garder un rythme régulier au rouleau. Voici le déroulé pour un mur déjà peint, sec et en bon état.",
   "category": "finitions",
   "difficulty": "Débutant",
   "durationMinutes": 180,
-  "cost": {
-    "min": 35,
-    "max": 70,
-    "currency": "EUR"
-  },
-  "image": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1000&q=85",
-  "imageAlt": "Un rouleau de peinture sur un mur",
-  "tools": ["Rouleau et bac", "Pinceau à rechampir", "Bâche"],
+  "cost": null,
+  "image": "/images/tutoriels/peindre-un-mur.png",
+  "imageAlt": "Un rouleau chargé de peinture verte avec son bac, dessin au trait et à la gouache sur fond ivoire.",
+  "tools": [
+    "Rouleau, bac et pinceau pour les angles",
+    "Couteau à enduire et cale à poncer",
+    "Éponge, seau et chiffons",
+    "Mélangeur manuel et escabeau stable"
+  ],
   "materials": [
     {
-      "name": "Peinture murale",
-      "quantity": "Selon la surface et le rendement fabricant"
+      "name": "Peinture pour mur intérieur",
+      "quantity": "Pour la surface du mur et le nombre de couches indiqué sur le pot"
     },
     {
-      "name": "Ruban de masquage",
-      "quantity": "1 rouleau"
+      "name": "Sous-couche adaptée au support",
+      "quantity": "Pour les zones poreuses ou selon la peinture choisie"
+    },
+    {
+      "name": "Enduit de rebouchage et abrasif fin",
+      "quantity": "Pour les petits défauts"
+    },
+    {
+      "name": "Bâche et ruban de masquage",
+      "quantity": "Pour le sol et les contours"
+    },
+    {
+      "name": "Lessive pour murs",
+      "quantity": "Selon la dilution indiquée"
     }
   ],
   "steps": [
     {
-      "title": "Préparer son projet",
-      "description": "Examiner le support, mesurer la zone de travail et consulter les notices des produits choisis. Cet exemple présente la structure éditoriale ; les gestes techniques restent à documenter."
+      "title": "Protège les alentours",
+      "description": "Dégage le mur et couvre le sol. Masque les plinthes, les encadrements et les appareillages électriques sans les démonter."
     },
     {
-      "title": "Réunir le matériel et protéger la zone",
-      "description": "Préparer les outils et matériaux listés. Protéger les surfaces voisines et prévoir les équipements de protection indiqués par les fabricants."
+      "title": "Prépare le mur",
+      "description": "Lessive la surface, rince et laisse sécher. Rebouche les petits trous, attends le séchage de l’enduit, puis ponce et dépoussière."
     },
     {
-      "title": "Réaliser et contrôler",
-      "description": "Cette étape est à compléter et à faire vérifier par une personne compétente avant publication. Respecter les conditions d’application et les temps de séchage des produits."
+      "title": "Passe la sous-couche",
+      "description": "Applique la sous-couche sur les zones réparées ou sur tout le mur si la peinture le demande. Attends le délai indiqué avant de peindre."
+    },
+    {
+      "title": "Peins les bords",
+      "description": "Mélange la peinture et dégage les angles au pinceau, c’est-à-dire peins les bordures inaccessibles au rouleau. Avance par petites zones pour que les bords restent frais."
+    },
+    {
+      "title": "Roule sans t’arrêter au milieu",
+      "description": "Charge le rouleau puis égoutte-le dans le bac. Peins par zones voisines, croise les passes et termine dans le même sens, en rejoignant la peinture encore humide."
+    },
+    {
+      "title": "Termine la seconde couche",
+      "description": "Respecte le temps entre couches et repasse de la même façon. Retire le masquage au moment conseillé pour ton ruban, puis laisse durcir avant de remettre les meubles contre le mur."
     }
   ],
   "mistakes": [
-    "Commencer sans vérifier la nature et l’état du support.",
-    "Négliger les instructions et temps de séchage du fabricant."
+    "Peindre sur un mur gras ou poussiéreux.",
+    "Repasser sur une zone qui commence à sécher.",
+    "Vouloir couvrir le mur avec une couche très épaisse."
   ],
   "safety": [
-    "Exemple éditorial non validé : ne constitue pas un guide technique complet.",
-    "En cas de doute sur le support ou les réseaux cachés, demander l’avis d’un professionnel."
+    "Aère pendant l’application et le séchage, et protège-toi de la poussière au ponçage.",
+    "Coupe le courant près des prises et ne les mouille pas au lessivage.",
+    "Fais vérifier un revêtement ancien suspect avant de le gratter ou de le poncer."
   ],
-  "status": "draft",
-  "updatedAt": "2026-09-07",
+  "status": "documented",
+  "updatedAt": "2026-09-08",
   "relatedCategories": [],
-  "journeys": ["renover-une-chambre", "amenager-des-combles"],
-  "topicPath": ["Peinture"]
+  "journeys": [
+    "renover-une-chambre",
+    "amenager-des-combles"
+  ],
+  "topicPath": [
+    "Peinture"
+  ],
+  "scope": "Mur intérieur déjà peint, sain et sec, sans décapage ni traitement d’humidité. Deux couches de finition comme cas courant, à adapter à la peinture retenue.",
+  "estimatesNote": "Prévois environ 3 h de travail pour un mur de 10 m², réparties entre les séchages. Le budget dépend de la peinture et des réparations à faire.",
+  "sources": [
+    {
+      "title": "Tollens — Préparer les murs et supports",
+      "url": "https://www.tollens.com/conseils/conseils-travaux/comment-preparer-votre-support",
+      "note": "Nettoyage, petits défauts et sous-couche selon le support.",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "title": "Tollens — Appliquer une peinture mate",
+      "url": "https://www.tollens.com/conseils/comprendre-la-peinture/comment-appliquer-une-peinture-mate",
+      "note": "Préparation du rouleau, application par zones et passes croisées.",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "title": "Leroy Merlin — Enduit de rebouchage en pâte — tube de 330 g",
+      "url": "https://www.leroymerlin.fr/produits/enduit-de-rebouchage-en-pate-toupret-blanc-330-g-83325279.html",
+      "note": "Lien d’achat vérifié : offre directe de l’enseigne, sans affiliation ; disponibilité et vendeur à revérifier lors d’une future révision.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 59.1 P1-1",
+      "title": "Travaux de peinture du bâtiment",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-591-p11/travaux-de-batiment-revetements-de-peinture-en-feuil-mince-semiepais-ou-epa/fa170291/41498",
+      "scope": "Édition juin 2013, tirage septembre 2014. Préparation des supports et exécution des travaux de peinture du bâtiment ; pas une référence de restauration du mobilier. Présentation de l’éditeur consultée, texte intégral non consulté.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "shoppingLinks": [
+    {
+      "material": "Enduit de rebouchage en pâte — tube de 330 g",
+      "retailer": "Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/enduit-de-rebouchage-en-pate-toupret-blanc-330-g-83325279.html"
+    }
+  ],
+  "imageOrigin": "original"
 }

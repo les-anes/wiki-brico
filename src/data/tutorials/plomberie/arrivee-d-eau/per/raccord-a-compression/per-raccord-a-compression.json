@@ -1,65 +1,67 @@
 {
   "id": "per-raccord-a-compression",
-  "title": "PER : raccord à compression",
-  "description": "Raccorder un tube PER avec un écrou et une bague de compression, en conservant l’assemblage accessible.",
+  "title": "Raccorder un tube PER avec deux clés",
+  "description": "Le PER, ou polyéthylène réticulé, est un tuyau souple pour distribuer l’eau. Avec un raccord à compression, l’écrou serre une bague autour du tube : deux clés suffisent pour le serrage.",
   "category": "plomberie",
-  "topicPath": ["Arrivée d’eau", "PER", "Raccord à compression"],
+  "topicPath": [
+    "Arrivée d’eau",
+    "PER",
+    "Raccord à compression"
+  ],
   "difficulty": "Débutant",
-  "durationMinutes": 45,
+  "durationMinutes": 30,
   "cost": null,
-  "image": "/images/plomberie/per.jpg",
-  "imageAlt": "Réseau en PER et cuivre",
+  "image": "/images/tutoriels/per-raccord-a-compression.png",
+  "imageAlt": "Un tube PER bleu, un raccord en laiton et son écrou, dessinés sur fond ivoire.",
   "tools": [
     "Pince coupe-tube PER",
-    "Deux clés plates adaptées",
-    "Mètre",
-    "Chiffon et bac de récupération"
+    "Deux clés adaptées aux écrous",
+    "Mètre, chiffon et bac de récupération"
   ],
   "materials": [
     {
-      "name": "Tube PER compatible",
+      "name": "Tube PER pour eau sanitaire",
       "quantity": "Longueur mesurée"
     },
     {
-      "name": "Raccord PER à compression complet",
-      "quantity": "1 par jonction"
+      "name": "Raccords PER à compression complets",
+      "quantity": "1 par jonction, au diamètre et à l’épaisseur du tube"
     }
   ],
   "steps": [
     {
-      "title": "Identifier les dimensions",
-      "description": "Vérifier diamètre extérieur et épaisseur du PER ainsi que l’usage prévu. Prévoir un emplacement accessible pour contrôler et démonter le raccord."
+      "title": "Choisis le bon raccord",
+      "description": "Relève le diamètre extérieur et l’épaisseur du tube pour acheter le raccord compatible. Prévois de le garder accessible après les travaux."
     },
     {
-      "title": "Couper proprement",
-      "description": "Fermer l’eau et décomprimer. Faire une coupe droite à la pince, nettoyer l’extrémité et la préparer suivant la notice sans rayer les surfaces de contact."
+      "title": "Coupe et nettoie",
+      "description": "Coupe l’eau et ouvre un robinet pour enlever la pression. Fais une coupe bien droite à la pince et nettoie le bout du tube."
     },
     {
-      "title": "Monter les pièces",
-      "description": "Passer l’écrou puis la bague sur le tube. Introduire l’insert du raccord dans le tube jusqu’à la position prescrite, sans inverser ni remplacer les pièces du kit."
+      "title": "Monte les pièces dans l’ordre",
+      "description": "Enfile l’écrou puis la bague sur le tube. Introduis l’insert, la partie du raccord qui entre dans le tube, jusqu’à la position indiquée sur l’emballage."
     },
     {
-      "title": "Serrer sans tordre",
-      "description": "Engager l’écrou à la main. Maintenir le corps avec une clé et serrer l’écrou avec l’autre selon la notice. Le tube ne doit pas tourner avec l’écrou."
+      "title": "Serre avec les deux clés",
+      "description": "Engage l’écrou à la main, puis tiens le corps du raccord avec une clé et serre l’écrou avec l’autre selon la notice. Ne laisse pas le tube tourner avec l’écrou."
     },
     {
-      "title": "Vérifier l’étanchéité",
-      "description": "Procéder au contrôle prévu pour le réseau. En présence d’une fuite, couper l’eau et décomprimer avant inspection ; un serrage excessif peut endommager le montage."
+      "title": "Vérifie la jonction",
+      "description": "Remets l’eau doucement, purge l’air et passe un chiffon sec autour du raccord pour repérer un suintement. Fais contrôler le réseau avant sa mise en service et rince la conduite ; s’il y a une fuite, coupe l’eau avant de reprendre le montage."
     }
   ],
   "mistakes": [
-    "Cacher le raccord dans une paroi inaccessible.",
-    "Ajouter du ruban PTFE sur la bague ou la portée de compression.",
-    "Confondre raccord PER et raccord multicouche de même diamètre extérieur."
+    "Acheter le raccord sans vérifier l’épaisseur du tube.",
+    "Ajouter de la filasse sur la partie à compression.",
+    "Serrer toujours plus fort pour essayer de rattraper une fuite."
   ],
   "safety": [
-    "Fermer l’alimentation, ouvrir un point de puisage et vérifier la décompression avant de couper. Laisser refroidir un réseau chaud.",
-    "Garder les assemblages visibles pendant le contrôle. Un examen visuel ne remplace pas l’essai d’étanchéité prévu pour le système : appliquer son protocole, sans improviser de pression ni de durée.",
-    "Cette fiche concerne l’eau sanitaire, pas le gaz. Protéger les yeux pendant les coupes et tenir les doigts hors des mâchoires."
+    "Laisse refroidir l’eau chaude avant de couper le tube.",
+    "Garde le raccord accessible pour le contrôler et le démonter."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-07",
-  "scope": "Raccord PER mécanique avec écrou, bague et insert. Les composants et le serrage varient selon la référence ; aucun nombre de tours universel n’est proposé.",
+  "updatedAt": "2026-09-08",
+  "scope": "Raccord PER à compression avec écrou, bague et insert, en zone accessible. Hors filetage de transition, encastrement et dimensionnement du réseau.",
   "sources": [
     {
       "title": "L’Entrepôt du Bricolage — Montage PER à compression",
@@ -78,19 +80,40 @@
       "url": "https://conexbanninger.com/fr/ranges/compression/conex-compression/",
       "note": "Pas de PTFE sur la connexion à compression ; inserts et dimensions propres à la gamme.",
       "accessedAt": "2026-09-07"
+    },
+    {
+      "title": "Brico Cash — Réaliser un raccord PER",
+      "url": "https://www.bricocash.fr/conseils/comment-faire-un-raccordement-per",
+      "note": "Démonstration originale des trois méthodes ; les réglages précis ne sont pas généralisés.",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "title": "Leroy Merlin — Pince coupe-tube pour PER",
+      "url": "https://www.leroymerlin.fr/produits/coupe-tube-pour-per-42-mm-dexter-82111331.html",
+      "note": "Lien d’achat vérifié : offre directe de l’enseigne, sans affiliation ; disponibilité et vendeur à revérifier lors d’une future révision.",
+      "accessedAt": "2026-09-08"
     }
   ],
-  "estimatesNote": "Durée indicative de préparation et de réalisation pour un petit projet accessible, hors essai réglementé, séchage et travaux de reprise. Budget à chiffrer selon dimensions, matériel et location d’outillage.",
-  "imageCredit": {
-    "author": "Tomwsulcer",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PEX_pipes_and_valves_in_basement_ceiling_for_exterior_water_spigot.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/PEX_pipes_and_valves_in_basement_ceiling_for_exterior_water_spigot.jpg",
-    "caption": "Réseau en PER et cuivre ; photo de contexte, pas une démonstration du raccord décrit.",
-    "changes": "Fichier original conservé ; recadrage d’affichage dans les cartes.",
-    "accessedAt": "2026-09-07"
-  },
+  "estimatesNote": "Compte environ 30 min pour un raccord accessible, hors contrôle complet du réseau. Le budget comprend tube et raccord ; les clés peuvent souvent être réutilisées.",
   "relatedCategories": [],
-  "journeys": ["renover-une-salle-de-bains"]
+  "journeys": [
+    "renover-une-salle-de-bains"
+  ],
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 60.1",
+      "title": "Plomberie sanitaire pour bâtiments",
+      "url": "https://boutique.cstb.fr/detail/documents-techniques-unifies/dtu-nf-dtu/60-plomberie/nf-dtu-60-1-plomberie-sanitaire-pour-batiments",
+      "scope": "Cadre de la plomberie sanitaire du bâtiment. Pour les raccords PER et automatiques, les notices et évaluations propres au système restent nécessaires ; cette référence ne valide pas chaque assemblage. Présentation de l’éditeur consultée, texte intégral non consulté.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "shoppingLinks": [
+    {
+      "material": "Pince coupe-tube pour PER",
+      "retailer": "Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/coupe-tube-pour-per-42-mm-dexter-82111331.html"
+    }
+  ],
+  "imageOrigin": "original"
 }

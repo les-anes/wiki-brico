@@ -1,72 +1,75 @@
 {
   "id": "gestion-evacuations",
-  "title": "Gestion des évacuations",
-  "description": "Préparer une petite évacuation gravitaire : pente, accès d’entretien, ventilation et assemblage du PVC.",
+  "title": "Poser une évacuation intérieure en PVC à coller",
+  "description": "Le PVC, ou polychlorure de vinyle, est le plastique des tuyaux gris d’évacuation. Pour que l’eau parte bien, il faut un trajet en pente continue et des raccords bien préparés avant collage.",
   "category": "plomberie",
-  "topicPath": ["Gestion des évacuations"],
+  "topicPath": [
+    "Gestion des évacuations"
+  ],
   "difficulty": "Intermédiaire",
-  "durationMinutes": 180,
+  "durationMinutes": 120,
   "cost": null,
-  "image": "/images/plomberie/evacuation.jpg",
-  "imageAlt": "Évacuation et siphon sous évier",
+  "image": "/images/tutoriels/gestion-evacuations.png",
+  "imageAlt": "Un coude et un tube d’évacuation gris en PVC, dessinés au trait et à la gouache sur fond ivoire.",
   "tools": [
-    "Mètre et niveau ou laser",
-    "Coupe-tube ou scie adaptée",
-    "Ébavureur et chanfreineur",
-    "Crayon et chiffon propre"
+    "Mètre, crayon et niveau",
+    "Scie ou coupe-tube pour plastique",
+    "Ébavureur et outil à chanfreiner",
+    "Chiffons propres et tournevis pour les colliers"
   ],
   "materials": [
     {
-      "name": "Tube PVC d’évacuation et raccords compatibles",
-      "quantity": "Selon le plan et les diamètres retenus"
+      "name": "Tubes et raccords PVC d’évacuation à coller",
+      "quantity": "Selon le tracé et le diamètre confirmés"
     },
     {
-      "name": "Siphon et accès de visite",
-      "quantity": "Selon les appareils et le tracé"
+      "name": "Colle et nettoyant compatibles avec les tubes",
+      "quantity": "Pour les jonctions à coller"
+    },
+    {
+      "name": "Siphon et raccord de visite accessible",
+      "quantity": "Selon l’appareil et le trajet"
     },
     {
       "name": "Colliers et accessoires de dilatation",
-      "quantity": "Selon la notice"
-    },
-    {
-      "name": "Colle et nettoyant prescrits pour le système",
-      "quantity": "Si assemblage à coller"
+      "quantity": "Selon la longueur et la notice de pose"
     }
   ],
   "steps": [
     {
-      "title": "Relever le parcours",
-      "description": "Repérer appareils, siphons, chute, accès de nettoyage et ventilation. Déterminer les diamètres à partir de la configuration complète ; le diamètre de sortie d’un appareil ne suffit pas à dimensionner un collecteur."
+      "title": "Prépare le parcours",
+      "description": "Repère l’appareil, son siphon et le raccordement à l’évacuation existante. Fais confirmer le diamètre et la pente disponibles, en gardant un accès pour déboucher et la ventilation du réseau en place."
     },
     {
-      "title": "Tracer une pente continue",
-      "description": "Vérifier les hauteurs disponibles avant achat. Le guide Nicoll cité recommande au moins 1 cm/m ; les exigences du projet restent à vérifier. À 2 cm/m sur 3 m, la dénivellation est de 6 cm. Éviter les points bas et contre-pentes."
+      "title": "Trace la pente",
+      "description": "Reporte la descente jusqu’à l’évacuation, sans point bas ni remontée. Par exemple, une pente retenue de 2 cm par mètre descend de 6 cm sur 3 m : vérifie que tu as cette hauteur."
     },
     {
-      "title": "Préparer à blanc",
-      "description": "Couper droit, ébavurer, chanfreiner puis positionner les éléments sans colle. Repérer les emboîtements et l’orientation. Prévoir des supports qui conservent la pente et permettent la dilatation prescrite."
+      "title": "Monte sans colle",
+      "description": "Coupe les tubes droit, enlève les bavures et biseaute légèrement les bouts avec l’outil adapté. Présente les pièces, marque les emboîtements et les orientations, puis place les colliers pour conserver la pente."
     },
     {
-      "title": "Assembler selon le système",
-      "description": "Pour un système GIRPI à coller : surfaces propres et sèches, préparation avec le produit prescrit, application sur les deux parties puis emboîtement droit sans rotation. Respecter les délais de la colle. Un raccord à joint ne se colle pas."
+      "title": "Colle les jonctions",
+      "description": "Nettoie et prépare les surfaces selon la colle, puis applique-la sur les parties prévues. Emboîte aussitôt droit, sans tourner, et maintiens le temps indiqué ; ne colle pas un raccord conçu avec un joint."
     },
     {
-      "title": "Tester l’écoulement",
-      "description": "Après le délai requis, faire couler l’eau et observer chaque jonction. Vérifier vidange, absence de suintement et conservation de la garde d’eau. Des glouglous ou odeurs nécessitent un diagnostic, notamment de la ventilation."
+      "title": "Laisse sécher et teste",
+      "description": "Respecte le délai avant remise en eau, puis remplis et vide l’appareil pour vérifier l’écoulement et chaque jonction. Contrôle l’absence de fuite ou de retenue d’eau avant de refermer l’habillage."
     }
   ],
   "mistakes": [
-    "Compter sur la colle pour corriger un mauvais alignement.",
-    "Oublier les accès d’entretien ou neutraliser la ventilation.",
-    "Fermer un coffrage avant les essais."
+    "Créer une contre-pente entre deux colliers.",
+    "Coller avant d’avoir vérifié le montage à blanc.",
+    "Faire couler l’eau avant que la colle soit prête."
   ],
   "safety": [
-    "Ventiler pendant l’emploi des colles et nettoyants, respecter leur fiche de sécurité et éloigner les sources d’inflammation.",
-    "Ne pas intervenir sur une canalisation ancienne suspecte ou une chute collective sans identification et accord des responsables du réseau."
+    "Aère et éloigne flammes et étincelles pendant le collage.",
+    "Porte les protections indiquées sur la colle et le nettoyant.",
+    "Des glouglous ou odeurs persistants demandent de vérifier la ventilation et le siphon."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-07",
-  "scope": "Réseau intérieur gravitaire en PVC d’évacuation. Les colonnes communes, les pompes de relevage et l’assainissement extérieur demandent une étude distincte.",
+  "updatedAt": "2026-09-08",
+  "scope": "Petit tronçon intérieur PVC d’évacuation gravitaire à coller, diamètre et pente confirmés. Hors chute collective, assainissement extérieur et création de ventilation primaire.",
   "sources": [
     {
       "title": "Nicoll — Guide PVC évacuation GTEVAC12",
@@ -79,19 +82,40 @@
       "url": "https://girpi.com/systeme-devacuation",
       "note": "Préparation et assemblage du PVC avec les produits du système.",
       "accessedAt": "2026-09-07"
+    },
+    {
+      "title": "Leroy Merlin — Assembler des tubes PVC",
+      "url": "https://media.leroymerlin.fr/Capture/96/f1/8abe192a473fae74acfbf627c55d/comment-assembler-des-tubes-pvc-5eeb7394fb87ae000932ec5f.pdf",
+      "note": "Guide de montage : coupe, ébavurage, chanfrein et collage ; notice de colle actuelle à respecter.",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "title": "Leroy Merlin — Coude PVC à coller Ø32 — exemple selon ton diamètre",
+      "url": "https://www.leroymerlin.fr/produits/coude-45-en-pvc-a-coller-femelle-male-d-32-56031360.html",
+      "note": "Lien d’achat vérifié : offre directe de l’enseigne, sans affiliation ; disponibilité et vendeur à revérifier lors d’une future révision.",
+      "accessedAt": "2026-09-08"
     }
   ],
-  "estimatesNote": "Durée indicative de préparation et de réalisation pour un petit projet accessible, hors essai réglementé, séchage et travaux de reprise. Budget à chiffrer selon dimensions, matériel et location d’outillage.",
-  "imageCredit": {
-    "author": "247homerescue",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:247_Home_Rescue_back_of_sink_plumbing.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/247_Home_Rescue_back_of_sink_plumbing.jpg",
-    "caption": "Évacuation et siphon sous évier ; photo de contexte, pas un plan de pose.",
-    "changes": "Fichier original conservé ; recadrage d’affichage dans les cartes.",
-    "accessedAt": "2026-09-07"
-  },
+  "estimatesNote": "Prévois environ 2 h de montage pour un petit tronçon accessible, hors séchage de la colle. Le budget dépend de la longueur, des raccords et des supports.",
   "relatedCategories": [],
-  "journeys": ["renover-une-salle-de-bains"]
+  "journeys": [
+    "renover-une-salle-de-bains"
+  ],
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 60.1",
+      "title": "Plomberie sanitaire pour bâtiments",
+      "url": "https://boutique.cstb.fr/detail/documents-techniques-unifies/dtu-nf-dtu/60-plomberie/nf-dtu-60-1-plomberie-sanitaire-pour-batiments",
+      "scope": "Cadre de la plomberie sanitaire du bâtiment. Pour les raccords PER et automatiques, les notices et évaluations propres au système restent nécessaires ; cette référence ne valide pas chaque assemblage. Présentation de l’éditeur consultée, texte intégral non consulté.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "shoppingLinks": [
+    {
+      "material": "Coude PVC à coller Ø32 — exemple selon ton diamètre",
+      "retailer": "Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/coude-45-en-pvc-a-coller-femelle-male-d-32-56031360.html"
+    }
+  ],
+  "imageOrigin": "original"
 }

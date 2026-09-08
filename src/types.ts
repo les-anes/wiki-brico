@@ -26,6 +26,7 @@ export interface Tutorial {
   cost: { min: number; max: number; currency: "EUR" } | null;
   image: string;
   imageAlt: string;
+  imageOrigin?: "original";
   imageCredit?: {
     author: string;
     license: string;

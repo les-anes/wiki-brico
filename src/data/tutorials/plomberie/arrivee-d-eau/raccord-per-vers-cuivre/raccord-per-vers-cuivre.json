@@ -1,88 +1,115 @@
 {
   "id": "raccord-per-vers-cuivre",
-  "title": "Raccorder du PER au cuivre",
-  "description": "Relier du PER et du cuivre avec une transition mécanique compatible, sans chauffer le tube plastique.",
+  "title": "Relier un tube PER à un tube en cuivre",
+  "description": "Pour passer du cuivre au PER, le polyéthylène réticulé, tu peux utiliser un raccord automatique prévu pour les deux matériaux. Les tubes s’y emboîtent sans soudure ni sertisseuse.",
   "category": "plomberie",
-  "topicPath": ["Arrivée d’eau", "Raccord PER vers cuivre"],
+  "topicPath": [
+    "Arrivée d’eau",
+    "Raccord PER vers cuivre"
+  ],
   "difficulty": "Intermédiaire",
-  "durationMinutes": 60,
+  "durationMinutes": 45,
   "cost": null,
-  "image": "/images/plomberie/transition.jpg",
-  "imageAlt": "Raccords automatiques à emboîtement",
+  "image": "/images/tutoriels/raccord-per-vers-cuivre.png",
+  "imageAlt": "Un tube PER rouge relié à un tube cuivre par un raccord automatique, dessin sur fond ivoire.",
   "tools": [
-    "Coupe-tube cuivre",
-    "Pince coupe-tube PER",
-    "Ébavureur et préparation adaptés à chaque matériau",
-    "Mètre et marqueur"
+    "Coupe-tube cuivre et pince coupe-tube PER",
+    "Outils de préparation adaptés aux deux tubes",
+    "Mètre, marqueur et chiffon"
   ],
   "materials": [
     {
-      "name": "Raccord Toutub compatible avec les deux tubes",
-      "quantity": "1 transition, égale ou réduite selon les diamètres"
+      "name": "Raccord automatique compatible cuivre et PER",
+      "quantity": "1, adapté aux dimensions de chaque tube"
     },
     {
-      "name": "Insert Toutub adapté au PER",
-      "quantity": "1 côté PER"
+      "name": "Insert de renfort PER du même système",
+      "quantity": "1 côté PER, dans le montage décrit"
     },
     {
-      "name": "Tube PER et tronçon cuivre sains",
-      "quantity": "Longueurs mesurées"
+      "name": "Tube PER et cuivre en bon état",
+      "quantity": "Longueurs mesurées, emboîtements compris"
     }
   ],
   "steps": [
     {
-      "title": "Mesurer les deux côtés",
-      "description": "Relever séparément les diamètres extérieurs du cuivre et du PER, ainsi que l’épaisseur du PER. Choisir une transition explicitement prévue pour ces dimensions."
+      "title": "Vérifie les deux dimensions",
+      "description": "Mesure le diamètre extérieur du cuivre et relève celui du PER avec son épaisseur. Choisis un raccord et son insert explicitement prévus pour réunir ces deux tubes."
     },
     {
-      "title": "Préparer les tubes",
-      "description": "Fermer l’eau et décomprimer. Couper droit, nettoyer et préparer chaque extrémité avec l’outil adapté au matériau, conformément à la notice Toutub."
+      "title": "Prépare les extrémités",
+      "description": "Coupe l’eau, ouvre un robinet pour enlever la pression et coupe les tubes droit. Ébavure le cuivre et prépare chaque bout comme indiqué sur l’emballage, sans rayer la zone qui entre dans le raccord."
     },
     {
-      "title": "Installer l’insert PER",
-      "description": "Mettre l’insert prévu dans le tube PER avant emboîtement. Ne pas utiliser un insert d’une autre gamme ni oublier ce renfort."
+      "title": "Renforce le PER",
+      "description": "Enfonce l’insert prévu à l’intérieur du PER. Ce petit renfort empêche le tube souple de se déformer dans le raccord."
     },
     {
-      "title": "Emboîter jusqu’au repère",
-      "description": "Repérer la profondeur prescrite et engager chaque tube jusqu’à la butée. Le système cité possède son étanchéité intégrée : aucun ajout de filasse n’est nécessaire sur l’emboîtement."
+      "title": "Emboîte les deux côtés",
+      "description": "Marque la profondeur demandée sur chaque tube, puis pousse-les jusqu’à la butée. N’ajoute pas de filasse dans l’emboîtement : le joint est déjà dans le raccord."
     },
     {
-      "title": "Contrôler la transition",
-      "description": "Vérifier les repères et maintenir les tubes sans traction. Garder la connexion accessible et effectuer l’essai applicable. La photo illustre des raccords automatiques, sans identifier le modèle Toutub."
+      "title": "Vérifie avant utilisation",
+      "description": "Contrôle les repères et garde les tubes alignés sans traction. Remets l’eau doucement, vérifie les fuites et fais réaliser l’essai du réseau, puis rince la conduite en gardant le raccord accessible."
     }
   ],
   "mistakes": [
-    "Supposer que cuivre et PER ont automatiquement les mêmes dimensions.",
-    "Oublier le renfort intérieur du PER.",
-    "Chauffer un raccord déjà relié à un tube plastique."
+    "Supposer que tous les raccords automatiques acceptent le PER.",
+    "Oublier l’insert prévu pour le tube souple.",
+    "Arrêter d’enfoncer le tube dès qu’il touche le joint."
   ],
   "safety": [
-    "Fermer l’alimentation, ouvrir un point de puisage et vérifier la décompression avant de couper. Laisser refroidir un réseau chaud.",
-    "Garder les assemblages visibles pendant le contrôle. Un examen visuel ne remplace pas l’essai d’étanchéité prévu pour le système : appliquer son protocole, sans improviser de pression ni de durée.",
-    "Cette fiche concerne l’eau sanitaire, pas le gaz. Protéger les yeux pendant les coupes et tenir les doigts hors des mâchoires."
+    "Laisse refroidir l’eau chaude avant de couper les tubes.",
+    "Coupe l’eau avant tout démontage ; n’utilise pas un tube écrasé ou rayé dans la zone du joint."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-07",
-  "scope": "Exemple d’une transition à emboîtement avec le système Boutté Toutub. Une passerelle à braser ou un raccord fileté suit une autre procédure.",
+  "updatedAt": "2026-09-08",
+  "scope": "Transition automatique à emboîtement cuivre–PER, système exigeant un insert PER. Hors autres types de transitions, raccords sous enduit et remplacement de conduites dégradées.",
   "sources": [
     {
       "title": "Boutté — Système Toutub",
       "url": "https://www.boutte.fr/blog/toutub/",
       "note": "Préparation, emboîtement, insert PER et principe d’étanchéité intégrée.",
       "accessedAt": "2026-09-07"
+    },
+    {
+      "title": "Leroy Merlin — Tube cuivre Ø16 — exemple à adapter à ton réseau",
+      "url": "https://www.leroymerlin.fr/produits/tube-de-cuivre-ecroui-16mm-en-barre-de-2m-69060950.html",
+      "note": "Lien d’achat vérifié : offre directe de l’enseigne, sans affiliation ; disponibilité et vendeur à revérifier lors d’une future révision.",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "title": "Leroy Merlin — Pince coupe-tube pour PER",
+      "url": "https://www.leroymerlin.fr/produits/coupe-tube-pour-per-42-mm-dexter-82111331.html",
+      "note": "Lien d’achat vérifié : offre directe de l’enseigne, sans affiliation ; disponibilité et vendeur à revérifier lors d’une future révision.",
+      "accessedAt": "2026-09-08"
     }
   ],
-  "estimatesNote": "Durée indicative de préparation et de réalisation pour un petit projet accessible, hors essai réglementé, séchage et travaux de reprise. Budget à chiffrer selon dimensions, matériel et location d’outillage.",
-  "imageCredit": {
-    "author": "Tomwsulcer",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PEX_compression_connectors.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/PEX_compression_connectors.jpg",
-    "caption": "Raccords automatiques à emboîtement ; le nom du fichier source utilise « compression », mais il ne s’agit pas de raccords PER à écrou. Modèles distincts de Toutub.",
-    "changes": "Fichier original conservé ; recadrage d’affichage dans les cartes.",
-    "accessedAt": "2026-09-07"
-  },
+  "estimatesNote": "Compte environ 45 min pour une transition accessible, hors essai complet du réseau. Le budget dépend du raccord et des dimensions à réunir.",
   "relatedCategories": [],
-  "journeys": ["renover-une-salle-de-bains"]
+  "journeys": [
+    "renover-une-salle-de-bains"
+  ],
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 60.1",
+      "title": "Plomberie sanitaire pour bâtiments",
+      "url": "https://boutique.cstb.fr/detail/documents-techniques-unifies/dtu-nf-dtu/60-plomberie/nf-dtu-60-1-plomberie-sanitaire-pour-batiments",
+      "scope": "Cadre de la plomberie sanitaire du bâtiment. Pour les raccords PER et automatiques, les notices et évaluations propres au système restent nécessaires ; cette référence ne valide pas chaque assemblage. Présentation de l’éditeur consultée, texte intégral non consulté.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "shoppingLinks": [
+    {
+      "material": "Tube cuivre Ø16 — exemple à adapter à ton réseau",
+      "retailer": "Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/tube-de-cuivre-ecroui-16mm-en-barre-de-2m-69060950.html"
+    },
+    {
+      "material": "Pince coupe-tube pour PER",
+      "retailer": "Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/coupe-tube-pour-per-42-mm-dexter-82111331.html"
+    }
+  ],
+  "imageOrigin": "original"
 }

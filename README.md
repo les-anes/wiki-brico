@@ -65,16 +65,16 @@ Le catalogue compte chaque tutoriel une seule fois, même lorsqu’il est access
 Dupliquer un JSON existant dans le dossier voulu. Champs : `id`, `title`, `description`, `category`, `topicPath`, `relatedCategories`, `journeys`, `difficulty`, `durationMinutes`, `cost`, `image`, `imageAlt`, `tools`, `materials`, `steps`, `mistakes`, `safety`, `status`, `updatedAt`. Le contrat est dans `src/types.ts`.
 
 - `draft` : exemple éditorial non terminé ; durée, niveau et coût peuvent être `null`.
-- `documented` : synthèse de sources consultées, sans validation professionnelle du chantier. Exige `scope`, `estimatesNote`, `sources` et `imageCredit`. Le coût peut rester `null`.
+- `documented` : synthèse de sources consultées, sans validation professionnelle du chantier. Exige `scope`, `estimatesNote`, `sources` et une origine d’image (`imageCredit` ou `imageOrigin: "original"`). Le coût peut rester `null`.
 - `published` : état éditorial avec niveau, durée et coût renseignés ; ce statut ne constitue pas une certification technique.
 
-Les 14 tutoriels actuels comprennent 8 fiches plomberie documentées et 6 anciens brouillons. Les durées sont des estimations et les budgets non chiffrables restent à préciser.
+Les 14 tutoriels actuels sont documentés et harmonisés avec le modèle commun, y compris les six anciens brouillons. Les durées sont des estimations et les budgets non chiffrables restent à préciser.
 
 `npm run validate:data` vérifie récursivement chemins, identifiants, classifications principales et secondaires, parcours, sources et présence des images locales. Cette validation est aussi exécutée au build. `npm run check:site` contrôle le rendu des pages et les principaux cas de filtrage, sans navigateur.
 
 ## Images et déploiement
 
-Les huit fiches documentées utilisent cinq photos Wikimedia Commons locales dans `public/images/plomberie/`, avec licences et crédits dans les JSON. Les légendes et crédits ne sont pas affichés sur le site. Les images d’accueil et des anciens brouillons utilisent encore Unsplash ; les polices utilisent Google Fonts.
+Les 14 tutoriels utilisent des illustrations originales locales : le dessin PEHD approuvé dans `public/images/plomberie/tube-pehd-dessin.png` et les treize autres dans `public/images/tutoriels/`. Les prompts sont conservés dans `docs/illustrations-tutoriels.md`. Aucune légende ni crédit n’est affiché. Les images d’accueil utilisent encore Unsplash ; les polices utilisent Google Fonts.
 
 Publier `dist/`. La navigation par fragment fonctionne sans réécriture serveur. Les fragments ne sont pas des pages SEO indépendantes : prévoir un pré-rendu et de vraies routes pour le référencement individuel. `SITE_URL=https://votre-domaine.fr npm run build` génère le sitemap de l’accueil ; sans cette variable, seul robots.txt est généré.
 
@@ -104,9 +104,13 @@ Versionner `openspec/` et `.agents/skills/` avec le code. La validation OpenSpec
 
 ## Fiches simples et liens
 
-La fiche PEHD définit l’acronyme dès l’introduction et propose six étapes courtes. Le périmètre `scope` et les `sources` de recherche restent des données éditoriales, sans affichage dans la page.
+Les fiches expliquent les acronymes dès leur première utilisation et proposent cinq ou six étapes courtes, trois erreurs fréquentes et des précautions propres au chantier. Le périmètre `scope` et les `sources` de recherche restent des données éditoriales, sans affichage dans la page.
 
 - `dtuReferences` : collection optionnelle de `{ reference, title, url, scope, accessedAt }`. Seuls les DTU vérifiés sont affichés dans « Références DTU », avec un lien vers leur éditeur (AFNOR ou CSTB). `scope` consigne la portée et les limites de la consultation ; un résumé ne vaut pas lecture du texte intégral.
 - `shoppingLinks` : collection optionnelle de `{ material, retailer, url }`, affichée dans « Où trouver le matériel ». Enseignes autorisées : Leroy Merlin (`leroymerlin.fr`), Brico Dépôt (`bricodepot.fr`), Brico Cash (`bricocash.fr`) et Castorama (`castorama.fr`). Vérifier le vendeur direct et la destination lors de la rédaction ; les vendeurs tiers de marketplace sont exclus.
 
-La validation analyse les domaines HTTPS, et rejette les imitations de domaines. Elle ne peut pas vérifier automatiquement la portée d’un DTU ni le vendeur actuel d’une page : ces vérifications restent éditoriales. Les rubriques vides sont masquées et les crédits photo restent uniquement dans les données éditoriales.
+La validation analyse les domaines HTTPS, et rejette les imitations de domaines. Elle ne peut pas vérifier automatiquement la portée d’un DTU ni le vendeur actuel d’une page : ces vérifications restent éditoriales. Les rubriques vides sont masquées et les sources de recherche restent uniquement dans les données éditoriales.
+
+Les illustrations créées pour le site portent `imageOrigin: "original"` et un texte alternatif descriptif. Ils sont affichés à leur ratio naturel dans la fiche, sans légende externe.
+
+Le [modèle commun des pages tutoriel](openspec/specs/page-tutoriel/spec.md) fixe le ton, la structure, le niveau de détail, le style des illustrations et les règles de liens pour chaque nouvelle fiche ou révision. Il prend la version approuvée du PEHD comme référence ; les 14 fiches existantes ont été harmonisées le 8 septembre 2026.

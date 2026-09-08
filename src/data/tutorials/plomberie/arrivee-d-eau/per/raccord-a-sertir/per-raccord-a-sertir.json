@@ -1,84 +1,108 @@
 {
   "id": "per-raccord-a-sertir",
-  "title": "PER : raccord à sertir",
-  "description": "Préparer le PER, vérifier l’emboîtement et réaliser un sertissage radial avec un ensemble tube, raccord et outillage compatible.",
+  "title": "Assembler un tube PER avec un raccord à sertir",
+  "description": "Le PER, ou polyéthylène réticulé, est un tuyau souple pour distribuer l’eau. Une sertisseuse écrase la bague du raccord pour le fixer au tube, sans soudure.",
   "category": "plomberie",
-  "topicPath": ["Arrivée d’eau", "PER", "Raccord à sertir"],
+  "topicPath": [
+    "Arrivée d’eau",
+    "PER",
+    "Raccord à sertir"
+  ],
   "difficulty": "Intermédiaire",
-  "durationMinutes": 45,
+  "durationMinutes": 30,
   "cost": null,
-  "image": "/images/plomberie/per.jpg",
-  "imageAlt": "Réseau en PER et cuivre",
+  "image": "/images/tutoriels/per-raccord-a-sertir.png",
+  "imageAlt": "Un tube PER rouge engagé dans un raccord à bague métallique, dessiné sur fond ivoire.",
   "tools": [
     "Pince coupe-tube PER",
-    "Outil d’ébavurage adapté au PER",
-    "Sertisseuse entretenue et mâchoire homologuée pour le raccord",
-    "Mètre et marqueur"
+    "Outil d’ébavurage adapté au tube",
+    "Sertisseuse et mâchoire compatibles avec le raccord",
+    "Mètre, marqueur et chiffon"
   ],
   "materials": [
     {
-      "name": "Tube PER de dimensions compatibles",
-      "quantity": "Longueur mesurée"
+      "name": "Tube PER pour eau sanitaire",
+      "quantity": "Longueur mesurée, emboîtements compris"
     },
     {
-      "name": "Raccord PER à sertir de la gamme retenue",
-      "quantity": "1 par jonction"
+      "name": "Raccords PER à sertir compatibles",
+      "quantity": "1 par jonction, au diamètre et à l’épaisseur du tube"
     }
   ],
   "steps": [
     {
-      "title": "Vérifier l’ensemble",
-      "description": "Lire le diamètre et l’épaisseur sur le tube. La fiche Ayor citée indique les profils H, U ou RF pour sa gamme ; ce n’est pas une équivalence valable pour tous les raccords PER."
+      "title": "Vérifie le matériel",
+      "description": "Lis le diamètre et l’épaisseur sur le tube. Choisis un raccord prévu pour ces dimensions et la mâchoire indiquée sur son emballage : le diamètre seul ne suffit pas."
     },
     {
-      "title": "Couper et préparer",
-      "description": "Après isolement du réseau, faire une coupe perpendiculaire à la pince. Pour cette gamme, ébavurer puis éliminer les aspérités et les copeaux sans endommager le tube."
+      "title": "Coupe le tube droit",
+      "description": "Coupe l’eau, ouvre un robinet pour enlever la pression et laisse refroidir l’eau chaude. Coupe à la pince, puis prépare et nettoie le bout selon la notice du raccord."
     },
     {
-      "title": "Enfoncer le raccord",
-      "description": "Insérer le tube jusqu’au fond. Vérifier sa présence dans les fenêtres de contrôle : elles permettent de détecter une insertion trop courte."
+      "title": "Enfonce jusqu’au fond",
+      "description": "Pousse le tube dans le raccord sans le mettre de travers. Vérifie qu’il apparaît dans les fenêtres de contrôle, les petites ouvertures de la bague."
     },
     {
-      "title": "Effectuer le sertissage",
-      "description": "Positionner la mâchoire du bon diamètre sur la bague à l’emplacement prescrit. Exécuter le cycle complet de l’outil, sans déplacer le tube."
+      "title": "Sertis la bague",
+      "description": "Place la mâchoire à l’endroit prévu, en gardant le tube bien enfoncé. Lance un cycle complet sans déplacer l’ensemble."
     },
     {
-      "title": "Inspecter et tester",
-      "description": "Vérifier l’assemblage puis appliquer le protocole d’essai du système. Si le cycle a échoué, suivre les instructions de reprise du fabricant plutôt que multiplier les sertissages au hasard."
+      "title": "Contrôle avant de cacher",
+      "description": "Vérifie l’insertion et le sertissage, puis remets l’eau doucement pour chercher les fuites. Fais réaliser l’essai du réseau avant de cacher le montage et rince la conduite avant utilisation."
     }
   ],
   "mistakes": [
-    "Employer une mâchoire uniquement parce que son diamètre correspond.",
-    "Sertir un tube insuffisamment engagé.",
-    "Réutiliser un raccord coupé ou endommagé."
+    "Employer une mâchoire du bon diamètre mais du mauvais profil.",
+    "Sertir un tube qui n’est pas enfoncé à fond.",
+    "Cacher le raccord avant le contrôle d’étanchéité."
   ],
   "safety": [
-    "Fermer l’alimentation, ouvrir un point de puisage et vérifier la décompression avant de couper. Laisser refroidir un réseau chaud.",
-    "Garder les assemblages visibles pendant le contrôle. Un examen visuel ne remplace pas l’essai d’étanchéité prévu pour le système : appliquer son protocole, sans improviser de pression ni de durée.",
-    "Cette fiche concerne l’eau sanitaire, pas le gaz. Protéger les yeux pendant les coupes et tenir les doigts hors des mâchoires."
+    "Garde les doigts hors de la mâchoire.",
+    "Si le sertissage s’interrompt ou si le raccord fuit, coupe l’eau et suis la procédure de reprise du raccord."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-07",
-  "scope": "Exemple basé sur les raccords PER à sertir Somatherm/Ayor de la fiche du 24 février 2022. Vérifier la notice livrée avec la référence achetée.",
+  "updatedAt": "2026-09-08",
+  "scope": "Assemblage local PER à sertir pour eau sanitaire, avec raccord à fenêtres de contrôle et outillage compatible. Hors dimensionnement et règles d’encastrement propres au système.",
   "sources": [
     {
       "title": "Ayor / Somatherm — Raccords PER à sertir",
       "url": "https://www.ayor.fr/upload/medias/Large/Document/Fiches%20Techniques%20Manuelles/FT_Manuelles_PRO/S_raccords%20PER%20sertir.pdf",
       "note": "Page 1 : préparation, fenêtres de contrôle et profils annoncés.",
       "accessedAt": "2026-09-07"
+    },
+    {
+      "title": "Brico Cash — Réaliser un raccord PER",
+      "url": "https://www.bricocash.fr/conseils/comment-faire-un-raccordement-per",
+      "note": "Démonstration originale des trois méthodes ; les réglages précis ne sont pas généralisés.",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "title": "Leroy Merlin — Pince coupe-tube pour PER",
+      "url": "https://www.leroymerlin.fr/produits/coupe-tube-pour-per-42-mm-dexter-82111331.html",
+      "note": "Lien d’achat vérifié : offre directe de l’enseigne, sans affiliation ; disponibilité et vendeur à revérifier lors d’une future révision.",
+      "accessedAt": "2026-09-08"
     }
   ],
-  "estimatesNote": "Durée indicative de préparation et de réalisation pour un petit projet accessible, hors essai réglementé, séchage et travaux de reprise. Budget à chiffrer selon dimensions, matériel et location d’outillage.",
-  "imageCredit": {
-    "author": "Tomwsulcer",
-    "license": "CC0 1.0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PEX_pipes_and_valves_in_basement_ceiling_for_exterior_water_spigot.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/PEX_pipes_and_valves_in_basement_ceiling_for_exterior_water_spigot.jpg",
-    "caption": "Réseau en PER et cuivre ; photo de contexte, pas une démonstration du raccord décrit.",
-    "changes": "Fichier original conservé ; recadrage d’affichage dans les cartes.",
-    "accessedAt": "2026-09-07"
-  },
+  "estimatesNote": "Compte environ 30 min pour préparer et monter un raccord accessible, hors essai complet du réseau. Ajoute au matériel la location de la sertisseuse si nécessaire.",
   "relatedCategories": [],
-  "journeys": ["renover-une-salle-de-bains"]
+  "journeys": [
+    "renover-une-salle-de-bains"
+  ],
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 60.1",
+      "title": "Plomberie sanitaire pour bâtiments",
+      "url": "https://boutique.cstb.fr/detail/documents-techniques-unifies/dtu-nf-dtu/60-plomberie/nf-dtu-60-1-plomberie-sanitaire-pour-batiments",
+      "scope": "Cadre de la plomberie sanitaire du bâtiment. Pour les raccords PER et automatiques, les notices et évaluations propres au système restent nécessaires ; cette référence ne valide pas chaque assemblage. Présentation de l’éditeur consultée, texte intégral non consulté.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "shoppingLinks": [
+    {
+      "material": "Pince coupe-tube pour PER",
+      "retailer": "Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/coupe-tube-pour-per-42-mm-dexter-82111331.html"
+    }
+  ],
+  "imageOrigin": "original"
 }

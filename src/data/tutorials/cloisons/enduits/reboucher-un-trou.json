@@ -1,54 +1,111 @@
 {
   "id": "reboucher-un-trou",
-  "title": "Reboucher un trou dans un mur",
-  "description": "Retrouver un support lisse avant de passer à la peinture.",
+  "title": "Reboucher un petit trou dans un mur",
+  "description": "Un ancien trou de vis à faire disparaître ? Un peu d’enduit et un ponçage léger suffisent pour retrouver un mur prêt à peindre.",
   "category": "cloisons",
   "difficulty": "Débutant",
-  "durationMinutes": 45,
-  "cost": {
-    "min": 10,
-    "max": 25,
-    "currency": "EUR"
-  },
-  "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=85",
-  "imageAlt": "Détails de rénovation intérieure",
-  "tools": ["Couteau à enduire", "Cale à poncer"],
+  "durationMinutes": 30,
+  "cost": null,
+  "image": "/images/tutoriels/reboucher-un-trou.png",
+  "imageAlt": "Un couteau à enduire lisse une petite réparation sur un mur, au trait et à la gouache sur fond ivoire.",
+  "tools": [
+    "Couteau à enduire",
+    "Petite brosse et chiffon",
+    "Cale à poncer"
+  ],
   "materials": [
     {
-      "name": "Enduit de rebouchage",
-      "quantity": "Selon le volume à combler"
+      "name": "Enduit de rebouchage prêt à l’emploi",
+      "quantity": "1 petit pot pour plusieurs trous de vis"
+    },
+    {
+      "name": "Papier abrasif fin",
+      "quantity": "1 feuille"
+    },
+    {
+      "name": "Protection de sol",
+      "quantity": "Sous la réparation"
     }
   ],
   "steps": [
     {
-      "title": "Préparer son projet",
-      "description": "Examiner le support, mesurer la zone de travail et consulter les notices des produits choisis. Cet exemple présente la structure éditoriale ; les gestes techniques restent à documenter."
+      "title": "Vérifie le mur",
+      "description": "Travaille sur un mur sec et solide, avec un petit trou qui ne traverse pas la cloison. Si le mur reste humide ou s’effrite largement, règle d’abord ce problème."
     },
     {
-      "title": "Réunir le matériel et protéger la zone",
-      "description": "Préparer les outils et matériaux listés. Protéger les surfaces voisines et prévoir les équipements de protection indiqués par les fabricants."
+      "title": "Nettoie le trou",
+      "description": "Retire les morceaux qui ne tiennent plus avec le couteau, sans agrandir inutilement le trou. Brosse l’intérieur pour enlever la poussière."
     },
     {
-      "title": "Réaliser et contrôler",
-      "description": "Cette étape est à compléter et à faire vérifier par une personne compétente avant publication. Respecter les conditions d’application et les temps de séchage des produits."
+      "title": "Remplis à l’enduit",
+      "description": "Pousse la pâte dans le trou avec le couteau pour remplir le fond. Respecte l’épaisseur maximale indiquée sur le pot."
+    },
+    {
+      "title": "Lisse la réparation",
+      "description": "Passe le couteau dans deux directions pour enlever le surplus. Laisse sécher à cœur ; s’il reste un creux, ajoute une passe et laisse sécher à nouveau."
+    },
+    {
+      "title": "Ponce et dépoussière",
+      "description": "Ponce doucement jusqu’à ne plus sentir de bosse sous la main. Enlève la poussière : la réparation est prête pour la sous-couche et la peinture, après le délai indiqué sur l’enduit."
     }
   ],
   "mistakes": [
-    "Commencer sans vérifier la nature et l’état du support.",
-    "Négliger les instructions et temps de séchage du fabricant."
+    "Remplir un trou encore poussiéreux.",
+    "Poncer avant que l’enduit soit sec à cœur.",
+    "Essayer de réparer une cloison traversée avec de la pâte seule."
   ],
   "safety": [
-    "Exemple éditorial non validé : ne constitue pas un guide technique complet.",
-    "En cas de doute sur le support ou les réseaux cachés, demander l’avis d’un professionnel."
+    "Porte un masque antipoussière et protège tes yeux pendant le ponçage.",
+    "Ne ponce pas un ancien revêtement suspect sans avoir vérifié la présence de plomb ou d’amiante."
   ],
-  "status": "draft",
-  "updatedAt": "2026-09-07",
+  "status": "documented",
+  "updatedAt": "2026-09-08",
   "relatedCategories": [
     {
       "category": "techniques",
-      "topicPath": ["Faire un enduit"]
+      "topicPath": [
+        "Faire un enduit"
+      ]
     }
   ],
-  "journeys": ["renover-une-chambre", "amenager-des-combles"],
-  "topicPath": ["Enduits"]
+  "journeys": [
+    "renover-une-chambre",
+    "amenager-des-combles"
+  ],
+  "topicPath": [
+    "Enduits"
+  ],
+  "scope": "Petits trous non traversants sur un mur intérieur sec et sain. La fiche s’arrête au support prêt à peindre ; elle ne traite ni fissure évolutive ni réparation de plaque traversée.",
+  "estimatesNote": "Compte environ 30 min de travail, hors séchage et peinture. Le budget dépend de l’enduit et des outils que tu possèdes déjà.",
+  "sources": [
+    {
+      "title": "Toupret — Enduit de rebouchage en pâte",
+      "url": "https://toupret.com/fr/enduit-particuliers/produit/reboucher/reboucher-pate",
+      "note": "Supports, remplissage, lissage et séchage avant ponçage et finition.",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "title": "Leroy Merlin — Enduit de rebouchage en pâte — tube de 330 g",
+      "url": "https://www.leroymerlin.fr/produits/enduit-de-rebouchage-en-pate-toupret-blanc-330-g-83325279.html",
+      "note": "Lien d’achat vérifié : offre directe de l’enseigne, sans affiliation ; disponibilité et vendeur à revérifier lors d’une future révision.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 59.1 P1-1",
+      "title": "Travaux de peinture du bâtiment",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-591-p11/travaux-de-batiment-revetements-de-peinture-en-feuil-mince-semiepais-ou-epa/fa170291/41498",
+      "scope": "Édition juin 2013, tirage septembre 2014. Préparation des supports et exécution des travaux de peinture du bâtiment ; pas une référence de restauration du mobilier. Présentation de l’éditeur consultée, texte intégral non consulté.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "shoppingLinks": [
+    {
+      "material": "Enduit de rebouchage en pâte — tube de 330 g",
+      "retailer": "Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/enduit-de-rebouchage-en-pate-toupret-blanc-330-g-83325279.html"
+    }
+  ],
+  "imageOrigin": "original"
 }

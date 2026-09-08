@@ -13,14 +13,14 @@ Chaque tutoriel SHALL posséder un JSON unique dans `src/data/tutorials/<categor
 - **THEN** son fichier est déplacé dans le chemin correspondant tout en conservant son identifiant et son lien de fiche.
 
 ### Requirement: Structure commune
-Chaque fiche SHALL respecter le contrat `Tutorial` de `src/types.ts`, avec outils, matériaux, étapes, erreurs à éviter et sécurité. Les classifications SHALL référencer la taxonomie du projet.
+Chaque fiche SHALL respecter le contrat `Tutorial` de `src/types.ts`, avec outils, matériaux, étapes, erreurs à éviter et sécurité. Les classifications SHALL référencer la taxonomie du projet. Le fond et la présentation SHALL suivre `openspec/specs/page-tutoriel/spec.md`.
 
 #### Scenario: Contrôle des données
 - **WHEN** `npm run validate:data` est exécuté
 - **THEN** un chemin incohérent, un identifiant dupliqué ou une classification inconnue provoque un échec.
 
 ### Requirement: Contenus documentés traçables
-Une fiche au statut `documented` SHALL fournir `scope`, `estimatesNote`, des sources consultées et les crédits de son image. Ce statut ne vaut pas validation professionnelle.
+Une fiche au statut `documented` SHALL fournir `scope`, `estimatesNote`, des sources consultées et l’origine de son image (illustration originale ou crédits conservés dans les données). Ce statut ne vaut pas validation professionnelle.
 
 #### Scenario: Source absente
 - **WHEN** une fiche documentée ne fournit aucune source

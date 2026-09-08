@@ -13,7 +13,8 @@ context: |
   Un fichier par tutoriel, classé par catégorie principale et topicPath en slugs.
   Préserver les identifiants, liens et favoris lors des reclassements.
   relatedCategories et journeys offrent plusieurs chemins sans dupliquer les JSON.
-  Les contenus techniques documentés ont un périmètre, des sources et des crédits photo.
+  Référence commune obligatoire pour créer ou réviser une fiche : openspec/specs/page-tutoriel/spec.md.
+  Les contenus documentés conservent un périmètre, des sources de recherche et une origine d’image.
   Une synthèse documentée ne constitue pas une validation professionnelle.
   Vérifications disponibles : npm run validate:data, npm run check:site, npm run build.
   Les specs initiales décrivent le socle existant ; elles ne recensent pas toutes les fonctionnalités.

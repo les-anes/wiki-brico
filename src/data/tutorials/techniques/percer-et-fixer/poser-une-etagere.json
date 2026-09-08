@@ -1,53 +1,98 @@
 {
   "id": "poser-une-etagere",
-  "title": "Poser une étagère murale",
-  "description": "Une étagère bien droite, solidement fixée et prête à accueillir vos idées.",
+  "title": "Fixer une étagère sur deux équerres",
+  "description": "Une tablette, deux équerres et des fixations adaptées à ton mur : voici comment poser une petite étagère droite et stable.",
   "category": "techniques",
   "difficulty": "Débutant",
   "durationMinutes": 60,
-  "cost": {
-    "min": 20,
-    "max": 50,
-    "currency": "EUR"
-  },
-  "image": "https://images.unsplash.com/photo-1594620302200-9a762244a156?auto=format&fit=crop&w=1000&q=85",
-  "imageAlt": "Étagères en bois dans un intérieur",
-  "tools": ["Niveau à bulle", "Perceuse", "Détecteur de réseaux"],
+  "cost": null,
+  "image": "/images/tutoriels/poser-une-etagere.png",
+  "imageAlt": "Une tablette en bois sur deux équerres métalliques, dessinée au trait et à la gouache sur fond ivoire.",
+  "tools": [
+    "Mètre, crayon et niveau",
+    "Détecteur de câbles et canalisations",
+    "Perceuse et foret adapté au mur",
+    "Tournevis ou visseuse",
+    "Aspirateur"
+  ],
   "materials": [
     {
-      "name": "Étagère et équerres",
-      "quantity": "1 ensemble"
+      "name": "Tablette et équerres compatibles",
+      "quantity": "1 tablette et 2 équerres, selon la portée autorisée"
     },
     {
-      "name": "Fixations adaptées au support",
-      "quantity": "Selon les équerres"
+      "name": "Chevilles et vis pour ton mur",
+      "quantity": "Autant que de trous de fixation sur les équerres"
+    },
+    {
+      "name": "Vis à bois pour la tablette",
+      "quantity": "Pour tous les points prévus, plus courtes que son épaisseur"
     }
   ],
   "steps": [
     {
-      "title": "Préparer son projet",
-      "description": "Examiner le support, mesurer la zone de travail et consulter les notices des produits choisis. Cet exemple présente la structure éditoriale ; les gestes techniques restent à documenter."
+      "title": "Choisis les fixations",
+      "description": "Identifie ton mur : béton, brique ou plaque de plâtre. Choisis les chevilles, les vis et les équerres pour le poids de la tablette et de ce que tu y poseras."
     },
     {
-      "title": "Réunir le matériel et protéger la zone",
-      "description": "Préparer les outils et matériaux listés. Protéger les surfaces voisines et prévoir les équipements de protection indiqués par les fabricants."
+      "title": "Trace les emplacements",
+      "description": "Vérifie le passage des câbles et tuyaux avant de marquer les trous. Place les équerres à la distance prévue pour la tablette et aligne leurs sommets avec le niveau."
     },
     {
-      "title": "Réaliser et contrôler",
-      "description": "Cette étape est à compléter et à faire vérifier par une personne compétente avant publication. Respecter les conditions d’application et les temps de séchage des produits."
+      "title": "Perce le mur",
+      "description": "Perce droit au diamètre et à la profondeur indiqués pour les chevilles. Sur une plaque de plâtre ou une brique creuse, travaille sans percussion, puis enlève la poussière des trous."
+    },
+    {
+      "title": "Fixe les équerres",
+      "description": "Pose les chevilles selon leur emballage, puis visse les équerres en vérifiant leur niveau. Arrête-toi si une cheville tourne ou si le mur s’écrase : cette fixation est à reprendre."
+    },
+    {
+      "title": "Visse la tablette",
+      "description": "Centre la tablette sur les équerres et fixe-la par-dessous avec les vis à bois. Vérifie l’absence de jeu, puis ajoute tes objets progressivement sans dépasser la charge prévue."
     }
   ],
   "mistakes": [
-    "Commencer sans vérifier la nature et l’état du support.",
-    "Négliger les instructions et temps de séchage du fabricant."
+    "Choisir des chevilles sans connaître le mur.",
+    "Utiliser des vis qui traversent la tablette.",
+    "Charger l’étagère alors qu’une fixation bouge."
   ],
   "safety": [
-    "Exemple éditorial non validé : ne constitue pas un guide technique complet.",
-    "En cas de doute sur le support ou les réseaux cachés, demander l’avis d’un professionnel."
+    "Le détecteur ne suffit pas à lever un doute sur un réseau : fais vérifier avant de percer.",
+    "Porte des lunettes au perçage et coupe l’alimentation des circuits proches."
   ],
-  "status": "draft",
-  "updatedAt": "2026-09-07",
+  "status": "documented",
+  "updatedAt": "2026-09-08",
   "relatedCategories": [],
-  "journeys": ["renover-une-chambre", "amenager-des-combles"],
-  "topicPath": ["Percer et fixer"]
+  "journeys": [
+    "renover-une-chambre",
+    "amenager-des-combles"
+  ],
+  "topicPath": [
+    "Percer et fixer"
+  ],
+  "scope": "Petite étagère sur deux équerres, mur identifié et charge compatible. Pas de fixation de meuble suspendu lourd ni de choix universel de cheville.",
+  "estimatesNote": "Prévois environ 1 h pour une étagère, sur un mur prêt à percer. Le budget dépend surtout de la tablette, des équerres et des fixations.",
+  "sources": [
+    {
+      "title": "Fischer — Cheville DuoPower",
+      "url": "https://www.fischer.fr/fr-fr/produits/fixations-courantes/chevilles-en-nylon/cheville-duopower",
+      "note": "Exemple de fixation : support, profondeur, longueur de vis et charges propres à chaque dimension ; pas une cheville universelle pour toute charge.",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "title": "Leroy Merlin — Chevilles Ø8 — à choisir selon le mur et la charge",
+      "url": "https://www.leroymerlin.fr/produits/100-chevilles-3-en-1-duopower-8-x-l-40-mm-70909762.html",
+      "note": "Lien d’achat vérifié : offre directe de l’enseigne, sans affiliation ; disponibilité et vendeur à revérifier lors d’une future révision.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "dtuReferences": [],
+  "shoppingLinks": [
+    {
+      "material": "Chevilles Ø8 — à choisir selon le mur et la charge",
+      "retailer": "Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/100-chevilles-3-en-1-duopower-8-x-l-40-mm-70909762.html"
+    }
+  ],
+  "imageOrigin": "original"
 }

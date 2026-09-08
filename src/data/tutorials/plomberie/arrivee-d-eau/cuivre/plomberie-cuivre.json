@@ -1,69 +1,67 @@
 {
   "id": "plomberie-cuivre",
-  "title": "Plomberie en cuivre",
-  "description": "Préparer et raccorder une canalisation en cuivre sans flamme, avec un système à sertir pour eau sanitaire.",
+  "title": "Assembler des tubes en cuivre à sertir",
+  "description": "Tu peux raccorder du cuivre sans chalumeau avec des raccords à sertir. Une pince spéciale comprime le raccord autour du tube, tandis que son joint assure l’étanchéité.",
   "category": "plomberie",
-  "topicPath": ["Arrivée d’eau", "Cuivre"],
+  "topicPath": [
+    "Arrivée d’eau",
+    "Cuivre"
+  ],
   "difficulty": "Intermédiaire",
-  "durationMinutes": 60,
+  "durationMinutes": 45,
   "cost": null,
-  "image": "/images/plomberie/cuivre.jpg",
-  "imageAlt": "Canalisations en cuivre",
+  "image": "/images/tutoriels/plomberie-cuivre.png",
+  "imageAlt": "Des tubes et un coude en cuivre, dessinés au trait et à la gouache sur fond ivoire.",
   "tools": [
     "Coupe-tube cuivre",
     "Ébavureur intérieur et extérieur",
-    "Mètre et marqueur",
+    "Mètre, marqueur et chiffon",
     "Sertisseuse et mâchoires compatibles"
   ],
   "materials": [
     {
-      "name": "Tube cuivre accepté par le système",
-      "quantity": "Longueur mesurée"
+      "name": "Tube cuivre pour eau sanitaire",
+      "quantity": "Longueur mesurée, emboîtements compris"
     },
     {
-      "name": "Raccords à sertir pour eau sanitaire",
-      "quantity": "Selon le tracé"
-    },
-    {
-      "name": "Colliers et protections de passage",
-      "quantity": "Selon le support et la notice"
+      "name": "Raccords cuivre à sertir pour eau sanitaire",
+      "quantity": "Selon le tracé et le diamètre du tube"
     }
   ],
   "steps": [
     {
-      "title": "Identifier le réseau",
-      "description": "Vérifier le diamètre, l’état du cuivre et la destination du raccord. Chez Viega, Profipress et Profipress S n’ont pas les mêmes domaines d’emploi."
+      "title": "Choisis le bon ensemble",
+      "description": "Vérifie l’état et le diamètre du cuivre, puis choisis des raccords prévus pour l’eau potable et ce tube. Vérifie aussi que la sertisseuse et les mâchoires sont acceptées pour ces raccords."
     },
     {
-      "title": "Mesurer et couper",
-      "description": "Après isolement, mesurer en tenant compte des emboîtements. Couper au coupe-tube, puis ébavurer et nettoyer l’intérieur comme l’extérieur."
+      "title": "Coupe et prépare le cuivre",
+      "description": "Coupe l’eau et ouvre un robinet pour enlever la pression. Coupe droit au coupe-tube, enlève les bavures dedans et dehors, puis nettoie le bout."
     },
     {
-      "title": "Repérer l’emboîtement",
-      "description": "Vérifier que le joint du raccord est présent, propre et intact. Reporter la profondeur requise sur le tube avant insertion."
+      "title": "Marque la profondeur",
+      "description": "Vérifie que le joint du raccord est présent, propre et intact. Marque sur le tube la profondeur d’emboîtement indiquée pour le raccord."
     },
     {
-      "title": "Assembler et sertir",
-      "description": "Enfoncer le tube jusqu’au repère, placer la mâchoire prescrite et réaliser un cycle complet. Vérifier que le tube n’a pas reculé pendant la manipulation."
+      "title": "Emboîte et sertis",
+      "description": "Enfonce le tube jusqu’au repère et place la mâchoire à l’endroit prévu. Lance un cycle complet en gardant le tube bien en place."
     },
     {
-      "title": "Maintenir et contrôler",
-      "description": "Fixer le réseau sans imposer d’effort aux raccords. Effectuer l’essai d’étanchéité puis le rinçage selon les prescriptions du système avant mise en service."
+      "title": "Contrôle l’assemblage",
+      "description": "Vérifie que le tube n’a pas reculé et que les conduites ne tirent pas sur le raccord. Remets l’eau doucement, fais réaliser l’essai du réseau avant de cacher la jonction, puis rince avant utilisation."
     }
   ],
   "mistakes": [
-    "Laisser des bavures qui peuvent blesser le joint.",
-    "Sertir sans repère de profondeur.",
-    "Choisir un raccord solaire ou gaz pour un réseau d’eau potable sans vérifier son usage."
+    "Laisser une bavure qui abîme le joint.",
+    "Utiliser un raccord destiné à un autre usage que l’eau sanitaire.",
+    "Sertir alors que le tube a reculé."
   ],
   "safety": [
-    "Fermer l’alimentation, ouvrir un point de puisage et vérifier la décompression avant de couper. Laisser refroidir un réseau chaud.",
-    "Garder les assemblages visibles pendant le contrôle. Un examen visuel ne remplace pas l’essai d’étanchéité prévu pour le système : appliquer son protocole, sans improviser de pression ni de durée.",
-    "Cette fiche concerne l’eau sanitaire, pas le gaz. Protéger les yeux pendant les coupes et tenir les doigts hors des mâchoires."
+    "Protège tes doigts des bords coupants et de la mâchoire.",
+    "Laisse refroidir l’eau chaude avant d’intervenir et ne reprends jamais un raccord sous pression."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-07",
-  "scope": "Initiation au cuivre à sertir, illustrée par Viega Profipress pour eau potable. La brasure et les réseaux de gaz ne sont pas couverts.",
+  "updatedAt": "2026-09-08",
+  "scope": "Assemblage local de cuivre sain déjà maintenu, par raccords à sertir pour eau sanitaire. Hors brasage, soudure, gaz, supports d’un réseau neuf et dimensionnement.",
   "sources": [
     {
       "title": "Viega — Profipress et Profipress S",
@@ -76,19 +74,34 @@
       "url": "https://www.viega.fr/fr/produits/Catalogue/Systemes-de-tuyauterie/Profipress.html",
       "note": "Compatibilité du système, documents et consignes techniques.",
       "accessedAt": "2026-09-07"
+    },
+    {
+      "title": "Leroy Merlin — Tube cuivre Ø16 — exemple à adapter à ton réseau",
+      "url": "https://www.leroymerlin.fr/produits/tube-de-cuivre-ecroui-16mm-en-barre-de-2m-69060950.html",
+      "note": "Lien d’achat vérifié : offre directe de l’enseigne, sans affiliation ; disponibilité et vendeur à revérifier lors d’une future révision.",
+      "accessedAt": "2026-09-08"
     }
   ],
-  "estimatesNote": "Durée indicative de préparation et de réalisation pour un petit projet accessible, hors essai réglementé, séchage et travaux de reprise. Budget à chiffrer selon dimensions, matériel et location d’outillage.",
-  "imageCredit": {
-    "author": "Santeri Viinamäki",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Copper_water_pipes.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Copper_water_pipes.jpg",
-    "caption": "Canalisations en cuivre ; photo de contexte, pas une démonstration du système Profipress.",
-    "changes": "Version 1280 px fournie par Wikimedia ; recadrage d’affichage dans les cartes.",
-    "accessedAt": "2026-09-07"
-  },
+  "estimatesNote": "Prévois environ 45 min pour une jonction accessible, hors essai complet du réseau. La location de la sertisseuse s’ajoute au prix des tubes et raccords.",
   "relatedCategories": [],
-  "journeys": ["renover-une-salle-de-bains"]
+  "journeys": [
+    "renover-une-salle-de-bains"
+  ],
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 60.1",
+      "title": "Plomberie sanitaire pour bâtiments",
+      "url": "https://boutique.cstb.fr/detail/documents-techniques-unifies/dtu-nf-dtu/60-plomberie/nf-dtu-60-1-plomberie-sanitaire-pour-batiments",
+      "scope": "Cadre de la plomberie sanitaire du bâtiment. Pour les raccords PER et automatiques, les notices et évaluations propres au système restent nécessaires ; cette référence ne valide pas chaque assemblage. Présentation de l’éditeur consultée, texte intégral non consulté.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "shoppingLinks": [
+    {
+      "material": "Tube cuivre Ø16 — exemple à adapter à ton réseau",
+      "retailer": "Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/tube-de-cuivre-ecroui-16mm-en-barre-de-2m-69060950.html"
+    }
+  ],
+  "imageOrigin": "original"
 }

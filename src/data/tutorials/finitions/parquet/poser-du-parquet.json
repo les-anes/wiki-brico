@@ -1,49 +1,120 @@
 {
   "id": "poser-du-parquet",
-  "title": "Poser un parquet flottant",
-  "description": "Préparer son sol et comprendre les grandes étapes de pose d’un parquet.",
+  "title": "Poser un parquet contrecollé clipsable",
+  "description": "Le parquet contrecollé possède une couche de vrai bois sur plusieurs couches de support. Ici, tu le poses en flottant : les lames se clipsent entre elles sans être fixées au sol.",
   "category": "finitions",
   "difficulty": "Intermédiaire",
-  "durationMinutes": 480,
-  "cost": {
-    "min": 150,
-    "max": 350,
-    "currency": "EUR"
-  },
-  "image": "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1000&q=85",
-  "imageAlt": "Intérieur avec un sol en bois",
-  "tools": ["Mètre", "Scie", "Cales de pose"],
+  "durationMinutes": 360,
+  "cost": null,
+  "image": "/images/tutoriels/poser-du-parquet.png",
+  "imageAlt": "Des lames de parquet couleur chêne, dessinées au trait et à la gouache sur fond ivoire.",
+  "tools": [
+    "Mètre, crayon, équerre et règle longue",
+    "Scie adaptée au bois et supports de coupe",
+    "Cales d’espacement et kit de pose compatible",
+    "Cutter et aspirateur"
+  ],
   "materials": [
     {
-      "name": "Parquet et sous-couche",
-      "quantity": "Surface de la pièce + chutes"
+      "name": "Parquet contrecollé clipsable",
+      "quantity": "Surface de la pièce + marge de coupe indiquée par le fabricant"
+    },
+    {
+      "name": "Sous-couche compatible",
+      "quantity": "Surface de la pièce"
+    },
+    {
+      "name": "Protection contre l’humidité et adhésif de jonction",
+      "quantity": "Selon le support et le système de sous-couche"
+    },
+    {
+      "name": "Plinthes, seuils et fixations",
+      "quantity": "Pour le pourtour et les passages de porte"
     }
   ],
   "steps": [
     {
-      "title": "Préparer son projet",
-      "description": "Examiner le support, mesurer la zone de travail et consulter les notices des produits choisis. Cet exemple présente la structure éditoriale ; les gestes techniques restent à documenter."
+      "title": "Prépare le sol et les lames",
+      "description": "Vérifie que le sol est solide, propre et suffisamment plat selon la notice du parquet. Fais contrôler son humidité avec la méthode adaptée au support et laisse les paquets s’acclimater comme indiqué avant la pose."
     },
     {
-      "title": "Réunir le matériel et protéger la zone",
-      "description": "Préparer les outils et matériaux listés. Protéger les surfaces voisines et prévoir les équipements de protection indiqués par les fabricants."
+      "title": "Installe la sous-couche",
+      "description": "Pose la protection contre l’humidité demandée pour ton support, puis la sous-couche, sans superposer les bandes. Ferme les jonctions avec l’adhésif prévu et vérifie la hauteur disponible sous les portes."
     },
     {
-      "title": "Réaliser et contrôler",
-      "description": "Cette étape est à compléter et à faire vérifier par une personne compétente avant publication. Respecter les conditions d’application et les temps de séchage des produits."
+      "title": "Aligne la première rangée",
+      "description": "Prévois la largeur de la dernière rangée avant de commencer. Pose la première bien droite, avec des cales pour garder le jeu demandé contre les murs et les autres obstacles."
+    },
+    {
+      "title": "Clipse les rangées suivantes",
+      "description": "Décale les joints de bout selon la distance minimale de la notice. Emboîte les lames avec le mouvement propre au système, sans frapper directement leurs bords."
+    },
+    {
+      "title": "Découpe la dernière rangée",
+      "description": "Reporte les mesures en gardant le même jeu périphérique, puis coupe et emboîte les lames. Conserve aussi les espaces et seuils de séparation prévus aux portes."
+    },
+    {
+      "title": "Pose les finitions",
+      "description": "Retire les cales et fixe les plinthes au mur pour laisser le parquet bouger librement. Vérifie les assemblages et les portes avant de remettre les meubles."
     }
   ],
   "mistakes": [
-    "Commencer sans vérifier la nature et l’état du support.",
-    "Négliger les instructions et temps de séchage du fabricant."
+    "Poser sur un sol dont l’humidité n’a pas été vérifiée.",
+    "Supprimer le jeu contre les murs ou les tuyaux.",
+    "Bloquer le parquet avec des plinthes vissées dans les lames."
   ],
   "safety": [
-    "Exemple éditorial non validé : ne constitue pas un guide technique complet.",
-    "En cas de doute sur le support ou les réseaux cachés, demander l’avis d’un professionnel."
+    "Porte lunettes, protection auditive et masque adapté pendant les coupes.",
+    "Vérifie la compatibilité avant de poser sur un chauffage au sol ou dans une pièce humide.",
+    "Ne coince pas un parquet flottant sous des meubles de cuisine fixés au sol."
   ],
-  "status": "draft",
-  "updatedAt": "2026-09-07",
+  "status": "documented",
+  "updatedAt": "2026-09-08",
   "relatedCategories": [],
-  "journeys": ["renover-une-chambre", "amenager-des-combles"],
-  "topicPath": ["Parquet"]
+  "journeys": [
+    "renover-une-chambre",
+    "amenager-des-combles"
+  ],
+  "topicPath": [
+    "Parquet"
+  ],
+  "scope": "Parquet contrecollé clipsable en pose flottante dans une pièce sèche, support déjà préparé. Hors ragréage, pose collée, parquet massif et systèmes spéciaux.",
+  "estimatesNote": "Prévois environ une journée pour 10 m², hors préparation du support et acclimatation. Le budget inclut parquet, sous-couche, protections et finitions.",
+  "sources": [
+    {
+      "title": "Tarkett — Notice de pose flottante 2-lock",
+      "url": "https://media.tarkett-image.com/docs/Installation-Guide-WE-Floating-2lock-EN.pdf",
+      "note": "Conditions de support, humidité, jeux, sous-couche et assemblage ; les valeurs et gestes précis restent propres au parquet choisi.",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "title": "Barlinek — Notice de pose fournie avec le parquet",
+      "url": "https://media.adeo.com/media/3127044/media.pdf",
+      "note": "Notice fabricant : support, sous-couche, jeux, assemblage et finition. Les valeurs restent propres au produit.",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "title": "Leroy Merlin — Kit de pose : cales, cale de frappe et tire-lame",
+      "url": "https://www.leroymerlin.fr/produits/kit-de-pose-pour-parquet-et-stratifie-dexter-81974884.html",
+      "note": "Lien d’achat vérifié : offre directe de l’enseigne, sans affiliation ; disponibilité et vendeur à revérifier lors d’une future révision.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 51.11 P1-1",
+      "title": "Parquets flottants — Mise en œuvre",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-5111-p11/travaux-de-batiment-parquets-flottants-partie-11-cahier-des-clauses-techniq/fa200228/418687",
+      "scope": "Édition mai 2024 pour les parquets flottants. Les prescriptions détaillées du support et du parquet choisi sont à vérifier pour le chantier. Présentation de l’éditeur consultée, texte intégral non consulté.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "shoppingLinks": [
+    {
+      "material": "Kit de pose : cales, cale de frappe et tire-lame",
+      "retailer": "Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/kit-de-pose-pour-parquet-et-stratifie-dexter-81974884.html"
+    }
+  ],
+  "imageOrigin": "original"
 }

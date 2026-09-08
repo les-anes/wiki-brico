@@ -424,7 +424,7 @@ function TutorialPage({
         </div>
       )}
       <figure>
-        <img className="detail-image" src={t.image} alt={t.imageAlt} />
+        <img className={t.imageOrigin === "original" ? "detail-image detail-diagram" : "detail-image"} src={t.image} alt={t.imageAlt} />
       </figure>
       <div className="detail-stats">
         <span>

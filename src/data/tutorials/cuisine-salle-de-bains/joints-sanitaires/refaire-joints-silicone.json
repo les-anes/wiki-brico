@@ -1,54 +1,109 @@
 {
   "id": "refaire-joints-silicone",
-  "title": "Refaire les joints de sa salle de bain",
-  "description": "Retirer un joint usé et retrouver des raccords propres autour de sa baignoire.",
+  "title": "Refaire le joint silicone autour d’un lavabo",
+  "description": "Ton joint se décolle ou reste noir malgré le nettoyage ? Retire-le complètement, puis refais un cordon de silicone sanitaire sur un support propre et sec.",
   "category": "cuisine-salle-de-bains",
   "difficulty": "Débutant",
-  "durationMinutes": 90,
-  "cost": {
-    "min": 15,
-    "max": 30,
-    "currency": "EUR"
-  },
-  "image": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1000&q=85",
-  "imageAlt": "Salle de bain lumineuse",
-  "tools": ["Grattoir à joints", "Pistolet à cartouche", "Chiffon"],
+  "durationMinutes": 60,
+  "cost": null,
+  "image": "/images/tutoriels/refaire-joints-silicone.png",
+  "imageAlt": "Un pistolet à cartouche près d’un cordon de silicone blanc, dessiné sur fond ivoire.",
+  "tools": [
+    "Enlève-joint, grattoir plastique et cutter",
+    "Pistolet à cartouche",
+    "Lisseur de joint",
+    "Chiffons et éponge"
+  ],
   "materials": [
     {
-      "name": "Mastic sanitaire compatible",
-      "quantity": "1 cartouche"
+      "name": "Silicone sanitaire compatible avec le lavabo et le mur",
+      "quantity": "1 cartouche pour un petit joint périphérique"
+    },
+    {
+      "name": "Ruban de masquage",
+      "quantity": "Pour les deux bords du joint"
+    },
+    {
+      "name": "Nettoyant compatible avec les surfaces",
+      "quantity": "Pour retirer les résidus et dégraisser"
     }
   ],
   "steps": [
     {
-      "title": "Préparer son projet",
-      "description": "Examiner le support, mesurer la zone de travail et consulter les notices des produits choisis. Cet exemple présente la structure éditoriale ; les gestes techniques restent à documenter."
+      "title": "Retire l’ancien joint",
+      "description": "Décolle le cordon avec l’enlève-joint, puis retire les restes au grattoir plastique. Va doucement pour ne pas rayer le lavabo."
     },
     {
-      "title": "Réunir le matériel et protéger la zone",
-      "description": "Préparer les outils et matériaux listés. Protéger les surfaces voisines et prévoir les équipements de protection indiqués par les fabricants."
+      "title": "Nettoie et sèche",
+      "description": "Nettoie et dégraisse les deux surfaces, puis élimine les résidus du nettoyant comme indiqué sur son emballage. Laisse sécher complètement avant de continuer."
     },
     {
-      "title": "Réaliser et contrôler",
-      "description": "Cette étape est à compléter et à faire vérifier par une personne compétente avant publication. Respecter les conditions d’application et les temps de séchage des produits."
+      "title": "Délimite le cordon",
+      "description": "Pose du ruban de chaque côté en laissant la largeur nécessaire pour relier le lavabo au mur. Coupe l’embout de la cartouche à cette largeur."
+    },
+    {
+      "title": "Applique et lisse",
+      "description": "Avance régulièrement avec le pistolet pour déposer un cordon continu qui touche les deux surfaces. Passe aussitôt le lisseur pour faire adhérer le silicone et enlever le surplus."
+    },
+    {
+      "title": "Retire le ruban et attends",
+      "description": "Enlève le ruban avant que le silicone forme une peau. Attends le délai de remise en eau indiqué sur la cartouche, puis vérifie que le joint reste bien collé sur toute sa longueur."
     }
   ],
   "mistakes": [
-    "Commencer sans vérifier la nature et l’état du support.",
-    "Négliger les instructions et temps de séchage du fabricant."
+    "Recouvrir un vieux joint avec du silicone classique.",
+    "Appliquer le silicone sur une surface humide.",
+    "Mouiller le joint avant le délai de remise en service."
   ],
   "safety": [
-    "Exemple éditorial non validé : ne constitue pas un guide technique complet.",
-    "En cas de doute sur le support ou les réseaux cachés, demander l’avis d’un professionnel."
+    "Aère la pièce et porte les gants indiqués pour les produits utilisés.",
+    "Si le lavabo bouge ou si le mur est humide derrière le joint, corrige la cause avant de refaire le cordon."
   ],
-  "status": "draft",
-  "updatedAt": "2026-09-07",
+  "status": "documented",
+  "updatedAt": "2026-09-08",
   "relatedCategories": [
     {
       "category": "techniques",
-      "topicPath": ["Faire un joint"]
+      "topicPath": [
+        "Faire un joint"
+      ]
     }
   ],
-  "journeys": ["renover-une-salle-de-bains"],
-  "topicPath": ["Joints sanitaires"]
+  "journeys": [
+    "renover-une-salle-de-bains"
+  ],
+  "topicPath": [
+    "Joints sanitaires"
+  ],
+  "scope": "Remplacement complet du joint périphérique entre un lavabo stable et un mur sain. Ne remplace pas l’étanchéité sous carrelage ni la réparation d’une fuite cachée.",
+  "estimatesNote": "Compte environ 1 h de travail, hors séchage du support et du silicone. Une cartouche et les petits accessoires suffisent pour ce cas courant.",
+  "sources": [
+    {
+      "title": "Rubson — Poser un joint silicone de baignoire",
+      "url": "https://www.rubson.com/tutos-astuces/poser-installer/comment-poser-un-joint-silicone-de-baignoire.html",
+      "note": "Préparation des surfaces sanitaires et choix du mastic compatible, également pour lavabos.",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "title": "Rubson — Faire des joints de douche",
+      "url": "https://www.rubson.com/tutos-astuces/poser-installer/faire-des-joints-de-douche-Cest-facile-grace-a-ce-guide.html",
+      "note": "Retrait, masquage, cordon, lissage et délai propre au mastic ; le délai de 2 h du produit montré n’est pas généralisé.",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "title": "Brico Dépôt — Silicone sanitaire blanc — cartouche de 280 ml",
+      "url": "https://www.bricodepot.fr/p/5059340044507/joint-silicone-sanitaire-blanc-280-ml",
+      "note": "Lien d’achat vérifié : offre directe de l’enseigne, sans affiliation ; disponibilité et vendeur à revérifier lors d’une future révision.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "dtuReferences": [],
+  "shoppingLinks": [
+    {
+      "material": "Silicone sanitaire blanc — cartouche de 280 ml",
+      "retailer": "Brico Dépôt",
+      "url": "https://www.bricodepot.fr/p/5059340044507/joint-silicone-sanitaire-blanc-280-ml"
+    }
+  ],
+  "imageOrigin": "original"
 }
