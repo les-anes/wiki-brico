@@ -5,7 +5,7 @@
 Définir le fond et la forme de tous les tutoriels WikiBrico à partir de la fiche PEHD approuvée : une lecture simple pour un novice, des gestes concrets et une illustration dessinée. Cette référence s’applique à chaque création ou révision de tutoriel ; elle ne signifie pas que les anciennes fiches ont déjà été mises à niveau.
 
 Modèle éditorial : `src/data/tutorials/plomberie/arrivee-d-eau/pehd/plomberie-pehd.json`.
-Modèle visuel : `public/images/plomberie/tube-pehd-dessin.png`.
+Modèle visuel : `public/images/tutoriels/plomberie-pehd.png`.
 Ces fichiers illustrent le style attendu ; leurs particularités de plomberie ne sont pas des règles pour les autres métiers.
 
 ## Requirements
@@ -54,7 +54,7 @@ L’illustration principale SHALL reprendre l’esprit du dessin PEHD validé : 
 
 #### Scenario: Créer l’image d’un autre tutoriel
 - **WHEN** une illustration est produite pour une nouvelle fiche
-- **THEN** son sujet change mais son traitement dessiné reste cohérent avec `tube-pehd-dessin.png`, avec un fichier local et une origine correctement renseignée.
+- **THEN** son sujet change mais son traitement dessiné reste cohérent avec `plomberie-pehd.png`, avec un fichier local et une origine correctement renseignée.
 
 ### Requirement: Références DTU séparées de la recherche
 La rubrique visible « Références DTU » SHALL contenir uniquement les titres et liens de DTU pertinents vérifiés auprès de leur éditeur. Les notices fabricant et autres sources de recherche SHALL être conservées dans les métadonnées éditoriales, sans être affichées dans cette rubrique. La fiche SHALL ne pas inventer de DTU, prétendre avoir consulté un texte inaccessible ou laisser entendre qu’une référence valide l’ensemble du chantier.

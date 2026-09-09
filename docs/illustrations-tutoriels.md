@@ -1,6 +1,6 @@
 # Prompts des illustrations de tutoriels
 
-Production du 8 septembre 2026. Référence de style : `public/images/plomberie/tube-pehd-dessin.png`. Les treize dessins complètent le PEHD déjà approuvé. Ce document de travail n’est pas publié sur le site.
+Production du 8 septembre 2026. Référence de style : `public/images/tutoriels/plomberie-pehd.png`. Les treize dessins complètent le PEHD déjà approuvé. Ce document de travail n’est pas publié sur le site.
 
 ## reboucher-un-trou
 

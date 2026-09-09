@@ -74,7 +74,7 @@ Les 14 tutoriels actuels sont documentés et harmonisés avec le modèle commun,
 
 ## Images et déploiement
 
-Les 14 tutoriels utilisent des illustrations originales locales : le dessin PEHD approuvé dans `public/images/plomberie/tube-pehd-dessin.png` et les treize autres dans `public/images/tutoriels/`. Les prompts sont conservés dans `docs/illustrations-tutoriels.md`. Aucune légende ni crédit n’est affiché. Les images d’accueil utilisent encore Unsplash ; les polices utilisent Google Fonts.
+Les 14 tutoriels utilisent des illustrations originales locales, regroupées dans `public/images/tutoriels/` et nommées selon l’identifiant de la fiche (`<id>.png`). Les prompts sont conservés dans `docs/illustrations-tutoriels.md`. Aucune légende ni crédit n’est affiché. Les images d’accueil utilisent encore Unsplash ; les polices utilisent Google Fonts.
 
 Publier `dist/`. La navigation par fragment fonctionne sans réécriture serveur. Les fragments ne sont pas des pages SEO indépendantes : prévoir un pré-rendu et de vraies routes pour le référencement individuel. `SITE_URL=https://votre-domaine.fr npm run build` génère le sitemap de l’accueil ; sans cette variable, seul robots.txt est généré.
 
