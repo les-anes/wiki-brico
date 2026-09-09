@@ -21,6 +21,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { CategoryNavigation } from "@/components/category-navigation";
 import { CatalogPage } from "@/components/catalog-page";
+import { initializeAnalytics, trackPage } from "@/lib/analytics";
 import { tutorials } from "@/data";
 import { categories, navigationCategories, journeys } from "@/data/taxonomy";
 import { belongsToCategory, catalogHref, duration } from "@/lib/catalog";
@@ -75,6 +76,10 @@ export default function App() {
         ? "On s’y met ce week-end ? — WikiBrico"
         : "WikiBrico — Le savoir-faire se partage.";
   }, [selected, isCatalog]);
+  useEffect(() => {
+    initializeAnalytics();
+    trackPage(selected ? `tutoriel/${selected.id}` : isCatalog ? "tutoriels" : route.startsWith("tutoriel/") ? "tutoriel/introuvable" : "");
+  }, [selected, isCatalog, route]);
   function toggleSaved(id: string) {
     setSaved((current) => {
       const next = current.includes(id)
