@@ -107,6 +107,8 @@ Versionner `openspec/` et `.agents/skills/` avec le code. La validation OpenSpec
 
 ## Fiches simples et liens
 
+La [todo des prochains tutoriels](docs/tutos-a-implementer.md) centralise les sujets à créer, leurs priorités et leur avancement. La mettre à jour à chaque création de fiche ou révision des priorités ; elle contient aussi les sujets déjà couverts pour éviter les doublons.
+
 Les fiches expliquent les acronymes dès leur première utilisation et proposent cinq ou six étapes courtes, trois erreurs fréquentes et des précautions propres au chantier. Le périmètre `scope` et les `sources` de recherche restent des données éditoriales, sans affichage dans la page.
 
 - `dtuReferences` : collection optionnelle de `{ reference, title, url, scope, accessedAt }`. Seuls les DTU vérifiés sont affichés dans « Références DTU », avec un lien vers leur éditeur (AFNOR ou CSTB). `scope` consigne la portée et les limites de la consultation ; un résumé ne vaut pas lecture du texte intégral.
