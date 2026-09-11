@@ -3,9 +3,7 @@
   "title": "Dimensionner ton tableau électrique selon tes besoins",
   "description": "Tu prépares une rénovation ou l’ajout de nouveaux appareils ? Fais la liste de tes circuits, choisis leurs protections et prévois la place nécessaire pour établir ton plan de tableau.",
   "category": "electricite",
-  "topicPath": [
-    "Tableau électrique"
-  ],
+  "topicPath": ["Tableau électrique"],
   "difficulty": "Intermédiaire",
   "durationMinutes": 120,
   "cost": null,

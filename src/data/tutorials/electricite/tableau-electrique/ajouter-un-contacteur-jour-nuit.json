@@ -3,9 +3,7 @@
   "title": "Ajouter un contacteur jour/nuit pour ton ballon d’eau chaude",
   "description": "Le contacteur jour/nuit alimente ton ballon pendant les heures creuses envoyées par le compteur. Ce montage concerne un ballon électrique classique compatible avec cette coupure ; l’intervention dans le tableau demande de savoir travailler hors tension.",
   "category": "electricite",
-  "topicPath": [
-    "Tableau électrique"
-  ],
+  "topicPath": ["Tableau électrique"],
   "difficulty": "Avancé",
   "durationMinutes": 120,
   "cost": null,
@@ -131,9 +129,7 @@
   "relatedCategories": [
     {
       "category": "plomberie",
-      "topicPath": [
-        "Chauffe-eau"
-      ]
+      "topicPath": ["Chauffe-eau"]
     }
   ]
 }
