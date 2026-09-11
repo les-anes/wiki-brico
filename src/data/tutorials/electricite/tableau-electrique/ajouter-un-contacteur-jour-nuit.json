@@ -1,0 +1,139 @@
+{
+  "id": "ajouter-un-contacteur-jour-nuit",
+  "title": "Ajouter un contacteur jour/nuit pour ton ballon d’eau chaude",
+  "description": "Le contacteur jour/nuit alimente ton ballon pendant les heures creuses envoyées par le compteur. Ce montage concerne un ballon électrique classique compatible avec cette coupure ; l’intervention dans le tableau demande de savoir travailler hors tension.",
+  "category": "electricite",
+  "topicPath": [
+    "Tableau électrique"
+  ],
+  "difficulty": "Avancé",
+  "durationMinutes": 120,
+  "cost": null,
+  "image": "/images/tutoriels/ajouter-un-contacteur-jour-nuit.png",
+  "imageAlt": "Ballon d’eau chaude blanc accompagné d’un contacteur modulaire, dessinés au crayon et à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Ajout d’un contacteur électromécanique bipolaire à bobine 230 V sur un circuit dédié existant, vérifié, de chauffe-eau résistif monophasé compatible. Exemple avec circuit puissance 20 A / cuivre 2,5 mm² et commande 2 A / cuivre 1,5 mm² sous un même différentiel 30 mA, contact sec heures creuses disponible. Hors appareils à alimentation permanente, contacteurs connectés, triphasé et travaux dans les parties réservées au distributeur.",
+  "estimatesNote": "Prévois environ 2 h si le circuit du ballon et la liaison de commande sont déjà prêts, puis un contrôle au prochain passage en heures creuses. Le budget reste à préciser pour le contacteur, sa protection et les fils, hors création de ligne et outillage.",
+  "tools": [
+    "Vérificateur d’absence de tension bipolaire et dispositif de contrôle adaptés",
+    "Tournevis isolés et outil de serrage au couple prescrit",
+    "Pince à dénuder et pince coupante isolées",
+    "Dispositif de condamnation de la coupure et signalisation",
+    "Équipements de protection adaptés à la consignation",
+    "Contrôleur d’installation adapté aux mesures de continuité de terre et aux essais des protections, avec sa notice"
+  ],
+  "materials": [
+    {
+      "name": "Contacteur jour/nuit bipolaire à bobine 230 V",
+      "quantity": "1, adapté à la charge résistive du ballon ; exemple 25 A"
+    },
+    {
+      "name": "Disjoncteur de commande 2 A",
+      "quantity": "1, compatible avec le tableau"
+    },
+    {
+      "name": "Circuit dédié au ballon, protégé à 20 A et sous différentiel 30 mA",
+      "quantity": "1 circuit existant à vérifier, conducteurs cuivre 2,5 mm² dans cet exemple"
+    },
+    {
+      "name": "Conducteurs cuivre rigides pour la puissance",
+      "quantity": "2,5 mm², longueurs mesurées ; bleu pour le neutre"
+    },
+    {
+      "name": "Conducteurs cuivre rigides pour la commande",
+      "quantity": "1,5 mm², longueurs mesurées ; bleu pour le neutre, autre couleur hors vert/jaune pour la phase et le retour"
+    },
+    {
+      "name": "Alimentation du disjoncteur 2 A compatible avec le tableau",
+      "quantity": "1 jeu de liaisons ou peigne validé par le fabricant, avec protections d’extrémité"
+    },
+    {
+      "name": "Repères de circuits et obturateurs",
+      "quantity": "Pour identifier les ajouts et fermer les emplacements libres"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie le ballon et le signal",
+      "description": "Lis la notice du ballon : certains modèles plats, connectés ou thermodynamiques doivent rester alimentés en permanence et ne conviennent pas à ce montage. Vérifie ton option heures pleines/heures creuses et la disponibilité de la liaison au contact sec du compteur, un interrupteur de commande qui ne fournit pas lui-même de tension. Ses horaires peuvent inclure la journée : fie-toi au signal du compteur, pas à une plage nocturne supposée."
+    },
+    {
+      "title": "Prépare les deux circuits",
+      "description": "Vérifie la terre du ballon, son circuit dédié et la place disponible pour le contacteur et le disjoncteur 2 A. Dans cet exemple, puissance et commande proviennent du même interrupteur différentiel 30 mA, avec leurs neutres respectifs correctement associés. Confirme avec les notices les calibres, sections, largeurs et bornes ; ce tutoriel suppose un circuit dédié et une liaison compteur déjà identifiés et utilisables."
+    },
+    {
+      "title": "Consigne avant d’ouvrir",
+      "description": "Identifie et coupe toutes les alimentations de la zone, y compris celle de commande, puis condamne la coupure pour empêcher un réenclenchement. Vérifie l’absence de tension sur tous les conducteurs concernés avec un vérificateur adapté, contrôlé avant et après usage selon sa notice. Si tu ne maîtrises pas cette mise en sécurité ou si des parties voisines restent accessibles sous tension, ne commence pas le raccordement : apprends d’abord la procédure de consignation et supprime toute exposition aux parties sous tension."
+    },
+    {
+      "title": "Pose et raccorde la puissance",
+      "description": "Hors tension, fixe le contacteur et le disjoncteur de commande sur le rail du tableau. Relie phase et neutre sortant du disjoncteur du ballon aux deux entrées de puissance du contacteur, puis ses deux sorties au ballon selon le schéma de sa notice. La terre vert/jaune reste reliée directement au ballon, sans passer par le contacteur."
+    },
+    {
+      "title": "Raccorde la commande",
+      "description": "Alimente le disjoncteur 2 A depuis le même différentiel avec les liaisons prévues pour le tableau. Pour une bobine 230 V classique, relie sa phase protégée au contact sec du compteur, puis le retour de ce contact à A1 et le neutre du 2 A à A2, après confirmation par la notice. Sur Linky, utilise uniquement la liaison prévue pour C1/C2, jamais les bornes de téléinformation I1/I2 ; une liaison absente ou non repérée sort du cas décrit, donc arrête ce montage à cette étape sans toucher aux parties plombées."
+    },
+    {
+      "title": "Contrôle et referme",
+      "description": "Respecte les longueurs de dénudage et couples de serrage de chaque borne, sans cuivre nu apparent ni isolant pris sous le serrage. Compare les raccordements au schéma, vérifie le maintien des fils et effectue les mesures de continuité de terre et les essais des protections avec le contrôleur adapté, en suivant sa notice et les conditions de sécurité propres à chaque essai : si tu ne maîtrises pas ces mesures ou leurs critères, ne mets pas le montage en service. Repère les deux circuits et remets tous les capots et obturateurs avant de rétablir le courant pour l’usage normal."
+    },
+    {
+      "title": "Essaie puis laisse sur Auto",
+      "description": "Ballon rempli d’eau, rétablis l’alimentation et essaie la marche forcée selon la notice : la chauffe doit pouvoir démarrer si le thermostat la demande. Replace sur Auto et contrôle le fonctionnement au prochain signal heures creuses ; un clic seul ne prouve pas que le ballon chauffe. En cas de déclenchement, d’odeur ou d’échauffement anormal, coupe, consigne à nouveau et compare le câblage aux notices ; ne remets pas en service tant que la cause reste inconnue et ne shunte pas le contact du compteur."
+    }
+  ],
+  "mistakes": [
+    "Couper l’alimentation d’un ballon dont l’électronique exige une alimentation permanente.",
+    "Prendre la phase et le neutre sous deux différentiels différents.",
+    "Oublier la protection 2 A de la commande ou confondre commande et puissance."
+  ],
+  "safety": [
+    "Aucun raccordement sous tension : un tournevis testeur ou un détecteur sans contact ne remplace pas un vérificateur d’absence de tension.",
+    "La position arrêt du contacteur ne consigne pas le tableau et ne garantit pas l’absence de tension sur sa bobine.",
+    "Ne retire aucun plomb du compteur ou du disjoncteur de branchement ; ne neutralise ni le thermostat ni la sécurité thermique du ballon."
+  ],
+  "sources": [
+    {
+      "title": "Legrand — Notice du contacteur bipolaire 25 A, référence 927 01",
+      "url": "https://assets.legrand.com/pim/NP-FT-GT/092701_LE02247AC.pdf",
+      "note": "Notice historique avec schéma : puissance 20 A / 2,5 mm², commande 2 A / 1,5 mm², bobine A1/A2, trois positions. Exemple de principe uniquement : vérifier la notice du modèle acheté.",
+      "accessedAt": "2026-09-10"
+    },
+    {
+      "title": "Atlantic — Faire fonctionner un chauffe-eau en heures creuses",
+      "url": "https://www.atlantic.fr/aide/chauffe-eau-electrique/fonctionnement-utilisation/comment-faire-fonctionner-un-chauffe-eau-pendant-les-heures-creuses",
+      "note": "Compatibilité selon modèle ; appareils imposant une alimentation permanente exclus du montage.",
+      "accessedAt": "2026-09-10"
+    },
+    {
+      "title": "Enedis — Réforme des heures creuses",
+      "url": "https://www.enedis.fr/sites/default/files/documents/pdf/cp-enedis-met-en-oeuvre-la-reforme-des-heures-creuses-pour-accompagner-les-nouveaux-usages-lies-a-la-transition-energetique.pdf",
+      "note": "Évolution des créneaux et asservissement automatique par le contact sec Linky.",
+      "accessedAt": "2026-09-10"
+    },
+    {
+      "title": "INRS — Prévention du risque électrique",
+      "url": "https://www.inrs.fr/risques/electriques/prevention-risque-electrique",
+      "note": "Séparation des sources, condamnation, identification et vérification d’absence de tension ; principes de sécurité, pas notice de montage domestique.",
+      "accessedAt": "2026-09-10"
+    },
+    {
+      "title": "Legrand — NF C 15-100, guide de la révision 2024",
+      "url": "https://www.legrand.fr/pro/normes-et-reglementations/norme-nf-c-15-100/norme-nf-c-15-100-suivez-le-guide",
+      "note": "Protection des circuits et des personnes ; synthèse fabricant, texte normatif intégral non consulté.",
+      "accessedAt": "2026-09-10"
+    }
+  ],
+  "shoppingLinks": [],
+  "dtuReferences": [],
+  "status": "documented",
+  "updatedAt": "2026-09-10",
+  "relatedCategories": [
+    {
+      "category": "plomberie",
+      "topicPath": [
+        "Chauffe-eau"
+      ]
+    }
+  ]
+}

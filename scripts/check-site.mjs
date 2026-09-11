@@ -64,15 +64,15 @@ try {
   // --- Contenu rendu par route ---
   assert.equal(categories.filter((c) => c.kind === "trade").length, 12);
   assert.equal(categories.filter((c) => c.kind === "transversal").length, 2);
-  assert.equal(tutorials.length, 14);
-  assert.equal(new Set(tutorials.map((t) => t.id)).size, 14);
+  assert.equal(tutorials.length, 18);
+  assert.equal(new Set(tutorials.map((t) => t.id)).size, 18);
   const home = render("/");
   assert(home.includes("Vos deux mains."));
   assert.equal(countCards(home), 0, "Catalogue séparé de l’accueil");
   assert(!home.includes("On s’y met ce week-end ?"));
   assert(home.includes("/favicon.svg"));
   assert(!home.includes("Tutoriel introuvable"));
-  assert.equal(countCards(render("/tutoriels/")), 14);
+  assert.equal(countCards(render("/tutoriels/")), 18);
   assert.equal(
     countCards(
       render(
@@ -104,7 +104,7 @@ try {
     1,
   );
   assert.equal(countCards(render(catalogHref({ savedOnly: true }))), 0);
-  assert.equal(countCards(render(catalogHref({ category: "electricite" }))), 0);
+  assert.equal(countCards(render(catalogHref({ category: "electricite" }))), 4);
   assert.equal(
     countCards(render(catalogHref({ query: "zzzintrouvablezzz" }))),
     0,
@@ -160,8 +160,10 @@ try {
       !tutorial.imageCredit,
       `${tutorial.id}: pas de crédit photographique obsolète`,
     );
+    // Le contacteur conserve une étape supplémentaire pour la mise en sécurité.
+    const maxSteps = tutorial.id === "ajouter-un-contacteur-jour-nuit" ? 7 : 6;
     assert(
-      tutorial.steps.length >= 5 && tutorial.steps.length <= 6,
+      tutorial.steps.length >= 5 && tutorial.steps.length <= maxSteps,
       `${tutorial.id}: étapes courtes`,
     );
     assert.equal(
@@ -404,7 +406,7 @@ try {
   }
 
   console.log(
-    "Accueil, catalogue, 14 fiches, 16 URLs, sitemap, robots, fil d’Ariane, 404, shim et hydratation : contrôles réussis.",
+    "Accueil, catalogue, 18 fiches, 20 URLs, sitemap, robots, fil d’Ariane, 404, shim et hydratation : contrôles réussis.",
   );
 } finally {
   await server.close();

@@ -17,6 +17,21 @@ Chaque tutoriel SHALL employer un français courant, le tutoiement et des phrase
 - **WHEN** un lecteur découvre un matériau ou une technique
 - **THEN** il comprend ce qu’il va réaliser et le sens des termes essentiels sans connaissance préalable ; par exemple « PEHD » est développé en « polyéthylène haute densité ».
 
+### Requirement: Permettre une réalisation autonome
+Chaque tutoriel SHALL guider le lecteur pour préparer, réaliser et contrôler lui-même le travail décrit. Le contenu destiné au lecteur SHALL ne pas mentionner le recours à un professionnel de la discipline, ni lui déléguer le choix, la réalisation ou la validation du chantier. Cette règle SHALL aussi exclure les renvois équivalents à un « spécialiste », une « personne compétente » ou une validation extérieure implicite.
+
+#### Scenario: Remplacer une délégation par un contrôle
+- **WHEN** une étape prévoit de « faire contrôler par un électricien » ou de « faire valider le montage »
+- **THEN** elle indique les points que le lecteur doit vérifier, les outils ou documents nécessaires et les conditions permettant de poursuivre, sans transférer cette tâche à un tiers.
+
+#### Scenario: Préserver les conditions de sécurité
+- **WHEN** une réalisation exige un prérequis, une mesure ou une mise en sécurité
+- **THEN** la fiche explique cette exigence et indique de ne pas poursuivre tant qu’elle n’est pas satisfaite ; elle ne supprime pas le contrôle et ne présente pas un simple examen visuel comme suffisant.
+
+#### Scenario: Délimiter un cas non couvert
+- **WHEN** une situation dépasse le cas traité ou nécessite un apprentissage supplémentaire
+- **THEN** la fiche précise la limite et les connaissances, documents ou vérifications manquants, avec un lien vers un tutoriel complémentaire s’il existe, sans inventer de lien ni remplacer l’explication par un renvoi à un professionnel.
+
 ### Requirement: Privilégier les gestes essentiels
 Le contenu SHALL se concentrer sur les actions nécessaires pour réussir le cas courant : préparation, réalisation, contrôle du résultat. Il SHALL écarter les longs exposés théoriques, catalogues de variantes, répétitions et précisions de marque secondaires. Une information qui modifie réellement le choix, le geste ou la sécurité SHALL rester présente, formulée simplement.
 
@@ -43,7 +58,7 @@ Les listes SHALL nommer les outils et matériaux nécessaires avec des quantité
 - **THEN** il sait quoi acheter et ce que le prix annoncé couvre, sans confondre un prix au mètre avec le coût total des travaux.
 
 ### Requirement: Erreurs et précautions courtes
-La fiche SHALL viser trois erreurs fréquentes et une courte liste de précautions concrètes propres au travail décrit. Elle SHALL éviter les avertissements génériques et les doublons tout en conservant les mesures indispensables et les situations nécessitant une intervention compétente. Un ton accessible SHALL ne pas faire passer une opération complexe pour un geste anodin.
+La fiche SHALL viser trois erreurs fréquentes et une courte liste de précautions concrètes propres au travail décrit. Elle SHALL éviter les avertissements génériques et les doublons tout en conservant les mesures indispensables, les prérequis et les conditions d’arrêt. Un ton accessible SHALL ne pas faire passer une opération complexe pour un geste anodin.
 
 #### Scenario: Vérifier son travail
 - **WHEN** une erreur compromet le résultat ou sa sécurité

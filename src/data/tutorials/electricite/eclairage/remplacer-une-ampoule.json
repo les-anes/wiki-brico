@@ -1,0 +1,93 @@
+{
+  "id": "remplacer-une-ampoule",
+  "title": "Remplacer une ampoule à vis",
+  "description": "Ton ampoule ne s’allume plus ? Voici comment remplacer une ampoule à vis intacte sur un luminaire en bon état, sans démonter sa douille.",
+  "category": "electricite",
+  "topicPath": [
+    "Éclairage"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 10,
+  "cost": null,
+  "image": "/images/tutoriels/remplacer-une-ampoule.png",
+  "imageAlt": "Ampoule blanche à culot vissé argenté, dessinée au crayon et à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Remplacement domestique d’une ampoule E14 ou E27 intacte, dans une pièce sèche, sans intervention sur les contacts ni le câblage. Hors ampoule cassée, source intégrée et réparation de luminaire.",
+  "estimatesNote": "Prévois 10 minutes, hors refroidissement et achat. Budget à préciser pour une ampoule seule ; escabeau et éventuelle réparation en plus.",
+  "tools": [
+    "Escabeau stable adapté à la hauteur",
+    "Lampe à piles"
+  ],
+  "materials": [
+    {
+      "name": "Ampoule à vis compatible avec le luminaire",
+      "quantity": "1, même culot et tension adaptés"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Coupe l’alimentation",
+      "description": "Pour une lampe mobile, débranche la fiche et garde-la à portée de vue ; pour un luminaire fixe, coupe le disjoncteur général et empêche sa remise en marche pendant le remplacement. Ne te contente pas de l’interrupteur mural et attends que l’ampoule soit froide."
+    },
+    {
+      "title": "Installe-toi à bonne hauteur",
+      "description": "Pose l’escabeau sur un sol plat et sec, puis éclaire la zone avec la lampe à piles. Si la douille est fendue, noircie ou mal fixée, laisse le courant coupé et fais réparer le luminaire."
+    },
+    {
+      "title": "Dévisse l’ampoule",
+      "description": "Tiens doucement le corps de l’ampoule froide et tourne dans le sens inverse des aiguilles d’une montre, sans forcer. Si elle résiste ou se casse, arrête : ne tente pas d’extraire le culot avec une pince et ne touche pas les contacts de la douille."
+    },
+    {
+      "title": "Choisis le bon remplacement",
+      "description": "Reprends le même culot, E14 ou E27, et la tension indiquée pour le luminaire. Respecte sa puissance maximale avec les watts réellement consommés, pas l’équivalence annoncée ; vérifie aussi les dimensions et, s’il y a un variateur, la compatibilité de l’ampoule avec celui-ci."
+    },
+    {
+      "title": "Visse puis essaie",
+      "description": "Visse l’ampoule neuve à la main jusqu’au contact, sans serrer fort, puis redescends avant de rétablir l’alimentation. Si elle clignote, sent le brûlé ou ne fonctionne toujours pas, coupe à nouveau et fais rechercher la panne."
+    },
+    {
+      "title": "Trie l’ancienne ampoule",
+      "description": "Dépose les ampoules à diodes électroluminescentes (LED) et les fluocompactes dans un bac de collecte dédié en magasin ou en déchetterie. Ne les mets pas dans le conteneur à verre ; les ampoules à incandescence et halogènes suivent les consignes locales des ordures ménagères."
+    }
+  ],
+  "mistakes": [
+    "Changer l’ampoule en coupant seulement l’interrupteur mural.",
+    "Forcer sur une ampoule bloquée ou serrer trop fort la nouvelle.",
+    "Confondre puissance réelle et équivalence lors du choix."
+  ],
+  "safety": [
+    "Travaille mains sèches, sans toucher l’intérieur de la douille.",
+    "N’interviens pas sur une ampoule cassée ou une douille abîmée : garde l’alimentation coupée et demande de l’aide compétente.",
+    "Si plusieurs sources alimentent le logement et que tu ne sais pas les isoler, fais intervenir un électricien."
+  ],
+  "sources": [
+    {
+      "title": "Promotelec — Étude sécurité électrique 2024",
+      "url": "https://www.promotelec.com/app/uploads/2024/11/Rapport-Promotelec_etude-Securite-Electrique_sept-2024-.pdf",
+      "note": "Rappel du geste de coupure au tableau pour remplacer une ampoule ; enquête, pas notice de montage.",
+      "accessedAt": "2026-09-10"
+    },
+    {
+      "title": "ecosystem — Recycler les ampoules",
+      "url": "https://www.ecosystem.eco/donner-recycler/equipement/ampoules",
+      "note": "Collecte séparée des LED et fluocompactes portant la poubelle barrée.",
+      "accessedAt": "2026-09-10"
+    },
+    {
+      "title": "Philips — Choisir une ampoule",
+      "url": "https://www.lighting.philips.fr/consumer/choose-a-bulb",
+      "note": "Choix du culot adapté au luminaire.",
+      "accessedAt": "2026-09-10"
+    },
+    {
+      "title": "Philips — LED à intensité variable",
+      "url": "https://www.lighting.philips.fr/consumer/led-lights/dimmable-led",
+      "note": "Compatibilité entre ampoules et variateurs.",
+      "accessedAt": "2026-09-10"
+    }
+  ],
+  "shoppingLinks": [],
+  "dtuReferences": [],
+  "status": "documented",
+  "updatedAt": "2026-09-10"
+}

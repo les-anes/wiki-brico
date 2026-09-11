@@ -106,3 +106,41 @@ Fichier : `public/images/tutoriels/per-raccord-a-sertir.png`
 Use case: stylized-concept. Create an original editorial illustration for a French DIY tutorial. Use attached image ONLY as style reference, replace its subject completely. Subject: A short red PEX pipe inserted in a brass plumbing fitting with a silver metal crimp sleeve, isolated object vignette. Loose imperfect charcoal contours, flat gouache shapes, coarse dry-brush texture, simplified expressive forms, generous ivory paper background. Landscape composition, entire subject visible with comfortable margins. No realism, smooth 3D rendering, text, numbers, arrows, labels, logos or watermark. Use natural subject colors, not the blue pipe colors of the reference.
 ```
 
+
+## Électricité — 10 septembre 2026
+
+Trois illustrations originales produites avec l’outil intégré imagegen, puis copiées dans le projet. Contrôle visuel des trois images effectué ; couvertures illustratives, pas schémas de câblage.
+
+### remplacer-une-ampoule
+
+Fichier : `public/images/tutoriels/remplacer-une-ampoule.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape. Loose imperfect charcoal contours, flat gouache, coarse dry brush texture on warm ivory paper, simplified recognizable object centered with generous margins. No text, numbers, labels, arrows, logos, watermark or photorealism. Subject: One white LED light bulb with a silver E27 screw base, lying diagonally, isolated.
+```
+
+### brancher-un-luminaire-dcl
+
+Fichier : `public/images/tutoriels/brancher-un-luminaire-dcl.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape. Loose imperfect charcoal contours, flat gouache, coarse dry brush texture on warm ivory paper, simplified recognizable object centered with generous margins. No text, numbers, labels, arrows, logos, watermark or photorealism. Subject: A simple muted ochre pendant lampshade with white cord and small white molded DCL plug, isolated, no exposed wires.
+```
+
+### dimensionner-son-tableau-electrique
+
+Fichier : `public/images/tutoriels/dimensionner-son-tableau-electrique.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape. Loose imperfect charcoal contours, flat gouache, coarse dry brush texture on warm ivory paper, simplified recognizable object centered with generous margins. No text, numbers, labels, arrows, logos, watermark or photorealism. Subject: Front view of a small closed domestic electrical distribution panel, ivory casing with a row of grey switch toggles and one wider residual-current device with a distinct small blue test button. All protective covers in place, no wires, no hand.
+```
+
+L’illustration du tableau est réaffectée au tutoriel de dimensionnement après retrait de la fiche de test du différentiel.
+
+### ajouter-un-contacteur-jour-nuit
+
+Fichier : `public/images/tutoriels/ajouter-un-contacteur-jour-nuit.png`. Génération avec l’outil intégré imagegen le 10 septembre 2026. Illustration contrôlée visuellement, sans valeur de schéma de câblage.
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape. Loose imperfect charcoal contours, flat gouache, coarse dry brush texture on warm ivory paper, simplified recognizable objects centered with generous margins. Subject: a white cylindrical domestic electric hot water tank, with a small separate ivory modular day-night contactor and grey selector lever in foreground. No wiring diagram, no exposed wires, no text, numbers, labels, arrows, logos, watermark or photorealism. Natural white and grey object colors, subtle warm shadows.
+```

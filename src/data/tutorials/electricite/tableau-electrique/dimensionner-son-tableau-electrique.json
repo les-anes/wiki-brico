@@ -1,0 +1,104 @@
+{
+  "id": "dimensionner-son-tableau-electrique",
+  "title": "Dimensionner ton tableau électrique selon tes besoins",
+  "description": "Tu prépares une rénovation ou l’ajout de nouveaux appareils ? Fais la liste de tes circuits, choisis leurs protections et prévois la place nécessaire pour établir ton plan de tableau.",
+  "category": "electricite",
+  "topicPath": [
+    "Tableau électrique"
+  ],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 120,
+  "cost": null,
+  "image": "/images/tutoriels/dimensionner-son-tableau-electrique.png",
+  "imageAlt": "Tableau électrique avec protections en façade, dessiné au crayon et à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Préparation sur papier d’un tableau principal de logement monophasé 230 V en France, sans production électrique locale. Ne couvre ni le câblage, ni le triphasé, ni le dimensionnement d’une borne de recharge ou d’une installation photovoltaïque.",
+  "estimatesNote": "Prévois environ 2 h pour l’inventaire et le premier plan. Chiffre le tableau équipé à partir de ta liste de matériel, en séparant le câblage et les travaux sur les lignes.",
+  "tools": [
+    "Crayon et calculatrice",
+    "Mètre pour relever la place disponible sans ouvrir le tableau"
+  ],
+  "materials": [
+    {
+      "name": "Plan du logement et feuille de repérage",
+      "quantity": "1 jeu, avec une ligne par circuit"
+    },
+    {
+      "name": "Notices des appareils et schéma électrique existant",
+      "quantity": "1 dossier à compléter avant les achats"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Liste tes usages",
+      "description": "Sur ton plan, relève les prises, les points lumineux et les appareils fixes, avec leur puissance et les ajouts prévus. Note séparément ce qui peut fonctionner en même temps : cela aidera à choisir l’abonnement, mais additionner les watts ne suffit pas à choisir les protections."
+    },
+    {
+      "title": "Découpe en circuits",
+      "description": "Prévois un circuit réservé à chaque gros appareil qui le demande, comme les plaques, le four, le lave-linge et le ballon. Pour les prises courantes hors cuisine, compte au maximum 8 prises sur des conducteurs de 1,5 mm² protégés à 16 A, ou 12 sur du 2,5 mm² protégé à 20 A. Répartis l’éclairage sur au moins deux circuits, sauf studio ou T1, avec 8 points maximum par circuit."
+    },
+    {
+      "title": "Associe câbles et disjoncteurs",
+      "description": "Le disjoncteur protège les fils : note leur section, leur longueur et leur mode de pose avant de fixer son calibre, c’est-à-dire son intensité nominale en ampères. Comme repères pour des circuits cuivre domestiques courants, l’éclairage se câble en 1,5 mm² avec 16 A maximum et les plaques monophasées en 6 mm² avec 32 A maximum. Vérifie les sections et protections dans les tableaux de dimensionnement applicables à ton trajet et dans les notices ; ne monte jamais le calibre pour masquer une surcharge."
+    },
+    {
+      "title": "Répartis les protections différentielles",
+      "description": "Prévois au moins deux interrupteurs différentiels de sensibilité 30 milliampères, qui protègent les personnes, avec au maximum huit circuits derrière chacun. Répartis prises et éclairage entre eux ; prévois au moins un type A, notamment pour les plaques et le lave-linge, et choisis les types particuliers prescrits pour tes appareils dans leurs notices et les règles applicables. Pour leur calibre en ampères, tu peux utiliser la règle de l’amont : sans autre source électrique, un disjoncteur de branchement de calibre maximal 60 A conduit à choisir au moins 63 A, indépendamment de l’abonnement souscrit."
+    },
+    {
+      "title": "Compte les emplacements",
+      "description": "Additionne la largeur en modules de chaque protection et commande d’après leurs fiches, y compris le contacteur du ballon et son disjoncteur de commande. Pour une maison individuelle, garde au moins 20 % de la capacité totale libre : avec 30 modules occupés, un coffret de 39 en laisse 9, soit environ 23 %. Dessine chaque rangée pour vérifier que tout tient, sans confondre nombre de modules et nombre de circuits."
+    },
+    {
+      "title": "Vérifie ton plan avant les achats",
+      "description": "Reprends chaque ligne de ton inventaire : usage, section, calibre, type de différentiel et place occupée doivent correspondre au plan et aux notices. Note aussi les points à vérifier pour l’alimentation du tableau, la terre et le besoin de parafoudre : ce guide de préparation ne couvre pas leur dimensionnement ni leurs mesures. Ne commande pas les éléments concernés tant qu’un de ces points reste inconnu ; complète ton dossier avec les règles applicables au chantier, puis chiffre séparément le tableau et les travaux sur les lignes."
+    }
+  ],
+  "mistakes": [
+    "Choisir le tableau uniquement d’après la surface du logement.",
+    "Confondre la sensibilité de 30 mA avec le calibre de 40 ou 63 A.",
+    "Oublier les commandes et les emplacements libres dans le comptage."
+  ],
+  "safety": [
+    "Fais tes relevés depuis la façade et les documents : n’ouvre pas un tableau sous tension.",
+    "Si une section ou un circuit est inconnu, marque-le « à identifier » sur ton plan et ne choisis pas sa protection au hasard ; un relevé de façade ne vérifie pas l’état des câbles.",
+    "Triphasé, panneaux solaires, batterie ou recharge de voiture demandent une étude adaptée : ne transpose pas cet exemple."
+  ],
+  "sources": [
+    {
+      "title": "Legrand — Choisir le calibre d’un interrupteur différentiel",
+      "url": "https://www.legrand.fr/questions-frequentes/comment-choisir-le-calibre-dun-interrupteur-differentiel",
+      "note": "Règle de l’amont et limite de huit circuits ; contenu indexé consulté, accès direct refusé (403). Exemple limité à une installation sans générateur.",
+      "accessedAt": "2026-09-10"
+    },
+    {
+      "title": "Legrand — NF C 15-100, guide de la révision 2024",
+      "url": "https://www.legrand.fr/pro/normes-et-reglementations/norme-nf-c-15-100/norme-nf-c-15-100-suivez-le-guide",
+      "note": "Synthèse fabricant : sections et protections usuelles, éclairage, types différentiels et sources additionnelles. Texte normatif intégral non consulté ; la norme n’est pas un DTU.",
+      "accessedAt": "2026-09-10"
+    },
+    {
+      "title": "Legrand — Choisir le disjoncteur d’un circuit",
+      "url": "https://www.legrand.fr/questions-frequentes/quel-disjoncteur-choisir-pour-proteger-votre-installation-electrique",
+      "note": "Limites des circuits de prises courantes et association section/calibre.",
+      "accessedAt": "2026-09-10"
+    },
+    {
+      "title": "Legrand — Infographie de protection du logement",
+      "url": "https://www.legrand.fr/sites/default/files/pro_actu_legrand_nfc-15-100_infographie.pdf",
+      "note": "Minimum de deux différentiels, type A et répartition prises/éclairage ; document historique recoupé avec le guide de la révision 2024.",
+      "accessedAt": "2026-09-10"
+    },
+    {
+      "title": "Schneider Electric — Tableau électrique connecté",
+      "url": "https://www.se.com/fr/fr/work/products/product-launch/tableau-intelligent/",
+      "note": "Comptage et réserve de 20 % des modules ; exemple de coffret calculé pour une maison individuelle.",
+      "accessedAt": "2026-09-10"
+    }
+  ],
+  "shoppingLinks": [],
+  "dtuReferences": [],
+  "status": "documented",
+  "updatedAt": "2026-09-10",
+  "relatedCategories": []
+}

@@ -14,6 +14,7 @@ context: |
   Préserver les identifiants, liens et favoris lors des reclassements.
   relatedCategories et journeys offrent plusieurs chemins sans dupliquer les JSON.
   Référence commune obligatoire pour créer ou réviser une fiche : openspec/specs/page-tutoriel/spec.md.
+  Objectif DIY : guider la réalisation et les contrôles autonomes, sans renvoi à un professionnel de la discipline ; conserver les prérequis de sécurité et les conditions d’arrêt.
   Les contenus documentés conservent un périmètre, des sources de recherche et une origine d’image.
   Une synthèse documentée ne constitue pas une validation professionnelle.
   Vérifications disponibles : npm run validate:data, npm run check:site, npm run build.

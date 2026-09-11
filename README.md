@@ -71,13 +71,13 @@ Dupliquer un JSON existant dans le dossier voulu. Champs : `id`, `title`, `descr
 - `documented` : synthèse de sources consultées, sans validation professionnelle du chantier. Exige `scope`, `estimatesNote`, `sources` et une origine d’image (`imageCredit` ou `imageOrigin: "original"`). Le coût peut rester `null`.
 - `published` : état éditorial avec niveau, durée et coût renseignés ; ce statut ne constitue pas une certification technique.
 
-Les 14 tutoriels actuels sont documentés et harmonisés avec le modèle commun, y compris les six anciens brouillons. Les durées sont des estimations et les budgets non chiffrables restent à préciser.
+Les 18 tutoriels actuels sont documentés et harmonisés avec le modèle commun, y compris les six anciens brouillons. Les durées sont des estimations et les budgets non chiffrables restent à préciser.
 
 `pnpm validate:data` vérifie récursivement chemins, identifiants, classifications principales et secondaires, parcours, sources et présence des images locales. Cette validation est aussi exécutée au build. `pnpm test` teste le routage et les métadonnées (`src/lib/routes.test.ts`). `pnpm check:site` contrôle le rendu des pages, les filtres, la correspondance du sitemap, le fil d’Ariane, le shim des anciens liens et l’hydratation, sans navigateur.
 
 ## Images et déploiement
 
-Les 14 tutoriels utilisent des illustrations originales locales, regroupées dans `public/images/tutoriels/` et nommées selon l’identifiant de la fiche (`<id>.png`). Les prompts sont conservés dans `docs/illustrations-tutoriels.md`. Aucune légende ni crédit n’est affiché. Les images d’accueil utilisent encore Unsplash ; les polices utilisent Google Fonts.
+Les 18 tutoriels utilisent des illustrations originales locales, regroupées dans `public/images/tutoriels/` et nommées selon l’identifiant de la fiche (`<id>.png`). Les prompts sont conservés dans `docs/illustrations-tutoriels.md`. Aucune légende ni crédit n’est affiché. Les images d’accueil utilisent encore Unsplash ; les polices utilisent Google Fonts.
 
 Publier `dist/`. `netlify.toml` lance `pnpm build && pnpm check:site`, puis publie `dist/`. Le build pré-rend une page par route, `404.html`, `sitemap.xml` et `robots.txt`. `SITE_URL` fixe l’origine des URLs absolues ; il vaut `https://wikibrico.fr` par défaut et peut être surchargé par variable d’environnement (`SITE_URL=https://exemple.fr pnpm build`).
 
