@@ -21,6 +21,7 @@ import {
   duration,
   type CatalogFilters,
 } from "@/lib/catalog";
+import { responsiveImage } from "@/lib/images";
 import { tutorialPath } from "@/lib/routes";
 import { childTopics } from "@/lib/topic-path";
 
@@ -278,60 +279,82 @@ export function CatalogPage({
             </button>
           </div>
         )}
+        <h2 className="visually-hidden">Les tutoriels</h2>
         <div className="tutorial-grid">
-          {filtered.map((t) => (
-            <article className="tutorial-card" key={t.id}>
-              <div className="card-image">
-                <a href={tutorialPath(t.id)} tabIndex={-1} aria-hidden="true">
-                  <img src={t.image} alt={t.imageAlt} loading="lazy" />
-                </a>
-                <span className="category-badge">
-                  {categories.find((c) => c.id === t.category)?.name}
-                </span>
-                <button
-                  className={`save-button ${saved.includes(t.id) ? "is-saved" : ""}`}
-                  aria-label={`${saved.includes(t.id) ? "Retirer des" : "Ajouter aux"} favoris : ${t.title}`}
-                  aria-pressed={saved.includes(t.id)}
-                  onClick={() => toggleSaved(t.id)}
-                >
-                  <Bookmark
-                    size={17}
-                    fill={saved.includes(t.id) ? "currentColor" : "none"}
-                  />
-                </button>
-              </div>
-              <div className="card-body">
-                {t.topicPath && (
-                  <div className="topic-path">{t.topicPath.join(" › ")}</div>
-                )}
-                <span
-                  className={`level ${t.difficulty === "Débutant" ? "beginner" : ""}`}
-                >
-                  <BarChart3 size={12} />
-                  {t.difficulty ?? "Niveau à préciser"}
-                </span>
-                <h3>
-                  <a href={tutorialPath(t.id)}>{t.title}</a>
-                </h3>
-                <p>{t.description}</p>
-                <div className="card-meta">
-                  <span>
-                    <Clock3 size={14} />
-                    {duration(t.durationMinutes)}
-                  </span>
-                  <span>
-                    <Euro size={14} />
-                    {t.cost
-                      ? `${t.cost.min}–${t.cost.max} €`
-                      : "Budget à préciser"}
-                  </span>
-                  <a href={tutorialPath(t.id)} aria-label={`Lire : ${t.title}`}>
-                    <ArrowUpRight size={19} />
+          {filtered.map((t, index) => {
+            const image = responsiveImage(t.image);
+            return (
+              <article className="tutorial-card" key={t.id}>
+                <div className="card-image">
+                  <a href={tutorialPath(t.id)} tabIndex={-1} aria-hidden="true">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcSet={`${image.small} 480w, ${image.medium} 720w, ${image.large} 960w`}
+                        sizes="(max-width: 700px) 92vw, (max-width: 1000px) 30vw, 400px"
+                      />
+                      <img
+                        src={t.image}
+                        alt={t.imageAlt}
+                        width={image.width}
+                        height={image.height}
+                        loading={index === 0 ? "eager" : "lazy"}
+                        fetchPriority={index === 0 ? "high" : "auto"}
+                        decoding="async"
+                      />
+                    </picture>
                   </a>
+                  <span className="category-badge">
+                    {categories.find((c) => c.id === t.category)?.name}
+                  </span>
+                  <button
+                    className={`save-button ${saved.includes(t.id) ? "is-saved" : ""}`}
+                    aria-label={`${saved.includes(t.id) ? "Retirer des" : "Ajouter aux"} favoris : ${t.title}`}
+                    aria-pressed={saved.includes(t.id)}
+                    onClick={() => toggleSaved(t.id)}
+                  >
+                    <Bookmark
+                      size={17}
+                      fill={saved.includes(t.id) ? "currentColor" : "none"}
+                    />
+                  </button>
                 </div>
-              </div>
-            </article>
-          ))}
+                <div className="card-body">
+                  {t.topicPath && (
+                    <div className="topic-path">{t.topicPath.join(" › ")}</div>
+                  )}
+                  <span
+                    className={`level ${t.difficulty === "Débutant" ? "beginner" : ""}`}
+                  >
+                    <BarChart3 size={12} />
+                    {t.difficulty ?? "Niveau à préciser"}
+                  </span>
+                  <h3>
+                    <a href={tutorialPath(t.id)}>{t.title}</a>
+                  </h3>
+                  <p>{t.description}</p>
+                  <div className="card-meta">
+                    <span>
+                      <Clock3 size={14} />
+                      {duration(t.durationMinutes)}
+                    </span>
+                    <span>
+                      <Euro size={14} />
+                      {t.cost
+                        ? `${t.cost.min}–${t.cost.max} €`
+                        : "Budget à préciser"}
+                    </span>
+                    <a
+                      href={tutorialPath(t.id)}
+                      aria-label={`Lire : ${t.title}`}
+                    >
+                      <ArrowUpRight size={19} />
+                    </a>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
         {!filtered.length && (
           <div className="empty">

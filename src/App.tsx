@@ -26,6 +26,7 @@ import { tutorials } from "@/data";
 import { categories, navigationCategories, journeys } from "@/data/taxonomy";
 import { initializeAnalytics, trackPage } from "@/lib/analytics";
 import { belongsToCategory, catalogHref, duration } from "@/lib/catalog";
+import { responsiveImage } from "@/lib/images";
 import { matchRoute } from "@/lib/routes";
 import type { Tutorial } from "@/types";
 function readSaved(): string[] {
@@ -231,6 +232,8 @@ export default function App({
               <img
                 src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=1300&q=90"
                 alt="Atelier créatif avec outils et matériel de bricolage"
+                fetchPriority="high"
+                decoding="async"
               />
               <div className="image-shade" />
               <span className="image-label">
@@ -407,6 +410,7 @@ function TutorialPage({
   onSave: () => void;
   returnHref: string;
 }) {
+  const image = responsiveImage(t.image);
   return (
     <main className="detail container" tabIndex={-1}>
       <nav className="breadcrumb" aria-label="Fil d’Ariane">
@@ -440,15 +444,26 @@ function TutorialPage({
         </div>
       )}
       <figure>
-        <img
-          className={
-            t.imageOrigin === "original"
-              ? "detail-image detail-diagram"
-              : "detail-image"
-          }
-          src={t.image}
-          alt={t.imageAlt}
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcSet={`${image.small} 480w, ${image.medium} 720w, ${image.large} 960w`}
+            sizes="(max-width: 1000px) 92vw, 1128px"
+          />
+          <img
+            className={
+              t.imageOrigin === "original"
+                ? "detail-image detail-diagram"
+                : "detail-image"
+            }
+            src={t.image}
+            alt={t.imageAlt}
+            width={image.width}
+            height={image.height}
+            fetchPriority="high"
+            decoding="async"
+          />
+        </picture>
       </figure>
       <div className="detail-stats">
         <span>
