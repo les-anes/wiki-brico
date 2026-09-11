@@ -9,7 +9,7 @@ export interface CatalogFilters {
   savedOnly: boolean;
   journey: string;
 }
-export const defaultFilters: CatalogFilters = {
+const defaultFilters: CatalogFilters = {
   category: "all",
   topicPath: [],
   query: "",

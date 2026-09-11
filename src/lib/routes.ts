@@ -6,12 +6,12 @@ export type Route =
   | { kind: "tutorial"; path: string; id: string }
   | { kind: "notFound"; path: string };
 
-export interface CategoryRef {
+interface CategoryRef {
   id: string;
   name: string;
 }
 
-export interface BreadcrumbItem {
+interface BreadcrumbItem {
   name: string;
   url: string;
 }
@@ -30,8 +30,8 @@ export interface RouteContext {
   siteUrl: string;
 }
 
-export const HOME: Route = { kind: "home", path: "/" };
-export const CATALOG: Route = { kind: "catalog", path: "/tutoriels/" };
+const HOME: Route = { kind: "home", path: "/" };
+const CATALOG: Route = { kind: "catalog", path: "/tutoriels/" };
 
 export function tutorialPath(id: string): string {
   return `/tutoriel/${id}/`;
