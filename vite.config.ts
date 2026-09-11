@@ -34,11 +34,13 @@ function documentMiddleware(): Plugin {
             createElement(Document, {
               initialPath: url,
               siteUrl: `http://${request.headers.host ?? "localhost:5173"}`,
-              assets: { css: [], modules: ["/@vite/client", "/src/main.tsx"] },
+              assets: { css: ["/src/index.css"], modules: ["/src/main.tsx"] },
             }),
           );
           let html = "";
           for await (const chunk of prelude) html += chunk;
+          // Injecte le client Vite et le préambule React Refresh, absents du SSR.
+          html = await server.transformIndexHtml(url, html);
           response.statusCode =
             matchRoute(tutorials, url).kind === "notFound" ? 404 : 200;
           response.setHeader("Content-Type", "text/html; charset=utf-8");
