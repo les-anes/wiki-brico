@@ -31,10 +31,29 @@ try {
 }
 const entry = Object.values(manifest).find((chunk) => chunk.isEntry);
 if (!entry) throw new Error("Entrée introuvable dans le manifeste Vite.");
+const cssFiles = entry.css ?? [];
+const cssInline = (
+  await Promise.all(
+    cssFiles.map((file) => readFile(join("dist", file), "utf8")),
+  )
+).join("\n");
 const assets = {
-  css: (entry.css ?? []).map((file) => `/${file}`),
+  // Le CSS est assemblé ici puis inliné dans chaque page : plus de requête
+  // bloquante pour le premier rendu (LCP). Voir `inlineStyles` ci-dessous.
+  css: cssFiles.map((file) => `/${file}`),
   modules: [`/${entry.file}`],
 };
+
+/** Remplace les <link rel="stylesheet"> par une balise <style> inline. */
+function inlineStyles(html) {
+  if (!cssInline) return html;
+  let injected = false;
+  return html.replace(/<link rel="stylesheet"[^>]*\/?>/g, () => {
+    if (injected) return "";
+    injected = true;
+    return `<style>${cssInline}</style>`;
+  });
+}
 
 // Réutilise les vrais imports JSON et la transformation TS de Vite, sans port réseau.
 const server = await createServer({
@@ -57,7 +76,7 @@ try {
     );
     let html = "";
     for await (const chunk of prelude) html += chunk;
-    return html;
+    return inlineStyles(html);
   };
 
   const routes = buildRoutes(tutorials);

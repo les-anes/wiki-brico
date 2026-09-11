@@ -1,4 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap");
+/* Polices auto-hébergées : supprime la feuille Google Fonts bloquante et
+   les connexions tierces. Fichiers variables (latin + latin-ext). */
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+  src: url("/fonts/dm-sans-latin.woff2") format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+  src: url("/fonts/dm-sans-latin-ext.woff2") format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("/fonts/manrope-latin.woff2") format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("/fonts/manrope-latin-ext.woff2") format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -70,6 +115,18 @@ img {
   max-width: 1240px;
   width: calc(100% - 112px);
   margin: auto;
+}
+/* Titre de section réservé aux technologies d’assistance (hiérarchie h1 > h2 > h3). */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
 .site-header {
   border-bottom: 1px solid #e5e4de;
@@ -173,7 +230,7 @@ img {
 .hero-copy > p {
   font-size: 14px;
   line-height: 1.85;
-  color: #73776f;
+  color: #6d7169;
   margin: 23px 0 25px;
 }
 .search-box {
@@ -204,7 +261,7 @@ img {
   gap: 12px;
   margin-top: 12px;
   font-size: 10px;
-  color: #7e8179;
+  color: #6e7069;
 }
 .hero-hints button {
   display: flex;
@@ -219,7 +276,7 @@ img {
   gap: 10px;
   font-size: 10px;
   margin-top: 29px;
-  color: #7b8076;
+  color: #6c7168;
 }
 .proof-icon {
   display: grid;
@@ -293,7 +350,7 @@ img {
 }
 .hero-note p {
   font-size: 11px;
-  color: #7d8071;
+  color: #707366;
   margin-top: 5px;
 }
 .hero-note > svg {
@@ -307,7 +364,7 @@ img {
   writing-mode: vertical-rl;
   font-size: 8px;
   letter-spacing: 1.7px;
-  color: #8a8c80;
+  color: #707168;
 }
 .promise-strip {
   background: #efefe7;
@@ -325,7 +382,7 @@ img {
   align-items: center;
   gap: 10px;
   font-size: 11px;
-  color: #697260;
+  color: #656d5c;
 }
 .promise-inner svg {
   width: 17px;
@@ -343,7 +400,7 @@ img {
   gap: 20px;
 }
 .section-heading .eyebrow {
-  color: #8c927f;
+  color: #6d7263;
   font-size: 9px;
 }
 .section-heading h2 {
@@ -394,7 +451,7 @@ img {
 }
 .category-tile small {
   font-size: 9px;
-  color: #8b9083;
+  color: #6f7369;
   margin-top: 6px;
 }
 .tutorials-section {
@@ -402,12 +459,12 @@ img {
 }
 .section-heading p {
   font-size: 12px;
-  color: #85877e;
+  color: #6e7069;
   margin-top: 12px;
 }
 .result-count {
   font-size: 10px;
-  color: #868b7e;
+  color: #6d7166;
 }
 .filters {
   border-bottom: 1px solid #dedfd5;
@@ -429,7 +486,7 @@ img {
   border-radius: 6px;
   padding: 9px 13px;
   font-size: 11px;
-  color: #727b69;
+  color: #6a7262;
 }
 .filter-tabs button.active {
   background: #365942;
@@ -437,7 +494,7 @@ img {
 }
 .difficulty-filter {
   font-size: 10px;
-  color: #858a7c;
+  color: #6d7166;
   display: flex;
   gap: 12px;
   align-items: center;
@@ -513,13 +570,13 @@ img {
 }
 .level {
   font-size: 9px;
-  color: #9b7a40;
+  color: #8f703b;
   display: flex;
   align-items: center;
   gap: 5px;
 }
 .level.beginner {
-  color: #61824c;
+  color: #5e7e4a;
 }
 .card-body h3 {
   font-size: 16px;
@@ -531,7 +588,7 @@ img {
 .card-body > p {
   font-size: 11px;
   line-height: 1.8;
-  color: #82867c;
+  color: #72766d;
   margin-top: 7px;
   min-height: 40px;
 }
@@ -542,7 +599,7 @@ img {
   display: flex;
   align-items: center;
   gap: 19px;
-  color: #818977;
+  color: #707768;
   font-size: 10px;
 }
 .card-meta > span {
@@ -588,7 +645,7 @@ img {
 }
 .about .eyebrow {
   font-size: 8px;
-  color: #7b8c68;
+  color: #606d51;
 }
 .about h2 {
   font-size: 25px;
@@ -598,14 +655,14 @@ img {
 }
 .about p {
   font-size: 12px;
-  color: #76836c;
+  color: #616b59;
   line-height: 1.8;
   max-width: 650px;
   margin-top: 13px;
 }
 .draft-note {
   font-size: 9px;
-  color: #78826f;
+  color: #626b5b;
   display: block;
   margin-top: 14px;
 }
@@ -626,11 +683,11 @@ footer .logo {
 }
 footer p {
   font-size: 10px;
-  color: #828776;
+  color: #6d7163;
 }
 footer > span {
   font-size: 9px;
-  color: #919584;
+  color: #6e7164;
   margin-left: auto;
 }
 .empty {
@@ -654,7 +711,7 @@ footer > span {
   align-items: center;
   gap: 8px;
   font-size: 11px;
-  color: #77836d;
+  color: #697360;
   margin-bottom: 30px;
 }
 .detail-heading {
@@ -670,7 +727,7 @@ footer > span {
 }
 .detail-heading p {
   font-size: 14px;
-  color: #7b8273;
+  color: #6c7265;
   line-height: 1.8;
 }
 .draft-banner {
@@ -743,7 +800,7 @@ footer > span {
 }
 .detail-layout aside small {
   display: block;
-  color: #7a8570;
+  color: #656e5d;
   font-size: 11px;
   margin-top: 5px;
 }
@@ -765,7 +822,7 @@ footer > span {
 .advice li {
   font-size: 14px;
   line-height: 1.9;
-  color: #737d69;
+  color: #636b5a;
 }
 .advice {
   padding: 22px;
@@ -787,7 +844,7 @@ footer > span {
 }
 .updated {
   font-size: 11px;
-  color: #89917f;
+  color: #6b7163;
   margin-top: 25px;
 }
 @media (min-width: 1500px) {
@@ -1092,7 +1149,7 @@ footer > span {
 .tutorial-sources p {
   font-size: 12px;
   line-height: 1.7;
-  color: #737d69;
+  color: #636b5a;
 }
 .tutorial-sources li {
   margin-top: 18px;
@@ -1101,7 +1158,7 @@ footer > span {
   font-size: 14px;
 }
 .tutorial-sources small {
-  color: #737d69;
+  color: #636b5a;
   font-size: 10px;
 }
 .detail figure .detail-image {
@@ -1324,7 +1381,7 @@ footer > span {
   font-weight: 650;
 }
 .journey-card p {
-  color: #75816c;
+  color: #687360;
   font-size: 12px;
   line-height: 1.8;
 }
@@ -1367,7 +1424,7 @@ footer > span {
 }
 .catalog-invitation p {
   font-size: 13px;
-  color: #75816c;
+  color: #687360;
   margin-top: 9px;
 }
 .back-to-catalog {

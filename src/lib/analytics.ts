@@ -32,7 +32,11 @@ export function initializeAnalytics() {
   const script = document.createElement("script");
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
-  document.head.appendChild(script);
+  // Charge la balise une fois la page rendue : le script de ~170 Ko ne dispute
+  // plus la bande passante au héros LCP pendant le rendu initial.
+  const append = () => document.head.append(script);
+  if (document.readyState === "complete") append();
+  else window.addEventListener("load", append, { once: true });
 }
 
 export function trackPage(route: string) {

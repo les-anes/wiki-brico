@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import App from "@/App";
 import { tutorials } from "@/data";
 import { categories } from "@/data/taxonomy";
+import { responsiveImage } from "@/lib/images";
 import { matchRoute, pageMeta } from "@/lib/routes";
 
 export interface DocumentAssets {
@@ -84,12 +85,45 @@ export function Document({
         }
       : null;
 
+  // L’illustration de la fiche est le héros LCP : on la précharge en WebP pour
+  // la découvrir avant que le CSS bloquant ne lance le chargement de l’image.
+  const tutorial =
+    route.kind === "tutorial"
+      ? tutorials.find((t) => t.id === route.id)
+      : undefined;
+  const preloadImage = tutorial ? responsiveImage(tutorial.image) : null;
+
   return (
     <html lang="fr" data-site-url={siteUrl}>
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link
+          rel="preload"
+          href="/fonts/dm-sans-latin.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/manrope-latin.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        {preloadImage && (
+          <link
+            rel="preload"
+            as="image"
+            type="image/webp"
+            href={preloadImage.large}
+            imageSrcSet={`${preloadImage.small} 480w, ${preloadImage.medium} 720w, ${preloadImage.large} 960w`}
+            imageSizes="(max-width: 1000px) 92vw, 1128px"
+            fetchPriority="high"
+          />
+        )}
         <meta name="theme-color" content="#f8f7f3" />
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
@@ -118,7 +152,10 @@ export function Document({
         <App path={path} navigate={navigate} />
         <script>{hashShim}</script>
         {assets.modules.map((src) => (
-          <script key={src} type="module" src={src} />
+          // La page est intégralement prérendue : le script d’hydratation n’est
+          // pas nécessaire au premier rendu. On abaisse sa priorité de
+          // chargement pour ne pas concurrencer le héros LCP ni les polices.
+          <script key={src} type="module" src={src} fetchPriority="low" />
         ))}
       </body>
     </html>
