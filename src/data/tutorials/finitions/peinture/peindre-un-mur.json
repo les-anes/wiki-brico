@@ -70,10 +70,10 @@
   "safety": [
     "Aère pendant l’application et le séchage, et protège-toi de la poussière au ponçage.",
     "Coupe le courant près des prises et ne les mouille pas au lessivage.",
-    "Fais vérifier un revêtement ancien suspect avant de le gratter ou de le poncer."
+    "Ne gratte ni ne ponce un ancien revêtement suspect tant que la présence de plomb ou d’amiante n’est pas écartée."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-11",
   "relatedCategories": [],
   "journeys": ["renover-une-chambre", "amenager-des-combles"],
   "topicPath": ["Peinture"],

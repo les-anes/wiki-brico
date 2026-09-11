@@ -47,7 +47,7 @@
     },
     {
       "title": "Vérifie avant utilisation",
-      "description": "Contrôle les repères et garde les tubes alignés sans traction. Remets l’eau doucement, vérifie les fuites et fais réaliser l’essai du réseau, puis rince la conduite en gardant le raccord accessible."
+      "description": "Contrôle les repères et garde les tubes alignés sans traction. Remets l’eau doucement, vérifie les fuites et réalise l’essai d’étanchéité prévu par la notice du système, puis rince la conduite en gardant le raccord accessible."
     }
   ],
   "mistakes": [
@@ -60,7 +60,7 @@
     "Coupe l’eau avant tout démontage ; n’utilise pas un tube écrasé ou rayé dans la zone du joint."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-11",
   "scope": "Transition automatique à emboîtement cuivre–PER, système exigeant un insert PER. Hors autres types de transitions, raccords sous enduit et remplacement de conduites dégradées.",
   "sources": [
     {

@@ -3,9 +3,7 @@
   "title": "Brancher un luminaire sur une prise DCL",
   "description": "Le dispositif de connexion luminaire (DCL) permet de brancher une lampe au plafond avec une fiche. Ici, tu poses une suspension déjà équipée de sa fiche DCL sur une prise existante en bon état.",
   "category": "electricite",
-  "topicPath": [
-    "Éclairage"
-  ],
+  "topicPath": ["Éclairage"],
   "difficulty": "Débutant",
   "durationMinutes": 20,
   "cost": null,
@@ -14,10 +12,7 @@
   "imageOrigin": "original",
   "scope": "Suspension livrée avec fiche DCL déjà câblée, sur prise et crochet existants vérifiés, en pièce sèche. Aucun raccordement de conducteurs, ouverture de boîte ou création de fixation.",
   "estimatesNote": "Prévois 20 minutes si la prise et le crochet sont prêts. Budget à préciser pour le luminaire seul, hors escabeau et remise en état du point de plafond.",
-  "tools": [
-    "Escabeau stable adapté à la hauteur",
-    "Lampe à piles"
-  ],
+  "tools": ["Escabeau stable adapté à la hauteur", "Lampe à piles"],
   "materials": [
     {
       "name": "Suspension avec fiche DCL déjà montée et notice",
@@ -35,11 +30,11 @@
     },
     {
       "title": "Coupe le courant",
-      "description": "Coupe le disjoncteur général et empêche toute remise en marche pendant la pose. Utilise la lampe à piles pour travailler ; si le logement possède une autre source d’alimentation que tu ne sais pas isoler, arrête et fais intervenir un électricien."
+      "description": "Coupe le disjoncteur général et empêche toute remise en marche pendant la pose. Utilise la lampe à piles pour travailler ; si le logement possède une autre source d’alimentation, identifie-la et coupe-la aussi avant de commencer."
     },
     {
       "title": "Dégage la prise existante",
-      "description": "Depuis un escabeau stable, retire uniquement la fiche-douille provisoire ou l’obturateur amovible selon sa notice, sans ouvrir la boîte du plafond. Si la prise bouge, présente des traces de chauffe ou laisse des fils accessibles, arrête et fais contrôler le point de plafond."
+      "description": "Depuis un escabeau stable, retire uniquement la fiche-douille provisoire ou l’obturateur amovible selon sa notice, sans ouvrir la boîte du plafond. Si la prise bouge, présente des traces de chauffe ou laisse des fils accessibles, garde le courant coupé : ce point de plafond ne convient pas au branchement simple décrit ici."
     },
     {
       "title": "Accroche la suspension",
@@ -51,7 +46,7 @@
     },
     {
       "title": "Contrôle puis allume",
-      "description": "Vérifie que la suspension tient et que le cordon reste libre de toute traction avant de redescendre. Rétablis le courant et essaie l’éclairage ; en cas de déclenchement, de bruit ou d’odeur anormale, coupe à nouveau et fais vérifier l’installation."
+      "description": "Vérifie que la suspension tient et que le cordon reste libre de toute traction avant de redescendre. Rétablis le courant et essaie l’éclairage ; en cas de déclenchement, de bruit ou d’odeur anormale, coupe à nouveau et ne réutilise pas le luminaire tant que la cause reste inconnue."
     }
   ],
   "mistakes": [
@@ -61,8 +56,8 @@
   ],
   "safety": [
     "Garde mains et sol secs et travaille depuis un appui stable.",
-    "Si un fil doit être raccordé ou la boîte ouverte, ce tutoriel ne suffit plus : fais réaliser le montage et la vérification d’absence de tension par une personne compétente.",
-    "Un luminaire qui nécessite une terre doit disposer d’une liaison de terre effective ; si elle n’est pas vérifiée au point existant, fais-la contrôler avant utilisation."
+    "Utilise une fiche déjà câblée et une prise intacte : ouvrir la boîte ou raccorder des fils demande un autre montage, avec vérification d’absence de tension.",
+    "Un luminaire qui nécessite une terre doit être relié à une terre effective : la présence d’un fil vert/jaune ne suffit pas à le prouver ; n’utilise pas ce luminaire si la liaison n’est pas vérifiée."
   ],
   "sources": [
     {
@@ -75,5 +70,5 @@
   "shoppingLinks": [],
   "dtuReferences": [],
   "status": "documented",
-  "updatedAt": "2026-09-10"
+  "updatedAt": "2026-09-11"
 }

@@ -44,7 +44,7 @@
     },
     {
       "title": "Contrôle l’assemblage",
-      "description": "Vérifie que le tube n’a pas reculé et que les conduites ne tirent pas sur le raccord. Remets l’eau doucement, fais réaliser l’essai du réseau avant de cacher la jonction, puis rince avant utilisation."
+      "description": "Vérifie que le tube n’a pas reculé et que les conduites ne tirent pas sur le raccord. Remets l’eau doucement, réalise l’essai d’étanchéité prévu par la notice du système avant de cacher la jonction, puis rince avant utilisation."
     }
   ],
   "mistakes": [
@@ -57,7 +57,7 @@
     "Laisse refroidir l’eau chaude avant d’intervenir et ne reprends jamais un raccord sous pression."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-11",
   "scope": "Assemblage local de cuivre sain déjà maintenu, par raccords à sertir pour eau sanitaire. Hors brasage, soudure, gaz, supports d’un réseau neuf et dimensionnement.",
   "sources": [
     {

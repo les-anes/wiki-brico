@@ -48,11 +48,11 @@
   "steps": [
     {
       "title": "Repère le trajet",
-      "description": "Mesure le chemin entre la sortie privée du compteur et la maison, remontées comprises. Fais repérer les réseaux enterrés et les démarches nécessaires avant de creuser. Demande au service des eaux où te raccorder et quelle protection contre les retours d’eau est déjà en place."
+      "description": "Mesure le chemin entre la sortie privée du compteur et la maison, remontées comprises. Consulte les plans des réseaux enterrés et effectue les démarches de repérage avant de creuser. Demande au service des eaux où te raccorder et quelle protection contre les retours d’eau est déjà en place."
     },
     {
       "title": "Choisis ton tube",
-      "description": "Prends un tube marqué pour l’eau potable et des raccords du même diamètre extérieur. Le Ø25 sert ici d’exemple : fais confirmer le diamètre avec la longueur du trajet et tes besoins en eau. Un tube plus gros réduit les pertes de pression pendant l’écoulement."
+      "description": "Prends un tube marqué pour l’eau potable et des raccords du même diamètre extérieur. Le Ø25 sert ici d’exemple : choisis le diamètre avec le tableau de dimensionnement du fabricant, selon la longueur du trajet et tes besoins en eau. Un tube plus gros réduit les pertes de pression pendant l’écoulement."
     },
     {
       "title": "Prépare le passage",
@@ -68,7 +68,7 @@
     },
     {
       "title": "Vérifie avant de reboucher",
-      "description": "Remets l’eau doucement, purge l’air et fais contrôler l’étanchéité de la conduite avant de la recouvrir ; au moindre suintement, coupe l’eau avant de reprendre le raccord. Rince la conduite avant utilisation et suis les consignes de mise en service du service des eaux. Après contrôle, photographie le trajet, enrobe le tube de sable, pose le grillage bleu à la hauteur prévue et rebouche en tassant par couches."
+      "description": "Remets l’eau doucement, purge l’air et contrôle chaque raccord et l’étanchéité de la conduite selon la procédure d’essai du fabricant avant de la recouvrir ; au moindre suintement, coupe l’eau avant de reprendre le raccord. Rince la conduite avant utilisation et suis les consignes de mise en service du service des eaux. Après contrôle, photographie le trajet, enrobe le tube de sable, pose le grillage bleu à la hauteur prévue et rebouche en tassant par couches."
     }
   ],
   "mistakes": [
@@ -82,7 +82,7 @@
     "Protège du gel les parties exposées, y compris près du compteur."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-11",
   "scope": "Récapitulatif pour une alimentation privée enterrée en eau froide potable, en France, après compteur. La limite d’intervention et les équipements au compteur sont à confirmer avec le service des eaux. Le dimensionnement et le terrassement dépendent du terrain ; cette fiche ne constitue pas un plan d’exécution.",
   "sources": [
     {

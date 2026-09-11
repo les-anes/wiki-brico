@@ -43,7 +43,7 @@
     },
     {
       "title": "Vérifie la jonction",
-      "description": "Remets l’eau doucement, purge l’air et passe un chiffon sec autour du raccord pour repérer un suintement. Fais contrôler le réseau avant sa mise en service et rince la conduite ; s’il y a une fuite, coupe l’eau avant de reprendre le montage."
+      "description": "Remets l’eau doucement, purge l’air et passe un chiffon sec autour du raccord pour repérer un suintement. Réalise l’essai d’étanchéité prévu par la notice du système avant la mise en service et rince la conduite ; s’il y a une fuite, coupe l’eau avant de reprendre le montage."
     }
   ],
   "mistakes": [
@@ -56,7 +56,7 @@
     "Garde le raccord accessible pour le contrôler et le démonter."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-11",
   "scope": "Raccord PER à compression avec écrou, bague et insert, en zone accessible. Hors filetage de transition, encastrement et dimensionnement du réseau.",
   "sources": [
     {

@@ -57,11 +57,11 @@
     "Charger l’étagère alors qu’une fixation bouge."
   ],
   "safety": [
-    "Le détecteur ne suffit pas à lever un doute sur un réseau : fais vérifier avant de percer.",
+    "Repère les câbles et tuyaux avec le détecteur et les plans disponibles ; si leur passage reste incertain, ne perce pas à cet endroit.",
     "Porte des lunettes au perçage et coupe l’alimentation des circuits proches."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-11",
   "relatedCategories": [],
   "journeys": ["renover-une-chambre", "amenager-des-combles"],
   "topicPath": ["Percer et fixer"],

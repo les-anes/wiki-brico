@@ -1,7 +1,7 @@
 {
   "id": "dimensionnement-plomberie",
   "title": "Préparer le dimensionnement de son réseau d’eau",
-  "description": "Avant d’acheter les tuyaux, dessine ce qu’ils doivent alimenter et mesure les trajets. Ces quelques relevés permettent de choisir les diamètres avec un plombier, sans acheter trop petit au hasard.",
+  "description": "Avant d’acheter les tuyaux, dessine ce qu’ils doivent alimenter et mesure les trajets. Rassemble les besoins et la pression disponible pour comparer les diamètres dans les tableaux du fabricant.",
   "category": "plomberie",
   "topicPath": ["Arrivée d’eau", "Dimensionnage"],
   "difficulty": "Débutant",
@@ -12,7 +12,8 @@
   "tools": [
     "Mètre",
     "Papier, crayon ou plan numérique",
-    "Notices des équipements à alimenter"
+    "Notices des équipements à alimenter",
+    "Manomètre pour eau avec raccord et joint adaptés à un robinet de service"
   ],
   "materials": [
     {
@@ -34,12 +35,12 @@
       "description": "Relève dans les notices le débit et la pression demandés par tes équipements. Note les usages simultanés habituels, par exemple une douche pendant que l’évier coule."
     },
     {
-      "title": "Fais relever la pression disponible",
-      "description": "Demande au service des eaux les informations au compteur et fais mesurer la pression pendant un puisage. Une pression mesurée tous robinets fermés ne décrit pas à elle seule ce qui reste quand l’eau coule."
+      "title": "Relève la pression disponible",
+      "description": "Ferme un robinet de service côté privé, raccorde le manomètre avec son joint, puis ouvre doucement le robinet. Note la pression, puis relève-la à nouveau pendant qu’un autre robinet coule : c’est cette seconde mesure qui décrit la pression disponible en usage. Referme le robinet et dépressurise le raccord selon la notice avant de retirer le manomètre."
     },
     {
-      "title": "Fais confirmer les diamètres",
-      "description": "Transmets le plan et les relevés à un plombier pour vérifier la pression restante au point le plus défavorisé. Fais noter le matériau, le diamètre extérieur et l’épaisseur de chaque tube avant les achats : c’est le diamètre intérieur qui détermine le passage de l’eau."
+      "title": "Prépare ton choix de tubes",
+      "description": "Regroupe tes relevés avec le tableau de dimensionnement du fabricant : appareils alimentés, usages simultanés, longueurs et pression disponible. Note le matériau, le diamètre extérieur et l’épaisseur des tubes proposés : c’est leur diamètre intérieur qui détermine le passage de l’eau. Ce relevé prépare le choix ; pour les grandes longueurs ou plusieurs étages, le calcul des pertes de pression reste nécessaire."
     }
   ],
   "mistakes": [
@@ -49,10 +50,10 @@
   ],
   "safety": [
     "N’interviens pas sur les éléments réservés au service des eaux pour faire tes mesures.",
-    "Si le débit manque déjà, fais rechercher la cause avant de remplacer les tuyaux."
+    "Si le débit manque déjà, vérifie d’abord que les vannes sont ouvertes et que les filtres et mousseurs sont propres."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-11",
   "scope": "Préparation des données de dimensionnement d’une distribution intérieure domestique. Cette fiche ne calcule pas les diamètres et ne constitue pas un plan d’exécution.",
   "sources": [
     {
@@ -68,7 +69,7 @@
       "accessedAt": "2026-09-07"
     }
   ],
-  "estimatesNote": "Compte environ 1 h 30 pour relever un petit logement, hors mesure de pression et étude. Aucun matériau n’est à acheter avant la confirmation des diamètres.",
+  "estimatesNote": "Compte environ 1 h 30 pour relever un petit logement, hors calcul détaillé. Aucun tuyau à acheter à cette étape ; prévois seulement le manomètre et son raccord si tu n’en as pas.",
   "relatedCategories": [
     {
       "category": "preparer-chantier",

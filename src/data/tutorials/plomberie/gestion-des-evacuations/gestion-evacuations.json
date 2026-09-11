@@ -18,7 +18,7 @@
   "materials": [
     {
       "name": "Tubes et raccords PVC d’évacuation à coller",
-      "quantity": "Selon le tracé et le diamètre confirmés"
+      "quantity": "Longueur du trajet, diamètre adapté au siphon et à l’évacuation existante"
     },
     {
       "name": "Colle et nettoyant compatibles avec les tubes",
@@ -36,11 +36,11 @@
   "steps": [
     {
       "title": "Prépare le parcours",
-      "description": "Repère l’appareil, son siphon et le raccordement à l’évacuation existante. Fais confirmer le diamètre et la pente disponibles, en gardant un accès pour déboucher et la ventilation du réseau en place."
+      "description": "Repère l’appareil, son siphon et le raccordement à l’évacuation existante. Choisis les raccords adaptés à leurs diamètres, garde un accès pour déboucher et laisse la ventilation du réseau en place."
     },
     {
       "title": "Trace la pente",
-      "description": "Reporte la descente jusqu’à l’évacuation, sans point bas ni remontée. Par exemple, une pente retenue de 2 cm par mètre descend de 6 cm sur 3 m : vérifie que tu as cette hauteur."
+      "description": "Prévois une pente régulière de 1 à 2 %, soit 1 à 2 cm de descente par mètre, sans creux ni remontée. Sur 3 m, cela représente 3 à 6 cm de descente : reporte tes repères au mètre et au niveau."
     },
     {
       "title": "Monte sans colle",
@@ -66,14 +66,14 @@
     "Des glouglous ou odeurs persistants demandent de vérifier la ventilation et le siphon."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-08",
-  "scope": "Petit tronçon intérieur PVC d’évacuation gravitaire à coller, diamètre et pente confirmés. Hors chute collective, assainissement extérieur et création de ventilation primaire.",
+  "updatedAt": "2026-09-11",
+  "scope": "Petit tronçon intérieur PVC d’évacuation gravitaire à coller, raccordé à un réseau existant adapté, avec une pente de 1 à 2 %. Hors chute collective, assainissement extérieur et création de ventilation primaire.",
   "sources": [
     {
       "title": "Nicoll — Guide PVC évacuation GTEVAC12",
       "url": "https://www.nicoll.fr/sites/default/files/products/GTEVAC12.pdf",
-      "note": "Guide ancien : conception, ventilation, pente ; vérifier les documents actuels pour le chantier.",
-      "accessedAt": "2026-09-07"
+      "note": "Guide Nicoll : pente minimale recommandée de 1 cm par mètre, page 23. La fiche retient 1 à 2 % pour son petit tronçon intérieur.",
+      "accessedAt": "2026-09-11"
     },
     {
       "title": "GIRPI — Mise en œuvre du système d’évacuation",

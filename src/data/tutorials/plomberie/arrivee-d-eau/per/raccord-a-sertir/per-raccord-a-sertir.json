@@ -44,7 +44,7 @@
     },
     {
       "title": "Contrôle avant de cacher",
-      "description": "Vérifie l’insertion et le sertissage, puis remets l’eau doucement pour chercher les fuites. Fais réaliser l’essai du réseau avant de cacher le montage et rince la conduite avant utilisation."
+      "description": "Vérifie l’insertion et le sertissage, puis remets l’eau doucement pour chercher les fuites. Réalise l’essai d’étanchéité prévu par la notice du système avant de cacher le montage et rince la conduite avant utilisation."
     }
   ],
   "mistakes": [
@@ -57,7 +57,7 @@
     "Si le sertissage s’interrompt ou si le raccord fuit, coupe l’eau et suis la procédure de reprise du raccord."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-11",
   "scope": "Assemblage local PER à sertir pour eau sanitaire, avec raccord à fenêtres de contrôle et outillage compatible. Hors dimensionnement et règles d’encastrement propres au système.",
   "sources": [
     {

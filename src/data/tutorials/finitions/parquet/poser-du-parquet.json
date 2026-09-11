@@ -35,7 +35,7 @@
   "steps": [
     {
       "title": "Prépare le sol et les lames",
-      "description": "Vérifie que le sol est solide, propre et suffisamment plat selon la notice du parquet. Fais contrôler son humidité avec la méthode adaptée au support et laisse les paquets s’acclimater comme indiqué avant la pose."
+      "description": "Vérifie que la base est saine : solide, propre, sèche et plane. Laisse les paquets s’acclimater comme indiqué sur leur emballage avant la pose."
     },
     {
       "title": "Installe la sous-couche",
@@ -59,7 +59,7 @@
     }
   ],
   "mistakes": [
-    "Poser sur un sol dont l’humidité n’a pas été vérifiée.",
+    "Poser sur un support humide, friable ou irrégulier.",
     "Supprimer le jeu contre les murs ou les tuyaux.",
     "Bloquer le parquet avec des plinthes vissées dans les lames."
   ],
@@ -69,7 +69,7 @@
     "Ne coince pas un parquet flottant sous des meubles de cuisine fixés au sol."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-11",
   "relatedCategories": [],
   "journeys": ["renover-une-chambre", "amenager-des-combles"],
   "topicPath": ["Parquet"],
