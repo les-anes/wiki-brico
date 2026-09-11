@@ -1,0 +1,36 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": [
+    "unicorn",
+    "typescript",
+    "oxc",
+    "react",
+    "jsx-a11y",
+    "import",
+    "promise",
+    "node"
+  ],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "warn"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "oxc/no-async-endpoint-handlers": "off",
+    "no-await-in-loop": "off",
+    "unicorn/consistent-function-scoping": "off",
+    "react/set-state-in-effect": "off",
+    "react/exhaustive-effect-dependencies": "off",
+    "react/no-object-type-as-default-prop": "off",
+    "import/no-unassigned-import": [
+      "error",
+      { "allow": ["**/*.css", "**/validate-data.mjs"] }
+    ]
+  },
+  "ignorePatterns": ["dist/**"]
+}

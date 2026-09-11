@@ -41,7 +41,7 @@ function TopicBranches({
 }
 
 export function CategoryNavigation({ categories, onSelect }: Props) {
-  const navigationRef = useRef<HTMLDivElement>(null);
+  const navigationRef = useRef<HTMLElement>(null);
   const triggerRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const [openId, setOpenId] = useState<string | null>(null);
   const menuId = useId();
@@ -56,9 +56,32 @@ export function CategoryNavigation({ categories, onSelect }: Props) {
       )
         setOpenId(null);
     };
+    const closeOnFocusOut = (event: FocusEvent) => {
+      if (
+        event.target instanceof Node &&
+        !navigationRef.current?.contains(event.target)
+      )
+        setOpenId(null);
+    };
     document.addEventListener("pointerdown", closeOutside);
-    return () => document.removeEventListener("pointerdown", closeOutside);
+    document.addEventListener("focusin", closeOnFocusOut);
+    return () => {
+      document.removeEventListener("pointerdown", closeOutside);
+      document.removeEventListener("focusin", closeOnFocusOut);
+    };
   }, []);
+
+  useEffect(() => {
+    if (!openId) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      event.preventDefault();
+      triggerRefs.current[openId]?.focus();
+      setOpenId(null);
+    };
+    document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, [openId]);
 
   function select(category: string, path: string[] = []) {
     setOpenId(null);
@@ -76,20 +99,7 @@ export function CategoryNavigation({ categories, onSelect }: Props) {
   }
 
   return (
-    <div
-      className="top-category-navigation"
-      ref={navigationRef}
-      onKeyDown={(event) => {
-        if (event.key === "Escape" && openId) {
-          event.preventDefault();
-          triggerRefs.current[openId]?.focus();
-          setOpenId(null);
-        }
-      }}
-      onBlur={(event) => {
-        if (!event.currentTarget.contains(event.relatedTarget)) setOpenId(null);
-      }}
-    >
+    <nav className="top-category-navigation" ref={navigationRef}>
       {primary.map((category) => {
         const paths = category.topics;
         const hasChildren = paths.length > 0;
@@ -199,6 +209,6 @@ export function CategoryNavigation({ categories, onSelect }: Props) {
           )}
         </div>
       )}
-    </div>
+    </nav>
   );
 }

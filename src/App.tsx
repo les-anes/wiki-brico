@@ -50,11 +50,10 @@ export default function App({
   const [query, setQuery] = useState("");
   const [saved, setSaved] = useState<string[]>([]);
   const [menu, setMenu] = useState(false);
-  const lastCatalog = useRef(catalogHref());
+  const [lastCatalog, setLastCatalog] = useState(catalogHref());
   const previousPath = useRef(path);
   const route = matchRoute(tutorials, path);
   const isCatalog = route.kind === "catalog";
-  if (isCatalog) lastCatalog.current = path;
   const selected =
     route.kind === "tutorial"
       ? tutorials.find((t) => t.id === route.id)
@@ -67,24 +66,27 @@ export default function App({
     setMenu(false);
   }, [path]);
   useEffect(() => {
+    if (isCatalog) setLastCatalog(path);
+  }, [isCatalog, path]);
+  useEffect(() => {
     if (previousPath.current === path) return;
     previousPath.current = path;
     window.scrollTo(0, 0);
     document.querySelector<HTMLElement>("main")?.focus({ preventScroll: true });
   }, [path]);
+  // `route` dérive de `path` : la clé change à chaque navigation.
+  const trackedPage =
+    route.kind === "tutorial"
+      ? `tutoriel/${route.id}`
+      : route.kind === "catalog"
+        ? "tutoriels"
+        : route.kind === "home"
+          ? ""
+          : "introuvable";
   useEffect(() => {
     initializeAnalytics();
-    // `route` dérive de `path` : le suivi se relance à chaque navigation.
-    trackPage(
-      route.kind === "tutorial"
-        ? `tutoriel/${route.id}`
-        : route.kind === "catalog"
-          ? "tutoriels"
-          : route.kind === "home"
-            ? ""
-            : "introuvable",
-    );
-  }, [path]);
+    trackPage(trackedPage);
+  }, [trackedPage]);
   function toggleSaved(id: string) {
     setSaved((current) => {
       const next = current.includes(id)
@@ -145,7 +147,7 @@ export default function App({
           tutorial={selected}
           saved={saved.includes(selected.id)}
           onSave={() => toggleSaved(selected.id)}
-          returnHref={lastCatalog.current}
+          returnHref={lastCatalog}
         />
       ) : isCatalog ? (
         <CatalogPage

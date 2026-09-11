@@ -23,7 +23,7 @@ async function listJson(folder, prefix = "") {
       );
     else if (entry.name.endsWith(".json")) paths.push(`${prefix}${entry.name}`);
   }
-  return paths.sort();
+  return paths.toSorted();
 }
 const httpsUrl = (value) => {
   try {
@@ -32,14 +32,20 @@ const httpsUrl = (value) => {
     return false;
   }
 };
-const taxonomy = JSON.parse(
-  await readFile(
-    new URL("../src/data/categories.json", import.meta.url),
-    "utf8",
-  ),
+async function readJson(url) {
+  try {
+    return JSON.parse(await readFile(url, "utf8"));
+  } catch (error) {
+    console.error(`JSON invalide : ${url.pathname}`);
+    console.error(error instanceof Error ? error.message : error);
+    process.exit(1);
+  }
+}
+const taxonomy = await readJson(
+  new URL("../src/data/categories.json", import.meta.url),
 );
-const journeys = JSON.parse(
-  await readFile(new URL("../src/data/journeys.json", import.meta.url), "utf8"),
+const journeys = await readJson(
+  new URL("../src/data/journeys.json", import.meta.url),
 );
 const categories = taxonomy.map((category) => category.id);
 assert.equal(
@@ -63,7 +69,7 @@ function validClassification(category, topicPath) {
 }
 const text = (value) => typeof value === "string" && value.trim().length > 0;
 for (const file of await listJson(directory)) {
-  const t = JSON.parse(await readFile(new URL(file, directory), "utf8"));
+  const t = await readJson(new URL(file, directory));
   assert(
     text(t.id) &&
       /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(t.id) &&

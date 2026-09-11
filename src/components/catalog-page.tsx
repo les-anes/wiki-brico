@@ -40,10 +40,11 @@ export function CatalogPage({
     filters;
   const update = (patch: Partial<CatalogFilters>, replace = false) =>
     navigate(catalogHref({ ...filters, ...patch }), replace);
-  const setCategory = (category: string) => update({ category, topicPath: [] });
-  const setTopicPath = (topicPath: string[]) => update({ topicPath });
-  const setDifficulty = (difficulty: string) => update({ difficulty });
-  const setSavedOnly = (savedOnly: boolean) => update({ savedOnly });
+  const setCategory = (value: string) =>
+    update({ category: value, topicPath: [] });
+  const setTopicPath = (value: string[]) => update({ topicPath: value });
+  const setDifficulty = (value: string) => update({ difficulty: value });
+  const setSavedOnly = (value: boolean) => update({ savedOnly: value });
   const selectedCategory = categories.find((c) => c.id === category);
   const activeJourney = journeys.find((j) => j.id === journey);
   const filtered = tutorials.filter(
@@ -61,8 +62,8 @@ export function CatalogPage({
             t.category,
             ...(t.relatedCategories ?? []).map((c) => c.category),
           ].flatMap((id) => {
-            const c = categories.find((c) => c.id === id);
-            return c ? [c.name, c.shortName] : [id];
+            const match = categories.find((item) => item.id === id);
+            return match ? [match.name, match.shortName] : [id];
           }),
           ...(t.topicPath ?? []),
           ...(t.relatedCategories ?? []).flatMap((c) => c.topicPath),
@@ -78,7 +79,7 @@ export function CatalogPage({
         tabIndex={-1}
       >
         <nav className="breadcrumb" aria-label="Fil d’Ariane">
-          <a href="#">Accueil</a>
+          <a href="/">Accueil</a>
           <ChevronRight size={14} />
           <span>Les tutoriels</span>
         </nav>
@@ -93,9 +94,9 @@ export function CatalogPage({
               rénover.
             </p>
           </div>
-          <span className="result-count" role="status">
+          <output className="result-count">
             {filtered.length} tutoriel{filtered.length > 1 ? "s" : ""}
-          </span>
+          </output>
         </div>
         <form
           className="search-box catalog-search"
