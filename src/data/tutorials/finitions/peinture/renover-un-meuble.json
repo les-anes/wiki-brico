@@ -76,17 +76,11 @@
   "relatedCategories": [
     {
       "category": "techniques",
-      "topicPath": [
-        "Poncer"
-      ]
+      "topicPath": ["Poncer"]
     }
   ],
-  "journeys": [
-    "renover-une-chambre"
-  ],
-  "topicPath": [
-    "Peinture"
-  ],
+  "journeys": ["renover-une-chambre"],
+  "topicPath": ["Peinture"],
   "scope": "Petit meuble intérieur en bois verni, sain et stable, usage décoratif peu sollicité. Hors décapage, bois ciré, restauration patrimoniale et plan de travail ; aucun DTU du bâtiment applicable au mobilier n’a été retenu.",
   "estimatesNote": "Compte environ 2 h 30 de travail pour un petit chevet, hors séchage et durcissement. Le coût dépend de la peinture et d’une éventuelle sous-couche.",
   "sources": [

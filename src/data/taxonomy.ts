@@ -14,6 +14,7 @@ import {
   Wrench,
   Zap,
 } from "lucide-react";
+
 import categoryData from "./categories.json";
 export { default as journeys } from "./journeys.json";
 const icons = {

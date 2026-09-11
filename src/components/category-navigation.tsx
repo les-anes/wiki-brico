@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState, useId } from "react";
 import { ChevronDown, ArrowRight, type LucideIcon } from "lucide-react";
+import { useEffect, useRef, useState, useId } from "react";
 
 import { childTopics } from "@/lib/topic-path";
 

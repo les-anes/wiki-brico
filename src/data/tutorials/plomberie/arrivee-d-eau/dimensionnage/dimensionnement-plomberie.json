@@ -3,10 +3,7 @@
   "title": "Préparer le dimensionnement de son réseau d’eau",
   "description": "Avant d’acheter les tuyaux, dessine ce qu’ils doivent alimenter et mesure les trajets. Ces quelques relevés permettent de choisir les diamètres avec un plombier, sans acheter trop petit au hasard.",
   "category": "plomberie",
-  "topicPath": [
-    "Arrivée d’eau",
-    "Dimensionnage"
-  ],
+  "topicPath": ["Arrivée d’eau", "Dimensionnage"],
   "difficulty": "Débutant",
   "durationMinutes": 90,
   "cost": null,
@@ -75,14 +72,10 @@
   "relatedCategories": [
     {
       "category": "preparer-chantier",
-      "topicPath": [
-        "Plans"
-      ]
+      "topicPath": ["Plans"]
     }
   ],
-  "journeys": [
-    "renover-une-salle-de-bains"
-  ],
+  "journeys": ["renover-une-salle-de-bains"],
   "dtuReferences": [
     {
       "reference": "NF DTU 60.11 P1-1",

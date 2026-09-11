@@ -3,11 +3,7 @@
   "title": "Assembler un tube PER avec un raccord à sertir",
   "description": "Le PER, ou polyéthylène réticulé, est un tuyau souple pour distribuer l’eau. Une sertisseuse écrase la bague du raccord pour le fixer au tube, sans soudure.",
   "category": "plomberie",
-  "topicPath": [
-    "Arrivée d’eau",
-    "PER",
-    "Raccord à sertir"
-  ],
+  "topicPath": ["Arrivée d’eau", "PER", "Raccord à sertir"],
   "difficulty": "Intermédiaire",
   "durationMinutes": 30,
   "cost": null,
@@ -85,9 +81,7 @@
   ],
   "estimatesNote": "Compte environ 30 min pour préparer et monter un raccord accessible, hors essai complet du réseau. Ajoute au matériel la location de la sertisseuse si nécessaire.",
   "relatedCategories": [],
-  "journeys": [
-    "renover-une-salle-de-bains"
-  ],
+  "journeys": ["renover-une-salle-de-bains"],
   "dtuReferences": [
     {
       "reference": "NF DTU 60.1",

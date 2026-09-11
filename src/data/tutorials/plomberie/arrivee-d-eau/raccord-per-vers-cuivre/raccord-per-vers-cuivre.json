@@ -3,10 +3,7 @@
   "title": "Relier un tube PER à un tube en cuivre",
   "description": "Pour passer du cuivre au PER, le polyéthylène réticulé, tu peux utiliser un raccord automatique prévu pour les deux matériaux. Les tubes s’y emboîtent sans soudure ni sertisseuse.",
   "category": "plomberie",
-  "topicPath": [
-    "Arrivée d’eau",
-    "Raccord PER vers cuivre"
-  ],
+  "topicPath": ["Arrivée d’eau", "Raccord PER vers cuivre"],
   "difficulty": "Intermédiaire",
   "durationMinutes": 45,
   "cost": null,
@@ -87,9 +84,7 @@
   ],
   "estimatesNote": "Compte environ 45 min pour une transition accessible, hors essai complet du réseau. Le budget dépend du raccord et des dimensions à réunir.",
   "relatedCategories": [],
-  "journeys": [
-    "renover-une-salle-de-bains"
-  ],
+  "journeys": ["renover-une-salle-de-bains"],
   "dtuReferences": [
     {
       "reference": "NF DTU 60.1",

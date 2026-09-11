@@ -1470,4 +1470,7 @@ main[tabindex="-1"]:focus {
   outline: none;
 }
 
-.detail figure .detail-diagram { width: 100%; height: auto; }
+.detail figure .detail-diagram {
+  width: 100%;
+  height: auto;
+}

@@ -1,5 +1,6 @@
-import { readdir, readFile, access } from "node:fs/promises";
 import assert from "node:assert/strict";
+import { readdir, readFile, access } from "node:fs/promises";
+
 import { validateTutorialLinks } from "./validate-tutorial-links.mjs";
 const directory = new URL("../src/data/tutorials/", import.meta.url);
 const ids = new Set();
@@ -89,7 +90,12 @@ for (const file of await listJson(directory)) {
     await access(new URL(`../public${t.image}`, import.meta.url));
   }
   if (t.imageOrigin !== undefined) {
-    assert(t.imageOrigin === "original" && t.image.startsWith("/images/") && !t.imageCredit, `${file}: illustration originale invalide`);
+    assert(
+      t.imageOrigin === "original" &&
+        t.image.startsWith("/images/") &&
+        !t.imageCredit,
+      `${file}: illustration originale invalide`,
+    );
   }
   if (t.imageCredit) {
     for (const key of ["author", "license", "caption", "changes", "accessedAt"])
@@ -102,7 +108,10 @@ for (const file of await listJson(directory)) {
       text(t.scope) && text(t.estimatesNote),
       `${file}: périmètre et estimations requis`,
     );
-    assert(t.imageOrigin === "original" || t.imageCredit, `${file}: origine ou crédit image requis`);
+    assert(
+      t.imageOrigin === "original" || t.imageCredit,
+      `${file}: origine ou crédit image requis`,
+    );
     assert(
       Array.isArray(t.sources) &&
         t.sources.length > 0 &&

@@ -3,9 +3,7 @@
   "title": "Poser une évacuation intérieure en PVC à coller",
   "description": "Le PVC, ou polychlorure de vinyle, est le plastique des tuyaux gris d’évacuation. Pour que l’eau parte bien, il faut un trajet en pente continue et des raccords bien préparés avant collage.",
   "category": "plomberie",
-  "topicPath": [
-    "Gestion des évacuations"
-  ],
+  "topicPath": ["Gestion des évacuations"],
   "difficulty": "Intermédiaire",
   "durationMinutes": 120,
   "cost": null,
@@ -98,9 +96,7 @@
   ],
   "estimatesNote": "Prévois environ 2 h de montage pour un petit tronçon accessible, hors séchage de la colle. Le budget dépend de la longueur, des raccords et des supports.",
   "relatedCategories": [],
-  "journeys": [
-    "renover-une-salle-de-bains"
-  ],
+  "journeys": ["renover-une-salle-de-bains"],
   "dtuReferences": [
     {
       "reference": "NF DTU 60.1",

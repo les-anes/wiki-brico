@@ -64,17 +64,11 @@
   "relatedCategories": [
     {
       "category": "techniques",
-      "topicPath": [
-        "Faire un joint"
-      ]
+      "topicPath": ["Faire un joint"]
     }
   ],
-  "journeys": [
-    "renover-une-salle-de-bains"
-  ],
-  "topicPath": [
-    "Joints sanitaires"
-  ],
+  "journeys": ["renover-une-salle-de-bains"],
+  "topicPath": ["Joints sanitaires"],
   "scope": "Remplacement complet du joint périphérique entre un lavabo stable et un mur sain. Ne remplace pas l’étanchéité sous carrelage ni la réparation d’une fuite cachée.",
   "estimatesNote": "Compte environ 1 h de travail, hors séchage du support et du silicone. Une cartouche et les petits accessoires suffisent pour ce cas courant.",
   "sources": [
