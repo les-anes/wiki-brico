@@ -11,6 +11,7 @@
     "lint:fix": "oxlint --fix",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check .",
+    "typecheck": "tsc --noEmit",
     "preview": "vite preview",
     "validate:data": "node scripts/validate-data.mjs",
     "check:site": "node scripts/check-site.mjs",
@@ -38,7 +39,7 @@
     "oxlint": "^1.82.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.2",
+    "typescript": "^7.0.2",
     "vite": "^6.0.5"
   },
   "packageManager": "pnpm@11.20.0"
