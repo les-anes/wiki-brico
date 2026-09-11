@@ -1,5 +1,5 @@
 [build]
-command = "npm run build && npm run check:site"
+command = "pnpm build && pnpm check:site"
 publish = "dist"
 
 [build.environment]
