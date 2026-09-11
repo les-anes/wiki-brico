@@ -8,11 +8,7 @@
   "cost": null,
   "image": "/images/tutoriels/reboucher-un-trou.png",
   "imageAlt": "Un couteau à enduire lisse une petite réparation sur un mur, au trait et à la gouache sur fond ivoire.",
-  "tools": [
-    "Couteau à enduire",
-    "Petite brosse et chiffon",
-    "Cale à poncer"
-  ],
+  "tools": ["Couteau à enduire", "Petite brosse et chiffon", "Cale à poncer"],
   "materials": [
     {
       "name": "Enduit de rebouchage prêt à l’emploi",
@@ -63,18 +59,11 @@
   "relatedCategories": [
     {
       "category": "techniques",
-      "topicPath": [
-        "Faire un enduit"
-      ]
+      "topicPath": ["Faire un enduit"]
     }
   ],
-  "journeys": [
-    "renover-une-chambre",
-    "amenager-des-combles"
-  ],
-  "topicPath": [
-    "Enduits"
-  ],
+  "journeys": ["renover-une-chambre", "amenager-des-combles"],
+  "topicPath": ["Enduits"],
   "scope": "Petits trous non traversants sur un mur intérieur sec et sain. La fiche s’arrête au support prêt à peindre ; elle ne traite ni fissure évolutive ni réparation de plaque traversée.",
   "estimatesNote": "Compte environ 30 min de travail, hors séchage et peinture. Le budget dépend de l’enduit et des outils que tu possèdes déjà.",
   "sources": [

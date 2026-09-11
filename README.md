@@ -5,12 +5,12 @@ Encyclopédie DIY statique : React 19, TypeScript, Vite 6, Tailwind CSS 3 et com
 ## Démarrer
 
 ```sh
-npm install
-npm run dev
-npm run build
-npm run preview
-npm test
-npm run check:site
+pnpm install
+pnpm dev
+pnpm build
+pnpm preview
+pnpm test
+pnpm check:site
 ```
 
 ## Pages et navigation
@@ -73,21 +73,21 @@ Dupliquer un JSON existant dans le dossier voulu. Champs : `id`, `title`, `descr
 
 Les 14 tutoriels actuels sont documentés et harmonisés avec le modèle commun, y compris les six anciens brouillons. Les durées sont des estimations et les budgets non chiffrables restent à préciser.
 
-`npm run validate:data` vérifie récursivement chemins, identifiants, classifications principales et secondaires, parcours, sources et présence des images locales. Cette validation est aussi exécutée au build. `npm test` teste le routage et les métadonnées (`src/lib/routes.test.ts`). `npm run check:site` contrôle le rendu des pages, les filtres, la correspondance du sitemap, le fil d’Ariane, le shim des anciens liens et l’hydratation, sans navigateur.
+`pnpm validate:data` vérifie récursivement chemins, identifiants, classifications principales et secondaires, parcours, sources et présence des images locales. Cette validation est aussi exécutée au build. `pnpm test` teste le routage et les métadonnées (`src/lib/routes.test.ts`). `pnpm check:site` contrôle le rendu des pages, les filtres, la correspondance du sitemap, le fil d’Ariane, le shim des anciens liens et l’hydratation, sans navigateur.
 
 ## Images et déploiement
 
 Les 14 tutoriels utilisent des illustrations originales locales, regroupées dans `public/images/tutoriels/` et nommées selon l’identifiant de la fiche (`<id>.png`). Les prompts sont conservés dans `docs/illustrations-tutoriels.md`. Aucune légende ni crédit n’est affiché. Les images d’accueil utilisent encore Unsplash ; les polices utilisent Google Fonts.
 
-Publier `dist/`. `netlify.toml` lance `npm run build && npm run check:site`, puis publie `dist/`. Le build pré-rend une page par route, `404.html`, `sitemap.xml` et `robots.txt`. `SITE_URL` fixe l’origine des URLs absolues ; il vaut `https://wikibrico.fr` par défaut et peut être surchargé par variable d’environnement (`SITE_URL=https://exemple.fr npm run build`).
+Publier `dist/`. `netlify.toml` lance `pnpm build && pnpm check:site`, puis publie `dist/`. Le build pré-rend une page par route, `404.html`, `sitemap.xml` et `robots.txt`. `SITE_URL` fixe l’origine des URLs absolues ; il vaut `https://wikibrico.fr` par défaut et peut être surchargé par variable d’environnement (`SITE_URL=https://exemple.fr pnpm build`).
 
 ## Travailler avec OpenSpec
 
 OpenSpec est installé comme dépendance de développement à version fixée. Utiliser la version du projet :
 
 ```sh
-npm run openspec -- list
-npm run validate:specs
+pnpm openspec -- list
+pnpm validate:specs
 ```
 
 `openspec/config.yaml` décrit le contexte et les conventions de WikiBrico. Les spécifications du socle existant sont dans `openspec/specs/`. Les changements en cours vont dans `openspec/changes/`, puis dans son dossier `archive/` une fois terminés.

@@ -3,10 +3,7 @@
   "title": "Assembler des tubes en cuivre à sertir",
   "description": "Tu peux raccorder du cuivre sans chalumeau avec des raccords à sertir. Une pince spéciale comprime le raccord autour du tube, tandis que son joint assure l’étanchéité.",
   "category": "plomberie",
-  "topicPath": [
-    "Arrivée d’eau",
-    "Cuivre"
-  ],
+  "topicPath": ["Arrivée d’eau", "Cuivre"],
   "difficulty": "Intermédiaire",
   "durationMinutes": 45,
   "cost": null,
@@ -84,9 +81,7 @@
   ],
   "estimatesNote": "Prévois environ 45 min pour une jonction accessible, hors essai complet du réseau. La location de la sertisseuse s’ajoute au prix des tubes et raccords.",
   "relatedCategories": [],
-  "journeys": [
-    "renover-une-salle-de-bains"
-  ],
+  "journeys": ["renover-une-salle-de-bains"],
   "dtuReferences": [
     {
       "reference": "NF DTU 60.1",

@@ -71,13 +71,8 @@
   "status": "documented",
   "updatedAt": "2026-09-08",
   "relatedCategories": [],
-  "journeys": [
-    "renover-une-chambre",
-    "amenager-des-combles"
-  ],
-  "topicPath": [
-    "Parquet"
-  ],
+  "journeys": ["renover-une-chambre", "amenager-des-combles"],
+  "topicPath": ["Parquet"],
   "scope": "Parquet contrecollé clipsable en pose flottante dans une pièce sèche, support déjà préparé. Hors ragréage, pose collée, parquet massif et systèmes spéciaux.",
   "estimatesNote": "Prévois environ une journée pour 10 m², hors préparation du support et acclimatation. Le budget inclut parquet, sous-couche, protections et finitions.",
   "sources": [

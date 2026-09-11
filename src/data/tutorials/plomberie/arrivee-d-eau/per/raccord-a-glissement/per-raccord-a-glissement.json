@@ -3,11 +3,7 @@
   "title": "Assembler un tube PER avec un raccord à glissement",
   "description": "Le PER, ou polyéthylène réticulé, est un tuyau souple pour distribuer l’eau. Ici, une pince fait coulisser une bague sur le tube pour le serrer autour du raccord.",
   "category": "plomberie",
-  "topicPath": [
-    "Arrivée d’eau",
-    "PER",
-    "Raccord à glissement"
-  ],
+  "topicPath": ["Arrivée d’eau", "PER", "Raccord à glissement"],
   "difficulty": "Intermédiaire",
   "durationMinutes": 30,
   "cost": null,
@@ -91,9 +87,7 @@
   ],
   "estimatesNote": "Prévois environ 30 min pour un raccord accessible, hors essai complet du réseau. Le budget dépend aussi de l’achat ou de la location des deux pinces.",
   "relatedCategories": [],
-  "journeys": [
-    "renover-une-salle-de-bains"
-  ],
+  "journeys": ["renover-une-salle-de-bains"],
   "dtuReferences": [
     {
       "reference": "NF DTU 60.1",

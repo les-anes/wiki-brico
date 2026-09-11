@@ -1,4 +1,4 @@
-export type CategoryId =
+type CategoryId =
   | "structure"
   | "toiture"
   | "isolation"

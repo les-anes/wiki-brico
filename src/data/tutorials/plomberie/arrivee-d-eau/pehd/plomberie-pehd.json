@@ -3,10 +3,7 @@
   "title": "Amener l’eau du compteur à la maison en PEHD",
   "description": "Le PEHD, c’est le polyéthylène haute densité : le tuyau qui amène l’eau potable du compteur à la maison. Voici comment préparer le passage et le raccorder, sans soudure.",
   "category": "plomberie",
-  "topicPath": [
-    "Arrivée d’eau",
-    "PEHD"
-  ],
+  "topicPath": ["Arrivée d’eau", "PEHD"],
   "difficulty": "Intermédiaire",
   "durationMinutes": 120,
   "cost": null,

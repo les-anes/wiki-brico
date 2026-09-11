@@ -1,0 +1,24 @@
+# Hooks Git — https://lefthook.dev/configuration/
+# Feedback rapide avant commit/push (format, lint, typecheck, tests).
+pre-commit:
+  parallel: true
+  jobs:
+    - name: format
+      glob: "*.{js,cjs,mjs,jsx,ts,tsx,json,css,html,yml,yaml}"
+      run: pnpm exec oxfmt --write {staged_files}
+      stage_fixed: true
+    - name: lint
+      glob: "*.{js,cjs,mjs,jsx,ts,tsx}"
+      run: pnpm exec oxlint --fix {staged_files}
+      stage_fixed: true
+    - name: typecheck
+      run: pnpm exec tsc --noEmit
+pre-push:
+  parallel: true
+  jobs:
+    - name: test
+      run: node --test "src/**/*.test.ts"
+    - name: knip
+      run: pnpm exec knip
+    - name: validate-data
+      run: node scripts/validate-data.mjs

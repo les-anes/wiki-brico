@@ -14,6 +14,7 @@ import {
   Wrench,
   Zap,
 } from "lucide-react";
+
 import categoryData from "./categories.json";
 export { default as journeys } from "./journeys.json";
 const icons = {
@@ -32,10 +33,11 @@ const icons = {
   Wrench,
   Zap,
 };
-export const categories = categoryData.map((category) => ({
-  ...category,
-  icon: icons[category.icon as keyof typeof icons],
-}));
+export const categories = categoryData.map((category) =>
+  Object.assign({}, category, {
+    icon: icons[category.icon as keyof typeof icons],
+  }),
+);
 export const navigationCategories = [
   "plomberie",
   "electricite",

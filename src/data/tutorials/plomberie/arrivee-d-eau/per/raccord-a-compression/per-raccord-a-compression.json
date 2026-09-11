@@ -3,11 +3,7 @@
   "title": "Raccorder un tube PER avec deux clés",
   "description": "Le PER, ou polyéthylène réticulé, est un tuyau souple pour distribuer l’eau. Avec un raccord à compression, l’écrou serre une bague autour du tube : deux clés suffisent pour le serrage.",
   "category": "plomberie",
-  "topicPath": [
-    "Arrivée d’eau",
-    "PER",
-    "Raccord à compression"
-  ],
+  "topicPath": ["Arrivée d’eau", "PER", "Raccord à compression"],
   "difficulty": "Débutant",
   "durationMinutes": 30,
   "cost": null,
@@ -96,9 +92,7 @@
   ],
   "estimatesNote": "Compte environ 30 min pour un raccord accessible, hors contrôle complet du réseau. Le budget comprend tube et raccord ; les clés peuvent souvent être réutilisées.",
   "relatedCategories": [],
-  "journeys": [
-    "renover-une-salle-de-bains"
-  ],
+  "journeys": ["renover-une-salle-de-bains"],
   "dtuReferences": [
     {
       "reference": "NF DTU 60.1",

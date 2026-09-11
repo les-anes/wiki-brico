@@ -1,5 +1,6 @@
-import { readdir, readFile, access } from "node:fs/promises";
 import assert from "node:assert/strict";
+import { readdir, readFile, access } from "node:fs/promises";
+
 import { validateTutorialLinks } from "./validate-tutorial-links.mjs";
 const directory = new URL("../src/data/tutorials/", import.meta.url);
 const ids = new Set();
@@ -22,7 +23,7 @@ async function listJson(folder, prefix = "") {
       );
     else if (entry.name.endsWith(".json")) paths.push(`${prefix}${entry.name}`);
   }
-  return paths.sort();
+  return paths.toSorted();
 }
 const httpsUrl = (value) => {
   try {
@@ -31,14 +32,20 @@ const httpsUrl = (value) => {
     return false;
   }
 };
-const taxonomy = JSON.parse(
-  await readFile(
-    new URL("../src/data/categories.json", import.meta.url),
-    "utf8",
-  ),
+async function readJson(url) {
+  try {
+    return JSON.parse(await readFile(url, "utf8"));
+  } catch (error) {
+    console.error(`JSON invalide : ${url.pathname}`);
+    console.error(error instanceof Error ? error.message : error);
+    process.exit(1);
+  }
+}
+const taxonomy = await readJson(
+  new URL("../src/data/categories.json", import.meta.url),
 );
-const journeys = JSON.parse(
-  await readFile(new URL("../src/data/journeys.json", import.meta.url), "utf8"),
+const journeys = await readJson(
+  new URL("../src/data/journeys.json", import.meta.url),
 );
 const categories = taxonomy.map((category) => category.id);
 assert.equal(
@@ -62,7 +69,7 @@ function validClassification(category, topicPath) {
 }
 const text = (value) => typeof value === "string" && value.trim().length > 0;
 for (const file of await listJson(directory)) {
-  const t = JSON.parse(await readFile(new URL(file, directory), "utf8"));
+  const t = await readJson(new URL(file, directory));
   assert(
     text(t.id) &&
       /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(t.id) &&
@@ -89,7 +96,12 @@ for (const file of await listJson(directory)) {
     await access(new URL(`../public${t.image}`, import.meta.url));
   }
   if (t.imageOrigin !== undefined) {
-    assert(t.imageOrigin === "original" && t.image.startsWith("/images/") && !t.imageCredit, `${file}: illustration originale invalide`);
+    assert(
+      t.imageOrigin === "original" &&
+        t.image.startsWith("/images/") &&
+        !t.imageCredit,
+      `${file}: illustration originale invalide`,
+    );
   }
   if (t.imageCredit) {
     for (const key of ["author", "license", "caption", "changes", "accessedAt"])
@@ -102,7 +114,10 @@ for (const file of await listJson(directory)) {
       text(t.scope) && text(t.estimatesNote),
       `${file}: périmètre et estimations requis`,
     );
-    assert(t.imageOrigin === "original" || t.imageCredit, `${file}: origine ou crédit image requis`);
+    assert(
+      t.imageOrigin === "original" || t.imageCredit,
+      `${file}: origine ou crédit image requis`,
+    );
     assert(
       Array.isArray(t.sources) &&
         t.sources.length > 0 &&

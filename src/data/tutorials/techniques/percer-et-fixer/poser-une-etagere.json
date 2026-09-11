@@ -63,13 +63,8 @@
   "status": "documented",
   "updatedAt": "2026-09-08",
   "relatedCategories": [],
-  "journeys": [
-    "renover-une-chambre",
-    "amenager-des-combles"
-  ],
-  "topicPath": [
-    "Percer et fixer"
-  ],
+  "journeys": ["renover-une-chambre", "amenager-des-combles"],
+  "topicPath": ["Percer et fixer"],
   "scope": "Petite étagère sur deux équerres, mur identifié et charge compatible. Pas de fixation de meuble suspendu lourd ni de choix universel de cheville.",
   "estimatesNote": "Prévois environ 1 h pour une étagère, sur un mur prêt à percer. Le budget dépend surtout de la tablette, des équerres et des fixations.",
   "sources": [
