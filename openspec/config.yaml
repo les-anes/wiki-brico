@@ -6,8 +6,9 @@ context: |
   Keep OpenSpec structural headings and SHALL/MUST keywords in English.
   WikiBrico est une encyclopédie française du DIY et de la rénovation.
   Stack : React 19, TypeScript, Vite 6, Tailwind CSS 3, composants de style shadcn/ui.
-  Application statique, sans backend. Routage par fragments dans src/App.tsx.
-  Accueil /#, catalogue /#tutoriels, fiche /#tutoriel/<id>.
+  Application statique pré-rendue, sans backend. Routes réelles : /, /tutoriels/ et /tutoriel/<id>/ ; 404.html sinon.
+  Les anciens liens à fragment (/#tutoriel/<id>, /#tutoriels) sont redirigés vers ces URLs par un court script en ligne.
+  Routage dans src/lib/routes.ts ; document HTML dans src/document.tsx.
   Tutoriels JSON importés récursivement depuis src/data/tutorials/.
   Contrat : src/types.ts. Taxonomie : src/data/categories.json.
   Un fichier par tutoriel, classé par catégorie principale et topicPath en slugs.
@@ -17,7 +18,7 @@ context: |
   Objectif DIY : guider la réalisation et les contrôles autonomes, sans renvoi à un professionnel de la discipline ; conserver les prérequis de sécurité et les conditions d’arrêt.
   Les contenus documentés conservent un périmètre, des sources de recherche et une origine d’image.
   Une synthèse documentée ne constitue pas une validation professionnelle.
-  Vérifications disponibles : npm run validate:data, npm run check:site, npm run build.
+  Vérifications disponibles : pnpm validate:data, pnpm check:site, pnpm build.
   Les specs initiales décrivent le socle existant ; elles ne recensent pas toutes les fonctionnalités.
 
 rules:
