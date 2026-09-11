@@ -9,16 +9,19 @@ npm install
 npm run dev
 npm run build
 npm run preview
+npm test
 npm run check:site
 ```
 
 ## Pages et navigation
 
-- `/#` : accueil, univers de travaux, parcours et rubriques transversales.
-- `/#tutoriels` : catalogue « On s’y met ce week-end ? », recherche, filtres, catégories, sous-catégories, parcours et favoris.
-- `/#tutoriel/identifiant` : fiche détaillée, références DTU, liens de matériel et liens vers ses autres classements.
+- `/` : accueil, univers de travaux, parcours et rubriques transversales.
+- `/tutoriels/` : catalogue « On s’y met ce week-end ? », recherche, filtres, catégories, sous-catégories, parcours et favoris.
+- `/tutoriel/<identifiant>/` : fiche détaillée, références DTU, liens de matériel et liens vers ses autres classements.
 
-Les filtres sont dans l’URL : `/#tutoriels?categorie=plomberie`, `/#tutoriels?parcours=renover-une-chambre` ou `/#tutoriels?favoris=1`. Les niveaux de sous-catégorie utilisent des paramètres `sujet` répétés. Les liens et le bouton Retour conservent la sélection ; les favoris sont stockés dans le navigateur. La recherche remplace l’entrée d’historique courante pour ne pas créer une étape par lettre.
+Chaque route est une vraie page HTML pré-rendue au build : `<title>`, `meta description`, `canonical`, `og:*` propres et balisage `BreadcrumbList`. Le rendu serveur réutilise le même composant React que le navigateur, puis `hydrateRoot` reprend la main. Les anciens liens à fragment (`/#tutoriel/<identifiant>`, `/#tutoriels?...`) sont redirigés vers l’URL canonique par un court script en ligne. Les chemins inconnus affichent `404.html`.
+
+Les filtres sont dans l’URL : `/tutoriels/?categorie=plomberie`, `/tutoriels/?parcours=renover-une-chambre` ou `/tutoriels/?favoris=1`. Les niveaux de sous-catégorie utilisent des paramètres `sujet` répétés. Les liens et le bouton Retour conservent la sélection ; les favoris sont stockés dans le navigateur. La recherche remplace l’entrée d’historique courante pour ne pas créer une étape par lettre.
 
 Le favicon SVG local `public/favicon.svg` reprend la maison du logo.
 
@@ -70,13 +73,13 @@ Dupliquer un JSON existant dans le dossier voulu. Champs : `id`, `title`, `descr
 
 Les 14 tutoriels actuels sont documentés et harmonisés avec le modèle commun, y compris les six anciens brouillons. Les durées sont des estimations et les budgets non chiffrables restent à préciser.
 
-`npm run validate:data` vérifie récursivement chemins, identifiants, classifications principales et secondaires, parcours, sources et présence des images locales. Cette validation est aussi exécutée au build. `npm run check:site` contrôle le rendu des pages et les principaux cas de filtrage, sans navigateur.
+`npm run validate:data` vérifie récursivement chemins, identifiants, classifications principales et secondaires, parcours, sources et présence des images locales. Cette validation est aussi exécutée au build. `npm test` teste le routage et les métadonnées (`src/lib/routes.test.ts`). `npm run check:site` contrôle le rendu des pages, les filtres, la correspondance du sitemap, le fil d’Ariane, le shim des anciens liens et l’hydratation, sans navigateur.
 
 ## Images et déploiement
 
 Les 14 tutoriels utilisent des illustrations originales locales, regroupées dans `public/images/tutoriels/` et nommées selon l’identifiant de la fiche (`<id>.png`). Les prompts sont conservés dans `docs/illustrations-tutoriels.md`. Aucune légende ni crédit n’est affiché. Les images d’accueil utilisent encore Unsplash ; les polices utilisent Google Fonts.
 
-Publier `dist/`. La navigation par fragment fonctionne sans réécriture serveur. Les fragments ne sont pas des pages SEO indépendantes : prévoir un pré-rendu et de vraies routes pour le référencement individuel. `SITE_URL=https://votre-domaine.fr npm run build` génère le sitemap de l’accueil ; sans cette variable, seul robots.txt est généré.
+Publier `dist/`. `netlify.toml` lance `npm run build && npm run check:site`, puis publie `dist/`. Le build pré-rend une page par route, `404.html`, `sitemap.xml` et `robots.txt`. `SITE_URL` fixe l’origine des URLs absolues ; il vaut `https://wikibrico.fr` par défaut et peut être surchargé par variable d’environnement (`SITE_URL=https://exemple.fr npm run build`).
 
 ## Travailler avec OpenSpec
 
