@@ -1,0 +1,99 @@
+{
+  "id": "remplacer-mecanisme-chasse-eau",
+  "title": "Remplacer le mécanisme d’une chasse d’eau",
+  "description": "Le mécanisme de vidage est abîmé ou fuit encore après nettoyage ? Remplace-le sur un WC posé à réservoir apparent, puis règle la chasse et contrôle tous les joints.",
+  "category": "cuisine-salle-de-bains",
+  "topicPath": ["WC"],
+  "journeys": ["renover-une-salle-de-bains"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 120,
+  "cost": null,
+  "image": "/images/tutoriels/remplacer-mecanisme-chasse-eau.png",
+  "imageAlt": "Un mécanisme de chasse blanc et bleu accompagné de son joint noir et de son bouton double, dessiné sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Remplacement complet du mécanisme de vidage avec dépose du réservoir apparent ; robinet flotteur conservé s’il fonctionne, alimentation accessible à raccord avec joint plat.",
+  "estimatesNote": "Durée indicative pour un équipement accessible, contrôles compris, hors achats et pièces grippées. Budget à préciser selon les pièces nécessaires ; les outils ne sont pas inclus.",
+  "sources": [
+    {
+      "title": "SIAMP — Notice de montage Optima 50 et robinet flotteur 95L",
+      "url": "https://online.siamp.com/wp-content/uploads/2021/09/notice_optima50_95l.pdf",
+      "note": "Montage, réglages et entretien propres aux modèles illustrés ; suivre la notice du mécanisme réellement installé.",
+      "accessedAt": "2026-09-14"
+    },
+    {
+      "title": "SIAMP — Maintenance Optima 50",
+      "url": "https://siamp.fr/maintenance-optima-50/",
+      "note": "Identification des pièces : clapet, kit de rénovation, fixations et clé de montage.",
+      "accessedAt": "2026-09-14"
+    }
+  ],
+  "tools": [
+    "Mètre et téléphone pour photographier le montage",
+    "Deux clés adaptées au raccord d’arrivée et aux fixations",
+    "Clé de bonde adaptée au mécanisme, souvent fournie",
+    "Tournevis",
+    "Bassine, éponge, chiffons et serviette épaisse"
+  ],
+  "materials": [
+    {
+      "name": "Mécanisme compatible avec le réservoir et son couvercle, avec notice",
+      "quantity": "1 kit avec joint de bonde et bouton"
+    },
+    {
+      "name": "Joint entre réservoir et cuvette, adapté aux deux pièces",
+      "quantity": "1 neuf"
+    },
+    {
+      "name": "Fixations de réservoir avec leurs joints et rondelles compatibles",
+      "quantity": "1 jeu"
+    },
+    {
+      "name": "Joint plat compatible avec le raccord d’alimentation en eau",
+      "quantity": "1 neuf"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie la compatibilité avant d’acheter",
+      "description": "Relève la référence du WC, la hauteur intérieure du réservoir et le diamètre du trou de commande du couvercle. Vérifie aussi le diamètre de sortie et la place disponible à partir de la documentation du WC, ou mesure après dépose : l’étiquette « universel » ne suffit pas."
+    },
+    {
+      "title": "Coupe l’eau et débranche l’arrivée",
+      "description": "Ferme la vanne, tire la chasse et assure-toi que le réservoir ne se remplit plus, puis éponge le fond. Libère la commande et pose le couvercle sur une serviette ; avec une bassine dessous, dévisse le raccord d’arrivée en maintenant la partie fixe avec la seconde clé pour ne pas la tordre."
+    },
+    {
+      "title": "Dépose le réservoir",
+      "description": "Photographie l’ordre des fixations, dévisse les écrous sous la cuvette et soulève le réservoir verticalement en le tenant à deux mains. Pose-le sur la serviette, retire le joint de liaison, puis dévisse le gros écrou extérieur qui retient le mécanisme au fond. Retire l’ancien ensemble et nettoie les surfaces d’appui sans les rayer."
+    },
+    {
+      "title": "Pose le nouveau mécanisme",
+      "description": "Règle la hauteur du trop-plein selon la notice et les mesures du réservoir ; ne recoupe une pièce que si cette notice le prévoit. Place le joint de bonde côté intérieur, engage la base du mécanisme puis serre son écrou extérieur comme prescrit, sans pâte à joint ni serrage excessif. Oriente le mécanisme pour laisser le flotteur et la commande libres."
+    },
+    {
+      "title": "Remonte le réservoir et l’arrivée",
+      "description": "Pose les fixations neuves avec les joints et rondelles dans l’ordre indiqué, puis centre le joint neuf entre réservoir et cuvette. Repose le réservoir et serre les deux côtés progressivement et alternativement, juste assez pour le stabiliser sans contraindre la céramique. Rebranche l’alimentation avec son joint plat neuf, en maintenant à nouveau la partie fixe."
+    },
+    {
+      "title": "Règle et teste les deux chasses",
+      "description": "Rouvre lentement, règle l’arrêt du flotteur et les volumes selon la notice, puis remonte la commande sans tendre le câble ni maintenir le bouton enfoncé. Teste petite et grande chasse et passe un papier absorbant sous l’arrivée, les fixations et la jonction réservoir-cuvette, au repos puis pendant la vidange. Recontrôle après dix minutes : aucune humidité, aucun filet dans la cuvette ni remplissage intempestif ne doit subsister."
+    }
+  ],
+  "mistakes": [
+    "Confondre une panne de robinet flotteur avec une fuite du mécanisme de vidage.",
+    "Réutiliser un joint écrasé ou décentrer le joint entre cuvette et réservoir.",
+    "Serrer davantage pour compenser une fuite au lieu de couper l’eau et de vérifier le placement du joint."
+  ],
+  "safety": [
+    "Si la vanne locale ne coupe pas réellement, ferme l’arrivée générale avant de desserrer le raccord.",
+    "Ne force pas une fixation grippée contre la céramique ; ne remonte pas un réservoir fissuré.",
+    "Le réservoir est lourd et fragile : prévois une prise stable et de l’aide pour le lever si nécessaire."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-14",
+  "relatedCategories": [
+    {
+      "category": "plomberie",
+      "topicPath": ["Robinetterie"]
+    }
+  ]
+}

@@ -137,6 +137,36 @@ Use case: stylized-concept. Original French DIY tutorial cover, landscape. Loose
 
 L’illustration du tableau est réaffectée au tutoriel de dimensionnement après retrait de la fiche de test du différentiel.
 
+
+## Plomberie et WC — 14 septembre 2026
+
+Trois illustrations originales générées avec l’outil intégré imagegen, copiées dans `public/images/tutoriels/` et contrôlées visuellement. PNG 1536×1024 et variantes WebP 480, 720 et 960 pixels ; couvertures illustratives, sans valeur de schéma de montage.
+
+### arreter-chasse-eau-qui-coule
+
+Fichier : `public/images/tutoriels/arreter-chasse-eau-qui-coule.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: An open white ceramic toilet cistern seen slightly from above, lid placed beside it, simple grey flush tower and small blue float visible inside. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### remplacer-mecanisme-chasse-eau
+
+Fichier : `public/images/tutoriels/remplacer-mecanisme-chasse-eau.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: One standalone white and grey dual flush toilet mechanism with a blue adjustment piece, a large dark rubber sealing washer and a small round dual push button placed beside it. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### nettoyer-siphon-lavabo
+
+Fichier : `public/images/tutoriels/nettoyer-siphon-lavabo.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: A white plastic bottle trap for a bathroom washbasin, its threaded bottom cup unscrewed and placed beside it, small cleaning brush and shallow muted blue basin beneath. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+
 ### ajouter-un-contacteur-jour-nuit
 
 Fichier : `public/images/tutoriels/ajouter-un-contacteur-jour-nuit.png`. Génération avec l’outil intégré imagegen le 10 septembre 2026. Illustration contrôlée visuellement, sans valeur de schéma de câblage.

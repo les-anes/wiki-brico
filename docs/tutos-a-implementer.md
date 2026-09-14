@@ -1,6 +1,6 @@
 # Todo des prochains tutoriels
 
-Dernière mise à jour : **11 septembre 2026**.
+Dernière mise à jour : **14 septembre 2026**.
 
 Ce document centralise les idées de nouveaux tutos WikiBrico. Il sert à choisir le prochain sujet et à suivre sa réalisation ; il ne remplace pas les specs du tutoriel.
 
@@ -23,9 +23,6 @@ Le choix initial combine les problèmes courants à la maison, l’utilité imm�
 
 ## Priorité 1 — Petites réparations et gestes très utiles
 
-- [ ] **T01 — Arrêter une chasse d’eau qui coule en continu.** Plomberie / Robinetterie. Cas : réservoir accessible ; repérer si la fuite vient du flotteur ou du joint, nettoyer et vérifier le résultat. Réserver le remplacement complet à T02.
-- [ ] **T02 — Remplacer le mécanisme d’une chasse d’eau.** Cuisine & salle de bains / WC. Cas : WC posé avec réservoir accessible ; choisir un mécanisme compatible et contrôler l’étanchéité.
-- [ ] **T03 — Déboucher un lavabo en nettoyant son siphon.** Plomberie / Gestion des évacuations. Démonter, nettoyer et remonter le siphon, puis vérifier l’écoulement ; sans mélange de déboucheurs chimiques.
 - [ ] **T04 — Remplacer un mitigeur de lavabo.** Plomberie / Robinetterie. Cas : robinet fixé sur le lavabo, flexibles accessibles et vannes d’arrêt existantes.
 - [ ] **T05 — Réparer une fuite sur un raccord à joint plat.** Plomberie / Robinetterie. Cas : raccord accessible de flexible sanitaire ; remplacer le joint adapté et tester.
 - [ ] **T06 — Lisser un mur avant de le peindre.** Cloisons / Enduits. Enduire les petites irrégularités d’un mur sain, poncer et dépoussiérer ; complément du tuto de peinture existant.
@@ -104,10 +101,15 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Réalisés depuis cette liste
 
-Aucun pour le moment. Format à conserver : `- [x] Txx — Titre — terminé le AAAA-MM-JJ — /tutoriel/identifiant/`.
+- [x] **T01 — Arrêter une chasse d’eau qui coule en continu** — terminé le 2026-09-14 — [/tutoriel/arreter-chasse-eau-qui-coule/](/tutoriel/arreter-chasse-eau-qui-coule/)
+- [x] **T02 — Remplacer le mécanisme d’une chasse d’eau** — terminé le 2026-09-14 — [/tutoriel/remplacer-mecanisme-chasse-eau/](/tutoriel/remplacer-mecanisme-chasse-eau/)
+- [x] **T03 — Déboucher un lavabo en nettoyant son siphon** — terminé le 2026-09-14 — [/tutoriel/nettoyer-siphon-lavabo/](/tutoriel/nettoyer-siphon-lavabo/)
 
 ## Journal de mise à jour
 
 - **2026-09-11** : création de 30 idées, réparties en trois priorités, après comparaison avec les 18 fiches existantes. Priorisation qualitative, sans volumes de recherche.
 - **2026-09-11** : ajout de huit sujets peinture (T31 à T38), dont les trois demandes : éviter les bavures, choisir sa peinture et réaliser un motif au pochoir. La liste compte désormais 38 idées ; les volumes Google Trends n’ont pas été vérifiés.
 - **2026-09-11** : ajout de quatre sujets demandés (T39 à T42) : volets en bois, joints de pierre à la chaux, remplacement d’un linteau et ceinture d’un mur en pierre. La liste compte désormais 42 idées ; les deux sujets structurels restent à cadrer avant rédaction.
+
+- **2026-09-14** : début de réalisation du premier lot prioritaire : T01, T02 et T03.
+- **2026-09-14** : T01, T02 et T03 terminés : fiches documentées, illustrations originales et variantes WebP, validations des données, du build et du rendu réussies. Le catalogue contient 21 tutoriels ; 39 idées restent à faire.

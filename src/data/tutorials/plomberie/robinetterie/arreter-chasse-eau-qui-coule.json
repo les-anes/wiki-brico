@@ -1,0 +1,89 @@
+{
+  "id": "arreter-chasse-eau-qui-coule",
+  "title": "Arrêter une chasse d’eau qui coule en continu",
+  "description": "Un filet d’eau descend sans arrêt dans tes WC ? Sur un réservoir à couvercle accessible, repère la pièce en cause, nettoie-la et vérifie que la fuite disparaît.",
+  "category": "plomberie",
+  "topicPath": ["Robinetterie"],
+  "journeys": ["renover-une-salle-de-bains"],
+  "difficulty": "Débutant",
+  "durationMinutes": 45,
+  "cost": null,
+  "image": "/images/tutoriels/arreter-chasse-eau-qui-coule.png",
+  "imageAlt": "Un réservoir de WC ouvert avec son flotteur bleu et son mécanisme de chasse, dessiné sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "WC posé, réservoir apparent, fuite vers la cuvette : diagnostic, nettoyage et réglage, sans dépose du réservoir ni remplacement complet.",
+  "estimatesNote": "Durée indicative pour un équipement accessible, contrôles compris, hors achats et pièces grippées. Budget à préciser selon les pièces nécessaires ; les outils ne sont pas inclus.",
+  "sources": [
+    {
+      "title": "SIAMP — Diagnostic des fuites de chasse",
+      "url": "https://www.siamp.com/wp-content/uploads/2018/07/fr_diagnostic_fuites_batis.pdf",
+      "note": "Principe de distinction entre commande, robinet flotteur et clapet ; les accès des bâtis-supports ne sont pas repris ici.",
+      "accessedAt": "2026-09-14"
+    },
+    {
+      "title": "SIAMP — Notice de montage Optima 50 et robinet flotteur 95L",
+      "url": "https://online.siamp.com/wp-content/uploads/2021/09/notice_optima50_95l.pdf",
+      "note": "Montage, réglages et entretien propres aux modèles illustrés ; suivre la notice du mécanisme réellement installé.",
+      "accessedAt": "2026-09-14"
+    }
+  ],
+  "tools": [
+    "Éponge, chiffons et bassine",
+    "Petite brosse souple",
+    "Tournevis adapté au réglage du flotteur",
+    "Gants de ménage"
+  ],
+  "materials": [
+    {
+      "name": "Eau claire pour le nettoyage",
+      "quantity": "1 bassine"
+    },
+    {
+      "name": "Joint de clapet compatible, seulement si le joint est abîmé",
+      "quantity": "1, à identifier après inspection"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Ouvre le réservoir sans forcer",
+      "description": "Libère le bouton selon la notice, puis pose le couvercle à plat sur un chiffon. Vérifie que le bouton revient librement et que sa liaison ne maintient pas le mécanisme soulevé."
+    },
+    {
+      "title": "Repère le trajet de la fuite",
+      "description": "Observe si l’eau passe par le trop-plein, le tube qui évacue un niveau trop haut vers la cuvette : le remplissage ou son réglage est alors en cause. Ferme l’arrivée d’eau sans tirer la chasse et attends que le niveau passe sous le trop-plein ; s’il continue à baisser avec un filet dans la cuvette, vérifie le clapet, le joint mobile au fond du mécanisme."
+    },
+    {
+      "title": "Vide le réservoir et nettoie",
+      "description": "Arrivée fermée, tire la chasse et vérifie que le réservoir ne se remplit plus. Éponge le fond et retire les dépôts accessibles à la brosse souple et à l’eau claire, sans gratter les surfaces des joints."
+    },
+    {
+      "title": "Libère et règle le flotteur si l’eau débordait",
+      "description": "Vérifie que le flotteur coulisse sans toucher la paroi ou le mécanisme et nettoie son guidage. Ajuste sa vis pour arrêter le remplissage sous le trop-plein, à la hauteur prescrite par la notice ; si le robinet laisse encore passer l’eau malgré la remontée du flotteur, son entretien ou son remplacement reste nécessaire."
+    },
+    {
+      "title": "Nettoie le clapet si le niveau baissait",
+      "description": "Déverrouille la partie mobile comme indiqué dans la notice : certains modèles se retirent par un quart de tour, mais ne force pas un autre montage. Rince le joint et sa surface d’appui, remplace le joint s’il est déformé ou déchiré, puis remets le mécanisme en place et verrouille-le."
+    },
+    {
+      "title": "Vérifie l’arrêt de l’eau",
+      "description": "Rouvre doucement, laisse remplir puis actionne deux fois la chasse, avec le couvercle et le bouton remontés. Après la fin du remplissage, vérifie pendant dix minutes l’absence de filet dans la cuvette et de redémarrage ; si la fuite persiste, ferme l’arrivée et reprends le diagnostic avant de changer une pièce."
+    }
+  ],
+  "mistakes": [
+    "Changer tout le mécanisme avant d’avoir distingué un trop-plein d’une fuite au clapet.",
+    "Régler le niveau trop haut ou coincer la commande en reposant le couvercle.",
+    "Ajouter du détartrant ou du chlore dans le réservoir sans compatibilité explicite du fabricant."
+  ],
+  "safety": [
+    "Ne démonte aucune pièce tant que l’arrivée n’est pas fermée et le remplissage arrêté ; si la vanne locale ne coupe pas, coupe l’eau générale.",
+    "Une fissure de céramique ou une fuite à l’extérieur du réservoir sort de ce nettoyage : garde l’eau coupée jusqu’à réparation."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-14",
+  "relatedCategories": [
+    {
+      "category": "cuisine-salle-de-bains",
+      "topicPath": ["WC"]
+    }
+  ]
+}

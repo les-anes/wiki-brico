@@ -1,0 +1,90 @@
+{
+  "id": "nettoyer-siphon-lavabo",
+  "title": "Déboucher un lavabo en nettoyant son siphon",
+  "description": "Ton lavabo se vide lentement et des cheveux s’accumulent dans l’évacuation ? Nettoie le siphon, la pièce située dessous qui retient un peu d’eau pour bloquer les odeurs, puis vérifie l’écoulement.",
+  "category": "plomberie",
+  "topicPath": ["Gestion des évacuations"],
+  "journeys": ["renover-une-salle-de-bains"],
+  "difficulty": "Débutant",
+  "durationMinutes": 30,
+  "cost": null,
+  "image": "/images/tutoriels/nettoyer-siphon-lavabo.png",
+  "imageAlt": "Un siphon blanc sous un lavabo, son culot dévissé près d’une bassine bleue et d’une brosse sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Lavabo équipé d’un siphon bouteille plastique accessible à culot dévissable, sans déboucheur chimique déjà présent ; nettoyage local, hors bouchon dans la canalisation murale.",
+  "estimatesNote": "Durée indicative pour un équipement accessible, contrôles compris, hors achats et pièces grippées. Budget à préciser selon les pièces nécessaires ; les outils ne sont pas inclus.",
+  "sources": [
+    {
+      "title": "Leroy Merlin — Changer un siphon",
+      "url": "https://www.leroymerlin.fr/tutos/plomberie/comment-changer-un-siphon.html",
+      "note": "Démontage du culot, nettoyage et contrôle de l’écoulement.",
+      "accessedAt": "2026-09-14"
+    },
+    {
+      "title": "Leroy Merlin — Déboucher siphons et canalisations",
+      "url": "https://media.leroymerlin.fr/Capture/db/40/8ee07b1d4f0cab7968b49b7b9225/comment-deboucher-siphons-et-canalisations-5ef49499fb87ae000932f052.pdf",
+      "note": "Retrait mécanique des déchets et nettoyage des pièces à l’eau savonneuse.",
+      "accessedAt": "2026-09-14"
+    },
+    {
+      "title": "Wirquin — Ensemble Quick Clac et siphon classique lavabo",
+      "url": "https://www.wirquin.fr/images/produits/SALLE_DE_BAINS/onglet_telechargement/ensemble_quick_clac_siphon_classique_lavabo.pdf",
+      "note": "Exemple de siphon de lavabo classique avec culot dévissable pour entretien.",
+      "accessedAt": "2026-09-14"
+    }
+  ],
+  "tools": [
+    "Bassine ou seau bas",
+    "Petite brosse ou écouvillon souple",
+    "Éponge et chiffons",
+    "Gants de ménage"
+  ],
+  "materials": [
+    {
+      "name": "Eau tiède et liquide vaisselle",
+      "quantity": "1 bassine et quelques gouttes"
+    },
+    {
+      "name": "Joint de culot compatible, seulement si celui en place est abîmé",
+      "quantity": "1, mêmes dimensions et profil"
+    },
+    {
+      "name": "Sac pour les déchets et papier absorbant",
+      "quantity": "1 sac et quelques feuilles"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prépare la zone",
+      "description": "N’utilise plus le robinet et préviens les autres occupants ; vide l’eau stagnante du lavabo avec l’éponge dans un seau. Dégage le meuble et place la bassine sous le siphon, avec un chiffon pour protéger le fond."
+    },
+    {
+      "title": "Dévisse le culot",
+      "description": "Maintiens le corps du siphon d’une main et dévisse doucement son godet inférieur de l’autre, en laissant l’eau tomber dans la bassine. Repère la position du joint avant de le retirer ; si tout le siphon tourne ou si le plastique résiste, arrête de forcer."
+    },
+    {
+      "title": "Retire le bouchon",
+      "description": "Enlève les cheveux et amas de savon du culot et de la partie accessible du siphon, puis mets-les dans le sac. Brosse les parois à l’eau tiède savonneuse et rince dans une autre bassine ou un autre point d’eau : le lavabo est encore démonté."
+    },
+    {
+      "title": "Vérifie le joint et remonte",
+      "description": "Nettoie la gorge du joint et les filetages, puis remets le joint à plat dans son logement ; remplace-le s’il est coupé, durci ou déformé. Présente le culot bien droit et revisse à la main sans forcer, sans ruban d’étanchéité ni colle."
+    },
+    {
+      "title": "Teste l’écoulement et les fuites",
+      "description": "Fais couler un petit filet, puis le débit habituel ; remplis partiellement le lavabo et libère l’eau en surveillant le siphon. Passe un papier sec autour du culot et des raccords, puis recommence quelques minutes plus tard : il doit rester sec. Si l’écoulement reste lent, vérifie les déchets accessibles à la bonde, l’orifice du lavabo ; un bouchon plus loin dans le tuyau demande un autre débouchage."
+    }
+  ],
+  "mistakes": [
+    "Ouvrir le robinet alors que le culot est encore démonté.",
+    "Perdre le joint dans la bassine ou le pincer au remontage.",
+    "Serrer à la pince un culot plastique ou repousser les cheveux dans l’évacuation."
+  ],
+  "safety": [
+    "Si un déboucheur chimique a déjà été versé, ne démonte pas le siphon : le liquide retenu peut te brûler ; suis les consignes de son emballage avant toute intervention.",
+    "Ne mélange jamais des produits de débouchage et ne verse pas d’eau bouillante dans le siphon.",
+    "Si une fuite apparaît au test, arrête l’eau et vérifie le joint et le filetage avant de réutiliser le lavabo."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-14"
+}
