@@ -1,0 +1,92 @@
+{
+  "id": "lisser-un-mur",
+  "title": "Lisser un mur avant de le peindre",
+  "description": "Ton mur présente de petites rayures et des irrégularités qui ressortiraient sous la peinture ? Étale un enduit de lissage en couche fine, puis ponce pour obtenir une surface régulière.",
+  "category": "cloisons",
+  "topicPath": ["Enduits"],
+  "relatedCategories": [
+    { "category": "techniques", "topicPath": ["Faire un enduit"] },
+    { "category": "finitions", "topicPath": ["Peinture"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 120,
+  "cost": null,
+  "image": "/images/tutoriels/lisser-un-mur.png",
+  "imageAlt": "Une main passe un couteau à enduire sur une large zone de mur, avec un pot d’enduit à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Lissage manuel de petites irrégularités sur environ 5 m² de mur intérieur sec, solide et propre, nu ou couvert d’une peinture adhérente compatible avec l’enduit. Hors humidité, fissure évolutive, crépi épais, rebouchage profond et revêtement ancien non identifié.",
+  "estimatesNote": "Prévois environ 2 h de travail pour 5 m², hors séchage entre les passes et avant peinture. Budget à préciser selon la consommation de l’enduit choisi et les protections, hors outils et peinture.",
+  "sources": [
+    {
+      "title": "Toupret — Fiche technique de l’enduit de lissage en pâte",
+      "url": "https://bo.toupret.com/storage/media/shares/FT_TOUPRET_ENDUIT_LISSAGE_PATE-TSA.pdf",
+      "note": "Supports sains, travail par petites zones, épaisseur limitée et séchage avant ponçage. Les délais et épaisseurs de cette référence ne sont pas généralisés aux autres enduits.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Couteau à enduire large et petite spatule",
+    "Cale à poncer",
+    "Brosse souple, éponge et seau",
+    "Aspirateur adapté aux poussières fines",
+    "Lampe à piles",
+    "Gants, lunettes et masque antipoussière FFP2"
+  ],
+  "materials": [
+    {
+      "name": "Enduit de lissage intérieur prêt à l’emploi compatible avec le support",
+      "quantity": "Pour environ 5 m², selon la consommation et le nombre de passes indiqués sur le pot"
+    },
+    {
+      "name": "Papier abrasif fin adapté à l’enduit",
+      "quantity": "Quelques feuilles, par exemple grain 180 selon la notice"
+    },
+    {
+      "name": "Bâche et ruban de masquage",
+      "quantity": "Pour le sol, les plinthes et les bords de la zone"
+    },
+    {
+      "name": "Lessive pour murs et eau claire",
+      "quantity": "Selon le dosage indiqué, pour nettoyer puis rincer un mur peint"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie le support",
+      "description": "Éclaire le mur de côté pour repérer les défauts et vérifie qu’il est sec, solide et sans peinture qui se décolle. Les trous profonds doivent être rebouchés et secs avant le lissage ; ne recouvre pas une zone humide ou une fissure qui évolue."
+    },
+    {
+      "title": "Protège et nettoie",
+      "description": "Bâche le sol et masque les plinthes ainsi que les bords des appareillages, sans les démonter. Sur peinture saine, lessive, rince et laisse sécher, puis égrène si la notice le demande ; sur support nu compatible, brosse et dépoussière. Retire au préalable le papier peint et sa colle : l’enduit ne se pose pas dessus."
+    },
+    {
+      "title": "Étale une couche fine",
+      "description": "Charge le couteau large avec la petite spatule et travaille par zones d’environ 1 m². Tire l’enduit sur le mur avec une pression régulière, en chevauchant légèrement les passages et en respectant l’épaisseur maximale du pot."
+    },
+    {
+      "title": "Lisse les raccords",
+      "description": "Repasse avec la lame propre, presque à plat, pour retirer le surplus sans creuser la couche. Réduis les bourrelets entre les zones avant que l’enduit durcisse et évite de retravailler une pâte qui commence à tirer."
+    },
+    {
+      "title": "Laisse sécher et reprends les creux",
+      "description": "Respecte le délai avant une nouvelle passe indiqué sur l’emballage, qui varie avec l’épaisseur et l’humidité. Contrôle avec la lumière de côté et ajoute une fine passe seulement où des creux restent visibles, puis laisse sécher complètement avant de poncer."
+    },
+    {
+      "title": "Ponce et contrôle la surface",
+      "description": "Ponce légèrement les reliefs avec la cale, sans traverser l’enduit, puis aspire la poussière et termine avec une brosse propre. Vérifie à la lumière de côté et avec la main qu’il ne reste ni bosse ni poudre ; le mur pourra recevoir la sous-couche et la peinture compatibles après le délai de recouvrement indiqué."
+    }
+  ],
+  "mistakes": [
+    "Utiliser l’enduit de lissage pour combler un trou profond ou masquer de l’humidité.",
+    "Appliquer une couche épaisse et compter sur le ponçage pour tout rattraper.",
+    "Poncer ou peindre avant le séchage complet, ou laisser la poussière sur le mur."
+  ],
+  "safety": [
+    "Avant de gratter ou poncer un ancien revêtement, vérifie qu’il ne contient pas de plomb ou d’amiante ; si sa nature reste inconnue, ne produis pas de poussière.",
+    "Porte les gants pendant l’application, puis les lunettes et le masque FFP2 pendant le ponçage ; aère et aspire les poussières sans les balayer à sec.",
+    "Ne mouille pas les prises ni les interrupteurs et ne démonte pas leur mécanisme pour ce travail."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

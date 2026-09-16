@@ -1,6 +1,6 @@
 # Todo des prochains tutoriels
 
-Dernière mise à jour : **14 septembre 2026**.
+Dernière mise à jour : **16 septembre 2026**.
 
 Ce document centralise les idées de nouveaux tutos WikiBrico. Il sert à choisir le prochain sujet et à suivre sa réalisation ; il ne remplace pas les specs du tutoriel.
 
@@ -23,9 +23,6 @@ Le choix initial combine les problèmes courants à la maison, l’utilité imm�
 
 ## Priorité 1 — Petites réparations et gestes très utiles
 
-- [ ] **T04 — Remplacer un mitigeur de lavabo.** Plomberie / Robinetterie. Cas : robinet fixé sur le lavabo, flexibles accessibles et vannes d’arrêt existantes.
-- [ ] **T05 — Réparer une fuite sur un raccord à joint plat.** Plomberie / Robinetterie. Cas : raccord accessible de flexible sanitaire ; remplacer le joint adapté et tester.
-- [ ] **T06 — Lisser un mur avant de le peindre.** Cloisons / Enduits. Enduire les petites irrégularités d’un mur sain, poncer et dépoussiérer ; complément du tuto de peinture existant.
 - [ ] **T07 — Reboucher une petite fissure stable dans un mur.** Cloisons / Enduits. Cas : fissure superficielle dans l’enduit ; préparation et réparation, hors fissure structurelle ou évolutive.
 - [ ] **T08 — Choisir et poser une cheville adaptée à ton mur.** Techniques / Poser une cheville. Reconnaître le support et associer charge, cheville, foret et vis ; complément du tuto étagère.
 - [ ] **T09 — Fixer une tringle à rideaux.** Techniques / Percer et fixer. Tracer, choisir les fixations et aligner les supports ; s’appuyer sur T08.
@@ -101,11 +98,16 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Réalisés depuis cette liste
 
+- [x] **T04 — Remplacer un mitigeur de lavabo** — terminé le 2026-09-16 — [/tutoriel/remplacer-mitigeur-lavabo/](/tutoriel/remplacer-mitigeur-lavabo/)
+- [x] **T05 — Réparer une fuite sur un raccord à joint plat** — terminé le 2026-09-16 — [/tutoriel/reparer-fuite-joint-plat/](/tutoriel/reparer-fuite-joint-plat/)
+- [x] **T06 — Lisser un mur avant de le peindre** — terminé le 2026-09-16 — [/tutoriel/lisser-un-mur/](/tutoriel/lisser-un-mur/)
+
 - [x] **T01 — Arrêter une chasse d’eau qui coule en continu** — terminé le 2026-09-14 — [/tutoriel/arreter-chasse-eau-qui-coule/](/tutoriel/arreter-chasse-eau-qui-coule/)
 - [x] **T02 — Remplacer le mécanisme d’une chasse d’eau** — terminé le 2026-09-14 — [/tutoriel/remplacer-mecanisme-chasse-eau/](/tutoriel/remplacer-mecanisme-chasse-eau/)
 - [x] **T03 — Déboucher un lavabo en nettoyant son siphon** — terminé le 2026-09-14 — [/tutoriel/nettoyer-siphon-lavabo/](/tutoriel/nettoyer-siphon-lavabo/)
 
 ## Journal de mise à jour
+
 
 - **2026-09-11** : création de 30 idées, réparties en trois priorités, après comparaison avec les 18 fiches existantes. Priorisation qualitative, sans volumes de recherche.
 - **2026-09-11** : ajout de huit sujets peinture (T31 à T38), dont les trois demandes : éviter les bavures, choisir sa peinture et réaliser un motif au pochoir. La liste compte désormais 38 idées ; les volumes Google Trends n’ont pas été vérifiés.
@@ -113,3 +115,5 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 - **2026-09-14** : début de réalisation du premier lot prioritaire : T01, T02 et T03.
 - **2026-09-14** : T01, T02 et T03 terminés : fiches documentées, illustrations originales et variantes WebP, validations des données, du build et du rendu réussies. Le catalogue contient 21 tutoriels ; 39 idées restent à faire.
+- **2026-09-16** : début du lot T04, T05 et T06 ; demande de rejointoiement à la chaux rattachée à T40, déjà présent, sans doublon.
+- **2026-09-16** : T04, T05 et T06 terminés : fiches documentées, illustrations originales et variantes WebP, contrôles TypeScript, lint, tests, données, build et rendu réussis. Le catalogue contient 24 tutoriels ; 36 idées restent à faire.

@@ -1,0 +1,81 @@
+{
+  "id": "remplacer-mitigeur-lavabo",
+  "title": "Remplacer un mitigeur de lavabo",
+  "description": "Remplace ton robinet à commande unique, appelé mitigeur, sans modifier les arrivées d’eau. Ce tuto concerne un modèle fixé sur le lavabo, avec des flexibles accessibles et deux vannes d’arrêt qui fonctionnent.",
+  "category": "plomberie",
+  "topicPath": ["Robinetterie"],
+  "relatedCategories": [
+    { "category": "cuisine-salle-de-bains", "topicPath": ["Lavabos"] }
+  ],
+  "journeys": ["renover-une-salle-de-bains"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 90,
+  "cost": null,
+  "image": "/images/tutoriels/remplacer-mitigeur-lavabo.png",
+  "imageAlt": "Un mitigeur de lavabo argenté et ses deux flexibles tressés, dessinés au crayon et à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Remplacement d’un mitigeur monotrou sur lavabo stable, avec vannes accessibles et raccords compatibles à joint plat. Bonde indépendante conservée, sans tirette liée au robinet ; hors robinet mural, chauffe-eau ouvert à robinet basse pression, adaptation des canalisations et fixation grippée.",
+  "estimatesNote": "Compte environ 1 h 30 pour la dépose, la pose et les essais sur un lavabo accessible. Budget à préciser selon le mitigeur choisi, hors outils et modification des arrivées d’eau.",
+  "sources": [
+    {
+      "title": "GROHE — Installer un mitigeur monocommande lavabo",
+      "url": "https://cdn.cloud.grohe.com/Literature/Brochures/fr_FR/installer_mitigeur_lavabo/original/installer_mitigeur_lavabo.pdf",
+      "note": "Joint de base, fixation sous vasque, raccordement eau chaude et froide, absence de torsion et essai d’étanchéité. Les opérations de remplacement de bonde sont exclues du cas retenu.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Deux clés plates ou à molette adaptées aux raccords",
+    "Clé de lavabo adaptée à l’écrou de fixation",
+    "Bassine, éponge et chiffons",
+    "Lampe à piles"
+  ],
+  "materials": [
+    {
+      "name": "Mitigeur compatible avec le lavabo et les arrivées existantes",
+      "quantity": "1 kit avec flexibles neufs, joints et fixation"
+    },
+    {
+      "name": "Papier absorbant",
+      "quantity": "Quelques feuilles pour contrôler les raccords"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie la compatibilité",
+      "description": "Compare le diamètre du trou, l’épaisseur du lavabo, la hauteur du bec et les dimensions des raccords avec la notice du nouveau robinet. Vérifie que les flexibles atteignent les vannes sans tension et que la bonde, le bouchon d’évacuation, fonctionne indépendamment du robinet."
+    },
+    {
+      "title": "Coupe les deux arrivées",
+      "description": "Repère l’eau chaude et l’eau froide, ferme leurs vannes et ouvre le mitigeur dans les deux positions pour vider l’eau restante. Si l’eau continue à couler, ne démonte rien tant que la coupure n’est pas effective ; sinon, protège le meuble et place la bassine dessous."
+    },
+    {
+      "title": "Dépose l’ancien robinet",
+      "description": "Dévisse chaque écrou de flexible en maintenant le corps de la vanne avec une seconde clé, sans entraîner le tuyau. Maintiens le robinet par-dessus, dévisse sa fixation sous le lavabo avec la clé adaptée, puis retire le robinet et nettoie son emplacement à l’éponge."
+    },
+    {
+      "title": "Fixe le nouveau mitigeur",
+      "description": "Prépare les flexibles et la fixation selon la notice, puis pose le joint de base et passe les flexibles dans le trou. Place sous le lavabo le joint et la bride fournis dans l’ordre indiqué, centre le bec et serre la fixation progressivement jusqu’à immobiliser le robinet, sans forcer sur la céramique."
+    },
+    {
+      "title": "Raccorde les flexibles",
+      "description": "Vérifie qu’un seul joint adapté est présent dans chaque écrou, puis raccorde les flexibles aux arrivées repérées en suivant les indications chaud et froid du mitigeur. Engage les écrous à la main, termine le serrage selon la notice en maintenant les vannes avec la seconde clé et garde les flexibles sans pli ni torsion. N’ajoute ni filasse ni ruban d’étanchéité sur ces raccords à joint plat."
+    },
+    {
+      "title": "Remets en eau et contrôle",
+      "description": "Ouvre progressivement les vannes, fais couler l’eau froide puis l’eau chaude et vérifie la commande ainsi que l’évacuation. Ferme le mitigeur et passe un papier sec sur chaque raccord, y compris sous sa base, puis recommence après quelques minutes : tout doit rester sec. Si une fuite apparaît, referme les vannes et dépressurise avant de reprendre le raccord."
+    }
+  ],
+  "mistakes": [
+    "Acheter un robinet sans comparer ses raccords, sa fixation et la longueur de ses flexibles.",
+    "Vriller un flexible ou faire tourner une vanne en serrant son écrou.",
+    "Écraser les joints ou fissurer le lavabo par un serrage excessif."
+  ],
+  "safety": [
+    "Laisse refroidir l’eau chaude avant la dépose et garde les appareils électriques hors de la zone mouillée.",
+    "Si la fixation est grippée, le lavabo fissuré ou une vanne fuyarde, arrête le remplacement : ces défauts doivent être résolus avant la pose.",
+    "Un petit chauffe-eau ouvert avec robinet spécifique à trois flexibles ne relève pas de ce montage : vérifie le type d’installation avant tout achat."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

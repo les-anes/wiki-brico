@@ -1,0 +1,84 @@
+{
+  "id": "reparer-fuite-joint-plat",
+  "title": "Réparer une fuite sur un raccord à joint plat",
+  "description": "Une goutte se forme à l’écrou d’un flexible sous ton lavabo ? Remplace son joint plat, la petite rondelle qui assure l’étanchéité entre les deux faces du raccord, puis teste la remise en eau.",
+  "category": "plomberie",
+  "topicPath": ["Robinetterie"],
+  "relatedCategories": [
+    { "category": "techniques", "topicPath": ["Faire un joint"] }
+  ],
+  "journeys": ["renover-une-salle-de-bains"],
+  "difficulty": "Débutant",
+  "durationMinutes": 30,
+  "cost": null,
+  "image": "/images/tutoriels/reparer-fuite-joint-plat.png",
+  "imageAlt": "L’écrou d’un flexible tressé, un joint plat rouge et un raccord en laiton, dessinés à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Raccord accessible à écrou tournant d’un flexible d’eau sanitaire sous lavabo, avec joint plat remplaçable et vannes d’arrêt fonctionnelles. Hors joint intégré non remplaçable, raccord conique, bicône, étanchéité sur filetage, fuite du flexible lui-même et installation de gaz.",
+  "estimatesNote": "Compte environ 30 min pour un raccord accessible, démontage et essais compris. Budget à préciser selon le joint compatible, hors outils et remplacement éventuel du flexible.",
+  "sources": [
+    {
+      "title": "GROHE — Installer un mitigeur monocommande lavabo",
+      "url": "https://cdn.cloud.grohe.com/Literature/Brochures/fr_FR/installer_mitigeur_lavabo/original/installer_mitigeur_lavabo.pdf",
+      "note": "Coupure des arrivées, présence des joints dans les flexibles, serrage sans torsion et contrôle de l’étanchéité à la remise en eau.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Somatherm — Flexibles sanitaires FP985-22",
+      "url": "https://www.ayor.fr/upload/medias/Large/Document/Fiches%20references%20automatises/FT_auto_PRO/Somatherm_FP985-22.pdf",
+      "note": "Exemple fabricant d’écrous tournants à étanchéité par joint plat intégré ; vérifier la conception du flexible avant de choisir une réparation par remplacement du joint seul.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Deux clés plates ou à molette adaptées",
+    "Bassine et chiffons",
+    "Petite brosse souple",
+    "Réglet pour comparer les dimensions du joint"
+  ],
+  "materials": [
+    {
+      "name": "Joint plat compatible avec le raccord et l’eau potable chaude ou froide",
+      "quantity": "1, dimensions et matière prescrites pour le flexible"
+    },
+    { "name": "Papier absorbant", "quantity": "Quelques feuilles" }
+  ],
+  "steps": [
+    {
+      "title": "Localise la fuite",
+      "description": "Essuie le flexible et les raccords, puis cherche avec un papier sec le premier endroit qui se remouille. Continue seulement si l’eau sort de la jonction à écrou : une tresse abîmée, un embout serti qui fuit ou de l’eau venant du robinet demandent une autre réparation."
+    },
+    {
+      "title": "Coupe l’eau et vide la pression",
+      "description": "Ferme les vannes d’eau chaude et froide du lavabo et ouvre le robinet dans les deux positions jusqu’à l’arrêt de l’écoulement. Laisse refroidir l’eau avant de travailler et place la bassine sous le raccord ; ne le desserre pas si l’eau continue à couler."
+    },
+    {
+      "title": "Ouvre et examine le raccord",
+      "description": "Maintiens la partie fixe avec une clé et dévisse l’écrou du flexible avec l’autre, sans faire tourner la canalisation. Retire le joint accessible et nettoie les deux surfaces d’appui avec le chiffon et la brosse, sans les rayer. Si une face est fissurée, fortement corrodée ou non plane, ou si le joint n’est pas remplaçable, ne poursuis pas cette réparation."
+    },
+    {
+      "title": "Choisis et pose le joint neuf",
+      "description": "Vérifie dans la notice du flexible la matière, l’épaisseur et les diamètres intérieur et extérieur du joint ; compare avec l’ancien sans te fier à sa seule couleur. Place un seul joint neuf bien à plat dans son logement, sans obstruer le passage de l’eau et sans ajouter de ruban, de filasse ou de pâte."
+    },
+    {
+      "title": "Revisse sans contraindre le flexible",
+      "description": "Aligne les pièces et engage l’écrou à la main sur plusieurs tours : s’il accroche immédiatement, dévisse et représente-le bien droit. Termine avec les deux clés selon les consignes de serrage du flexible, sans tordre la tresse ni chercher à écraser le joint au maximum."
+    },
+    {
+      "title": "Teste le raccord sous pression",
+      "description": "Rouvre doucement les vannes, fais couler l’eau puis ferme le robinet pour laisser le raccord sous pression. Essuie et contrôle au papier sec immédiatement, après quelques minutes puis après la prochaine utilisation. Si une goutte revient, coupe l’eau et dépressurise avant de vérifier le montage ; ne compense pas une pièce abîmée en serrant toujours plus fort."
+    }
+  ],
+  "mistakes": [
+    "Remplacer un joint sans vérifier que la fuite vient bien de cette jonction.",
+    "Superposer deux joints ou choisir la matière uniquement d’après sa couleur.",
+    "Serrer de travers, vriller le flexible ou ajouter du ruban sur un raccord à joint plat."
+  ],
+  "safety": [
+    "Ce geste concerne uniquement l’eau sanitaire : ne l’applique pas à un raccord de gaz.",
+    "Ne démonte rien tant que les vannes ne coupent pas complètement l’eau ; préviens les autres occupants de l’intervention.",
+    "Garde le raccord accessible pendant les essais et laisse l’arrivée fermée si la fuite persiste."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

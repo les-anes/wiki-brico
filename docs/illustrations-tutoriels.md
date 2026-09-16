@@ -1,5 +1,33 @@
 # Prompts des illustrations de tutoriels
 
+## Robinetterie et enduits — 16 septembre 2026
+
+Trois illustrations originales produites avec l’outil intégré imagegen, copiées dans `public/images/tutoriels/` et contrôlées visuellement. PNG 1536×1024 et variantes WebP 480, 720 et 960 pixels générées avec `cwebp` (qualité 82). Couvertures illustratives, sans valeur de schéma de montage.
+
+### remplacer-mitigeur-lavabo
+
+Fichier : `public/images/tutoriels/remplacer-mitigeur-lavabo.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a standalone silver single-lever bathroom washbasin mixer tap with two braided flexible supply hoses curving below its base. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural silver and grey subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### reparer-fuite-joint-plat
+
+Fichier : `public/images/tutoriels/reparer-fuite-joint-plat.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: the end of a short curved silver braided plumbing supply hose with a hexagonal swivel nut, beside one clearly visible flat red fibre sealing washer and a small brass male plumbing fitting. Object vignette, not assembly diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural silver, brass and muted red subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### lisser-un-mur
+
+Fichier : `public/images/tutoriels/lisser-un-mur.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a broad steel smoothing knife with a wooden handle spreading a wide thin layer of pale white finishing plaster across a simple small upright fragment of pale grey plaster wall, a small unbranded open tub of filler beside it. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
 Production du 8 septembre 2026. Référence de style : `public/images/tutoriels/plomberie-pehd.png`. Les treize dessins complètent le PEHD déjà approuvé. Ce document de travail n’est pas publié sur le site.
 
 ## reboucher-un-trou
