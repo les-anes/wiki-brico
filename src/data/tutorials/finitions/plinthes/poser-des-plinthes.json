@@ -1,0 +1,99 @@
+{
+  "id": "poser-des-plinthes",
+  "title": "Poser des plinthes et couper les angles",
+  "description": "Les plinthes se posent droit mais se jouent dans les angles. Mesure, coupe les onglets à 45 degrés, fixe sans bloquer le sol et traite proprement les coins.",
+  "category": "finitions",
+  "topicPath": ["Plinthes"],
+  "relatedCategories": [
+    { "category": "menuiseries", "topicPath": ["Quincaillerie"] },
+    { "category": "techniques", "topicPath": ["Scier"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 120,
+  "cost": null,
+  "image": "/images/tutoriels/poser-des-plinthes.png",
+  "imageAlt": "Une plinthe posée le long d’une cloison avec une coupe d’angle à 45 degrés, une boîte à onglets et une scie posées à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Pose de plinthes en bois, MDF ou PVC sur un mur intérieur sec et droit, avec un sol fini, y compris en périphérie d’un sol flottant. Hors plinthes sur mur humide, sol en cours de pose, mur très irrégulier et plinthes à intégrer dans une isolation.",
+  "estimatesNote": "Comptez environ 2 h pour une pièce courante, hors séchage de la colle et hors peinture. Le budget dépend du type de plinthe, du mode de fixation et des coupes de finition.",
+  "sources": [
+    {
+      "title": "Briker — Poser des plinthes : méthode propre et coupes d’angle réussies",
+      "url": "https://www.briker.fr/aktu-tuto/poser-des-plinthes",
+      "note": "Rappelle que la difficulté ne tient pas à la pose mais à la coupe des angles et au rattrapage des murs jamais parfaitement droits, et détaille le matériel selon le type de plinthe. Base de la structure de la fiche.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Le Bricoleur — Comment poser des plinthes en 6 étapes : coupe d’angle et pose",
+      "url": "https://le-bricoleur.fr/guides/comment-poser-des-plinthes/",
+      "note": "Décrit la pose en six étapes, la préparation des murs et la fixation des plinthes. Sert de contrôle sur l’ordre des opérations.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Boîte à onglets ou scie à onglet",
+    "Scie égoïne ou scie à métaux fine",
+    "Mètre et crayon",
+    "Niveau à bulle",
+    "Perceuse et chevilles si fixation vissée",
+    "Maillet et cale de bois",
+    "Masque antipoussière et lunettes"
+  ],
+  "materials": [
+    {
+      "name": "Plinthes",
+      "quantity": "Métrage du périmètre des murs, plus environ 10 % de chutes"
+    },
+    {
+      "name": "Colle de montage ou colle à bois",
+      "quantity": "Selon la longueur à coller et le support"
+    },
+    {
+      "name": "Vis ou agrafes de fixation",
+      "quantity": "Environ une tous les 40 à 50 cm si fixation mécanique"
+    },
+    {
+      "name": "Enduit de rebouchage et mastic de finition",
+      "quantity": "Pour reprendre les têtes de vis et les joints d’angle"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Mesure et prépare le support",
+      "description": "Mesure le périmètre des murs et ajoute une marge d’environ 10 % pour les chutes et les coupes. Vérifie que le bas du mur est propre, sec et sans relief, et repère les câbles ou arrivées qui passent en plinthe avant de percer."
+    },
+    {
+      "title": "Coupe les longueurs droites",
+      "description": "Coupe chaque plinthe à la longueur du mur, en commençant et en finissant à quelques millimètres d’un angle pour laisser la place à la coupe d’angle. Présente les plinthes à blanc avant de fixer pour valider les longueurs et l’alignement."
+    },
+    {
+      "title": "Réalise les coupes d’angle",
+      "description": "Pour un angle sortant, coupe les deux plinthes en onglet à 45 degrés, à la boîte à onglets ou à la scie à onglet. Pour un angle rentrant, une coupe droite sur une plinthe et l’autre plinthe qui vient buter dessus donne souvent un résultat plus net qu’un onglet difficile à ajuster."
+    },
+    {
+      "title": "Fixe la première plinthe",
+      "description": "Commence par le mur le plus long et le plus visible, en partant d’un angle. Colle, visse ou agrafe la plinthe en la maintenant au niveau, et cale-la au sol sans l’écraser. Si le sol est flottant, la plinthe ne doit pas le bloquer, sinon le sol ne pourra plus travailler."
+    },
+    {
+      "title": "Enchaîne les murs et les angles",
+      "description": "Pose les plinthes des murs suivants en ajustant les coupes d’angle au fur et à mesure, car un angle jamais parfaitement droit demandera souvent un léger ajustement. Présente chaque pièce avant de la fixer et reprends la coupe au besoin à la râpe ou au papier."
+    },
+    {
+      "title": "Reprends les finitions",
+      "description": "Rebouche les têtes de vis et les interstices, puis masque les écarts entre le mur et la plinthe au mastic de finition. Une fois sec, ponce légèrement et peint ou vernis si nécessaire, en protégeant le sol d’un ruban de masquage."
+    }
+  ],
+  "mistakes": [
+    "Couper les angles intérieurs en onglet alors qu’une coupe droite butée contre l’autre plinthe est plus simple et plus nette.",
+    "Bloquer un sol flottant en collant ou vissant la plinthe sur son chant, et empêcher le sol de travailler.",
+    "Fixer une plinthe avant d’avoir vérifié le passage des câbles, et percer dans une gaine."
+  ],
+  "safety": [
+    "Porte lunettes et masque pendant les coupes : la sciure de MDF est fine et irritante, et la lame d’une scie est tranchante.",
+    "Repère les câbles et canalisations avant de percer, et respecte les zones d’interdiction autour des appareillages.",
+    "Travaille sur une surface stable et bloque la plinthe avant de couper, pour éviter que la pièce ne bascule pendant la coupe."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

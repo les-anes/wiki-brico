@@ -1,0 +1,94 @@
+{
+  "id": "raboter-une-porte-qui-frotte",
+  "title": "Raboter une porte qui frotte par le bas",
+  "description": "Avant de raboter, localise le point de contact et vérifie les charnières. Si le rabot est vraiment nécessaire, enlève le minimum, en plusieurs passes et sans forcer.",
+  "category": "menuiseries",
+  "topicPath": ["Portes"],
+  "relatedCategories": [
+    { "category": "techniques", "topicPath": ["Scier"] },
+    { "category": "preparer-chantier", "topicPath": ["Diagnostic"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 60,
+  "cost": null,
+  "image": "/images/tutoriels/raboter-une-porte-qui-frotte.png",
+  "imageAlt": "Une porte intérieure posée sur des cales, un rabot et une râpe posés sur le bas du vantail marqué d’un trait de crayon, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Rabotage du bas d’une porte intérieure en bois qui frotte le sol, après vérification des charnières et du jeu, sur une porte démontable. Hors porte qui frotte par simple manque d’aplomb corrigeable au réglage, porte trop courte, panneau vitré fragile et porte à recouper avec sa quincaillerie.",
+  "estimatesNote": "Comptez environ 1 h, dépose et repose comprises, plus le temps de finition du chant. Le budget se limite à un rabot ou une râpe si tu n’en as pas ; un ponçage seul suffit rarement.",
+  "sources": [
+    {
+      "title": "Univers Brico — Raboter une porte qui frotte : et si le rabot était l’outil de trop ?",
+      "url": "https://universbrico.com/raboter-porte-qui-frotte/",
+      "note": "Explique comment localiser le point de contact avec une feuille de papier, et relie chaque zone de frottement à une cause, sol qui a monté, bois gonflé ou porte qui pique du nez. Base du diagnostic avant rabotage.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Habitatio — Porte qui frotte au sol : causes et réglages",
+      "url": "https://habitatio.fr/porte-frotte-sol/",
+      "note": "Recense les causes d’un frottement au sol et les réglages possibles avant de retirer de la matière. Sert à la vérification des charnières.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Rabot à main ou rabot électrique",
+    "Râpe et cale à poncer",
+    "Crayon et mètre",
+    "Tournevis pour les charnières",
+    "Cales de bois ou tréteaux",
+    "Masque antipoussière et lunettes"
+  ],
+  "materials": [
+    {
+      "name": "Papier abrasif",
+      "quantity": "Quelques feuilles de grains différents pour finir le chant"
+    },
+    {
+      "name": "Peinture ou vernis de retouche",
+      "quantity": "Pour traiter le bois mis à nu"
+    },
+    {
+      "name": "Cales de bois",
+      "quantity": "Deux pour poser la porte à plat"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Localise le point de contact",
+      "description": "Porte fermée, glisse une feuille de papier dans le jeu tout autour du vantail : là où elle se pince ou se déchire, c’est le contact. Un frottement très fin ne se voit pas à l’œil, mais la feuille le révèle en quelques secondes."
+    },
+    {
+      "title": "Vérifie les charnières avant tout",
+      "description": "Un contact en bas sur toute la largeur, ou dans l’angle haut opposé aux paumelles, signe souvent une charnière qui a lâché ou une porte qui pique du nez. Resserre, décale ou remplace la charnière concernée : le réglage suffit parfois à supprimer le frottement sans retirer de bois."
+    },
+    {
+      "title": "Démonte la porte et pose-la à plat",
+      "description": "Si le rabotage est confirmé, dépose la porte de ses charnières et pose-la à plat sur deux cales. Raboter une porte en place est imprécis et laisse des marques ; à plat, tu vois exactement ce que tu enlèves."
+    },
+    {
+      "title": "Trace la quantité minimale à enlever",
+      "description": "Repère le frottement et trace une ligne à quelques millimètres sous le point de contact, puis vérifie le jeu souhaité au sol. Le bois retiré ne revient pas : mieux vaut manquer de quelques millimètres et repasser une passe que recouper une porte trop courte."
+    },
+    {
+      "title": "Rabote par passes successives",
+      "description": "Rabote en plusieurs passes fines en avançant dans le sens du bois, en vérifiant le trait à chaque passage, puis finis à la râpe ou au papier. Le but est d’enlever juste ce qu’il faut pour que la porte passe, sans créer un jour visible sous le vantail."
+    },
+    {
+      "title": "Repose, contrôle et traite le chant",
+      "description": "Remonte la porte, vérifie qu’elle ferme et s’ouvre librement sur toute sa course, puis arrête-toi si le contact a disparu. Repeins ou vernis aussitôt le bas du vantail : un chant de bois mis à nu, surtout en pièce humide, absorbe l’humidité et gonfle."
+    }
+  ],
+  "mistakes": [
+    "Raboter d’emblée sans vérifier les charnières, et retirer du bois alors qu’un réglage suffisait.",
+    "Enlever trop de matière en une seule passe et se retrouver avec une porte trop courte.",
+    "Laisser le bas du vantail en bois brut après rabotage, qui gonfle à la moindre humidité."
+  ],
+  "safety": [
+    "Porte un masque et des lunettes pendant le rabotage et le ponçage : la sciure de bois est fine et la lame du rabot est tranchante.",
+    "Pose la porte sur des cales stables et bloque-la avant de travailler : une porte qui glisse sous l’outil est dangereuse.",
+    "Sur une porte ancienne, vérifie que la peinture ne contient pas de plomb avant de la poncer ; dans le doute, ne produis pas de poussière."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

@@ -23,19 +23,15 @@ Le choix initial combine les problèmes courants à la maison, l’utilité imm�
 
 ## Priorité 2 — Finitions et rénovation d’une pièce
 
-- [ ] **T15 — Poser des plinthes et couper les angles.** Finitions / Plinthes. Mesurer, couper et fixer au mur ; développer les finitions seulement évoquées dans le tuto parquet.
 - [ ] **T16 — Poser une crédence carrelée au-dessus d’un plan de travail.** Cuisine & salle de bains / Crédences. Petit mur sain hors douche ; calepinage, collage et découpes, avec joints traités dans T17.
 - [ ] **T17 — Faire les joints d’un carrelage neuf.** Finitions / Carrelage. Préparer le mortier à joints, garnir et nettoyer ; distinguer les joints courants des joints souples périphériques.
 - [ ] **T18 — Remplacer un carreau de carrelage cassé.** Finitions / Carrelage. Cas : carreau isolé sur support sain, sans système d’étanchéité à reprendre.
 - [ ] **T19 — Poser un sol vinyle clipsable.** Finitions / à classer. Cas : pièce sèche et support préparé ; ajouter une sous-catégorie « Sol vinyle » à la taxonomie lors de l’implémentation.
-- [ ] **T20 — Régler une porte de placard qui ferme mal.** Menuiseries / Quincaillerie. Cas : charnières invisibles réglables ; corriger hauteur, alignement et profondeur.
 - [ ] **T33 — Peindre un motif au pochoir.** Finitions / Peinture. Cas : mur lisse déjà peint et sec ; fixer le pochoir, tamponner avec très peu de peinture et le retirer proprement, puis répéter le motif.
 
 ## Priorité 3 — Confort, entretien et chantiers plus longs
 
 - [ ] **T22 — Nettoyer les bouches et entrées d’air de ventilation.** Chauffage / VMC. Entretien des éléments accessibles, sans démontage du moteur ; préserver les réglages et composants sensibles à l’eau.
-- [ ] **T23 — Remplacer le joint d’une fenêtre qui laisse passer l’air.** Menuiseries / Isolation des ouvertures. Choisir le profil compatible, retirer l’ancien joint et vérifier la fermeture, sans boucher les entrées d’air.
-- [ ] **T24 — Raboter une porte intérieure qui frotte.** Menuiseries / Portes. Repérer le frottement et enlever progressivement le minimum de matière ; distinguer le problème d’un mauvais réglage de charnière.
 - [ ] **T25 — Poser une bande à joint entre deux plaques de plâtre.** Cloisons / Placo. Bande, enduit, passes et ponçage sur plaques déjà posées ; un geste précis plutôt qu’un chantier complet.
 - [ ] **T26 — Monter une petite cloison en plaques de plâtre.** Cloisons / Placo. Cas : cloison non porteuse en pièce sèche, sans porte ni réseaux intégrés ; renvoyer à T25 pour les joints.
 - [ ] **T27 — Poser du carrelage au sol dans une petite pièce.** Finitions / Carrelage. Cas : support sain et préparé, hors douche et chauffage au sol ; traiter les joints dans T17.
@@ -78,6 +74,10 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Réalisés depuis cette liste
 
+- [x] **T15 — Poser des plinthes et couper les angles** — terminé le 2026-09-16 — [/tutoriel/poser-des-plinthes/](/tutoriel/poser-des-plinthes/)
+- [x] **T20 — Régler une porte de placard qui ferme mal** — terminé le 2026-09-16 — [/tutoriel/regler-une-porte-de-placard/](/tutoriel/regler-une-porte-de-placard/)
+- [x] **T23 — Remplacer le joint d’une fenêtre qui laisse passer l’air** — terminé le 2026-09-16 — [/tutoriel/remplacer-le-joint-d-une-fenetre/](/tutoriel/remplacer-le-joint-d-une-fenetre/)
+- [x] **T24 — Raboter une porte intérieure qui frotte** — terminé le 2026-09-16 — [/tutoriel/raboter-une-porte-qui-frotte/](/tutoriel/raboter-une-porte-qui-frotte/)
 - [x] **T13 — Décoller du papier peint** — terminé le 2026-09-16 — [/tutoriel/decoller-du-papier-peint/](/tutoriel/decoller-du-papier-peint/)
 - [x] **T36 — Peindre un mur en deux couleurs avec une séparation nette** — terminé le 2026-09-16 — [/tutoriel/peindre-deux-couleurs/](/tutoriel/peindre-deux-couleurs/)
 - [x] **T37 — Repeindre un mur foncé en clair** — terminé le 2026-09-16 — [/tutoriel/repeindre-un-mur-fonce-en-clair/](/tutoriel/repeindre-un-mur-fonce-en-clair/)
@@ -116,4 +116,5 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - **2026-09-16** : T40 terminé seul : première fiche de gros œuvre, nouveau classement « Maçonnerie de pierre › Rejointoiement », illustration locale provisoire (à remplacer par une génération avec l’outil imagegen), contrôles TypeScript, lint, tests, données, build et rendu réussis. Le catalogue contient 25 tutoriels ; 35 idées restent à faire.
 - **2026-09-16** : T04, T05 et T06 terminés : fiches documentées, illustrations originales et variantes WebP, contrôles TypeScript, lint, tests, données, build et rendu réussis. Le catalogue contient 24 tutoriels ; 36 idées restent à faire.
 - **2026-09-16** : lot peinture T31, T32, T34 et T35 terminé : quatre fiches documentées, références NF DTU 59.1 quand elle s’applique et sources consultées ; illustrations provisoires (à remplacer par l’outil imagegen) et variantes WebP. Le catalogue contient 29 tutoriels ; 31 idées restent à faire.
+- **2026-09-16** : lot menuiseries et plinthes T15, T20, T23 et T24 terminé : quatre fiches documentées (plinthes, réglage de porte de placard, joint de fenêtre, rabotage d’une porte), sans DTU applicable et avec sources consultées ; illustrations provisoires et variantes WebP. Le catalogue contient 45 tutoriels ; 15 idées restent à faire.
 - **2026-09-16** : lot peinture avancée T13, T36, T37 et T38 terminé : quatre fiches documentées (décollage de papier peint, deux couleurs, mur foncé en clair, porte intérieure), référence NF DTU 59.1 pour les trois fiches de peinture et sources consultées ; illustrations provisoires et variantes WebP. Le catalogue contient 41 tutoriels ; 19 idées restent à faire.

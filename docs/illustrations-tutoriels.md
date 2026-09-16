@@ -108,6 +108,42 @@ Fichier : `public/images/tutoriels/poser-du-papier-peint-intisse.png`
 Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a strip of patterned wallpaper being smoothed flat against a wall with a smoothing brush, its top edge overhanging near the ceiling, a craft knife and a pencil on a nearby ledge. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
 ```
 
+## Menuiseries et plinthes — 16 septembre 2026
+
+**Illustrations provisoires.** Même situation que les lots précédents : pas d’outil imagegen disponible. Les dessins ont été tracés en SVG hors du dépôt, convertis en PNG 1536×1024, puis en WebP 480, 720 et 960 avec `cwebp` (qualité 82). À remplacer par une génération avec l’outil maison, sans changer les données des fiches. Couvertures illustratives, sans valeur de schéma de montage.
+
+### poser-des-plinthes
+
+Fichier : `public/images/tutoriels/poser-des-plinthes.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a length of skirting board laid along the foot of a wall with one end cut at 45 degrees, a mitre box holding a saw and a folding rule on the floor nearby. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### regler-une-porte-de-placard
+
+Fichier : `public/images/tutoriels/regler-une-porte-de-placard.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a cupboard door standing slightly ajar on a pair of concealed hinges, their metal cups visible on the door edge, a manual screwdriver lying on the shelf inside. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### remplacer-le-joint-d-une-fenetre
+
+Fichier : `public/images/tutoriels/remplacer-le-joint-d-une-fenetre.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a soft rubber seal running along the groove of a window frame, a short offcut of the old seal, a sharp knife and a sheet of paper resting on the sill. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### raboter-une-porte-qui-frotte
+
+Fichier : `public/images/tutoriels/raboter-une-porte-qui-frotte.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a wooden interior door lying flat across two low blocks, an edge of its bottom rail being shaved with a hand plane, a pencil line drawn just above the cut and a sheet of paper lying beside it. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
 ## Peinture avancée et papier peint — 16 septembre 2026
 
 **Illustrations provisoires.** Même situation que les lots précédents : pas d’outil imagegen disponible. Les dessins ont été tracés en SVG hors du dépôt, convertis en PNG 1536×1024, puis en WebP 480, 720 et 960 avec `cwebp` (qualité 82). À remplacer par une génération avec l’outil maison, sans changer les données des fiches. Couvertures illustratives, sans valeur de schéma de montage.

@@ -1,0 +1,94 @@
+{
+  "id": "remplacer-le-joint-d-une-fenetre",
+  "title": "Remplacer le joint d’une fenêtre qui laisse passer l’air",
+  "description": "Une fenêtre qui siffle ou qui refroidit la pièce vient souvent d’un joint écrasé. Repère la fuite, choisis le bon profil et pose-le sans empêcher l’ouvrant de fermer.",
+  "category": "menuiseries",
+  "topicPath": ["Isolation des ouvertures"],
+  "relatedCategories": [
+    { "category": "isolation", "topicPath": ["Étanchéité à l’air"] },
+    { "category": "techniques", "topicPath": ["Percer et fixer"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 45,
+  "cost": null,
+  "image": "/images/tutoriels/remplacer-le-joint-d-une-fenetre.png",
+  "imageAlt": "Un joint souple en cours de pose dans la gorge d’un dormant de fenêtre, un cutter et une feuille de papier posés sur l’appui, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Remplacement du joint d’étanchéité d’une fenêtre ou d’une porte-fenêtre ouvrable en bois, PVC ou aluminium, quand la menuiserie et la quincaillerie sont en bon état. Hors fenêtre déformée, quincaillerie à régler ou à remplacer, vitrage à refaire et entrées d’air à conserver.",
+  "estimatesNote": "Comptez environ 30 min par ouvrant, sans démontage. Le budget se limite à un rouleau de joint adapté et à une paire de ciseaux ; prévois un cutter bien affûté.",
+  "sources": [
+    {
+      "title": "Soupente — Joint de fenêtre : remplacer un joint qui laisse passer l’air",
+      "url": "https://soupente.fr/article/joint-de-fenetre-remplacer-un-joint-qui-laisse-passer-l-air/",
+      "note": "Propose trois méthodes de repérage de la fuite, main mouillée, flamme de briquet et test du papier, et détaille le choix du joint selon la menuiserie pour une pose en 30 min sans démontage. Base du diagnostic et de la méthode.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Les Artisans Pros — Changer le joint d’une fenêtre : étanchéité air et eau",
+      "url": "https://www.lesartisanspros.fr/conseils/remplacer-joint-fenetre-etancheite/",
+      "note": "Décrit les différents profils de joint et leur rôle dans l’étanchéité à l’air et à l’eau, utile pour choisir un profil compatible avec la gorge du dormant.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Cutter bien affûté",
+    "Ciseaux",
+    "Chiffon et alcool ménager ou nettoyant doux",
+    "Petit tournevis ou poinçon pour dégager l’ancien joint",
+    "Mètre",
+    "Marchepied stable"
+  ],
+  "materials": [
+    {
+      "name": "Joint d’étanchéité adapté à la menuiserie",
+      "quantity": "Métrage du périmètre des ouvrants, plus une marge"
+    },
+    {
+      "name": "Nettoyant doux et chiffon",
+      "quantity": "Pour nettoyer la gorge avant pose"
+    },
+    {
+      "name": "Ruban de masquage",
+      "quantity": "Pour maintenir un joint pendant la pose si nécessaire"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Repère la ou les fuites",
+      "description": "Passe le revers d’une main légèrement humide le long du cadre, fenêtre fermée : la sensation de froid marque le passage d’air. Pour plus de précision, approche une flamme à quelques centimètres dans un endroit abrité, ou glisse une feuille fine entre l’ouvrant et le dormant : si elle coulisse sans résistance, le joint est écrasé ou manquant."
+    },
+    {
+      "title": "Choisis le joint adapté",
+      "description": "Observe la gorge du dormant et l’épaisseur du jeu pour choisir un profil compatible, en bois, PVC ou aluminium : un joint trop épais empêche la fermeture, un joint trop fin ne s’écrase pas assez. Compare un échantillon avec l’ancien joint et vérifie la matière avant d’acheter la longueur nécessaire."
+    },
+    {
+      "title": "Retire l’ancien joint",
+      "description": "Dégage l’ancien joint avec un petit tournevis ou la pointe d’un cutter, sans rayer la menuiserie ni entamer la gorge. Sur une fenêtre ancienne, le joint peut être collé ou durci : avance par tronçons plutôt que de forcer d’un bout à l’autre."
+    },
+    {
+      "title": "Nettoie la gorge",
+      "description": "Élimine poussière, résidus de colle et traces de graisse dans la gorge, puis laisse sécher. Un joint neuf posé dans une gorge sale ou grasse n’adhère pas et se déloge à la première manœuvre."
+    },
+    {
+      "title": "Pose le joint en continu",
+      "description": "Engage le joint dans la gorge sans l’étirer, en le laissant se placer à sa longueur naturelle, et coupe les angles nets au cutter ou aux ciseaux. Dans les angles, une coupe franche à 90 degrés ou un léger biseau évite que le joint ne se chevauche et ne bloque la fermeture."
+    },
+    {
+      "title": "Ferme et contrôle l’écrasement",
+      "description": "Referme l’ouvrant et vérifie qu’il s’écrase légèrement sur le joint sans forcer, puis rouvre-le. Si la fenêtre ferme mal, retire le joint trop épais et remplace-le par un profil plus fin plutôt que de forcer sur la quincaillerie."
+    }
+  ],
+  "mistakes": [
+    "Remplacer tous les joints sans avoir repéré où fuit réellement l’air, et en laisser un défectueux.",
+    "Choisir un joint trop épais qui empêche l’ouvrant de fermer et fatigue la quincaillerie.",
+    "Boucher une entrée d’air de ventilation en croyant supprimer une fuite, et supprimer le renouvellement d’air de la pièce."
+  ],
+  "safety": [
+    "Manipule le cutter avec précaution et coupe toujours en t’éloignant de toi, avec les doigts à l’écart de la lame.",
+    "Travaille sur un marchepied stable pour atteindre le haut de la fenêtre, jamais sur une chaise.",
+    "Ne bouche jamais les entrées d’air : une pièce doit rester ventilée, et l’étanchéité à l’air se règle sans supprimer le renouvellement d’air."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

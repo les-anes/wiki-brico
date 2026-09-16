@@ -1,0 +1,89 @@
+{
+  "id": "regler-une-porte-de-placard",
+  "title": "Régler une porte de placard qui ferme mal",
+  "description": "Une porte de placard qui frotte ou qui laisse un jour irrégulier ne se redresse pas au hasard : trois vis, trois axes, dans le bon ordre. Hauteur, profondeur, puis latéral.",
+  "category": "menuiseries",
+  "topicPath": ["Quincaillerie"],
+  "relatedCategories": [
+    { "category": "techniques", "topicPath": ["Visser"] },
+    { "category": "preparer-chantier", "topicPath": ["Diagnostic"] }
+  ],
+  "journeys": ["amenager-des-combles"],
+  "difficulty": "Débutant",
+  "durationMinutes": 30,
+  "cost": null,
+  "image": "/images/tutoriels/regler-une-porte-de-placard.png",
+  "imageAlt": "Une porte de placard entrouverte avec une charnière invisible apparente, un tournevis posé près de la coupelle, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Réglage des charnières invisibles à trois axes d’une porte de placard ou de meuble, quand la porte, le caisson et la quincaillerie sont sains. Hors charnière cassée ou arrachée, porte déformée, panneau de particules éventré et changement de type de charnière.",
+  "estimatesNote": "Comptez environ 30 min pour une porte, un peu plus sur une colonne à trois ou quatre charnières. Le budget reste nul si le tournevis adapté est déjà là ; seules des vis de remplacement peuvent être nécessaires.",
+  "sources": [
+    {
+      "title": "Furnica — Comment régler une charnière invisible de meuble : guide pratique en 3 vis",
+      "url": "https://furnica.fr/blogs/infos/regler-charniere-invisible-porte-meuble-3-vis",
+      "note": "Détaille l’anatomie d’une charnière invisible, la fonction de chaque vis de réglage et l’ordre à respecter, hauteur, puis profondeur, puis latéral, avec les plages de réglage et les erreurs courantes. Base de la méthode.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Système D — Comment régler des charnières de porte de placard",
+      "url": "https://www.systemed.fr/placards-dressings/regler-charnieres-porte,3255.html",
+      "note": "Présente le réglage des charnières de placard comme une opération d’ajustement simple à mener avant d’envisager un remplacement de quincaillerie.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Tournevis Pozidriv PZ2 adapté à la main",
+    "Niveau à bulle ou règle",
+    "Réglet ou pied à coulisse",
+    "Chiffon",
+    "Gants légers"
+  ],
+  "materials": [
+    {
+      "name": "Vis à bois de rechange",
+      "quantity": "Quelques vis si un ancrage est foiré"
+    },
+    {
+      "name": "Tourillon et colle à bois",
+      "quantity": "Pour reboucher un trou de vis arraché dans le panneau"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Contrôle le symptôme et l’outillage",
+      "description": "Observe si la porte frotte contre le caisson, penche, ou laisse un jour irrégulier avec la porte voisine. Utilise un tournevis manuel PZ2 plutôt qu’une visseuse : le couple d’un outil motorisé fausse ou arrache facilement ces vis micrométriques."
+    },
+    {
+      "title": "Règle d’abord la hauteur",
+      "description": "Ouvre la porte au maximum et repère les deux vis oblongues de l’embase fixée sur la joue du caisson. Desserre-les d’un demi-tour, sans les enlever, fais glisser la porte vers le haut ou le bas, puis resserre-les complètement en la maintenant à la hauteur voulue. La course offerte est d’environ deux millimètres."
+    },
+    {
+      "title": "Règle ensuite la profondeur",
+      "description": "La vis de profondeur se trouve à l’arrière du bras de charnière et règle l’écart entre le dos de la porte et la face du caisson. Desserre-la, fais coulisser la porte vers l’avant ou l’arrière, puis resserre en gardant au moins un millimètre et demi de jeu : une porte trop plaquée frotte le chant à chaque ouverture."
+    },
+    {
+      "title": "Termine par le réglage latéral",
+      "description": "La vis de recouvrement, à l’avant du bras au plus près du boîtier, déplace la façade vers la gauche ou la droite. En la vissant, le bord de la porte se rapproche du montant ; en la dévissant, le jeu augmente. C’est ce réglage qui aligne deux portes mitoyennes."
+    },
+    {
+      "title": "Redresse une porte de biais",
+      "description": "Si la porte plonge d’un côté, agis de façon différentielle entre la charnière haute et la basse : dévisse légèrement l’une et visse l’autre jusqu’à ce que la façade redevienne d’équerre. Contrôle au niveau et à la règle, puis reviens de quelques degrés si tu as dépassé."
+    },
+    {
+      "title": "Répartis l’effort et contrôle la fermeture",
+      "description": "Sur une grande porte à trois ou quatre charnières, reprends aussi les charnières intermédiaires : modifier seulement le haut et le bas crée des tensions qui finissent par arracher la visserie. Ferme et ouvre plusieurs fois, vérifie les jeux et la fermeture de l’amortisseur, puis resserre l’ensemble sans forcer."
+    }
+  ],
+  "mistakes": [
+    "Utiliser une visseuse sur les vis de réglage et foirer les filetages micrométriques de la charnière.",
+    "Forcer quand une vis résiste, au lieu de s’arrêter : la course de réglage est limitée et le mécanisme s’arrache.",
+    "Ne régler que les charnières du haut et du bas d’une porte haute, et créer des tensions destructrices."
+  ],
+  "safety": [
+    "Manipule la porte à deux mains en la maintenant pendant le desserrage, pour éviter qu’elle ne bascule sur les doigts.",
+    "Travaille avec un tournevis adapté à l’empreinte, pas trop petit, et garde les doigts à l’écart de la zone de pincement entre la porte et le caisson.",
+    "Repère les câbles et tuyaux éventuels avant d’ajouter de la visserie dans un caisson, et ne remplace jamais une charnière par un modèle d’angle d’ouverture différent sur le même panneau."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}
