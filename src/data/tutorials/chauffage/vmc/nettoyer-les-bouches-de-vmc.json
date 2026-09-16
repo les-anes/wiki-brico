@@ -1,0 +1,94 @@
+{
+  "id": "nettoyer-les-bouches-de-vmc",
+  "title": "Nettoyer les bouches et les entrées d’air d’une VMC",
+  "description": "Avant de suspecter le caisson, entretiens les bouches d’extraction et les entrées d’air : c’est là que se joue l’essentiel des pertes d’aspiration, et ça se fait sans démonter la gaine.",
+  "category": "chauffage",
+  "topicPath": ["VMC"],
+  "relatedCategories": [
+    { "category": "isolation", "topicPath": ["Étanchéité à l’air"] },
+    { "category": "techniques", "topicPath": ["Visser"] }
+  ],
+  "journeys": ["renover-une-salle-de-bains"],
+  "difficulty": "Débutant",
+  "durationMinutes": 60,
+  "cost": null,
+  "image": "/images/tutoriels/nettoyer-les-bouches-de-vmc.png",
+  "imageAlt": "Une bouche d’extraction de VMC déposée sur un chiffon, avec une brosse souple et un aspirateur à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Entretien courant des bouches d’extraction et des entrées d’air d’une VMC simple flux, hygroréglable ou double flux, ainsi que des filtres accessibles d’une double flux. Hors démontage du caisson, intervention sur les gaines, remplacement du moteur et réglage des débits par un appareil de mesure.",
+  "estimatesNote": "Comptez environ 1 h pour l’ensemble des bouches et des entrées d’air d’un logement, hors séchage. Le budget reste faible : quelques chiffons, une brosse souple et un produit doux suffisent.",
+  "sources": [
+    {
+      "title": "Maison et Brico — Nettoyer une VMC : quoi faire soi-même",
+      "url": "https://maisonetbrico.fr/nettoyer-vmc-sans-demonter/",
+      "note": "Propose un ordre de nettoyage qui commence par les bouches et les entrées d’air avant tout contrôle de l’aspiration, distingue simple flux, hygroréglable et double flux, et rappelle les précautions sur l’eau selon le type de bouche. Base de la méthode.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "VMC Solutions — Nettoyer bouches et gaines de VMC",
+      "url": "https://www.vmc-solutions.fr/nettoyer-bouches-gaines-vmc/",
+      "note": "Décrit l’entretien des bouches et l’avertissement sur les gaines souples, qui se percent ou se déboîtent si l’on veut trop bien faire. Sert au cadrage de ce qui se fait soi-même.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Aspirateur avec embout brosse",
+    "Chiffon microfibre",
+    "Brosse à dents ou petite brosse souple",
+    "Tournevis si les bouches sont vissées",
+    "Bassine d’eau tiède et savon doux",
+    "Escabeau stable"
+  ],
+  "materials": [
+    {
+      "name": "Savon doux",
+      "quantity": "Un peu dans une bassine d’eau tiède"
+    },
+    {
+      "name": "Chiffons propres",
+      "quantity": "Quelques-uns pour essuyer et sécher"
+    },
+    {
+      "name": "Sac ou torchon de protection",
+      "quantity": "Pour recueillir la poussière sous la bouche déposée"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Repère le type d’installation",
+      "description": "Une simple flux extrait l’air des pièces humides par des bouches et le fait entrer par des entrées d’air, souvent en haut des fenêtres. Une hygroréglable module les débits selon l’humidité, et une double flux ajoute des filtres et des bouches d’insufflation : dans les trois cas, les bouches se nettoient, mais pas toujours avec de l’eau."
+    },
+    {
+      "title": "Coupe l’alimentation de la VMC",
+      "description": "Coupe l’alimentation au tableau, ou via l’interrupteur dédié si l’installation en comporte un, et préviens les occupants. L’entretien se fait à l’arrêt, notamment si une bouche contient un mécanisme hygroréglable ou un clapet."
+    },
+    {
+      "title": "Dépose et nettoie les bouches d’extraction",
+      "description": "Déclipse ou dévisse la bouche, sans forcer sur les éléments mobiles si tu sens une résistance. Aspire d’abord la poussière visible, puis lave la partie démontée à l’eau savonneuse, rince et laisse sécher complètement avant de remonter."
+    },
+    {
+      "title": "Aspire le pourtour sans entrer dans la gaine",
+      "description": "Pendant que la bouche est retirée, aspire délicatement le pourtour et la zone immédiatement accessible du conduit. N’enfonce pas d’outil dans la gaine : les conduits souples se percent ou se déboîtent plus vite qu’on ne le croit."
+    },
+    {
+      "title": "Traite les entrées d’air",
+      "description": "Aspire doucement les grilles des entrées d’air, en haut des fenêtres ou sur les coffres de volets, puis passe un chiffon sec ou à peine humide. Une entrée d’air colmatée fait tirer la VMC plus fort, augmente le bruit et dégrade le renouvellement d’air du logement."
+    },
+    {
+      "title": "Remonte, remets sous tension et vérifie l’aspiration",
+      "description": "Remonte les bouches bien sèches, rétablis l’alimentation et teste en approchant une feuille de papier de chaque bouche : elle doit être attirée franchement. Si une bouche n’aspire toujours pas après nettoyage, le problème est ailleurs, dans le réseau ou le caisson."
+    }
+  ],
+  "mistakes": [
+    "Attaquer le caisson moteur en premier et oublier les bouches et les entrées d’air, qui sont le plus souvent encrassées.",
+    "Noyer une bouche hygroréglable à l’eau alors que le fabricant ne le recommande pas pour certaines de ses parties.",
+    "Enfoncer une tige ou un aspirateur loin dans une gaine souple et la percer ou la déboîter."
+  ],
+  "safety": [
+    "Coupe l’alimentation électrique de la VMC au tableau avant toute dépose de bouche et vérifie la coupure avant d’intervenir.",
+    "Travaille sur un escabeau stable, jamais sur une chaise ou un tabouret, et fais-toi aider pour les bouches en hauteur.",
+    "Un logement doit rester ventilé : ne bouche jamais une entrée d’air ni une bouche pour supprimer un courant d’air, et ne neutralise pas une VMC sans solution de remplacement."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

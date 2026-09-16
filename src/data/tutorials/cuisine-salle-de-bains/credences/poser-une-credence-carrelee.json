@@ -1,0 +1,112 @@
+{
+  "id": "poser-une-credence-carrelee",
+  "title": "Poser une crédence carrelée dans une cuisine",
+  "description": "La crédence protège le mur entre le plan de travail et les meubles hauts. Tout se joue sur un support dégraissé et un tasseau de niveau, jamais sur le plan de travail.",
+  "category": "cuisine-salle-de-bains",
+  "topicPath": ["Crédences"],
+  "relatedCategories": [
+    { "category": "finitions", "topicPath": ["Carrelage"] },
+    { "category": "techniques", "topicPath": ["Utiliser un niveau"] }
+  ],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 480,
+  "cost": null,
+  "image": "/images/tutoriels/poser-une-credence-carrelee.png",
+  "imageAlt": "Une crédence en carreaux posée entre un plan de travail et des meubles hauts, un peigne à colle et des croisillons posés à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Pose d’une crédence carrelée sur un mur intérieur sec au-dessus d’un plan de travail, faïence, pâte de verre, mosaïque ou grand format. Hors mur humide ou fissuré, support non sain, carrelage sur un plan de cuisson sans protection et pose sur ancien carrelage décollé.",
+  "estimatesNote": "Comptez une à deux journées entre la pose et les joints, dont la pause de séchage de la colle. Le budget dépend du carrelage, du mortier-colle et du mortier de joint ; prévois 10 % de marge de carreaux pour les coupes.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 52.2",
+      "title": "Travaux de bâtiment — Pose collée des revêtements céramiques et assimilés",
+      "scope": "Partie 1-1, cahier des clauses techniques types : encadre la préparation du support, le choix du mortier-colle, la pose collée et le jointoiement des revêtements céramiques. Sert de repère sur les exigences de support, sans reproduire une prescription de chantier.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-522-p111/travaux-de-batiment-pose-collee-des-revetements-ceramiques-et-assimiles-pie/fa203048/327475",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Briker — Poser une crédence de cuisine en carrelage : la méthode pour un mur net et des joints réguliers",
+      "url": "https://www.briker.fr/aktu-tuto/poser-une-credence-de-cuisine",
+      "note": "Détaille la préparation du support et le dégraissage indispensable en cuisine, le tasseau de niveau qui remplace le plan de travail comme référence, le simple ou double encollage, les découpes de prises et le jointoiement après séchage. Base de la structure et des étapes.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Izoa — Poser et entretenir une crédence de cuisine",
+      "url": "https://www.izoa.fr/content/99-poser-entretenir-credence-cuisine",
+      "note": "Présente les choix de crédence et les principes de pose et d’entretien. Sert de contrôle sur les matériaux employés en crédence.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Peigne à colle adapté au format",
+    "Raclette et taloche de jointoiement",
+    "Carrelette, meuleuse à disque diamant et scie cloche",
+    "Niveau à bulle, mètre, crayon",
+    "Perceuse-visseuse",
+    "Croisillons",
+    "Éponge, seau et chiffons propres",
+    "Gants et lunettes"
+  ],
+  "materials": [
+    {
+      "name": "Carrelage de crédence",
+      "quantity": "Surface du mur, plus environ 10 % de marge pour les coupes"
+    },
+    {
+      "name": "Mortier-colle de classe C2",
+      "quantity": "Selon la surface et le format, prise rapide pour jointoyer le lendemain"
+    },
+    {
+      "name": "Mortier de joint",
+      "quantity": "Selon la surface et la largeur des joints"
+    },
+    {
+      "name": "Primaire d’accrochage",
+      "quantity": "Si le support est peint, lisse ou déjà carrelé"
+    },
+    {
+      "name": "Tasseau droit et silicone sanitaire",
+      "quantity": "Un tasseau à la longueur du mur, un tube pour la jonction au plan de travail"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Dégraisse et prépare le support",
+      "description": "Nettoie le mur à la lessive, rince et laisse sécher : en cuisine, la graisse empêche la colle d’accrocher. Rebouche les trous, ponce les surplus et, sur un mur peint ou déjà carrelé, ponce pour matifier puis applique un primaire d’accrochage."
+    },
+    {
+      "title": "Trace et visse un tasseau de niveau",
+      "description": "Ne prends pas le plan de travail comme référence, il n’est presque jamais horizontal. Trace une ligne au niveau et visse un tasseau droit juste en dessous du premier rang : il soutiendra les carreaux pendant le séchage et garantira un départ aligné."
+    },
+    {
+      "title": "Encolle au peigne sur une zone limitée",
+      "description": "Prépare la colle à la consistance d’une pâte souple et applique-la au peigne adapté au format, sur un mètre carré au maximum à la fois pour qu’elle ne croûte pas avant la pose. Pour les grands formats ou les carreaux peu plans, encolle aussi le dos du carreau."
+    },
+    {
+      "title": "Pose les carreaux et contrôle l’alignement",
+      "description": "Pose chaque carreau avec une légère pression et un petit mouvement pour bien l’asseoir, puis intercale les croisillons pour garder des joints réguliers. Vérifie l’alignement et le niveau tous les deux ou trois carreaux, avant que la colle ne prenne."
+    },
+    {
+      "title": "Traite les coupes et les prises",
+      "description": "Mesure et réalise les coupes d’extrémité une par une à la carrelette. Pour les prises, coupe d’abord le courant au tableau et dépose les caches, puis découpe à la meuleuse ou à la scie cloche et présente le carreau à blanc avant d’encoller."
+    },
+    {
+      "title": "Jointoie et traite la jonction au plan de travail",
+      "description": "Après le séchage complet de la colle, retire le tasseau et applique le mortier de joint à la raclette en diagonale. Nettoyage à l’éponge humide bien essorée, puis lustrage au chiffon sec, et finis la jonction avec le plan de travail au silicone sanitaire."
+    }
+  ],
+  "mistakes": [
+    "Partir du plan de travail comme niveau de référence et obtenir une crédence de travers.",
+    "Négliger le dégraissage du mur de cuisine : la colle n’accroche pas sur un support gras.",
+    "Réaliser les joints avant la fin du séchage de la colle et déplacer les carreaux en enfermant l’humidité."
+  ],
+  "safety": [
+    "Coupe l’alimentation électrique au tableau avant toute découpe autour d’une prise, et vérifie l’absence de tension avant de remonter les caches.",
+    "Porte lunettes, gants et masque pour la découpe à la meuleuse et pour la préparation du mortier-colle.",
+    "Ouvre la fenêtre pendant la pose et le jointoiement, et respecte les temps de séchage indiqués par les fabricants pour ne pas piéger d’humidité dans le mur."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

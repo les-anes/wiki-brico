@@ -108,6 +108,42 @@ Fichier : `public/images/tutoriels/poser-du-papier-peint-intisse.png`
 Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a strip of patterned wallpaper being smoothed flat against a wall with a smoothing brush, its top edge overhanging near the ceiling, a craft knife and a pencil on a nearby ledge. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
 ```
 
+## Pièces d’eau et carrelage — 16 septembre 2026
+
+**Illustrations provisoires.** Même situation que les lots précédents : pas d’outil imagegen disponible. Les dessins ont été tracés en SVG hors du dépôt, convertis en PNG 1536×1024, puis en WebP 480, 720 et 960 avec `cwebp` (qualité 82). À remplacer par une génération avec l’outil maison, sans changer les données des fiches. Couvertures illustratives, sans valeur de schéma de montage.
+
+### poser-une-credence-carrelee
+
+Fichier : `public/images/tutoriels/poser-une-credence-carrelee.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a band of small square wall tiles running along a kitchen wall above a worktop, a notched adhesive trowel and a handful of tile spacers lying on the worktop beside it. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### renover-les-joints-d-un-carrelage
+
+Fichier : `public/images/tutoriels/renover-les-joints-d-un-carrelage.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a tiled wall being regrouted, one area of pale fresh grout spread across the joints with a rubber float, a small stiff joint brush and a damp sponge resting on the tiles below. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### nettoyer-les-bouches-de-vmc
+
+Fichier : `public/images/tutoriels/nettoyer-les-bouches-de-vmc.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a round white mechanical ventilation grille lifted away from a ceiling opening and resting on a cloth below, a small soft brush and a vacuum hose beside it, dust visible on the grille slats. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### remplacer-flexible-et-douchette
+
+Fichier : `public/images/tutoriels/remplacer-flexible-et-douchette.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a coiled braided stainless steel shower hose lying on tiles beside a round shower head, a roll of white thread seal tape and an adjustable wrench sitting next to them. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
 ## Menuiseries et plinthes — 16 septembre 2026
 
 **Illustrations provisoires.** Même situation que les lots précédents : pas d’outil imagegen disponible. Les dessins ont été tracés en SVG hors du dépôt, convertis en PNG 1536×1024, puis en WebP 480, 720 et 960 avec `cwebp` (qualité 82). À remplacer par une génération avec l’outil maison, sans changer les données des fiches. Couvertures illustratives, sans valeur de schéma de montage.
