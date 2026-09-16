@@ -64,15 +64,15 @@ try {
   // --- Contenu rendu par route ---
   assert.equal(categories.filter((c) => c.kind === "trade").length, 12);
   assert.equal(categories.filter((c) => c.kind === "transversal").length, 2);
-  assert.equal(tutorials.length, 24);
-  assert.equal(new Set(tutorials.map((t) => t.id)).size, 24);
+  assert.equal(tutorials.length, 25);
+  assert.equal(new Set(tutorials.map((t) => t.id)).size, 25);
   const home = render("/");
   assert(home.includes("Vos deux mains."));
   assert.equal(countCards(home), 0, "Catalogue séparé de l’accueil");
   assert(!home.includes("On s’y met ce week-end ?"));
   assert(home.includes("/favicon.svg"));
   assert(!home.includes("Tutoriel introuvable"));
-  assert.equal(countCards(render("/tutoriels/")), 24);
+  assert.equal(countCards(render("/tutoriels/")), 25);
   assert.equal(
     countCards(
       render(
@@ -406,7 +406,7 @@ try {
   }
 
   console.log(
-    "Accueil, catalogue, 24 fiches, 26 URLs, sitemap, robots, fil d’Ariane, 404, shim et hydratation : contrôles réussis.",
+    "Accueil, catalogue, 25 fiches, 27 URLs, sitemap, robots, fil d’Ariane, 404, shim et hydratation : contrôles réussis.",
   );
 } finally {
   await server.close();

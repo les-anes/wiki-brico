@@ -63,7 +63,6 @@ Le choix initial combine les problèmes courants à la maison, l’utilité imm�
 - [ ] **T30 — Organiser les travaux pour rénover une chambre.** Préparer son chantier / Ordre des travaux. Une liste de travaux dans l’ordre, de la protection aux finitions, avec des liens vers les gestes déjà documentés.
 
 - [ ] **T39 — Fabriquer des volets battants en bois.** Menuiseries / à classer. Cas : volets simples à lames ; prendre les mesures, assembler les panneaux, poser la quincaillerie et appliquer une finition extérieure.
-- [ ] **T40 — Rejointoyer un mur en pierre à la chaux.** Gros œuvre / à classer. Cas : joints dégradés sur un mur stable ; préparer les joints, choisir un mortier compatible avec la pierre, garnir et réaliser la finition.
 - [ ] **T41 — Remplacer un linteau.** Gros œuvre / à classer. Sujet structurel à cadrer avant rédaction : type de mur, ouverture, charges, maintien provisoire et appuis. Prévoir un cas précis et un niveau avancé ; ne pas proposer de dimensionnement universel.
 - [ ] **T42 — Ceinturer un mur en pierre avec un chaînage en béton armé.** Gros œuvre / à classer. Sujet demandé comme « ceinturer un mur en pierre avec du ciment » ; préciser à la rédaction le type de ceinture et son objectif. Prévoir un cas structurel précis, la compatibilité avec la maçonnerie existante et un niveau avancé, sans dimensions ni ferraillage universels.
 
@@ -98,6 +97,7 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Réalisés depuis cette liste
 
+- [x] **T40 — Rejointoyer un mur en pierre à la chaux** — terminé le 2026-09-16 — [/tutoriel/rejointoyer-un-mur-en-pierre/](/tutoriel/rejointoyer-un-mur-en-pierre/)
 - [x] **T04 — Remplacer un mitigeur de lavabo** — terminé le 2026-09-16 — [/tutoriel/remplacer-mitigeur-lavabo/](/tutoriel/remplacer-mitigeur-lavabo/)
 - [x] **T05 — Réparer une fuite sur un raccord à joint plat** — terminé le 2026-09-16 — [/tutoriel/reparer-fuite-joint-plat/](/tutoriel/reparer-fuite-joint-plat/)
 - [x] **T06 — Lisser un mur avant de le peindre** — terminé le 2026-09-16 — [/tutoriel/lisser-un-mur/](/tutoriel/lisser-un-mur/)
@@ -116,4 +116,5 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - **2026-09-14** : début de réalisation du premier lot prioritaire : T01, T02 et T03.
 - **2026-09-14** : T01, T02 et T03 terminés : fiches documentées, illustrations originales et variantes WebP, validations des données, du build et du rendu réussies. Le catalogue contient 21 tutoriels ; 39 idées restent à faire.
 - **2026-09-16** : début du lot T04, T05 et T06 ; demande de rejointoiement à la chaux rattachée à T40, déjà présent, sans doublon.
+- **2026-09-16** : T40 terminé seul : première fiche de gros œuvre, nouveau classement « Maçonnerie de pierre › Rejointoiement », illustration locale provisoire (à remplacer par une génération avec l’outil imagegen), contrôles TypeScript, lint, tests, données, build et rendu réussis. Le catalogue contient 25 tutoriels ; 35 idées restent à faire.
 - **2026-09-16** : T04, T05 et T06 terminés : fiches documentées, illustrations originales et variantes WebP, contrôles TypeScript, lint, tests, données, build et rendu réussis. Le catalogue contient 24 tutoriels ; 36 idées restent à faire.

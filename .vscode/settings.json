@@ -1,0 +1,13 @@
+{
+  "chat.tools.terminal.autoApprove": {
+    "openspec": true,
+    "/^openspec instructions design --change \"ajouter-tutoriel-rejointoiement-chaux\" --json \\| python3 -c \"import json,sys; d=json\\.load\\(sys\\.stdin\\); print\\('INSTRUCTION:\\\\n'\\+d\\['instruction'\\]\\); print\\('TEMPLATE:\\\\n'\\+d\\['template'\\]\\)\" && openspec validate --change \"ajouter-tutoriel-rejointoiement-chaux\" --strict 2>&1 \\| tail -20$/": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "/^openspec instructions tasks --change \"ajouter-tutoriel-rejointoiement-chaux\" --json \\| python3 -c \"import json,sys; d=json\\.load\\(sys\\.stdin\\); print\\('INSTRUCTION:\\\\n'\\+d\\['instruction'\\]\\); print\\('TEMPLATE:\\\\n'\\+d\\['template'\\]\\)\"$/": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "rejointoyer-un-mur-en-pierre",
+  "title": "Rejointoyer un mur en pierre à la chaux",
+  "description": "Tes joints de pierre se creusent et laissent passer l’eau ? Rejointoyer, c’est remplacer ce qui s’effrite entre les pierres : dégarnis les joints fatigués, garnis-les d’un mortier de chaux souple, qui laisse respirer la pierre, et finis la surface.",
+  "category": "structure",
+  "topicPath": ["Maçonnerie de pierre", "Rejointoiement"],
+  "relatedCategories": [
+    { "category": "techniques", "topicPath": ["Faire un joint"] },
+    { "category": "techniques", "topicPath": ["Faire du mortier"] }
+  ],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 420,
+  "cost": null,
+  "image": "/images/tutoriels/rejointoyer-un-mur-en-pierre.png",
+  "imageAlt": "Un fragment de mur en pierre aux joints regarnis d’un mortier clair, une truelle langue de chat et une auge de mortier posées devant, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Rejointoiement manuel des joints apparents d’environ 5 m² de mur en pierre stable, sec et accessible, dont les joints sont creusés, friables ou partiellement descellés. Hors mur en pierre sèche, mur dont les pierres bougent ou dont une fissure évolue, humidité active à traiter d’abord, reprise d’un enduit de finition et pierres cassées ou fissurées qui demandent une réparation avant le joint.",
+  "estimatesNote": "Prévois environ une journée pour 5 m², hors temps de séchage : dégarnir et dépoussiérer prend souvent plus de temps que garnir. Budget à préciser selon le sable, le liant et les protections, hors outils.",
+  "sources": [
+    {
+      "title": "Socli (Heidelberg Materials) — Rejointoiement : choix du mortier et mise en œuvre",
+      "url": "https://www.socli.heidelbergmaterials.fr/fr/produits-services/techniques-mise-en-oeuvre/maconnerie/rejointoiement",
+      "note": "Rôle du joint, choix du liant selon la dureté du matériau et intérêt d’un mortier de chaux en restauration du bâti ancien. Les dosages donnés pour un mortier de montage ne sont pas transposés au cas traité.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Maisons Paysannes de France Vaucluse — Rejointoyer un mur en pierre à la chaux",
+      "url": "https://maisons-paysannes-vaucluse.fr/rejointoyer-mur-pierre-chaux",
+      "note": "Vérification de la stabilité du mur avant travaux, conservation des joints encore sains, prudence avec les outils agressifs et limites d’un mortier trop dur ou trop riche. Conseil associatif de patrimoine, sans valeur de diagnostic structurel.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Marteau et burin plat, ou petit marteau de maçon et pointerolle",
+    "Brosse métallique, brosse à chiendent et pinceau large",
+    "Truelle langue de chat, fer à joint et truelle de maçon",
+    "Auge ou brouette, pelle et seau d’eau",
+    "Pulvérisateur ou arrosoir à pomme fine",
+    "Échafaudage ou plateforme stable",
+    "Lunettes, masque antipoussière, gants et genouillères"
+  ],
+  "materials": [
+    {
+      "name": "Chaux adaptée à la pierre (chaux hydraulique naturelle ou chaux aérienne selon le support et le produit)",
+      "quantity": "Pour un mortier souple, compte par exemple 1 volume de chaux pour 2 à 3 volumes de sable, à confirmer sur l’emballage du produit choisi"
+    },
+    {
+      "name": "Sable granuleux propre, de rivière lavé ou local",
+      "quantity": "Quelques sacs pour 5 m² de joints, selon leur largeur et leur profondeur"
+    },
+    {
+      "name": "Eau claire",
+      "quantity": "Pour le gâchage et l’humidification du mur"
+    },
+    {
+      "name": "Bâche ou cartons de protection",
+      "quantity": "Pour le sol et la zone de travail au pied du mur"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie que le mur est stable",
+      "description": "Contrôle que les pierres ne bougent pas, qu’aucune fissure n’évolue et que l’humidité ne vient pas d’une eau active : une fuite, une descente d’eau ou un sol qui remonte. Si l’un de ces désordres existe, arrête-toi et traite la cause avant de toucher aux joints : rejointoyer par-dessus ne ferait que cacher le problème. Regarde aussi si le mur était destiné à recevoir un enduit : la pierre apparente n’est pas toujours le bon choix."
+    },
+    {
+      "title": "Protège et installe-toi",
+      "description": "Bâche le sol au pied du mur et éloigne ce qui peut recevoir de la poussière. Travaille sur une plateforme ou un échafaudage stable, jamais sur un support branlant, et prévois de quoi te déplacer le long du mur sans tirer sur l’ouvrage."
+    },
+    {
+      "title": "Dégarnis seulement les joints fatigués",
+      "description": "Avec le marteau et le burin plat, enlève la partie pulvérulente, décollée ou creuse, sur environ deux centimètres, sans élargir le vide ni taper dans les arêtes. Arrête-toi dès que le mortier restant adhère encore et laisse en place les joints pleins : ils protègent déjà la pierre. Sur une pierre tendre, avance à la pointerolle ou à la brosse plutôt qu’au burin large."
+    },
+    {
+      "title": "Dépoussière et humidifie",
+      "description": "Brosse les joints et chasse les poussières au pinceau ou à l’aspirateur : un support propre est la première condition pour que le mortier accroche. Humidifie ensuite la maçonnerie quelques heures avant, voire la veille : une pierre sèche boirait l’eau du mortier et le ferait fissurer."
+    },
+    {
+      "title": "Garnis les joints en compactant",
+      "description": "Gâche un mortier souple, de consistance terre grasse, et travaille par petites surfaces en partant du haut du mur. Pousse le mortier au fond du joint avec la langue de chat, puis compacte-le pour chasser les vides : c’est ce geste qui protège le mur de l’eau."
+    },
+    {
+      "title": "Fais la finition et accompagne la prise",
+      "description": "Laisse le mortier tirer jusqu’à ce qu’il soit ferme mais encore tendre, puis enlève l’excédent au fer, en creux ou affleurant selon le rendu que tu recherches. Protège ensuite le mur du soleil, du vent et du gel pendant plusieurs jours, et brosse au chiendent quand le joint est sec : la chaux a besoin d’une prise lente et régulière."
+    }
+  ],
+  "mistakes": [
+    "Garnir avec un mortier de ciment, ou trop dosé en liant : le joint devient plus dur que la pierre et la fait éclater au fil des mouvements du mur.",
+    "Élargir les joints et casser les arêtes pour aller plus vite : le mortier n’a plus de fond où s’accrocher et l’eau s’y installe.",
+    "Attendre que le mortier soit sec pour enlever le surplus, ou le laisser sécher au soleil et au vent : le joint reste en bourrelet et se fissure."
+  ],
+  "safety": [
+    "Contrôle la stabilité du mur et de ton support avant de commencer, et ne travaille pas en hauteur si l’ouvrage bouge : arrête le chantier jusqu’à ce que la cause soit traitée.",
+    "Porte des lunettes et un masque antipoussière pour buriner et brosser : la poussière de mortier ancien peut contenir de la silice et transporter du plomb ou de l’amiante si le mur porte d’anciens revêtements. Si ce qui se détache est de nature inconnue, mouille la zone et ne produis pas de poussière.",
+    "La chaux et le mortier frais irritent la peau et les yeux : gants, manches longues, et rinçage abondant à l’eau claire en cas de contact.",
+    "Ne garnis pas de joints par temps de gel, sous une pluie battante ou sur une façade surchauffée : un séchage trop rapide fragilise le joint."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

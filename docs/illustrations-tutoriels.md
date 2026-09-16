@@ -1,5 +1,17 @@
 # Prompts des illustrations de tutoriels
 
+## Maçonnerie de pierre — 16 septembre 2026
+
+**Illustration provisoire.** L’environnement de rédaction de la fiche T40 ne disposait pas de l’outil imagegen : le dessin a été tracé à la main en SVG, hors du dépôt, puis converti en PNG 1536×1024 avec `sips` ; les variantes WebP 480, 720 et 960 ont été générées avec `cwebp` (qualité 82). À remplacer par une génération avec l’outil maison, sans changer les données de la fiche. Couverture illustrative, sans valeur de schéma de montage.
+
+### rejointoyer-un-mur-en-pierre
+
+Fichier : `public/images/tutoriels/rejointoyer-un-mur-en-pierre.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a fragment of a stone wall with irregular grey-beige stones and thick repointed pale lime mortar joints, a long pointed pointing trowel carrying a small blob of pale lime mortar in front of the wall and a shallow mortar tub with a mound of fresh mortar beside it. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural stone grey-beige and warm ivory subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
 ## Robinetterie et enduits — 16 septembre 2026
 
 Trois illustrations originales produites avec l’outil intégré imagegen, copiées dans `public/images/tutoriels/` et contrôlées visuellement. PNG 1536×1024 et variantes WebP 480, 720 et 960 pixels générées avec `cwebp` (qualité 82). Couvertures illustratives, sans valeur de schéma de montage.
