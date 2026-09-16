@@ -1,0 +1,97 @@
+{
+  "id": "remplacer-un-interrupteur",
+  "title": "Remplacer un interrupteur simple à l’identique",
+  "description": "Un interrupteur qui craque ou qui reste bloqué se remplace sans toucher au circuit. Coupe l’alimentation, repère les fils, échange l’appareil et contrôle avant de remettre en service.",
+  "category": "electricite",
+  "topicPath": ["Éclairage"],
+  "relatedCategories": [
+    { "category": "preparer-chantier", "topicPath": ["Diagnostic"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 35,
+  "cost": null,
+  "image": "/images/tutoriels/remplacer-un-interrupteur.png",
+  "imageAlt": "Un interrupteur mural démonté laissant voir ses bornes et deux fils, avec un tournevis isolé et un testeur posés à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Remplacement d’un interrupteur simple à un seul point de commande, sur un circuit existant identifié et protégé, avec boîte et conducteurs en bon état. Hors va-et-vient, interrupteur double, télérupteur, ajout de point lumineux, tableau à modifier et installation vétuste.",
+  "estimatesNote": "Comptez environ 35 min par interrupteur, hors coupure et contrôles. Le budget se limite à l’interrupteur neuf et à quelques repères ; un testeur d’absence de tension est indispensable si tu n’en as pas.",
+  "sources": [
+    {
+      "title": "Legrand — Comment changer un interrupteur ?",
+      "url": "https://www.legrand.fr/questions-frequentes/comment-changer-un-interrupteur",
+      "note": "Fabricant : conseille d’observer et de photographier le montage d’origine, de repérer les fils avec des adhésifs, et explique les deux types de maintien des conducteurs, bornes à vis ou bornes automatiques. Base du repérage avant dépose.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "iFixit — Changer un interrupteur : tutoriel de réparation",
+      "url": "https://fr.ifixit.com/Tutoriel/Changement+interrupteur/119563",
+      "note": "Tutoriel illustré de démontage et de remontage d’un interrupteur mural, utile pour l’ordre des opérations et la manipulation de la platine.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Testeur d’absence de tension ou multimètre",
+    "Tournevis isolé plat et cruciforme",
+    "Petit tournevis pour déclipser la plaque",
+    "Pince à dénuder si un conducteur doit être repiqué",
+    "Lampe de travail",
+    "Gants isolants"
+  ],
+  "materials": [
+    {
+      "name": "Interrupteur neuf de même type",
+      "quantity": "Un par interrupteur remplacé"
+    },
+    {
+      "name": "Adhésif de repérage et marqueur",
+      "quantity": "Un morceau par conducteur si les couleurs sont douteuses"
+    },
+    {
+      "name": "Connecteurs adaptés",
+      "quantity": "Si un conducteur est trop court et doit être rallongé proprement"
+    },
+    {
+      "name": "Boîte d’encastrement de rechange",
+      "quantity": "Une si l’ancienne est cassée"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Coupe l’alimentation et vérifie l’absence de tension",
+      "description": "Coupe le disjoncteur de la ligne éclairage, puis vérifie l’absence de tension directement sur les bornes de l’interrupteur avec le testeur. Allume aussi l’interrupteur après la coupure : c’est la mesure qui prouve que tu peux travailler, pas l’état apparent du circuit."
+    },
+    {
+      "title": "Repère le montage avant de toucher aux fils",
+      "description": "Déclipse la plaque et observe comment l’ancien interrupteur est câblé : quelle couleur va sur quelle borne. Prends une photo et pose un morceau d’adhésif marqué sur chaque conducteur, car le remontage doit se faire à l’identique."
+    },
+    {
+      "title": "Dépose l’ancien interrupteur",
+      "description": "Dévisse ou débranche les conducteurs en tenant l’appareil pour ne pas tirer sur les fils. Selon le modèle, les fils sont maintenus par des bornes à vis ou par des bornes automatiques qu’il faut libérer en appuyant sur la poussette."
+    },
+    {
+      "title": "Raccorde le nouvel interrupteur",
+      "description": "Dénude les conducteurs sur la longueur prévue par la notice, sans entamer le cuivre, puis raccorde-les sur les bornes correspondantes en respectant le repérage. Vérifie que chaque fil est bien engagé et serré, sans brin de cuivre qui dépasse."
+    },
+    {
+      "title": "Remonte et aligne l’appareillage",
+      "description": "Replie les conducteurs dans la boîte sans les pincer, puis visse ou clipse l’interrupteur sur son support. Contrôle qu’il est droit et que la plaque se pose sans forcer : un appareillage mal aligné peut se fendre et laisser des fils accessibles."
+    },
+    {
+      "title": "Remets en service et contrôle",
+      "description": "Réenclenche le disjoncteur et vérifie que l’interrupteur commande bien la lumière, sans crachement ni échauffement. Si le disjoncteur déclenche ou si l’appareil chauffe, recoupe immédiatement et reprends les raccordements avant de réessayer."
+    }
+  ],
+  "mistakes": [
+    "Démonter sans photo ni repères et inverser les conducteurs au remontage.",
+    "Travailler sous tension ou sans vérifier l’absence de tension sur les bornes.",
+    "Serrer un conducteur abîmé ou dénudé trop long dans une borne, et créer un point de contact dangereux."
+  ],
+  "safety": [
+    "Coupe le disjoncteur et vérifie l’absence de tension avant toute intervention : ne travaille jamais sous tension.",
+    "Respecte la norme NF C 15-100 : les conducteurs de l’éclairage doivent être protégés par le disjoncteur adapté et raccordés à la terre quand l’installation en dispose.",
+    "Porte des gants isolants, utilise des outils isolés et remonte l’appareillage avant de réenclencher : ne laisse jamais un interrupteur ouvert sous tension."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

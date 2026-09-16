@@ -1,0 +1,108 @@
+{
+  "id": "poser-du-papier-peint-intisse",
+  "title": "Poser du papier peint intissé",
+  "description": "L’intissé se colle au mur, pas sur le lé, ce qui rend la pose plus tolérante. Trace un repère bien droit, encolle le mur, pose le lé puis arase les bords au cutter.",
+  "category": "finitions",
+  "topicPath": ["Papier peint"],
+  "relatedCategories": [
+    { "category": "cloisons", "topicPath": ["Enduits"] },
+    { "category": "preparer-chantier", "topicPath": ["Métrés"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 150,
+  "cost": null,
+  "image": "/images/tutoriels/poser-du-papier-peint-intisse.png",
+  "imageAlt": "Un lé de papier peint en cours de pose sur un mur, une brosse à maroufler et un cutter posés à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Pose de papier peint intissé sur un mur intérieur sec, sain, propre et préparé, avec un motif droit ou à raccord simple. Hors papier à encoller posé lé par lé, mur humide ou en mauvais état, doublage neuf non préparé et raccords de motifs complexes.",
+  "estimatesNote": "Comptez environ 2 h 30 pour un pan de mur d’une pièce courante, hors préparation du mur et hors séchage. Le budget dépend de la surface, du nombre de rouleaux et de la colle ; compte une marge pour les raccords.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 59.4",
+      "title": "Travaux de bâtiment — Mise en œuvre des papiers peints et des revêtements muraux",
+      "scope": "Définit les supports admissibles et les conditions de mise en œuvre des revêtements muraux. Sert de repère sur l’exigence de support sain et sec, sans reproduire une prescription de chantier.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-594-p12/mise-en-uvre-des-papiers-peints-et-des-revetements-muraux-partie-12-critere/fa300758/602958",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "4MURS — Poser du papier peint intissé : le guide",
+      "url": "https://www.4murs.com/pages/comment-poser-papier-peint",
+      "note": "Détaille le tracé du repère du premier lé à environ 50 cm de l’angle au niveau ou au fil à plomb, l’encollage du mur au rouleau, la pose avec 2 cm de dépassement et le repositionnement d’un lé mal placé. Base de la méthode.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Midi Papiers Peints — Pose facile du papier peint intissé : guide pour débutants",
+      "url": "https://midipapierspeints.fr/blog/papier-peint/poser-papier-peint-intisse/",
+      "note": "Insiste sur la spécificité de l’intissé, qui se colle au mur et non sur le lé, et sur la préparation du support. Sert de contrôle sur les gestes propres à ce type de papier.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Rouleau ou brosse à encoller",
+    "Cutter bien affûté et spatule de coupe",
+    "Brosse à maroufler et raclette",
+    "Fil à plomb, niveau à bulle ou niveau laser",
+    "Mètre, crayon et règle",
+    "Éponge et seau d’eau claire",
+    "Marchepied ou escabeau stable"
+  ],
+  "materials": [
+    {
+      "name": "Papier peint intissé",
+      "quantity": "Calculé à partir de la surface du mur, plus une marge pour les raccords"
+    },
+    {
+      "name": "Colle spéciale intissé",
+      "quantity": "Selon la surface du mur à encoller"
+    },
+    {
+      "name": "Bâche et ruban de masquage",
+      "quantity": "Pour protéger le sol et les plinthes"
+    },
+    {
+      "name": "Éponge propre et chiffon",
+      "quantity": "Pour essuyer la colle avant qu’elle ne sèche"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prépare le mur et compte les rouleaux",
+      "description": "Le mur doit être sec, propre, lisse et non poussiéreux : reprends les trous, ponce les aspérités et laisse sécher. Mesure la hauteur et la largeur, ajoute une marge pour les raccords, puis vérifie le nombre de rouleaux et les numéros de bain pour éviter une différence de teinte entre deux lots."
+    },
+    {
+      "title": "Trace le repère du premier lé",
+      "description": "Loin d’un angle, d’une porte ou d’une fenêtre, trace un trait vertical à environ 50 cm de cet angle, au fil à plomb ou au niveau. Trace léger : sur un papier clair, un trait appuyé se verrait par transparence."
+    },
+    {
+      "title": "Encolles le mur, pas le lé",
+      "description": "Étale la colle directement sur le mur, sur la largeur d’un lé, en insistant sur les bords. C’est la particularité de l’intissé : le lé reste sec, ce qui évite qu’il ne s’étire, et l’encollage du mur doit être régulier et généreux sans excès."
+    },
+    {
+      "title": "Pose le lé et maroufle",
+      "description": "Déroule le lé en respectant le sens du motif, positionne le haut en laissant environ 2 cm de dépassement au plafond et aligne sur le repère. Maroufle du centre vers les bords à la brosse pour chasser l’air : si le lé est mal placé, soulève-le et repositionne-le pendant que la colle est fraîche."
+    },
+    {
+      "title": "Arase les bords et enchaîne les lés",
+      "description": "Marque le pli au plafond et à la plinthe, puis coupe au cutter le long d’une spatule pour araser net. Encollé le mur du lé suivant, pose-le bord à bord et raccorde le motif, en essuyant immédiatement toute trace de colle avec une éponge propre."
+    },
+    {
+      "title": "Contrôle et finis les angles",
+      "description": "Vérifie que les lés sont jointifs, sans bulle ni pli, et que les raccords de motif tombent juste. Dans les angles, mieux vaut couper le lé à quelques millimètres du coin puis repartir avec un lé neuf aligné au plomb que de plier un lé épais, qui se décollerait."
+    }
+  ],
+  "mistakes": [
+    "Encoller le lé comme un papier classique, puis constater qu’il s’étire et gondole au séchage.",
+    "Démarrer sur un repère approximatif ou dans un angle, et se retrouver avec tout le pan de mur de travers.",
+    "Araser au cutter avant que la colle n’ait pris, puis voir le lé se décoller du plafond ou de la plinthe."
+  ],
+  "safety": [
+    "Travaille sur un marchepied stable et déplace-le entre chaque lé plutôt que de te pencher pour atteindre le haut du mur.",
+    "Aère la pièce pendant la pose, porte des gants et évite tout contact prolongé de la colle avec la peau et les yeux.",
+    "Ne pose pas de papier peint sur un mur humide ou salpêtré : traite d’abord la cause de l’humidité, sinon le revêtement se décolle."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

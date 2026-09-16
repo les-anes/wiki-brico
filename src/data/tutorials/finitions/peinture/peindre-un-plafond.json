@@ -1,0 +1,108 @@
+{
+  "id": "peindre-un-plafond",
+  "title": "Peindre un plafond sans traces",
+  "description": "Un plafond se peint au rouleau, par bandes régulières, sans jamais repasser sur une zone à demi sèche. Protège la pièce, fais les contours au pinceau, puis avance en gardant une bande humide.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [
+    { "category": "cloisons", "topicPath": ["Enduits"] },
+    { "category": "techniques", "topicPath": ["Poncer"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 120,
+  "cost": null,
+  "image": "/images/tutoriels/peindre-un-plafond.png",
+  "imageAlt": "Un rouleau monté sur un manche télescopique passe une bande de peinture sur un plafond, un seau et une bâche visibles en dessous, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Peinture d’un plafond intérieur sec, en plaque de plâtre ou en enduit, avec une peinture acrylique, après préparation du support. Hors plafond humide, support fissuré ou décollé à reprendre, béton brut non enduit, faux plafond à ossature et isolation à refaire.",
+  "estimatesNote": "Comptez environ 2 h pour un plafond de pièce courante, hors séchage entre les couches et hors préparation. Le budget dépend de la peinture nécessaire, calculée à partir de la surface du plafond et du nombre de couches.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 59.1",
+      "title": "Travaux de bâtiment — Revêtements de peinture en feuil mince, semi-épais ou épais",
+      "scope": "Partie 1-1, cahier des clauses techniques types : encadre la préparation du support et la réalisation du système de peinture. Sert de repère sur l’exigence de support propre et sec, sans reproduire une prescription de chantier.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-591/travaux-de-batiment-revetements-de-peinture-en-feuil-mince-semiepais-ou-epa/fa183018/1371",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "La Maison Saint-Gobain — 9 conseils pour peindre un plafond sans traces",
+      "url": "https://www.lamaisonsaintgobain.fr/guides-travaux/amenagement-interieur/peindre-un-plafond-sans-traces",
+      "note": "Conseils de préparation du plafond, de protection de la pièce et de geste au rouleau pour éviter les traces. Base des étapes de préparation et d’application.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Travaux Peinture — Comment peindre un plafond sans traces",
+      "url": "https://www.travaux-peinture.fr/comment-peindre-un-plafond-sans-traces/",
+      "note": "Détaille la technique du rouleau par bandes, l’importance d’une bande humide et les causes classiques de traces. Sert à la partie application et reprises.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Rouleau à peinture et manche télescopique",
+    "Manchon à poils courts ou moyens",
+    "Pinceau à rechampir pour les angles",
+    "Bac à peinture avec grille d’égouttage",
+    "Bâches et film de protection",
+    "Lunettes, masque et gants",
+    "Marchepied ou escabeau stable"
+  ],
+  "materials": [
+    {
+      "name": "Peinture acrylique pour plafond",
+      "quantity": "Selon la surface et le nombre de couches calculés"
+    },
+    {
+      "name": "Sous-couche si le support l’exige",
+      "quantity": "Sur la même surface, avec son propre rendement"
+    },
+    {
+      "name": "Ruban de masquage",
+      "quantity": "Pour protéger les jonctions de murs et les luminaires"
+    },
+    {
+      "name": "Bâches et adhésif de maintien",
+      "quantity": "Pour couvrir le sol et le mobilier"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vide et protège la pièce",
+      "description": "Dégage le mobilier ou rassemble-le au centre sous une bâche, couvre le sol et protège les murs à la jonction avec le plafond. Démonte ou masque les luminaires et les bouches de ventilation : une goutte tombe toujours là où on ne l’attend pas."
+    },
+    {
+      "title": "Nettoie et prépare le plafond",
+      "description": "Dépoussière le plafond et dégraisse-le, en insistant près des sources de chaleur où la saleté s’accumule. Reprends les petits trous et fissures, ponce les traces, puis laisse sécher : une peinture appliquée sur un support poussiéreux ou gras n’accroche pas."
+    },
+    {
+      "title": "Peins les contours au pinceau",
+      "description": "Commence par les angles, la jonction avec les murs et le tour des luminaires, au pinceau à rechampir, sur une bande de 5 à 10 cm. Cette bande doit encore être fraîche quand tu passes le rouleau pour éviter une différence d’aspect entre pinceau et rouleau."
+    },
+    {
+      "title": "Peins au rouleau par bandes parallèles",
+      "description": "Charge le rouleau sans l’écraser, puis passe des bandes d’environ un mètre de large dans un sens régulier, en travaillant la lumière de la pièce dans ton dos. Étale la peinture en croisant légèrement, sans jamais revenir sur une bande qui commence à tirer."
+    },
+    {
+      "title": "Avance sans laisser sécher de bord",
+      "description": "Enchaîne les bandes en chevauchant la précédente tant qu’elle est humide, et avance vers la sortie de la pièce. C’est ce raccord fait dans le frais qui évite les marques de reprise ; si une bande sèche trop vite, tu retrouveras sa trace à la fin."
+    },
+    {
+      "title": "Applique la deuxième couche et contrôle",
+      "description": "Après séchage, applique la seconde couche en croisant le sens de la première. Une fois sec, contrôle à la lumière rasante, d’une lampe posée contre le mur : c’est là que se voient les manques et les surépaisseurs, à reprendre avant de tout ranger."
+    }
+  ],
+  "mistakes": [
+    "Charger exagérément le rouleau et faire des gouttes qui tombent sur le sol mal protégé.",
+    "Repasser sur une bande à demi sèche et laisser des marques de reprise très visibles à la lumière rasante.",
+    "Peindre un support poussiéreux ou gras, puis voir la peinture ne pas adhérer et peler."
+  ],
+  "safety": [
+    "Monte sur un escabeau stable et déplace-le plutôt que de te cambrer pour atteindre un angle ; garde les deux pieds au même niveau.",
+    "Aère la pièce pendant et après la peinture, et porte lunettes et masque : peindre au-dessus de la tête envoie des gouttes dans les yeux.",
+    "Protège les luminaires et coupe leur alimentation si tu les démontes, et ne masque pas les bouches de ventilation."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

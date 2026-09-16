@@ -1,0 +1,93 @@
+{
+  "id": "purger-un-radiateur",
+  "title": "Purger un radiateur qui chauffe mal",
+  "description": "Un radiateur qui gargouille ou reste tiède en haut contient de l’air. Chaudière éteinte, ouvre le purgeur jusqu’à obtenir un jet d’eau continu, puis rétablis la pression du circuit.",
+  "category": "chauffage",
+  "topicPath": ["Radiateurs"],
+  "relatedCategories": [
+    { "category": "preparer-chantier", "topicPath": ["Diagnostic"] },
+    { "category": "plomberie", "topicPath": ["Chauffe-eau"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 45,
+  "cost": null,
+  "image": "/images/tutoriels/purger-un-radiateur.png",
+  "imageAlt": "Une clé de purge posée sur la vis d’un radiateur en fonte, avec un petit récipient et un chiffon au sol, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Purge des radiateurs d’un circuit de chauffage central à eau chaude, sur un radiateur équipé d’un purgeur manuel accessible. Hors circuit sans purgeur, plancher chauffant, radiateur électrique, purge d’un circuit nécessitant une remise en eau par un professionnel et panne de chaudière.",
+  "estimatesNote": "Comptez environ 45 min pour purger les radiateurs d’un logement, hors temps de remise en pression. Le budget se limite à une clé de purge si tu n’en as pas ; l’opération elle-même ne consomme rien d’autre que l’eau évacuée.",
+  "sources": [
+    {
+      "title": "Choisir son chauffage — Comment purger un radiateur : étapes, ordre et pression",
+      "url": "https://choisir-son-chauffage.fr/radiateur/purge-radiateur-guide-complet/",
+      "note": "Détaille la purge chaudière éteinte et radiateurs froids, l’ouverture de la vis jusqu’à un jet continu, l’ordre du radiateur le plus proche de la chaudière au plus éloigné et le rétablissement de la pression entre 1,5 et 2 bars. Base de la méthode et des valeurs de pression.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Selectra — Comment purger un radiateur à eau chaude : guide étape par étape",
+      "url": "https://climate.selectra.com/fr/renovation-energetique/radiateur-eau-chaude/purger",
+      "note": "Guide pas à pas de la purge d’un radiateur à eau chaude, avec le matériel nécessaire et les symptômes qui indiquent une purge à faire. Sert de contrôle sur les signes d’air dans le circuit.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Clé de purge ou tournevis adapté au purgeur",
+    "Petit récipient ou bol peu profond",
+    "Chiffons et éponge",
+    "Manomètre de la chaudière ou de la nourrice, en lecture directe",
+    "Gants"
+  ],
+  "materials": [
+    {
+      "name": "Eau pour récupérer la purge",
+      "quantity": "Un récipient selon le nombre de radiateurs"
+    },
+    {
+      "name": "Robe ou protection de sol",
+      "quantity": "Pour protéger le sol et le mur sous le purgeur"
+    },
+    {
+      "name": "Éventuellement un purgeur de rechange",
+      "quantity": "Un si le purgeur fuit ou ne se referme plus"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Choisis le bon moment",
+      "description": "Purge de préférence à l’automne avant la remise en route du chauffage, ou dès qu’un radiateur gargouille ou reste tiède en partie haute. Coupe la chaudière et attends que les radiateurs soient froids : purger sur un circuit chaud expose à des projections d’eau brûlante."
+    },
+    {
+      "title": "Prépare le matériel au pied du radiateur",
+      "description": "Pose un chiffon et le récipient sous le purgeur, généralement en haut du radiateur. Repère la vis de purge et vérifie que la clé s’y engage correctement, sans forcer ni abîmer la vis d’un radiateur ancien."
+    },
+    {
+      "title": "Ouvre lentement la vis de purge",
+      "description": "Desserre la vis d’un quart de tour au maximum. L’air commence à siffler : c’est normal. N’ouvre jamais complètement, sinon l’eau part en jet et tu risques de perdre la vis ou de noyer le mur."
+    },
+    {
+      "title": "Attends un jet d’eau continu",
+      "description": "Laisse l’air s’échapper jusqu’à ce que l’eau s’écoule sans à-coups ni sifflements, en jet régulier. Referme alors la vis sans la serrer comme une brute : juste assez pour arrêter l’écoulement."
+    },
+    {
+      "title": "Purge les autres radiateurs dans l’ordre",
+      "description": "Reprends l’opération sur les autres radiateurs en partant du plus proche de la chaudière et en allant vers le plus éloigné. Cet ordre chasse l’air progressivement vers les points hauts du circuit et évite d’en ramener dans les radiateurs déjà purgés."
+    },
+    {
+      "title": "Rétablis la pression et contrôle",
+      "description": "Après le dernier radiateur, la pression du circuit a baissé : fais remonter la pression de la chaudière entre environ 1,5 et 2 bars, selon la notice de l’appareil. Remets en service, vérifie qu’aucun purgeur ne goutte et que tous les radiateurs chauffent de façon uniforme."
+    }
+  ],
+  "mistakes": [
+    "Purger avec la chaudière en marche et les radiateurs chauds, au risque de se brûler avec l’eau du circuit.",
+    "Dévisser complètement la vis de purge, puis perdre la vis et vider le radiateur sur le sol.",
+    "Oublier de remonter la pression du circuit, puis constater que la chaudière se met en sécurité au redémarrage."
+  ],
+  "safety": [
+    "Laisse refroidir le circuit avant d’ouvrir un purgeur : l’eau d’un chauffage central peut être brûlante.",
+    "Ne dépasse pas la pression indiquée par la notice de la chaudière, et ne touche pas aux organes de sécurité ni au vase d’expansion.",
+    "Si un purgeur continue de goutter après fermeture ou si un radiateur reste froid malgré la purge, coupe le circuit et cherche l’origine du problème au lieu d’insister."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

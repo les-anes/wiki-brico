@@ -23,10 +23,7 @@ Le choix initial combine les problèmes courants à la maison, l’utilité imm�
 
 ## Priorité 2 — Finitions et rénovation d’une pièce
 
-- [ ] **T11 — Remplacer un interrupteur simple à l’identique.** Électricité / Éclairage. Cas : un point de commande, sans va-et-vient ni ajout de circuit ; conserver les gestes de sécurité électrique.
-- [ ] **T12 — Poser du papier peint intissé.** Finitions / Papier peint. Préparer un mur sain, tracer le premier lé, encoller et araser ; traiter simplement les raccords du motif.
 - [ ] **T13 — Décoller du papier peint.** Finitions / Papier peint. Retirer les lés sans abîmer le support et nettoyer les restes de colle ; préparation utile avant T06 et T12.
-- [ ] **T14 — Peindre un plafond sans traces.** Finitions / Peinture. Organiser les passes, travailler par zones et respecter le séchage ; distinguer le geste du tuto mur existant.
 - [ ] **T15 — Poser des plinthes et couper les angles.** Finitions / Plinthes. Mesurer, couper et fixer au mur ; développer les finitions seulement évoquées dans le tuto parquet.
 - [ ] **T16 — Poser une crédence carrelée au-dessus d’un plan de travail.** Cuisine & salle de bains / Crédences. Petit mur sain hors douche ; calepinage, collage et découpes, avec joints traités dans T17.
 - [ ] **T17 — Faire les joints d’un carrelage neuf.** Finitions / Carrelage. Préparer le mortier à joints, garnir et nettoyer ; distinguer les joints courants des joints souples périphériques.
@@ -40,7 +37,6 @@ Le choix initial combine les problèmes courants à la maison, l’utilité imm�
 
 ## Priorité 3 — Confort, entretien et chantiers plus longs
 
-- [ ] **T21 — Purger un radiateur à eau.** Chauffage / Radiateurs. Cas : circuit individuel avec purgeur accessible ; expliquer aussi le contrôle de pression après la purge.
 - [ ] **T22 — Nettoyer les bouches et entrées d’air de ventilation.** Chauffage / VMC. Entretien des éléments accessibles, sans démontage du moteur ; préserver les réglages et composants sensibles à l’eau.
 - [ ] **T23 — Remplacer le joint d’une fenêtre qui laisse passer l’air.** Menuiseries / Isolation des ouvertures. Choisir le profil compatible, retirer l’ancien joint et vérifier la fermeture, sans boucher les entrées d’air.
 - [ ] **T24 — Raboter une porte intérieure qui frotte.** Menuiseries / Portes. Repérer le frottement et enlever progressivement le minimum de matière ; distinguer le problème d’un mauvais réglage de charnière.
@@ -86,6 +82,10 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Réalisés depuis cette liste
 
+- [x] **T11 — Remplacer un interrupteur simple à l’identique** — terminé le 2026-09-16 — [/tutoriel/remplacer-un-interrupteur/](/tutoriel/remplacer-un-interrupteur/)
+- [x] **T12 — Poser du papier peint intissé** — terminé le 2026-09-16 — [/tutoriel/poser-du-papier-peint-intisse/](/tutoriel/poser-du-papier-peint-intisse/)
+- [x] **T14 — Peindre un plafond sans traces** — terminé le 2026-09-16 — [/tutoriel/peindre-un-plafond/](/tutoriel/peindre-un-plafond/)
+- [x] **T21 — Purger un radiateur à eau** — terminé le 2026-09-16 — [/tutoriel/purger-un-radiateur/](/tutoriel/purger-un-radiateur/)
 - [x] **T07 — Reboucher une petite fissure stable dans un mur** — terminé le 2026-09-16 — [/tutoriel/reboucher-une-fissure/](/tutoriel/reboucher-une-fissure/)
 - [x] **T08 — Choisir et poser une cheville adaptée à ton mur** — terminé le 2026-09-16 — [/tutoriel/choisir-une-cheville/](/tutoriel/choisir-une-cheville/)
 - [x] **T09 — Fixer une tringle à rideaux droite** — terminé le 2026-09-16 — [/tutoriel/fixer-une-tringle-a-rideaux/](/tutoriel/fixer-une-tringle-a-rideaux/)
@@ -116,4 +116,4 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - **2026-09-16** : T40 terminé seul : première fiche de gros œuvre, nouveau classement « Maçonnerie de pierre › Rejointoiement », illustration locale provisoire (à remplacer par une génération avec l’outil imagegen), contrôles TypeScript, lint, tests, données, build et rendu réussis. Le catalogue contient 25 tutoriels ; 35 idées restent à faire.
 - **2026-09-16** : T04, T05 et T06 terminés : fiches documentées, illustrations originales et variantes WebP, contrôles TypeScript, lint, tests, données, build et rendu réussis. Le catalogue contient 24 tutoriels ; 36 idées restent à faire.
 - **2026-09-16** : lot peinture T31, T32, T34 et T35 terminé : quatre fiches documentées, références NF DTU 59.1 quand elle s’applique et sources consultées ; illustrations provisoires (à remplacer par l’outil imagegen) et variantes WebP. Le catalogue contient 29 tutoriels ; 31 idées restent à faire.
-- **2026-09-16** : lot petites réparations et électricité T07, T08, T09 et T10 terminé : quatre fiches documentées (enduit, cheville, tringle, prise murale), référence NF DTU 26.1 pour l’enduit et sources consultées ; illustrations provisoires et variantes WebP. Le catalogue contient 33 tutoriels ; 27 idées restent à faire.
+- **2026-09-16** : lot chauffage, électricité et finitions T21, T11, T14 et T12 terminé : quatre fiches documentées (purge de radiateur, interrupteur, plafond, papier peint intissé), références NF DTU 59.1 et NF DTU 59.4 quand elles s’appliquent et sources consultées ; illustrations provisoires et variantes WebP. Le catalogue contient 37 tutoriels ; 23 idées restent à faire.

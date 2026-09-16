@@ -72,6 +72,42 @@ Fichier : `public/images/tutoriels/remplacer-une-prise-murale.png`
 Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a wall socket unscrewed and held away from its box, revealing three distinctly coloured wires, with an insulated screwdriver and a small voltage tester resting on the floor below. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
 ```
 
+## Chauffage, électricité et finitions — 16 septembre 2026
+
+**Illustrations provisoires.** Même situation que les lots précédents : pas d’outil imagegen disponible. Les dessins ont été tracés en SVG hors du dépôt, convertis en PNG 1536×1024, puis en WebP 480, 720 et 960 avec `cwebp` (qualité 82). À remplacer par une génération avec l’outil maison, sans changer les données des fiches. Couvertures illustratives, sans valeur de schéma de montage.
+
+### purger-un-radiateur
+
+Fichier : `public/images/tutoriels/purger-un-radiateur.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a small bleed key fitted on the valve at the top of a cast-iron radiator, with a shallow bowl and a folded cloth on the floor below, a few water droplets. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### remplacer-un-interrupteur
+
+Fichier : `public/images/tutoriels/remplacer-un-interrupteur.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a wall light switch unscrewed and held away from its box, showing its terminals and two wires, with an insulated screwdriver and a small voltage tester resting on the floor below. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### peindre-un-plafond
+
+Fichier : `public/images/tutoriels/peindre-un-plafond.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a paint roller mounted on a long extension pole laying a fresh band of paint across a ceiling, a paint bucket and a protective sheet visible far below. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### poser-du-papier-peint-intisse
+
+Fichier : `public/images/tutoriels/poser-du-papier-peint-intisse.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a strip of patterned wallpaper being smoothed flat against a wall with a smoothing brush, its top edge overhanging near the ceiling, a craft knife and a pencil on a nearby ledge. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
 ## Maçonnerie de pierre — 16 septembre 2026
 
 **Illustration provisoire.** L’environnement de rédaction de la fiche T40 ne disposait pas de l’outil imagegen : le dessin a été tracé à la main en SVG, hors du dépôt, puis converti en PNG 1536×1024 avec `sips` ; les variantes WebP 480, 720 et 960 ont été générées avec `cwebp` (qualité 82). À remplacer par une génération avec l’outil maison, sans changer les données de la fiche. Couverture illustrative, sans valeur de schéma de montage.
