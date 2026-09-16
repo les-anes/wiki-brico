@@ -294,6 +294,66 @@ Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1
 
 Production du 8 septembre 2026. Référence de style : `public/images/tutoriels/plomberie-pehd.png`. Les treize dessins complètent le PEHD déjà approuvé. Ce document de travail n’est pas publié sur le site.
 
+## Carrelage, sols et gros œuvre — 16 septembre 2026
+
+**Illustrations provisoires.** Pas d’outil imagegen disponible dans cet environnement, comme pour les lots précédents : les sept dessins ont été tracés en SVG hors du dépôt, convertis en PNG 1536×1024, puis en WebP 480, 720 et 960 avec `cwebp` (qualité 82). À remplacer par une génération avec l’outil maison, sans changer les données des fiches. Couvertures illustratives, sans valeur de schéma de montage.
+
+### remplacer-un-carreau-de-carrelage-casse
+
+Fichier : `public/images/tutoriels/remplacer-un-carreau-de-carrelage-casse.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: one cracked square tile in the middle of an intact tiled floor, its corner lifted by a small chisel, a mallet and a notched trowel lying beside on a cloth. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### poser-du-carrelage-au-sol
+
+Fichier : `public/images/tutoriels/poser-du-carrelage-au-sol.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a row of square floor tiles laid dry along a taut chalk line on a bare floor, a notched adhesive trowel, an open bucket of adhesive and a few tile spacers beside it. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### poser-un-sol-vinyle-clipsable
+
+Fichier : `public/images/tutoriels/poser-un-sol-vinyle-clipsable.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: three long vinyl floor planks half assembled, the last one tilted at an angle to click into the previous one, a tapping block, a rubber mallet and a utility knife lying on the planks. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### organiser-les-travaux-d-une-chambre
+
+Fichier : `public/images/tutoriels/organiser-les-travaux-d-une-chambre.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a handwritten work schedule on a sheet of paper resting on a wooden tool crate, a folding rule, a pencil and a roll of masking tape on top, a room with stripped walls in the background. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### fabriquer-des-volets-battants-en-bois
+
+Fichier : `public/images/tutoriels/fabriquer-des-volets-battants-en-bois.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a wooden shutter laid flat, face down, its two horizontal rails and a diagonal brace screwed across the back, a cordless drill and a try square resting on the boards. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### remplacer-un-linteau
+
+Fichier : `public/images/tutoriels/remplacer-un-linteau.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a stone rubble wall opening propped by two vertical steel props standing on wooden planks, an old timber lintel being slid out just above the opening, a spirit level and a mallet on the ground. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### ceinturer-un-mur-en-pierre
+
+Fichier : `public/images/tutoriels/ceinturer-un-mur-en-pierre.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: the uneven top of a low stone wall receiving a fresh concrete capping, steel bars emerging from the wet concrete, a short wooden formwork and a trowel resting on the wall. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
 ## reboucher-un-trou
 
 Fichier : `public/images/tutoriels/reboucher-un-trou.png`
