@@ -23,7 +23,6 @@ Le choix initial combine les problèmes courants à la maison, l’utilité imm�
 
 ## Priorité 2 — Finitions et rénovation d’une pièce
 
-- [ ] **T13 — Décoller du papier peint.** Finitions / Papier peint. Retirer les lés sans abîmer le support et nettoyer les restes de colle ; préparation utile avant T06 et T12.
 - [ ] **T15 — Poser des plinthes et couper les angles.** Finitions / Plinthes. Mesurer, couper et fixer au mur ; développer les finitions seulement évoquées dans le tuto parquet.
 - [ ] **T16 — Poser une crédence carrelée au-dessus d’un plan de travail.** Cuisine & salle de bains / Crédences. Petit mur sain hors douche ; calepinage, collage et découpes, avec joints traités dans T17.
 - [ ] **T17 — Faire les joints d’un carrelage neuf.** Finitions / Carrelage. Préparer le mortier à joints, garnir et nettoyer ; distinguer les joints courants des joints souples périphériques.
@@ -31,9 +30,6 @@ Le choix initial combine les problèmes courants à la maison, l’utilité imm�
 - [ ] **T19 — Poser un sol vinyle clipsable.** Finitions / à classer. Cas : pièce sèche et support préparé ; ajouter une sous-catégorie « Sol vinyle » à la taxonomie lors de l’implémentation.
 - [ ] **T20 — Régler une porte de placard qui ferme mal.** Menuiseries / Quincaillerie. Cas : charnières invisibles réglables ; corriger hauteur, alignement et profondeur.
 - [ ] **T33 — Peindre un motif au pochoir.** Finitions / Peinture. Cas : mur lisse déjà peint et sec ; fixer le pochoir, tamponner avec très peu de peinture et le retirer proprement, puis répéter le motif.
-- [ ] **T36 — Peindre un mur en deux couleurs avec une séparation nette.** Finitions / Peinture. Tracer une ligne droite, masquer sur une première couleur bien sèche et appliquer la seconde ; s’appuyer sur T31 pour éviter les bavures.
-- [ ] **T37 — Repeindre un mur foncé en clair.** Finitions / Peinture. Cas : ancienne peinture saine et adhérente ; préparer, choisir une sous-couche adaptée et obtenir une couverture régulière sans surcharger.
-- [ ] **T38 — Repeindre une porte intérieure en bois déjà peinte.** Finitions / Peinture. Cas : peinture existante saine ; nettoyer, égrener, protéger la quincaillerie et peindre les faces et les chants sans coulures.
 
 ## Priorité 3 — Confort, entretien et chantiers plus longs
 
@@ -82,6 +78,10 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Réalisés depuis cette liste
 
+- [x] **T13 — Décoller du papier peint** — terminé le 2026-09-16 — [/tutoriel/decoller-du-papier-peint/](/tutoriel/decoller-du-papier-peint/)
+- [x] **T36 — Peindre un mur en deux couleurs avec une séparation nette** — terminé le 2026-09-16 — [/tutoriel/peindre-deux-couleurs/](/tutoriel/peindre-deux-couleurs/)
+- [x] **T37 — Repeindre un mur foncé en clair** — terminé le 2026-09-16 — [/tutoriel/repeindre-un-mur-fonce-en-clair/](/tutoriel/repeindre-un-mur-fonce-en-clair/)
+- [x] **T38 — Repeindre une porte intérieure déjà peinte** — terminé le 2026-09-16 — [/tutoriel/repeindre-une-porte/](/tutoriel/repeindre-une-porte/)
 - [x] **T11 — Remplacer un interrupteur simple à l’identique** — terminé le 2026-09-16 — [/tutoriel/remplacer-un-interrupteur/](/tutoriel/remplacer-un-interrupteur/)
 - [x] **T12 — Poser du papier peint intissé** — terminé le 2026-09-16 — [/tutoriel/poser-du-papier-peint-intisse/](/tutoriel/poser-du-papier-peint-intisse/)
 - [x] **T14 — Peindre un plafond sans traces** — terminé le 2026-09-16 — [/tutoriel/peindre-un-plafond/](/tutoriel/peindre-un-plafond/)
@@ -116,4 +116,4 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - **2026-09-16** : T40 terminé seul : première fiche de gros œuvre, nouveau classement « Maçonnerie de pierre › Rejointoiement », illustration locale provisoire (à remplacer par une génération avec l’outil imagegen), contrôles TypeScript, lint, tests, données, build et rendu réussis. Le catalogue contient 25 tutoriels ; 35 idées restent à faire.
 - **2026-09-16** : T04, T05 et T06 terminés : fiches documentées, illustrations originales et variantes WebP, contrôles TypeScript, lint, tests, données, build et rendu réussis. Le catalogue contient 24 tutoriels ; 36 idées restent à faire.
 - **2026-09-16** : lot peinture T31, T32, T34 et T35 terminé : quatre fiches documentées, références NF DTU 59.1 quand elle s’applique et sources consultées ; illustrations provisoires (à remplacer par l’outil imagegen) et variantes WebP. Le catalogue contient 29 tutoriels ; 31 idées restent à faire.
-- **2026-09-16** : lot chauffage, électricité et finitions T21, T11, T14 et T12 terminé : quatre fiches documentées (purge de radiateur, interrupteur, plafond, papier peint intissé), références NF DTU 59.1 et NF DTU 59.4 quand elles s’appliquent et sources consultées ; illustrations provisoires et variantes WebP. Le catalogue contient 37 tutoriels ; 23 idées restent à faire.
+- **2026-09-16** : lot peinture avancée T13, T36, T37 et T38 terminé : quatre fiches documentées (décollage de papier peint, deux couleurs, mur foncé en clair, porte intérieure), référence NF DTU 59.1 pour les trois fiches de peinture et sources consultées ; illustrations provisoires et variantes WebP. Le catalogue contient 41 tutoriels ; 19 idées restent à faire.

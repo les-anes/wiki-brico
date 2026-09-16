@@ -1,0 +1,107 @@
+{
+  "id": "peindre-deux-couleurs",
+  "title": "Peindre deux couleurs sur un mur avec une séparation nette",
+  "description": "Une ligne nette tient à un ruban bien plaqué et à une astuce de scellement. Trace au niveau, masque soigneusement et retire le ruban au bon moment.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [
+    { "category": "techniques", "topicPath": ["Utiliser un niveau"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 90,
+  "cost": null,
+  "image": "/images/tutoriels/peindre-deux-couleurs.png",
+  "imageAlt": "Un mur porte deux bandes de couleurs différentes séparées par une ligne nette recouverte d’un ruban de masquage, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Réalisation d’une séparation horizontale ou verticale entre deux teintes sur un même mur intérieur sec, avec une peinture à l’eau. Hors mur humide, motif au pochoir, bandes très fines et supports non peints ou très irréguliers.",
+  "estimatesNote": "Comptez environ 1 h pour la préparation, le tracé et le masquage, puis le temps de peinture de chaque zone et de séchage avant de masquer à nouveau. Le budget dépend des deux peintures et de la qualité du ruban.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 59.1",
+      "title": "Travaux de bâtiment — Revêtements de peinture en feuil mince, semi-épais ou épais",
+      "scope": "Partie 1-1, cahier des clauses techniques types : encadre la préparation du support et l’application du système de peinture. Sert de repère sur les exigences de support, sans reproduire une prescription de chantier.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-591/travaux-de-batiment-revetements-de-peinture-en-feuil-mince-semiepais-ou-epa/fa183018/1371",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Peinture de l’Archipel — Peindre deux couleurs sur un mur : démarcation nette",
+      "url": "https://peinturesdelarchipel.fr/peindre-deux-couleurs-mur/",
+      "note": "Présente l’intérêt décoratif d’un mur bicolore et détaille la préparation du support, le choix des couleurs, les techniques de masquage et les erreurs à éviter pour une démarcation nette. Base de la structure de la fiche.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "20 Minutes Maison — L’astuce des pros pour une séparation de couleur nette entre deux murs",
+      "url": "https://maison.20minutes.fr/mm85504-lastuce-infaillible-des-pros-pour-une-separation-de-couleur-nette-entre-deux-murs-sans-bavures/",
+      "note": "Décrit le geste du scellement du ruban de masquage, qui consiste à repasser la couleur déjà en place sur le bord du ruban pour empêcher la seconde teinte de s’infiltrer. Base de l’astuce de séparation nette.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Niveau à bulle, fil à plomb ou niveau laser",
+    "Mètre, crayon et règle",
+    "Ruban de masquage adapté à la peinture",
+    "Rouleau et pinceau à rechampir",
+    "Spatule ou ongle pour plaquer le ruban",
+    "Bâches de protection",
+    "Gants"
+  ],
+  "materials": [
+    {
+      "name": "Peinture de la couleur du bas",
+      "quantity": "Selon la surface de la zone inférieure"
+    },
+    {
+      "name": "Peinture de la couleur du haut",
+      "quantity": "Selon la surface de la zone supérieure"
+    },
+    {
+      "name": "Ruban de masquage de qualité",
+      "quantity": "Un rouleau selon la longueur de la séparation"
+    },
+    {
+      "name": "Peinture de la couleur claire pour sceller le ruban",
+      "quantity": "Une petite quantité, reprise sur le bord du ruban"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prépare le mur et fixe la hauteur",
+      "description": "Le mur doit être propre, sec et sain, car une ligne nette met en valeur le support autant que la peinture. Décide de la hauteur de séparation et vérifie-la au mètre sur toute la longueur du mur, en tenant compte des meubles et des prises."
+    },
+    {
+      "title": "Trace la ligne au niveau",
+      "description": "Trace la ligne de séparation au niveau à bulle, au fil à plomb ou au niveau laser, sur toute la longueur. Un trait légèrement de travers se verra d’autant plus que la ligne est longue : mieux vaut vérifier deux fois qu’une."
+    },
+    {
+      "title": "Pose le ruban bien plaqué",
+      "description": "Applique le ruban sur le tracé, en le laissant se poser sans le tendre, puis marque son bord avec l’ongle ou une spatule. Ouvre les plis et appuie partout : c’est la moindre bulle d’air qui laisse la peinture s’infiltrer sous le ruban."
+    },
+    {
+      "title": "Scelle le ruban avec la couleur du bas",
+      "description": "Avant de peindre la seconde teinte, repasse la couleur de la zone déjà peinte sur le bord du ruban, puis laisse sécher. Cette couche de scellement comble le liseré capillaire sous le ruban et empêche la nouvelle teinte de baver dessous."
+    },
+    {
+      "title": "Peins la seconde zone",
+      "description": "Peins la zone suivante au rouleau et au pinceau, sans charger près du ruban, en chevauchant le bord du ruban avec la couleur concernée. Ne repasse pas sur la peinture à demi sèche et attend le délai de recouvrement avant tout nouveau masquage."
+    },
+    {
+      "title": "Retire le ruban au bon moment",
+      "description": "Décolle le ruban quand la peinture est encore légèrement fraîche mais ne file plus, en tirant lentement à 45 degrés vers l’extérieur. Attendre que tout soit dur fait déchirer la pellicule et laisse une ligne dentelée le long de la séparation."
+    }
+  ],
+  "mistakes": [
+    "Poser le ruban sur un mur poussiéreux ou mal plaqué, puis voir la peinture baver sous le bord.",
+    "Retirer le ruban sur une peinture complètement dure, et arracher la couche en laissant une ligne dentelée.",
+    "Masquer sur une peinture fraîche et décoller la couche précédente en enlevant le ruban."
+  ],
+  "safety": [
+    "Aère la pièce pendant et après la peinture, et porte des gants pour manipuler peinture et ruban.",
+    "Travaille sur un marchepied stable pour les zones hautes et déplace-le plutôt que de te pencher.",
+    "Repère les câbles avant de percer ou de fixer quoi que ce soit sur le mur, et ne masque pas les grilles de ventilation."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

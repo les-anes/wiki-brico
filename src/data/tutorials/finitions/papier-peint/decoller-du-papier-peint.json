@@ -1,0 +1,99 @@
+{
+  "id": "decoller-du-papier-peint",
+  "title": "Décoller du papier peint sans abîmer le mur",
+  "description": "Le papier part plus facilement quand on le détrempe puis qu’on travaille par lés, du haut vers le bas. Repère le type de papier, protège le sol et retire aussi les restes de colle.",
+  "category": "finitions",
+  "topicPath": ["Papier peint"],
+  "relatedCategories": [
+    { "category": "cloisons", "topicPath": ["Enduits"] },
+    { "category": "preparer-chantier", "topicPath": ["Diagnostic"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 180,
+  "cost": null,
+  "image": "/images/tutoriels/decoller-du-papier-peint.png",
+  "imageAlt": "Un lé de papier peint se décolle en bandes sous une spatule, un pulvérisateur et une éponge posés au sol, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Décollage d’un papier peint ou d’une toile sur un mur intérieur sec, vinyle, intissé ou traditionnel, avec la méthode adaptée au revêtement. Hors retrait d’un revêtement collé sur support fragile, papier peint contenant de l’amiante et mur humide ou salpêtré à traiter d’abord.",
+  "estimatesNote": "Comptez environ 15 à 20 min par mètre carré selon le type de papier et de colle, hors séchage et préparation du mur. Le budget dépend de la méthode : eau et liquide vaisselle, produit décolleur ou location d’une décolleuse à vapeur.",
+  "sources": [
+    {
+      "title": "Jardipros — Comment décoller du papier peint ? 6 méthodes efficaces",
+      "url": "https://jardipros.com/bricolage/comment-decoller-du-papier-peint/",
+      "note": "Compare les méthodes selon le revêtement : eau chaude et liquide vaisselle, vinaigre blanc, produit décolleur spécialisé et décolleuse à vapeur pour les papiers récalcitrants, avec le matériel nécessaire et le nettoyage des résidus de colle. Base du choix de méthode.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Habitatpresto — Enlever du papier peint : 5 méthodes pour le décoller facilement",
+      "url": "https://www.habitatpresto.com/mag/revetement/mur/enlever-papier-peint",
+      "note": "Rappelle qu’un nouveau revêtement posé sur un ancien papier se décolle, et détaille le retrait par lés après humidification. Sert de justification à l’étape de nettoyage du support.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Spatule large et spatule souple",
+    "Pulvérisateur, rouleau ou grosse éponge",
+    "Perforateur de papier peint ou fourchette à gratter",
+    "Décolleuse à vapeur si le papier résiste",
+    "Bâche de sol et seau d’eau chaude",
+    "Gants et lunettes",
+    "Éponge et chiffons propres"
+  ],
+  "materials": [
+    {
+      "name": "Eau chaude et liquide vaisselle",
+      "quantity": "Plusieurs litres, selon la surface à décoller"
+    },
+    {
+      "name": "Produit décolleur ou vinaigre blanc",
+      "quantity": "Une dose selon la notice, pour les papiers résistants"
+    },
+    {
+      "name": "Sacs-poubelle résistants",
+      "quantity": "Pour évacuer les lés et les résidus"
+    },
+    {
+      "name": "Enduit de rebouchage",
+      "quantity": "Petite quantité, pour reprendre les petites éraflures du support"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Identifie le type de papier",
+      "description": "Soulève un coin ou gratte une petite zone : un papier vinyle se détache en laissant une pellicule plastique, un intissé part souvent à sec par grands lés, un papier traditionnel se déchire en petits morceaux quand il est sec. Cette observation décide de la méthode et de la quantité d’eau à utiliser."
+    },
+    {
+      "title": "Protège la pièce et coupe l’électricité",
+      "description": "Couvre le sol d’une bâche, déplace le mobilier et protège les prises et luminaires. Coupe l’alimentation des circuits concernés : avec la vapeur et les projections d’eau, travailler près d’un appareillage sous tension n’est pas raisonnable."
+    },
+    {
+      "title": "Perfore et détrempe le papier",
+      "description": "Passe le perforateur sur le papier pour que l’eau pénètre, puis pulvérise abondamment de l’eau chaude additionnée d’une goutte de liquide vaisselle, ou applique une décolleuse à vapeur. Laisse agir quelques minutes : c’est l’eau qui ramollit la colle, pas la force."
+    },
+    {
+      "title": "Décolle par lés, du haut vers le bas",
+      "description": "Soulève un bord au niveau d’une couture et tire lentement vers le bas en accompagnant à la spatule, sans arracher. Travaille par lés entiers quand le papier vient bien, en remouillant dès qu’il résiste plutôt qu’en forçant sur le support."
+    },
+    {
+      "title": "Retire les restes de colle",
+      "description": "Une fois le papier enlevé, rince le mur à l’éponge et à l’eau claire, puis lessive pour éliminer la colle résiduelle. Cette étape n’est pas facultative : une colle ancienne laissée en place empêche la peinture ou le nouveau papier d’adhérer."
+    },
+    {
+      "title": "Laisse sécher et vérifie le support",
+      "description": "Laisse le mur sécher complètement, puis inspecte-le : fissures, trous, zones farinantes ou humides. Reprends ce qui doit l’être avant de peindre ou de tapisser, sinon les défauts réapparaîtront sur le revêtement neuf."
+    }
+  ],
+  "mistakes": [
+    "Arracher un papier vinyle à sec et déchirer la couche superficielle du support en petits morceaux.",
+    "Détremper à grande eau une plaque de plâtre non peinte, qui ramollit et se déforme.",
+    "Poser un nouveau revêtement sur un mur encore chargé de colle, puis le voir se décoller par plaques."
+  ],
+  "safety": [
+    "Coupe l’électricité des circuits de la pièce et protège les appareillages : la vapeur et l’eau ne font pas bon ménage avec les prises.",
+    "La vapeur d’une décolleuse est brûlante : garde les mains et le visage à distance du jet et porte des gants et des lunettes.",
+    "Avant de gratter un papier ancien, vérifie qu’il ne contient pas d’amiante ; dans le doute, ne le décape pas toi-même et fais analyser un échantillon."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}
