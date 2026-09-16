@@ -1,0 +1,108 @@
+{
+  "id": "remplacer-un-linteau",
+  "title": "Remplacer un linteau au-dessus d’une ouverture",
+  "description": "Remplacer un linteau en bois fatigué demande d’étayer le mur avant de le déposer. La section du linteau neuf se lit sur une note de calcul, jamais à l’estime.",
+  "category": "structure",
+  "topicPath": ["Linteaux"],
+  "relatedCategories": [
+    {
+      "category": "techniques",
+      "topicPath": ["Faire du mortier"]
+    },
+    {
+      "category": "techniques",
+      "topicPath": ["Utiliser un niveau"]
+    }
+  ],
+  "difficulty": "Avancé",
+  "durationMinutes": 600,
+  "cost": null,
+  "image": "/images/tutoriels/remplacer-un-linteau.png",
+  "imageAlt": "Une ouverture en mur de moellons étayée par deux étais verticaux sur madriers, avec au-dessus un linteau de bois en cours de dépose, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Remplacement d’un linteau existant en bois, dégradé ou fléchi, au-dessus d’une ouverture en rez-de-chaussée d’un mur en moellons ou en pierre, avec étaiement possible de part et d’autre. Hors création d’une ouverture, élargissement d’une baie, mur porteur portant plusieurs niveaux ou un plancher lourd, mur en béton armé, et dépose d’une partie de mur porteur. Dans tous ces cas, le dimensionnement dépasse le cadre de cette fiche.",
+  "estimatesNote": "Comptez deux à trois jours de travail effectif, auxquels s’ajoute le délai de prise du mortier avant desserrage. Le budget dépend du linteau retenu, de la location ou de l’achat des étais et du matériau des appuis.",
+  "sources": [
+    {
+      "title": "Lab’ Rénovation — Comment faire un linteau dans un mur porteur",
+      "url": "https://www.lab-renovation.fr/comment-faire-linteau-mur-porteur/",
+      "note": "Décrit le repérage du rôle de la paroi par sa mesure et le test sonore, l’étaiement vertical sur madriers à environ 30 cm de la paroi en contact ferme sans soulever le plafond, la réservation des appuis sur au moins 20 cm, la pose sur lit de mortier sans retrait, le contrôle de l’horizontalité et le desserrage progressif après vingt-huit jours. Base de l’étaiement et de la mise en place.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Mestravaux — Poser un linteau dans un mur porteur",
+      "url": "https://www.mestravaux.com/pose-linteau-mur-porteur/",
+      "note": "Présente les types de linteaux et les conditions d’appui, ainsi que le lien entre le choix de la section et les charges reprises. Sert de contrôle sur les appuis et le calage.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Étais de maçonnerie en nombre suffisant, et madriers pour répartir les charges",
+    "Niveau à bulle, cordeau et mètre",
+    "Masse, burin et pied-de-biche",
+    "Maçon à collerette ou auge et truelle pour le mortier",
+    "Cales en bois dur ou en acier et paires de coins pour le calage",
+    "Brosses et seau pour nettoyer les appuis",
+    "Casque, lunettes, gants, chaussures de sécurité et masque antipoussière"
+  ],
+  "materials": [
+    {
+      "name": "Linteau neuf",
+      "quantity": "Un, de section conforme à la note de calcul"
+    },
+    {
+      "name": "Mortier sans retrait",
+      "quantity": "Pour asseoir le linteau et garnir les appuis"
+    },
+    {
+      "name": "Cales de calage",
+      "quantity": "Quelques-unes, plus deux paires de coins"
+    },
+    {
+      "name": "Polyane épais et ruban de masquage",
+      "quantity": "Pour protéger le sol et contenir la poussière"
+    },
+    {
+      "name": "Planches de protection",
+      "quantity": "Pour les passages et la zone de travail"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Établis la charge et la section du linteau",
+      "description": "Relève l’épaisseur du mur, la largeur de l’ouverture et ce que ce mur porte réellement, puis fais établir la descente de charges et la section du linteau, ainsi que la longueur d’appui de chaque côté. Tant que tu ne disposes pas de ce dimensionnement écrit, ne dépose rien : c’est cette condition, et non la difficulté du geste, qui commande l’arrêt."
+    },
+    {
+      "title": "Repère les réseaux et protège la zone",
+      "description": "Repère les câbles, les tuyaux et les conduits qui traversent le mur de part et d’autre de l’ouverture, et coupe les alimentations concernées. Protège le sol au polyane scotché aux jonctions, dégage la pièce et prépare un point de stockage pour les gravats à proximité immédiate."
+    },
+    {
+      "title": "Étaye le mur de part et d’autre",
+      "description": "Pose des madriers sur le sol pour répartir la pression, puis installe les étais verticalement à environ 30 cm de la paroi, en les serrant à la main jusqu’au contact ferme. Il ne s’agit pas de soulever le mur mais de le stabiliser ; vérifie qu’aucun étai n’est incliné et que le passage reste libre."
+    },
+    {
+      "title": "Dépose l’ancien linteau et prépare les appuis",
+      "description": "Déblaye la maçonnerie au-dessus et autour du linteau, puis retire-le en le soutenant, sans le faire tomber dans l’ouverture. Nettoye ensuite les deux appuis à la brosse et à l’eau, et vérifie à la règle que leur niveau est régulier : un appui en pente ou creux oblige à le reprendre avant toute chose."
+    },
+    {
+      "title": "Pose le linteau neuf sur lit de mortier",
+      "description": "Monte le linteau à sa place sur un lit de mortier sans retrait, en le faisant reposer de la longueur d’appui prévue de chaque côté. Contrôle l’horizontalité au niveau dans les deux sens, puis cale et garnis les vides au-dessus avec des cales et du mortier, sans laisser d’espace vide entre le linteau et la maçonnerie."
+    },
+    {
+      "title": "Desserre progressivement et contrôle",
+      "description": "Laisse le mortier atteindre sa résistance, la référence courante étant vingt-huit jours, puis desserre les étais progressivement en commençant par le milieu. Surveille les appuis et le linteau après le desserrage et pendant les premiers changements de saison : une fissure qui évolue ou un mortier qui s’effrite impose de remettre l’étaiement en place et de reprendre avant de poursuivre."
+    }
+  ],
+  "mistakes": [
+    "Déposer le linteau sur une section choisie à l’estime, sans dimensionnement écrit des charges reprises.",
+    "Étayer de façon désordonnée, sur des appuis qui s’enfoncent, ou desserrer les étais avant la prise complète du mortier.",
+    "Reposer le linteau sur des appuis creusés ou en pente, ce qui crée un point d’appui ponctuel et fait fissurer la maçonnerie au-dessus."
+  ],
+  "safety": [
+    "Interromps le chantier tant que le dimensionnement n’est pas établi et que l’étaiement n’est pas en place : un linteau soutient la maçonnerie située au-dessus et sa dépose fragilise temporairement toute cette zone.",
+    "Porte casque, lunettes, gants et chaussures de sécurité : la dépose d’un linteau fait tomber des blocs et de la poussière, et les outils de percussion sont dangereux à proximité du visage.",
+    "Étaye sur des madriers et non directement sur un sol ou un plancher, et laisse une zone d’exclusion sous l’ouverture pendant toute la durée du chantier."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

@@ -1,0 +1,102 @@
+{
+  "id": "poser-un-sol-vinyle-clipsable",
+  "title": "Poser un sol vinyle clipsable",
+  "description": "Les lames vinyle se clipsent sans colle sur un support plan et sec. Tu poses la première rangée le long du mur le plus droit, tu décales les joints et tu clipses en reculant.",
+  "category": "finitions",
+  "topicPath": ["Sol vinyle"],
+  "relatedCategories": [
+    { "category": "preparer-chantier", "topicPath": ["Diagnostic"] },
+    { "category": "menuiseries", "topicPath": ["Quincaillerie"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 300,
+  "cost": null,
+  "image": "/images/tutoriels/poser-un-sol-vinyle-clipsable.png",
+  "imageAlt": "Des lames de sol vinyle en cours de clipsage à plat sur un support préparé, avec une cale à frapper, un maillet et un cutter posés sur une lame encore à poser, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Pose flottante de lames vinyle clipsables, avec ou sans sous-couche intégrée, en pièce sèche sur support plan, sec et sain. Hors pose collée, pièce d’eau avec évacuation au sol, chauffage au sol à eau, support non plan à ragréer et remplacement des plinthes traité dans une autre fiche.",
+  "estimatesNote": "Comptez une journée pour une pièce courante, entre 24 et 48 h d’acclimatation des paquets non comprises. Le budget se limite aux lames, à une sous-couche si les lames n’en ont pas, et à quelques accessoires de finition.",
+  "sources": [
+    {
+      "title": "Briker — Poser du sol PVC clipsable : la méthode complète",
+      "url": "https://www.briker.fr/aktu-tuto/poser-du-sol-pvc-clipsable",
+      "note": "Détaille la préparation du support, l’acclimatation des paquets 24 à 48 h, le sens de pose parallèle à la lumière, les cales de 5 à 8 mm en périphérie, le décalage des joints d’au moins 20 à 30 cm, l’usage de la cale à frapper et la coupe au cutter sans scie. Base de la méthode.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Castorama — Comment poser des lames vinyle PVC à clipser",
+      "url": "https://www.castorama.fr/idees-et-conseils/comment-poser-des-lames-vinyle-pvc-a-clipser/CF_CC_npcart_100491.art",
+      "note": "Rappelle la pose flottante sans colle, le stockage des lames à température ambiante 48 h avant pose, le retrait des plinthes en périphérie et le ragréage nécessaire au-dessus d’un ancien carrelage dont les joints dépassent 4 mm. Sert de contrôle sur la préparation.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Cutter à lames neuves et règle de coupe",
+    "Mètre, crayon et équerre",
+    "Cale à frapper et maillet ou bloc de bois",
+    "Niveau à bulle ou règle de maçon pour contrôler la planéité",
+    "Aspirateur ou balai",
+    "Genouillères et gants"
+  ],
+  "materials": [
+    {
+      "name": "Lames vinyle clipsables",
+      "quantity": "Surface de la pièce plus 7 à 10 % pour les coupes"
+    },
+    {
+      "name": "Sous-couche spéciale vinyle",
+      "quantity": "La surface de la pièce, sauf si les lames intègrent déjà une sous-couche"
+    },
+    {
+      "name": "Cales d’épaisseur",
+      "quantity": "De 5 à 8 mm, à répartir sur tout le périmètre"
+    },
+    {
+      "name": "Mortier de ragréage autolissant",
+      "quantity": "Uniquement si la planéité n’est pas suffisante"
+    },
+    {
+      "name": "Profilé de seuil",
+      "quantity": "Un par passage de porte"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Contrôle la planéité et l’état du sol",
+      "description": "Passe une règle sur toute la surface : dès que les irrégularités dépassent quelques millimètres, il faut un ragréage autolissant, sinon les clics forcent et les lames grincent ou se déboîtent. Sur un carrelage existant, vérifie qu’aucun carreau ne sonne creux et que les joints restent fins."
+    },
+    {
+      "title": "Prépare et aspire la surface",
+      "description": "Retire les plinthes du pourtour et aspire soigneusement : un simple gravillon sous une lame finit par s’entendre à chaque pas. Laisse ensuite les paquets de lames s’acclimater 24 à 48 h à température ambiante dans la pièce."
+    },
+    {
+      "title": "Déroule la sous-couche et choisis le sens",
+      "description": "Si les lames n’intègrent pas de sous-couche, déroule une sous-couche fine spéciale vinyle et ne la double jamais : deux épaisseurs rendent la pose molle et les clics lâchent. Pose en général les lames parallèlement à la lumière, dans le sens de la longueur de la pièce, pour un rendu plus harmonieux."
+    },
+    {
+      "title": "Pose la première rangée et cale la dilatation",
+      "description": "Commence le long du mur le plus droit, en intercalant des cales de 5 à 8 mm entre les lames et le mur sur tout le périmètre, et clipse les lames de la première rangée bout à bout. Sans ce jeu, le revêtement n’a nulle part où pousser et se soulève à la première chaleur."
+    },
+    {
+      "title": "Clipse les rangées en décalant les joints",
+      "description": "Démarre chaque rangée décalée d’au moins 20 à 30 cm, souvent à partir de la chute de la rangée précédente, pour un rendu naturel et une pose plus solide. Présente la lame en biais pour engager le clic, rabats-la à plat, puis emboîte l’about avec la cale à frapper et le maillet, sans jamais taper directement sur le clic."
+    },
+    {
+      "title": "Fais les coupes et termine le pourtour",
+      "description": "Coupe les lames au cutter en traçant sur la face puis en pliant, et prends le temps de reporter précisément les coupes de la dernière rangée et les contournements de tuyaux. Retire les cales et masque le jeu périphérique avec des plinthes fixées au mur et jamais au sol, puis pose un profilé de seuil dans les passages."
+    }
+  ],
+  "mistakes": [
+    "Poser sur un sol non plan sans ragréage, et entendre les lames grincer puis se déboîter à l’usage.",
+    "Oublier le jeu de dilatation en périphérie ou fixer les plinthes dans le sol, ce qui bloque le revêtement et le fait cliquer.",
+    "Aligner les joints d’une rangée à l’autre, au lieu de les décaler, ce qui fragilise la pose et se voit immédiatement."
+  ],
+  "safety": [
+    "Manipule le cutter avec la lame rentrée entre deux coupes et une règle métallique comme guide, jamais à main levée contre la cuisse.",
+    "Porte genouillères et gants : la pose se fait au sol pendant plusieurs heures et les chants de lames sont coupants après découpe.",
+    "Si tu utilises un ragréage, aère la pièce et porte un masque pendant le mélange, puis respecte le délai de séchage avant de poser les lames."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

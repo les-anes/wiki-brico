@@ -13,7 +13,7 @@ Ce document centralise les idées de nouveaux tutos WikiBrico. Il sert à choisi
 - Revoir les priorités une fois par mois ou lors du choix d’un nouveau lot : demandes des lecteurs, recherches internes sans résultat et données de recherche disponibles passent avant les intuitions initiales.
 - Conserver les identifiants `T01`, `T02`, etc. lorsqu’une idée change de priorité. Ajouter les nouvelles idées à la suite de la numérotation.
 
-Toutes les idées ci-dessous sont **à faire**. Leur ordre à l’intérieur de chaque priorité est une proposition de réalisation.
+Les 42 idées de cette liste ont été **réalisées**. Les nouvelles idées viendront s’ajouter à la suite de la numérotation, à partir de T43.
 
 ## Pourquoi ces priorités
 
@@ -21,25 +21,11 @@ Le choix initial combine les problèmes courants à la maison, l’utilité imm�
 
 **Ce n’est pas un classement des requêtes les plus recherchées** : aucun volume de recherche n’a été mesuré. Les priorités sont des hypothèses éditoriales à ajuster avec les retours et les données du site. La priorité ne préjuge pas de la difficulté du geste.
 
-## Priorité 2 — Finitions et rénovation d’une pièce
-
-- [ ] **T18 — Remplacer un carreau de carrelage cassé.** Finitions / Carrelage. Cas : carreau isolé sur support sain, sans système d’étanchéité à reprendre.
-- [ ] **T19 — Poser un sol vinyle clipsable.** Finitions / à classer. Cas : pièce sèche et support préparé ; ajouter une sous-catégorie « Sol vinyle » à la taxonomie lors de l’implémentation.
-
-## Priorité 3 — Confort, entretien et chantiers plus longs
-
-- [ ] **T27 — Poser du carrelage au sol dans une petite pièce.** Finitions / Carrelage. Cas : support sain et préparé, hors douche et chauffage au sol ; traiter les joints dans T17.
-- [ ] **T30 — Organiser les travaux pour rénover une chambre.** Préparer son chantier / Ordre des travaux. Une liste de travaux dans l’ordre, de la protection aux finitions, avec des liens vers les gestes déjà documentés.
-
-- [ ] **T39 — Fabriquer des volets battants en bois.** Menuiseries / à classer. Cas : volets simples à lames ; prendre les mesures, assembler les panneaux, poser la quincaillerie et appliquer une finition extérieure.
-- [ ] **T41 — Remplacer un linteau.** Gros œuvre / à classer. Sujet structurel à cadrer avant rédaction : type de mur, ouverture, charges, maintien provisoire et appuis. Prévoir un cas précis et un niveau avancé ; ne pas proposer de dimensionnement universel.
-- [ ] **T42 — Ceinturer un mur en pierre avec un chaînage en béton armé.** Gros œuvre / à classer. Sujet demandé comme « ceinturer un mur en pierre avec du ciment » ; préciser à la rédaction le type de ceinture et son objectif. Prévoir un cas structurel précis, la compatibilité avec la maçonnerie existante et un niveau avancé, sans dimensions ni ferraillage universels.
-
 ## Règles pour transformer une idée en fiche
 
 Suivre le [modèle commun des tutoriels](../openspec/specs/page-tutoriel/spec.md) : résultat concret, cas courant, français simple, tutoiement, matériel utile, étapes courtes, erreurs fréquentes et illustration originale. Donner les gestes permettant de faire soi-même, sans déléguer le chantier à un professionnel. Garder les précautions indispensables et les limites du cas décrit, sans ajouter de formalités inutiles.
 
-Vérifier la [taxonomie](../src/data/categories.json) avant de créer le fichier. Les classements ci-dessus sont proposés ; T19 nécessite explicitement une nouvelle sous-catégorie. Une fiche ne passe en « réalisée » qu’après relecture et validations des données, du build et du rendu du site.
+Vérifier la [taxonomie](../src/data/categories.json) avant de créer le fichier : une idée « à classer » peut demander une nouvelle sous-catégorie, comme « Sol vinyle » pour T19. Une fiche ne passe en « réalisée » qu’après relecture et validations des données, du build et du rendu du site.
 
 ## Déjà dans le catalogue — Ne pas recréer
 
@@ -66,6 +52,13 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Réalisés depuis cette liste
 
+- [x] **T18 — Remplacer un carreau de carrelage cassé** — terminé le 2026-09-16 — [/tutoriel/remplacer-un-carreau-de-carrelage-casse/](/tutoriel/remplacer-un-carreau-de-carrelage-casse/)
+- [x] **T27 — Poser du carrelage au sol dans une petite pièce** — terminé le 2026-09-16 — [/tutoriel/poser-du-carrelage-au-sol/](/tutoriel/poser-du-carrelage-au-sol/)
+- [x] **T19 — Poser un sol vinyle clipsable** — terminé le 2026-09-16 — [/tutoriel/poser-un-sol-vinyle-clipsable/](/tutoriel/poser-un-sol-vinyle-clipsable/)
+- [x] **T30 — Organiser les travaux pour rénover une chambre** — terminé le 2026-09-16 — [/tutoriel/organiser-les-travaux-d-une-chambre/](/tutoriel/organiser-les-travaux-d-une-chambre/)
+- [x] **T39 — Fabriquer des volets battants en bois** — terminé le 2026-09-16 — [/tutoriel/fabriquer-des-volets-battants-en-bois/](/tutoriel/fabriquer-des-volets-battants-en-bois/)
+- [x] **T41 — Remplacer un linteau** — terminé le 2026-09-16 — [/tutoriel/remplacer-un-linteau/](/tutoriel/remplacer-un-linteau/)
+- [x] **T42 — Ceinturer un mur en pierre avec un chaînage en béton armé** — terminé le 2026-09-16 — [/tutoriel/ceinturer-un-mur-en-pierre/](/tutoriel/ceinturer-un-mur-en-pierre/)
 - [x] **T25 — Poser une bande à joint entre deux plaques de plâtre** — terminé le 2026-09-16 — [/tutoriel/poser-une-bande-a-joint/](/tutoriel/poser-une-bande-a-joint/)
 - [x] **T26 — Monter une petite cloison en plaques de plâtre** — terminé le 2026-09-16 — [/tutoriel/monter-une-petite-cloison-en-placo/](/tutoriel/monter-une-petite-cloison-en-placo/)
 - [x] **T29 — Poser une étagère sur tasseaux dans un placard** — terminé le 2026-09-16 — [/tutoriel/poser-une-etagere-sur-tasseaux/](/tutoriel/poser-une-etagere-sur-tasseaux/)
@@ -105,7 +98,6 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Journal de mise à jour
 
-
 - **2026-09-11** : création de 30 idées, réparties en trois priorités, après comparaison avec les 18 fiches existantes. Priorisation qualitative, sans volumes de recherche.
 - **2026-09-11** : ajout de huit sujets peinture (T31 à T38), dont les trois demandes : éviter les bavures, choisir sa peinture et réaliser un motif au pochoir. La liste compte désormais 38 idées ; les volumes Google Trends n’ont pas été vérifiés.
 - **2026-09-11** : ajout de quatre sujets demandés (T39 à T42) : volets en bois, joints de pierre à la chaux, remplacement d’un linteau et ceinture d’un mur en pierre. La liste compte désormais 42 idées ; les deux sujets structurels restent à cadrer avant rédaction.
@@ -120,3 +112,5 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - **2026-09-16** : lot pièces d’eau et carrelage T16, T17, T22 et T28 terminé : quatre fiches documentées (crédence carrelée, rénovation des joints, entretien des bouches de VMC, flexible et douchette), référence NF DTU 52.2 pour les deux fiches de carrelage et sources consultées ; illustrations provisoires et variantes WebP. Le catalogue contient 49 tutoriels ; 11 idées restent à faire.
 - **2026-09-16** : lot menuiseries et plinthes T15, T20, T23 et T24 terminé : quatre fiches documentées (plinthes, réglage de porte de placard, joint de fenêtre, rabotage d’une porte), sans DTU applicable et avec sources consultées ; illustrations provisoires et variantes WebP. Le catalogue contient 45 tutoriels ; 15 idées restent à faire.
 - **2026-09-16** : lot peinture avancée T13, T36, T37 et T38 terminé : quatre fiches documentées (décollage de papier peint, deux couleurs, mur foncé en clair, porte intérieure), référence NF DTU 59.1 pour les trois fiches de peinture et sources consultées ; illustrations provisoires et variantes WebP. Le catalogue contient 41 tutoriels ; 19 idées restent à faire.
+
+- **2026-09-16** : dernier lot T18, T19, T27, T30, T39, T41 et T42 terminé : sept fiches documentées (carreau cassé, carrelage au sol, sol vinyle clipsable, ordre des travaux d’une chambre, volets battants, remplacement d’un linteau, ceinture d’un mur en pierre), référence NF DTU 52.2 pour les deux fiches de carrelage et NF DTU 20.1 pour la ceinture, sources consultées ; illustrations provisoires, variantes WebP et prompts dans `output/imagegen/`. Deux nouvelles sous-catégories ont été créées : « Finitions › Sol vinyle » et « Structure › Chaînages ». Le catalogue contient 60 tutoriels et les 42 idées de cette liste sont réalisées.
