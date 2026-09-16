@@ -36,6 +36,42 @@ Fichier : `public/images/tutoriels/choisir-rouleau-et-pinceau.png`
 Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a paint roller with a wooden handle and a small cutting-in paintbrush resting side by side across the ridged edge of a shallow paint tray holding a little paint. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
 ```
 
+## Petites réparations et électricité — 16 septembre 2026
+
+**Illustrations provisoires.** Même situation que le lot peinture : pas d’outil imagegen disponible pour ce lot. Les dessins ont été tracés en SVG hors du dépôt, convertis en PNG 1536×1024, puis en WebP 480, 720 et 960 avec `cwebp` (qualité 82). À remplacer par une génération avec l’outil maison, sans changer les données des fiches. Couvertures illustratives, sans valeur de schéma de montage.
+
+### reboucher-une-fissure
+
+Fichier : `public/images/tutoriels/reboucher-une-fissure.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a narrow putty knife pressing filler into a thin crack running down a plain plaster wall, with a small open tub of filler and a sanding block on the floor below. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### choisir-une-cheville
+
+Fichier : `public/images/tutoriels/choisir-une-cheville.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: three wall plugs of clearly different shapes lying side by side in front of a masonry drill bit and a single screw, a small drill hole visible in a wall block behind them. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### fixer-une-tringle-a-rideaux
+
+Fichier : `public/images/tutoriels/fixer-une-tringle-a-rideaux.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a straight curtain rod resting on two wall brackets fixed to a plain wall, a spirit level and a pencil lying on a nearby windowsill, no curtains. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### remplacer-une-prise-murale
+
+Fichier : `public/images/tutoriels/remplacer-une-prise-murale.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a wall socket unscrewed and held away from its box, revealing three distinctly coloured wires, with an insulated screwdriver and a small voltage tester resting on the floor below. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
 ## Maçonnerie de pierre — 16 septembre 2026
 
 **Illustration provisoire.** L’environnement de rédaction de la fiche T40 ne disposait pas de l’outil imagegen : le dessin a été tracé à la main en SVG, hors du dépôt, puis converti en PNG 1536×1024 avec `sips` ; les variantes WebP 480, 720 et 960 ont été générées avec `cwebp` (qualité 82). À remplacer par une génération avec l’outil maison, sans changer les données de la fiche. Couverture illustrative, sans valeur de schéma de montage.

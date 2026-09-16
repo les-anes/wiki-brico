@@ -1,0 +1,98 @@
+{
+  "id": "remplacer-une-prise-murale",
+  "title": "Remplacer une prise électrique murale à l’identique",
+  "description": "Une prise usée ou fissurée se remplace à l’identique, circuit coupé et absence de tension vérifiée. Repère les fils, raccorde au bon endroit et contrôle avant de remettre en service.",
+  "category": "electricite",
+  "topicPath": ["Prises"],
+  "relatedCategories": [
+    { "category": "techniques", "topicPath": ["Percer et fixer"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 40,
+  "cost": null,
+  "image": "/images/tutoriels/remplacer-une-prise-murale.png",
+  "imageAlt": "Une prise électrique murale démontée laissant apparaître trois fils de couleurs différentes, avec un tournevis et un testeur posés à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Remplacement à l’identique d’une prise de courant murale sur un circuit existant, identifié et protégé, avec boîte d’encastrement et conducteurs en bon état. Hors création de circuit, ajout de point de prise, modification de tableau, conducteurs abîmés ou raccourcis, absence de mise à la terre et installation vétuste.",
+  "estimatesNote": "Comptez environ 40 min par prise, hors coupure et contrôles. Le budget couvre la prise neuve et éventuellement une boîte si l’ancienne est cassée ; prévois un testeur d’absence de tension et des wago ou dominos adaptés.",
+  "sources": [
+    {
+      "title": "Legrand — Comment remplacer une ancienne prise électrique par une neuve ?",
+      "url": "https://www.legrand.fr/mon-projet/tutoriels/comment-remplacer-une-ancienne-prise-electrique-par-une-neuve",
+      "note": "Fabricant : liste le matériel (prise, boîte d’encastrement, pinces, tournevis) et insiste sur la coupure du courant au disjoncteur avant toute intervention. Base de l’ordre des opérations et des précautions.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Castorama — Remplacer une prise de courant",
+      "url": "https://www.castorama.fr/idees-et-conseils/electricite/remplacer-une-prise-de-courant/",
+      "note": "Détaille le repérage des conducteurs (phase, neutre, terre), le raccordement sur les bornes correspondantes et le remontage de l’appareillage. Sert à la partie raccordement.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Testeur d’absence de tension ou multimètre",
+    "Tournevis isolé plat et cruciforme",
+    "Pince à dénuder",
+    "Pince coupante",
+    "Petit tournevis pour déclipser l’appareillage",
+    "Lampe de travail",
+    "Gants isolants et lunettes"
+  ],
+  "materials": [
+    {
+      "name": "Prise de courant neuve de même calibre",
+      "quantity": "Une par prise remplacée"
+    },
+    {
+      "name": "Boîte d’encastrement de rechange",
+      "quantity": "Une si l’ancienne est cassée ou trop abîmée"
+    },
+    {
+      "name": "Connecteurs adaptés (wago ou dominos)",
+      "quantity": "Si les conducteurs doivent être rallongés proprement"
+    },
+    {
+      "name": "Ruban isolant et repères de couleur",
+      "quantity": "Pour identifier les conducteurs si les couleurs sont douteuses"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Coupe le circuit et vérifie l’absence de tension",
+      "description": "Coupe l’alimentation au disjoncteur de la ligne concernée, puis vérifie l’absence de tension directement sur les bornes de la prise avec le testeur. Un voyant ou un interrupteur ne suffit pas : c’est la mesure sur la prise qui confirme que tu peux travailler."
+    },
+    {
+      "title": "Repère les conducteurs",
+      "description": "Déclipse la plaque, dévisse la prise et note la position de chaque fil : phase d’un côté, neutre de l’autre, terre au centre quand elle existe. Prends une photo avant de débrancher, et repère chaque conducteur si les couleurs sont anciennes ou peu lisibles."
+    },
+    {
+      "title": "Dépose l’ancienne prise",
+      "description": "Débranche les conducteurs un par un, en tenant la prise pour ne pas tirer sur les fils. Regarde dans la boîte : si les conducteurs sont dénudés, cuits, cassés ou trop courts, arrête-toi, car une prise neuve sur un fil abîmé ne réglera pas le problème."
+    },
+    {
+      "title": "Raccorde la prise neuve",
+      "description": "Dénude les conducteurs sur la longueur indiquée par la notice, sans entamer le cuivre, et raccorde-les sur les bornes correspondantes : phase, neutre, terre. Respecte la position prévue par le fabricant et vérifie que chaque fil est bien serré sous sa vis ou dans sa borne automatique."
+    },
+    {
+      "title": "Remonte et aligne l’appareillage",
+      "description": "Replie les conducteurs dans la boîte sans les pincer, puis visse ou clipse la prise sur son support. Vérifie qu’elle est droite et que la plaque se pose sans forcer : un appareillage mal aligné peut se fendre au serrage et laisser des fils à découvert."
+    },
+    {
+      "title": "Remets en service et contrôle",
+      "description": "Réenclenche le disjoncteur et vérifie que la prise alimente bien un appareil, en contrôlant aussi la mise à la terre si l’installation en dispose. Si le disjoncteur déclenche, ne force pas : recoupe, vérifie les raccordements et cherche l’erreur avant de réessayer."
+    }
+  ],
+  "mistakes": [
+    "Travailler sans couper le circuit ou sans vérifier l’absence de tension sur les bornes de la prise.",
+    "Inverser phase et neutre, ou oublier de rebrancher la terre, puis laisser une installation non conforme.",
+    "Forcer sur des conducteurs abîmés ou trop courts au lieu de reprendre proprement le raccordement."
+  ],
+  "safety": [
+    "Coupe toujours le circuit au disjoncteur et vérifie l’absence de tension avant de toucher aux conducteurs ; ne travaille jamais sous tension.",
+    "Respecte la norme NF C 15-100 qui encadre les installations électriques : section et couleur des conducteurs, présence de la terre, protection par disjoncteur différentiel.",
+    "Porte des gants isolants, utilise des outils isolés et ne laisse jamais une prise ouverte sans surveillance : remonte l’appareillage avant de réenclencher."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

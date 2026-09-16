@@ -1,0 +1,107 @@
+{
+  "id": "reboucher-une-fissure",
+  "title": "Reboucher une petite fissure stable dans un mur",
+  "description": "Une fissure fine qui ne bouge plus se rebouche simplement, à condition de la préparer. Ouvre légèrement la fente, dépoussière, garnis puis lisse au ras du mur.",
+  "category": "cloisons",
+  "topicPath": ["Enduits"],
+  "relatedCategories": [
+    { "category": "finitions", "topicPath": ["Peinture"] },
+    { "category": "techniques", "topicPath": ["Faire un enduit"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 60,
+  "cost": null,
+  "image": "/images/tutoriels/reboucher-une-fissure.png",
+  "imageAlt": "Une spatule garnit d’enduit une fine fissure tracée dans un mur, un petit pot d’enduit de rebouchage posé à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Rebouchage d’une fissure fine à moyenne, jusqu’à environ 2 mm, sur un mur intérieur sec en enduit ou en plaque de plâtre, stable et sans humidité. Hors fissure structurelle, fissure évolutive ou traversante, lézarde de maçonnerie, fissure au droit d’un linteau ou d’une ouverture, et support humide.",
+  "estimatesNote": "Comptez environ 1 h pour quelques mètres linéaires, hors séchage et hors peinture. Le budget se limite à un enduit de rebouchage adapté, au papier abrasif et aux protections de sol.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 26.1",
+      "title": "Travaux de bâtiment — Travaux d’enduits de mortiers",
+      "scope": "Partie 1-1, cahier des clauses techniques types : définit les supports, les produits et les conditions de réalisation des enduits. Sert de repère sur la compatibilité des enduits, sans reproduire une prescription de chantier.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-261/travaux-de-batiment-travaux-denduits-de-mortiers-partie-11-cahier-des-claus/fa104012/918",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bati-Reference — Reboucher une fissure dans un mur : techniques selon la gravité",
+      "url": "https://bati-reference.com/reboucher-fissure-mur/",
+      "note": "Distingue microfissures, fissures légères et fissures graves, avec leurs causes et leur gravité, et rappelle qu’une fissure mal traitée revient. Base du tri entre ce qui se rebouche et ce qui doit être examiné.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Le Bricoleur — Comment reboucher trous et fissures d’un mur",
+      "url": "https://le-bricoleur.fr/guides/comment-reparer-mur-fissure/",
+      "note": "Guide pratique de préparation et de rebouchage des trous et fissures d’un mur, utile pour les gestes de garnissage et de lissage.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Spatule ou couteau à enduire étroit",
+    "Couteau à enduire large ou lame de lissage",
+    "Brosse souple et aspirateur",
+    "Cale à poncer et papier abrasif fin",
+    "Éponge et seau d’eau claire",
+    "Gants, lunettes et masque antipoussière FFP2"
+  ],
+  "materials": [
+    {
+      "name": "Enduit de rebouchage intérieur adapté au support",
+      "quantity": "Petite quantité, selon la longueur et la profondeur des fissures"
+    },
+    {
+      "name": "Primaire d’accrochage si la notice le demande",
+      "quantity": "Pour la zone préparée, selon le support"
+    },
+    {
+      "name": "Papier abrasif fin",
+      "quantity": "Quelques feuilles, par exemple grain 180 selon l’enduit"
+    },
+    {
+      "name": "Bâche et ruban de masquage",
+      "quantity": "Pour protéger le sol et les abords de la fissure"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie que la fissure est stable",
+      "description": "Regarde la fente en lumière rasante et suis-la sur toute sa longueur. Si elle s’est ouverte récemment, si elle traverse le mur, si elle s’élargit en escalier ou si elle apparaît au-dessus d’une ouverture, ne la rebouche pas : note son évolution et fais comprendre son origine avant de la traiter."
+    },
+    {
+      "title": "Ouvre et dépoussière la fente",
+      "description": "Élargis très légèrement la fissure avec la pointe de la spatule pour retirer les bords non adhérents, puis brosse et aspire la poussière. Un enduit posé sur une fissure pleine de poussière n’adhère pas et se décolle en séchant."
+    },
+    {
+      "title": "Humidifie ou primaire selon le support",
+      "description": "Sur un support très absorbant, humidifie légèrement à l’éponge ou applique le primaire indiqué par la notice. Cela évite que l’enduit ne sèche trop vite et ne se rétracte en laissant un creux."
+    },
+    {
+      "title": "Garnis la fissure",
+      "description": "Pousse l’enduit dans la fente avec la spatule étroite, en travers de la fissure, puis retire l’excédent. Travaille par tronçons de 30 à 50 cm : sur une longue fissure, mieux vaut avancer régulièrement que de tout charger d’un coup."
+    },
+    {
+      "title": "Lisse au ras du mur",
+      "description": "Repasse la lame large presque à plat pour araser l’enduit au niveau du mur, sans creuser ni laisser de bourrelet. Ne retravaille pas une pâte qui commence à tirer : attends qu’elle ait pris si la surface n’est pas propre."
+    },
+    {
+      "title": "Laisse sécher, ponce et contrôle",
+      "description": "Respecte le délai de séchage de la notice, puis ponce légèrement à la cale et dépoussière. Contrôle à la lumière rasante et avec la main : s’il reste un creux, ajoute une fine passe et recommence, sinon le mur pourra être peint après le délai de recouvrement indiqué."
+    }
+  ],
+  "mistakes": [
+    "Reboucher une fissure qui s’élargit ou qui traverse le mur, puis la voir réapparaître en quelques semaines.",
+    "Garnir une fissure pleine de poussière ou non humidifiée, sur laquelle l’enduit n’adhère pas.",
+    "Poser une couche épaisse en une fois et compter sur le ponçage, ce qui laisse un creux au séchage."
+  ],
+  "safety": [
+    "Avant de gratter un mur ancien, vérifie que l’enduit ou la peinture ne contient pas de plomb ni d’amiante ; dans le doute, ne produis pas de poussière.",
+    "Porte un masque FFP2 et des lunettes pendant le ponçage, aère la pièce et aspire les poussières sans les balayer à sec.",
+    "Ne rebouche jamais une fissure sur un mur humide ou salpêtré : traite d’abord la cause de l’humidité, sinon l’enduit se décolle."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

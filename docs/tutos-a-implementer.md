@@ -21,13 +21,6 @@ Le choix initial combine les problèmes courants à la maison, l’utilité imm�
 
 **Ce n’est pas un classement des requêtes les plus recherchées** : aucun volume de recherche n’a été mesuré. Les priorités sont des hypothèses éditoriales à ajuster avec les retours et les données du site. La priorité ne préjuge pas de la difficulté du geste.
 
-## Priorité 1 — Petites réparations et gestes très utiles
-
-- [ ] **T07 — Reboucher une petite fissure stable dans un mur.** Cloisons / Enduits. Cas : fissure superficielle dans l’enduit ; préparation et réparation, hors fissure structurelle ou évolutive.
-- [ ] **T08 — Choisir et poser une cheville adaptée à ton mur.** Techniques / Poser une cheville. Reconnaître le support et associer charge, cheville, foret et vis ; complément du tuto étagère.
-- [ ] **T09 — Fixer une tringle à rideaux.** Techniques / Percer et fixer. Tracer, choisir les fixations et aligner les supports ; s’appuyer sur T08.
-- [ ] **T10 — Remplacer une prise électrique murale à l’identique.** Électricité / Prises. Cas : circuit existant identifié, boîte et conducteurs en bon état ; inclure mise hors tension, vérification d’absence de tension et contrôles de raccordement.
-
 ## Priorité 2 — Finitions et rénovation d’une pièce
 
 - [ ] **T11 — Remplacer un interrupteur simple à l’identique.** Électricité / Éclairage. Cas : un point de commande, sans va-et-vient ni ajout de circuit ; conserver les gestes de sécurité électrique.
@@ -93,6 +86,10 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Réalisés depuis cette liste
 
+- [x] **T07 — Reboucher une petite fissure stable dans un mur** — terminé le 2026-09-16 — [/tutoriel/reboucher-une-fissure/](/tutoriel/reboucher-une-fissure/)
+- [x] **T08 — Choisir et poser une cheville adaptée à ton mur** — terminé le 2026-09-16 — [/tutoriel/choisir-une-cheville/](/tutoriel/choisir-une-cheville/)
+- [x] **T09 — Fixer une tringle à rideaux droite** — terminé le 2026-09-16 — [/tutoriel/fixer-une-tringle-a-rideaux/](/tutoriel/fixer-une-tringle-a-rideaux/)
+- [x] **T10 — Remplacer une prise électrique murale à l’identique** — terminé le 2026-09-16 — [/tutoriel/remplacer-une-prise-murale/](/tutoriel/remplacer-une-prise-murale/)
 - [x] **T31 — Peindre sans bavures le long des bords et des angles** — terminé le 2026-09-16 — [/tutoriel/peindre-sans-bavures/](/tutoriel/peindre-sans-bavures/)
 - [x] **T32 — Choisir sa peinture selon la pièce et le support** — terminé le 2026-09-16 — [/tutoriel/choisir-sa-peinture/](/tutoriel/choisir-sa-peinture/)
 - [x] **T34 — Calculer la quantité de peinture à acheter** — terminé le 2026-09-16 — [/tutoriel/calculer-sa-peinture/](/tutoriel/calculer-sa-peinture/)
@@ -119,3 +116,4 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - **2026-09-16** : T40 terminé seul : première fiche de gros œuvre, nouveau classement « Maçonnerie de pierre › Rejointoiement », illustration locale provisoire (à remplacer par une génération avec l’outil imagegen), contrôles TypeScript, lint, tests, données, build et rendu réussis. Le catalogue contient 25 tutoriels ; 35 idées restent à faire.
 - **2026-09-16** : T04, T05 et T06 terminés : fiches documentées, illustrations originales et variantes WebP, contrôles TypeScript, lint, tests, données, build et rendu réussis. Le catalogue contient 24 tutoriels ; 36 idées restent à faire.
 - **2026-09-16** : lot peinture T31, T32, T34 et T35 terminé : quatre fiches documentées, références NF DTU 59.1 quand elle s’applique et sources consultées ; illustrations provisoires (à remplacer par l’outil imagegen) et variantes WebP. Le catalogue contient 29 tutoriels ; 31 idées restent à faire.
+- **2026-09-16** : lot petites réparations et électricité T07, T08, T09 et T10 terminé : quatre fiches documentées (enduit, cheville, tringle, prise murale), référence NF DTU 26.1 pour l’enduit et sources consultées ; illustrations provisoires et variantes WebP. Le catalogue contient 33 tutoriels ; 27 idées restent à faire.

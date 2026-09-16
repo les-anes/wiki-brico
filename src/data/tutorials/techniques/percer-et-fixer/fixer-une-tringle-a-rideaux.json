@@ -1,0 +1,100 @@
+{
+  "id": "fixer-une-tringle-a-rideaux",
+  "title": "Fixer une tringle à rideaux droite",
+  "description": "Une tringle tient d’abord à ses fixations et à sa hauteur. Trace des repères au niveau, choisis des chevilles adaptées à ton mur, puis pose les supports avant la tringle.",
+  "category": "techniques",
+  "topicPath": ["Percer et fixer"],
+  "relatedCategories": [
+    { "category": "preparer-chantier", "topicPath": ["Matériaux"] },
+    { "category": "menuiseries", "topicPath": ["Quincaillerie"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 60,
+  "cost": null,
+  "image": "/images/tutoriels/fixer-une-tringle-a-rideaux.png",
+  "imageAlt": "Une tringle à rideaux droite posée sur deux supports fixés au mur, avec un niveau à bulle et un crayon, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Pose d’une tringle à rideaux droite et de ses supports sur un mur intérieur sec et plan, avec des fixations adaptées au support. Hors tringle fixée au plafond, pose sur un doublage isolant fragile, tringle cintrée ou à embouts lourds, et fixation dans un mur humide ou dégradé.",
+  "estimatesNote": "Comptez environ 1 h pour une fenêtre, hors rebouchage si un repère est décalé. Le budget dépend de la tringle, des supports et des chevilles ; ajoute un foret au bon diamètre si tu n’en as pas.",
+  "sources": [
+    {
+      "title": "Artapisserie — Pose tringle à rideaux : guide complet étape par étape",
+      "url": "https://blog.artapisserie.fr/pose-tringle-a-rideaux-guide-complet-etape-par-etape/",
+      "note": "Rappelle de calculer le métrage du rideau avant de poser la tringle, de choisir le modèle selon le rideau, de déterminer hauteur et largeur puis de préparer les repères de fixation. Base de l’ordre des étapes.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "HomeMaison — Tringle à rideaux : 3 façons de la poser",
+      "url": "https://www.homemaison.com/blog/tringle-a-rideaux-3-facons-de-la-poser/",
+      "note": "Présente plusieurs méthodes de pose selon le support et les fixations, utile pour nuancer le choix entre vis et chevilles.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Mètre ruban",
+    "Niveau à bulle",
+    "Crayon et ruban de masquage",
+    "Perceuse avec foret adapté",
+    "Tournevis ou embout de vissage",
+    "Détecteur de métaux et de câbles",
+    "Échelle ou marchepied",
+    "Gants et lunettes"
+  ],
+  "materials": [
+    {
+      "name": "Tringle à rideaux et ses supports",
+      "quantity": "Un ensemble adapté à la largeur de la fenêtre, avec les embouts et anneaux"
+    },
+    {
+      "name": "Chevilles adaptées au support",
+      "quantity": "Une par support, selon le type de mur"
+    },
+    {
+      "name": "Vis fournies ou adaptées aux chevilles",
+      "quantity": "Selon le nombre de points de fixation"
+    },
+    {
+      "name": "Rideaux et attaches",
+      "quantity": "Selon la largeur de la tringle prévue"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Choisis la hauteur et la largeur",
+      "description": "Place la tringle au-dessus de la fenêtre, assez haut pour que le rideau habille l’ouverture, et déborde d’environ 15 à 20 cm de chaque côté si tu veux pouvoir ouvrir largement. Vérifie qu’aucun meuble ni radiateur ne gêne, et que la tringle reste accessible à l’échelle."
+    },
+    {
+      "title": "Trace des repères alignés",
+      "description": "Marque l’emplacement des supports à la même hauteur sur les deux côtés, à l’aide d’un niveau. Trace au crayon et masque légèrement si besoin : deux repères parfaitement alignés évitent une tringle de travers qu’on ne peut plus rattraper."
+    },
+    {
+      "title": "Vérifie ce qui passe dans le mur",
+      "description": "Passe un détecteur de métaux et de câbles sur la zone des repères. Autour d’une fenêtre passent souvent des câbles et parfois des arrivées d’eau : décale légèrement un support plutôt que de percer dans une zone interdite."
+    },
+    {
+      "title": "Perce et pose les fixations",
+      "description": "Perce au diamètre de la cheville, à la profondeur utile, puis aspire la poussière et enfonce la cheville. Visse le support sans forcer, en gardant la platine bien à plat contre le mur, puis contrôle la solidité avant de poursuivre."
+    },
+    {
+      "title": "Pose la tringle",
+      "description": "Emboîte ou visse la tringle dans ses supports, en respectant le sens des embouts et la place des anneaux. Un léger jeu reste normal, mais si la tringle fléchit au centre, ajoute un support intermédiaire fixé dans le même alignement."
+    },
+    {
+      "title": "Ajuste et contrôle",
+      "description": "Vérifie au niveau que la tringle est horizontale, qu’elle ne touche pas le mur en son milieu et que les supports sont bien serrés. Pose les rideaux et ouvre-les largement : s’ils frottent ou si un support bouge, corrige avant de reboucher les anciens trous."
+    }
+  ],
+  "mistakes": [
+    "Tracer les supports à l’œil sans niveau, puis poser une tringle visiblement de travers.",
+    "Percer sans vérifier les câbles qui passent autour d’une fenêtre, au risque de les endommager.",
+    "Poser une tringle large avec deux seuls supports, qui fléchit au centre dès que les rideaux sont tirés."
+  ],
+  "safety": [
+    "Avant de percer, repère les câbles et canalisations avec un détecteur et évite les zones interdites autour des appareillages.",
+    "Travaille sur un marchepied stable, jamais sur une chaise, et demande de l’aide pour tenir la tringle si elle est longue.",
+    "Porte des lunettes et un masque pendant le perçage, et aère la pièce pour évacuer les poussières."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

@@ -1,0 +1,99 @@
+{
+  "id": "choisir-une-cheville",
+  "title": "Choisir et poser une cheville adaptée à ton mur",
+  "description": "Une étagère qui penche vient souvent d’une cheville inadaptée. Repère ton support, évalue la charge, puis associe cheville, foret et vis avant de percer.",
+  "category": "techniques",
+  "topicPath": ["Poser une cheville"],
+  "relatedCategories": [
+    { "category": "preparer-chantier", "topicPath": ["Matériaux"] },
+    { "category": "menuiseries", "topicPath": ["Quincaillerie"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 45,
+  "cost": null,
+  "image": "/images/tutoriels/choisir-une-cheville.png",
+  "imageAlt": "Trois chevilles de formes différentes posées devant un foret à béton et une vis, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Choix et pose d’une cheville pour fixer un objet courant dans un mur intérieur sec : étagère légère, tringle, tableau, petit meuble haut, patère. Supports courants : béton, brique pleine ou creuse, parpaing, plaque de plâtre. Hors fixation lourde ou structurelle (portail, store banne, suspension de charge importante) et mur humide ou fissuré.",
+  "estimatesNote": "Comptez environ 45 min pour quelques fixations, hors achat. Le budget dépend du type de cheville et de la visserie ; prévois un foret au diamètre exact de la cheville choisie.",
+  "sources": [
+    {
+      "title": "Inspiration Habitat — Quelle cheville choisir selon le type de mur ?",
+      "url": "https://www.inspiration-habitat.fr/quelle-cheville-choisir-selon-le-type-de-mur/",
+      "note": "Rappelle l’ordre de choix : d’abord le type de mur, ensuite le poids de l’objet, puis seulement la cheville. Décrit aussi comment reconnaître un support et les familles de chevilles courantes. Base de la méthode.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "JS Fournitures — Chevilles : comment bien choisir selon le support",
+      "url": "https://www.js-fournitures.fr/chevilles-comment-bien-choisir-selon-le-support-placo-beton-brique/",
+      "note": "Détaille l’association entre support, cheville, foret et vis pour le placo, le béton et la brique, et les longueurs de vis adaptées. Sert à relier diamètre de perçage et visserie.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Perceuse avec forets adaptés au support",
+    "Mètre et crayon",
+    "Niveau à bulle",
+    "Tournevis ou embout de vissage",
+    "Aspirateur ou petit balai",
+    "Crayon de repérage et ruban de masquage pour marquer les trous",
+    "Lunettes et masque antipoussière"
+  ],
+  "materials": [
+    {
+      "name": "Chevilles adaptées au support et à la charge",
+      "quantity": "Une par fixation, plus une ou deux d’avance"
+    },
+    {
+      "name": "Vis au diamètre et à la longueur prévus pour la cheville",
+      "quantity": "Selon l’épaisseur de l’objet à fixer et la profondeur d’ancrage"
+    },
+    {
+      "name": "Foret au diamètre exact de la cheville",
+      "quantity": "Un dans la bonne taille, à vérifier avant de percer"
+    },
+    {
+      "name": "Ruban de masquage et petit sac",
+      "quantity": "Pour recueillir la poussière sous le point de perçage"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Identifie le support",
+      "description": "Repère la nature du mur : béton ou pierre (dur, son mat), brique ou parpaing (plus tendre, parfois creux), plaque de plâtre ou doublage (sonore et creux). Frappe doucement, observe une prise percée à proximité et, au moindre doute, perce un petit trou d’essai dans un endroit peu visible."
+    },
+    {
+      "title": "Évalue la charge",
+      "description": "Pèse mentalement ce que la fixation doit porter, objet plus contenu, et ajoute une marge de sécurité. Une petite étagère et un tableau n’ont pas les mêmes exigences : c’est la charge réelle qui décide, pas la taille de l’objet."
+    },
+    {
+      "title": "Choisis la cheville en conséquence",
+      "description": "Pour un support plein dur, une cheville à expansion classique suffit ; pour la brique creuse ou le parpaing, prends une cheville à expansion adaptée aux matériaux creux ; pour la plaque de plâtre, une cheville à bascule ou à expansion spécifique. Pour un mur creux ou très chargé, appuie-toi sur une cheville prévue pour cet usage plutôt que sur une cheville plus grosse."
+    },
+    {
+      "title": "Associe foret et vis",
+      "description": "Percer au diamètre indiqué par le paquet de chevilles, pas au hasard : un trou trop large empêche l’ancrage, un trou trop étroit empêche la cheville d’entrer. Prends une vis dont le diamètre correspond à la cheville et dont la longueur couvre l’objet plus la cheville."
+    },
+    {
+      "title": "Perce et pose la cheville",
+      "description": "Marque les points à la bonne hauteur et vérifie l’alignement, puis perce à la profondeur de la cheville, sans forcer sur un support doux pour ne pas éclater le matériau. Aspire la poussière du trou, enfonce la cheville au ras du mur et visse sans serrer brutalement."
+    },
+    {
+      "title": "Contrôle la fixation",
+      "description": "Tire doucement sur l’objet fixé et vérifie qu’il ne bouge pas, que la vis ne tourne pas dans le vide et que le support n’a pas éclaté. Sers modérément, puis recharge l’objet progressivement plutôt que d’un coup, et contrôle à nouveau après quelques jours."
+    }
+  ],
+  "mistakes": [
+    "Choisir la cheville avant d’avoir identifié le support, puis visser une cheville à béton dans une plaque de plâtre.",
+    "Percer avec un foret trop large par rapport à la cheville, qui tourne alors dans le trou et n’ancre plus rien.",
+    "Visser trop fort dans un support tendre, éclater la brique ou le plâtre et perdre l’ancrage."
+  ],
+  "safety": [
+    "Porte des lunettes et un masque pendant le perçage, et aère la pièce pour éviter d’inhaler les poussières.",
+    "Avant de percer un mur, vérifie qu’aucun câble ni aucune canalisation ne passe à l’endroit prévu : utilise un détecteur de métaux et respecte les zones d’interdiction, en particulier autour des prises, des interrupteurs et des zones techniques.",
+    "Vérifie que l’objet fixé ne peut pas tomber sur quelqu’un : pour un objet lourd, préfère un support plein ou un ancrage structurel plutôt qu’une cheville de doublage."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}
