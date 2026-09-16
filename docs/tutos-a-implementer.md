@@ -25,14 +25,10 @@ Le choix initial combine les problèmes courants à la maison, l’utilité imm�
 
 - [ ] **T18 — Remplacer un carreau de carrelage cassé.** Finitions / Carrelage. Cas : carreau isolé sur support sain, sans système d’étanchéité à reprendre.
 - [ ] **T19 — Poser un sol vinyle clipsable.** Finitions / à classer. Cas : pièce sèche et support préparé ; ajouter une sous-catégorie « Sol vinyle » à la taxonomie lors de l’implémentation.
-- [ ] **T33 — Peindre un motif au pochoir.** Finitions / Peinture. Cas : mur lisse déjà peint et sec ; fixer le pochoir, tamponner avec très peu de peinture et le retirer proprement, puis répéter le motif.
 
 ## Priorité 3 — Confort, entretien et chantiers plus longs
 
-- [ ] **T25 — Poser une bande à joint entre deux plaques de plâtre.** Cloisons / Placo. Bande, enduit, passes et ponçage sur plaques déjà posées ; un geste précis plutôt qu’un chantier complet.
-- [ ] **T26 — Monter une petite cloison en plaques de plâtre.** Cloisons / Placo. Cas : cloison non porteuse en pièce sèche, sans porte ni réseaux intégrés ; renvoyer à T25 pour les joints.
 - [ ] **T27 — Poser du carrelage au sol dans une petite pièce.** Finitions / Carrelage. Cas : support sain et préparé, hors douche et chauffage au sol ; traiter les joints dans T17.
-- [ ] **T29 — Poser une étagère dans un placard sur tasseaux.** Menuiseries / Quincaillerie. Mesurer un espace entre deux parois, choisir les ancrages et découper la tablette ; différent de l’étagère sur équerres existante.
 - [ ] **T30 — Organiser les travaux pour rénover une chambre.** Préparer son chantier / Ordre des travaux. Une liste de travaux dans l’ordre, de la protection aux finitions, avec des liens vers les gestes déjà documentés.
 
 - [ ] **T39 — Fabriquer des volets battants en bois.** Menuiseries / à classer. Cas : volets simples à lames ; prendre les mesures, assembler les panneaux, poser la quincaillerie et appliquer une finition extérieure.
@@ -70,6 +66,10 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Réalisés depuis cette liste
 
+- [x] **T25 — Poser une bande à joint entre deux plaques de plâtre** — terminé le 2026-09-16 — [/tutoriel/poser-une-bande-a-joint/](/tutoriel/poser-une-bande-a-joint/)
+- [x] **T26 — Monter une petite cloison en plaques de plâtre** — terminé le 2026-09-16 — [/tutoriel/monter-une-petite-cloison-en-placo/](/tutoriel/monter-une-petite-cloison-en-placo/)
+- [x] **T29 — Poser une étagère sur tasseaux dans un placard** — terminé le 2026-09-16 — [/tutoriel/poser-une-etagere-sur-tasseaux/](/tutoriel/poser-une-etagere-sur-tasseaux/)
+- [x] **T33 — Peindre un motif au pochoir** — terminé le 2026-09-16 — [/tutoriel/peindre-un-motif-au-pochoir/](/tutoriel/peindre-un-motif-au-pochoir/)
 - [x] **T16 — Poser une crédence carrelée** — terminé le 2026-09-16 — [/tutoriel/poser-une-credence-carrelee/](/tutoriel/poser-une-credence-carrelee/)
 - [x] **T17 — Rénover les joints d’un carrelage** — terminé le 2026-09-16 — [/tutoriel/renover-les-joints-d-un-carrelage/](/tutoriel/renover-les-joints-d-un-carrelage/)
 - [x] **T22 — Nettoyer les bouches et les entrées d’air d’une VMC** — terminé le 2026-09-16 — [/tutoriel/nettoyer-les-bouches-de-vmc/](/tutoriel/nettoyer-les-bouches-de-vmc/)
@@ -116,6 +116,7 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - **2026-09-16** : T40 terminé seul : première fiche de gros œuvre, nouveau classement « Maçonnerie de pierre › Rejointoiement », illustration locale provisoire (à remplacer par une génération avec l’outil imagegen), contrôles TypeScript, lint, tests, données, build et rendu réussis. Le catalogue contient 25 tutoriels ; 35 idées restent à faire.
 - **2026-09-16** : T04, T05 et T06 terminés : fiches documentées, illustrations originales et variantes WebP, contrôles TypeScript, lint, tests, données, build et rendu réussis. Le catalogue contient 24 tutoriels ; 36 idées restent à faire.
 - **2026-09-16** : lot peinture T31, T32, T34 et T35 terminé : quatre fiches documentées, références NF DTU 59.1 quand elle s’applique et sources consultées ; illustrations provisoires (à remplacer par l’outil imagegen) et variantes WebP. Le catalogue contient 29 tutoriels ; 31 idées restent à faire.
+- **2026-09-16** : lot cloisons et finitions T25, T26, T29 et T33 terminé : quatre fiches documentées (bande à joint, petite cloison placo, étagère sur tasseaux, motif au pochoir), référence NF DTU 25.41 pour les deux fiches de placo et NF DTU 59.1 pour le pochoir, sources consultées ; illustrations provisoires, variantes WebP et prompts dans `output/imagegen/`. Le catalogue contient 53 tutoriels ; 7 idées restent à faire.
 - **2026-09-16** : lot pièces d’eau et carrelage T16, T17, T22 et T28 terminé : quatre fiches documentées (crédence carrelée, rénovation des joints, entretien des bouches de VMC, flexible et douchette), référence NF DTU 52.2 pour les deux fiches de carrelage et sources consultées ; illustrations provisoires et variantes WebP. Le catalogue contient 49 tutoriels ; 11 idées restent à faire.
 - **2026-09-16** : lot menuiseries et plinthes T15, T20, T23 et T24 terminé : quatre fiches documentées (plinthes, réglage de porte de placard, joint de fenêtre, rabotage d’une porte), sans DTU applicable et avec sources consultées ; illustrations provisoires et variantes WebP. Le catalogue contient 45 tutoriels ; 15 idées restent à faire.
 - **2026-09-16** : lot peinture avancée T13, T36, T37 et T38 terminé : quatre fiches documentées (décollage de papier peint, deux couleurs, mur foncé en clair, porte intérieure), référence NF DTU 59.1 pour les trois fiches de peinture et sources consultées ; illustrations provisoires et variantes WebP. Le catalogue contient 41 tutoriels ; 19 idées restent à faire.

@@ -108,6 +108,42 @@ Fichier : `public/images/tutoriels/poser-du-papier-peint-intisse.png`
 Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a strip of patterned wallpaper being smoothed flat against a wall with a smoothing brush, its top edge overhanging near the ceiling, a craft knife and a pencil on a nearby ledge. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
 ```
 
+## Cloisons et finitions — 16 septembre 2026
+
+**Illustrations provisoires.** Même situation que les lots précédents : pas d’outil imagegen disponible. Les dessins ont été tracés en SVG hors du dépôt, convertis en PNG 1536×1024, puis en WebP 480, 720 et 960 avec `cwebp` (qualité 82). Le prompt brut de chaque fiche est aussi consigné dans `output/imagegen/<id>.txt`. À remplacer par une génération avec l’outil maison, sans changer les données des fiches. Couvertures illustratives, sans valeur de schéma de montage.
+
+### poser-une-bande-a-joint
+
+Fichier : `public/images/tutoriels/poser-une-bande-a-joint.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a paper joint tape being bedded into fresh filler along the seam between two plasterboards, a wide taping knife and a small hawk of joint compound resting on a board edge nearby. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### monter-une-petite-cloison-en-placo
+
+Fichier : `public/images/tutoriels/monter-une-petite-cloison-en-placo.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a bare steel stud partition frame standing between floor and ceiling with its bottom and top tracks screwed down and vertical studs at regular intervals, one plasterboard panel propped against the wall beside it. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### poser-une-etagere-sur-tasseaux
+
+Fichier : `public/images/tutoriels/poser-une-etagere-sur-tasseaux.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a plain wooden shelf resting inside a narrow cupboard on three slim battens screwed to the side walls and back, a folding rule and a cordless drill lying on the shelf. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### peindre-un-motif-au-pochoir
+
+Fichier : `public/images/tutoriels/peindre-un-motif-au-pochoir.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a translucent stencil sheet held against a wall with part of its repeating motif already painted in a contrasting colour, a round stencil brush almost dry on a paper plate below and a roll of low-tack tape nearby. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
 ## Pièces d’eau et carrelage — 16 septembre 2026
 
 **Illustrations provisoires.** Même situation que les lots précédents : pas d’outil imagegen disponible. Les dessins ont été tracés en SVG hors du dépôt, convertis en PNG 1536×1024, puis en WebP 480, 720 et 960 avec `cwebp` (qualité 82). À remplacer par une génération avec l’outil maison, sans changer les données des fiches. Couvertures illustratives, sans valeur de schéma de montage.

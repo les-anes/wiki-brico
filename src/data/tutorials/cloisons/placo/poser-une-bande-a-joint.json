@@ -1,0 +1,107 @@
+{
+  "id": "poser-une-bande-a-joint",
+  "title": "Poser une bande à joint entre deux plaques de plâtre",
+  "description": "Une bande bien noyée ne se voit pas après peinture. Enduis, pose la bande, charge et tire en trois passes, en laissant sécher entre chaque.",
+  "category": "cloisons",
+  "topicPath": ["Placo"],
+  "relatedCategories": [
+    { "category": "finitions", "topicPath": ["Peinture"] },
+    { "category": "techniques", "topicPath": ["Poncer"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 180,
+  "cost": null,
+  "image": "/images/tutoriels/poser-une-bande-a-joint.png",
+  "imageAlt": "Une bande à joint en cours d’enduisage sur la jonction de deux plaques de plâtre, avec un couteau à enduire et une auge de bande posés à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Pose et enduisage des bandes à joint sur des plaques de plâtre déjà vissées en pièce sèche, joints droits et angles saillants courants. Hors reprise d’un support humide ou fissuré, bandes sur support non préparé, ratissage complet d’un mur et finition de peinture.",
+  "estimatesNote": "Comptez environ 3 h pour une pièce, séchage entre les passes non compris, plus une reprise de ponçage. Le budget se limite à la bande, à l’enduit à joints et à deux couteaux.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 25.41",
+      "title": "Travaux de bâtiment — Ouvrages en plaques de plâtre (plaques à faces cartonnées)",
+      "scope": "Partie 1-1, cahier des clauses techniques types : traite la mise en œuvre des plaques à faces cartonnées, y compris le traitement des joints. Sert de repère sur les exigences de montage et de jointoiement, sans reproduire une prescription de chantier.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-2541-p11/travaux-de-batiment-ouvrages-en-plaques-de-platre-plaques-a-faces-cartonnee/fa194671/321485",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "GFAL — Bande à joint placo : guide complet pour des joints parfaits",
+      "url": "https://gfal.fr/bande-a-joint-placo-guide-complet/",
+      "note": "Distingue bande papier, bande armée métallique pour les angles saillants et bande grillagée autocollante, précise la largeur à retenir en plafond et rappelle qu’en pièce humide c’est l’ensemble plaques plus enduit plus ventilation qui compte. Base du choix de la bande.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Magazette — Quand et comment utiliser la bande armée pour placo",
+      "url": "https://www.magazette.fr/quand-et-comment-utiliser-la-bande-armee-pour-placo/",
+      "note": "Précise l’usage propre de la bande armée sur les angles saillants, dans les zones de passage où les chocs sont fréquents.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Couteau à enduire large pour le ratissage",
+    "Couteau plus étroit pour la passe de garnissage",
+    "Auge de bande ou seau et truelle",
+    "Ponceuse à main ou cale à poncer avec abrasif fin",
+    "Chiffon et éponge propre",
+    "Masque antipoussière"
+  ],
+  "materials": [
+    {
+      "name": "Bande à joint papier",
+      "quantity": "Longueur totale des joints, plus une marge"
+    },
+    {
+      "name": "Bande armée métallique",
+      "quantity": "Pour les angles saillants à protéger"
+    },
+    {
+      "name": "Enduit à joints en poudre",
+      "quantity": "Selon la longueur de joints, pour deux à trois passes"
+    },
+    {
+      "name": "Vis à plaque de plâtre",
+      "quantity": "Quelques-unes pour reprendre une fixation oubliée"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prépare le support et vérifie les vis",
+      "description": "Contrôle que toutes les vis sont bien enfoncées, sans tête saillante, et reprends celles qui dépassent : une vis mal enfoncée ressortira sous la bande. Élimine la poussière et les morceaux de plâtre sur les jonctions, car l’enduit n’accroche pas sur un support gras ou pulvérulent."
+    },
+    {
+      "title": "Choisis la bande selon le joint",
+      "description": "Une bande papier convient aux joints droits entre plaques et offre la meilleure résistance mécanique. Pour un angle saillant, dans un couloir ou une zone de passage, préfère une bande armée : ses lamelles métalliques rigidifient l’angle et encaissent les chocs."
+    },
+    {
+      "title": "Enduis et noie la bande",
+      "description": "Étale une fine couche d’enduit au couteau sur toute la longueur du joint, puis pose la bande en la pressant dans l’enduit frais. Serre bien au couteau pour chasser l’air : une bulle laissée sous la bande se transformera en cloque après peinture."
+    },
+    {
+      "title": "Passe la couche de garnissage",
+      "description": "Recouvre immédiatement la bande d’une passe d’enduit en tirant le couteau dans l’axe du joint, sans chercher à tout aplatir. C’est la passe qui noie la bande ; la couche d’arasement viendra après séchage complet."
+    },
+    {
+      "title": "Arase et élargis après séchage",
+      "description": "Une fois la passe sèche, étale une couche plus large et très fine au couteau, en débordant franchement de part et d’autre du joint. Une bande trop étroite crée un léger renflement visible en lumière rasante : c’est l’élargissement qui rend le joint invisible."
+    },
+    {
+      "title": "Ponce et contrôle en lumière rasante",
+      "description": "Ponce à l’abrasif fin quand tout est sec, sans creuser ni traverser la bande. Éclaire le mur en lumière rasante pour repérer les surépaisseurs et le grain, puis reprends localement à l’enduit plutôt que de poncer davantage."
+    }
+  ],
+  "mistakes": [
+    "Poser la bande sur un joint sec ou poussiéreux et la voir se décoller ou cloquer.",
+    "Laisser une bulle d’air sous la bande, ou une vis saillante qui ressort après la peinture.",
+    "Poncer trop fort dans la bande et la traverser, ce qui rend le joint visible définitivement."
+  ],
+  "safety": [
+    "Porte un masque et des lunettes pendant le ponçage : la poussière de plâtre est fine, irritante et abondante.",
+    "Travaille sur un escabeau stable pour les joints en hauteur et déplace-le plutôt que de t’étirer.",
+    "Aère la pièce pendant le séchage et respecte le temps indiqué par le fabricant avant de poncer, sinon l’enduit s’arrache en boulettes."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

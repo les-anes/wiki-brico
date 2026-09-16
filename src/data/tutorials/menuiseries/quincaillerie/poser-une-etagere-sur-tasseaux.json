@@ -1,0 +1,103 @@
+{
+  "id": "poser-une-etagere-sur-tasseaux",
+  "title": "Poser une étagère sur tasseaux dans un placard",
+  "description": "Dans un placard, une étagère tient sur trois tasseaux : deux sur les côtés et un au fond. Mesure l’espace réel, choisis l’ancrage selon le support et découpe la tablette au plus juste.",
+  "category": "menuiseries",
+  "topicPath": ["Quincaillerie"],
+  "relatedCategories": [
+    { "category": "techniques", "topicPath": ["Percer et fixer"] },
+    { "category": "preparer-chantier", "topicPath": ["Diagnostic"] }
+  ],
+  "journeys": ["amenager-des-combles"],
+  "difficulty": "Débutant",
+  "durationMinutes": 90,
+  "cost": null,
+  "image": "/images/tutoriels/poser-une-etagere-sur-tasseaux.png",
+  "imageAlt": "Une tablette posée dans un placard sur trois tasseaux de bois fixés aux parois, avec un mètre et une perceuse posés dessus, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Pose d’une étagère fixe sur tasseaux dans un placard, un renfoncement ou entre deux murs, sur support plein ou plaque de plâtre. Hors étagère suspendue à fixation invisible, tablette porteuse d’une charge lourde, support creux sans ancrage adapté et étagère à intégrer dans un meuble.",
+  "estimatesNote": "Comptez environ 1 h 30 pour une étagère, séchage de la colle non compris. Le budget se limite à une tablette, trois tasseaux et la visserie ; prévois des chevilles adaptées au support.",
+  "sources": [
+    {
+      "title": "Travail Bois et Métal — Fixer une étagère sans équerre",
+      "url": "https://travail-bois-metal.fr/fixer-une-etagere-sans-equerre/",
+      "note": "Décrit le principe du tasseau fixé au mur sur lequel vient s’emboîter l’étagère, le repérage des fixations au niveau ou au laser, le pré-perçage, le percement au perforateur et le choix de chevilles adaptées, notamment Molly sur plaque de plâtre. Base de la méthode de fixation.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Castorama — Comment poser une étagère sur fixation invisible",
+      "url": "https://www.castorama.fr/idees-et-conseils/comment-poser-une-etagere-sur-fixation-invisible/CF_CPRD_npcart_100395.art",
+      "note": "Présente les principes de pose d’une étagère sur support caché et les précautions de mesure et de fixation. Sert de contrôle sur la préparation et l’ancrage.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Mètre et crayon",
+    "Niveau à bulle ou niveau laser",
+    "Perceuse et perforateur selon le support",
+    "Marteau",
+    "Scie pour ajuster la tablette",
+    "Cale à poncer ou papier abrasif",
+    "Masque antipoussière et lunettes"
+  ],
+  "materials": [
+    {
+      "name": "Tablette",
+      "quantity": "Une, à la largeur et à la profondeur du placard"
+    },
+    {
+      "name": "Tasseaux de bois",
+      "quantity": "Trois : deux sur les côtés, un au fond"
+    },
+    {
+      "name": "Chevilles adaptées au support",
+      "quantity": "Deux ou trois par tasseau, type Molly sur plaque de plâtre"
+    },
+    {
+      "name": "Vis à bois",
+      "quantity": "Deux par point de fixation, longueur adaptée au tasseau"
+    },
+    {
+      "name": "Colle à bois ou mastic polyuréthane",
+      "quantity": "Un peu pour solidariser la tablette au tasseau du fond"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Mesure l’espace réel par le fond",
+      "description": "Mesure la largeur du placard au fond, au milieu et à l’entrée : les parois d’un placard sont rarement parallèles et la mesure la plus courte doit servir de référence. Note aussi la profondeur disponible, en tenant compte des portes et de leur ouverture."
+    },
+    {
+      "title": "Repère la hauteur et l’horizontale",
+      "description": "Trace la hauteur de l’étagère sur les deux parois au niveau ou au laser, puis vérifie sur toute la profondeur. Une étagère légèrement de travers dans un placard se voit dès qu’on y range des objets qui roulent."
+    },
+    {
+      "title": "Adapte les tasseaux au support",
+      "description": "Choisis des tasseaux dont la section reste discrète mais suffisante pour porter la charge, et adapte le mode de fixation à la paroi : cheville à frapper dans le béton, cheville Molly dans la plaque de plâtre, jamais une vis seule dans du plâtre. Sur du placo, appuie-toi sur les montants quand ils sont repérables."
+    },
+    {
+      "title": "Fixe les deux tasseaux latéraux",
+      "description": "Perce, insère les chevilles et visse les deux tasseaux latéraux en les alignant sur le tracé, sans les tordre. Compte deux ou trois points de fixation par tasseau selon la longueur, et place-en un près de l’avant, car c’est là que la charge appuie."
+    },
+    {
+      "title": "Ajoute le tasseau du fond et ajuste la tablette",
+      "description": "Fixe le tasseau du fond, qui empêche l’étagère de basculer et limite sa flexion au milieu. Découpe ensuite la tablette à la plus petite largeur relevée, puis ponce le chant coupé et présente-la à blanc avant tout collage."
+    },
+    {
+      "title": "Pose la tablette et contrôle la stabilité",
+      "description": "Glisse la tablette sur les tasseaux, en la collant légèrement sur celui du fond pour qu’elle ne glisse pas. Contrôle qu’elle ne bouge pas sous la main et charge progressivement, en commençant par les objets les plus légers."
+    }
+  ],
+  "mistakes": [
+    "Prendre la mesure à l’entrée du placard et découvrir que la tablette ne rentre pas au fond, sur des parois qui se resserrent.",
+    "Visser directement dans une plaque de plâtre sans cheville adaptée, et voir l’étagère tomber à la première charge.",
+    "Se contenter de deux tasseaux latéraux sur une tablette longue, qui se creuse au milieu au bout de quelques mois."
+  ],
+  "safety": [
+    "Repère les canalisations et les câbles avant de percer une cloison ou un mur de placard, et coupe l’alimentation si un circuit traverse la zone.",
+    "Porte des lunettes et un masque pendant le perçage, et ne monte jamais sur une tablette ou une étagère pour atteindre le haut du placard.",
+    "Pour déposer un objet lourd au-dessus de ta tête, monte sur un marchepied stable et fais-toi aider ; ne te fie pas à la tablette comme appui."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

@@ -1,0 +1,108 @@
+{
+  "id": "peindre-un-motif-au-pochoir",
+  "title": "Peindre un motif au pochoir sur un mur",
+  "description": "Un pochoir réussi tient à trois choses : une brosse presque sèche, un tamponnage des bords vers le centre, et un retrait du pochoir au bon moment.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [
+    { "category": "cloisons", "topicPath": ["Placo"] },
+    { "category": "techniques", "topicPath": ["Utiliser un niveau"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 120,
+  "cost": null,
+  "image": "/images/tutoriels/peindre-un-motif-au-pochoir.png",
+  "imageAlt": "Un pochoir en mylar posé sur un mur, un motif partiellement peint au tamponnage et une brosse ronde presque sèche posée sur une assiette, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Peinture d’un motif au pochoir sur un mur intérieur sec déjà peint, mate ou satinée, motif isolé ou frise répétée. Hors mur fraîchement peint, support farinant ou écaillé, mur brut non préparé, peinture à la bombe en grande surface et pochoir adhésif.",
+  "estimatesNote": "Comptez 30 à 90 min d’application pour un mur courant, auxquelles s’ajoute la préparation du support, souvent aussi longue. Le budget se limite au pochoir, à un pot de peinture acrylique mate et à un ruban de masquage.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 59.1",
+      "title": "Travaux de bâtiment — Revêtements de peinture en feuil mince, semi-épais ou épais",
+      "scope": "Partie 1-1, cahier des clauses techniques types : encadre la préparation du support et l’application du système de peinture. Sert de repère sur les exigences de support, sans reproduire une prescription de chantier.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-591/travaux-de-batiment-revetements-de-peinture-en-feuil-mince-semiepais-ou-epa/fa183018/1371",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mon Pochoir — Peinture murale au pochoir : guide complet de A à Z",
+      "url": "https://www.monpochoir.com/2026/06/26/peinture-murale-pochoir-guide-complet/",
+      "note": "Détaille le choix du pochoir en mylar, l’intérêt de la brosse ronde à poils courts ou du mini-rouleau mousse, la technique du tamponnage à sec des bords vers le centre, les deux couches fines, le retrait du pochoir encore humide et la correction des bavures au coton-tige. Base de la méthode.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Monsieur Peinture — Peindre au pochoir",
+      "url": "https://www.monsieurpeinture.com/peindre-pochoir/",
+      "note": "Présente le pochoir comme une technique de décoration peinte et les précautions de préparation du support. Sert de contrôle sur la préparation.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Pochoir en mylar",
+    "Brosse ronde à pochoir ou mini-rouleau mousse",
+    "Assiette en carton pour décharger l’outil",
+    "Ruban de masquage faible adhérence",
+    "Niveau à bulle et crayon",
+    "Coton-tige et chiffons propres",
+    "Gants"
+  ],
+  "materials": [
+    {
+      "name": "Peinture acrylique mate",
+      "quantity": "Un petit pot suffit pour plusieurs murs selon la densité du motif"
+    },
+    {
+      "name": "Ruban de masquage faible adhérence",
+      "quantity": "Pour maintenir le pochoir sans marquer la peinture"
+    },
+    {
+      "name": "Spray repositionnable",
+      "quantity": "Optionnel, sur un mur légèrement texturé"
+    },
+    {
+      "name": "Carton de test",
+      "quantity": "Une chute pour l’essai avant de peindre le mur"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prépare et dégraisse le mur",
+      "description": "Nettoie le mur à l’eau légèrement savonneuse, et dégraisse les zones grasses comme le pourtour d’un interrupteur ou l’arrière d’un radiateur. Laisse sécher complètement : une surface humide dilue la peinture et fait baver les bords du motif."
+    },
+    {
+      "title": "Vérifie l’état de la peinture en place",
+      "description": "Une peinture qui s’écaille ou se soulève doit être reprise à l’enduit de lissage avant toute chose, car le pochoir accentue chaque irrégularité. Sur une finition brillante, ponce légèrement pour matifier, sinon la peinture glisse et les bords manquent de netteté."
+    },
+    {
+      "title": "Positionne et fixe le pochoir",
+      "description": "Trace légèrement les axes au crayon et vérifie l’équilibre visuel avant de fixer, surtout pour un motif centré au-dessus d’un meuble. Maintiens le pochoir au ruban de masquage faible adhérence, ou au spray repositionnable sur un mur un peu texturé, sans couvrir les zones du motif."
+    },
+    {
+      "title": "Fais un essai sur un carton",
+      "description": "Tamponne le motif sur une chute de carton pour juger le rendu, la quantité de peinture nécessaire et la pression à exercer. Trois minutes d’essai évitent de découvrir sur le mur que l’outil était trop chargé."
+    },
+    {
+      "title": "Tamponne à sec, des bords vers le centre",
+      "description": "Charge à peine la brosse, décharge-la sur une zone neutre de l’assiette jusqu’à ce qu’elle ne laisse presque plus de trace, puis tamponne par petits mouvements circulaires des bords vers le centre du motif. Jamais de mouvement linéaire : c’est la peinture en excès qui s’infiltre sous le pochoir et fait baver."
+    },
+    {
+      "title": "Superpose les couches et retire au bon moment",
+      "description": "Applique deux couches fines plutôt qu’une épaisse, en laissant sécher quelques minutes entre les deux. Retire le pochoir quand la peinture est encore légèrement humide, en le soulevant depuis un coin, perpendiculairement au mur, et corrige immédiatement les bavures au coton-tige humide."
+    }
+  ],
+  "mistakes": [
+    "Charger la brosse ou le rouleau et peindre par mouvements linéaires, ce qui fait baver la peinture sous les bords du pochoir.",
+    "Retirer le pochoir quand la peinture est déjà sèche et arracher les bords du motif.",
+    "Travailler sur une peinture fraîche de moins de quelques semaines, qui se soulève sous le ruban de masquage."
+  ],
+  "safety": [
+    "Aère la pièce pendant et après l’application, et porte des gants avec une peinture acrylique ou un spray repositionnable.",
+    "Travaille sur un marchepied stable pour les motifs en hauteur, et déplace-le plutôt que de t’étirer.",
+    "En cas d’utilisation d’un vernis de protection en bombe, tiens la pièce aérée et éloigne les sources d’ignition pendant la pulvérisation."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}
