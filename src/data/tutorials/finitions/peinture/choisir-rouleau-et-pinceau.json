@@ -1,0 +1,103 @@
+{
+  "id": "choisir-rouleau-et-pinceau",
+  "title": "Choisir un rouleau et un pinceau pour peindre un mur",
+  "description": "Un mur réussi tient d’abord au bon outil. Associe la largeur et la longueur des poils du rouleau au support, et ajoute un pinceau à rechampir pour les bords.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [
+    { "category": "techniques", "topicPath": ["Poncer"] },
+    { "category": "preparer-chantier", "topicPath": ["Matériaux"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 20,
+  "cost": null,
+  "image": "/images/tutoriels/choisir-rouleau-et-pinceau.png",
+  "imageAlt": "Un rouleau à peinture et un pinceau à rechampir posés côte à côte sur un bac d’égouttage, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Choix d’un rouleau et d’un pinceau pour peindre des murs et plafonds intérieurs avec une peinture courante à l’eau. Hors peintures spécifiques (laques, résines, produits de façade) dont la notice impose un outil particulier, et hors matériel de pulvérisation.",
+  "estimatesNote": "Comptez environ 20 min pour choisir et vérifier la compatibilité des outils, hors achat. Le budget d’un kit de base reste limité ; il dépend surtout de la qualité du manchon et du nombre de recharges.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 59.1",
+      "title": "Travaux de bâtiment — Revêtements de peinture en feuil mince, semi-épais ou épais",
+      "scope": "Partie 1-1, cahier des clauses techniques types : rappelle que les conditions d’application et le matériel doivent être adaptés au système de peinture. Sert de repère sur l’exigence de compatibilité, sans imposer de marque.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-591/travaux-de-batiment-revetements-de-peinture-en-feuil-mince-semiepais-ou-epa/fa183018/1371",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mauvilac — Comment bien choisir son rouleau ou son pinceau de peinture ?",
+      "url": "https://blog.mauvilac.com/comment-bien-choisir-son-rouleau-ou-son-pinceau-de-peinture",
+      "note": "Fabricant : associe le rouleau aux murs et plafonds, le pinceau à rechampir ou la brosse angulaire aux angles et contours, le mini-rouleau aux petites surfaces, et un manchon plus garni aux supports texturés. Base du choix par zone.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Monsieur Peinture — Rouleau ou pinceau pour peindre : comment faire le bon choix ?",
+      "url": "https://www.monsieurpeinture.com/rouleau-pinceau-comment-choisir/",
+      "note": "Décrit le lien entre la longueur des poils, la matière du manchon et le rendu sur le mur. Sert à expliquer l’effet d’un poil trop long sur un support lisse.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Rouleau à peinture avec manche",
+    "Pinceau à rechampir à poils synthétiques",
+    "Bac à peinture avec grille d’égouttage",
+    "Mini-rouleau pour les recoins",
+    "Manche télescopique si le plafond est inclus",
+    "Gants"
+  ],
+  "materials": [
+    {
+      "name": "Manchon de rouleau rechange",
+      "quantity": "Un par peinture ou par teinte, plus un de secours"
+    },
+    {
+      "name": "Peinture à l’eau de finition",
+      "quantity": "Selon la surface calculée pour la pièce"
+    },
+    {
+      "name": "Bâche, ruban de masquage et seau d’eau claire",
+      "quantity": "Pour protéger la pièce et nettoyer les outils"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Repère la surface et la peinture",
+      "description": "Regarde si le mur est lisse (enduit fin, ancienne peinture) ou texturé (crépi, enduit gratté, papier peint à peindre), et lis la notice de la peinture. C’est le couple support plus produit qui détermine le rouleau, pas l’inverse."
+    },
+    {
+      "title": "Choisis la largeur du rouleau",
+      "description": "Prends un rouleau d’environ 15 à 18 cm pour une pièce courante, un format plus large pour de grandes surfaces dégagées, et un mini-rouleau pour les zones étroites. Un rouleau trop large n’entre pas dans les recoins, un rouleau trop petit multiplie les passages."
+    },
+    {
+      "title": "Choisis la longueur des poils",
+      "description": "Sur un mur lisse, un poil court ou moyen donne un film régulier sans texture ; sur un support rugueux, un poil plus long va chercher les creux sans tirer la peinture. Un poil trop long sur un mur lisse laisse une peau d’orange."
+    },
+    {
+      "title": "Choisis la matière du manchon",
+      "description": "Un manchon en microfibre ou en fibres synthétiques convient aux peintures à l’eau et se nettoie facilement. Vérifie la compatibilité indiquée avec le produit, et prends un manchon par peinture si tu changes de teinte ou passes de la sous-couche à la finition."
+    },
+    {
+      "title": "Ajoute un pinceau à rechampir",
+      "description": "Prends un pinceau à rechampir d’environ 4 à 5 cm à poils synthétiques pour les angles, les jonctions avec le plafond et le tour des encadrements. C’est lui qui fait les contours ; il doit garder ses poils et se laver facilement."
+    },
+    {
+      "title": "Complète le kit et garde les outils propres",
+      "description": "Prévois un bac avec grille d’égouttage, un manche confortable et de quoi nettoyer. Rince les outils à l’eau avant que la peinture acrylique ne sèche, puis essore-les et fais-les sécher debout : bien entretenus, rouleau et pinceau resservent plusieurs chantiers."
+    }
+  ],
+  "mistakes": [
+    "Choisir un rouleau à poils longs pour un mur lisse, puis obtenir une surface granuleuse et retoucher sans fin.",
+    "Utiliser un pinceau bon marché qui perd ses poils dans la peinture et laisse des traces à retirer.",
+    "Passer de la sous-couche à la finition avec le même manchon sale, et contaminer la teinte finale."
+  ],
+  "safety": [
+    "Travaille sur un support stable pour atteindre le haut du mur et aère la pièce pendant la peinture.",
+    "Porte des gants pour manipuler les outils, et des lunettes si tu nettoies le matériel avec un produit irritant.",
+    "Range les manchons et pinceaux hors de portée des enfants, et ne laisse pas un bac de peinture ouvert sans surveillance."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-16"
+}

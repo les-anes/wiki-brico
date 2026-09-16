@@ -27,10 +27,6 @@ Le choix initial combine les problèmes courants à la maison, l’utilité imm�
 - [ ] **T08 — Choisir et poser une cheville adaptée à ton mur.** Techniques / Poser une cheville. Reconnaître le support et associer charge, cheville, foret et vis ; complément du tuto étagère.
 - [ ] **T09 — Fixer une tringle à rideaux.** Techniques / Percer et fixer. Tracer, choisir les fixations et aligner les supports ; s’appuyer sur T08.
 - [ ] **T10 — Remplacer une prise électrique murale à l’identique.** Électricité / Prises. Cas : circuit existant identifié, boîte et conducteurs en bon état ; inclure mise hors tension, vérification d’absence de tension et contrôles de raccordement.
-- [ ] **T31 — Peindre sans bavures le long des bords et des angles.** Finitions / Peinture. Protéger avec un ruban adapté, peindre les contours sans surcharger et retirer le ruban au bon moment ; complément ciblé du tuto mur existant.
-- [ ] **T32 — Quelle peinture choisir pour ta pièce et ton support ?** Finitions / Peinture. Partir d’un cas concret pour choisir une peinture compatible, une finition mate, velours ou satinée et une sous-couche si nécessaire ; donner des repères simples pour murs, plafonds et pièces humides.
-- [ ] **T34 — Calculer la quantité de peinture à acheter.** Finitions / Peinture. Mesurer la surface, utiliser le rendement indiqué sur le pot et tenir compte du nombre de couches ; proposer un exemple facile à reproduire.
-- [ ] **T35 — Choisir un rouleau et un pinceau pour peindre un mur.** Finitions / Peinture. Associer les outils au support et à la peinture choisis, avec un kit minimal ; expliquer simplement la longueur des poils et le pinceau à rechampir.
 
 ## Priorité 2 — Finitions et rénovation d’une pièce
 
@@ -97,6 +93,10 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Réalisés depuis cette liste
 
+- [x] **T31 — Peindre sans bavures le long des bords et des angles** — terminé le 2026-09-16 — [/tutoriel/peindre-sans-bavures/](/tutoriel/peindre-sans-bavures/)
+- [x] **T32 — Choisir sa peinture selon la pièce et le support** — terminé le 2026-09-16 — [/tutoriel/choisir-sa-peinture/](/tutoriel/choisir-sa-peinture/)
+- [x] **T34 — Calculer la quantité de peinture à acheter** — terminé le 2026-09-16 — [/tutoriel/calculer-sa-peinture/](/tutoriel/calculer-sa-peinture/)
+- [x] **T35 — Choisir un rouleau et un pinceau pour peindre un mur** — terminé le 2026-09-16 — [/tutoriel/choisir-rouleau-et-pinceau/](/tutoriel/choisir-rouleau-et-pinceau/)
 - [x] **T40 — Rejointoyer un mur en pierre à la chaux** — terminé le 2026-09-16 — [/tutoriel/rejointoyer-un-mur-en-pierre/](/tutoriel/rejointoyer-un-mur-en-pierre/)
 - [x] **T04 — Remplacer un mitigeur de lavabo** — terminé le 2026-09-16 — [/tutoriel/remplacer-mitigeur-lavabo/](/tutoriel/remplacer-mitigeur-lavabo/)
 - [x] **T05 — Réparer une fuite sur un raccord à joint plat** — terminé le 2026-09-16 — [/tutoriel/reparer-fuite-joint-plat/](/tutoriel/reparer-fuite-joint-plat/)
@@ -118,3 +118,4 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - **2026-09-16** : début du lot T04, T05 et T06 ; demande de rejointoiement à la chaux rattachée à T40, déjà présent, sans doublon.
 - **2026-09-16** : T40 terminé seul : première fiche de gros œuvre, nouveau classement « Maçonnerie de pierre › Rejointoiement », illustration locale provisoire (à remplacer par une génération avec l’outil imagegen), contrôles TypeScript, lint, tests, données, build et rendu réussis. Le catalogue contient 25 tutoriels ; 35 idées restent à faire.
 - **2026-09-16** : T04, T05 et T06 terminés : fiches documentées, illustrations originales et variantes WebP, contrôles TypeScript, lint, tests, données, build et rendu réussis. Le catalogue contient 24 tutoriels ; 36 idées restent à faire.
+- **2026-09-16** : lot peinture T31, T32, T34 et T35 terminé : quatre fiches documentées, références NF DTU 59.1 quand elle s’applique et sources consultées ; illustrations provisoires (à remplacer par l’outil imagegen) et variantes WebP. Le catalogue contient 29 tutoriels ; 31 idées restent à faire.

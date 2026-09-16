@@ -1,5 +1,41 @@
 # Prompts des illustrations de tutoriels
 
+## Peinture — 16 septembre 2026
+
+**Illustrations provisoires.** L’environnement de rédaction de ce lot ne disposait pas de l’outil imagegen : les quatre dessins ont été tracés en SVG hors du dépôt, puis convertis en PNG 1536×1024 ; les variantes WebP 480, 720 et 960 ont été générées avec `cwebp` (qualité 82). À remplacer par une génération avec l’outil maison, sans changer les données des fiches. Couvertures illustratives, sans valeur de schéma de montage.
+
+### choisir-sa-peinture
+
+Fichier : `public/images/tutoriels/choisir-sa-peinture.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: three paint colour swatch cards side by side showing a matte, a velvet and a satin finish, each a flat muted colour patch, with a small unbranded open paint pot and a brush beside them. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### peindre-sans-bavures
+
+Fichier : `public/images/tutoriels/peindre-sans-bavures.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a small cutting-in paintbrush laying a clean band of paint along a wall corner just above a strip of masking tape fixed to a skirting board, a few drops of paint on the tape edge. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### calculer-sa-peinture
+
+Fichier : `public/images/tutoriels/calculer-sa-peinture.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a rolled measuring tape stretched along the base of a plain wall, a small notepad and pencil on the floor and a closed paint can with its lid beside them. No numbers or markings on the tape. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### choisir-rouleau-et-pinceau
+
+Fichier : `public/images/tutoriels/choisir-rouleau-et-pinceau.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a paint roller with a wooden handle and a small cutting-in paintbrush resting side by side across the ridged edge of a shallow paint tray holding a little paint. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
 ## Maçonnerie de pierre — 16 septembre 2026
 
 **Illustration provisoire.** L’environnement de rédaction de la fiche T40 ne disposait pas de l’outil imagegen : le dessin a été tracé à la main en SVG, hors du dépôt, puis converti en PNG 1536×1024 avec `sips` ; les variantes WebP 480, 720 et 960 ont été générées avec `cwebp` (qualité 82). À remplacer par une génération avec l’outil maison, sans changer les données de la fiche. Couverture illustrative, sans valeur de schéma de montage.
