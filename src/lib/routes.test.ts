@@ -3,7 +3,13 @@ import { test } from "node:test";
 
 import type { Tutorial } from "@/types";
 
-import { buildRoutes, matchRoute, pageMeta, tutorialPath } from "./routes.ts";
+import {
+  buildRoutes,
+  isPageChange,
+  matchRoute,
+  pageMeta,
+  tutorialPath,
+} from "./routes.ts";
 
 const parquet = {
   id: "poser-du-parquet",
@@ -32,6 +38,16 @@ const siteUrl = "https://wikibrico.fr";
 
 test("tutorialPath construit un chemin canonique avec slash final", () => {
   assert.equal(tutorialPath("poser-du-parquet"), "/tutoriel/poser-du-parquet/");
+});
+
+test("isPageChange distingue une nouvelle page d’un filtre", () => {
+  assert.equal(isPageChange("/tutoriels/", "/tutoriels/?q=chaux"), false);
+  assert.equal(
+    isPageChange("/tutoriels/?q=chaux", "/tutoriels/?categorie=structure"),
+    false,
+  );
+  assert.equal(isPageChange("/", "/tutoriels/?q=chaux"), true);
+  assert.equal(isPageChange("/tutoriel/a/", "/tutoriel/b/"), true);
 });
 
 test("buildRoutes liste l'accueil, le catalogue puis chaque tutoriel", () => {

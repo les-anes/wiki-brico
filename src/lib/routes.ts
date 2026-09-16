@@ -37,6 +37,14 @@ export function tutorialPath(id: string): string {
   return `/tutoriel/${id}/`;
 }
 
+/**
+ * Une nouvelle query string n’est pas une nouvelle page : filtres, recherche et
+ * favoris se mettent à jour sur place, sans déplacer le focus ni le défilement.
+ */
+export function isPageChange(previous: string, next: string): boolean {
+  return previous.split("?")[0] !== next.split("?")[0];
+}
+
 export function buildRoutes(tutorials: Tutorial[]): Route[] {
   return [
     HOME,

@@ -4,7 +4,7 @@ import App from "@/App";
 import { tutorials } from "@/data";
 import { categories } from "@/data/taxonomy";
 import { responsiveImage } from "@/lib/images";
-import { matchRoute, pageMeta } from "@/lib/routes";
+import { isPageChange, matchRoute, pageMeta } from "@/lib/routes";
 
 export interface DocumentAssets {
   css: string[];
@@ -63,10 +63,13 @@ export function Document({
   }, []);
 
   const navigate = useCallback((href: string, replace = false) => {
+    const current = location.pathname + location.search;
     if (replace) history.replaceState(null, "", href);
     else history.pushState(null, "", href);
+    // Filtrer ou chercher ne doit pas ramener le lecteur en haut de la page.
+    if (isPageChange(current, location.pathname + location.search))
+      window.scrollTo(0, 0);
     setPath(location.pathname + location.search);
-    window.scrollTo(0, 0);
   }, []);
 
   const route = matchRoute(tutorials, path);

@@ -27,7 +27,7 @@ import { categories, navigationCategories, journeys } from "@/data/taxonomy";
 import { initializeAnalytics, trackPage } from "@/lib/analytics";
 import { belongsToCategory, catalogHref, duration } from "@/lib/catalog";
 import { responsiveImage } from "@/lib/images";
-import { matchRoute } from "@/lib/routes";
+import { isPageChange, matchRoute } from "@/lib/routes";
 import type { Tutorial } from "@/types";
 function readSaved(): string[] {
   try {
@@ -70,7 +70,9 @@ export default function App({
     if (isCatalog) setLastCatalog(path);
   }, [isCatalog, path]);
   useEffect(() => {
-    if (previousPath.current === path) return;
+    // Un changement de query string (filtre, recherche) n’est pas une navigation :
+    // le focus reste dans le champ et la position de lecture ne bouge pas.
+    if (!isPageChange(previousPath.current, path)) return;
     previousPath.current = path;
     window.scrollTo(0, 0);
     document.querySelector<HTMLElement>("main")?.focus({ preventScroll: true });
