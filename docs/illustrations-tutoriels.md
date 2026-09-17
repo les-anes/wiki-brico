@@ -899,3 +899,15 @@ Fichier : `public/images/tutoriels/ajouter-un-contacteur-jour-nuit.png`. Génér
 ```text
 Use case: stylized-concept. Original French DIY tutorial cover, landscape. Loose imperfect charcoal contours, flat gouache, coarse dry brush texture on warm ivory paper, simplified recognizable objects centered with generous margins. Subject: a white cylindrical domestic electric hot water tank, with a small separate ivory modular day-night contactor and grey selector lever in foreground. No wiring diagram, no exposed wires, no text, numbers, labels, arrows, logos, watermark or photorealism. Natural white and grey object colors, subtle warm shadows.
 ```
+
+## Structure — 17 septembre 2026
+
+Illustration originale générée avec l’outil intégré imagegen et contrôlée visuellement. PNG 1536×1024 et variantes WebP 480, 720 et 960 pixels à qualité 82 ; source et prompt conservés dans `output/imagegen/`. Couverture illustrative, sans valeur de schéma de montage.
+
+### poser-un-plancher-osb-sur-solives
+
+Fichier : `public/images/tutoriels/poser-un-plancher-osb-sur-solives.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape exactly 1536x1024. Subject: an ochre OSB flooring panel with very recognizable large compressed wood flakes, installed flat across four parallel solid timber floor joists. Low three-quarter view clearly shows the thick joists extending out toward the foreground from beneath the panel, and the panel spanning perpendicular across all four joists. Panel ends supported on outer joists, screw heads flush in neat rows above joists. A cordless screwdriver and a small open tin of wood screws rest on the panel. Simple isolated object vignette, no person, no building background. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified expressive recognizable forms, whole subject inside central 70 percent with generous margins for mobile cropping. Natural warm wood colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```

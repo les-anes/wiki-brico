@@ -52,6 +52,7 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Réalisés depuis cette liste
 
+- [x] **T43 — Poser un plancher OSB sur solives** — terminé le 2026-09-17 — [/tutoriel/poser-un-plancher-osb-sur-solives/](/tutoriel/poser-un-plancher-osb-sur-solives/)
 - [x] **T18 — Remplacer un carreau de carrelage cassé** — terminé le 2026-09-16 — [/tutoriel/remplacer-un-carreau-de-carrelage-casse/](/tutoriel/remplacer-un-carreau-de-carrelage-casse/)
 - [x] **T27 — Poser du carrelage au sol dans une petite pièce** — terminé le 2026-09-16 — [/tutoriel/poser-du-carrelage-au-sol/](/tutoriel/poser-du-carrelage-au-sol/)
 - [x] **T19 — Poser un sol vinyle clipsable** — terminé le 2026-09-16 — [/tutoriel/poser-un-sol-vinyle-clipsable/](/tutoriel/poser-un-sol-vinyle-clipsable/)
@@ -116,3 +117,4 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - **2026-09-16** : dernier lot T18, T19, T27, T30, T39, T41 et T42 terminé : sept fiches documentées (carreau cassé, carrelage au sol, sol vinyle clipsable, ordre des travaux d’une chambre, volets battants, remplacement d’un linteau, ceinture d’un mur en pierre), référence NF DTU 52.2 pour les deux fiches de carrelage et NF DTU 20.1 pour la ceinture, sources consultées ; illustrations provisoires, variantes WebP et prompts dans `output/imagegen/`. Deux nouvelles sous-catégories ont été créées : « Finitions › Sol vinyle » et « Structure › Chaînages ». Le catalogue contient 60 tutoriels et les 42 idées de cette liste sont réalisées.
 
 - **2026-09-17** : remplacement des 42 couvertures des tutoriels réalisés par des illustrations originales générées avec imagegen, dans le style crayon/gouache sur fond ivoire. PNG et trois variantes WebP renouvelés ; textes alternatifs ajustés. Les mentions d’illustrations provisoires ci-dessus décrivent l’état historique des lots.
+- **2026-09-17** : idée T43 « poser un plancher OSB sur solives » demandée puis réalisée dans la foulée : fiche documentée au classement « Structure › Planchers », avec la référence NF DTU 51.3 et les sources FCBA et AFNOR consultées. L’illustration reste à générer : son prompt est consigné dans `docs/illustrations-tutoriels.md` et `output/imagegen/`. Le catalogue contient 61 tutoriels.
