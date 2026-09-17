@@ -1,0 +1,122 @@
+{
+  "id": "ceinturer-un-mur-en-pierre",
+  "title": "Ceinturer un mur en pierre avec un chaînage",
+  "description": "Un chaînage en tête de mur solidarise la maçonnerie, la nivelle et la protège des remontées d’eau. Ferraillage filant, équerres d’angle, béton vibré puis cure.",
+  "category": "structure",
+  "topicPath": ["Chaînages"],
+  "relatedCategories": [
+    {
+      "category": "techniques",
+      "topicPath": ["Faire du mortier"]
+    },
+    {
+      "category": "preparer-chantier",
+      "topicPath": ["Diagnostic"]
+    }
+  ],
+  "difficulty": "Avancé",
+  "durationMinutes": 600,
+  "cost": null,
+  "image": "/images/tutoriels/ceinturer-un-mur-en-pierre.png",
+  "imageAlt": "Un chaînage en béton continu couronne l’angle de deux murs en pierre, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Réalisation d’une ceinture horizontale armée en tête d’un mur en moellons formant un muret de clôture, un mur de jardin ou le mur d’une annexe non porteuse, avec retours aux angles. Hors chaînage d’une maison portant plancher ou charpente, reprise d’un mur qui bouge ou dont une fissure évolue, mur de soutènement, et création d’ouverture. Dans ces cas, le ferraillage relève d’un dimensionnement qui dépasse cette fiche.",
+  "estimatesNote": "Comptez une journée pour un muret courant, hors cure et décoffrage. Le budget se limite au béton ou au mortier, à l’acier, au coffrage et au sable ; c’est le poste le moins coûteux du chantier et celui qui protège le plus l’ouvrage.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 20.1",
+      "title": "Travaux de bâtiment — Ouvrages en maçonnerie de petits éléments, parois et murs",
+      "scope": "Partie 1-1, cahier des clauses techniques types : fixe notamment l’épaisseur minimale de l’arase en tête de maçonnerie de petits éléments. Sert de repère sur cette exigence d’épaisseur, sans reproduire une prescription de ferraillage ni de dosage.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-201/travaux-de-batiment-ouvrages-en-maconnerie-de-petits-elements-parois-et-mur/fa200726/85614",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Point Home — Chaînage des murs en pierre : techniques actuelles pour le bâti ancien",
+      "url": "https://www.point-home.fr/chainage-mur-en-pierre/",
+      "note": "Explique le rôle du chaînage sur un mur en pierre, la saignée longitudinale dans la maçonnerie, la pose d’un ferraillage en acier à haute adhérence avant coulage d’un béton vibré, et l’obligation de solidariser aciers horizontaux et verticaux par des équerres de retour ou un recouvrement suffisant. Base du principe et de la mise en œuvre.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Filière Pro — Arases de muret : guide technique",
+      "url": "https://www.filierepro.fr/arases-muret-guide-technique/",
+      "note": "Donne les trois fonctions de la ceinture en tête de muret, la distinction entre mortier simple pour un ouvrage de moins d’un mètre et béton armé au-delà, le dosage de 300 kg/m³ pour le béton armé, le recouvrement des filants de 40 fois le diamètre, l’épaisseur minimale de 2 cm fixée par le DTU 20.1 et le délai de décoffrage de 4 à 5 jours par temps chaud. Base du dosage et des délais.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Marteau, burin et brosses pour préparer l’assise",
+    "Auge, truelle et seau pour le béton ou le mortier",
+    "Malaxeur ou bétonnière",
+    "Pince coupe-boulons ou cisaille pour l’acier",
+    "Aiguille vibrante ou procédé de vibration adapté",
+    "Coffrage bois, serre-joints et cordeau",
+    "Niveau à bulle et mètre",
+    "Gants, lunettes, masque et genouillères"
+  ],
+  "materials": [
+    {
+      "name": "Acier à haute adhérence pour filants",
+      "quantity": "Deux filants longitudinaux, plus les retours d’angle"
+    },
+    {
+      "name": "Béton armé",
+      "quantity": "Dosage de l’ordre de 300 kg/m³ pour une ceinture armée"
+    },
+    {
+      "name": "Mortier",
+      "quantity": "Sable fin et liant pour un muret de moins d’un mètre"
+    },
+    {
+      "name": "Coffrage et étaiement",
+      "quantity": "Sur toute la longueur de la ceinture"
+    },
+    {
+      "name": "Fil d’attache ou attaches plastiques",
+      "quantity": "Pour maintenir le ferraillage à l’enrobage prévu"
+    },
+    {
+      "name": "Bâche de cure",
+      "quantity": "Pour maintenir l’humidité par temps chaud"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Contrôle l’état du mur et l’objectif de la ceinture",
+      "description": "Vérifie que le mur est stable, que les pierres ne bougent pas et qu’aucune fissure n’évolue : suis une fissure au repère pendant plusieurs semaines, car un chaînage posé sur un mur qui travaille ne le retiendra pas. Écris aussi ce que la ceinture doit faire — niveler la tête du mur, le solidariser, ou porter une clôture — car c’est cet objectif qui décide du dosage et de la hauteur de la ceinture."
+    },
+    {
+      "title": "Prépare l’assise et le chantier",
+      "description": "Dégarnis la tête du mur des pierres branlantes et des joints friables, puis brosse et humidifie légèrement l’assise : un support poussiéreux ou sec empêche une bonne liaison. Protège les abords, prévois une zone pour le sable et le liant, et repère les réseaux qui longent le mur."
+    },
+    {
+      "title": "Décide de la section et du ferraillage",
+      "description": "Choisis une ceinture d’au moins quelques centimètres d’épaisseur, la référence de l’arase étant de 2 cm minimum, et nettement plus sur un ouvrage exposé aux intempéries. Au-delà d’un mètre de hauteur ou si la ceinture doit reprendre une charge, passe sur un béton armé de l’ordre de 300 kg/m³ avec deux filants longitudinaux."
+    },
+    {
+      "title": "Pose et ligature l’acier",
+      "description": "Mets les filants en place en ménageant l’enrobage prévu, et prévois un recouvrement de 40 fois le diamètre de l’acier là où tu raccordes deux longueurs. Aux angles et aux retours, solidarise les aciers par des équerres de retour : sans ce nœud, la ceinture perd sa continuité et les angles restent vulnérables aux poussées."
+    },
+    {
+      "title": "Coffre et coule en vibrant",
+      "description": "Pose le coffrage en le calant au cordeau et au niveau, en veillant à la régularité de l’épaisseur sur toute la longueur. Coule le béton ou le mortier puis vibre soigneusement pour qu’il épouse les irrégularités des moellons, car un vide sous la ceinture devient un point d’infiltration."
+    },
+    {
+      "title": "Assure la cure, décoffre et contrôle",
+      "description": "Maintiens le béton humide par temps chaud et attends 4 à 5 jours pour décoffrer, jusqu’à 7 à 8 jours par temps froid. Vérifie ensuite l’aspect et l’horizontalité sur toute la longueur, puis harmonise le parement avec l’appareillage d’origine si le mur reste visible, ce qui masque la reprise sans nuire à la tenue."
+    }
+  ],
+  "mistakes": [
+    "Poser la ceinture sur une tête de mur non préparée ou sur un mur dont une fissure évolue encore, et la voir se fissurer à son tour.",
+    "Laisser les filants se croiser aux angles sans équerre de retour ni recouvrement, ce qui coupe la continuité du chaînage.",
+    "Coulisser le béton sans vibrer, et laisser des vides sous la ceinture par lesquels l’eau entre dans la maçonnerie."
+  ],
+  "safety": [
+    "Mets en sécurité un mur dont des pierres bougent ou dont une fissure s’ouvre en le stabilisant avant tout autre travail : ne commence pas une ceinture sur une maçonnerie en équilibre instable.",
+    "Porte gants, lunettes et masque : le burinage de la maçonnerie et le mélange du liant produisent poussière et projections irritantes.",
+    "Manipule les aciers et les charges de sable avec des gants épais, et porte secours à deux pour les seaux et les éléments de coffrage lourds."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-17"
+}

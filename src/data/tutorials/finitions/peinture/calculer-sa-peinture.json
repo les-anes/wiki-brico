@@ -1,0 +1,93 @@
+{
+  "id": "calculer-sa-peinture",
+  "title": "Calculer la quantité de peinture à acheter",
+  "description": "Pas envie de retourner au magasin en plein chantier ? Mesure la surface à peindre, applique le rendement inscrit sur le pot et compte les couches pour acheter la bonne quantité.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [
+    { "category": "preparer-chantier", "topicPath": ["Métrés"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 25,
+  "cost": null,
+  "image": "/images/tutoriels/calculer-sa-peinture.png",
+  "imageAlt": "Un mètre ruban déroulé le long d’un mur, un carnet de notes et un pot de peinture posé au sol, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Estimation de la quantité de peinture pour des murs et un plafond intérieurs courants, à partir des mesures relevées et du rendement indiqué sur le pot. Hors peintures très absorbantes, supports neufs ou bruts, et hors calcul d’un devis professionnel avec pertes de chantier.",
+  "estimatesNote": "Comptez environ 25 min pour mesurer une pièce et poser le calcul, hors temps d’achat. Le budget correspond au nombre de pots retenu ; garde l’équivalent de 5 à 10 % de la quantité pour les retouches.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 59.1",
+      "title": "Travaux de bâtiment — Revêtements de peinture en feuil mince, semi-épais ou épais",
+      "scope": "Partie 1-1, cahier des clauses techniques types : décrit les systèmes de peinture et leurs conditions d’application, utiles pour comprendre l’influence du nombre de couches. Sert de repère, sans imposer de valeurs de consommation.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-591/travaux-de-batiment-revetements-de-peinture-en-feuil-mince-semiepais-ou-epa/fa183018/1371",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Obat — Combien de litres de peinture par m2 ? Méthode de calcul",
+      "url": "https://www.obat.fr/blog/combien-litres-peinture-m2/",
+      "note": "Détaille le calcul de surface d’un mur (longueur × hauteur) puis la déduction des ouvertures, la surface d’un plafond, le rendement par litre et le nombre de couches. Base de la méthode et de l’exemple de cette fiche.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Mètre ruban",
+    "Carnet et crayon, ou calculatrice",
+    "Échelle ou marchepied si le plafond est inclus"
+  ],
+  "materials": [
+    {
+      "name": "Peinture de finition choisie",
+      "quantity": "Calculée à partir de la surface, du rendement du pot et du nombre de couches"
+    },
+    {
+      "name": "Sous-couche éventuelle",
+      "quantity": "Sur la même surface si le support l’exige, avec son propre rendement"
+    },
+    {
+      "name": "Protections (bâche, ruban)",
+      "quantity": "Selon la pièce, indépendamment de la peinture"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Mesure la longueur et la hauteur des murs",
+      "description": "Relève la longueur au sol puis la hauteur du mur, et multiplie les deux pour obtenir la surface en mètres carrés. Fais le tour de la pièce et additionne les murs à peindre ; note chaque valeur plutôt que de tout retenir de tête."
+    },
+    {
+      "title": "Déduis les ouvertures",
+      "description": "Retire la surface des portes, fenêtres et grandes baies, calculée de la même façon. Sur une pièce très ouverte, cette déduction change réellement la quantité ; sur un mur plein, elle est nulle."
+    },
+    {
+      "title": "Ajoute le plafond si tu le peins",
+      "description": "La surface du plafond est simplement la longueur multipliée par la largeur de la pièce. Additionne-la au total des murs uniquement si le plafond reçoit la même peinture."
+    },
+    {
+      "title": "Relève le rendement sur le pot",
+      "description": "Cherche sur l’étiquette le rendement en mètres carrés par litre, qui dépend de la peinture et du support. Ce chiffre remplace toute valeur générique : deux produits de même teinte peuvent avoir des rendements différents."
+    },
+    {
+      "title": "Applique la formule avec le nombre de couches",
+      "description": "Divise la surface totale par le rendement pour obtenir les litres par couche, puis multiplie par le nombre de couches conseillé. Exemple : 40 m² à 10 m² par litre en deux couches donnent 40 ÷ 10 × 2 = 8 litres. Applique le même calcul séparément à la sous-couche si tu en utilises une."
+    },
+    {
+      "title": "Arrondis et prévois une marge",
+      "description": "Arrondis toujours au pot supérieur et ajoute une petite réserve pour les retouches et l’absorption irrégulière d’un support. Vérifie les pots disponibles et leurs formats, et garde de quoi refaire une zone sans racheter un pot, puis stocke le reste à l’abri du gel."
+    }
+  ],
+  "mistakes": [
+    "Oublier de déduire les portes et fenêtres, puis surestimer nettement la quantité nécessaire.",
+    "Se fier à un rendement approximatif au lieu de celui du pot acheté, et se retrouver à court dès la première couche.",
+    "Acheter la quantité juste sans marge, puis devoir racheter un pot d’un autre lot, avec un léger écart de teinte."
+  ],
+  "safety": [
+    "Stocke les pots debout, fermés, hors gel et hors de portée des enfants, loin d’une flamme ou d’une source de chaleur.",
+    "Aère la pièce où tu stockes et manipules la peinture, et porte des gants pour transvaser un reste.",
+    "Ne jette pas les restes dans l’évier ni les canalisations : rapporte-les en déchèterie avec les solvants et emballages souillés."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-17"
+}

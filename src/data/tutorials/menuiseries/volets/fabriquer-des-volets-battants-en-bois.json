@@ -1,0 +1,113 @@
+{
+  "id": "fabriquer-des-volets-battants-en-bois",
+  "title": "Fabriquer des volets battants en bois",
+  "description": "Des volets à lames se montent comme un panneau : lames jointives, deux traverses et une écharpe en diagonale à l’arrière, puis pentures et finition extérieure.",
+  "category": "menuiseries",
+  "topicPath": ["Volets"],
+  "relatedCategories": [
+    {
+      "category": "techniques",
+      "topicPath": ["Percer et fixer"]
+    },
+    {
+      "category": "finitions",
+      "topicPath": ["Peinture"]
+    }
+  ],
+  "difficulty": "Avancé",
+  "durationMinutes": 600,
+  "cost": null,
+  "image": "/images/tutoriels/fabriquer-des-volets-battants-en-bois.png",
+  "imageAlt": "La face arrière d’un volet en bois avec deux traverses, une écharpe diagonale et deux charnières, accompagnée d’une perceuse et d’une équerre, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Fabrication de deux volets battants simples à lames jointives, en bois, pour une fenêtre de dimensions courantes, avec ouvrant à la française. Hors volets persiennés ou à cadre, volets roulants et coulissants, baies de grande largeur, motorisation et remplacement d’une fenêtre elle-même.",
+  "estimatesNote": "Comptez deux à trois jours pour une paire de volets, séchage des couches de finition non compris. Le budget dépend de l’essence choisie et de la quincaillerie, qui pèse autant que le bois sur des volets de bonne taille.",
+  "sources": [
+    {
+      "title": "Lapeyre — Fabriquer des volets en bois : le guide complet",
+      "url": "https://www.lapeyre.fr/c/magazine/fabriquer-des-volets-en-bois-le-guide-complet/",
+      "note": "Décrit le choix des essences extérieures, la marge de 2 à 3 mm autour de la fenêtre, l’épaisseur de 22 à 27 mm des lames, l’assemblage par deux traverses horizontales renforcées d’une écharpe en diagonale, les avant-trous fraisés et le traitement du bois avant assemblage. Base de la méthode.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Système D — Réaliser des volets extérieurs en bois",
+      "url": "https://www.systemed.fr/menuiserie-exterieure/realiser-volets-exterieurs-bois,5342.html",
+      "note": "Traite la réalisation de volets extérieurs en bois, de la préparation des lames à la pose des pentures et au réglage de l’ouverture. Sert de contrôle sur l’assemblage et la quincaillerie.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Mètre, équerre et crayon",
+    "Scie circulaire ou scie égoïne pour les lames et les traverses",
+    "Perceuse avec forets à bois et fraise à bois",
+    "Ponceuse ou cale à poncer, grain moyen puis fin",
+    "Serre-joints",
+    "Tournevis et clé adaptés à la quincaillerie",
+    "Échafaudage ou marchepied stable pour la pose",
+    "Lunettes, gants et masque antipoussière"
+  ],
+  "materials": [
+    {
+      "name": "Lames de bois extérieur",
+      "quantity": "De quoi couvrir deux panneaux, en épaisseur 22 à 27 mm"
+    },
+    {
+      "name": "Tasseaux pour traverses et écharpe",
+      "quantity": "Deux traverses horizontales et une écharpe en diagonale par volet"
+    },
+    {
+      "name": "Vis à bois inoxydables",
+      "quantity": "Trois à quatre par assemblage de traverse et par écharpe"
+    },
+    {
+      "name": "Penture ou charnière à écharpe robuste",
+      "quantity": "Deux ou trois gonds par volet, adaptés au poids du panneau"
+    },
+    {
+      "name": "Targette ou loqueteau et poignée",
+      "quantity": "Un jeu par paire de volets"
+    },
+    {
+      "name": "Produit de traitement du bois",
+      "quantity": "Primaire fongicide et insecticide, plus peinture ou lasure extérieure"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Relève les mesures et vérifie l’ouverture",
+      "description": "Mesure la hauteur et la largeur de la fenêtre, et prévois 2 à 3 mm de jeu tout autour de chaque panneau pour que les volets s’ouvrent et se ferment librement. Vérifie aussi le sens d’ouverture et la place disponible contre le mur une fois les volets rabattus."
+    },
+    {
+      "title": "Choisis une essence extérieure et prépare le bois",
+      "description": "Prends une essence qui tient dehors : pin ou douglas traité, chêne, châtaignier, ou un bois exotique pour les expositions les plus dures. Applique un traitement fongicide et insecticide avant assemblage, y compris sur les chants et les faces qui seront cachées, car ce sont elles qui prennent l’eau en premier."
+    },
+    {
+      "title": "Découpe et ponce les lames",
+      "description": "Débite les lames à la longueur du volet, dans une épaisseur de 22 à 27 mm, et ponce légèrement chaque bord pour éviter les échardes avant d’assembler. Aligne-les jointives sur un plan de travail ; c’est le moment de retirer celles qui sont voilées ou trop irrégulières."
+    },
+    {
+      "title": "Assemble traverses et écharpe à l’arrière",
+      "description": "Maintiens les lames côte à côte et visse deux traverses horizontales sur la face arrière pour les solidariser. Ajoute une écharpe en diagonale entre les deux traverses, en formant un Z : c’est elle qui empêche le panneau de se déformer et de s’affaisser avec le temps."
+    },
+    {
+      "title": "Visse sans éclater le bois",
+      "description": "Fais des avant-trous légèrement plus petits que le diamètre des vis et fraise les têtes pour qu’elles s’enfoncent dans le bois, puis visse les traverses et l’écharpe. Vérifie l’équerrage du panneau avant de serrer définitivement, et rabote ou ponce les bords si nécessaire."
+    },
+    {
+      "title": "Pose la quincaillerie puis protège le bois",
+      "description": "Visse les pentures sur le volet et sur le cadre, alignées verticalement, en vérifiant à blanc que le volet s’ouvre et se ferme sans frotter. Termine par un primaire puis deux à trois couches de peinture ou de lasure extérieure, sur toutes les faces et les chants, et reprends une retouche tous les trois à cinq ans."
+    }
+  ],
+  "mistakes": [
+    "Prendre les mesures du seul cadre et poser des volets sans jeu, qui frottent au premier changement d’humidité.",
+    "Visser les traverses sans avant-trous ni fraisure, et faire éclater les lames ou laisser des têtes saillantes.",
+    "Se contenter de traiter les faces visibles en laissant les chants bruts, par lesquels l’eau pénètre et fait pourrir le panneau."
+  ],
+  "safety": [
+    "Porte lunettes, gants et masque pendant la découpe et le ponçage, et travaille sur des tréteaux à bonne hauteur plutôt qu’à même le sol.",
+    "Débranche la scie et la perceuse avant de changer de lame ou de foret, et ne retire jamais un copeau à la main près d’un outil en rotation.",
+    "Pour la pose en hauteur, utilise un échafaudage ou un marchepied stable et fais-toi aider à présenter le volet : un panneau plein est lourd et prend le vent."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-17"
+}

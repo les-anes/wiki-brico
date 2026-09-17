@@ -1,0 +1,110 @@
+{
+  "id": "poser-un-plancher-osb-sur-solives",
+  "title": "Poser un plancher OSB sur solives",
+  "description": "L’OSB, ou panneau de lamelles minces, longues et orientées, se visse directement sur les solives pour former le plancher porteur d’une pièce ou de combles. Voici comment vérifier ton solivage, choisir l’épaisseur et poser les panneaux sans grincement.",
+  "category": "structure",
+  "topicPath": ["Planchers"],
+  "relatedCategories": [
+    {
+      "category": "techniques",
+      "topicPath": ["Visser"]
+    }
+  ],
+  "journeys": ["amenager-des-combles"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 240,
+  "cost": null,
+  "image": "/images/tutoriels/poser-un-plancher-osb-sur-solives.png",
+  "imageAlt": "Un panneau de lamelles de bois orientées posé à plat sur des solives parallèles, avec une visseuse et des vis dessus, dessiné au trait et à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Pose de panneaux OSB en plancher porteur, vissés sur un solivage existant sain et vérifié, dans un local sec à humide occasionnel : plancher d’étage, de comble aménagé ou de mezzanine. Hors dimensionnement du solivage, choix des sections et des portées, reprise de solives déformées ou dégradées, plancher chauffant et revêtements de finition. La correspondance entre entraxe, épaisseur et charge se lit dans l’abaque du fabricant de panneaux.",
+  "estimatesNote": "Compte environ une demi-journée pour 20 m², hors acclimatation des panneaux. Le budget se limite aux panneaux, à la visserie et à la colle ; si le solivage doit être repris, le chantier change de nature et le budget aussi.",
+  "tools": [
+    "Mètre, crayon et cordeau",
+    "Visseuse-dévisseuse et embouts adaptés",
+    "Scie circulaire ou scie sauteuse",
+    "Niveau à bulle et règle de 2 m",
+    "Équerre et cale de guidage pour la scie",
+    "Gants, lunettes, masque et protection auditive"
+  ],
+  "materials": [
+    {
+      "name": "Panneaux OSB/3 pour plancher",
+      "quantity": "Surface de la pièce, plus environ 10 % de chute"
+    },
+    {
+      "name": "Vis à bois à filetage partiel, ou vis à plancher",
+      "quantity": "Longueur d’environ 2,5 fois l’épaisseur du panneau"
+    },
+    {
+      "name": "Colle à bois pour ambiance humide (classe D3 ou D4)",
+      "quantity": "Un cordon sur chaque solive, avant de poser le panneau"
+    },
+    {
+      "name": "Cales de 3 mm",
+      "quantity": "Pour les jeux entre panneaux et le long des murs"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Contrôle le solivage",
+      "description": "Vérifie que les solives sont saines, sèches et solidement fixées, sans jeu latéral ni bois dégradé. L’entraxe doit être régulier et le dessus des solives plan à moins de 5 mm sous une règle de 2 m. Reprends toute solive qui bouge, qui bombe ou qui vrille avant de poser le moindre panneau."
+    },
+    {
+      "title": "Choisis la classe et l’épaisseur",
+      "description": "Prends au minimum des panneaux OSB/3, prévus pour un milieu humide occasionnel : c’est la classe courante d’un plancher intérieur. C’est l’abaque du fabricant qui donne l’épaisseur, en croisant l’entraxe des solives et la charge prévue ; ne la choisis pas d’après les seuls panneaux disponibles en magasin. Vérifie le marquage CE et la référence NF EN 300 sur l’étiquette ou la tranche du panneau."
+    },
+    {
+      "title": "Calepine la pose",
+      "description": "Range d’abord les panneaux à plat dans la pièce, au moins 48 heures avant de les fixer : ils prennent l’humidité ambiante et travaillent avant d’être vissés. Le grand côté de chaque panneau vient ensuite en travers des solives, car c’est dans ce sens qu’il travaille le mieux. Chaque petite rive doit tomber sur une solive, et les joints de bout se décalent d’au moins une travée d’un rang à l’autre. Prépare les jeux : 3 mm entre deux panneaux et 10 mm le long des murs, en ajoutant 2 mm par mètre au-delà de 5 m de large."
+    },
+    {
+      "title": "Pose et cale les panneaux",
+      "description": "Démarre par l’angle le plus droit de la pièce et avance rangée par rangée, sans marcher sur les panneaux non fixés. Coupe les panneaux de rive à la scie, en reportant les mesures sur la face qui restera cachée. Garde le jeu de 3 mm entre deux panneaux avec des cales, et prévois trois appuis minimum sous chaque morceau, même une chute."
+    },
+    {
+      "title": "Fixe les panneaux",
+      "description": "Encolle la solive sur toute sa largeur avant de poser chaque panneau : la colle limite les grincements et solidarise le plancher avec son solivage. Visse ensuite le panneau sur chaque solive, tous les 150 mm en rive et tous les 300 mm sur les appuis intermédiaires, en gardant au moins 18 mm entre la vis et le bord du panneau. Laisse les têtes affleurer sans les enfoncer : une vis trop serrée ne tient plus dans le copeau."
+    },
+    {
+      "title": "Contrôle avant de recouvrir",
+      "description": "Retire les cales, puis vérifie la planéité, l’absence de jeu et le silence du plancher en marchant dessus. Contrôle que les jeux périphériques sont toujours là, qu’aucune tête de fixation ne dépasse et qu’aucun joint de bout ne porte dans le vide. Ne pose un revêtement de finition qu’une fois ces contrôles passés."
+    }
+  ],
+  "mistakes": [
+    "Laisser une petite rive de panneau tomber entre deux solives : ce bord libre fléchit puis casse sous le pied.",
+    "Serrer les panneaux contre les murs ou les uns contre les autres, alors que le panneau gonfle avec l’humidité et soulève le plancher.",
+    "Espacer les vis de plus de 30 cm en partie courante, ou prendre des vis trop courtes : le plancher grince et les fixations ressortent."
+  ],
+  "safety": [
+    "Manipule les panneaux à deux : un panneau de 2,5 m est lourd et prend le vent ; porte des gants et des chaussures fermées.",
+    "Circule sur les solives ou sur un panneau déjà fixé sur trois appuis, et ne t’appuie jamais sur une rive libre.",
+    "Porte lunettes, masque et protection auditive pendant les coupes, et éclaire correctement les combles avant d’y travailler.",
+    "Ne pose pas de plancher sur un solivage dont une solive bouge ou dont le bois est dégradé : reprends la structure d’abord."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-17",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 51.3 P1-1",
+      "title": "Travaux de bâtiment — Planchers en bois ou en panneaux à base de bois — Partie 1-1 : cahier des clauses techniques",
+      "url": "https://norminfo.afnor.org/norme/nf-p63-203/dtu-513-travaux-de-batiment-planchers-en-bois-ou-en-panneaux-a-base-de-bois-partie-1-1-cahier-des-clauses-techniques/101595",
+      "scope": "Norme NF P63-203, publiée le 20 novembre 2004 et confirmée le 30 novembre 2019, qui fixe les règles de mise en œuvre des planchers en bois ou en panneaux à base de bois, dont les planchers de panneaux OSB sur solivage. Fiche de présentation et sommaire de l’éditeur consultés, texte intégral non consulté : ne vaut pas validation de chaque prescription du chantier.",
+      "accessedAt": "2026-09-17"
+    }
+  ],
+  "sources": [
+    {
+      "title": "FCBA — Guide des applications des panneaux dans le bâtiment",
+      "url": "https://www.fcba.fr/wp-content/uploads/2025/10/guide-panneau-septembre-2025.pdf",
+      "note": "Guide technique de l’institut FCBA : classes OSB/2, OSB/3 et OSB/4 selon la norme NF EN 300, emploi en milieu sec ou humide, et usage des panneaux en plancher. Base du choix de la classe de panneau.",
+      "accessedAt": "2026-09-17"
+    },
+    {
+      "title": "AFNOR — NF EN 300 : panneaux de lamelles minces, longues et orientées (OSB)",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-en-300/panneaux-de-lamelles-minces-longues-et-orientees-osb-definitions-classifica/fa123245/28114",
+      "note": "Norme qui définit, classe et spécifie les panneaux OSB. Présentation de l’éditeur consultée, texte intégral non consulté : les caractéristiques du panneau acheté se lisent sur son marquage et sa fiche technique.",
+      "accessedAt": "2026-09-17"
+    }
+  ]
+}

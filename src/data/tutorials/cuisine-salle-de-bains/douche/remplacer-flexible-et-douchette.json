@@ -1,0 +1,96 @@
+{
+  "id": "remplacer-flexible-et-douchette",
+  "title": "Remplacer le flexible et la douchette d’une douche",
+  "description": "Deux raccords en un demi-pouce, un joint plat ou un peu de téflon, et une mise en eau de contrôle. Aucune intervention sur les canalisations murales.",
+  "category": "cuisine-salle-de-bains",
+  "topicPath": ["Douche"],
+  "relatedCategories": [
+    { "category": "plomberie", "topicPath": ["Robinetterie"] },
+    { "category": "techniques", "topicPath": ["Visser"] }
+  ],
+  "journeys": ["renover-une-salle-de-bains"],
+  "difficulty": "Débutant",
+  "durationMinutes": 30,
+  "cost": null,
+  "image": "/images/tutoriels/remplacer-flexible-et-douchette.png",
+  "imageAlt": "Une douchette chromée, un flexible de douche enroulé et deux joints plats noirs, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Remplacement d’un flexible de douche et de sa pomme, sur une robinetterie de douche en bon état dont la sortie est accessible. Hors robinetterie encastrée à raccord spécifique, fuite venant du corps du mitigeur, douchette à système propriétaire et intervention sur les canalisations murales.",
+  "estimatesNote": "Comptez environ 20 à 30 min, sans couper l’eau ni démonter la robinetterie. Le budget se limite à un flexible, une pomme de douche et un rouleau de ruban téflon.",
+  "sources": [
+    {
+      "title": "Bricolage Addict — Remplacer un flexible et une pomme de douche sans plombier : le guide en 20 minutes",
+      "url": "https://www.bricolage-addict.fr/remplacer-un-flexible-de-douche-et-une-pomme-de-douche-sans-plombier-le-guide-en-20-minutes/",
+      "note": "Détaille le filetage standard en un demi-pouce côté mitigeur et côté pomme, l’usage du ruban téflon trois à quatre tours dans le sens du filetage, la précaution sur les joints plats déjà intégrés et le test d’étanchéité progressif. Base de la méthode.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Aqualior — Remplacer un flexible de douche",
+      "url": "https://aqualior.com/blogs/actualites/remplacer-un-flexible-de-douche",
+      "note": "Rappelle les longueurs courantes de flexible et les précautions de serrage sur les raccords chromés. Sert de contrôle sur le choix du matériel.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Pince multiprise ou clé à molette",
+    "Chiffon sec",
+    "Cuvette ou torchon",
+    "Gants"
+  ],
+  "materials": [
+    {
+      "name": "Flexible de douche neuf",
+      "quantity": "Un, longueur standard de 150 cm, ou plus long selon la configuration"
+    },
+    {
+      "name": "Pomme de douche",
+      "quantity": "Une, avec raccord un demi-pouce"
+    },
+    {
+      "name": "Ruban téflon",
+      "quantity": "Un rouleau, quelques tours sur chaque filetage mâle"
+    },
+    {
+      "name": "Joint plat de rechange",
+      "quantity": "Un ou deux, au cas où l’ancien joint est écrasé"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prépare le matériel et le sol",
+      "description": "Pose un torchon ou une cuvette sous la sortie du mitigeur : il restera toujours un peu d’eau dans le flexible. Regroupe flexible, pomme, téflon et joints à portée de main pour ne pas laisser la sortie ouverte plus longtemps que nécessaire."
+    },
+    {
+      "title": "Vérifie le type de raccord",
+      "description": "La plupart des mitigeurs de douche ont une sortie filetée femelle en un demi-pouce, et les pommes du commerce utilisent le même standard. Si le raccord existant est un baïonnette, un écrou tournant ou un modèle propriétaire, photographie-le démonté avant d’acheter un remplacement."
+    },
+    {
+      "title": "Dévisse la pomme puis le flexible",
+      "description": "Commence par dévisser la pomme du flexible, souvent à la main. Dévisse ensuite le bas du flexible côté mitigeur en tenant un chiffon : si l’écrou résiste au calcaire, enroule le chiffon autour du chrome et aide-toi de la pince, sans mouvement brusque."
+    },
+    {
+      "title": "Prépare l’étanchéité",
+      "description": "Retire l’ancien joint plat s’il est resté collé sur la sortie : deux joints superposés provoquent presque toujours une fuite. Si les embouts du nouveau flexible n’ont pas de joint intégré, enroule trois à quatre tours de téflon sur les filetages mâles, dans le sens du filetage et en tirant légèrement sur le ruban."
+    },
+    {
+      "title": "Visse le flexible puis la pomme",
+      "description": "Visse d’abord le bas du flexible sur la sortie du mitigeur à la main, puis donne un quart de tour à la pince, chiffon protecteur interposé. Visse ensuite la pomme sur le haut du flexible, presque toujours à la main, en vérifiant que les filetages sont alignés avant de serrer."
+    },
+    {
+      "title": "Mets en eau et contrôle les deux raccords",
+      "description": "Ouvre le robinet progressivement et observe les deux raccords pendant une trentaine de secondes. La moindre perle d’eau signale un serrage insuffisant ou un joint mal placé : ferme, corrige et resserre, en augmentant la puissance de l’eau seulement quand tout est sec."
+    }
+  ],
+  "mistakes": [
+    "Laisser l’ancien joint plat en place et en ajouter un second, ce qui garantit une fuite à la mise en eau.",
+    "Compenser une fuite en serrant excessivement et fissurer l’embout chromé ou le corps du flexible.",
+    "Enrouler le ruban téflon dans le mauvais sens, ou sur un raccord qui possède déjà un joint intégré."
+  ],
+  "safety": [
+    "N’ouvre qu’un robinet à la fois pendant le test et reste devant la douche : une fuite non vue sur un raccord peu serré mouille vite le mur.",
+    "Ne force jamais sur une robinetterie chromée ou un raccord en plastique, et utilise un chiffon entre la pince et le métal pour éviter de marquer la finition.",
+    "Vérifie l’état du mur derrière la robinetterie avant de refermer : une trace d’humidité ancienne signale un joint à remplacer plutôt qu’un simple flexible."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-17"
+}

@@ -1,0 +1,117 @@
+{
+  "id": "poser-du-carrelage-au-sol",
+  "title": "Poser du carrelage au sol dans une petite pièce",
+  "description": "Un sol carrelé tient d’abord à sa préparation. Vérifie la planéité, cale le calepinage à sec, encolle par petites zones et joints une fois la colle prise.",
+  "category": "finitions",
+  "topicPath": ["Carrelage"],
+  "relatedCategories": [
+    { "category": "preparer-chantier", "topicPath": ["Métrés"] },
+    { "category": "cuisine-salle-de-bains", "topicPath": ["Crédences"] }
+  ],
+  "journeys": ["renover-une-salle-de-bains", "renover-une-chambre"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 480,
+  "cost": null,
+  "image": "/images/tutoriels/poser-du-carrelage-au-sol.png",
+  "imageAlt": "Une rangée de carreaux alignés au cordeau, avec des croisillons, un peigne à colle et un seau de mortier, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Pose collée d’un carrelage de sol dans une pièce sèche de faible surface, sur support sain et préparé, en pose droite ou décalée classique. Hors receveur de douche et pièce d’eau avec étanchéité sous carrelage, chauffage au sol, pose scellée au mortier, pose diagonale à motifs et reprise des joints traitée dans une fiche à part.",
+  "estimatesNote": "Comptez une grosse journée pour une petite pièce, séchage avant jointoiement non compris. Le budget dépend surtout du carreau choisi, puis de la colle, du joint et du ragréage éventuel.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 52.2",
+      "title": "Travaux de bâtiment — Pose collée des revêtements céramiques et assimilés, pierres naturelles",
+      "scope": "Partie 1-1, cahier des clauses techniques types : définit les exigences de support, de calepinage, de collage et de jointoiement des revêtements céramiques collés. Sert de repère pour la préparation et la mise en œuvre, sans reproduire une prescription de chantier.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-522/travaux-de-batiment-pose-collee-des-revetements-ceramiques-et-assimiles-pie/fa166651/1037",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chantiers Facile — Poser du carrelage au sol : guide du débutant",
+      "url": "https://chantiers-facile.fr/blog/poser-carrelage-sol-guide-debutant",
+      "note": "Donne les critères de choix d’un carreau de sol, les tolérances de planéité du support, la méthode de ragréage, les principes de calepinage et le double encollage obligatoire pour les formats supérieurs à 30 × 30 cm. Base de la préparation et du calepinage.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Briker — Poser du carrelage au sol : la méthode complète",
+      "url": "https://www.briker.fr/aktu-tuto/poser-du-carrelage-au-sol",
+      "note": "Décrit la pose zone par zone, le contrôle du niveau carreau par carreau, la marge de 10 % pour les coupes, le joint de dilatation périphérique et le travail en reculant vers la sortie. Sert de contrôle sur le déroulé du chantier.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Règle de maçon et niveau à bulle ou niveau laser",
+    "Cordeau traceur, mètre, crayon et équerre",
+    "Peigne à colle cranté adapté au format du carreau",
+    "Carrelette ou coupe-carreaux électrique",
+    "Maillet caoutchouc et batte de carreleur",
+    "Truelle, auge et malaxeur pour la colle",
+    "Raclette à joint et éponge",
+    "Genouillères, lunettes, gants et masque"
+  ],
+  "materials": [
+    {
+      "name": "Carreaux de sol",
+      "quantity": "Surface à couvrir plus 10 % pour les coupes et la casse"
+    },
+    {
+      "name": "Mortier-colle adapté au support et au format",
+      "quantity": "Selon la surface et la taille du peigne"
+    },
+    {
+      "name": "Croisillons",
+      "quantity": "Environ 20 à 30 par mètre carré, au format du joint visé"
+    },
+    {
+      "name": "Primaire d’accrochage",
+      "quantity": "Pour toute la surface si le support est poreux ou fermé"
+    },
+    {
+      "name": "Mortier de ragréage autolissant",
+      "quantity": "Uniquement si la planéité dépasse la tolérance"
+    },
+    {
+      "name": "Mortier de jointoiement",
+      "quantity": "Selon la surface et la largeur des joints"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Contrôle le support à la règle",
+      "description": "Le sol doit être propre, sec, sain et plan : passe une règle de maçon sur toute la surface et repère les creux et les bosses. Un écart de quelques millimètres suffit à faire bouger les carreaux et à rendre la pose impossible à niveler ; il faut alors un ragréage autolissant."
+    },
+    {
+      "title": "Prépare la surface",
+      "description": "Aspire soigneusement et applique un primaire d’accrochage si le support est poreux ou au contraire très fermé, comme un ancien carrelage. Sur un carrelage existant, vérifie au maillet qu’aucun carreau ne sonne creux et ponce la surface pour créer de l’accroche avant de primer."
+    },
+    {
+      "title": "Cale le calepinage à sec",
+      "description": "Trace l’axe principal de la pièce et pose une rangée de carreaux à blanc le long de cet axe, croisillons en place, pour voir où tombent les coupes. Si la bande de rive fait moins d’un demi-carreau, décale le départ d’un demi-carreau : c’est la seule décision qui évite une coupe ridicule le long du mur le plus visible."
+    },
+    {
+      "title": "Encollé par petites zones",
+      "description": "Étale le mortier-colle au peigne cranté en peignant toujours dans le même sens, sur environ un mètre carré à la fois : au-delà, la colle croûte et perd son adhérence. Pour les formats à partir de 30 × 30 cm, encolle aussi le dos du carreau, ce double encollage supprime les vides sous le carreau."
+    },
+    {
+      "title": "Pose et contrôle chaque carreau",
+      "description": "Pose le carreau d’un léger va-et-vient pour chasser l’air, tapote au maillet, insère les croisillons et vérifie le niveau au fur et à mesure. Un carreau qui dépasse se reprend dans la minute, alors qu’après la prise de la colle il faut le déposer et recommencer."
+    },
+    {
+      "title": "Fais les coupes puis les joints",
+      "description": "Réalise les coupes de rive une fois le champ central posé, en travaillant en reculant vers la sortie pour ne pas marcher sur les carreaux frais. Laisse la colle prendre, retire les croisillons, puis monte les joints à la raclette et nettoie à l’éponge bien essorée avant de lustrer au chiffon sec."
+    }
+  ],
+  "mistakes": [
+    "Poser sur un sol non plan en espérant rattraper à la colle, et obtenir des carreaux qui bougent et des joints irréguliers.",
+    "Encoller une trop grande surface d’un coup et poser sur une colle déjà croûtée, qui n’adhère plus.",
+    "Bloquer le carrelage contre les murs sans joint de dilatation périphérique, et le voir se soulever à la première variation de température."
+  ],
+  "safety": [
+    "Porte genouillères pour travailler au sol, et des lunettes pendant les coupes : la carrelette projette des éclats.",
+    "Mélange la colle et le ragréage dans un local aéré, en respectant les proportions du fabricant et le port du masque contre la poussière.",
+    "Laisse les couloirs de circulation libres et protège les passages : une auge de colle renversée sur un sol lisse fait chuter."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-17"
+}

@@ -1,0 +1,116 @@
+{
+  "id": "monter-une-petite-cloison-en-placo",
+  "title": "Monter une petite cloison en plaques de plâtre",
+  "description": "Une cloison non porteuse se monte sur ossature métallique : rail au sol, rail au plafond, montants tous les 60 cm, laine minérale puis plaques vissées.",
+  "category": "cloisons",
+  "topicPath": ["Placo"],
+  "relatedCategories": [
+    { "category": "menuiseries", "topicPath": ["Quincaillerie"] },
+    { "category": "finitions", "topicPath": ["Peinture"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 480,
+  "cost": null,
+  "image": "/images/tutoriels/monter-une-petite-cloison-en-placo.png",
+  "imageAlt": "Une ossature métallique de cloison avec ses rails et montants dressés entre le sol et le plafond, une plaque de plâtre posée contre le mur à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Montage d’une cloison non porteuse en plaque de plâtre sur ossature métallique, en pièce sèche, sans porte ni réseau encastré. Hors cloison porteuse, ouverture à créer, passage de réseaux, pièce humide et doublage d’un mur existant.",
+  "estimatesNote": "Comptez environ une journée pour une cloison de quelques mètres, sans les joints. Le budget dépend de la surface, de l’épaisseur de l’isolant et du nombre de plaques ; la quincaillerie d’ossature reste peu coûteuse.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 25.41",
+      "title": "Travaux de bâtiment — Ouvrages en plaques de plâtre (plaques à faces cartonnées)",
+      "scope": "Partie 1-1, cahier des clauses techniques types : encadre la mise en œuvre des ouvrages en plaques de plâtre sur ossature, y compris les fixations et les jeux en périphérie. Sert de repère sur les exigences de montage, sans reproduire une prescription de chantier.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-2541-p11/travaux-de-batiment-ouvrages-en-plaques-de-platre-plaques-a-faces-cartonnee/fa194671/321485",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Leroy Merlin — Comment monter une cloison en plaques de plâtre sur ossature métallique",
+      "url": "https://www.leroymerlin.fr/tutos/gros-oeuvre/comment-monter-une-cloison-en-plaques-de-platre-sur-ossature-metallique.html",
+      "note": "Décrit le montage pas à pas sur ossature métallique, du tracé des rails à la pose des plaques. Sert de contrôle sur l’ordre des opérations.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Placo — Comment monter une cloison en plaques de plâtre",
+      "url": "https://www.placo.fr/comment-monter-une-cloison-en-plaques-de-platre",
+      "note": "Présente les principes de montage d’une cloison sur ossature, la constitution des parements et le traitement des joints. Sert de repère sur la composition de l’ouvrage.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Niveau à bulle, grand niveau ou niveau laser",
+    "Mètre, cordeau et crayon",
+    "Perceuse-visseuse et visseuse à plaque",
+    "Cisaille à tôle ou scie à métaux pour couper les profilés",
+    "Cutter et règle pour découper les plaques",
+    "Marteau et pince",
+    "Masque, lunettes et gants"
+  ],
+  "materials": [
+    {
+      "name": "Rails et montants métalliques",
+      "quantity": "Deux rails à la longueur de la cloison, montants tous les 60 cm environ"
+    },
+    {
+      "name": "Plaques de plâtre",
+      "quantity": "Deux fois la surface de la cloison, une épaisseur par face"
+    },
+    {
+      "name": "Laine minérale",
+      "quantity": "La surface de la cloison, à l’épaisseur de l’ossature"
+    },
+    {
+      "name": "Vis à plaque de plâtre",
+      "quantity": "Environ une vis tous les 25 à 30 cm sur chaque montant"
+    },
+    {
+      "name": "Bande à joint et enduit à joints",
+      "quantity": "Pour le traitement des joints après montage"
+    },
+    {
+      "name": "Mastic acoustique",
+      "quantity": "Pour les jonctions en périphérie, si la cloison doit être désolidarisée"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Trace l’axe de la cloison",
+      "description": "Trace au sol et au plafond l’axe exact de la cloison, à la même cote sur toute la longueur, et reporte-le au cordeau ou au laser. Vérifie l’équerre avec les murs adjacents avant de fixer quoi que ce soit : une cloison tracée de travers se voit du premier coup d’œil."
+    },
+    {
+      "title": "Fixe les rails au sol et au plafond",
+      "description": "Fixe le rail bas et le rail haut en les alignant sur le tracé, avec des chevilles adaptées au support, tous les 50 cm environ. Laisse un léger jeu sous le plafond si la structure doit travailler, et intercale un mastic acoustique en périphérie si tu veux limiter la transmission du bruit."
+    },
+    {
+      "title": "Mets les montants en place",
+      "description": "Emboîte les montants dans les rails en les espaçant d’environ 60 cm d’axe en axe, et place-en à quelques centimètres des murs existants. Oriente l’ouverture des montants du même côté pour faciliter le passage des gaines, et visse chaque montant sur les rails."
+    },
+    {
+      "title": "Dresse et contrôle l’aplomb",
+      "description": "Vérifie l’aplomb de chaque montant au niveau et reprends ceux qui ne le sont pas avant de fermer la cloison. Une ossature légèrement de travers se rattrape au mastic, mais une ossature franchement de biais oblige à tout reprendre après la pose des plaques."
+    },
+    {
+      "title": "Mets l’isolant puis visse la première face",
+      "description": "Glisse la laine minérale entre les montants, sans la comprimer, puis visse la première face de plaques en commençant par le centre et en allant vers les bords. Espace les vis d’environ 25 à 30 cm et enfonce-les juste sous la surface, sans percer le carton."
+    },
+    {
+      "title": "Ferme la seconde face et traite les joints",
+      "description": "Visse la seconde face en décalant les joints par rapport à la première : deux joints face à face fragilisent la cloison. Termine par le traitement des joints à la bande et à l’enduit, en laissant sécher entre les passes avant de poncer."
+    }
+  ],
+  "mistakes": [
+    "Tracer la cloison sans vérifier l’équerre avec les murs adjacents, et se retrouver avec une pièce en biais.",
+    "Aligner les joints des deux faces et créer une ligne de faiblesse qui fissure à la moindre contrainte.",
+    "Enfoncer les vis trop profondément et percer le carton, ce qui rend la fixation inopérante."
+  ],
+  "safety": [
+    "Repère les gaines et canalisations dans le sol et le plafond avant de percer, et coupe l’alimentation si un circuit passe à proximité.",
+    "Porte masque, lunettes et gants pour couper les profilés et les plaques : les bords de tôle et de plaque coupée sont tranchants.",
+    "Manipule les plaques à deux pour les grandes dimensions, et ne laisse jamais une plaque en équilibre contre un mur pendant le chantier."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-17"
+}

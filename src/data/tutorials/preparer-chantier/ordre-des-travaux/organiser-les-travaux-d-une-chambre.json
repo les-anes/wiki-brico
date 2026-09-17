@@ -1,0 +1,97 @@
+{
+  "id": "organiser-les-travaux-d-une-chambre",
+  "title": "Organiser les travaux pour rénover une chambre",
+  "description": "Une rénovation de chambre se conduit dans un ordre précis : protection, dépose, réseaux, cloisons, sol, peinture, finitions. Chaque étape prépare la suivante.",
+  "category": "preparer-chantier",
+  "topicPath": ["Ordre des travaux"],
+  "relatedCategories": [
+    { "category": "cloisons", "topicPath": ["Placo"] },
+    { "category": "finitions", "topicPath": ["Peinture"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 90,
+  "cost": null,
+  "image": "/images/tutoriels/organiser-les-travaux-d-une-chambre.png",
+  "imageAlt": "Un planning à bandes colorées, un crayon, un niveau et du ruban de masquage sur une caisse en bois dans une pièce à rénover, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Établissement de l’ordre des travaux d’une rénovation de chambre de particulier, pièce sèche d’un logement habité, avec des gestes réalisés soi-même. Hors gros œuvre et ouverture dans un mur porteur, reprise de charpente ou de toiture, désamiantage, et coordination de plusieurs entreprises sur un chantier complet.",
+  "estimatesNote": "Comptez une à deux heures de repérage et de mise au point du planning, avant tout achat. Ce budget de préparation est du temps, pas du matériel ; il évite surtout de reposer ce qui vient d’être terminé.",
+  "sources": [
+    {
+      "title": "Travaux.com — Rénovation de maison : dans quel ordre réaliser les travaux",
+      "url": "https://www.travaux.com/construction-renovation-maison/articles/renovation-de-maison-ordre-realiser-travaux",
+      "note": "Énonce la séquence gros œuvre, réseaux techniques, isolation, ventilation, chauffage, cloisons, revêtements puis finitions, et explique pourquoi les réseaux passent avant tout ce qui ferme les murs. Base de la chronologie retenue.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Toutpourvostravaux — L’ordre des travaux de rénovation",
+      "url": "https://www.toutpourvostravaux.fr/ordre-des-travaux-de-renovation/",
+      "note": "Détaille la même logique en ajoutant le diagnostic initial, les autorisations préalables, la notion de mise hors d’eau et hors d’air, et le repérage des réseaux avant toute démolition. Sert de contrôle sur les étapes de préparation.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Mètre et carnet ou plan de la pièce",
+    "Crayon et ruban de masquage pour repérer les zones",
+    "Appareil photo ou téléphone pour documenter l’état initial",
+    "Calculatrice ou tableur pour le budget",
+    "Lampe de chantier"
+  ],
+  "materials": [
+    {
+      "name": "Bâches ou polyane épais",
+      "quantity": "De quoi couvrir le sol de la pièce et les circulations"
+    },
+    {
+      "name": "Ruban de masquage large",
+      "quantity": "Plusieurs rouleaux pour tenir les protections"
+    },
+    {
+      "name": "Sacs ou benne à gravats",
+      "quantity": "Selon ce qui doit être déposé"
+    },
+    {
+      "name": "Cartons d’emballage",
+      "quantity": "Pour évacuer et protéger ce qui reste dans la pièce"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fais l’état des lieux avant de décider",
+      "description": "Relève les dimensions, photographie chaque mur, ouvre le tableau électrique et note les points de déperdition, les traces d’humidité et les fissures. Ce relevé décide de l’ordre réel : un mur qui moisit cache parfois un défaut d’étanchéité à traiter bien avant la peinture."
+    },
+    {
+      "title": "Classe les travaux par nature",
+      "description": "Sépare ce qui touche la structure et l’enveloppe, ce qui passe dans les murs, ce qui ferme les espaces et ce qui les décore. Écris cette liste : tant qu’elle n’est pas posée, chaque envie nouvelle risque de casser l’ordre et d’ajouter une reprise."
+    },
+    {
+      "title": "Traite les réseaux avant tout ce qui ferme",
+      "description": "Électricité, plomberie et gaines de ventilation se posent avant les cloisons, l’isolation et les revêtements, sinon il faut casser ce qui vient d’être fini. C’est aussi le moment de fixer l’emplacement des prises et des points lumineux, en te référant à la fiche sur le remplacement d’une prise murale."
+    },
+    {
+      "title": "Monte les cloisons et prépare les supports",
+      "description": "Une cloison en plaques de plâtre vient après les réseaux, puis viennent les enduits et les bandes à joint : la fiche sur la bande à joint décrit ce geste. Évite de commander le sol avant d’avoir un support plat, car c’est la planéité qui décide du ragréage."
+    },
+    {
+      "title": "Garde les travaux sales avant les travaux propres",
+      "description": "Ponçage, carrelage et ragréage produisent poussière et eau : ils précèdent la peinture et la pose des revêtements décoratifs. Pour un mur à repeindre, la fiche sur la peinture sans bavures donne l’ordre des couches ; ponce avant de nettoyer, jamais l’inverse."
+    },
+    {
+      "title": "Termine par les finitions dans l’ordre",
+      "description": "Peins plafond puis murs avant de poser le sol ou le papier peint, et repose les plinthes en dernier : c’est l’ordre qui salit le moins ce qui est déjà posé. Contrôle à chaque fin d’étape que le support est sec et propre, et prévois les temps de séchage avant de passer à la suivante."
+    }
+  ],
+  "mistakes": [
+    "Commencer par les finitions parce qu’elles se voient, puis devoir casser un mur pour passer un câble ou une gaine.",
+    "Acheter les matériaux avant d’avoir relevé la pièce, et se retrouver avec un carrelage commandé pour un support qui exige un ragréage.",
+    "Enchaîner les étapes sans respecter les temps de séchage, ce qui compromet l’adhérence de ce qui suit."
+  ],
+  "safety": [
+    "Coupe l’alimentation des circuits concernés et repère les passages de gaines et de canalisations avant toute démolition ou tout percement.",
+    "Aère la pièce pendant les travaux et porte masque et lunettes dès qu’il y a de la poussière, notamment au ponçage et à la dépose.",
+    "Dégage les circulations et stocke les gravats sans surcharger un plancher ancien, en portant les charges lourdes à deux."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-17"
+}

@@ -1,0 +1,105 @@
+{
+  "id": "choisir-sa-peinture",
+  "title": "Choisir sa peinture selon la pièce et le support",
+  "description": "Mat, velours ou satiné ? Plutôt que de partir de la couleur, part du support et de l’usage de la pièce, puis vérifie sur l’étiquette que la peinture et la sous-couche conviennent.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [
+    { "category": "techniques", "topicPath": ["Poncer"] },
+    { "category": "cloisons", "topicPath": ["Enduits"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 30,
+  "cost": null,
+  "image": "/images/tutoriels/choisir-sa-peinture.png",
+  "imageAlt": "Trois échantillons de peinture rose, verte et bleue, accompagnés d’un pot et d’un pinceau, au crayon et à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Choix d’une peinture intérieure et de sa sous-couche pour des murs et plafonds courants en pièce sèche ou humide : plâtre, enduit, plaques de plâtre ou ancienne peinture saine et adhérente. Hors boiseries, façades, produits techniques particuliers (anti-humidité, dépolluante, anti-fumée) et supports incompatibles comme un papier peint ou un plâtre friable.",
+  "estimatesNote": "Comptez environ 30 min pour relever les supports, mesurer les surfaces et comparer les étiquettes, hors temps d’achat. Le budget dépend entièrement du produit choisi ; les repères de cette fiche ne visent aucune marque et n’incluent ni les outils ni les protections.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 59.1",
+      "title": "Travaux de bâtiment — Revêtements de peinture en feuil mince, semi-épais ou épais",
+      "scope": "Partie 1-1, cahier des clauses techniques types : définit les supports admissibles, les systèmes de peinture et les conditions d’exécution. Sert ici de repère sur le vocabulaire et la compatibilité, sans reproduire une prescription de chantier.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-591/travaux-de-batiment-revetements-de-peinture-en-feuil-mince-semiepais-ou-epa/fa183018/1371",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Théodore Peinture — Mat, velours ou satin : quelle finition choisir ?",
+      "url": "https://www.theodore-peinture.fr/pages/conseils-finitions-peinture",
+      "note": "Fabricant : le mat atténue les défauts d’un support peu sollicité, le velours résiste mieux à l’usage et s’entretient plus facilement, le satiné lessivable convient aux pièces humides ou très fréquentées. Repères repris pour associer finition et pièce.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Guide-Bâtiment — Peinture mate, satinée ou velours : que choisir ?",
+      "url": "https://www.guide-batiment.fr/peinture-mate-satinee-velours/",
+      "note": "Compare les trois finitions sur la résistance aux taches et aux chocs, la consommation de lumière et la tolérance aux défauts. Sert à nuancer le choix au-delà du seul aspect esthétique.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Mètre ruban et carnet pour les surfaces",
+    "Lampe à pile pour contrôler le support en lumière rasante",
+    "Vieux tournevis ou spatule pour tester l’adhérence d’une ancienne peinture",
+    "Gants et lunettes si tu vérifies un revêtement douteux"
+  ],
+  "materials": [
+    {
+      "name": "Échantillons de peinture (nuancier ou petits pots d’essai)",
+      "quantity": "Un par finition et par teinte envisagée, pour comparer chez soi"
+    },
+    {
+      "name": "Peinture intérieure compatible avec le support, en teinte définitive",
+      "quantity": "À calculer selon la surface et le rendement du pot"
+    },
+    {
+      "name": "Sous-couche adaptée (support absorbant, ancienne couleur ou bois)",
+      "quantity": "Selon le support identifié et la notice de la peinture de finition"
+    },
+    {
+      "name": "Ruban de masquage et bâche de protection",
+      "quantity": "Pour les essais et la mise en œuvre, selon la zone"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Identifie le support",
+      "description": "Note ce qui se trouve sous la future peinture : plâtre, enduit, plaque de plâtre, béton ou ancienne peinture. Gratte un coin en lumière rasante : si la couche part en écailles ou si le support est friable ou humide, il faut d’abord le reprendre, car aucune peinture ne tiendra durablement dessus."
+    },
+    {
+      "title": "Relie chaque pièce à son usage",
+      "description": "Distingue les pièces sèches et peu fréquentées (chambre, salon) des pièces humides ou très sollicitées (cuisine, salle de bains, entrée, couloir). C’est l’usage réel, plus que la pièce elle-même, qui commande la résistance et l’entretien nécessaires."
+    },
+    {
+      "title": "Choisis la finition",
+      "description": "Prends du mat pour atténuer les petits défauts d’un support imparfait en pièce sèche, du velours comme compromis entre l’aspect mat et la facilité d’entretien, du satiné lessivable pour les pièces humides et les passages. Le plafond se traite souvent en mat, plus tolérant en lumière rasante."
+    },
+    {
+      "title": "Choisis le type de peinture et la sous-couche",
+      "description": "Repère sur l’étiquette s’il s’agit d’une peinture à l’eau (acrylique), la plus courante et la moins odorante, ou d’une peinture solvant réservée aux usages qu’elle mentionne. Prépare une sous-couche si le support est absorbant, si tu recouvres une couleur foncée ou si la notice la demande."
+    },
+    {
+      "title": "Vérifie rendement, quantité et conditions",
+      "description": "Lis le rendement annoncé (surface couverte par litre), le nombre de couches conseillé et le délai de séchage entre couches. Vérifie aussi la plage de température et d’hygrométrie : ces valeurs servent directement à acheter la bonne quantité et à choisir le moment de peindre."
+    },
+    {
+      "title": "Teste avant de tout acheter",
+      "description": "Applique un essai de la teinte sur une zone représentative, laisse sécher complètement et regarde le résultat à la lumière du jour et le soir. Compare ensuite les étiquettes de deux produits équivalents et achète la quantité calculée, en gardant un petit reste pour les retouches."
+    }
+  ],
+  "mistakes": [
+    "Choisir la teinte avant la finition, puis acheter un satiné dans une pièce où le mat suffisait, ou l’inverse.",
+    "Peindre sur un support humide, friable ou couvert d’un papier peint sans reprendre d’abord la surface.",
+    "Négliger la sous-couche en recouvrant une couleur vive ou un support absorbant, puis multiplier les couches de finition."
+  ],
+  "safety": [
+    "Ouvre les fenêtres et aère pendant les essais comme pendant la peinture : les solvants et certains additifs irritent les voies respiratoires.",
+    "Porte des gants pour manipuler peinture et sous-couche, et des lunettes si tu grattes un ancien revêtement.",
+    "Avant de gratter un mur ancien, vérifie que le revêtement ne contient pas de plomb ni d’amiante ; dans le doute, ne produis pas de poussière et fais identifier le support."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-17"
+}

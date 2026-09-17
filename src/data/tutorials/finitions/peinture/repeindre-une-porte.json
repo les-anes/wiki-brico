@@ -1,0 +1,108 @@
+{
+  "id": "repeindre-une-porte",
+  "title": "Repeindre une porte intérieure sans traces",
+  "description": "Une porte réussie se démonte, se dégraisse et se peint par couches fines, panneau après panneau. Prépare la surface, peins dans le bon ordre et laisse sécher à plat.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [
+    { "category": "menuiseries", "topicPath": ["Portes"] },
+    { "category": "techniques", "topicPath": ["Poncer"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 120,
+  "cost": null,
+  "image": "/images/tutoriels/repeindre-une-porte.png",
+  "imageAlt": "Une porte intérieure sur deux tréteaux, partiellement peinte en blanc, avec un petit rouleau, un pinceau et un pot de peinture, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Repeinte d’une porte intérieure en bois, plane ou moulurée, déjà peinte ou vernie, dans une pièce sèche et fermée. Hors porte vitrée à recoller, remise à blanc complète, boiseries extérieures, porte d’entrée et porte à recouper.",
+  "estimatesNote": "Comptez environ 2 h par face, hors démontage et séchage entre les couches, plus le temps de remontage des accessoires. Le budget dépend de la peinture, d’une sous-couche d’accrochage et du matériel de peinture.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 59.1",
+      "title": "Travaux de bâtiment — Revêtements de peinture en feuil mince, semi-épais ou épais",
+      "scope": "Partie 1-1, cahier des clauses techniques types : encadre la préparation du support et l’application du système de peinture. Sert de repère sur les exigences de préparation d’un support déjà peint, sans reproduire une prescription de chantier.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-591/travaux-de-batiment-revetements-de-peinture-en-feuil-mince-semiepais-ou-epa/fa183018/1371",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Refactio — Peindre des portes intérieures sans traces : ma méthode",
+      "url": "https://refactio.fr/peinture-portes-interieures/",
+      "note": "Récit détaillé des erreurs classiques, peinture qui sèche avec des traces, zones brillantes et mates, et de la méthode qui les évite, notamment la préparation et la finesse des couches. Base des étapes d’application.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Plus que Pro — Peindre une porte sans traces de rouleau : méthode et erreurs à éviter",
+      "url": "https://magazine.plus-que-pro.fr/habitat/peinture/peinture-interieure/peindre-une-porte-sans-traces-de-rouleau-methode-et-erreurs-a-eviter/",
+      "note": "Détaille le geste du rouleau sur une porte, l’ordre de peinture des panneaux et les causes des traces. Sert de contrôle sur l’application et les reprises.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Tournevis pour démonter la porte et ses accessoires",
+    "Pinceau à rechampir et petite brosse à moulures",
+    "Mini-rouleau à poils courts ou laqueur",
+    "Cale à poncer et papier abrasif fin",
+    "Chiffons et dégraissant adapté",
+    "Cales ou tréteaux pour poser la porte à plat",
+    "Gants, lunettes et masque pendant le ponçage"
+  ],
+  "materials": [
+    {
+      "name": "Peinture pour boiseries ou laque",
+      "quantity": "Environ 0,5 à 1 litre par face selon la teinte et les couches"
+    },
+    {
+      "name": "Sous-couche d’accrochage",
+      "quantity": "Selon la surface à couvrir, sur les deux faces"
+    },
+    {
+      "name": "Dégraissant et papier abrasif fin",
+      "quantity": "Pour préparer la surface avant peinture"
+    },
+    {
+      "name": "Ruban de masquage et bâche",
+      "quantity": "Pour protéger les vitrages, poignées et le sol"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Démonte la porte et ses accessoires",
+      "description": "Retire la porte de ses charnières et pose-la à plat sur deux cales ou des tréteaux. Démonte poignée, boutons, targettes et plaques : peindre autour des accessoires en place laisse toujours une bavure ou une vis noyée de peinture."
+    },
+    {
+      "title": "Dégraisse et ponce la surface",
+      "description": "Dégraisse toute la porte, particulièrement autour de la poignée où le gras de la main s’accumule, puis ponce légèrement au papier fin pour matifier et accrocher. Essuie la poussière : la peinture ne tient pas sur un support gras ou glacé."
+    },
+    {
+      "title": "Applique une sous-couche",
+      "description": "Passe une sous-couche d’accrochage sur les deux faces et les chants, en couche fine et régulière. Cette étape change tout sur une porte déjà vernie ou peinte en brillant, où la finition seule aurait du mal à adhérer."
+    },
+    {
+      "title": "Peins les panneaux puis les montants",
+      "description": "Commence par les moulures et les panneaux au pinceau, en suivant le sens du bois, puis lisse au mini-rouleau sans repasser. Peins ensuite les montants, traverses et chants, en tirant la peinture vers les zones déjà peintes pour fondre les raccords."
+    },
+    {
+      "title": "Applique une seconde couche fine",
+      "description": "Après séchage, repasse une couche fine plutôt que d’épaissir : deux couches légères donnent une surface lisse, là où une couche épaisse coule dans les moulures et laisse des surépaisseurs. Attends le délai de recouvrement indiqué sur le pot."
+    },
+    {
+      "title": "Remonte et contrôle à la lumière",
+      "description": "Une fois la peinture bien sèche, remonte les accessoires et repose la porte sur ses charnières. Contrôle à la lumière rasante et à hauteur d’œil : les manques et les coulures se voient surtout sur les chants et au bas des montants, à reprendre avant de ranger."
+    }
+  ],
+  "mistakes": [
+    "Peindre sans dégraisser ni poncer, puis voir la peinture s’écailler ou glisser sur la surface.",
+    "Charger les couches et faire couler la peinture dans les moulures, impossible à rattraper sans ponçage.",
+    "Peindre la porte en place et laisser une bavure de peinture coller le chant au dormant ou au joint."
+  ],
+  "safety": [
+    "Aère la pièce pendant la peinture et le séchage, et porte un masque et des lunettes pendant le ponçage et la manipulation des produits.",
+    "Pose la porte à plat sur des cales stables plutôt que debout : une porte qui bascule est lourde et dangereuse.",
+    "Si la porte est ancienne, vérifie que la peinture ne contient pas de plomb avant de la poncer ; dans le doute, ne produis pas de poussière."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-17"
+}

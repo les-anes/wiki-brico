@@ -1,0 +1,108 @@
+{
+  "id": "repeindre-un-mur-fonce-en-clair",
+  "title": "Repeindre un mur foncé en clair",
+  "description": "Les teintes claires laissent transparaître le foncé. Dégraisse, applique une sous-couche couvrante puis des couches fines croisées, plutôt que d’épaissir la finition.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [
+    { "category": "cloisons", "topicPath": ["Enduits"] },
+    { "category": "techniques", "topicPath": ["Poncer"] }
+  ],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 150,
+  "cost": null,
+  "image": "/images/tutoriels/repeindre-un-mur-fonce-en-clair.png",
+  "imageAlt": "Un rouleau applique une peinture claire sur un mur qui laisse encore voir une bande de teinte foncée, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Passage d’un mur intérieur sec d’une teinte foncée ou saturée vers une teinte claire, sur ancienne peinture saine et adhérente. Hors mur peint depuis moins de quelques semaines, peinture écaillée, farinante ou décollée, et support humide à traiter.",
+  "estimatesNote": "Comptez environ 2 h par couche pour une pièce courante, avec souvent une sous-couche et deux couches de finition. Le budget dépend surtout du pouvoir couvrant de la peinture et de la sous-couche choisies.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 59.1",
+      "title": "Travaux de bâtiment — Revêtements de peinture en feuil mince, semi-épais ou épais",
+      "scope": "Partie 1-1, cahier des clauses techniques types : encadre la préparation du support et la constitution du système de peinture, y compris le rôle d’une couche d’impression. Sert de repère, sans imposer de nombre de couches.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-591/travaux-de-batiment-revetements-de-peinture-en-feuil-mince-semiepais-ou-epa/fa183018/1371",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "OoTravaux — Mur foncé à couvrir ? Voici les erreurs à ne plus jamais faire",
+      "url": "https://www.ootravaux.fr/actualites/repeindre-mur-fonce.html",
+      "note": "Explique que certaines teintes vives, rouge, bleu électrique, jaune, transparaissent sous une peinture claire même après plusieurs passages, et qu’il faut dans ce cas une peinture à fort pouvoir couvrant sans négliger la préparation. Base de la stratégie de couvrance.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Habitatpresto — Comment repeindre un mur foncé en blanc : étapes et matériel",
+      "url": "https://www.habitatpresto.com/mag/revetement/mur/peindre-mur-fonce",
+      "note": "Détaille le rôle de la sous-couche et la préparation du support avant de couvrir une teinte foncée. Sert de contrôle sur l’ordre des couches.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Rouleau à peinture et manchon adapté",
+    "Pinceau à rechampir pour les bords",
+    "Bac à peinture avec grille d’égouttage",
+    "Cale à poncer et papier abrasif fin",
+    "Chiffons et dégraissant",
+    "Bâches et ruban de masquage",
+    "Gants et lunettes"
+  ],
+  "materials": [
+    {
+      "name": "Sous-couche ou peinture d’impression couvrante",
+      "quantity": "Selon la surface du mur, souvent blanche pour neutraliser la teinte"
+    },
+    {
+      "name": "Peinture de finition claire",
+      "quantity": "Selon la surface et le nombre de couches, avec une petite marge"
+    },
+    {
+      "name": "Bâches et ruban de masquage",
+      "quantity": "Pour protéger le sol, les plinthes et les encadrements"
+    },
+    {
+      "name": "Papier abrasif fin",
+      "quantity": "Quelques feuilles pour matifier l’ancienne peinture"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie l’ancienne peinture",
+      "description": "Contrôle l’adhérence et l’âge du revêtement : une peinture farinante au toucher ou qui s’écaille doit être retirée ou traitée avant. Si le mur a été peint récemment, attends la fin du durcissement, sinon la nouvelle couche pourra cloquer."
+    },
+    {
+      "title": "Dégraisse et matifie la surface",
+      "description": "Dégraisse le mur, ponce légèrement au papier fin pour casser le brillant et essuie la poussière. Une sous-couche accroche mal sur une surface grasse ou satinée : cette étape évite que la peinture claire ne tienne pas."
+    },
+    {
+      "title": "Applique une sous-couche couvrante",
+      "description": "Passe une sous-couche à fort pouvoir couvrant, souvent blanche, sur toute la surface. Sur les teintes très saturées, c’est elle qui neutralise la couleur, et elle peut être plus utile qu’une troisième couche de finition."
+    },
+    {
+      "title": "Peins la première couche de finition",
+      "description": "Applique la teinte claire en couche fine et régulière, au rouleau par bandes, sans repasser sur une zone à demi sèche. Travaille par zones délimitées et garde un bord humide entre deux bandes pour éviter les marques."
+    },
+    {
+      "title": "Croise la seconde couche",
+      "description": "Après séchage, applique la deuxième couche en croisant le sens de la première. Une couche fine supplémentaire couvre mieux qu’une couche épaisse, qui coule et sèche irrégulièrement."
+    },
+    {
+      "title": "Contrôle à la lumière et retouche",
+      "description": "Éclaire le mur en lumière rasante pour repérer les zones où l’ancienne teinte transparaît encore, puis retouche localement plutôt que de repasser tout le mur. Sur une teinte très résistante, une passe ciblée vaut mieux qu’une couche générale inutile."
+    }
+  ],
+  "mistakes": [
+    "Attaquer directement avec la peinture claire sans sous-couche, puis multiplier les couches sans couvrir.",
+    "Épaissir les couches pour gagner du temps et obtenir des coulures et un séchage irrégulier.",
+    "Peindre sur une ancienne peinture farinante ou écaillée, qui emporte la nouvelle au bout de quelques mois."
+  ],
+  "safety": [
+    "Aère la pièce pendant et après la peinture, et porte un masque pendant le ponçage de l’ancien revêtement.",
+    "Sur un mur ancien, vérifie l’absence de plomb dans la peinture avant de la poncer : dans le doute, ne produis pas de poussière.",
+    "Travaille sur un support stable pour les hauteurs et protège le sol : une peinture claire sur un sol foncé se voit immédiatement."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-17"
+}

@@ -1,0 +1,105 @@
+{
+  "id": "peindre-sans-bavures",
+  "title": "Peindre sans bavures le long des bords et des angles",
+  "description": "Ce sont les contours qui se voient le plus. Masque proprement, peins les bords avec un pinceau peu chargé et retire le ruban au bon moment pour des lignes nettes.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [{ "category": "techniques", "topicPath": ["Poncer"] }],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Débutant",
+  "durationMinutes": 75,
+  "cost": null,
+  "image": "/images/tutoriels/peindre-sans-bavures.png",
+  "imageAlt": "Un pinceau à rechampir trace une bande de peinture le long d’un angle au-dessus d’un ruban de masquage posé sur une plinthe, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Peinture des bords et des angles intérieurs d’un mur sec, sur enduit ou ancienne peinture saine et adhérente : jonction avec le plafond, angle entre deux murs, plinthes et encadrements. Hors reprise d’un support abîmé, peinture de boiseries et séparation nette entre deux couleurs (voir la fiche dédiée à deux teintes).",
+  "estimatesNote": "Comptez environ 1 h à 1 h 30 pour les contours d’une pièce courante, hors séchage entre les couches. Le budget se limite surtout à la peinture, au ruban et au pinceau si tu as déjà le reste du matériel.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 59.1",
+      "title": "Travaux de bâtiment — Revêtements de peinture en feuil mince, semi-épais ou épais",
+      "scope": "Partie 1-1, cahier des clauses techniques types : encadre la préparation des supports et la réalisation des systèmes de peinture. Sert de repère sur les précautions de préparation, sans reproduire une prescription de chantier.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-591/travaux-de-batiment-revetements-de-peinture-en-feuil-mince-semiepais-ou-epa/fa183018/1371",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Axonais — Comment utiliser du ruban de masquage pour peindre sans bavures",
+      "url": "https://axonais.fr/ruban-masquage-peinture/",
+      "note": "Détaille la préparation de la surface, le choix d’un ruban adapté et le retrait du ruban une fois la peinture sèche, en insistant sur les traces de colle et les décollements. Base des étapes de masquage et de retrait.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "PMO84 — Comment peindre proprement des angles et bordures sans bavure",
+      "url": "https://www.pmo84.com/comment-peindre-proprement-des-angles-et-bordures-sans-bavure/",
+      "note": "Rappelle qu’un pinceau angulaire ou un pinceau à rechampir bien chargé permet souvent de se passer de ruban dans les angles, et décrit les gestes pour des bordures nettes. Sert à nuancer le recours systématique au masquage.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Pinceau à rechampir (environ 4 à 5 cm) à poils synthétiques",
+    "Rouleau à peinture avec manche",
+    "Ruban de masquage adapté à la peinture utilisée",
+    "Cutter ou spatule pour appuyer et couper le ruban",
+    "Chiffons propres",
+    "Marchepied stable ou échelle",
+    "Gants et lunettes"
+  ],
+  "materials": [
+    {
+      "name": "Peinture de finition de la teinte du mur",
+      "quantity": "Selon la surface des contours, prélevée dans le pot de la pièce"
+    },
+    {
+      "name": "Ruban de masquage",
+      "quantity": "Un rouleau selon la longueur des plinthes, encadrements et jonctions"
+    },
+    {
+      "name": "Bâche ou film de protection et adhésif de maintien",
+      "quantity": "Pour couvrir le sol et les meubles sous la zone peinte"
+    },
+    {
+      "name": "Chiffon ou essuie-tout",
+      "quantity": "Pour essuyer le pinceau et rattraper une goutte avant qu’elle sèche"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prépare et dépoussière les bords",
+      "description": "Le ruban n’adhère que sur une surface sèche, propre et sans poussière. Dépoussière le dessus des plinthes et les encadrements, et laisse sécher complètement si tu viens de nettoyer : un support humide fait gondoler le ruban et laisse passer la peinture."
+    },
+    {
+      "title": "Pose le ruban de masquage",
+      "description": "Applique le ruban par petits tronçons en le laissant se poser sans le tendre, puis marque le bord avec l’ongle ou une spatule. Ne le laisse pas collé plusieurs jours : plus il reste, plus il risque d’arracher la peinture ou de laisser de la colle en se retirant."
+    },
+    {
+      "title": "Charge peu le pinceau",
+      "description": "Trempe seulement le tiers des poils, puis essuie l’excédent sur le bord du pot. Un pinceau trop chargé dépose une goutte qui coule le long du mur : mieux vaut recharger souvent que de peindre avec un pinceau lourd."
+    },
+    {
+      "title": "Peins les angles en premier",
+      "description": "Attaque l’angle intérieur au pinceau à rechampir, en partant du haut et en descendant, puis croise quelques passages sans appuyer fort. Garde la main sur la partie déjà peinte et avance vers le mur, pas l’inverse, pour étaler la peinture au lieu de la pousser."
+    },
+    {
+      "title": "Marque la limite et croise",
+      "description": "Peins la bande le long du ruban sur environ 5 à 10 cm de large, puis passe le rouleau sur le mur en chevauchant cette bande encore fraîche. Ce croisement, fait tant que la peinture n’est pas sèche, efface la différence d’aspect entre le pinceau et le rouleau."
+    },
+    {
+      "title": "Retire le ruban au bon moment",
+      "description": "Décolle le ruban quand la peinture est encore légèrement fraîche mais ne file plus, en tirant lentement à environ 45 degrés et vers l’extérieur. Si tu attends que tout soit dur, la pellicule se déchire et laisse une dentelure le long de la ligne."
+    }
+  ],
+  "mistakes": [
+    "Charger le pinceau et faire des passages épais, qui coulent le long du mur et sèchent en bourrelets.",
+    "Laisser le ruban en place plusieurs jours ou le retirer sur une peinture complètement dure, puis arracher la couche.",
+    "Poser le ruban sur un support poussiéreux, humide ou friable, qui laisse la peinture s’infiltrer dessous."
+  ],
+  "safety": [
+    "Aère la pièce pendant toute la durée de la peinture et porte des gants ; ajoute des lunettes si tu utilises un cutter.",
+    "Travaille sur un marchepied stable ou une échelle bien d’appui, sans te pencher ni monter sur un meuble.",
+    "Ne masque pas les grilles de ventilation ni les bouches d’extraction : elles doivent rester libres pour renouveler l’air."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-17"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "remplacer-un-carreau-de-carrelage-casse",
+  "title": "Remplacer un carreau de carrelage cassé",
+  "description": "Un carreau fêlé se remplace sans toucher au reste : déjointe son pourtour, enlève-le du centre vers les bords, nettoie le support et recolle un carreau identique.",
+  "category": "finitions",
+  "topicPath": ["Carrelage"],
+  "relatedCategories": [
+    { "category": "cuisine-salle-de-bains", "topicPath": ["Crédences"] },
+    { "category": "preparer-chantier", "topicPath": ["Matériaux"] }
+  ],
+  "journeys": ["renover-une-salle-de-bains"],
+  "difficulty": "Débutant",
+  "durationMinutes": 60,
+  "cost": null,
+  "image": "/images/tutoriels/remplacer-un-carreau-de-carrelage-casse.png",
+  "imageAlt": "Un carreau de terre cuite cassé entouré de carreaux intacts, avec un burin, un marteau et un peigne à colle, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Remplacement d’un carreau isolé cassé ou fêlé sur un support sain, au sol ou au mur, en pièce sèche comme en pièce d’eau. Hors carrelage qui sonne creux sur une grande zone, fissure du support, système d’étanchéité sous carrelage à reprendre sous la douche, et carreau d’origine introuvable en teinte assortie.",
+  "estimatesNote": "Comptez environ 1 h de travail pour un carreau, auxquelles s’ajoutent 24 h de séchage avant de marcher dessus ou de mouiller la zone. Le budget se limite à un carreau de rechange, un peu de mortier-colle et de joint.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 52.2",
+      "title": "Travaux de bâtiment — Pose collée des revêtements céramiques et assimilés, pierres naturelles",
+      "scope": "Partie 1-1, cahier des clauses techniques types : fixe les exigences de support, de collage et de jointoiement des revêtements céramiques collés. Sert de repère pour la reprise ponctuelle d’un carreau sur un support sain, sans reproduire une prescription de chantier.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-522/travaux-de-batiment-pose-collee-des-revetements-ceramiques-et-assimiles-pie/fa166651/1037",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bricozor — Comment remplacer un carreau de carrelage cassé ou fissuré",
+      "url": "https://comptoir.bricozor.com/comment-remplacer-carreau-carrelage-casse-fissure.html",
+      "note": "Détaille la méthode : découpe du joint au disque diamanté, percement d’un trou au centre du carreau pour l’amorcer, dépose au burin du centre vers les bords, retrait des traces de colle, double encollage et contrôle au maillet. Base de l’ordre des opérations et de l’outillage.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Bricolotop — Comment changer un carreau de carrelage : toutes les étapes",
+      "url": "https://bricolotop.com/comment-changer-un-carreau-de-carrelage-toutes-les-etapes/",
+      "note": "Propose des variantes de dépose selon l’outil disponible (meuleuse, perceuse, massette) et insiste sur le nettoyage de l’ancienne colle pour éviter qu’un carreau ne sonne creux. Sert de contrôle sur la préparation du support.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Meuleuse d’angle avec disque diamanté, ou outil multifonction à lame de déjointoiement",
+    "Perceuse avec foret à béton ou foret diamant",
+    "Burin et marteau",
+    "Couteau de carreleur ou spatule pour retirer la colle",
+    "Peigne à colle cranté",
+    "Batte de carreleur et maillet caoutchouc",
+    "Éponge, seau et chiffon propre",
+    "Lunettes, gants et masque antipoussière"
+  ],
+  "materials": [
+    {
+      "name": "Carreau de rechange identique",
+      "quantity": "Un, issu du stock de pose si possible"
+    },
+    {
+      "name": "Mortier-colle adapté au support",
+      "quantity": "Un peu, pour encoller le support et le dos du carreau"
+    },
+    {
+      "name": "Joint de carrelage de teinte assortie",
+      "quantity": "Quelques poignées"
+    },
+    {
+      "name": "Croisillons",
+      "quantity": "Quatre, au format du joint existant"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Rassemble un carreau identique et protège la zone",
+      "description": "Reprends un carreau du stock de pose, en vérifiant le numéro de lot pour éviter une différence de teinte. Compare le format et l’épaisseur au carreau en place : un carreau plus épais de quelques millimètres se voit et complique la mise à niveau."
+    },
+    {
+      "title": "Déjointe le pourtour du carreau",
+      "description": "Découpe le joint qui borde le carreau abîmé au disque diamanté ou à la lame de déjointoiement, sans mordre sur les carreaux voisins. Va jusqu’au support sur toute la profondeur : un joint laissé en place bloque la dépose et fait éclater les carreaux adjacents."
+    },
+    {
+      "title": "Amorce le carreau par le centre",
+      "description": "Perce un trou au milieu du carreau, ou frappe-le à la massette si le carreau est déjà morcelé : ce point de départ fragilise la pièce et permet de commencer par le centre. Travaille toujours du centre vers les bords, jamais de l’extérieur vers l’intérieur."
+    },
+    {
+      "title": "Dépose le carreau et nettoie le support",
+      "description": "Décolle le carreau au burin et au marteau, puis retire toute trace d’ancienne colle avec le couteau de carreleur, sans creuser le support. Le logement doit être propre, sain et de profondeur régulière pour recevoir la même épaisseur de colle que les carreaux voisins."
+    },
+    {
+      "title": "Recolle le carreau neuf",
+      "description": "Applique le mortier-colle au peigne cranté sur le support, puis une couche fine au dos du carreau : ce double encollage supprime les vides qui font sonner creux. Pose le carreau en le faisant aller et venir légèrement, place les croisillons et tapote au maillet jusqu’à l’affleurement des carreaux voisins."
+    },
+    {
+      "title": "Jointoie, nettoie et respecte le séchage",
+      "description": "Laisse la colle prendre, puis remplis les joints au mortier de jointoiement en lissant à l’éponge humide bien essorée, et essuie le voile de ciment au chiffon sec. Attends environ 24 h avant de marcher dessus ou de mouiller la zone, en te fiant au délai indiqué par le fabricant de la colle."
+    }
+  ],
+  "mistakes": [
+    "Déposer le carreau depuis ses bords et faire éclater les carreaux voisins, qu’il faut alors remplacer aussi.",
+    "Laisser des morceaux d’ancienne colle dans le logement, ce qui empêche le nouveau carreau d’être de niveau ou le fait sonner creux.",
+    "Marcher sur le carreau ou mouiller la zone avant la prise complète de la colle et du joint."
+  ],
+  "safety": [
+    "Porte lunettes, gants et masque : la découpe du joint et l’éclatement du carreau projettent des éclats tranchants et de la poussière fine.",
+    "Débranche la meuleuse avant de changer de disque et vérifie qu’aucun câble ou tuyau ne passe sous le carrelage avant de découper.",
+    "Évacue les éclats au fur et à mesure et porte des gants pour les ramasser, y compris sur un sol où l’on marche pieds nus."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-17"
+}

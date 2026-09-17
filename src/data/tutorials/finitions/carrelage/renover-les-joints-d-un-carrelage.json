@@ -1,0 +1,107 @@
+{
+  "id": "renover-les-joints-d-un-carrelage",
+  "title": "Rénover les joints d’un carrelage sans tout casser",
+  "description": "Des joints noircis, creusés ou friables se reprennent sans déposer le carrelage : décaper, traiter les moisissures, protéger les carreaux et rejointoyer sur l’ancien.",
+  "category": "finitions",
+  "topicPath": ["Carrelage"],
+  "relatedCategories": [
+    { "category": "cuisine-salle-de-bains", "topicPath": ["Douche"] },
+    { "category": "cloisons", "topicPath": ["Enduits"] }
+  ],
+  "journeys": ["renover-une-salle-de-bains"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 240,
+  "cost": null,
+  "image": "/images/tutoriels/renover-les-joints-d-un-carrelage.png",
+  "imageAlt": "Une main regarnit les joints d’un carrelage bleu à la taloche, avec une brosse et une éponge à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Rénovation de joints de carrelage mural ou au sol, en intérieur sec ou en pièce d’eau, quand les carreaux sont sains et bien collés. Hors carreaux décollés ou sonnant creux, joints très creusés à reprendre en profondeur, carrelage sur support humide et joint silicone à remplacer.",
+  "estimatesNote": "Comptez environ 4 h pour une petite pièce d’eau, séchage compris. Le budget se limite à un nettoyant, un produit antifongique et un mortier de joint ; prévois une brosse et un grattoir dédiés.",
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 52.2",
+      "title": "Travaux de bâtiment — Pose collée des revêtements céramiques et assimilés",
+      "scope": "Partie 1-1, cahier des clauses techniques types : traite le jointoiement des revêtements céramiques posés collés, notamment en pièces humides. Sert de repère sur les exigences de jointoiement, sans reproduire une prescription de chantier.",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-522-p111/travaux-de-batiment-pose-collee-des-revetements-ceramiques-et-assimiles-pie/fa203048/327475",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Harjes — Refaire un joint de carrelage sans enlever l’ancien : méthodes efficaces et durables",
+      "url": "https://www.harjes.fr/bricolage/refaire-un-joint-de-carrelage-sans-enlever-lancien-methodes-efficaces-et-durables/",
+      "note": "Détaille la préparation de la surface, le traitement des moisissures selon leur importance, le grattage des joints friables, la protection des carreaux au ruban et le choix du type de joint, époxy ou hydrofuge, selon la pièce. Base de la méthode.",
+      "accessedAt": "2026-09-16"
+    },
+    {
+      "title": "Leroy Merlin — Comment rénover ses joints de carrelage",
+      "url": "https://www.leroymerlin.fr/tutos/isolation-et-etancheite/comment-renover-ses-joints-de-carrelage.html",
+      "note": "Présente la rénovation des joints de carrelage comme une opération d’entretien accessible. Sert de contrôle sur les produits employés.",
+      "accessedAt": "2026-09-16"
+    }
+  ],
+  "tools": [
+    "Brosse à joints ou brosse nylon rigide",
+    "Grattoir fin ou spatule",
+    "Éponge douce et chiffon microfibre",
+    "Raclette de jointoiement",
+    "Ruban de masquage",
+    "Seau, gants et lunettes"
+  ],
+  "materials": [
+    {
+      "name": "Nettoyant spécial joints",
+      "quantity": "Selon la surface à traiter"
+    },
+    {
+      "name": "Produit antifongique",
+      "quantity": "Pour les joints noircis par l’humidité"
+    },
+    {
+      "name": "Mortier de joint hydrofuge ou époxy",
+      "quantity": "Selon la surface des joints et la pièce"
+    },
+    {
+      "name": "Vinaigre blanc",
+      "quantity": "Pour les moisissures légères"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Diagnostique les joints et les carreaux",
+      "description": "Tape doucement sur les carreaux : un son creux signale un carreau décollé, qui doit être traité avant tout joint. Repère ensuite si les joints sont simplement noircis, creusés ou friables, car le travail de préparation diffère."
+    },
+    {
+      "title": "Élimine les moisissures",
+      "description": "Pour une moisissure légère, une solution d’eau et de vinaigre blanc suffit ; pour une moisissure tenace, utilise un produit antifongique adapté. Brosse, rince et laisse sécher complètement : rejointoyer sur un joint encore humide ferait repartir les taches."
+    },
+    {
+      "title": "Gratte les joints friables",
+      "description": "Retire les parties qui s’effritent à la brosse à joints ou au grattoir fin, sans entamer les carreaux. Un support sain et légèrement creusé donne au nouveau mortier de quoi s’accrocher ; un joint laissé poussiéreux n’adhère pas."
+    },
+    {
+      "title": "Protège les carreaux",
+      "description": "Masque les carreaux avec du ruban de protection, surtout sur faïence mate ou pierre naturelle, que le mortier de joint tache durablement. Cette étape paraît longue mais elle évite le nettoyage agressif qui abîme l’émail."
+    },
+    {
+      "title": "Applique le mortier de joint",
+      "description": "Prépare le mortier en suivant les proportions du fabricant, puis applique-le à la raclette en diagonale pour bien garnir les joints, en insistant sur les zones creuses. Travaille par petites surfaces pour garder le temps de nettoyage."
+    },
+    {
+      "title": "Nettoie et lustre au bon moment",
+      "description": "Élimine l’excédent puis nettoie à l’éponge humide bien essorée, en changeant l’eau souvent, sans attendre que le mortier durcisse. Quand un léger voile clair apparaît, lustre au chiffon sec : c’est le moment où la finition devient nette."
+    }
+  ],
+  "mistakes": [
+    "Rejointoyer sur un joint encore humide ou moisi, et voir les taches remonter en quelques semaines.",
+    "Nettoyer à l’éponge trop mouillée ou trop tard, et laisser un voile de ciment incrusté sur les carreaux.",
+    "Utiliser un mortier de joint ordinaire en douche ou en pièce très humide, au lieu d’un hydrofuge ou d’un époxy."
+  ],
+  "safety": [
+    "Porte gants et lunettes pour manipuler nettoyant, antifongique et mortier de joint, et n’emploie jamais d’eau de Javel avec un produit acide.",
+    "Aère la pièce pendant le traitement antifongique et pendant le séchage, et respecte les temps de séchage avant de remettre la pièce en service.",
+    "Travaille dans une pièce aérée, avec un marchepied stable pour les zones hautes : ces produits dégagent des vapeurs irritantes et une éponge mouillée sur un tabouret glisse vite."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-17"
+}
