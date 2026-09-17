@@ -12,7 +12,7 @@
   "durationMinutes": 40,
   "cost": null,
   "image": "/images/tutoriels/remplacer-une-prise-murale.png",
-  "imageAlt": "Une prise électrique murale démontée laissant apparaître trois fils de couleurs différentes, avec un tournevis et un testeur posés à côté, à la gouache sur fond ivoire.",
+  "imageAlt": "Une prise électrique française blanche avec broche de terre et un tournevis isolé rouge et jaune, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Remplacement à l’identique d’une prise de courant murale sur un circuit existant, identifié et protégé, avec boîte d’encastrement et conducteurs en bon état. Hors création de circuit, ajout de point de prise, modification de tableau, conducteurs abîmés ou raccourcis, absence de mise à la terre et installation vétuste.",
   "estimatesNote": "Comptez environ 40 min par prise, hors coupure et contrôles. Le budget couvre la prise neuve et éventuellement une boîte si l’ancienne est cassée ; prévois un testeur d’absence de tension et des wago ou dominos adaptés.",
@@ -94,5 +94,5 @@
     "Porte des gants isolants, utilise des outils isolés et ne laisse jamais une prise ouverte sans surveillance : remonte l’appareillage avant de réenclencher."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

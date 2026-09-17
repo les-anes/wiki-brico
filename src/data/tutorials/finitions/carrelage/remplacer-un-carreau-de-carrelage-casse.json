@@ -13,7 +13,7 @@
   "durationMinutes": 60,
   "cost": null,
   "image": "/images/tutoriels/remplacer-un-carreau-de-carrelage-casse.png",
-  "imageAlt": "Un carreau de carrelage fissuré en cours de dépose au burin et au marteau, avec un disque diamanté et un maillet posés à côté sur un sol carrelé, à la gouache sur fond ivoire.",
+  "imageAlt": "Un carreau de terre cuite cassé entouré de carreaux intacts, avec un burin, un marteau et un peigne à colle, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Remplacement d’un carreau isolé cassé ou fêlé sur un support sain, au sol ou au mur, en pièce sèche comme en pièce d’eau. Hors carrelage qui sonne creux sur une grande zone, fissure du support, système d’étanchéité sous carrelage à reprendre sous la douche, et carreau d’origine introuvable en teinte assortie.",
   "estimatesNote": "Comptez environ 1 h de travail pour un carreau, auxquelles s’ajoutent 24 h de séchage avant de marcher dessus ou de mouiller la zone. Le budget se limite à un carreau de rechange, un peu de mortier-colle et de joint.",
@@ -105,5 +105,5 @@
     "Évacue les éclats au fur et à mesure et porte des gants pour les ramasser, y compris sur un sol où l’on marche pieds nus."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

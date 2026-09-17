@@ -18,7 +18,7 @@
   "durationMinutes": 600,
   "cost": null,
   "image": "/images/tutoriels/fabriquer-des-volets-battants-en-bois.png",
-  "imageAlt": "Un volet battant en bois posé à plat, face arrière visible avec ses deux traverses et son écharpe en diagonale, une perceuse et une équerre posées à côté, à la gouache sur fond ivoire.",
+  "imageAlt": "La face arrière d’un volet en bois avec deux traverses, une écharpe diagonale et deux charnières, accompagnée d’une perceuse et d’une équerre, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Fabrication de deux volets battants simples à lames jointives, en bois, pour une fenêtre de dimensions courantes, avec ouvrant à la française. Hors volets persiennés ou à cadre, volets roulants et coulissants, baies de grande largeur, motorisation et remplacement d’une fenêtre elle-même.",
   "estimatesNote": "Comptez deux à trois jours pour une paire de volets, séchage des couches de finition non compris. Le budget dépend de l’essence choisie et de la quincaillerie, qui pèse autant que le bois sur des volets de bonne taille.",
@@ -109,5 +109,5 @@
     "Pour la pose en hauteur, utilise un échafaudage ou un marchepied stable et fais-toi aider à présenter le volet : un panneau plein est lourd et prend le vent."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

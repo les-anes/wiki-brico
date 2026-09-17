@@ -13,7 +13,7 @@
   "durationMinutes": 30,
   "cost": null,
   "image": "/images/tutoriels/choisir-sa-peinture.png",
-  "imageAlt": "Trois échantillons de peinture mate, velours et satinée posés côte à côte sur un nuancier, à la gouache sur fond ivoire.",
+  "imageAlt": "Trois échantillons de peinture rose, verte et bleue, accompagnés d’un pot et d’un pinceau, au crayon et à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Choix d’une peinture intérieure et de sa sous-couche pour des murs et plafonds courants en pièce sèche ou humide : plâtre, enduit, plaques de plâtre ou ancienne peinture saine et adhérente. Hors boiseries, façades, produits techniques particuliers (anti-humidité, dépolluante, anti-fumée) et supports incompatibles comme un papier peint ou un plâtre friable.",
   "estimatesNote": "Comptez environ 30 min pour relever les supports, mesurer les surfaces et comparer les étiquettes, hors temps d’achat. Le budget dépend entièrement du produit choisi ; les repères de cette fiche ne visent aucune marque et n’incluent ni les outils ni les protections.",
@@ -101,5 +101,5 @@
     "Avant de gratter un mur ancien, vérifie que le revêtement ne contient pas de plomb ni d’amiante ; dans le doute, ne produis pas de poussière et fais identifier le support."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

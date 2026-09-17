@@ -13,7 +13,7 @@
   "durationMinutes": 90,
   "cost": null,
   "image": "/images/tutoriels/organiser-les-travaux-d-une-chambre.png",
-  "imageAlt": "Un plan de chantier manuscrit posé sur une caisse à outils, avec une règle, un crayon et un rouleau de ruban de masquage, devant une pièce aux murs nus, à la gouache sur fond ivoire.",
+  "imageAlt": "Un planning à bandes colorées, un crayon, un niveau et du ruban de masquage sur une caisse en bois dans une pièce à rénover, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Établissement de l’ordre des travaux d’une rénovation de chambre de particulier, pièce sèche d’un logement habité, avec des gestes réalisés soi-même. Hors gros œuvre et ouverture dans un mur porteur, reprise de charpente ou de toiture, désamiantage, et coordination de plusieurs entreprises sur un chantier complet.",
   "estimatesNote": "Comptez une à deux heures de repérage et de mise au point du planning, avant tout achat. Ce budget de préparation est du temps, pas du matériel ; il évite surtout de reposer ce qui vient d’être terminé.",
@@ -93,5 +93,5 @@
     "Dégage les circulations et stocke les gravats sans surcharger un plancher ancien, en portant les charges lourdes à deux."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

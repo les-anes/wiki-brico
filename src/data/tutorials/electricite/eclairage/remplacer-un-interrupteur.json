@@ -12,7 +12,7 @@
   "durationMinutes": 35,
   "cost": null,
   "image": "/images/tutoriels/remplacer-un-interrupteur.png",
-  "imageAlt": "Un interrupteur mural démonté laissant voir ses bornes et deux fils, avec un tournevis isolé et un testeur posés à côté, à la gouache sur fond ivoire.",
+  "imageAlt": "Un interrupteur blanc, son cadre de finition et un tournevis isolé rouge et jaune, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Remplacement d’un interrupteur simple à un seul point de commande, sur un circuit existant identifié et protégé, avec boîte et conducteurs en bon état. Hors va-et-vient, interrupteur double, télérupteur, ajout de point lumineux, tableau à modifier et installation vétuste.",
   "estimatesNote": "Comptez environ 35 min par interrupteur, hors coupure et contrôles. Le budget se limite à l’interrupteur neuf et à quelques repères ; un testeur d’absence de tension est indispensable si tu n’en as pas.",
@@ -93,5 +93,5 @@
     "Porte des gants isolants, utilise des outils isolés et remonte l’appareillage avant de réenclencher : ne laisse jamais un interrupteur ouvert sous tension."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

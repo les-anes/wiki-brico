@@ -13,7 +13,7 @@
   "durationMinutes": 180,
   "cost": null,
   "image": "/images/tutoriels/poser-une-bande-a-joint.png",
-  "imageAlt": "Une bande à joint en cours d’enduisage sur la jonction de deux plaques de plâtre, avec un couteau à enduire et une auge de bande posés à côté, à la gouache sur fond ivoire.",
+  "imageAlt": "Des mains appliquent une bande à joint entre deux plaques de plâtre, avec un couteau à enduire et une taloche chargée d’enduit à côté, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Pose et enduisage des bandes à joint sur des plaques de plâtre déjà vissées en pièce sèche, joints droits et angles saillants courants. Hors reprise d’un support humide ou fissuré, bandes sur support non préparé, ratissage complet d’un mur et finition de peinture.",
   "estimatesNote": "Comptez environ 3 h pour une pièce, séchage entre les passes non compris, plus une reprise de ponçage. Le budget se limite à la bande, à l’enduit à joints et à deux couteaux.",
@@ -103,5 +103,5 @@
     "Aère la pièce pendant le séchage et respecte le temps indiqué par le fabricant avant de poncer, sinon l’enduit s’arrache en boulettes."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

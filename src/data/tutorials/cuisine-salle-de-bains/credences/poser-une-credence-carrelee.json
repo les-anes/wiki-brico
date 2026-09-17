@@ -12,7 +12,7 @@
   "durationMinutes": 480,
   "cost": null,
   "image": "/images/tutoriels/poser-une-credence-carrelee.png",
-  "imageAlt": "Une crédence en carreaux posée entre un plan de travail et des meubles hauts, un peigne à colle et des croisillons posés à côté, à la gouache sur fond ivoire.",
+  "imageAlt": "Une crédence en carreaux bleus et blancs en cours de pose au-dessus d’un plan de travail, avec un peigne à colle et des croisillons, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Pose d’une crédence carrelée sur un mur intérieur sec au-dessus d’un plan de travail, faïence, pâte de verre, mosaïque ou grand format. Hors mur humide ou fissuré, support non sain, carrelage sur un plan de cuisson sans protection et pose sur ancien carrelage décollé.",
   "estimatesNote": "Comptez une à deux journées entre la pose et les joints, dont la pause de séchage de la colle. Le budget dépend du carrelage, du mortier-colle et du mortier de joint ; prévois 10 % de marge de carreaux pour les coupes.",
@@ -108,5 +108,5 @@
     "Ouvre la fenêtre pendant la pose et le jointoiement, et respecte les temps de séchage indiqués par les fabricants pour ne pas piéger d’humidité dans le mur."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

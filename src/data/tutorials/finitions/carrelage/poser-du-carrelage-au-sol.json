@@ -13,7 +13,7 @@
   "durationMinutes": 480,
   "cost": null,
   "image": "/images/tutoriels/poser-du-carrelage-au-sol.png",
-  "imageAlt": "Une rangée de carreaux de sol posés à blanc le long d’un axe tracé au cordeau, avec un peigne à colle, des croisillons et une carrelette posés à côté, à la gouache sur fond ivoire.",
+  "imageAlt": "Une rangée de carreaux alignés au cordeau, avec des croisillons, un peigne à colle et un seau de mortier, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Pose collée d’un carrelage de sol dans une pièce sèche de faible surface, sur support sain et préparé, en pose droite ou décalée classique. Hors receveur de douche et pièce d’eau avec étanchéité sous carrelage, chauffage au sol, pose scellée au mortier, pose diagonale à motifs et reprise des joints traitée dans une fiche à part.",
   "estimatesNote": "Comptez une grosse journée pour une petite pièce, séchage avant jointoiement non compris. Le budget dépend surtout du carreau choisi, puis de la colle, du joint et du ragréage éventuel.",
@@ -113,5 +113,5 @@
     "Laisse les couloirs de circulation libres et protège les passages : une auge de colle renversée sur un sol lisse fait chuter."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

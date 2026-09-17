@@ -13,7 +13,7 @@
   "durationMinutes": 60,
   "cost": null,
   "image": "/images/tutoriels/raboter-une-porte-qui-frotte.png",
-  "imageAlt": "Une porte intérieure posée sur des cales, un rabot et une râpe posés sur le bas du vantail marqué d’un trait de crayon, à la gouache sur fond ivoire.",
+  "imageAlt": "Un rabot, des copeaux et un crayon sur un établi, devant une porte déposée sur des tréteaux, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Rabotage du bas d’une porte intérieure en bois qui frotte le sol, après vérification des charnières et du jeu, sur une porte démontable. Hors porte qui frotte par simple manque d’aplomb corrigeable au réglage, porte trop courte, panneau vitré fragile et porte à recouper avec sa quincaillerie.",
   "estimatesNote": "Comptez environ 1 h, dépose et repose comprises, plus le temps de finition du chant. Le budget se limite à un rabot ou une râpe si tu n’en as pas ; un ponçage seul suffit rarement.",
@@ -90,5 +90,5 @@
     "Sur une porte ancienne, vérifie que la peinture ne contient pas de plomb avant de la poncer ; dans le doute, ne produis pas de poussière."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

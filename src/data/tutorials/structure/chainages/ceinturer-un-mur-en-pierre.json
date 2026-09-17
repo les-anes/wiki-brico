@@ -18,7 +18,7 @@
   "durationMinutes": 600,
   "cost": null,
   "image": "/images/tutoriels/ceinturer-un-mur-en-pierre.png",
-  "imageAlt": "Un chaînage en béton en cours de coulage sur la tête d’un mur en pierre, avec ferraillage apparent, coffrage bois et truelle posée sur le mur, à la gouache sur fond ivoire.",
+  "imageAlt": "Un chaînage en béton continu couronne l’angle de deux murs en pierre, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Réalisation d’une ceinture horizontale armée en tête d’un mur en moellons formant un muret de clôture, un mur de jardin ou le mur d’une annexe non porteuse, avec retours aux angles. Hors chaînage d’une maison portant plancher ou charpente, reprise d’un mur qui bouge ou dont une fissure évolue, mur de soutènement, et création d’ouverture. Dans ces cas, le ferraillage relève d’un dimensionnement qui dépasse cette fiche.",
   "estimatesNote": "Comptez une journée pour un muret courant, hors cure et décoffrage. Le budget se limite au béton ou au mortier, à l’acier, au coffrage et au sable ; c’est le poste le moins coûteux du chantier et celui qui protège le plus l’ouvrage.",
@@ -118,5 +118,5 @@
     "Manipule les aciers et les charges de sable avec des gants épais, et porte secours à deux pour les seaux et les éléments de coffrage lourds."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

@@ -13,7 +13,7 @@
   "durationMinutes": 20,
   "cost": null,
   "image": "/images/tutoriels/choisir-rouleau-et-pinceau.png",
-  "imageAlt": "Un rouleau à peinture et un pinceau à rechampir posés côte à côte sur un bac d’égouttage, à la gouache sur fond ivoire.",
+  "imageAlt": "Un rouleau et un pinceau à peinture reposent sur un bac contenant de la peinture verte, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Choix d’un rouleau et d’un pinceau pour peindre des murs et plafonds intérieurs avec une peinture courante à l’eau. Hors peintures spécifiques (laques, résines, produits de façade) dont la notice impose un outil particulier, et hors matériel de pulvérisation.",
   "estimatesNote": "Comptez environ 20 min pour choisir et vérifier la compatibilité des outils, hors achat. Le budget d’un kit de base reste limité ; il dépend surtout de la qualité du manchon et du nombre de recharges.",
@@ -99,5 +99,5 @@
     "Range les manchons et pinceaux hors de portée des enfants, et ne laisse pas un bac de peinture ouvert sans surveillance."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

@@ -1,6 +1,6 @@
 # Todo des prochains tutoriels
 
-Dernière mise à jour : **16 septembre 2026**.
+Dernière mise à jour : **17 septembre 2026**.
 
 Ce document centralise les idées de nouveaux tutos WikiBrico. Il sert à choisir le prochain sujet et à suivre sa réalisation ; il ne remplace pas les specs du tutoriel.
 
@@ -114,3 +114,5 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - **2026-09-16** : lot peinture avancée T13, T36, T37 et T38 terminé : quatre fiches documentées (décollage de papier peint, deux couleurs, mur foncé en clair, porte intérieure), référence NF DTU 59.1 pour les trois fiches de peinture et sources consultées ; illustrations provisoires et variantes WebP. Le catalogue contient 41 tutoriels ; 19 idées restent à faire.
 
 - **2026-09-16** : dernier lot T18, T19, T27, T30, T39, T41 et T42 terminé : sept fiches documentées (carreau cassé, carrelage au sol, sol vinyle clipsable, ordre des travaux d’une chambre, volets battants, remplacement d’un linteau, ceinture d’un mur en pierre), référence NF DTU 52.2 pour les deux fiches de carrelage et NF DTU 20.1 pour la ceinture, sources consultées ; illustrations provisoires, variantes WebP et prompts dans `output/imagegen/`. Deux nouvelles sous-catégories ont été créées : « Finitions › Sol vinyle » et « Structure › Chaînages ». Le catalogue contient 60 tutoriels et les 42 idées de cette liste sont réalisées.
+
+- **2026-09-17** : remplacement des 42 couvertures des tutoriels réalisés par des illustrations originales générées avec imagegen, dans le style crayon/gouache sur fond ivoire. PNG et trois variantes WebP renouvelés ; textes alternatifs ajustés. Les mentions d’illustrations provisoires ci-dessus décrivent l’état historique des lots.

@@ -18,7 +18,7 @@
   "durationMinutes": 600,
   "cost": null,
   "image": "/images/tutoriels/remplacer-un-linteau.png",
-  "imageAlt": "Une ouverture en mur de moellons étayée par deux étais verticaux sur madriers, avec au-dessus un linteau de bois en cours de dépose, à la gouache sur fond ivoire.",
+  "imageAlt": "Un linteau en bois installé au-dessus d’une ouverture dans un mur en pierre, avec un niveau sur l’appui, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Remplacement d’un linteau existant en bois, dégradé ou fléchi, au-dessus d’une ouverture en rez-de-chaussée d’un mur en moellons ou en pierre, avec étaiement possible de part et d’autre. Hors création d’une ouverture, élargissement d’une baie, mur porteur portant plusieurs niveaux ou un plancher lourd, mur en béton armé, et dépose d’une partie de mur porteur. Dans tous ces cas, le dimensionnement dépasse le cadre de cette fiche.",
   "estimatesNote": "Comptez deux à trois jours de travail effectif, auxquels s’ajoute le délai de prise du mortier avant desserrage. Le budget dépend du linteau retenu, de la location ou de l’achat des étais et du matériau des appuis.",
@@ -104,5 +104,5 @@
     "Étaye sur des madriers et non directement sur un sol ou un plancher, et laisse une zone d’exclusion sous l’ouverture pendant toute la durée du chantier."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

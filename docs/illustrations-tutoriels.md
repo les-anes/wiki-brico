@@ -1,5 +1,378 @@
 # Prompts des illustrations de tutoriels
 
+## Remplacement des 42 couvertures de la liste — 17 septembre 2026
+
+Les 42 tutoriels réalisés depuis `docs/tutos-a-implementer.md` disposent de nouvelles illustrations générées avec l’outil intégré imagegen et contrôlées visuellement. Ces images remplacent notamment les couvertures provisoires mentionnées dans l’historique ci-dessous. Sources PNG et prompts dans `output/imagegen/`, PNG publiés en 1536×1024 et variantes WebP 480, 720 et 960 pixels à qualité 82. Les textes alternatifs sont ajustés aux images retenues.
+
+### remplacer-un-carreau-de-carrelage-casse
+
+Fichier : `public/images/tutoriels/remplacer-un-carreau-de-carrelage-casse.png`
+
+```text
+Use case: stylized-concept. Create an original French DIY tutorial cover, landscape exactly 1536x1024. Subject: one cracked square terracotta tile in the middle of a small patch of intact tiled floor, a small chisel resting at its broken edge, a hammer and notched trowel lying beside on a cloth. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile crop. Natural colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### poser-du-carrelage-au-sol
+
+Fichier : `public/images/tutoriels/poser-du-carrelage-au-sol.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a row of square floor tiles laid dry along a taut chalk line on a bare floor, a notched adhesive trowel, an open bucket of adhesive and a few tile spacers beside it. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### poser-un-sol-vinyle-clipsable
+
+Fichier : `public/images/tutoriels/poser-un-sol-vinyle-clipsable.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: three long vinyl floor planks half assembled, the last one tilted at an angle to click into the previous one, a tapping block, a rubber mallet and a utility knife lying on the planks. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### organiser-les-travaux-d-une-chambre
+
+Fichier : `public/images/tutoriels/organiser-les-travaux-d-une-chambre.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a handwritten work schedule on a sheet of paper resting on a wooden tool crate, a folding rule, a pencil and a roll of masking tape on top, a room with stripped walls in the background. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### fabriquer-des-volets-battants-en-bois
+
+Fichier : `public/images/tutoriels/fabriquer-des-volets-battants-en-bois.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover. Landscape exactly 1536x1024. Loose imperfect charcoal contours, flat gouache shapes and coarse dry brush texture on warm ivory paper, simplified expressive forms. Subject centered in central 70 percent, generous clear margins. No text, numbers, arrows, logos, labels, watermark, photorealism or technical diagram. Subject: A wooden shutter lying flat, back face visible, made of vertical honey-colored wooden planks, with two horizontal battens and ONE diagonal wooden brace ascending from bottom LEFT to top RIGHT. Two black hinges attached along LEFT edge, bottom end of diagonal next to bottom LEFT hinge. Small drill and carpenter square beside it. Exact brace orientation essential.
+```
+
+### remplacer-un-linteau
+
+Fichier : `public/images/tutoriels/remplacer-un-linteau.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover. Landscape exactly 1536x1024. Loose imperfect charcoal contours, flat gouache shapes and coarse dry brush texture on warm ivory paper, simplified expressive forms. Subject centered in central 70 percent, generous clear margins. No text, numbers, arrows, logos, labels, watermark, photorealism or technical diagram. Subject: A finished sturdy horizontal rectangular oak lintel installed above a small window opening in a sound stone wall. Both ends of the horizontal timber clearly embedded in stone masonry. A carpenter level resting on the window sill. Completed result, no construction activity, no demolition, no loose stones, no propping, no floating beams.
+```
+
+### ceinturer-un-mur-en-pierre
+
+Fichier : `public/images/tutoriels/ceinturer-un-mur-en-pierre.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover. Landscape exactly 1536x1024. Loose imperfect charcoal contours, flat gouache shapes and coarse dry brush texture on warm ivory paper, simplified expressive forms. Subject centered in central 70 percent, generous clear margins. No text, numbers, arrows, logos, labels, watermark, photorealism or technical diagram. Subject: Corner of a stone masonry building, both walls topped with one continuous finished smooth grey reinforced concrete ring beam turning the corner. Solid opaque concrete hides all reinforcement. Simple isolated architectural vignette, no exposed steel rods, no cutaway, no construction activity, no tools.
+```
+
+### poser-une-bande-a-joint
+
+Fichier : `public/images/tutoriels/poser-une-bande-a-joint.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a paper joint tape being bedded into fresh filler along the seam between two plasterboards, a wide taping knife and a small hawk of joint compound resting on a board edge nearby. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### monter-une-petite-cloison-en-placo
+
+Fichier : `public/images/tutoriels/monter-une-petite-cloison-en-placo.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a bare steel stud partition frame standing between floor and ceiling with its bottom and top tracks screwed down and vertical studs at regular intervals, one plasterboard panel propped against the wall beside it. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### poser-une-etagere-sur-tasseaux
+
+Fichier : `public/images/tutoriels/poser-une-etagere-sur-tasseaux.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover. Landscape exactly 1536x1024. Loose imperfect charcoal contours, flat gouache shapes and coarse dry brush texture on warm ivory paper, simplified expressive forms. Subject centered in central 70 percent, generous clear margins. No text, numbers, arrows, logos, labels, watermark, photorealism or technical diagram. Subject: One simple horizontal honey-colored wooden shelf inside a white cupboard alcove, seen slightly from BELOW so its underside is clearly visible. Shelf rests ON TOP OF three narrow wooden support cleats fixed to left, right and rear walls immediately UNDER the shelf. No rails or trim above shelf. A small drill and folding ruler sit on shelf. Physically coherent simple construction, no brackets.
+```
+
+### peindre-un-motif-au-pochoir
+
+Fichier : `public/images/tutoriels/peindre-un-motif-au-pochoir.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a translucent stencil sheet held against a wall with part of its repeating motif already painted in a contrasting colour, a round stencil brush almost dry on a paper plate below and a roll of low-tack tape nearby. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### poser-une-credence-carrelee
+
+Fichier : `public/images/tutoriels/poser-une-credence-carrelee.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a band of small square wall tiles running along a kitchen wall above a worktop, a notched adhesive trowel and a handful of tile spacers lying on the worktop beside it. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### renover-les-joints-d-un-carrelage
+
+Fichier : `public/images/tutoriels/renover-les-joints-d-un-carrelage.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a tiled wall being regrouted, one area of pale fresh grout spread across the joints with a rubber float, a small stiff joint brush and a damp sponge resting on the tiles below. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### nettoyer-les-bouches-de-vmc
+
+Fichier : `public/images/tutoriels/nettoyer-les-bouches-de-vmc.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a round white mechanical ventilation grille lifted away from a ceiling opening and resting on a cloth below, a small soft brush and a vacuum hose beside it, dust visible on the grille slats. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### remplacer-flexible-et-douchette
+
+Fichier : `public/images/tutoriels/remplacer-flexible-et-douchette.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover. Landscape exactly 1536x1024. Loose imperfect charcoal contours, flat gouache shapes and coarse dry brush texture on warm ivory paper, simplified expressive forms. Subject centered in central 70 percent, generous clear margins. No text, numbers, arrows, logos, labels, watermark, photorealism or technical diagram. Subject: A detached silver handheld shower head and a loosely coiled silver shower hose with visible female end connectors, with exactly two small flat black rubber sealing washers beside it. Simple object still life. No tape, no spool, no tools, no water, no text.
+```
+
+### poser-des-plinthes
+
+Fichier : `public/images/tutoriels/poser-des-plinthes.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a length of skirting board laid along the foot of a wall with one end cut at 45 degrees, a mitre box holding a saw and a folding rule on the floor nearby. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### regler-une-porte-de-placard
+
+Fichier : `public/images/tutoriels/regler-une-porte-de-placard.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a cupboard door standing slightly ajar on a pair of concealed hinges, their metal cups visible on the door edge, a manual screwdriver lying on the shelf inside. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### remplacer-le-joint-d-une-fenetre
+
+Fichier : `public/images/tutoriels/remplacer-le-joint-d-une-fenetre.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a soft rubber seal running along the groove of a window frame, a short offcut of the old seal, a sharp knife and a sheet of paper resting on the sill. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### raboter-une-porte-qui-frotte
+
+Fichier : `public/images/tutoriels/raboter-une-porte-qui-frotte.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover. Landscape exactly 1536x1024. Loose imperfect charcoal contours, flat gouache shapes and coarse dry brush texture on warm ivory paper, simplified expressive forms. Subject centered in central 70 percent, generous clear margins. No text, numbers, arrows, logos, labels, watermark, photorealism or technical diagram. Subject: A wooden hand plane resting on a small workbench next to curled wood shavings and a pencil. In the background, a detached interior wooden door rests safely flat on two sturdy sawhorses. Tools are idle, nobody using the plane, no hands. Simple clear DIY still life.
+```
+
+### decoller-du-papier-peint
+
+Fichier : `public/images/tutoriels/decoller-du-papier-peint.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a wide strip of old wallpaper peeling away from a wall under a broad scraper, damp patches on the wall behind, a spray bottle and a sponge on the floor below. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### peindre-deux-couleurs
+
+Fichier : `public/images/tutoriels/peindre-deux-couleurs.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a wall carrying two horizontal bands of clearly different flat colours, separated by a crisp line still covered with a strip of masking tape, a roller resting in a tray at the foot of the wall. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### repeindre-un-mur-fonce-en-clair
+
+Fichier : `public/images/tutoriels/repeindre-un-mur-fonce-en-clair.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a paint roller applying pale paint across a wall where one broad band of dark colour still shows through the fresh coat, a paint tray below. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### repeindre-une-porte
+
+Fichier : `public/images/tutoriels/repeindre-une-porte.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: an interior panelled door lying flat on two trestles being painted with a small roller, a loaded paintbrush and an open paint pot resting on the floor beside it. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### remplacer-un-interrupteur
+
+Fichier : `public/images/tutoriels/remplacer-un-interrupteur.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover. Landscape exactly 1536x1024. Loose imperfect charcoal contours, flat gouache shapes and coarse dry brush texture on warm ivory paper, simplified expressive forms. Subject centered in central 70 percent, generous clear margins. No text, numbers, arrows, logos, labels, watermark, photorealism or technical diagram. Subject: One white square French wall light switch with single wide rocker and its separate white square decorative surround lying on an ivory surface next to a red and yellow insulated screwdriver. No wires, no terminals, no tester, no cutaway, no hands. Simple recognizable objects.
+```
+
+### poser-du-papier-peint-intisse
+
+Fichier : `public/images/tutoriels/poser-du-papier-peint-intisse.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a strip of patterned wallpaper being smoothed flat against a wall with a smoothing brush, its top edge overhanging near the ceiling, a craft knife and a pencil on a nearby ledge. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### peindre-un-plafond
+
+Fichier : `public/images/tutoriels/peindre-un-plafond.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a paint roller mounted on a long extension pole laying a fresh band of paint across a ceiling, a paint bucket and a protective sheet visible far below. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### purger-un-radiateur
+
+Fichier : `public/images/tutoriels/purger-un-radiateur.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a small bleed key fitted on the valve at the top of a cast-iron radiator, with a shallow bowl and a folded cloth on the floor below, a few water droplets. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### reboucher-une-fissure
+
+Fichier : `public/images/tutoriels/reboucher-une-fissure.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a narrow putty knife pressing filler into a thin crack running down a plain plaster wall, with a small open tub of filler and a sanding block on the floor below. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### choisir-une-cheville
+
+Fichier : `public/images/tutoriels/choisir-une-cheville.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: three wall plugs of clearly different shapes lying side by side in front of a masonry drill bit and a single screw, a small drill hole visible in a wall block behind them. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### fixer-une-tringle-a-rideaux
+
+Fichier : `public/images/tutoriels/fixer-une-tringle-a-rideaux.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a straight curtain rod resting on two wall brackets fixed to a plain wall, a spirit level and a pencil lying on a nearby windowsill, no curtains. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### remplacer-une-prise-murale
+
+Fichier : `public/images/tutoriels/remplacer-une-prise-murale.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape exactly 1536x1024. Loose imperfect charcoal contours, flat gouache, dry brush texture, ivory paper, simplified recognizable objects centered with generous margins. Subject: one white French TYPE E electrical socket viewed from front, round recessed face with EXACTLY TWO round dark holes side by side and ONE protruding cylindrical metal earth pin ABOVE them, in a square white surround. Beside it lies a single red and yellow insulated screwdriver. No side earth clips, no wires, no terminals, no tester, no hands, no text, no numbers, no letters, no logo, no watermark. Isolated object still life, not a wiring diagram.
+```
+
+### peindre-sans-bavures
+
+Fichier : `public/images/tutoriels/peindre-sans-bavures.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a small cutting-in paintbrush laying a clean band of paint along a wall corner just above a strip of masking tape fixed to a skirting board, a few drops of paint on the tape edge. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### choisir-sa-peinture
+
+Fichier : `public/images/tutoriels/choisir-sa-peinture.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: three paint colour swatch cards side by side showing a matte, a velvet and a satin finish, each a flat muted colour patch, with a small unbranded open paint pot and a brush beside them. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### calculer-sa-peinture
+
+Fichier : `public/images/tutoriels/calculer-sa-peinture.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a rolled measuring tape stretched along the base of a plain wall, a small notepad and pencil on the floor and a closed paint can with its lid beside them. No numbers or markings on the tape. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### choisir-rouleau-et-pinceau
+
+Fichier : `public/images/tutoriels/choisir-rouleau-et-pinceau.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a paint roller with a wooden handle and a small cutting-in paintbrush resting side by side across the ridged edge of a shallow paint tray holding a little paint. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### rejointoyer-un-mur-en-pierre
+
+Fichier : `public/images/tutoriels/rejointoyer-un-mur-en-pierre.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a fragment of a stone wall with irregular grey-beige stones and thick repointed pale lime mortar joints, a long pointed pointing trowel carrying a small blob of pale lime mortar in front of the wall and a shallow mortar tub with a mound of fresh mortar beside it. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural stone grey-beige and warm ivory subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### remplacer-mitigeur-lavabo
+
+Fichier : `public/images/tutoriels/remplacer-mitigeur-lavabo.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a standalone silver single-lever bathroom washbasin mixer tap with two braided flexible supply hoses curving below its base. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural silver and grey subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### reparer-fuite-joint-plat
+
+Fichier : `public/images/tutoriels/reparer-fuite-joint-plat.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: the end of a short curved silver braided plumbing supply hose with a hexagonal swivel nut, beside one clearly visible flat red fibre sealing washer and a small brass male plumbing fitting. Object vignette, not assembly diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural silver, brass and muted red subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### lisser-un-mur
+
+Fichier : `public/images/tutoriels/lisser-un-mur.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a broad steel smoothing knife with a wooden handle spreading a wide thin layer of pale white finishing plaster across a simple small upright fragment of pale grey plaster wall, a small unbranded open tub of filler beside it. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### arreter-chasse-eau-qui-coule
+
+Fichier : `public/images/tutoriels/arreter-chasse-eau-qui-coule.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: An open white ceramic toilet cistern seen slightly from above, lid placed beside it, simple grey flush tower and small blue float visible inside. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### remplacer-mecanisme-chasse-eau
+
+Fichier : `public/images/tutoriels/remplacer-mecanisme-chasse-eau.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: One standalone white and grey dual flush toilet mechanism with a blue adjustment piece, a large dark rubber sealing washer and a small round dual push button placed beside it. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
+### nettoyer-siphon-lavabo
+
+Fichier : `public/images/tutoriels/nettoyer-siphon-lavabo.png`
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: A white plastic bottle trap for a bathroom washbasin, its threaded bottom cup unscrewed and placed beside it, small cleaning brush and shallow muted blue basin beneath. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
+```
+
 ## Peinture — 16 septembre 2026
 
 **Illustrations provisoires.** L’environnement de rédaction de ce lot ne disposait pas de l’outil imagegen : les quatre dessins ont été tracés en SVG hors du dépôt, puis convertis en PNG 1536×1024 ; les variantes WebP 480, 720 et 960 ont été générées avec `cwebp` (qualité 82). À remplacer par une génération avec l’outil maison, sans changer les données des fiches. Couvertures illustratives, sans valeur de schéma de montage.

@@ -13,7 +13,7 @@
   "durationMinutes": 120,
   "cost": null,
   "image": "/images/tutoriels/repeindre-une-porte.png",
-  "imageAlt": "Une porte intérieure posée à plat sur des cales est peinte au rouleau, un pinceau et un pot de peinture posés à côté, à la gouache sur fond ivoire.",
+  "imageAlt": "Une porte intérieure sur deux tréteaux, partiellement peinte en blanc, avec un petit rouleau, un pinceau et un pot de peinture, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Repeinte d’une porte intérieure en bois, plane ou moulurée, déjà peinte ou vernie, dans une pièce sèche et fermée. Hors porte vitrée à recoller, remise à blanc complète, boiseries extérieures, porte d’entrée et porte à recouper.",
   "estimatesNote": "Comptez environ 2 h par face, hors démontage et séchage entre les couches, plus le temps de remontage des accessoires. Le budget dépend de la peinture, d’une sous-couche d’accrochage et du matériel de peinture.",
@@ -104,5 +104,5 @@
     "Si la porte est ancienne, vérifie que la peinture ne contient pas de plomb avant de la poncer ; dans le doute, ne produis pas de poussière."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

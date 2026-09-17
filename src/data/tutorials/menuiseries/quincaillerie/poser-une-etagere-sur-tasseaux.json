@@ -13,7 +13,7 @@
   "durationMinutes": 90,
   "cost": null,
   "image": "/images/tutoriels/poser-une-etagere-sur-tasseaux.png",
-  "imageAlt": "Une tablette posée dans un placard sur trois tasseaux de bois fixés aux parois, avec un mètre et une perceuse posés dessus, à la gouache sur fond ivoire.",
+  "imageAlt": "Une tablette en bois repose sur des tasseaux fixés sous ses bords dans un placard, avec une perceuse et un mètre pliant, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Pose d’une étagère fixe sur tasseaux dans un placard, un renfoncement ou entre deux murs, sur support plein ou plaque de plâtre. Hors étagère suspendue à fixation invisible, tablette porteuse d’une charge lourde, support creux sans ancrage adapté et étagère à intégrer dans un meuble.",
   "estimatesNote": "Comptez environ 1 h 30 pour une étagère, séchage de la colle non compris. Le budget se limite à une tablette, trois tasseaux et la visserie ; prévois des chevilles adaptées au support.",
@@ -99,5 +99,5 @@
     "Pour déposer un objet lourd au-dessus de ta tête, monte sur un marchepied stable et fais-toi aider ; ne te fie pas à la tablette comme appui."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

@@ -13,7 +13,7 @@
   "durationMinutes": 150,
   "cost": null,
   "image": "/images/tutoriels/poser-du-papier-peint-intisse.png",
-  "imageAlt": "Un lé de papier peint en cours de pose sur un mur, une brosse à maroufler et un cutter posés à côté, à la gouache sur fond ivoire.",
+  "imageAlt": "Une personne maroufle un lé de papier peint à motif végétal avec une brosse, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Pose de papier peint intissé sur un mur intérieur sec, sain, propre et préparé, avec un motif droit ou à raccord simple. Hors papier à encoller posé lé par lé, mur humide ou en mauvais état, doublage neuf non préparé et raccords de motifs complexes.",
   "estimatesNote": "Comptez environ 2 h 30 pour un pan de mur d’une pièce courante, hors préparation du mur et hors séchage. Le budget dépend de la surface, du nombre de rouleaux et de la colle ; compte une marge pour les raccords.",
@@ -104,5 +104,5 @@
     "Ne pose pas de papier peint sur un mur humide ou salpêtré : traite d’abord la cause de l’humidité, sinon le revêtement se décolle."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

@@ -13,7 +13,7 @@
   "durationMinutes": 300,
   "cost": null,
   "image": "/images/tutoriels/poser-un-sol-vinyle-clipsable.png",
-  "imageAlt": "Des lames de sol vinyle en cours de clipsage à plat sur un support préparé, avec une cale à frapper, un maillet et un cutter posés sur une lame encore à poser, à la gouache sur fond ivoire.",
+  "imageAlt": "Des lames de sol vinyle imitation bois en cours d’assemblage, avec une cale à frapper, un maillet et un cutter, au crayon sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Pose flottante de lames vinyle clipsables, avec ou sans sous-couche intégrée, en pièce sèche sur support plan, sec et sain. Hors pose collée, pièce d’eau avec évacuation au sol, chauffage au sol à eau, support non plan à ragréer et remplacement des plinthes traité dans une autre fiche.",
   "estimatesNote": "Comptez une journée pour une pièce courante, entre 24 et 48 h d’acclimatation des paquets non comprises. Le budget se limite aux lames, à une sous-couche si les lames n’en ont pas, et à quelques accessoires de finition.",
@@ -98,5 +98,5 @@
     "Si tu utilises un ragréage, aère la pièce et porte un masque pendant le mélange, puis respecte le délai de séchage avant de poser les lames."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

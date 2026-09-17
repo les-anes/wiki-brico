@@ -13,7 +13,7 @@
   "durationMinutes": 240,
   "cost": null,
   "image": "/images/tutoriels/renover-les-joints-d-un-carrelage.png",
-  "imageAlt": "Un carrelage mural dont les joints sont regarnis à la raclette, un grattoir fin et une brosse à joints posés sur une éponge, à la gouache sur fond ivoire.",
+  "imageAlt": "Une main regarnit les joints d’un carrelage bleu à la taloche, avec une brosse et une éponge à côté, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Rénovation de joints de carrelage mural ou au sol, en intérieur sec ou en pièce d’eau, quand les carreaux sont sains et bien collés. Hors carreaux décollés ou sonnant creux, joints très creusés à reprendre en profondeur, carrelage sur support humide et joint silicone à remplacer.",
   "estimatesNote": "Comptez environ 4 h pour une petite pièce d’eau, séchage compris. Le budget se limite à un nettoyant, un produit antifongique et un mortier de joint ; prévois une brosse et un grattoir dédiés.",
@@ -103,5 +103,5 @@
     "Travaille dans une pièce aérée, avec un marchepied stable pour les zones hautes : ces produits dégagent des vapeurs irritantes et une éponge mouillée sur un tabouret glisse vite."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

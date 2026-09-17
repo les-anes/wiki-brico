@@ -13,7 +13,7 @@
   "durationMinutes": 30,
   "cost": null,
   "image": "/images/tutoriels/remplacer-flexible-et-douchette.png",
-  "imageAlt": "Un flexible de douche en inox tressé neuf posé sur un carrelage, avec un rouleau de ruban téflon et une clé à molette à côté, à la gouache sur fond ivoire.",
+  "imageAlt": "Une douchette chromée, un flexible de douche enroulé et deux joints plats noirs, à la gouache sur fond ivoire.",
   "imageOrigin": "original",
   "scope": "Remplacement d’un flexible de douche et de sa pomme, sur une robinetterie de douche en bon état dont la sortie est accessible. Hors robinetterie encastrée à raccord spécifique, fuite venant du corps du mitigeur, douchette à système propriétaire et intervention sur les canalisations murales.",
   "estimatesNote": "Comptez environ 20 à 30 min, sans couper l’eau ni démonter la robinetterie. Le budget se limite à un flexible, une pomme de douche et un rouleau de ruban téflon.",
@@ -92,5 +92,5 @@
     "Vérifie l’état du mur derrière la robinetterie avant de refermer : une trace d’humidité ancienne signale un joint à remplacer plutôt qu’un simple flexible."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-16"
+  "updatedAt": "2026-09-17"
 }

@@ -1,3 +1,2 @@
-Illustration provisoire : à regénérer avec l’outil imagegen.
-
 Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: a wall carrying two horizontal bands of clearly different flat colours, separated by a crisp line still covered with a strip of masking tape, a roller resting in a tray at the foot of the wall. Object vignette, not a labeled diagram. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+Create a new standalone cover illustration, landscape exactly 1536x1024. Strong handmade pencil and gouache character on ivory paper. Keep the whole subject inside the central 70% with generous margins. No text, letters, numbers, logos, arrows or watermark.
