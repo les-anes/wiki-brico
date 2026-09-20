@@ -42,3 +42,43 @@ Le catalogue SHALL reconnaître les classements principaux et secondaires, ainsi
 
 - **WHEN** un tutoriel correspond au filtre par son champ `relatedCategories`
 - **THEN** il apparaît une seule fois dans les résultats.
+
+### Requirement: Recherche tolérante aux fautes
+
+La recherche soumise depuis l’accueil et celle du catalogue SHALL utiliser le même moteur local, sans requête réseau. Elle SHALL ignorer la casse, les accents et l’ordre des mots, conserver les correspondances partielles et exiger une correspondance pour chaque mot saisi dans le titre, la description, les outils ou les classements. Elle SHALL tolérer une insertion, une suppression, une substitution ou une inversion de deux lettres adjacentes par mot saisi d’au moins quatre caractères ; les mots plus courts SHALL rester exacts ou partiels.
+
+Les résultats SHALL placer les correspondances sans faute avant les correspondances approximatives et, dans chaque groupe, privilégier celles dont tous les mots figurent dans le titre. Une recherche vide SHALL conserver l’ordre du catalogue. Les autres filtres SHALL rester applicables et la saisie originale SHALL être conservée dans l’URL et le champ de recherche.
+
+#### Scenario: Rechercher depuis l’accueil avec une faute
+
+- **WHEN** un visiteur soumet « ragrage » dans « Rechercher un tutoriel »
+- **THEN** le catalogue affiche le tutoriel sur le ragréage et conserve « ragrage » dans le champ et le paramètre `q`.
+
+#### Scenario: Inverser les mots ou deux lettres
+
+- **WHEN** un visiteur recherche « parqet poser » ou « parqeut »
+- **THEN** la fiche « Poser un parquet contrecollé » figure dans les résultats.
+
+#### Scenario: Préserver les filtres et éviter les faux résultats
+
+- **WHEN** un visiteur cherche un mot introuvable ou active une catégorie incompatible avec les résultats
+- **THEN** le catalogue n’affiche aucun tutoriel hors des correspondances et filtres demandés.
+
+### Requirement: Suggestions de recherche sur l’accueil
+
+Le champ « Rechercher un tutoriel » de l’accueil SHALL afficher sous la saisie jusqu’à cinq tutoriels issus du même moteur et du même classement que le catalogue. Chaque suggestion SHALL afficher le titre et la catégorie et ouvrir directement la fiche. Une saisie vide SHALL masquer la liste ; une saisie sans résultat SHALL afficher un message explicite. Un bouton SHALL permettre d’afficher tous les résultats dans le catalogue.
+
+#### Scenario: Sélectionner une suggestion au clavier
+
+- **WHEN** un visiteur saisit « parqet », parcourt les suggestions avec les flèches haut/bas puis appuie sur Entrée
+- **THEN** la fiche sélectionnée s’ouvre ; le champ conserve le focus pendant le parcours et annonce la sélection aux technologies d’assistance via le modèle combobox/listbox.
+
+#### Scenario: Fermer ou poursuivre la recherche
+
+- **WHEN** un visiteur appuie sur Échap, sur Tab ou quitte le composant
+- **THEN** la liste se ferme sans effacer sa saisie ; Entrée sans sélection ou le bouton de recherche ouvre le catalogue filtré.
+
+#### Scenario: Choisir avec le pointeur
+
+- **WHEN** un visiteur clique ou touche une suggestion
+- **THEN** sa fiche s’ouvre directement sans qu’une perte de focus empêche la sélection.

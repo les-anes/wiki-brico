@@ -17,12 +17,12 @@ import {
   belongsToCategory,
   catalogHref,
   readCatalogFilters,
-  normalize,
   duration,
   type CatalogFilters,
 } from "@/lib/catalog";
 import { responsiveImage } from "@/lib/images";
 import { tutorialPath } from "@/lib/routes";
+import { searchTutorials } from "@/lib/search";
 import { childTopics } from "@/lib/topic-path";
 
 export function CatalogPage({
@@ -48,28 +48,16 @@ export function CatalogPage({
   const setSavedOnly = (value: boolean) => update({ savedOnly: value });
   const selectedCategory = categories.find((c) => c.id === category);
   const activeJourney = journeys.find((j) => j.id === journey);
-  const filtered = tutorials.filter(
-    (t) =>
-      belongsToCategory(t, category, topicPath) &&
-      (difficulty === "all" || t.difficulty === difficulty) &&
-      (!savedOnly || saved.includes(t.id)) &&
-      (journey === "all" || t.journeys?.includes(journey)) &&
-      normalize(
-        [
-          t.title,
-          t.description,
-          ...t.tools,
-          ...[
-            t.category,
-            ...(t.relatedCategories ?? []).map((c) => c.category),
-          ].flatMap((id) => {
-            const match = categories.find((item) => item.id === id);
-            return match ? [match.name, match.shortName] : [id];
-          }),
-          ...(t.topicPath ?? []),
-          ...(t.relatedCategories ?? []).flatMap((c) => c.topicPath),
-        ].join(" "),
-      ).includes(normalize(query)),
+  const filtered = searchTutorials(
+    tutorials.filter(
+      (t) =>
+        belongsToCategory(t, category, topicPath) &&
+        (difficulty === "all" || t.difficulty === difficulty) &&
+        (!savedOnly || saved.includes(t.id)) &&
+        (journey === "all" || t.journeys?.includes(journey)),
+    ),
+    categories,
+    query,
   );
   return (
     <main tabIndex={-1}>

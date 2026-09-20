@@ -8,7 +8,6 @@ import {
   Clock3,
   House,
   Menu,
-  Search,
   ShieldCheck,
   Sparkles,
   Wrench,
@@ -21,6 +20,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { CatalogPage } from "@/components/catalog-page";
 import { CategoryNavigation } from "@/components/category-navigation";
+import { TutorialSearch } from "@/components/tutorial-search";
 import { Button } from "@/components/ui/button";
 import { tutorials } from "@/data";
 import { categories, navigationCategories, journeys } from "@/data/taxonomy";
@@ -48,7 +48,6 @@ export default function App({
   path: string;
   navigate: (href: string, replace?: boolean) => void;
 }) {
-  const [query, setQuery] = useState("");
   const [saved, setSaved] = useState<string[]>([]);
   const [menu, setMenu] = useState(false);
   const [lastCatalog, setLastCatalog] = useState(catalogHref());
@@ -187,24 +186,7 @@ export default function App({
                 <br className="desktop-break" /> Des tutos clairs, les bons
                 outils et le plaisir de faire soi-même.
               </p>
-              <form
-                className="search-box"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  navigate(catalogHref({ query }));
-                }}
-              >
-                <Search size={20} />
-                <input
-                  aria-label="Rechercher un tutoriel"
-                  placeholder="Qu’avez-vous envie de réaliser ?"
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                />
-                <Button size="icon" aria-label="Rechercher">
-                  <ArrowRight size={20} />
-                </Button>
-              </form>
+              <TutorialSearch navigate={navigate} />
               <div className="hero-hints">
                 <span>Un projet en tête ?</span>
                 {["Peinture", "Étagère", "Joints"].map((s) => (

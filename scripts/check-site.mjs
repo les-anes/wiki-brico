@@ -104,6 +104,19 @@ try {
     1,
   );
   assert.equal(countCards(render(catalogHref({ savedOnly: true }))), 0);
+  const fuzzyResults = render(catalogHref({ query: "parqet poser" }));
+  assert(
+    fuzzyResults.includes('href="/tutoriel/poser-du-parquet/"'),
+    "La recherche trouve le parquet malgré une faute et l’ordre des mots",
+  );
+  assert(fuzzyResults.includes('value="parqet poser"'));
+  assert.equal(
+    countCards(
+      render(catalogHref({ query: "parqet poser", category: "electricite" })),
+    ),
+    0,
+    "La recherche approximative respecte le filtre de catégorie",
+  );
   assert.equal(countCards(render(catalogHref({ category: "electricite" }))), 6);
   assert.equal(
     countCards(render(catalogHref({ query: "zzzintrouvablezzz" }))),
@@ -404,6 +417,9 @@ try {
     );
     assert.deepEqual(relevant, [], `hydratation : ${relevant.join(" | ")}`);
   }
+
+  const { checkAutocomplete } = await import("./check-autocomplete.mjs");
+  await checkAutocomplete(server);
 
   console.log(
     "Accueil, catalogue, 62 fiches, 64 URLs, sitemap, robots, fil d’Ariane, 404, shim et hydratation : contrôles réussis.",

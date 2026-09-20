@@ -54,11 +54,6 @@ export function belongsToCategory(
       matchesTopicPath(entry.topicPath, topicPath),
   );
 }
-export const normalize = (s: string) =>
-  s
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase();
 export const duration = (minutes: number | null) =>
   minutes === null
     ? "Durée à préciser"
