@@ -1,0 +1,100 @@
+{
+  "id": "ragreer-un-sol-en-beton",
+  "title": "Ragréer un sol en béton avant de poser un revêtement",
+  "description": "Le ragréage est une fine couche de mortier qui corrige les petits défauts de planéité du sol. Prépare un support en béton ou en chape ciment, puis coule un mortier autolissant pour accueillir ton futur revêtement.",
+  "category": "finitions",
+  "topicPath": ["Ragréage"],
+  "journeys": ["renover-une-chambre"],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 240,
+  "cost": null,
+  "image": "/images/tutoriels/ragreer-un-sol-en-beton.png",
+  "imageAlt": "Une main gantée verse du mortier de ragréage gris sur un sol en béton, avec une lisseuse à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Ragréage manuel autolissant dans une petite pièce intérieure sèche, sur béton nu ou chape ciment stable, avant recouvrement. Hors bois, ancien carrelage, chape anhydrite, plancher chauffant, humidité ascendante, fissures, réparation structurelle, forte différence de niveau et création de pente.",
+  "estimatesNote": "Prévois une demi-journée de préparation et de coulage pour une petite pièce, hors réparations et délais de séchage du primaire et du mortier. Le budget reste à chiffrer selon la surface et l’épaisseur : sacs, primaire et protections, puis outillage et revêtement final en plus.",
+  "sources": [
+    {
+      "title": "Weber — Préparation du support et application des ragréages",
+      "url": "https://www.fr.weber/preparation-du-support-et-application-des-ragreages",
+      "note": "Préparation mécanique, aspiration, rebouchage, primaire et application manuelle à la lisseuse ; réglages à vérifier sur la notice du produit choisi.",
+      "accessedAt": "2026-09-20"
+    },
+    {
+      "title": "Bostik — Ragréage auto-lissant, fiche technique",
+      "url": "https://www.bostik.com/files/live/sites/shared_bostik/files/import-france/globalassets/products/ragreage-auto-lissant_france_fr2/downloads/ragreage-auto-lissant.pdf",
+      "note": "Édition du 11 janvier 2017 consultée pour les supports, le calcul de consommation et la distinction marche/recouvrement ; ses dosages et délais ne sont pas généralisés aux produits actuels.",
+      "accessedAt": "2026-09-20"
+    }
+  ],
+  "tools": [
+    "Règle de maçon de 2 m, niveau à bulle, mètre et crayon",
+    "Grattoir, truelle et aspirateur de chantier adapté aux poussières minérales",
+    "Ponceuse à béton avec aspiration si une laitance doit être retirée",
+    "Rouleau, pinceau et bac pour le primaire",
+    "Malaxeur électrique lent, fouet et deux seaux propres",
+    "Récipient gradué pour doser l’eau",
+    "Lisseuse inox et rouleau débulleur si la notice le demande",
+    "Gants étanches adaptés au ciment, lunettes et protection respiratoire adaptée aux poussières"
+  ],
+  "materials": [
+    {
+      "name": "Mortier de ragréage autolissant compatible avec le support et le revêtement",
+      "quantity": "Surface en m² × épaisseur moyenne en mm × consommation en kg/m²/mm indiquée sur le sac ; arrondir au sac supérieur"
+    },
+    {
+      "name": "Primaire compatible avec le mortier et la porosité du support",
+      "quantity": "Toute la surface, selon le rendement et le nombre de couches de la notice"
+    },
+    {
+      "name": "Eau propre",
+      "quantity": "Dose exacte indiquée par sac, mesurée pour chaque mélange"
+    },
+    {
+      "name": "Mortier de réparation compatible",
+      "quantity": "Pour les trous localisés, s’il y en a"
+    },
+    {
+      "name": "Bande périphérique compressible et arrêt de coulage étanche",
+      "quantity": "Selon les prescriptions du système : pourtour, traversées et largeur des seuils ouverts"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie que ton sol convient",
+      "description": "Travaille sur du béton nu ou une chape ciment dure et stable, sans fissure ni partie qui se détache ; les autres supports et les sols chauffants sortent de ce guide. Confirme le séchage et l’absence de remontées d’humidité avec les contrôles et seuils prescrits pour le système choisi, car une surface claire ne suffit pas. En cas de doute sur le support ou l’humidité, ne coule pas avant d’en avoir identifié et traité la cause."
+    },
+    {
+      "title": "Mesure les creux et prévois les sacs",
+      "description": "Déplace la règle dans plusieurs directions, mesure les creux et repère les points hauts avec le niveau, puis vérifie la hauteur disponible sous les portes avec le futur revêtement. Choisis une épaisseur qui respecte les limites du produit partout, y compris sur les points hauts : un autolissant ne sert pas à créer une pente. Calcule la quantité avec la consommation du sac et prépare tout le matériel avant de mélanger."
+    },
+    {
+      "title": "Nettoie et ferme les passages",
+      "description": "Retire les parties non adhérentes et la laitance, cette pellicule fragile en surface du béton, avec un outil relié à l’aspiration, puis aspire soigneusement. Rebouche les trous avec le mortier compatible et laisse-le durcir selon sa notice. Ferme les seuils et passages où le liquide pourrait fuir, pose la bande périphérique prévue par le système et conserve les joints de mouvement existants sans les recouvrir."
+    },
+    {
+      "title": "Applique le primaire",
+      "description": "Étale au rouleau, puis au pinceau dans les angles, le primaire prévu pour ton support : il régule l’absorption et favorise l’adhérence. Respecte sa dilution éventuelle, sa consommation et son délai avant recouvrement, sans laisser de flaques."
+    },
+    {
+      "title": "Mélange et coule sans interruption",
+      "description": "Verse la dose d’eau mesurée dans un seau propre, ajoute la poudre et malaxe lentement en respectant les temps de mélange et de repos de la notice, sans rajouter d’eau quand le mortier épaissit. Pars du fond de la pièce vers la sortie, verse par zones contiguës et répartis à la lisseuse à l’épaisseur prévue ; raccorde chaque mélange au précédent encore frais dans le temps d’utilisation annoncé. Passe immédiatement le rouleau débulleur si le produit le demande et prévois une deuxième personne au mélange si tu ne peux pas tenir seul cette cadence."
+    },
+    {
+      "title": "Laisse sécher et contrôle la surface",
+      "description": "Respecte la température de la notice et protège le sol du soleil direct et des courants d’air pendant la prise. Attends le délai d’ouverture à la marche pour vérifier à la règle la planéité exigée par ton futur revêtement ; une zone friable, fissurée ou décollée doit être reprise après identification de sa cause. Attends ensuite le délai de recouvrement et satisfais les critères d’humidité du système avant la pose : un sol praticable n’est pas forcément prêt à être couvert."
+    }
+  ],
+  "mistakes": [
+    "Ajouter de l’eau pour rendre le mélange plus fluide ou réutiliser un mortier qui commence à prendre.",
+    "Couler sur la poussière ou laisser sécher le primaire au-delà de son délai de recouvrement.",
+    "Confondre le délai pour marcher avec celui pour poser le revêtement et emprisonner l’humidité."
+  ],
+  "safety": [
+    "Au mélange, porte lunettes, gants étanches et protection respiratoire adaptée à la fiche de sécurité ; évite tout contact du ciment frais avec la peau.",
+    "Ne ponce pas un ancien revêtement ou une colle de composition inconnue : ce guide suppose un support minéral nu identifié. Aspire les poussières à la source lors de sa préparation.",
+    "Débranche le malaxeur avant de toucher au fouet ou de le nettoyer ; garde ses connexions électriques éloignées des seaux d’eau."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-20"
+}

@@ -94,6 +94,16 @@ for (const file of await listJson(directory)) {
       `${file}: chemin image invalide`,
     );
     await access(new URL(`../public${t.image}`, import.meta.url));
+    for (const width of [480, 720, 960]) {
+      const variant = `${t.image.replace(/\.png$/, "")}-${width}.webp`;
+      await access(new URL(`../public${variant}`, import.meta.url)).catch(
+        () => {
+          assert.fail(
+            `${file}: variante d’illustration manquante : ${variant}`,
+          );
+        },
+      );
+    }
   }
   if (t.imageOrigin !== undefined) {
     assert(

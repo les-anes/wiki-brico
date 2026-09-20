@@ -911,3 +911,13 @@ Fichier : `public/images/tutoriels/poser-un-plancher-osb-sur-solives.png`
 ```text
 Use case: stylized-concept. Original French DIY tutorial cover, landscape exactly 1536x1024. Subject: an ochre OSB flooring panel with very recognizable large compressed wood flakes, installed flat across four parallel solid timber floor joists. Low three-quarter view clearly shows the thick joists extending out toward the foreground from beneath the panel, and the panel spanning perpendicular across all four joists. Panel ends supported on outer joists, screw heads flush in neat rows above joists. A cordless screwdriver and a small open tin of wood screws rest on the panel. Simple isolated object vignette, no person, no building background. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified expressive recognizable forms, whole subject inside central 70 percent with generous margins for mobile cropping. Natural warm wood colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
 ```
+
+## Finitions — 20 septembre 2026
+
+### ragreer-un-sol-en-beton
+
+Illustration originale générée avec l’outil intégré imagegen et contrôlée visuellement. Fichier : `public/images/tutoriels/ragreer-un-sol-en-beton.png`, 1536×1024 ; variantes WebP 480, 720 et 960 pixels à qualité 82. Source et prompt conservés dans `output/imagegen/`.
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape exactly 1536x1024. Subject: a gloved hand tilting a plain bucket to pour smooth grey self-leveling floor compound onto a small bare concrete interior floor, with a stainless steel smoothing trowel with wooden handle beside the fresh puddle. Only hand and forearm visible, no full person. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable forms, whole subject within central 70 percent, generous margins for mobile cropping. Natural grey mortar and muted blue bucket. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```

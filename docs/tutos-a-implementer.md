@@ -1,6 +1,6 @@
 # Todo des prochains tutoriels
 
-Dernière mise à jour : **17 septembre 2026**.
+Dernière mise à jour : **20 septembre 2026**.
 
 Ce document centralise les idées de nouveaux tutos WikiBrico. Il sert à choisir le prochain sujet et à suivre sa réalisation ; il ne remplace pas les specs du tutoriel.
 
@@ -13,7 +13,7 @@ Ce document centralise les idées de nouveaux tutos WikiBrico. Il sert à choisi
 - Revoir les priorités une fois par mois ou lors du choix d’un nouveau lot : demandes des lecteurs, recherches internes sans résultat et données de recherche disponibles passent avant les intuitions initiales.
 - Conserver les identifiants `T01`, `T02`, etc. lorsqu’une idée change de priorité. Ajouter les nouvelles idées à la suite de la numérotation.
 
-Les 42 idées de cette liste ont été **réalisées**. Les nouvelles idées viendront s’ajouter à la suite de la numérotation, à partir de T43.
+Les 44 idées de cette liste ont été **réalisées**. Les nouvelles idées viendront s’ajouter à partir de T45.
 
 ## Pourquoi ces priorités
 
@@ -51,6 +51,8 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - [Relier du PER au cuivre](../src/data/tutorials/plomberie/arrivee-d-eau/raccord-per-vers-cuivre/raccord-per-vers-cuivre.json)
 
 ## Réalisés depuis cette liste
+
+- [x] **T44 — Ragréer un sol en béton avant de poser un revêtement** — terminé le 2026-09-20 — [/tutoriel/ragreer-un-sol-en-beton/](/tutoriel/ragreer-un-sol-en-beton/)
 
 - [x] **T43 — Poser un plancher OSB sur solives** — terminé le 2026-09-17 — [/tutoriel/poser-un-plancher-osb-sur-solives/](/tutoriel/poser-un-plancher-osb-sur-solives/)
 - [x] **T18 — Remplacer un carreau de carrelage cassé** — terminé le 2026-09-16 — [/tutoriel/remplacer-un-carreau-de-carrelage-casse/](/tutoriel/remplacer-un-carreau-de-carrelage-casse/)
@@ -118,3 +120,5 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 - **2026-09-17** : remplacement des 42 couvertures des tutoriels réalisés par des illustrations originales générées avec imagegen, dans le style crayon/gouache sur fond ivoire. PNG et trois variantes WebP renouvelés ; textes alternatifs ajustés. Les mentions d’illustrations provisoires ci-dessus décrivent l’état historique des lots.
 - **2026-09-17** : idée T43 « poser un plancher OSB sur solives » demandée puis réalisée dans la foulée : fiche documentée au classement « Structure › Planchers », avec la référence NF DTU 51.3 et les sources FCBA et AFNOR consultées. L’illustration reste à générer : son prompt est consigné dans `docs/illustrations-tutoriels.md` et `output/imagegen/`. Le catalogue contient 61 tutoriels.
+
+- **2026-09-20** : T44 réalisé à la demande d’un lecteur : ragréage sur béton ou chape ciment, rubrique « Finitions › Ragréage », sources Weber et Bostik consultées, illustration originale imagegen et variantes WebP. Validation des données, typage, lint, tests, build et contrôle du site réussis. Le catalogue contient 62 tutoriels ; aucune idée ne reste à faire.
