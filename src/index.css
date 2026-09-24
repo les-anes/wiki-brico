@@ -1184,6 +1184,9 @@ footer > span {
   color: #636b5a;
   font-size: 10px;
 }
+.detail figure {
+  margin-top: 18px;
+}
 .detail figure .detail-image {
   object-fit: contain;
   background: #efefe7;
