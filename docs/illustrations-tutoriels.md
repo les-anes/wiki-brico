@@ -947,3 +947,29 @@ Fichier : `public/images/tutoriels/radiateur-connecte.png`, 1536×1024 ; variant
 ```text
 Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024 (3:2 aspect ratio). Subject: a flat white panel radiator with vertical fins seen from the front against a pale wall; a grey connected thermostatic head with a small round display is fitted on its left side, and three simple radio waves rise from the head toward a smartphone standing on a small wooden shelf on the right, its screen showing an abstract circular dial and a slider. No people, no full person. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors: warm ivory paper, muted sage wall wash, white radiator, grey head, terracotta accent. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram; the phone screen stays abstract, without letters or figures.
 ```
+
+## Toiture — 24 septembre 2026
+
+### poser-une-couverture-en-ardoise
+
+Fichier : `public/images/tutoriels/poser-une-couverture-en-ardoise.png`, 1536×1024 ; variantes WebP 480, 720 et 960 pixels à qualité 82. Illustration générée avec l’outil d’image de ChatGPT à partir du gabarit de prompt, puis contrôlée visuellement : sujet dans les 70 % centraux, aucun texte ni personnage. Prompt conservé dans `output/imagegen/poser-une-couverture-en-ardoise.txt`.
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024 (3:2 aspect ratio). Subject: two rows of dark slate tiles laid on horizontal wooden battens, seen at a low three-quarter angle so the battens show underneath; a slate hammer and a small pile of copper hooks rest on the lower row, and a few cut slates lean against the battens on the right. No people, no full person. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors: warm ivory paper, cool grey-blue slate, pale wood battens, a copper accent. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### poser-une-couverture-en-tuile-mecanique
+
+Fichier : `public/images/tutoriels/poser-une-couverture-en-tuile-mecanique.png`, 1536×1024 ; variantes WebP 480, 720 et 960 pixels à qualité 82. Illustration générée avec l’outil d’image de ChatGPT à partir du gabarit de prompt, puis contrôlée visuellement : sujet dans les 70 % centraux, aucun texte ni personnage. Prompt conservé dans `output/imagegen/poser-une-couverture-en-tuile-mecanique.txt`.
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024 (3:2 aspect ratio). Subject: a single terracotta interlocking clay roof tile resting on two horizontal wooden battens seen at a low three-quarter angle, with a roofer hammer and a taut chalk line crossing the frame, and a small stack of two more clay tiles beside it. No people, no full person. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors: warm ivory paper, terracotta clay, pale wood battens, a charcoal accent. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+### poser-une-couverture-en-bac-acier
+
+Fichier : `public/images/tutoriels/poser-une-couverture-en-bac-acier.png`, 1536×1024 ; variantes WebP 480, 720 et 960 pixels à qualité 82. Illustration générée avec l’outil d’image de ChatGPT à partir du gabarit de prompt, puis contrôlée visuellement : sujet dans les 70 % centraux, aucun texte ni personnage. Prompt conservé dans `output/imagegen/poser-une-couverture-en-bac-acier.txt`.
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024 (3:2 aspect ratio). Subject: a ribbed coated steel roofing sheet in muted green lying across three horizontal steel purlins, seen at a low three-quarter angle so the corrugations and the purlins underneath are both readable; a cordless drill-driver with a screwdriver bit rests on the upper part of the sheet, with a few screws and sealing washers beside it. No people, no full person. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors: warm ivory paper, muted green coated steel, grey purlins, a dark accent. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```

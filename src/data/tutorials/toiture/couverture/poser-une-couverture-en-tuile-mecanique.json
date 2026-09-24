@@ -1,0 +1,110 @@
+{
+  "id": "poser-une-couverture-en-tuile-mecanique",
+  "title": "Poser une couverture en tuile mécanique",
+  "description": "Une tuile mécanique tient par son emboîtement et par sa fixation, pas par son poids. Voici comment poser un versant sur des liteaux déjà en place : pureau, rang d’égout, montée rang par rang, ventilation et finitions.",
+  "category": "toiture",
+  "topicPath": ["Couverture"],
+  "tags": ["couverture", "toiture", "tuile"],
+  "relatedTutorials": [
+    "poser-une-couverture-en-ardoise",
+    "poser-une-couverture-en-bac-acier",
+    "organiser-les-travaux-d-une-chambre"
+  ],
+  "difficulty": "Avancé",
+  "durationMinutes": 300,
+  "cost": null,
+  "image": "/images/tutoriels/poser-une-couverture-en-tuile-mecanique.png",
+  "imageAlt": "Une tuile mécanique à emboîtement posée sur ses liteaux, un marteau de couvreur et un cordeau posés à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Pose de tuiles à emboîtement sur un versant d’annexe ou de dépendance dont les liteaux et l’écran sous-toiture sont déjà en place et dimensionnés pour le modèle retenu. Hors charpente, pose de l’écran et des liteaux, zinguerie, tuiles canal et plates, remplacement de tuiles isolées et toiture de maison d’habitation.",
+  "estimatesNote": "Compte une journée pour un versant d’annexe, avec une personne au sol pour passer les tuiles. Le budget part dans la tuile, puis dans la fixation : les crochets et les vis de rive sont peu de chose à côté du reste, et ils décident de la tenue au vent. Prévois des tuiles d’avance pour les coupes de rive et les casses.",
+  "sources": [
+    {
+      "title": "Edilians — Guide de pose d’une tuile à emboîtement",
+      "url": "https://edilians.com/guides-de-pose/beauvoise-huguenot",
+      "note": "Guide de pose d’un fabricant français, fondé sur le DTU 40.21 relatif aux tuiles à emboîtement à relief, revu en 2013 : dimensionnement des liteaux, densité de fixation des tuiles, points singuliers, ventilation et protection contre la neige poudreuse. En citant l’article 4.7, il rappelle que les orifices de ventilation se répartissent par moitié en partie basse et au voisinage du faîtage, et qu’un orifice de plus de 20 mm reçoit un grillage fin contre les petits animaux. Base de la méthode et des points de vigilance.",
+      "accessedAt": "2026-09-24"
+    },
+    {
+      "title": "Edilians — Détermination de la section des liteaux",
+      "url": "https://edilians.com/section-liteaux",
+      "note": "Outil du fabricant qui croise l’altitude du site, le matériau du liteau, le pureau du modèle, le recouvrement et l’entraxe des chevrons pour donner la section de liteau à employer, conformément au DTU de la tuile. Les pureaux proposés vont de 25 cm et moins à 31-40 cm. C’est ce qui justifie de ne pas réutiliser un liteaunage prévu pour un autre pureau.",
+      "accessedAt": "2026-09-24"
+    },
+    {
+      "title": "Bricoleur du dimanche — Travailler en sécurité sur le toit",
+      "url": "https://www.bricoleurdudimanche.com/comment-travailler-en-securite-sur-un-toit",
+      "note": "Règles d’accès et de travail en hauteur sur une couverture. Base des consignes de sécurité : moyen d’accès stable, hauteur à partir de laquelle l’intervention revient à un couvreur, prudence par vent fort.",
+      "accessedAt": "2026-09-24"
+    }
+  ],
+  "tools": [
+    "Échafaudage de pied ou plateforme de travail avec garde-corps",
+    "Échelle de toit et corde d’accès",
+    "Marteau de couvreur et broche à tuile",
+    "Meuleuse équipée d’un disque diamant pour les coupes",
+    "Visseuse et crochets de fixation",
+    "Cordeau, niveau et crayon de charpentier",
+    "Gants et chaussures à semelle crantée"
+  ],
+  "materials": [
+    {
+      "name": "Tuiles à emboîtement du modèle retenu",
+      "quantity": "Selon la surface du versant, plus 5 à 10 % pour les rives, les abouts et les casses"
+    },
+    {
+      "name": "Crochets et vis de fixation inox",
+      "quantity": "Selon la zone de vent du site et les prescriptions de la notice"
+    },
+    {
+      "name": "Closoirs, bandes de rive et faîtières",
+      "quantity": "Un closoir par rang en rive, plus la longueur de faîtage"
+    },
+    {
+      "name": "Planches de circulation",
+      "quantity": "Deux, pour ne pas marcher sur les tuiles posées"
+    },
+    {
+      "name": "Tuiles de ventilation ou chatières",
+      "quantity": "En partie basse et en partie haute, par moitié"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Contrôle les liteaux et l’entrée d’air à l’égout",
+      "description": "Vérifie l’entraxe des liteaux, leur fixation sur chaque chevron et la planéité de l’ensemble. L’écran sous-toiture doit rester apparent sous le liteau à l’égout, pour que l’eau de ruissellement soit renvoyée dans la gouttière. Garde les orifices de ventilation libres en partie basse : c’est par là que s’évacue la condensation, et un orifice de plus de 20 mm se grille finement contre les petits animaux."
+    },
+    {
+      "title": "Vérifie que les liteaux correspondent au pureau du modèle",
+      "description": "Le pureau du modèle commande l’entraxe des liteaux, et la section du liteau dépend elle-même du pureau, du recouvrement, de l’altitude du site et de l’entraxe des chevrons. Si le support a été calculé pour un autre modèle, arrête-toi là : tu remets les liteaux à l’entraxe avant de poser, pas après avoir cloué trois cents tuiles."
+    },
+    {
+      "title": "Pose le rang d’égout et tends les cordeaux",
+      "description": "Commence par le rang d’égout, qui doit dépasser d’un rien dans la gouttière et rester parfaitement aligné : les tuiles suivantes se recalent dessus. Tends un cordeau à chaque rang et garde les emboîtements alignés dans l’axe du versant, sinon les rangs partent en biais et la dernière rangée se paie en coupes."
+    },
+    {
+      "title": "Monte rang par rang en emboîtant",
+      "description": "Emboîte chaque tuile sur celle d’à côté et fais-la reposer sur le liteau supérieur, sans forcer. Déplace-toi sur des planches posées en travers, jamais directement sur les tuiles : une tuile cassée au milieu du versant se remplace, mais un déboîtement général se voit de la rue. Fais-toi passer les tuiles du sol, une rangée à la fois."
+    },
+    {
+      "title": "Fixe selon la zone de vent",
+      "description": "La densité de fixation n’est pas la même au bord de mer qu’à l’abri d’un coteau : elle suit les prescriptions de la notice, et les règles ont été revues avec la mise à jour du DTU 40.21 en 2013. Rives, faîtage, arêtiers, abouts et encadrements de pénétration demandent une fixation renforcée. C’est peu de travail au moment de la pose, et c’est ce qui tient la toiture dans une tempête."
+    },
+    {
+      "title": "Traite le faîtage, les rives et la ventilation haute",
+      "description": "Pose les faîtières sur leur support, habille les rives avec les bandes et closoirs prévus, et laisse la sortie d’air en haut du versant : la ventilation d’une couverture se répartit par moitié entre le bas et le haut. Reprends ensuite le versant à l’œil depuis le sol, retire les gravats de gouttière et note le modèle et le pureau employés."
+    }
+  ],
+  "mistakes": [
+    "Recopier l’entraxe des liteaux d’un toit voisin sans vérifier le pureau du modèle posé, puis découvrir en haut du versant qu’il manque une rangée.",
+    "Boucher les entrées d’air de l’égout avec l’isolant ou la laine : la condensation reste sous l’écran et l’écran finit par goutter.",
+    "Marcher directement sur les tuiles posées pour gagner du temps : casse, déboîtements et rangs qui ondulent."
+  ],
+  "safety": [
+    "Travaille sur un échafaudage ou une plateforme avec garde-corps, jamais sur une échelle posée contre le mur ou sur le versant lui-même.",
+    "Ne monte pas par vent fort : une tuile emportée est un projectile, et le versant devient instable sous les pieds.",
+    "Au-delà de 3 m de hauteur, sans point d’ancrage ni moyen d’accès sûr, fais appel à un couvreur. Porte des gants et des chaussures crantées, et ne t’appuie pas sur le rang que tu viens de poser."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24"
+}

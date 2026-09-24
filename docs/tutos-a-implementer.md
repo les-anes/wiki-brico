@@ -125,6 +125,8 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 - **2026-09-24** : structuration des 62 fiches existantes avec trois liens « Pour continuer » et des tags éditoriaux par fiche ; ajout de six pages piliers. Aucun nouveau tutoriel ni changement de priorité.
 
+- **2026-09-24** : trois fiches de couverture demandées pour le thème Toiture, vide jusqu’ici : poser une couverture en ardoise, en tuile mécanique et en bac acier. Périmètre retenu : pose seule sur un support déjà en place, liteaux ou pannes, pour une annexe ou une dépendance, avec les garde-fous d’accès en hauteur. Sources : guide de pose Edilians adossé au DTU 40.21 et outil de détermination de la section des liteaux pour la tuile mécanique, Wikipédia et Bricoleur du dimanche pour l’ardoise, Bricoleur du dimanche et Joris Ide pour le bac acier. Les trois illustrations restent à générer : leurs prompts sont consignés dans `output/imagegen/`. Le catalogue contient 76 tutoriels.
+
 ## Lot peinture — En cours
 
 - [ ] T45 — Lessiver un mur avant de le peindre — En cours

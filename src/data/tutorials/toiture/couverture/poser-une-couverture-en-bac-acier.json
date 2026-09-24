@@ -1,0 +1,109 @@
+{
+  "id": "poser-une-couverture-en-bac-acier",
+  "title": "Poser une couverture en bac acier",
+  "description": "Léger, rapide à poser et taillé pour les faibles pentes, le bac acier est la couverture des abris, carports et dépendances. Voici comment le mettre en œuvre sur des pannes déjà en place : sens de pose, recouvrements, fixations et finitions.",
+  "category": "toiture",
+  "topicPath": ["Couverture"],
+  "tags": ["bac acier", "couverture", "toiture"],
+  "relatedTutorials": [
+    "poser-une-couverture-en-tuile-mecanique",
+    "poser-une-couverture-en-ardoise",
+    "poser-un-plancher-osb-sur-solives"
+  ],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 180,
+  "cost": null,
+  "image": "/images/tutoriels/poser-une-couverture-en-bac-acier.png",
+  "imageAlt": "Un bac acier nervuré posé sur ses pannes, avec une visseuse et des vis à joint posées dessus, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Pose de plaques de bac acier sur une ossature de pannes déjà en place, sur une annexe, un abri ou un carport, avec la pente et l’entraxe prévus par le fabricant. Hors ossature et pannes, isolation et panneaux sandwich, zinguerie, pose de panneaux photovoltaïques, toiture de maison d’habitation.",
+  "estimatesNote": "Compte une demi-journée pour un versant d’abri, coupe et finitions comprises, à deux pour manipuler les plaques sans les plier. Le budget part dans la plaque et son revêtement : les vis et les closoirs pèsent peu, mais ce sont eux qui décident de l’étanchéité et de la durée de vie. Garde une plaque et de quoi retoucher le revêtement pour les accrocs de chantier.",
+  "sources": [
+    {
+      "title": "Bricoleur du dimanche — Le bac acier, un bon choix pour l’isolation ?",
+      "url": "https://www.bricoleurdudimanche.com/bac-acier-isolation-2025",
+      "note": "Distingue le bac acier simple peau, le double peau et le panneau sandwich, et situe l’emploi du simple peau sur les toitures sèches de bâtiments ouverts : abri, carport, hangar. Donne la pente d’emploi : à partir de 5 à 15 % selon les modèles. Sert au choix du produit et à la pente minimale de la fiche.",
+      "accessedAt": "2026-09-24"
+    },
+    {
+      "title": "Joris Ide — Tôles de toiture et tôles bac acier",
+      "url": "https://www.joriside.com/fr-fr/presentation-des-produits-joris-ide/nos-produits/toles-de-toiture",
+      "note": "Page d’un fabricant de profils acier : familles de tôles de toiture et gamme d’accessoires qui va avec la pose — faîtage et arêtiers, rives, égout, habillage, fixation, ventilation, sécurité. Sert à la liste des finitions à prévoir avant de commander.",
+      "accessedAt": "2026-09-24"
+    },
+    {
+      "title": "Bricoleur du dimanche — Travailler en sécurité sur le toit",
+      "url": "https://www.bricoleurdudimanche.com/comment-travailler-en-securite-sur-un-toit",
+      "note": "Règles d’accès et de travail en hauteur sur une couverture. Base des consignes de sécurité : moyen d’accès stable, hauteur à partir de laquelle l’intervention revient à un couvreur, prudence par vent fort.",
+      "accessedAt": "2026-09-24"
+    }
+  ],
+  "tools": [
+    "Échafaudage de pied ou plateforme de travail avec garde-corps",
+    "Visseuse à couple réglable et embout adapté à la vis",
+    "Cisaille à tôle ou grignoteuse",
+    "Mètre, cordeau et équerre",
+    "Gants de manutention et chaussures à semelle crantée",
+    "Marqueur de traçage et chiffons"
+  ],
+  "materials": [
+    {
+      "name": "Plaques de bac acier du modèle retenu",
+      "quantity": "Selon la surface du versant, plus 5 % pour les coupes et les accrocs"
+    },
+    {
+      "name": "Vis autoperceuses à rondelle d’étanchéité",
+      "quantity": "Selon l’entraxe prescrit par la notice et la zone de vent"
+    },
+    {
+      "name": "Closoirs et profilés de faîtage, de rive et d’égout",
+      "quantity": "La longueur des abouts du versant"
+    },
+    {
+      "name": "Bandes de mastic butyle",
+      "quantity": "Pour les recouvrements et les points singuliers"
+    },
+    {
+      "name": "Retouche de revêtement",
+      "quantity": "Un pot, pour les rayures faites au chantier"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Contrôle les pannes, la pente et l’entraxe",
+      "description": "Les pannes doivent être droites, de niveau dans leur plan et à l’entraxe prévu par la notice du profil retenu : un bac acier posé sur une ossature irrégulière se déforme et travaille au vent. Vérifie la pente du versant : le bac acier s’emploie à partir de 5 à 15 % de pente selon les modèles. En dessous, ce n’est pas le même produit, et ce n’est plus le même métier."
+    },
+    {
+      "title": "Choisis le sens de pose et le recouvrement",
+      "description": "Pose en partant du bas du versant, dans le sens indiqué par le fabricant pour ton exposition au vent et ton écoulement d’eau. Le recouvrement longitudinal d’une plaque sur l’autre, et le recouvrement transversal entre deux longueurs, sont donnés par la notice : ils augmentent quand la pente est faible. Aligne chaque plaque à l’équerre, sinon tu rattrapes le défaut jusqu’au faîtage."
+    },
+    {
+      "title": "Fixe les plaques sur les crêtes d’onde",
+      "description": "Visse sur le sommet des nervures, à l’aplomb des pannes, avec des vis autoperceuses à rondelle d’étanchéité. À la visseuse à couple réglable : la vis doit plaquer sans écraser le joint, et sans creuser la tôle. Sur un versant long, prévois la dilatation en ne serrant pas tout au centre de l’onde comme aux extrémités."
+    },
+    {
+      "title": "Livre les abouts : closoirs, rives et égout",
+      "description": "Un bac acier est ouvert à ses deux bouts : sans closoir, l’eau poussée par le vent et les insectes entrent directement sous la couverture. Pose les closoirs à l’égout et au faîtage, les bandes de rive sur les côtés, et le profilé d’égout pour jeter l’eau dans la gouttière. Toutes ces pièces se commandent avec la plaque, elles ne se bricolent pas après coup."
+    },
+    {
+      "title": "Traite les pénétrations et les raccords",
+      "description": "Souches de cheminée, conduits, sorties de ventilation, jonction avec une autre couverture : chaque pénétration reçoit son solin ou son chapeau, avec une bande de mastic butyle sur les recouvrements. C’est là que les fuites apparaissent, pas dans une nervure. Monte les solins en remontant l’eau, jamais à plat."
+    },
+    {
+      "title": "Contrôle, nettoie et retouche",
+      "description": "Fais un tour du versant : alignements, vis manquantes, joints non écrasés, profilés bien fixés. Élimine les copeaux de perçage et de coupe au chiffon ou au balai : laissés sur la plaque, ils rouillent et tachent le revêtement. Retouche les rayures et note le modèle, l’épaisseur et le revêtement employés."
+    }
+  ],
+  "mistakes": [
+    "Visser à fond sans régler le couple : la rondelle écrase le joint, la tôle se creuse, et la fuite se déclare au premier hiver.",
+    "Poser sur une ossature irrégulière ou avec un entraxe trop grand : la plaque se déforme, bat au vent et desserre ses fixations les unes après les autres.",
+    "Couper à la meuleuse et laisser les copeaux : les étincelles brûlent le revêtement et les limailles piquent la tôle de points de rouille en quelques semaines."
+  ],
+  "safety": [
+    "Travaille sur un échafaudage ou une plateforme avec garde-corps, et non sur le versant : même à 10 % de pente, un bac acier peint et poussiéreux est glissant.",
+    "Ne pose jamais une plaque par vent fort : c’est un grand voile qui prend le vent d’un coup, se plie et emporte ce qui est autour.",
+    "Les chants de tôle coupent : gants de manutention obligatoires, et on ne retient jamais une plaque par sa rive découpée."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24"
+}

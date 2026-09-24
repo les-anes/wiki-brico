@@ -40,7 +40,7 @@ Les six guides thématiques (`/themes/plomberie/`, `/themes/electricite/`,
 Ils proposent une introduction et des sections de lecture choisies, avec des liens
 directs vers les fiches. Ils sont accessibles depuis les univers de l’accueil,
 la navigation et le fil d’Ariane des fiches concernées. Leurs pages, métadonnées
-et URL sont pré-rendues et incluses dans le sitemap : 91 pages pour 73 tutoriels, six thèmes et neuf calculateurs (avec leur hub).
+et URL sont pré-rendues et incluses dans le sitemap : 94 pages pour 76 tutoriels, six thèmes et neuf calculateurs (avec leur hub).
 
 Chaque fiche définit aussi :
 
@@ -93,7 +93,7 @@ Dupliquer un JSON existant dans le dossier voulu. Champs : `id`, `title`, `descr
 - `documented` : synthèse de sources consultées, sans validation professionnelle du chantier. Exige `scope`, `estimatesNote`, `sources` et une origine d’image (`imageCredit` ou `imageOrigin: "original"`). Le coût peut rester `null`.
 - `published` : état éditorial avec niveau, durée et coût renseignés ; ce statut ne constitue pas une certification technique.
 
-Les 73 tutoriels actuels sont documentés et harmonisés avec le modèle commun, y compris les six anciens brouillons. Les durées sont des estimations et les budgets non chiffrables restent à préciser.
+Les 76 tutoriels actuels sont documentés et harmonisés avec le modèle commun, y compris les six anciens brouillons. Les durées sont des estimations et les budgets non chiffrables restent à préciser.
 
 `pnpm validate:data` vérifie récursivement chemins, identifiants, classifications principales et secondaires, parcours, sources et présence des images locales, refuse une illustration du catalogue sans fiche ou une fiche sans ses quatre fichiers, puis les métadonnées de chaque calculateur (champs bornés, unités, tutoriels liés). Cette validation est aussi exécutée au build. `pnpm test` teste le routage, les métadonnées et les formules de calcul (`src/lib/routes.test.ts`, `src/lib/calculators/calculators.test.ts`). `pnpm check:site` contrôle le rendu des pages, les filtres, la correspondance du sitemap, le fil d’Ariane, le shim des anciens liens, le recalcul d’un outil et l’hydratation, sans navigateur. La méthode et les sources des outils sont consignées dans `docs/outils-calculateurs.md`.
 

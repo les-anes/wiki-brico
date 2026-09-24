@@ -1,0 +1,108 @@
+{
+  "id": "poser-une-couverture-en-ardoise",
+  "title": "Poser une couverture en ardoise",
+  "description": "Sur un versant déjà liteauné et couvert d’un écran, la pose d’ardoises tient à trois choix : le pureau, la fixation et le traitement des abouts. Voici l’ordre des gestes, du premier rang posé en double à l’égout jusqu’au faîtage.",
+  "category": "toiture",
+  "topicPath": ["Couverture"],
+  "tags": ["ardoise", "couverture", "toiture"],
+  "relatedTutorials": [
+    "poser-une-couverture-en-tuile-mecanique",
+    "poser-une-couverture-en-bac-acier",
+    "rejointoyer-un-mur-en-pierre",
+    "organiser-les-travaux-d-une-chambre"
+  ],
+  "difficulty": "Avancé",
+  "durationMinutes": 360,
+  "cost": null,
+  "image": "/images/tutoriels/poser-une-couverture-en-ardoise.png",
+  "imageAlt": "Un rang d’ardoises posées au crochet sur leurs liteaux, avec un marteau à ardoise et quelques crochets posés à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Pose des ardoises sur un versant d’annexe ou de dépendance déjà pourvu de son support, de son écran sous-toiture et de son liteaunage. Hors création ou reprise de charpente, pose de l’écran et des liteaux, zinguerie, remplacement d’ardoises isolées, toiture de maison d’habitation et travail sans moyen d’accès sécurisé.",
+  "estimatesNote": "Compte une journée pour un petit versant, et plus si tu dois tailler beaucoup d’ardoises en rive ou en about. Le budget part dans l’ardoise et sa fixation : les crochets coûtent plus cher que les clous, mais ils se justifient en bord de mer et sur les versants exposés. Les chutes d’ardoise se gardent, elles servent toujours à une réparation.",
+  "sources": [
+    {
+      "title": "Wikipédia — Ardoise",
+      "url": "https://fr.wikipedia.org/wiki/Ardoise",
+      "note": "Décrit les deux modes de pose traditionnels : la pose au clou, dite à l’ancienne, et la pose sur crochet apparue à la fin du XIXᵉ siècle. Confirme que le pureau et le type de pose pèsent sur la tenue d’une couverture en ardoise, et que le support (volige ou charpente) s’use avant l’ardoise elle-même. Base du vocabulaire et du choix de fixation.",
+      "accessedAt": "2026-09-24"
+    },
+    {
+      "title": "Bricoleur du dimanche — Remplacer une ardoise",
+      "url": "https://www.bricoleurdudimanche.com/comment-remplacer-une-ardoise",
+      "note": "Décrit la manipulation d’une ardoise sur le toit : échelle à crochet, échelle de toit et corde pour l’accès, tire-clou et marteau, mèches au diamètre des clous de fixation, bande de plomb ou d’aluminium pour les raccords. Sert au matériel de la fiche et au geste de fixation.",
+      "accessedAt": "2026-09-24"
+    },
+    {
+      "title": "Bricoleur du dimanche — Travailler en sécurité sur le toit",
+      "url": "https://www.bricoleurdudimanche.com/comment-travailler-en-securite-sur-un-toit",
+      "note": "Consacré aux règles d’accès et de travail en hauteur sur une couverture. Base des consignes de sécurité de la fiche : moyen d’accès stable, hauteur à partir de laquelle l’intervention revient à un couvreur, prudence par vent fort.",
+      "accessedAt": "2026-09-24"
+    }
+  ],
+  "tools": [
+    "Échafaudage de pied ou plateforme de travail avec garde-corps",
+    "Échelle de toit et corde d’accès",
+    "Marteau à ardoise et marteau à liteaux",
+    "Tire-clou",
+    "Pince à crochets et pince coupante",
+    "Cordeau, niveau et crayon de charpentier",
+    "Visseuse pour le support, lame diamant pour retailler une ardoise",
+    "Gants et chaussures antidérapantes"
+  ],
+  "materials": [
+    {
+      "name": "Ardoises du format retenu",
+      "quantity": "Selon la surface du versant, plus 5 à 10 % de chutes pour les rives et les abouts"
+    },
+    {
+      "name": "Crochets inox ou cuivre, ou clous d’ardoise galvanisés",
+      "quantity": "Deux crochets par ardoise, ou le nombre de clous prévu par la notice"
+    },
+    {
+      "name": "Bandes de plomb ou d’aluminium",
+      "quantity": "Pour les raccords de pénétration et les abouts"
+    },
+    {
+      "name": "Planches de circulation",
+      "quantity": "Deux, pour ne pas marcher directement sur la couverture"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Contrôle le support reçu",
+      "description": "Reprends chaque liteau : cloué ou vissé sur chaque chevron, à l’entraxe prévu, sans flèche ni nœud qui casse la ligne. L’écran sous-toiture doit être tendu sans pli et remonter au-dessus du liteau à l’égout, sinon l’eau de ruissellement passera derrière le premier rang. Un liteau douteux se remplace maintenant, pas après la pose."
+    },
+    {
+      "title": "Arrête le pureau avant de commander",
+      "description": "Le pureau est la partie apparente de l’ardoise, une fois le rang suivant posé : c’est lui qui fixe l’entraxe des liteaux. Il dépend du format de l’ardoise et de la pente du versant, et il est donné par la notice du fabricant — ne l’improvise pas, une erreur de deux centimètres se paie au faîtage. Décide aussi la fixation : crochets ou clous, le choix engage la tenue dans le temps."
+    },
+    {
+      "title": "Règle le premier rang et répartis les rangs",
+      "description": "Le rang d’égout se pose en double épaisseur : il porte la ligne de tout le versant. Trace le pureau à partir de lui, tends un cordeau au niveau de chaque rang et vérifie que le dernier tombe juste sous le faîtage. S’il reste une cale trop courte, répartis l’écart sur quelques rangs plutôt que d’entasser les coupes en haut du versant."
+    },
+    {
+      "title": "Pose au crochet ou au clou",
+      "description": "Au crochet, chaque ardoise reçoit deux crochets pris sur le liteau, l’ardoise glisse dessous et vient reposer au bon pureau ; c’est la pose la plus sûre, et la seule raisonnable en bord de mer avec de l’inox. Au clou, on perce haut dans la double épaisseur et on n’écrase jamais la tête : le point de fixation doit rester libre pour la dilatation."
+    },
+    {
+      "title": "Traite les abouts et les points singuliers",
+      "description": "Rives, arêtiers, faîtage et pénétrations : ce sont ces endroits qui fuient, pas le milieu du versant. Habille les rives avec le profilé prévu et une bande de plomb ou d’aluminium pour les raccords, garde les rangs alignés jusqu’au faîtage et laisse la ventilation se faire sous la faîtière. Une ardoise qui relève doit être calée à sa juste place, sans forcer."
+    },
+    {
+      "title": "Contrôle depuis le sol et nettoie",
+      "description": "Redescends et regarde le versant d’en bas : lignes de rangs, alignement des rives, aucune ardoise qui sonne creux. Ramasse les copeaux de taille et les clous tombés dans la gouttière : les copeaux d’ardoise laissent des traces et bouchent les descentes. Note le format et le pureau employés, tu en auras besoin pour une réparation."
+    }
+  ],
+  "mistakes": [
+    "Poser sans avoir arrêté le pureau, puis découvrir au faîtage un rang de trop ou une cale trop courte à rattraper.",
+    "Clouer trop bas dans l’ardoise : l’agrafage devient une entrée d’eau, et l’ardoise casse au premier coup de vent.",
+    "Mélanger les fixations et l’environnement — clous acier à 200 m de la mer, crochets de récupération — pour voir arriver des traces de rouille et des ardoises décrochées en quelques années."
+  ],
+  "safety": [
+    "Travaille sur un échafaudage ou une plateforme avec garde-corps : une échelle posée contre le mur n’est pas un poste de travail pour poser une couverture.",
+    "Ne monte pas par vent fort, sur un versant humide ou gelé. Une ardoise glisse, et le vent emporte une plaque plus vite qu’on ne l’imagine.",
+    "Au-delà de 3 m de hauteur, sans point d’ancrage ni moyen d’accès sûr, l’intervention revient à un couvreur. La pose se fait avec des gants et des chaussures antidérapantes, même pour un petit versant."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24"
+}
