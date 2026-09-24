@@ -13,7 +13,7 @@ Les pages `/calculateurs/` et `/calculateurs/<slug>/` répondent aux questions c
 
 Contrôles : `pnpm validate:data` (champs, bornes, tutoriels liés), `pnpm test` (formules et cas limites), `pnpm check:site` (pages pré-rendues, résultat présent, plan dessiné, recalcul après saisie, saisie invalide).
 
-## Les sept outils
+## Les neuf outils
 
 | Outil | Formule | Hypothèses | Référence |
 | --- | --- | --- | --- |
@@ -24,10 +24,13 @@ Contrôles : `pnpm validate:data` (champs, bornes, tutoriels liés), `pnpm test`
 | Dosage mortier et béton | volume × chaque dosage saisi | recette préalablement définie par m³ de mélange fini, sacs de liant seul | Infociments, Ciments et bétons B51, consulté le 24/09/2026 |
 | Calepinage | positions espacées d’un carreau + joint ; coupes conservées ; trait de coupe réservé pour le réemploi | pièce rectangulaire d’équerre, pose droite ou décalée d’un demi-carreau | NF DTU 52.2, fiche éditeur, consultée le 16/09/2026 |
 | Escalier | h = H/N ; droit : g = reculement/(N−1) ; quart tournant : répartition entière dans deux branches | palier carré ou marches rayonnantes autour d’un jour carré, largeur utile hors limons | Lapeyre, dimensions d’un escalier, consulté le 24/09/2026 |
+| Rejointoiement à la chaux | part des joints = 1 − (H × L) ÷ ((H + j) × (L + j)) ; volume = surface × profondeur × part, majoré de la perte ; chaux et sable répartis au volume | appareillage assimilé à une trame régulière, profondeur constante, 1 volume de chaux pour 2 à 3 volumes de sable | Socli (Heidelberg Materials), rejointoiement et choix du mortier, consulté le 24/09/2026 |
+| Puissance d’un radiateur | puissance théorique = volume × coefficient d’isolation ; conseillée = théorique majorée de la marge ; modèle = puissance commerciale juste au-dessus | pièce rectangulaire, hauteur sous plafond connue, coefficient de 28 à 50 W/m³ selon l’isolation | choisir-son-chauffage.fr, chauffage électrique mural : guide du choix (d’après les guides Thermor), consulté le 24/09/2026 |
 
 ## Ce que les outils ne font pas
 
 - L’escalier compare la géométrie, sans calculer trémie, échappée, garde-corps ou résistance. Les marches rayonnantes ne sont pas des marches balancées.
+- Le rejointoiement donne un volume de mortier, pas une recette : le liant se choisit selon la dureté de la pierre et se convertit en sacs avec le volume indiqué sur l’emballage.
 - Aucun dimensionnement structurel : ni section de solive, ni calibre de circuit, ni diamètre d’évacuation, ni ferraillage.
 - Aucun prix : les quantités sont arrondies à l’unité vendable, pas chiffrées en euros.
 - Aucune sauvegarde de saisie : la valeur vit dans l’état de la page, pas dans l’URL ni dans le navigateur.

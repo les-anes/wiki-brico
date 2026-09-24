@@ -1,0 +1,109 @@
+{
+  "id": "radiateur-connecte",
+  "title": "Piloter ses radiateurs depuis une application",
+  "description": "Une application de pilotage vit sur un hub, pas dans le radiateur : c’est lui qui porte les plages horaires et l’interface. Monte d’abord le hub — Home Assistant sur Raspberry Pi avec sa clé radio USB — puis ajoute des radiateurs compatibles.",
+  "category": "electricite",
+  "topicPath": ["Domotique"],
+  "relatedCategories": [
+    { "category": "chauffage", "topicPath": ["Radiateurs"] }
+  ],
+  "tags": ["chauffage", "domotique", "radiateur"],
+  "relatedTutorials": [
+    "purger-un-radiateur",
+    "ajouter-un-contacteur-jour-nuit",
+    "remplacer-une-prise-murale",
+    "dimensionner-son-tableau-electrique"
+  ],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 120,
+  "cost": null,
+  "image": "/images/tutoriels/radiateur-connecte.png",
+  "imageAlt": "Un radiateur blanc vu de face, une tête thermostatique reliée à sa gauche et des ondes qui partent vers un téléphone posé sur une étagère, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Mise en place d’un pilotage de radiateurs par un hub domotique local : Home Assistant sur Raspberry Pi, clé radio USB Zigbee ou Thread, appairage des appareils et création des plages horaires. Hors intervention sur le tableau électrique, pose d’un fil pilote par un professionnel, chauffage collectif, réglage hydraulique d’un circuit à eau chaude et remplacement d’un radiateur.",
+  "estimatesNote": "Compte une heure pour le hub et sa clé, puis une heure de plus pour appairer les appareils et régler les plages, sans compter la pose des modules derrière les radiateurs. Le budget part surtout dans le hub et sa clé radio ; côté radiateurs, tout dépend de ce qui est déjà en place, un module coûtant bien moins cher qu’un appareil neuf.",
+  "sources": [
+    {
+      "title": "Home Assistant — Zigbee Home Automation (ZHA)",
+      "url": "https://www.home-assistant.io/integrations/zha/",
+      "note": "Définit le coordinateur Zigbee comme une clé USB branchée sur la machine qui fait tourner Home Assistant, liste les adaptateurs compatibles, et détaille les précautions de placement (rallonge USB blindée, port USB 2.0, éloignement du Wi-Fi et des câbles), l’appairage à l’endroit d’usage et le rôle de relais des appareils sur secteur. Base de la méthode.",
+      "accessedAt": "2026-09-24"
+    },
+    {
+      "title": "Home Assistant — Installation sur Raspberry Pi",
+      "url": "https://www.home-assistant.io/installation/raspberrypi/",
+      "note": "Donne le matériel du hub : Raspberry Pi 4 ou 5 avec au moins 2 Go de RAM, carte microSD de 32 Go minimum en classe A2, alimentation dédiée et câble Ethernet pour la première installation, l’image s’écrivant avec Raspberry Pi Imager. Sert au choix du matériel et à l’accès à l’interface sur le port 8123.",
+      "accessedAt": "2026-09-24"
+    },
+    {
+      "title": "Zigbee2MQTT — appareils pris en charge",
+      "url": "https://www.zigbee2mqtt.io/supported-devices/",
+      "note": "Alternative à ZHA pour la même clé radio, avec un annuaire communautaire des appareils reconnus. À consulter avant d’acheter un radiateur ou un module, pour vérifier le modèle précis.",
+      "accessedAt": "2026-09-24"
+    }
+  ],
+  "tools": [
+    "Raspberry Pi (ou mini-PC, NAS) avec son alimentation et une carte microSD de 32 Go",
+    "Clé radio USB Zigbee ou Thread (dongle)",
+    "Rallonge USB blindée",
+    "Câble Ethernet pour la première installation",
+    "Ordinateur avec lecteur de carte SD et Raspberry Pi Imager",
+    "Petit tournevis isolé et testeur de tension pour les modules"
+  ],
+  "materials": [
+    {
+      "name": "Radiateurs compatibles ou modules de pilotage",
+      "quantity": "Un module par radiateur à piloter"
+    },
+    {
+      "name": "Boîtier et support pour le hub",
+      "quantity": "Un, ventilé et accessible"
+    },
+    {
+      "name": "Étiquettes de repérage",
+      "quantity": "Pour nommer chaque appareil par pièce"
+    },
+    {
+      "name": "Sauvegarde de la configuration du hub",
+      "quantity": "Une copie sur un support externe"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Choisis le hub avant les radiateurs",
+      "description": "Le pilotage et l’application vivent sur un hub allumé en permanence qui fait tourner Home Assistant, par exemple un Raspberry Pi 4 ou 5 avec au moins 2 Go de RAM, une microSD de 32 Go en classe A2 et une alimentation dédiée. Les radiateurs, eux, ne font que recevoir l’ordre : c’est le hub qui porte les plages, les scénarios et l’historique."
+    },
+    {
+      "title": "Ajoute la clé radio USB",
+      "description": "Un Raspberry Pi n’a pas de radio Zigbee : c’est le dongle USB qui la lui donne. Prends un modèle annoncé compatible avec Home Assistant, puis branche-le sur une rallonge USB blindée, sur un port USB 2.0, à l’écart du boîtier, du Wi-Fi et des câbles d’alimentation. C’est ce placement, plus que la marque de la clé, qui décide de la portée."
+    },
+    {
+      "title": "Installe Home Assistant",
+      "description": "Écris l’image Home Assistant OS sur la microSD avec Raspberry Pi Imager, démarre la carte avec un câble Ethernet, puis ouvre `homeassistant.local:8123` pour créer ton compte. Branche ensuite la clé radio et déclare l’intégration Zigbee (ZHA, ou Zigbee2MQTT), en sélectionnant le port série de la clé."
+    },
+    {
+      "title": "Appaire les radiateurs là où ils resteront",
+      "description": "Mets le hub en recherche d’appareils, puis passe le radiateur ou son module en appairage selon sa notice. Appaire sur place plutôt qu’à côté du hub : un appareil appairé contre la clé puis remonté négocie mal sa connexion. Renomme chaque appareil par pièce tout de suite, sinon l’application devient illisible."
+    },
+    {
+      "title": "Crée les plages et les scénarios",
+      "description": "C’est là que le hub prend toute sa valeur : une consigne par pièce, des plages horaires, une baisse la nuit, un mode absence ou vacances, et une notification si une pièce ne chauffe plus. Le confort vient de ces règles bien plus que du modèle de radiateur, qui n’a qu’à obéir."
+    },
+    {
+      "title": "Vérifie la portée et garde un plan de secours",
+      "description": "Contrôle le signal pièce par pièce après remontage : les appareils sur secteur servent de relais et étendent le maillage. Sauvegarde la configuration du hub, et laisse le programme local de chaque radiateur en repli — sans hub ni Internet, ce sont eux qui chauffent encore."
+    }
+  ],
+  "mistakes": [
+    "Acheter les radiateurs avant de savoir quelle radio le hub sait piloter, puis se retrouver avec des appareils qui n’existent que dans l’application du fabricant.",
+    "Brancher la clé USB contre le boîtier du Raspberry Pi, dans un meuble ou derrière une plaque métallique : les appairages échouent et les ordres arrivent quand ils veulent.",
+    "Tout miser sur le hub sans programme de repli, et découvrir qu’un hub éteint ou une panne d’Internet laisse la maison sans chauffage."
+  ],
+  "safety": [
+    "Coupe le disjoncteur du circuit et vérifie l’absence de tension avant d’ouvrir une prise ou de déposer un module derrière un radiateur.",
+    "Reste dans les limites du circuit et de l’appareil quand tu ajoutes un module ou un fil pilote ; en cas de doute sur le câblage, fais appel à un électricien (NF C 15-100).",
+    "Ne neutralise jamais les sécurités du radiateur (thermostat, hors-gel, coupure en cas de surchauffe) : la domotique gère le confort, pas la sécurité."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24"
+}

@@ -3,6 +3,7 @@ import {
   ArrowRight,
   ArrowUpRight,
   Bookmark,
+  Calculator,
   Check,
   ChevronRight,
   Clock3,
@@ -138,6 +139,14 @@ export default function App({
               }
             />
           </nav>
+          <a
+            className="calculators-nav"
+            href="/calculateurs/"
+            aria-label="Les calculateurs"
+          >
+            <Calculator size={17} aria-hidden="true" />
+            <span>Calculateurs</span>
+          </a>
           <button
             className="saved-nav"
             onClick={() => navigate(catalogHref({ savedOnly: true }))}
@@ -351,8 +360,9 @@ export default function App({
                 <span className="eyebrow">CHIFFRER AVANT D’ACHETER</span>
                 <h2>Les calculateurs</h2>
                 <p>
-                  Pente d’évacuation, panneaux OSB, isolant, ossature, mortier,
-                  calpinage : les quantités avant le premier coup de scie.
+                  Pente d’évacuation, quantités de panneaux, dosages,
+                  calepinage, escalier : les chiffres avant le premier coup de
+                  scie.
                 </p>
               </div>
               <Button asChild>

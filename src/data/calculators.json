@@ -763,6 +763,222 @@
       },
       "relatedTutorials": ["organiser-les-travaux-d-une-chambre"],
       "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "rejointoiement-chaux",
+      "title": "Rejointoiement à la chaux : quantité de mortier",
+      "description": "Calcule le mortier nécessaire pour rejointoyer un mur en pierre à la chaux : part des joints, profondeur à garnir, puis volumes de chaux et de sable, marge de perte comprise.",
+      "heading": "Combien de mortier pour rejointoyer ton mur en pierre ?",
+      "introduction": "Le volume de mortier d’un rejointoiement ne dépend pas de la surface du mur, mais du vide que forment les joints : leur largeur, leur profondeur et la place qu’ils laissent entre les pierres. Mesure une dizaine de pierres et quelques joints, tu obtiendras la chaux et le sable à prévoir.",
+      "category": "structure",
+      "fields": [
+        {
+          "name": "surface",
+          "label": "Surface de mur à rejointoyer",
+          "unit": "m²",
+          "type": "number",
+          "default": 5,
+          "min": 0.5,
+          "max": 120,
+          "step": 0.5,
+          "help": "Surface développée du mur, pierres comprises : c’est la façade qui compte, pas la longueur des joints."
+        },
+        {
+          "name": "hauteurPierre",
+          "label": "Hauteur moyenne des pierres",
+          "unit": "cm",
+          "type": "number",
+          "default": 20,
+          "min": 5,
+          "max": 80,
+          "step": 1,
+          "help": "Moyenne estimée sur une dizaine de pierres, joint compris."
+        },
+        {
+          "name": "longueurPierre",
+          "label": "Longueur moyenne des pierres",
+          "unit": "cm",
+          "type": "number",
+          "default": 30,
+          "min": 5,
+          "max": 150,
+          "step": 1,
+          "help": "Dans le même échantillon que la hauteur."
+        },
+        {
+          "name": "largeurJoint",
+          "label": "Largeur moyenne des joints",
+          "unit": "mm",
+          "type": "number",
+          "default": 20,
+          "min": 5,
+          "max": 60,
+          "step": 1,
+          "help": "Mesurée en plusieurs points entre deux pierres, avant dégarnissage."
+        },
+        {
+          "name": "profondeur",
+          "label": "Profondeur à garnir",
+          "unit": "mm",
+          "type": "number",
+          "default": 20,
+          "min": 5,
+          "max": 80,
+          "step": 1,
+          "help": "Le creux laissé après avoir dégarni les joints fatigués, environ deux centimètres."
+        },
+        {
+          "name": "proportion",
+          "label": "Proportion chaux / sable",
+          "type": "select",
+          "default": "2.5",
+          "options": [
+            {
+              "value": "2",
+              "label": "1 volume de chaux pour 2 volumes de sable"
+            },
+            {
+              "value": "2.5",
+              "label": "1 volume de chaux pour 2,5 volumes de sable"
+            },
+            {
+              "value": "3",
+              "label": "1 volume de chaux pour 3 volumes de sable"
+            }
+          ]
+        },
+        {
+          "name": "perte",
+          "label": "Marge de perte",
+          "unit": "%",
+          "type": "number",
+          "default": 15,
+          "min": 0,
+          "max": 40,
+          "step": 5,
+          "help": "Le mortier qui tombe et le garnissage des creux irréguliers."
+        }
+      ],
+      "method": "La part de la surface occupée par les joints est estimée en assimilant l’appareillage à une trame régulière : pour des pierres de hauteur H et de longueur L, séparées par un joint de largeur j, les joints occupent 1 − (H × L) ÷ ((H + j) × (L + j)). Le volume de mortier est le produit de la surface du mur, de la profondeur à garnir et de cette part, majoré de la marge de perte. Le liant et le sable se répartissent ce volume selon la proportion choisie. L’eau n’est pas chiffrée : elle s’ajoute peu à peu jusqu’à la consistance d’une terre grasse.",
+      "assumptions": [
+        "L’appareillage est approximé par une trame régulière de pierres et de joints croisés.",
+        "La profondeur à garnir est la même sur tout le mur.",
+        "Proportions en volumes, comme sur le chantier : 1 volume de chaux pour 2 à 3 volumes de sable.",
+        "Marge de perte de 15 % pour le mortier qui tombe et les creux irréguliers."
+      ],
+      "limits": [
+        "Le choix du liant et le dosage dépendent du produit et de la dureté de la pierre : c’est l’emballage qui fait foi, pas ce calcul.",
+        "Un mortier plus dur que la pierre l’abîme : ne remplace pas la chaux par du ciment, et méfie-toi d’une proportion trop riche en liant.",
+        "Le volume de chaux se convertit en sacs avec le volume occupé par le produit, très variable d’une chaux à l’autre : lis l’emballage.",
+        "Le dégarnissage, l’humidification du mur avant garnissage et la protection de la prise ne sont pas traités.",
+        "Un mur qui bouge, une fissure évolutive ou une eau active se traitent avant de rejointoyer."
+      ],
+      "reference": {
+        "title": "Socli (Heidelberg Materials) — Rejointoiement : choix du mortier et mise en œuvre",
+        "url": "https://www.socli.heidelbergmaterials.fr/fr/produits-services/techniques-mise-en-oeuvre/maconnerie/rejointoiement",
+        "note": "Rôle du joint, choix du liant selon la dureté du matériau et intérêt d’un mortier de chaux en restauration du bâti ancien. Les dosages donnés pour un mortier de montage ne sont pas transposés au cas traité.",
+        "accessedAt": "2026-09-24"
+      },
+      "relatedTutorials": ["rejointoyer-un-mur-en-pierre"],
+      "catalogFilter": {
+        "category": "structure",
+        "topicPath": ["Maçonnerie de pierre", "Rejointoiement"]
+      },
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "puissance-radiateur",
+      "title": "Puissance d’un radiateur : calculer selon le volume",
+      "description": "Calcule la puissance nécessaire pour chauffer une pièce à partir de son volume, du niveau d’isolation et d’une marge, puis donne la puissance commerciale à commander.",
+      "heading": "Quelle puissance pour chauffer ta pièce ?",
+      "introduction": "La puissance d’un radiateur dépend du volume à chauffer et de la qualité de l’isolation. Donne les dimensions de ta pièce et le niveau d’isolation du logement : tu obtiendras la puissance à viser et le modèle le plus proche du catalogue.",
+      "category": "chauffage",
+      "fields": [
+        {
+          "name": "longueur",
+          "label": "Longueur de la pièce",
+          "unit": "m",
+          "type": "number",
+          "default": 4,
+          "min": 0.5,
+          "max": 20,
+          "step": 0.1
+        },
+        {
+          "name": "largeur",
+          "label": "Largeur de la pièce",
+          "unit": "m",
+          "type": "number",
+          "default": 3,
+          "min": 0.5,
+          "max": 20,
+          "step": 0.1
+        },
+        {
+          "name": "hauteur",
+          "label": "Hauteur sous plafond",
+          "unit": "m",
+          "type": "number",
+          "default": 2.5,
+          "min": 1.8,
+          "max": 6,
+          "step": 0.05,
+          "help": "Prends la cote la plus haute : c’est le volume qui compte, pas la surface."
+        },
+        {
+          "name": "isolation",
+          "label": "Isolation du logement",
+          "type": "select",
+          "default": "40",
+          "options": [
+            {
+              "value": "28",
+              "label": "Très bien isolé — 28 W/m³, soit 70 W/m² sous 2,50 m"
+            },
+            {
+              "value": "40",
+              "label": "Isolation standard ou moyenne — 40 W/m³, soit 100 W/m²"
+            },
+            {
+              "value": "50",
+              "label": "Mal isolé, passoire thermique — 50 W/m³, soit 125 W/m²"
+            }
+          ]
+        },
+        {
+          "name": "majoration",
+          "label": "Corrections et marge",
+          "unit": "%",
+          "type": "number",
+          "default": 10,
+          "min": 0,
+          "max": 50,
+          "step": 5,
+          "help": "De 15 à 20 % pour un simple vitrage, 25 % pour une salle de bain, 10 % pour une montée en température rapide."
+        }
+      ],
+      "method": "Le volume de la pièce est le produit de ses trois dimensions. La puissance théorique est ce volume multiplié par un coefficient volumétrique, choisi selon l’isolation du logement : 28 W/m³ pour un logement très bien isolé, 40 W/m³ pour une isolation standard, 50 W/m³ pour un logement mal isolé. Ces coefficients reprennent la règle courante de 70 à 100 W/m² sous 2,50 m de plafond, convertie en mètres cubes pour les pièces plus hautes. La puissance conseillée ajoute les corrections et la marge, puis la puissance au mètre carré permet de recouper le résultat. Le modèle proposé est la première puissance commerciale supérieure.",
+      "assumptions": [
+        "Toute la pièce est chauffée, sans mezzanine ni zone fermée.",
+        "La hauteur sous plafond est régulière.",
+        "Les parois ont la même isolation dans toute la pièce et le toit est isolé.",
+        "Les corrections d’exposition, de vitrage et de salle de bain sont saisies dans la marge, pas déduites par l’outil."
+      ],
+      "limits": [
+        "Ce calcul donne un ordre de grandeur pour remplacer un appareil : les déperditions réelles se calculent pièce par pièce, à partir des parois, des vitrages et des ponts thermiques.",
+        "La puissance annoncée d’un radiateur à eau dépend du régime de l’installation : compare toujours à régime égal.",
+        "Un radiateur sous-dimensionné chauffe en continu sans atteindre la consigne : mieux vaut une marge légère qu’un appareil juste.",
+        "Le chauffage n’est qu’une partie du confort : l’isolation, la ventilation et la régulation pèsent autant que la puissance."
+      ],
+      "reference": {
+        "title": "Choisir Son Chauffage — Chauffage électrique mural : puissance et critères",
+        "url": "https://choisir-son-chauffage.fr/radiateur/chauffage-electrique-mural-guide-choix/",
+        "note": "Règle de 70 à 100 W/m² sous 2,50 m de plafond (70 pour un logement RT2012 ou RE2020), calcul en mètres cubes à environ 40 W/m³ au-delà, majoration de 15 à 20 % pour un simple vitrage et jusqu’à 125 W/m² pour un logement mal isolé. Guide consulté le 24/09/2026, qui cite les guides Thermor.",
+        "accessedAt": "2026-09-24"
+      },
+      "relatedTutorials": ["purger-un-radiateur", "radiateur-connecte"],
+      "catalogFilter": { "category": "chauffage", "topicPath": ["Radiateurs"] },
+      "updatedAt": "2026-09-24"
     }
   ]
 }

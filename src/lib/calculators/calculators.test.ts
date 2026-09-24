@@ -11,7 +11,7 @@ function run(slug: string, inputs: Record<string, number | string> = {}) {
 }
 
 test("chaque outil rend un résultat chiffré sur ses valeurs par défaut", () => {
-  assert.equal(calculators.length, 7);
+  assert.equal(calculators.length, 9);
   for (const tool of calculators) {
     const output = tool.compute(defaultInputs(tool));
     assert(output.headline.length > 0, `${tool.slug}: titre de résultat`);
@@ -337,4 +337,103 @@ test("un escalier impossible ne produit aucun plan et Blondel seul ne valide pas
   const steep = run("escalier", { hauteur: 280, longueur: 150, hauteurs: 14 });
   assert(steep.warnings.some((warning) => warning.includes("Giron")));
   assert(steep.warnings.some((warning) => warning.includes("échappée")));
+});
+
+function litresDeMortier(inputs: Record<string, number | string> = {}): number {
+  return Number.parseFloat(
+    run("rejointoiement-chaux", inputs).values[0].value.replace(",", "."),
+  );
+}
+
+test("le rejointoiement à la chaux part du vide des joints, pas de la surface", () => {
+  const output = run("rejointoiement-chaux");
+  assert.equal(output.headline, "17 litres de mortier à gâcher");
+  assert.equal(output.values[0].value, "17,0 L");
+  assert.equal(output.values[1].value, "14,8 %");
+  assert.equal(output.values[2].value, "4,9 L");
+  assert.equal(output.values[3].value, "12,1 L");
+  assert.equal(output.values[4].value, "3,4 L/m²");
+  assert.deepEqual(output.warnings, []);
+});
+
+test("le mortier suit la surface et la profondeur, les grandes pierres en demandent moins", () => {
+  const base = litresDeMortier();
+  assert(Math.abs(litresDeMortier({ surface: 10 }) - base * 2) < 0.05);
+  assert(Math.abs(litresDeMortier({ profondeur: 40 }) - base * 2) < 0.05);
+  const grandes = run("rejointoiement-chaux", {
+    hauteurPierre: 40,
+    longueurPierre: 60,
+  });
+  assert(
+    litresDeMortier({ hauteurPierre: 40, longueurPierre: 60 }) < base / 1.5,
+  );
+  assert(
+    grandes.warnings.some((warning) => warning.includes("8 % de la surface")),
+  );
+});
+
+test("le rejointoiement signale les cas qui font rater le joint", () => {
+  const profondeur = run("rejointoiement-chaux", { profondeur: 8 });
+  assert(
+    profondeur.warnings.some((warning) =>
+      warning.includes("Moins d’un centimètre"),
+    ),
+  );
+  const riche = run("rejointoiement-chaux", { proportion: "2" });
+  assert(
+    riche.warnings.some((warning) => warning.includes("Proportion riche")),
+  );
+  const sansMarge = run("rejointoiement-chaux", { perte: 0 });
+  assert(
+    sansMarge.warnings.some((warning) =>
+      warning.includes("Sans marge de perte"),
+    ),
+  );
+  const large = run("rejointoiement-chaux", { largeurJoint: 50 });
+  assert(large.warnings.some((warning) => warning.includes("4 cm")));
+  // Saisie hors bornes : aucun résultat chiffré.
+  assert.equal(run("rejointoiement-chaux", { surface: 0.2 }).values.length, 0);
+});
+
+test("la puissance du radiateur suit le volume et l’isolation", () => {
+  const output = run("puissance-radiateur");
+  assert.equal(
+    output.headline,
+    `${fr(1320)} W conseillés pour chauffer 30,0 m³`,
+  );
+  assert.equal(output.values[0].value, "30,0 m³");
+  assert.equal(output.values[1].value, `${fr(1200)} W`);
+  assert.equal(output.values[2].value, `${fr(1320)} W`);
+  assert.equal(output.values[3].value, `${fr(1500)} W`);
+  assert.equal(output.values[4].value, "100 W/m²");
+  // Une pièce deux fois plus grande demande deux fois plus de puissance.
+  const grande = run("puissance-radiateur", { longueur: 8 });
+  assert.equal(grande.values[1].value, `${fr(2400)} W`);
+  assert.equal(grande.values[3].value, `${fr(3000)} W`);
+  // Un logement mal isolé change le coefficient, pas le volume.
+  const passoire = run("puissance-radiateur", { isolation: "50" });
+  assert.equal(passoire.values[0].value, "30,0 m³");
+  assert.equal(passoire.values[1].value, `${fr(1500)} W`);
+  assert.equal(passoire.values[4].value, "125 W/m²");
+});
+
+test("le radiateur signale le surdimensionnement, le plancher bas et la marge nulle", () => {
+  const trop = run("puissance-radiateur", {
+    longueur: 12,
+    largeur: 8,
+    isolation: "50",
+  });
+  assert.equal(trop.values[3].value, "au-delà de 3 000 W");
+  assert(trop.warnings.some((w) => w.includes("répartis la puissance")));
+  const haut = run("puissance-radiateur", { hauteur: 4 });
+  assert(haut.warnings.some((w) => w.includes("l’air chaud s’accumule")));
+  const sansMarge = run("puissance-radiateur", { majoration: 0 });
+  assert(sansMarge.warnings.some((w) => w.includes("Sans correction")));
+  const minuscule = run("puissance-radiateur", {
+    longueur: 1,
+    largeur: 1,
+    hauteur: 2,
+  });
+  assert(minuscule.warnings.some((w) => w.includes("sèche-serviettes")));
+  assert.equal(run("puissance-radiateur", { hauteur: 0.5 }).values.length, 0);
 });

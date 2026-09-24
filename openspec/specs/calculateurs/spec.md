@@ -27,12 +27,12 @@ Le site SHALL servir un hub `/calculateurs/` listant tous les outils et une page
 
 ### Requirement: Outils de calcul nommés
 
-Le site SHALL fournir les outils suivants, chacun à l’URL `/calculateurs/<slug>/` : pente d’évacuation PVC (`pente-evacuation-pvc`), quantité de panneaux OSB (`quantite-osb`), isolant et nombre de panneaux (`isolant-panneaux`), montants et rails d’ossature (`ossature-montants`), dosage mortier et béton (`dosage-materiaux`) calepinage (`calpinage`) et escalier (`escalier`).
+Le site SHALL fournir les outils suivants, chacun à l’URL `/calculateurs/<slug>/` : pente d’évacuation PVC (`pente-evacuation-pvc`), quantité de panneaux OSB (`quantite-osb`), isolant et nombre de panneaux (`isolant-panneaux`), montants et rails d’ossature (`ossature-montants`), dosage mortier et béton (`dosage-materiaux`), calepinage (`calpinage`), escalier (`escalier`) et rejointoiement à la chaux (`rejointoiement-chaux`).
 
 #### Scenario: Inventaire des outils
 
 - **WHEN** un visiteur ouvre le hub
-- **THEN** les sept outils sont listés avec leur titre et une phrase de description, chacun lié à sa page.
+- **THEN** tous les outils nommés ci-dessus sont listés avec leur titre et une phrase de description, chacun lié à sa page.
 
 #### Scenario: Slug stable
 

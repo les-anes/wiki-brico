@@ -73,8 +73,8 @@ try {
   // --- Contenu rendu par route ---
   assert.equal(categories.filter((c) => c.kind === "trade").length, 12);
   assert.equal(categories.filter((c) => c.kind === "transversal").length, 2);
-  assert.equal(tutorials.length, 72);
-  assert.equal(new Set(tutorials.map((t) => t.id)).size, 72);
+  assert.equal(tutorials.length, 73);
+  assert.equal(new Set(tutorials.map((t) => t.id)).size, 73);
   validateDiscovery(
     tutorials,
     tags,
@@ -162,7 +162,7 @@ try {
   assert(!home.includes("On s’y met ce week-end ?"));
   assert(home.includes("/favicon.svg"));
   assert(!home.includes("Tutoriel introuvable"));
-  assert.equal(countCards(render("/tutoriels/")), 72);
+  assert.equal(countCards(render("/tutoriels/")), 73);
   assert.equal(
     countCards(
       render(
@@ -207,7 +207,7 @@ try {
     0,
     "La recherche approximative respecte le filtre de catégorie",
   );
-  assert.equal(countCards(render(catalogHref({ category: "electricite" }))), 6);
+  assert.equal(countCards(render(catalogHref({ category: "electricite" }))), 7);
   assert.equal(
     countCards(render(catalogHref({ query: "zzzintrouvablezzz" }))),
     0,

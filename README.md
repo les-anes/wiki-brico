@@ -18,7 +18,7 @@ pnpm check:site
 - `/` : accueil, univers de travaux, parcours et rubriques transversales.
 - `/tutoriels/` : catalogue « On s’y met ce week-end ? », recherche, filtres, catégories, sous-catégories, parcours et favoris.
 - `/tutoriel/<identifiant>/` : fiche détaillée, références DTU, liens de matériel et liens vers ses autres classements.
-- `/calculateurs/` : hub des outils de calcul, puis `/calculateurs/<slug>/` pour chaque outil (pente d’évacuation, OSB, isolant, ossature, dosage, calepinage, escalier illustré).
+- `/calculateurs/` : hub des outils de calcul, puis `/calculateurs/<slug>/` pour chaque outil (pente d’évacuation, quantités de panneaux, dosages, calepinage, escalier, puissance d’un radiateur, rejointoiement à la chaux).
 
 Chaque route est une vraie page HTML pré-rendue au build : `<title>`, `meta description`, `canonical`, `og:*` propres et balisage `BreadcrumbList`. Le rendu serveur réutilise le même composant React que le navigateur, puis `hydrateRoot` reprend la main. Les anciens liens à fragment (`/#tutoriel/<identifiant>`, `/#tutoriels?...`) sont redirigés vers l’URL canonique par un court script en ligne. Les chemins inconnus affichent `404.html`.
 
@@ -40,7 +40,7 @@ Les six guides thématiques (`/themes/plomberie/`, `/themes/electricite/`,
 Ils proposent une introduction et des sections de lecture choisies, avec des liens
 directs vers les fiches. Ils sont accessibles depuis les univers de l’accueil,
 la navigation et le fil d’Ariane des fiches concernées. Leurs pages, métadonnées
-et URL sont pré-rendues et incluses dans le sitemap : 88 pages pour 72 tutoriels, six thèmes et sept calculateurs (avec leur hub).
+et URL sont pré-rendues et incluses dans le sitemap : 91 pages pour 73 tutoriels, six thèmes et neuf calculateurs (avec leur hub).
 
 Chaque fiche définit aussi :
 
@@ -93,7 +93,7 @@ Dupliquer un JSON existant dans le dossier voulu. Champs : `id`, `title`, `descr
 - `documented` : synthèse de sources consultées, sans validation professionnelle du chantier. Exige `scope`, `estimatesNote`, `sources` et une origine d’image (`imageCredit` ou `imageOrigin: "original"`). Le coût peut rester `null`.
 - `published` : état éditorial avec niveau, durée et coût renseignés ; ce statut ne constitue pas une certification technique.
 
-Les 72 tutoriels actuels sont documentés et harmonisés avec le modèle commun, y compris les six anciens brouillons. Les durées sont des estimations et les budgets non chiffrables restent à préciser.
+Les 73 tutoriels actuels sont documentés et harmonisés avec le modèle commun, y compris les six anciens brouillons. Les durées sont des estimations et les budgets non chiffrables restent à préciser.
 
 `pnpm validate:data` vérifie récursivement chemins, identifiants, classifications principales et secondaires, parcours, sources et présence des images locales, puis les métadonnées de chaque calculateur (champs bornés, unités, tutoriels liés). Cette validation est aussi exécutée au build. `pnpm test` teste le routage, les métadonnées et les formules de calcul (`src/lib/routes.test.ts`, `src/lib/calculators/calculators.test.ts`). `pnpm check:site` contrôle le rendu des pages, les filtres, la correspondance du sitemap, le fil d’Ariane, le shim des anciens liens, le recalcul d’un outil et l’hydratation, sans navigateur. La méthode et les sources des outils sont consignées dans `docs/outils-calculateurs.md`.
 

@@ -74,6 +74,8 @@ test("buildRoutes liste l'accueil, le catalogue, les tutoriels, les six thèmes 
       "/calculateurs/dosage-materiaux/",
       "/calculateurs/calpinage/",
       "/calculateurs/escalier/",
+      "/calculateurs/rejointoiement-chaux/",
+      "/calculateurs/puissance-radiateur/",
     ],
   );
 });

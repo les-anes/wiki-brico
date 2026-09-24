@@ -184,6 +184,22 @@ img {
   gap: 9px;
   font-size: 13px;
 }
+.calculators-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border: 1px solid #dfe4d6;
+  border-radius: 8px;
+  background: #f2f4ec;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.calculators-nav:hover {
+  background: #eaf0e2;
+  color: #b16d3d;
+}
 .count {
   background: #eaece4;
   border-radius: 5px;
@@ -921,6 +937,13 @@ footer > span {
     margin-left: auto;
   }
   .saved-nav > span:not(.count) {
+    display: none;
+  }
+  /* Le libellé disparaît, l’icône et le libellé accessible restent. */
+  .calculators-nav {
+    padding: 9px 11px;
+  }
+  .calculators-nav > span {
     display: none;
   }
   .mobile-menu {
