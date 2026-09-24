@@ -1,5 +1,21 @@
 # Prompts des illustrations de tutoriels
 
+## Gabarit de prompt
+
+Toutes les couvertures suivent le même parti pris : une vignette d’objets à la gouache et au fusain sur papier ivoire, sans texte ni personnage, cadrée sur les 70 % centraux pour rester lisible en vignette de carte. Le gabarit prêt à copier est dans `output/imagegen/_gabarit.txt` : seule la partie `Subject:` change d’une fiche à l’autre.
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024. Subject: <l’objet et l’action, deux ou trois éléments reconnaissables, cadrage de trois quarts>. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+Variantes utiles, à ajouter au cas par cas :
+
+- une main seulement jusqu’à l’avant-bras (`Only hand and forearm visible, no full person.`), ou aucun personnage (`Simple isolated object vignette, no person, no building background.`) ;
+- un objet, une action, un cadrage : si l’image a besoin d’une légende pour se comprendre, c’est qu’il y a trop d’objets ;
+- jamais de schéma coté ni de flèche — le texte porte l’explication, l’image porte l’objet.
+
+Fichiers : `public/images/tutoriels/<id>.png` en 1536×1024, plus les variantes `-480`, `-720` et `-960` en WebP qualité 82. Le prompt réellement utilisé est conservé dans `output/imagegen/<id>.txt` et recopié ci-dessous dans la section de son lot.
+
 ## Remplacement des 42 couvertures de la liste — 17 septembre 2026
 
 Les 42 tutoriels réalisés depuis `docs/tutos-a-implementer.md` disposent de nouvelles illustrations générées avec l’outil intégré imagegen et contrôlées visuellement. Ces images remplacent notamment les couvertures provisoires mentionnées dans l’historique ci-dessous. Sources PNG et prompts dans `output/imagegen/`, PNG publiés en 1536×1024 et variantes WebP 480, 720 et 960 pixels à qualité 82. Les textes alternatifs sont ajustés aux images retenues.
@@ -920,4 +936,14 @@ Illustration originale générée avec l’outil intégré imagegen et contrôl�
 
 ```text
 Use case: stylized-concept. Original French DIY tutorial cover, landscape exactly 1536x1024. Subject: a gloved hand tilting a plain bucket to pour smooth grey self-leveling floor compound onto a small bare concrete interior floor, with a stainless steel smoothing trowel with wooden handle beside the fresh puddle. Only hand and forearm visible, no full person. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable forms, whole subject within central 70 percent, generous margins for mobile cropping. Natural grey mortar and muted blue bucket. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
+```
+
+## Domotique — 24 septembre 2026
+
+### radiateur-connecte
+
+Fichier : `public/images/tutoriels/radiateur-connecte.png`, 1536×1024 ; variantes WebP 480, 720 et 960 pixels à qualité 82. Illustration générée avec l’outil d’image de ChatGPT à partir du gabarit de prompt, puis contrôlée visuellement : sujet dans les 70 % centraux, aucun texte ni personnage. Prompt conservé dans `output/imagegen/radiateur-connecte.txt`.
+
+```text
+Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024 (3:2 aspect ratio). Subject: a flat white panel radiator with vertical fins seen from the front against a pale wall; a grey connected thermostatic head with a small round display is fitted on its left side, and three simple radio waves rise from the head toward a smartphone standing on a small wooden shelf on the right, its screen showing an abstract circular dial and a slider. No people, no full person. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors: warm ivory paper, muted sage wall wash, white radiator, grey head, terracotta accent. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram; the phone screen stays abstract, without letters or figures.
 ```
