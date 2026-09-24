@@ -70,6 +70,7 @@ function validClassification(category, topicPath) {
   );
 }
 const text = (value) => typeof value === "string" && value.trim().length > 0;
+const declaredImages = new Set();
 for (const file of await listJson(directory)) {
   const t = await readJson(new URL(file, directory));
   tutorials.push(t);
@@ -97,6 +98,7 @@ for (const file of await listJson(directory)) {
       `${file}: chemin image invalide`,
     );
     await access(new URL(`../public${t.image}`, import.meta.url));
+    declaredImages.add(t.image.split("/").at(-1));
     for (const width of [480, 720, 960]) {
       const variant = `${t.image.replace(/\.png$/, "")}-${width}.webp`;
       await access(new URL(`../public${variant}`, import.meta.url)).catch(
@@ -106,6 +108,7 @@ for (const file of await listJson(directory)) {
           );
         },
       );
+      declaredImages.add(variant.split("/").at(-1));
     }
   }
   if (t.imageOrigin !== undefined) {
@@ -227,6 +230,13 @@ for (const file of await listJson(directory)) {
     `${file}: date invalide`,
   );
 }
+const orphelines = (
+  await readdir(new URL("../public/images/tutoriels/", import.meta.url))
+).filter((name) => !declaredImages.has(name));
+assert(
+  orphelines.length === 0,
+  `illustrations sans fiche : ${orphelines.join(", ")}`,
+);
 validateDiscovery(
   tutorials,
   await readJson(new URL("../src/data/tags.json", import.meta.url)),
