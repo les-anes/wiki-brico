@@ -4,6 +4,12 @@
   "description": "Tu peux raccorder du cuivre sans chalumeau avec des raccords à sertir. Une pince spéciale comprime le raccord autour du tube, tandis que son joint assure l’étanchéité.",
   "category": "plomberie",
   "topicPath": ["Arrivée d’eau", "Cuivre"],
+  "tags": ["cuivre", "sertissage"],
+  "relatedTutorials": [
+    "raccord-per-vers-cuivre",
+    "dimensionnement-plomberie",
+    "per-raccord-a-sertir"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 45,
   "cost": null,
@@ -57,7 +63,7 @@
     "Laisse refroidir l’eau chaude avant d’intervenir et ne reprends jamais un raccord sous pression."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-24",
   "scope": "Assemblage local de cuivre sain déjà maintenu, par raccords à sertir pour eau sanitaire. Hors brasage, soudure, gaz, supports d’un réseau neuf et dimensionnement.",
   "sources": [
     {

@@ -9,6 +9,12 @@
     { "category": "techniques", "topicPath": ["Utiliser un niveau"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["peinture", "pochoir"],
+  "relatedTutorials": [
+    "peindre-un-mur",
+    "peindre-deux-couleurs",
+    "peindre-sans-bavures"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 120,
   "cost": null,
@@ -104,5 +110,5 @@
     "En cas d’utilisation d’un vernis de protection en bombe, tiens la pièce aérée et éloigne les sources d’ignition pendant la pulvérisation."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

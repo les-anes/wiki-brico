@@ -9,6 +9,12 @@
     { "category": "menuiseries", "topicPath": ["Quincaillerie"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["vinyle", "pose flottante"],
+  "relatedTutorials": [
+    "ragreer-un-sol-en-beton",
+    "poser-des-plinthes",
+    "raboter-une-porte-qui-frotte"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 300,
   "cost": null,
@@ -98,5 +104,5 @@
     "Si tu utilises un ragréage, aère la pièce et porte un masque pendant le mélange, puis respecte le délai de séchage avant de poser les lames."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

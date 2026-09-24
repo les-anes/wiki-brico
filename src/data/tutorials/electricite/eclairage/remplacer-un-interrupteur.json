@@ -8,6 +8,12 @@
     { "category": "preparer-chantier", "topicPath": ["Diagnostic"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["interrupteur", "éclairage"],
+  "relatedTutorials": [
+    "brancher-un-luminaire-dcl",
+    "remplacer-une-prise-murale",
+    "dimensionner-son-tableau-electrique"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 35,
   "cost": null,
@@ -93,5 +99,5 @@
     "Porte des gants isolants, utilise des outils isolés et remonte l’appareillage avant de réenclencher : ne laisse jamais un interrupteur ouvert sous tension."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

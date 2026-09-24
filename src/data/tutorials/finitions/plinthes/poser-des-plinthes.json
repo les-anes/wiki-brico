@@ -9,6 +9,12 @@
     { "category": "techniques", "topicPath": ["Scier"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["plinthes", "coupe d’onglet"],
+  "relatedTutorials": [
+    "poser-du-parquet",
+    "poser-un-sol-vinyle-clipsable",
+    "peindre-sans-bavures"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 120,
   "cost": null,
@@ -95,5 +101,5 @@
     "Travaille sur une surface stable et bloque la plinthe avant de couper, pour éviter que la pièce ne bascule pendant la coupe."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

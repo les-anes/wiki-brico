@@ -8,6 +8,12 @@
     { "category": "cuisine-salle-de-bains", "topicPath": ["Lavabos"] }
   ],
   "journeys": ["renover-une-salle-de-bains"],
+  "tags": ["mitigeur", "lavabo"],
+  "relatedTutorials": [
+    "reparer-fuite-joint-plat",
+    "nettoyer-siphon-lavabo",
+    "refaire-joints-silicone"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 90,
   "cost": null,
@@ -77,5 +83,5 @@
     "Un petit chauffe-eau ouvert avec robinet spécifique à trois flexibles ne relève pas de ce montage : vérifie le type d’installation avant tout achat."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

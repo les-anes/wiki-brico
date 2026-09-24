@@ -8,6 +8,12 @@
     { "category": "finitions", "topicPath": ["Carrelage"] },
     { "category": "techniques", "topicPath": ["Utiliser un niveau"] }
   ],
+  "tags": ["carrelage", "crédence"],
+  "relatedTutorials": [
+    "refaire-joints-silicone",
+    "renover-les-joints-d-un-carrelage",
+    "remplacer-un-carreau-de-carrelage-casse"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 480,
   "cost": null,
@@ -108,5 +114,5 @@
     "Ouvre la fenêtre pendant la pose et le jointoiement, et respecte les temps de séchage indiqués par les fabricants pour ne pas piéger d’humidité dans le mur."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

@@ -9,6 +9,12 @@
     { "category": "finitions", "topicPath": ["Peinture"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["enduit", "ponçage"],
+  "relatedTutorials": [
+    "reboucher-un-trou",
+    "peindre-un-mur",
+    "poser-du-papier-peint-intisse"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 120,
   "cost": null,
@@ -88,5 +94,5 @@
     "Ne mouille pas les prises ni les interrupteurs et ne démonte pas leur mécanisme pour ce travail."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

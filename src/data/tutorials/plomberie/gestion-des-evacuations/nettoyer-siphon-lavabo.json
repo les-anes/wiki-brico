@@ -5,6 +5,12 @@
   "category": "plomberie",
   "topicPath": ["Gestion des évacuations"],
   "journeys": ["renover-une-salle-de-bains"],
+  "tags": ["siphon", "évacuation", "lavabo"],
+  "relatedTutorials": [
+    "gestion-evacuations",
+    "reparer-fuite-joint-plat",
+    "remplacer-mitigeur-lavabo"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 30,
   "cost": null,
@@ -86,5 +92,5 @@
     "Si une fuite apparaît au test, arrête l’eau et vérifie le joint et le filetage avant de réutiliser le lavabo."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

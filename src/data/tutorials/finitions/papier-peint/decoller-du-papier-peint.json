@@ -9,6 +9,12 @@
     { "category": "preparer-chantier", "topicPath": ["Diagnostic"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["papier peint", "enduit"],
+  "relatedTutorials": [
+    "reboucher-un-trou",
+    "lisser-un-mur",
+    "poser-du-papier-peint-intisse"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 180,
   "cost": null,
@@ -95,5 +101,5 @@
     "Avant de gratter un papier ancien, vérifie qu’il ne contient pas d’amiante ; dans le doute, ne le décape pas toi-même et fais analyser un échantillon."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

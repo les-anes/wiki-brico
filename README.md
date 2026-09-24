@@ -33,6 +33,27 @@ Le favicon SVG local `public/favicon.svg` reprend la maison du logo.
 
 ## Un tutoriel, plusieurs accès
 
+Les six guides thématiques (`/themes/plomberie/`, `/themes/electricite/`,
+`/themes/cloisons/`, `/themes/menuiseries/`, `/themes/finitions/` et
+`/themes/cuisine-salle-de-bains/`) sont définis dans `src/data/pillars.json`.
+Ils proposent une introduction et des sections de lecture choisies, avec des liens
+directs vers les fiches. Ils sont accessibles depuis les univers de l’accueil,
+la navigation et le fil d’Ariane des fiches concernées. Leurs pages, métadonnées
+et URL sont pré-rendues et incluses dans le sitemap : 70 pages pour 62 tutoriels.
+
+Chaque fiche définit aussi :
+
+- `relatedTutorials` : trois à cinq identifiants complémentaires, choisis et ordonnés
+  éditorialement, affichés dans « Pour continuer ». Aucun doublon ni lien vers soi-même.
+- `tags` : des termes précis issus de `src/data/tags.json`, affichés comme liens vers
+  la recherche du catalogue. Ajouter un tag au référentiel avant de l’utiliser.
+  Les acronymes du référentiel (PER, PEHD, OSB, BA13, PVC, etc.) correspondent à des
+  mots entiers, sans approximation ; la recherche conserve les fautes tolérées pour
+  les autres mots et indexe les tags même s’ils ne figurent pas dans le titre.
+
+`validate:data` contrôle ces références avant le build ; `check:site` vérifie les
+liens rendus, les pages piliers, leur hydratation et la recherche des tags.
+
 Chaque tutoriel possède un seul fichier JSON et un identifiant stable. Son classement principal détermine le dossier :
 
 ```text

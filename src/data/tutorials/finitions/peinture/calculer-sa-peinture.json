@@ -8,6 +8,12 @@
     { "category": "preparer-chantier", "topicPath": ["Métrés"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["peinture", "métré"],
+  "relatedTutorials": [
+    "choisir-sa-peinture",
+    "choisir-rouleau-et-pinceau",
+    "peindre-un-mur"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 25,
   "cost": null,
@@ -89,5 +95,5 @@
     "Ne jette pas les restes dans l’évier ni les canalisations : rapporte-les en déchèterie avec les solvants et emballages souillés."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

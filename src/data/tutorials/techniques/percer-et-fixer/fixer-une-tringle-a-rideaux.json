@@ -9,6 +9,12 @@
     { "category": "menuiseries", "topicPath": ["Quincaillerie"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["fixation", "cheville", "rideaux"],
+  "relatedTutorials": [
+    "choisir-une-cheville",
+    "poser-une-etagere",
+    "reboucher-un-trou"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 60,
   "cost": null,
@@ -96,5 +102,5 @@
     "Porte des lunettes et un masque pendant le perçage, et aère la pièce pour évacuer les poussières."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

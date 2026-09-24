@@ -9,6 +9,12 @@
     { "category": "finitions", "topicPath": ["Peinture"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["BA13", "plaques de plâtre", "ossature métallique"],
+  "relatedTutorials": [
+    "poser-une-bande-a-joint",
+    "lisser-un-mur",
+    "peindre-un-mur"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 480,
   "cost": null,
@@ -112,5 +118,5 @@
     "Manipule les plaques à deux pour les grandes dimensions, et ne laisse jamais une plaque en équilibre contre un mur pendant le chantier."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

@@ -1,6 +1,6 @@
 # Todo des prochains tutoriels
 
-Dernière mise à jour : **20 septembre 2026**.
+Dernière mise à jour : **24 septembre 2026**.
 
 Ce document centralise les idées de nouveaux tutos WikiBrico. Il sert à choisir le prochain sujet et à suivre sa réalisation ; il ne remplace pas les specs du tutoriel.
 
@@ -122,3 +122,5 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - **2026-09-17** : idée T43 « poser un plancher OSB sur solives » demandée puis réalisée dans la foulée : fiche documentée au classement « Structure › Planchers », avec la référence NF DTU 51.3 et les sources FCBA et AFNOR consultées. L’illustration reste à générer : son prompt est consigné dans `docs/illustrations-tutoriels.md` et `output/imagegen/`. Le catalogue contient 61 tutoriels.
 
 - **2026-09-20** : T44 réalisé à la demande d’un lecteur : ragréage sur béton ou chape ciment, rubrique « Finitions › Ragréage », sources Weber et Bostik consultées, illustration originale imagegen et variantes WebP. Validation des données, typage, lint, tests, build et contrôle du site réussis. Le catalogue contient 62 tutoriels ; aucune idée ne reste à faire.
+
+- **2026-09-24** : structuration des 62 fiches existantes avec trois liens « Pour continuer » et des tags éditoriaux par fiche ; ajout de six pages piliers. Aucun nouveau tutoriel ni changement de priorité.

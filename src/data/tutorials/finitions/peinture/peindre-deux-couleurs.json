@@ -8,6 +8,12 @@
     { "category": "techniques", "topicPath": ["Utiliser un niveau"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["peinture", "masquage"],
+  "relatedTutorials": [
+    "peindre-sans-bavures",
+    "peindre-un-mur",
+    "peindre-un-motif-au-pochoir"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 90,
   "cost": null,
@@ -103,5 +109,5 @@
     "Repère les câbles avant de percer ou de fixer quoi que ce soit sur le mur, et ne masque pas les grilles de ventilation."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

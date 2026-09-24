@@ -11,6 +11,12 @@
     }
   ],
   "journeys": ["amenager-des-combles"],
+  "tags": ["OSB", "bois", "solives"],
+  "relatedTutorials": [
+    "poser-du-parquet",
+    "poser-des-plinthes",
+    "organiser-les-travaux-d-une-chambre"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 240,
   "cost": null,
@@ -83,7 +89,7 @@
     "Ne pose pas de plancher sur un solivage dont une solive bouge ou dont le bois est dégradé : reprends la structure d’abord."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-24",
   "dtuReferences": [
     {
       "reference": "NF DTU 51.3 P1-1",

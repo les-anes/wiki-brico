@@ -4,6 +4,12 @@
   "description": "Avant d’acheter les tuyaux, dessine ce qu’ils doivent alimenter et mesure les trajets. Rassemble les besoins et la pression disponible pour comparer les diamètres dans les tableaux du fabricant.",
   "category": "plomberie",
   "topicPath": ["Arrivée d’eau", "Dimensionnage"],
+  "tags": ["réseau d’eau", "diamètre"],
+  "relatedTutorials": [
+    "plomberie-pehd",
+    "per-raccord-a-sertir",
+    "gestion-evacuations"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 90,
   "cost": null,
@@ -53,7 +59,7 @@
     "Si le débit manque déjà, vérifie d’abord que les vannes sont ouvertes et que les filtres et mousseurs sont propres."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-24",
   "scope": "Préparation des données de dimensionnement d’une distribution intérieure domestique. Cette fiche ne calcule pas les diamètres et ne constitue pas un plan d’exécution.",
   "sources": [
     {

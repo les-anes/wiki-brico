@@ -6,6 +6,12 @@
   "topicPath": ["Peinture"],
   "relatedCategories": [{ "category": "techniques", "topicPath": ["Poncer"] }],
   "journeys": ["renover-une-chambre"],
+  "tags": ["peinture", "masquage"],
+  "relatedTutorials": [
+    "peindre-deux-couleurs",
+    "choisir-rouleau-et-pinceau",
+    "peindre-un-plafond"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 75,
   "cost": null,
@@ -101,5 +107,5 @@
     "Ne masque pas les grilles de ventilation ni les bouches d’extraction : elles doivent rester libres pour renouveler l’air."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

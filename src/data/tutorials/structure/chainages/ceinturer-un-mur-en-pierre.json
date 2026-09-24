@@ -14,6 +14,12 @@
       "topicPath": ["Diagnostic"]
     }
   ],
+  "tags": ["pierre", "chaînage", "béton"],
+  "relatedTutorials": [
+    "remplacer-un-linteau",
+    "rejointoyer-un-mur-en-pierre",
+    "poser-un-plancher-osb-sur-solives"
+  ],
   "difficulty": "Avancé",
   "durationMinutes": 600,
   "cost": null,
@@ -118,5 +124,5 @@
     "Manipule les aciers et les charges de sable avec des gants épais, et porte secours à deux pour les seaux et les éléments de coffrage lourds."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

@@ -3,6 +3,12 @@
   "title": "Reboucher un petit trou dans un mur",
   "description": "Un ancien trou de vis à faire disparaître ? Un peu d’enduit et un ponçage léger suffisent pour retrouver un mur prêt à peindre.",
   "category": "cloisons",
+  "tags": ["enduit", "ponçage"],
+  "relatedTutorials": [
+    "lisser-un-mur",
+    "reboucher-une-fissure",
+    "peindre-un-mur"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 30,
   "cost": null,
@@ -55,7 +61,7 @@
     "Ne ponce pas un ancien revêtement suspect sans avoir vérifié la présence de plomb ou d’amiante."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-24",
   "relatedCategories": [
     {
       "category": "techniques",

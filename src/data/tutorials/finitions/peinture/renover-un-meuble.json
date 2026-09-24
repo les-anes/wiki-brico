@@ -3,6 +3,12 @@
   "title": "Repeindre un petit meuble en bois",
   "description": "Un petit meuble en bois peut changer d’allure avec un nettoyage soigné et deux couches de peinture. On part ici d’un meuble verni en bon état, sans cire ni peinture qui s’écaille.",
   "category": "finitions",
+  "tags": ["bois", "peinture", "ponçage"],
+  "relatedTutorials": [
+    "choisir-sa-peinture",
+    "repeindre-une-porte",
+    "regler-une-porte-de-placard"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 150,
   "cost": null,
@@ -72,7 +78,7 @@
     "Un meuble à ancienne peinture inconnue sort de ce cas : vérifie notamment le risque de plomb avant de poncer."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-24",
   "relatedCategories": [
     {
       "category": "techniques",

@@ -4,6 +4,12 @@
   "description": "Ton ampoule ne s’allume plus ? Voici comment remplacer une ampoule à vis intacte sur un luminaire en bon état, sans démonter sa douille.",
   "category": "electricite",
   "topicPath": ["Éclairage"],
+  "tags": ["LED", "éclairage"],
+  "relatedTutorials": [
+    "brancher-un-luminaire-dcl",
+    "remplacer-un-interrupteur",
+    "dimensionner-son-tableau-electrique"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 10,
   "cost": null,
@@ -84,5 +90,5 @@
   "shoppingLinks": [],
   "dtuReferences": [],
   "status": "documented",
-  "updatedAt": "2026-09-11"
+  "updatedAt": "2026-09-24"
 }

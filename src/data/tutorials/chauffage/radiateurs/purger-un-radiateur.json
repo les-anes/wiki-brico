@@ -9,6 +9,12 @@
     { "category": "plomberie", "topicPath": ["Chauffe-eau"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["radiateur", "chauffage"],
+  "relatedTutorials": [
+    "reparer-fuite-joint-plat",
+    "plomberie-cuivre",
+    "nettoyer-les-bouches-de-vmc"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 45,
   "cost": null,
@@ -89,5 +95,5 @@
     "Si un purgeur continue de goutter après fermeture ou si un radiateur reste froid malgré la purge, coupe le circuit et cherche l’origine du problème au lieu d’insister."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

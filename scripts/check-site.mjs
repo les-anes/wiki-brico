@@ -4,10 +4,11 @@ import { createServer as createHttpServer } from "node:http";
 import { runInNewContext } from "node:vm";
 
 import { JSDOM, VirtualConsole } from "jsdom";
-import { createElement } from "react";
+import { act, createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { createServer } from "vite";
 
+import { validateDiscovery } from "./validate-discovery.mjs";
 import { validateTutorialLinks } from "./validate-tutorial-links.mjs";
 
 function resolveOrigin(value) {
@@ -42,6 +43,11 @@ const server = await createServer({
 });
 try {
   const { tutorials } = await server.ssrLoadModule("/src/data/index.ts");
+  const { default: pillars } = await server.ssrLoadModule(
+    "/src/data/pillars.json",
+  );
+  const { default: tags } = await server.ssrLoadModule("/src/data/tags.json");
+  const { searchTutorials } = await server.ssrLoadModule("/src/lib/search.ts");
   const { categories, journeys } = await server.ssrLoadModule(
     "/src/data/taxonomy.ts",
   );
@@ -66,6 +72,87 @@ try {
   assert.equal(categories.filter((c) => c.kind === "transversal").length, 2);
   assert.equal(tutorials.length, 62);
   assert.equal(new Set(tutorials.map((t) => t.id)).size, 62);
+  validateDiscovery(
+    tutorials,
+    tags,
+    pillars,
+    categories.map((c) => c.id),
+  );
+  for (const relatedTutorials of [
+    ["absent", tutorials[1].id, tutorials[2].id],
+    [tutorials[0].id, tutorials[1].id, tutorials[2].id],
+    [tutorials[1].id, tutorials[1].id, tutorials[2].id],
+    [tutorials[1].id],
+    tutorials.slice(1, 7).map((t) => t.id),
+  ]) {
+    const invalid = [
+      { ...tutorials[0], relatedTutorials },
+      ...tutorials.slice(1),
+    ];
+    assert.throws(
+      () =>
+        validateDiscovery(
+          invalid,
+          tags,
+          pillars,
+          categories.map((c) => c.id),
+        ),
+      /complémentaires invalides/,
+    );
+  }
+  for (const invalidTags of [[], ["tag-inconnu"], ["PER", "PER"]]) {
+    const invalid = [
+      { ...tutorials[0], tags: invalidTags },
+      ...tutorials.slice(1),
+    ];
+    assert.throws(
+      () =>
+        validateDiscovery(
+          invalid,
+          tags,
+          pillars,
+          categories.map((c) => c.id),
+        ),
+      /tags absents/,
+    );
+  }
+  const invalidPillars = structuredClone(pillars);
+  invalidPillars[0].sections[0].tutorials.push("absent");
+  assert.throws(
+    () =>
+      validateDiscovery(
+        tutorials,
+        tags,
+        invalidPillars,
+        categories.map((c) => c.id),
+      ),
+    /liens de section invalides/,
+  );
+  assert.deepEqual(
+    searchTutorials(tutorials, categories, "PER")
+      .map((t) => t.id)
+      .toSorted(),
+    [
+      "per-raccord-a-compression",
+      "per-raccord-a-glissement",
+      "per-raccord-a-sertir",
+      "raccord-per-vers-cuivre",
+    ],
+    "PER ne renvoie que les quatre fiches sur ce matériau",
+  );
+  assert(
+    searchTutorials(tutorials, categories, "BA13").some(
+      (t) => t.id === "monter-une-petite-cloison-en-placo",
+    ),
+  );
+  for (const tutorial of tutorials)
+    for (const tag of tutorial.tags)
+      assert(
+        searchTutorials(tutorials, categories, tag).some(
+          (t) => t.id === tutorial.id,
+        ),
+        `${tutorial.id}: recherche par tag ${tag}`,
+      );
   const home = render("/");
   assert(home.includes("Vos deux mains."));
   assert.equal(countCards(home), 0, "Catalogue séparé de l’accueil");
@@ -276,6 +363,7 @@ try {
 
   // --- Build statique (dist/) : une page par route, métadonnées propres ---
   const routes = buildRoutes(tutorials);
+  assert.equal(routes.filter((route) => route.kind === "theme").length, 6);
   const fileFor = (path) =>
     path === "/" ? "dist/index.html" : `dist${path}index.html`;
   for (const route of routes) {
@@ -304,6 +392,22 @@ try {
           `/tutoriels/: lien vers /tutoriel/${tutorial.id}/`,
         );
     if (route.kind === "tutorial") {
+      const tutorial = tutorials.find((t) => t.id === route.id);
+      const doc = JSDOM.fragment(html);
+      assert.deepEqual(
+        [...doc.querySelectorAll(".continue-reading a")].map((a) =>
+          a.getAttribute("href"),
+        ),
+        tutorial.relatedTutorials.map(tutorialPath),
+        `${route.path}: liens complémentaires dans l’ordre éditorial`,
+      );
+      assert.deepEqual(
+        [...doc.querySelectorAll(".tutorial-tags a")].map((a) =>
+          a.getAttribute("href"),
+        ),
+        tutorial.tags.map((tag) => catalogHref({ query: tag })),
+        `${route.path}: tags vers la recherche`,
+      );
       const jsonld = html.match(
         /<script type="application\/ld\+json">([\s\S]*?)<\/script>/,
       );
@@ -312,6 +416,47 @@ try {
       assert.equal(breadcrumb["@type"], "BreadcrumbList");
       assert.equal(breadcrumb.itemListElement.length, 4);
       assert(!html.includes('"HowTo"'), `${route.path}: pas de balisage HowTo`);
+    }
+    if (route.kind === "theme") {
+      const pillar = pillars.find((p) => p.id === route.id);
+      const doc = JSDOM.fragment(html);
+      assert.equal(doc.querySelector("h1").textContent, pillar.title);
+      assert.equal(
+        doc.querySelectorAll(".pillar-section").length,
+        pillar.sections.length,
+      );
+      assert.deepEqual(
+        [...doc.querySelectorAll(".tutorial-links a")].map((a) =>
+          a.getAttribute("href"),
+        ),
+        pillar.sections.flatMap((s) => s.tutorials.map(tutorialPath)),
+      );
+      const breadcrumb = JSON.parse(
+        doc.querySelector('script[type="application/ld+json"]').textContent,
+      );
+      assert.equal(
+        breadcrumb.itemListElement.at(-1).item,
+        `${origin}${route.path}`,
+      );
+      assert(
+        home.includes(`href="${route.path}"`),
+        `${route.path}: lien depuis l’accueil`,
+      );
+    }
+    for (const [, internalHref] of html.matchAll(/href="(\/(?!\/)[^"]*)"/g)) {
+      const path = internalHref.replaceAll("&amp;", "&");
+      if (
+        path.startsWith("/assets/") ||
+        path.startsWith("/fonts/") ||
+        path.startsWith("/images/") ||
+        path === "/favicon.svg"
+      )
+        continue;
+      assert.notEqual(
+        matchRoute(tutorials, path).kind,
+        "notFound",
+        `${route.path}: lien interne ${path}`,
+      );
     }
   }
   await access("dist/404.html");
@@ -358,9 +503,9 @@ try {
   // L'origine servie est volontairement différente de SITE_URL (cas d'une URL de
   // prévisualisation) : le client doit reprendre l'origine du document, pas
   // `location.origin`, sinon les métadonnées absolues divergent (React #418).
-  {
-    const dom = new JSDOM(await readFile("dist/index.html", "utf8"), {
-      url: "https://apercu-deploiement.netlify.app/",
+  for (const path of ["/", "/themes/plomberie/", "/tutoriel/plomberie-pehd/"]) {
+    const dom = new JSDOM(await readFile(fileFor(path), "utf8"), {
+      url: `https://apercu-deploiement.netlify.app${path}`,
       virtualConsole: new VirtualConsole(),
     });
     dom.window.scrollTo = () => {};
@@ -381,11 +526,16 @@ try {
       .map((el) => el.getAttribute("src"))
       .filter(Boolean);
     const messages = [];
+    dom.virtualConsole.on("jsdomError", (error) =>
+      messages.push(error.message),
+    );
     const originalError = console.error;
     const originalWarn = console.warn;
     globalThis.window = dom.window;
     globalThis.document = dom.window.document;
     globalThis.location = dom.window.location;
+    globalThis.history = dom.window.history;
+    globalThis.Node = dom.window.Node;
     Object.defineProperty(globalThis, "navigator", {
       value: dom.window.navigator,
       configurable: true,
@@ -393,23 +543,71 @@ try {
     });
     console.error = (...args) => messages.push(String(args[0]));
     console.warn = (...args) => messages.push(String(args[0]));
+    globalThis.IS_REACT_ACT_ENVIRONMENT = true;
     try {
       const { hydrateRoot } = await import("react-dom/client");
-      const root = hydrateRoot(
-        dom.window.document,
-        createElement(Document, {
-          initialPath: "/",
-          siteUrl,
-          assets: { css, modules },
-        }),
-      );
-      await new Promise((resolve) => setTimeout(resolve, 0));
-      root.unmount();
+      let root;
+      await act(async () => {
+        root = hydrateRoot(
+          dom.window.document,
+          createElement(Document, {
+            initialPath: path,
+            siteUrl,
+            assets: { css, modules },
+          }),
+        );
+      });
+      try {
+        if (path === "/themes/plomberie/") {
+          const click = async (selector) => {
+            const anchor = document.querySelector(selector);
+            assert(anchor, `Lien de navigation présent : ${selector}`);
+            await act(async () =>
+              anchor.dispatchEvent(
+                new dom.window.MouseEvent("click", {
+                  bubbles: true,
+                  cancelable: true,
+                  button: 0,
+                }),
+              ),
+            );
+          };
+          await click('.pillar-section a[href="/tutoriel/plomberie-pehd/"]');
+          assert.equal(location.pathname, "/tutoriel/plomberie-pehd/");
+          assert.equal(
+            document.querySelector('link[rel="canonical"]').href,
+            `${origin}/tutoriel/plomberie-pehd/`,
+          );
+          assert.equal(
+            document.querySelectorAll(".continue-reading a").length,
+            3,
+          );
+          await click('.tutorial-tags a[href="/tutoriels/?q=PEHD"]');
+          assert.equal(
+            location.pathname + location.search,
+            "/tutoriels/?q=PEHD",
+          );
+          assert.equal(document.querySelectorAll(".tutorial-card").length, 1);
+          assert.equal(
+            document.querySelector(
+              'input[aria-label="Rechercher dans les tutoriels"]',
+            ).value,
+            "PEHD",
+          );
+          assert.equal(
+            document.querySelector('link[rel="canonical"]').href,
+            `${origin}/tutoriels/`,
+          );
+        }
+      } finally {
+        await act(async () => root.unmount());
+      }
     } finally {
       // Les globals DOM restent en place : React poursuit son travail planifié
       // après l'unmount et lit encore `window`.
       console.error = originalError;
       console.warn = originalWarn;
+      globalThis.IS_REACT_ACT_ENVIRONMENT = false;
     }
     const relevant = messages.filter(
       (message) =>
@@ -422,7 +620,7 @@ try {
   await checkAutocomplete(server);
 
   console.log(
-    "Accueil, catalogue, 62 fiches, 64 URLs, sitemap, robots, fil d’Ariane, 404, shim et hydratation : contrôles réussis.",
+    "Accueil, catalogue, 62 fiches, 6 thèmes, 70 URLs, tags, liens complémentaires, sitemap, robots, fil d’Ariane, 404, shim et hydratation : contrôles réussis.",
   );
 } finally {
   await server.close();

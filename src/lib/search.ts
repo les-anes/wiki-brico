@@ -1,5 +1,13 @@
 import type { Tutorial } from "@/types";
 
+import tags from "../data/tags.json" with { type: "json" };
+
+const acronyms = new Set(
+  tags
+    .filter((tag) => /^[A-Z][A-Z0-9]+$/.test(tag))
+    .map((tag) => tag.toLowerCase()),
+);
+
 const words = (text: string) =>
   text
     .normalize("NFD")
@@ -31,15 +39,20 @@ export function searchScore(title: string, text: string, query: string) {
   if (!terms.length) return 0;
   const titleWords = words(title);
   const allWords = [...titleWords, ...words(text)];
+  const matches = (term: string, word: string) =>
+    acronyms.has(term) ? word === term : word.includes(term);
   const exact = (list: string[]) =>
-    terms.every((term) => list.some((word) => word.includes(term)));
+    terms.every((term) => list.some((word) => matches(term, word)));
   if (exact(titleWords)) return 0;
   if (exact(allWords)) return 1;
   // Une faute par mot suffit au catalogue actuel ; étendre ce seuil demanderait
   // un classement plus fin pour ne pas noyer les résultats pertinents.
   const fuzzy = (list: string[]) =>
     terms.every((term) =>
-      list.some((word) => word.includes(term) || oneTypo(term, word)),
+      list.some(
+        (word) =>
+          matches(term, word) || (!acronyms.has(term) && oneTypo(term, word)),
+      ),
     );
   if (fuzzy(titleWords)) return 2;
   return fuzzy(allWords) ? 3 : Infinity;
@@ -59,6 +72,7 @@ export function searchTutorials(
           t.title,
           [
             t.description,
+            ...t.tags,
             ...t.tools,
             ...[
               t.category,

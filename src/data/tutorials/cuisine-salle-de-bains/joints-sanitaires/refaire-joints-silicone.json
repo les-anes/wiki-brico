@@ -3,6 +3,12 @@
   "title": "Refaire le joint silicone autour d’un lavabo",
   "description": "Ton joint se décolle ou reste noir malgré le nettoyage ? Retire-le complètement, puis refais un cordon de silicone sanitaire sur un support propre et sec.",
   "category": "cuisine-salle-de-bains",
+  "tags": ["silicone", "étanchéité"],
+  "relatedTutorials": [
+    "renover-les-joints-d-un-carrelage",
+    "remplacer-flexible-et-douchette",
+    "poser-une-credence-carrelee"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 60,
   "cost": null,
@@ -60,7 +66,7 @@
     "Si le lavabo bouge ou si le mur est humide derrière le joint, corrige la cause avant de refaire le cordon."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-24",
   "relatedCategories": [
     {
       "category": "techniques",

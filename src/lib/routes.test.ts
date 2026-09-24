@@ -9,6 +9,7 @@ import {
   matchRoute,
   pageMeta,
   tutorialPath,
+  categoryPath,
 } from "./routes.ts";
 
 const parquet = {
@@ -50,7 +51,7 @@ test("isPageChange distingue une nouvelle page d’un filtre", () => {
   assert.equal(isPageChange("/tutoriel/a/", "/tutoriel/b/"), true);
 });
 
-test("buildRoutes liste l'accueil, le catalogue puis chaque tutoriel", () => {
+test("buildRoutes liste l'accueil, le catalogue, les tutoriels et les six thèmes", () => {
   const routes = buildRoutes(tutorials);
   assert.deepEqual(
     routes.map((r) => r.path),
@@ -59,8 +60,31 @@ test("buildRoutes liste l'accueil, le catalogue puis chaque tutoriel", () => {
       "/tutoriels/",
       "/tutoriel/poser-du-parquet/",
       "/tutoriel/poser-une-etagere/",
+      "/themes/plomberie/",
+      "/themes/electricite/",
+      "/themes/cloisons/",
+      "/themes/menuiseries/",
+      "/themes/finitions/",
+      "/themes/cuisine-salle-de-bains/",
     ],
   );
+});
+
+test("les thèmes ont des routes et métadonnées propres, sans créer de thème inconnu", () => {
+  const route = matchRoute(tutorials, "/themes/plomberie?q=PER");
+  assert.deepEqual(route, {
+    kind: "theme",
+    path: "/themes/plomberie/",
+    id: "plomberie",
+  });
+  assert.equal(matchRoute(tutorials, "/themes/inconnu/").kind, "notFound");
+  const meta = pageMeta(route, { tutorials, categories, siteUrl });
+  assert.equal(meta.canonical, `${siteUrl}/themes/plomberie/`);
+  assert.match(meta.title, /Plomberie/);
+  assert(meta.description.length > 0);
+  assert.equal(meta.breadcrumb.at(-1)?.url, meta.canonical);
+  assert.equal(categoryPath("finitions"), "/themes/finitions/");
+  assert.equal(categoryPath("techniques"), "/tutoriels/?categorie=techniques");
 });
 
 test("matchRoute reconnaît l'accueil racine", () => {
@@ -134,6 +158,7 @@ test("pageMeta d'une fiche expose le fil d'Ariane accueil › tutoriels › cat�
     ["Accueil", "Les tutoriels", "Finitions", "Poser du parquet"],
   );
   assert.equal(meta.breadcrumb.at(-1)?.url, meta.canonical);
+  assert.equal(meta.breadcrumb[2].url, `${siteUrl}/themes/finitions/`);
 });
 
 test("pageMeta d'une fiche introuvable porte un titre dédié", () => {

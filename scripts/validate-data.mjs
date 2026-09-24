@@ -1,9 +1,11 @@
 import assert from "node:assert/strict";
 import { readdir, readFile, access } from "node:fs/promises";
 
+import { validateDiscovery } from "./validate-discovery.mjs";
 import { validateTutorialLinks } from "./validate-tutorial-links.mjs";
 const directory = new URL("../src/data/tutorials/", import.meta.url);
 const ids = new Set();
+const tutorials = [];
 const slugify = (value) =>
   value
     .normalize("NFD")
@@ -70,6 +72,7 @@ function validClassification(category, topicPath) {
 const text = (value) => typeof value === "string" && value.trim().length > 0;
 for (const file of await listJson(directory)) {
   const t = await readJson(new URL(file, directory));
+  tutorials.push(t);
   assert(
     text(t.id) &&
       /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(t.id) &&
@@ -224,4 +227,12 @@ for (const file of await listJson(directory)) {
     `${file}: date invalide`,
   );
 }
-console.log(`${ids.size} tutoriels JSON validés.`);
+validateDiscovery(
+  tutorials,
+  await readJson(new URL("../src/data/tags.json", import.meta.url)),
+  await readJson(new URL("../src/data/pillars.json", import.meta.url)),
+  categories,
+);
+console.log(
+  `${ids.size} tutoriels JSON, tags, liens complémentaires et pages piliers validés.`,
+);

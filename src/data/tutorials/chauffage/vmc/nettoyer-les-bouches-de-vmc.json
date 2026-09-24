@@ -9,6 +9,12 @@
     { "category": "techniques", "topicPath": ["Visser"] }
   ],
   "journeys": ["renover-une-salle-de-bains"],
+  "tags": ["VMC", "ventilation"],
+  "relatedTutorials": [
+    "remplacer-le-joint-d-une-fenetre",
+    "refaire-joints-silicone",
+    "purger-un-radiateur"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 60,
   "cost": null,
@@ -90,5 +96,5 @@
     "Un logement doit rester ventilé : ne bouche jamais une entrée d’air ni une bouche pour supprimer un courant d’air, et ne neutralise pas une VMC sans solution de remplacement."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

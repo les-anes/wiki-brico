@@ -4,6 +4,12 @@
   "description": "Le PER, ou polyéthylène réticulé, est un tuyau souple pour distribuer l’eau. Avec un raccord à compression, l’écrou serre une bague autour du tube : deux clés suffisent pour le serrage.",
   "category": "plomberie",
   "topicPath": ["Arrivée d’eau", "PER", "Raccord à compression"],
+  "tags": ["PER", "compression"],
+  "relatedTutorials": [
+    "per-raccord-a-glissement",
+    "per-raccord-a-sertir",
+    "raccord-per-vers-cuivre"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 30,
   "cost": null,
@@ -56,7 +62,7 @@
     "Garde le raccord accessible pour le contrôler et le démonter."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-24",
   "scope": "Raccord PER à compression avec écrou, bague et insert, en zone accessible. Hors filetage de transition, encastrement et dimensionnement du réseau.",
   "sources": [
     {

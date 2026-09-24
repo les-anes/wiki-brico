@@ -14,6 +14,12 @@
       "topicPath": ["Utiliser un niveau"]
     }
   ],
+  "tags": ["linteau", "étaiement", "pierre"],
+  "relatedTutorials": [
+    "ceinturer-un-mur-en-pierre",
+    "rejointoyer-un-mur-en-pierre",
+    "reboucher-une-fissure"
+  ],
   "difficulty": "Avancé",
   "durationMinutes": 600,
   "cost": null,
@@ -104,5 +110,5 @@
     "Étaye sur des madriers et non directement sur un sol ou un plancher, et laisse une zone d’exclusion sous l’ouverture pendant toute la durée du chantier."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

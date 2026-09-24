@@ -9,6 +9,12 @@
     { "category": "preparer-chantier", "topicPath": ["Matériaux"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["peinture", "rouleau", "pinceau"],
+  "relatedTutorials": [
+    "choisir-sa-peinture",
+    "peindre-un-mur",
+    "peindre-sans-bavures"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 20,
   "cost": null,
@@ -99,5 +105,5 @@
     "Range les manchons et pinceaux hors de portée des enfants, et ne laisse pas un bac de peinture ouvert sans surveillance."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

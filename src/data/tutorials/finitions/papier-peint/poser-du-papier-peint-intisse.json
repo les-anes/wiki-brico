@@ -9,6 +9,12 @@
     { "category": "preparer-chantier", "topicPath": ["Métrés"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["papier peint", "intissé"],
+  "relatedTutorials": [
+    "decoller-du-papier-peint",
+    "lisser-un-mur",
+    "poser-des-plinthes"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 150,
   "cost": null,
@@ -104,5 +110,5 @@
     "Ne pose pas de papier peint sur un mur humide ou salpêtré : traite d’abord la cause de l’humidité, sinon le revêtement se décolle."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

@@ -20,6 +20,8 @@ import { useEffect, useRef, useState } from "react";
 
 import { CatalogPage } from "@/components/catalog-page";
 import { CategoryNavigation } from "@/components/category-navigation";
+import { PillarPage } from "@/components/pillar-page";
+import { TutorialLinks } from "@/components/tutorial-links";
 import { TutorialSearch } from "@/components/tutorial-search";
 import { Button } from "@/components/ui/button";
 import { tutorials } from "@/data";
@@ -27,7 +29,7 @@ import { categories, navigationCategories, journeys } from "@/data/taxonomy";
 import { initializeAnalytics, trackPage } from "@/lib/analytics";
 import { belongsToCategory, catalogHref, duration } from "@/lib/catalog";
 import { responsiveImage } from "@/lib/images";
-import { isPageChange, matchRoute } from "@/lib/routes";
+import { categoryPath, isPageChange, matchRoute } from "@/lib/routes";
 import type { Tutorial } from "@/types";
 function readSaved(): string[] {
   try {
@@ -82,9 +84,11 @@ export default function App({
       ? `tutoriel/${route.id}`
       : route.kind === "catalog"
         ? "tutoriels"
-        : route.kind === "home"
-          ? ""
-          : "introuvable";
+        : route.kind === "theme"
+          ? `themes/${route.id}`
+          : route.kind === "home"
+            ? ""
+            : "introuvable";
   useEffect(() => {
     initializeAnalytics();
     trackPage(trackedPage);
@@ -120,7 +124,11 @@ export default function App({
             <CategoryNavigation
               categories={navigationCategories}
               onSelect={(category, topicPath = []) =>
-                navigate(catalogHref({ category, topicPath }))
+                navigate(
+                  category !== "all" && !topicPath.length
+                    ? categoryPath(category)
+                    : catalogHref({ category, topicPath }),
+                )
               }
             />
           </nav>
@@ -151,6 +159,8 @@ export default function App({
           onSave={() => toggleSaved(selected.id)}
           returnHref={lastCatalog}
         />
+      ) : route.kind === "theme" ? (
+        <PillarPage id={route.id} />
       ) : isCatalog ? (
         <CatalogPage
           search={path}
@@ -277,13 +287,7 @@ export default function App({
               {categories
                 .filter((c) => c.kind === "trade")
                 .map(({ id, name, icon: Icon }) => (
-                  <button
-                    key={id}
-                    className="category-tile"
-                    onClick={() => {
-                      navigate(catalogHref({ category: id }));
-                    }}
-                  >
+                  <a key={id} className="category-tile" href={categoryPath(id)}>
                     <Icon size={25} strokeWidth={1.5} />
                     <span>{name}</span>
                     <small>
@@ -291,7 +295,7 @@ export default function App({
                         ? `${tutorials.filter((t) => belongsToCategory(t, id)).length} tutos`
                         : "À venir"}
                     </small>
-                  </button>
+                  </a>
                 ))}
             </div>
           </section>
@@ -402,9 +406,8 @@ function TutorialPage({
         <ChevronRight size={14} />
         <a href={returnHref}>Les tutoriels</a>
         <ChevronRight size={14} />
-        <a href={catalogHref({ category: t.category, topicPath: t.topicPath })}>
+        <a href={categoryPath(t.category)}>
           {categories.find((c) => c.id === t.category)?.name}
-          {t.topicPath && ` › ${t.topicPath.join(" › ")}`}
         </a>
       </nav>
       <a className="back-to-catalog" href={returnHref}>
@@ -415,6 +418,13 @@ function TutorialPage({
           <span className="eyebrow">{t.category}</span>
           <h1>{t.title}</h1>
           <p>{t.description}</p>
+          <ul className="tutorial-tags" aria-label="Tags techniques">
+            {t.tags.map((tag) => (
+              <li key={tag}>
+                <a href={catalogHref({ query: tag })}>{tag}</a>
+              </li>
+            ))}
+          </ul>
         </div>
         <Button variant="outline" onClick={onSave}>
           <Bookmark size={16} fill={saved ? "currentColor" : "none"} />
@@ -571,6 +581,13 @@ function TutorialPage({
               </div>
             </section>
           )}
+          <section
+            className="continue-reading"
+            aria-labelledby="continue-title"
+          >
+            <h2 id="continue-title">Pour continuer</h2>
+            <TutorialLinks ids={t.relatedTutorials} />
+          </section>
           <p className="updated">
             Mis à jour le {new Date(t.updatedAt).toLocaleDateString("fr-FR")}
           </p>

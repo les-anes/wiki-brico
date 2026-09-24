@@ -106,3 +106,10 @@ La fiche SHALL limiter son périmètre à un mur en pierre stable et sec dont le
 #### Scenario: Joints encore sains
 - **WHEN** le lecteur prépare son chantier
 - **THEN** la fiche indique de ne dégarnir que les joints dégradés et de conserver les joints encore sains.
+
+### Requirement: Liens complémentaires et tags éditoriaux
+Chaque tutoriel SHALL fournir `relatedTutorials`, une liste ordonnée de trois à cinq identifiants existants, uniques et différents du sien, et `tags`, une liste non vide de tags uniques issus du référentiel `src/data/tags.json`. Les données des pages piliers SHALL référencer des catégories et tutoriels existants et ne pas répéter une fiche dans la même page.
+
+#### Scenario: Référence incorrecte
+- **WHEN** une fiche référence un tutoriel inconnu, elle-même, un tag inconnu ou un doublon
+- **THEN** la validation des données échoue avant la génération des pages.

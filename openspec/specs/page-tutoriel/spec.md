@@ -98,3 +98,10 @@ Chaque création ou révision SHALL être relue selon cette référence et contr
 #### Scenario: Matériau oublié
 - **WHEN** une étape utilise un consommable absent de la liste de matériaux
 - **THEN** la liste est complétée avant de considérer la fiche conforme au modèle.
+
+### Requirement: Continuer avec des tutoriels pertinents
+Chaque fiche SHALL afficher en bas de page une section « Pour continuer » contenant trois à cinq liens directs vers des fiches complémentaires, dans l’ordre éditorial défini dans ses données. Le titre des liens SHALL reprendre celui de la fiche cible. La liste SHALL exclure le tutoriel courant et les doublons, être pré-rendue et rester utilisable au clavier et sur mobile.
+
+#### Scenario: Poursuivre une réalisation
+- **WHEN** un lecteur termine la fiche de cloison en plaques de plâtre
+- **THEN** il trouve notamment un lien direct vers la pose des bandes à joint, sans devoir parcourir un catalogue filtré.

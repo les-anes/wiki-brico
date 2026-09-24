@@ -8,6 +8,12 @@
     { "category": "techniques", "topicPath": ["Percer et fixer"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["prise électrique"],
+  "relatedTutorials": [
+    "remplacer-un-interrupteur",
+    "dimensionner-son-tableau-electrique",
+    "reboucher-un-trou"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 40,
   "cost": null,
@@ -94,5 +100,5 @@
     "Porte des gants isolants, utilise des outils isolés et ne laisse jamais une prise ouverte sans surveillance : remonte l’appareillage avant de réenclencher."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

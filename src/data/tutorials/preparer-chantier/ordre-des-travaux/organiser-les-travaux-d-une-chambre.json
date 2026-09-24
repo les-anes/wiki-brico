@@ -9,6 +9,12 @@
     { "category": "finitions", "topicPath": ["Peinture"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["rénovation", "planification"],
+  "relatedTutorials": [
+    "reboucher-un-trou",
+    "peindre-un-mur",
+    "poser-du-parquet"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 90,
   "cost": null,
@@ -93,5 +99,5 @@
     "Dégage les circulations et stocke les gravats sans surcharger un plancher ancien, en portant les charges lourdes à deux."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

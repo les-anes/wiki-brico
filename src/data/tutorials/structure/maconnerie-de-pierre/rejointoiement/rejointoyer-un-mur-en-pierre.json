@@ -8,6 +8,12 @@
     { "category": "techniques", "topicPath": ["Faire un joint"] },
     { "category": "techniques", "topicPath": ["Faire du mortier"] }
   ],
+  "tags": ["pierre", "chaux", "mortier"],
+  "relatedTutorials": [
+    "ceinturer-un-mur-en-pierre",
+    "remplacer-un-linteau",
+    "reboucher-une-fissure"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 420,
   "cost": null,
@@ -95,5 +101,5 @@
     "Ne garnis pas de joints par temps de gel, sous une pluie battante ou sur une façade surchauffée : un séchage trop rapide fragilise le joint."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

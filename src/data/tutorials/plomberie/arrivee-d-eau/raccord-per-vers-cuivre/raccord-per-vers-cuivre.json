@@ -4,6 +4,12 @@
   "description": "Pour passer du cuivre au PER, le polyéthylène réticulé, tu peux utiliser un raccord automatique prévu pour les deux matériaux. Les tubes s’y emboîtent sans soudure ni sertisseuse.",
   "category": "plomberie",
   "topicPath": ["Arrivée d’eau", "Raccord PER vers cuivre"],
+  "tags": ["PER", "cuivre", "raccord automatique"],
+  "relatedTutorials": [
+    "plomberie-cuivre",
+    "per-raccord-a-compression",
+    "per-raccord-a-sertir"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 45,
   "cost": null,
@@ -60,7 +66,7 @@
     "Coupe l’eau avant tout démontage ; n’utilise pas un tube écrasé ou rayé dans la zone du joint."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-24",
   "scope": "Transition automatique à emboîtement cuivre–PER, système exigeant un insert PER. Hors autres types de transitions, raccords sous enduit et remplacement de conduites dégradées.",
   "sources": [
     {

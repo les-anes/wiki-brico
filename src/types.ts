@@ -21,6 +21,8 @@ export interface Tutorial {
   topicPath?: string[];
   relatedCategories?: { category: CategoryId; topicPath: string[] }[];
   journeys?: string[];
+  tags: string[];
+  relatedTutorials: string[];
   difficulty: "Débutant" | "Intermédiaire" | "Avancé" | null;
   durationMinutes: number | null;
   cost: { min: number; max: number; currency: "EUR" } | null;

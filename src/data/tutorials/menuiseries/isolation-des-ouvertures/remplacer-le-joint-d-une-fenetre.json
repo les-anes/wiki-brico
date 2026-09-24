@@ -9,6 +9,12 @@
     { "category": "techniques", "topicPath": ["Percer et fixer"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["fenêtre", "étanchéité"],
+  "relatedTutorials": [
+    "nettoyer-les-bouches-de-vmc",
+    "fabriquer-des-volets-battants-en-bois",
+    "raboter-une-porte-qui-frotte"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 45,
   "cost": null,
@@ -90,5 +96,5 @@
     "Ne bouche jamais les entrées d’air : une pièce doit rester ventilée, et l’étanchéité à l’air se règle sans supprimer le renouvellement d’air."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

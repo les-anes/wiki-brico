@@ -3,6 +3,12 @@
   "title": "Fixer une étagère sur deux équerres",
   "description": "Une tablette, deux équerres et des fixations adaptées à ton mur : voici comment poser une petite étagère droite et stable.",
   "category": "techniques",
+  "tags": ["fixation", "cheville", "équerre"],
+  "relatedTutorials": [
+    "choisir-une-cheville",
+    "poser-une-etagere-sur-tasseaux",
+    "reboucher-un-trou"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 60,
   "cost": null,
@@ -61,7 +67,7 @@
     "Porte des lunettes au perçage et coupe l’alimentation des circuits proches."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-24",
   "relatedCategories": [],
   "journeys": ["renover-une-chambre", "amenager-des-combles"],
   "topicPath": ["Percer et fixer"],

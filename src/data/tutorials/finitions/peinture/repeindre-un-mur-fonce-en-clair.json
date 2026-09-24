@@ -9,6 +9,12 @@
     { "category": "techniques", "topicPath": ["Poncer"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["peinture", "sous-couche"],
+  "relatedTutorials": [
+    "choisir-sa-peinture",
+    "calculer-sa-peinture",
+    "peindre-un-mur"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 150,
   "cost": null,
@@ -104,5 +110,5 @@
     "Travaille sur un support stable pour les hauteurs et protège le sol : une peinture claire sur un sol foncé se voit immédiatement."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

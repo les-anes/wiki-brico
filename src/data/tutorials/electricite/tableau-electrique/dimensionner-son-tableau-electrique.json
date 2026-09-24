@@ -4,6 +4,12 @@
   "description": "Tu prépares une rénovation ou l’ajout de nouveaux appareils ? Fais la liste de tes circuits, choisis leurs protections et prévois la place nécessaire pour établir ton plan de tableau.",
   "category": "electricite",
   "topicPath": ["Tableau électrique"],
+  "tags": ["tableau électrique", "disjoncteur"],
+  "relatedTutorials": [
+    "ajouter-un-contacteur-jour-nuit",
+    "remplacer-une-prise-murale",
+    "brancher-un-luminaire-dcl"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 120,
   "cost": null,
@@ -97,6 +103,6 @@
   "shoppingLinks": [],
   "dtuReferences": [],
   "status": "documented",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-24",
   "relatedCategories": []
 }

@@ -9,6 +9,12 @@
     { "category": "preparer-chantier", "topicPath": ["Diagnostic"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["bois", "porte", "rabotage"],
+  "relatedTutorials": [
+    "repeindre-une-porte",
+    "poser-du-parquet",
+    "regler-une-porte-de-placard"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 60,
   "cost": null,
@@ -90,5 +96,5 @@
     "Sur une porte ancienne, vérifie que la peinture ne contient pas de plomb avant de la poncer ; dans le doute, ne produis pas de poussière."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

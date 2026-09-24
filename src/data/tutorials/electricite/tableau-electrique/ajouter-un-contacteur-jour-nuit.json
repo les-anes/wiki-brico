@@ -4,6 +4,12 @@
   "description": "Le contacteur jour/nuit alimente ton ballon pendant les heures creuses envoyées par le compteur. Ce montage concerne un ballon électrique classique compatible avec cette coupure ; l’intervention dans le tableau demande de savoir travailler hors tension.",
   "category": "electricite",
   "topicPath": ["Tableau électrique"],
+  "tags": ["contacteur", "chauffe-eau", "tableau électrique"],
+  "relatedTutorials": [
+    "dimensionner-son-tableau-electrique",
+    "remplacer-une-prise-murale",
+    "remplacer-un-interrupteur"
+  ],
   "difficulty": "Avancé",
   "durationMinutes": 120,
   "cost": null,
@@ -125,7 +131,7 @@
   "shoppingLinks": [],
   "dtuReferences": [],
   "status": "documented",
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-24",
   "relatedCategories": [
     {
       "category": "plomberie",

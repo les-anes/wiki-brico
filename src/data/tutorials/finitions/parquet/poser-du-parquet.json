@@ -3,6 +3,12 @@
   "title": "Poser un parquet contrecollé clipsable",
   "description": "Le parquet contrecollé possède une couche de vrai bois sur plusieurs couches de support. Ici, tu le poses en flottant : les lames se clipsent entre elles sans être fixées au sol.",
   "category": "finitions",
+  "tags": ["parquet", "bois", "pose flottante"],
+  "relatedTutorials": [
+    "poser-des-plinthes",
+    "raboter-une-porte-qui-frotte",
+    "ragreer-un-sol-en-beton"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 360,
   "cost": null,
@@ -69,7 +75,7 @@
     "Ne coince pas un parquet flottant sous des meubles de cuisine fixés au sol."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-24",
   "relatedCategories": [],
   "journeys": ["renover-une-chambre", "amenager-des-combles"],
   "topicPath": ["Parquet"],

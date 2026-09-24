@@ -9,6 +9,12 @@
     { "category": "techniques", "topicPath": ["Poncer"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["BA13", "plaques de plâtre", "enduit"],
+  "relatedTutorials": [
+    "monter-une-petite-cloison-en-placo",
+    "lisser-un-mur",
+    "peindre-un-mur"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 180,
   "cost": null,
@@ -103,5 +109,5 @@
     "Aère la pièce pendant le séchage et respecte le temps indiqué par le fabricant avant de poncer, sinon l’enduit s’arrache en boulettes."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

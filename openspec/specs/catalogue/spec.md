@@ -8,7 +8,7 @@ Permettre de découvrir les tutoriels depuis un accueil, un catalogue filtrable 
 
 ### Requirement: Pages distinctes
 
-Le site SHALL proposer un accueil, un catalogue « On s’y met ce week-end ? » et une fiche par identifiant de tutoriel. Chacune de ces pages SHALL être servie à une URL de chemin distincte — `/`, `/tutoriels/` et `/tutoriel/<id>/` — et rester accessible par un accès direct.
+Le site SHALL proposer un accueil, un catalogue « On s’y met ce week-end ? » et une fiche par identifiant de tutoriel. Chacune de ces pages SHALL être servie à une URL de chemin distincte — `/`, `/tutoriels/`, `/tutoriel/<id>/` et les guides thématiques `/themes/<categorie>/` — et rester accessible par un accès direct.
 
 #### Scenario: Accès au catalogue
 
@@ -45,7 +45,7 @@ Le catalogue SHALL reconnaître les classements principaux et secondaires, ainsi
 
 ### Requirement: Recherche tolérante aux fautes
 
-La recherche soumise depuis l’accueil et celle du catalogue SHALL utiliser le même moteur local, sans requête réseau. Elle SHALL ignorer la casse, les accents et l’ordre des mots, conserver les correspondances partielles et exiger une correspondance pour chaque mot saisi dans le titre, la description, les outils ou les classements. Elle SHALL tolérer une insertion, une suppression, une substitution ou une inversion de deux lettres adjacentes par mot saisi d’au moins quatre caractères ; les mots plus courts SHALL rester exacts ou partiels.
+La recherche soumise depuis l’accueil et celle du catalogue SHALL utiliser le même moteur local, sans requête réseau. Elle SHALL ignorer la casse, les accents et l’ordre des mots, conserver les correspondances partielles et exiger une correspondance pour chaque mot saisi dans le titre, la description, les outils ou les classements. Elle SHALL tolérer une insertion, une suppression, une substitution ou une inversion de deux lettres adjacentes par mot saisi d’au moins quatre caractères ; les mots plus courts SHALL rester exacts ou partiels, sauf les acronymes techniques du référentiel de tags qui SHALL correspondre à un mot entier, sans approximation. Les tags SHALL être indexés par ce même moteur.
 
 Les résultats SHALL placer les correspondances sans faute avant les correspondances approximatives et, dans chaque groupe, privilégier celles dont tous les mots figurent dans le titre. Une recherche vide SHALL conserver l’ordre du catalogue. Les autres filtres SHALL rester applicables et la saisie originale SHALL être conservée dans l’URL et le champ de recherche.
 
@@ -82,3 +82,21 @@ Le champ « Rechercher un tutoriel » de l’accueil SHALL afficher sous la sais
 
 - **WHEN** un visiteur clique ou touche une suggestion
 - **THEN** sa fiche s’ouvre directement sans qu’une perte de focus empêche la sélection.
+
+### Requirement: Pages piliers thématiques
+Le site SHALL proposer six pages éditoriales à `/themes/<categorie>/` : plomberie, électricité, cloisons, menuiseries, finitions et cuisine/salle de bains. Chaque page SHALL présenter un titre, une introduction, des sections ordonnées avec des liens directs vers des fiches existantes, et un accès au catalogue filtré. Ces pages SHALL être pré-rendues, figurer dans le sitemap et posséder des métadonnées, une URL canonique et un fil d’Ariane propres. L’accueil et le fil d’Ariane des fiches de ces catégories SHALL permettre de les découvrir ; les filtres existants SHALL rester accessibles.
+
+#### Scenario: Découvrir la plomberie
+- **WHEN** un visiteur ouvre `/themes/plomberie/` sans JavaScript
+- **THEN** il peut lire le guide thématique et suivre les liens vers les fiches, et l’URL canonique est celle du thème sans paramètres.
+
+#### Scenario: Thème inconnu
+- **WHEN** un visiteur ouvre `/themes/inexistant/`
+- **THEN** la page introuvable est affichée sans ajouter cette URL au sitemap.
+
+### Requirement: Tags techniques consultables
+Chaque fiche SHALL afficher ses tags sous forme de liens vers la recherche du catalogue. Le référentiel SHALL conserver une orthographe unique par tag, notamment PER, PEHD, OSB, BA13 et PVC. Les tags décrivent le sujet réellement abordé, sans être déduits automatiquement de mots accessoires.
+
+#### Scenario: Chercher un acronyme
+- **WHEN** un visiteur recherche « PER » ou « per »
+- **THEN** il trouve les fiches correspondantes sans faire correspondre les mots « couper » ou « percer » ; la recherche « BA13 » trouve les fiches explicitement taguées et « parqet » conserve la tolérance aux fautes.

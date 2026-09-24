@@ -9,6 +9,12 @@
     { "category": "cloisons", "topicPath": ["Enduits"] }
   ],
   "journeys": ["renover-une-salle-de-bains"],
+  "tags": ["carrelage", "joint de carrelage"],
+  "relatedTutorials": [
+    "remplacer-un-carreau-de-carrelage-casse",
+    "refaire-joints-silicone",
+    "poser-du-carrelage-au-sol"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 240,
   "cost": null,
@@ -103,5 +109,5 @@
     "Travaille dans une pièce aérée, avec un marchepied stable pour les zones hautes : ces produits dégagent des vapeurs irritantes et une éponge mouillée sur un tabouret glisse vite."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

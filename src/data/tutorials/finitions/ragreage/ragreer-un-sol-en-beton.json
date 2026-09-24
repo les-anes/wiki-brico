@@ -5,6 +5,12 @@
   "category": "finitions",
   "topicPath": ["Ragréage"],
   "journeys": ["renover-une-chambre"],
+  "tags": ["ragréage", "béton"],
+  "relatedTutorials": [
+    "poser-du-carrelage-au-sol",
+    "poser-du-parquet",
+    "poser-un-sol-vinyle-clipsable"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 240,
   "cost": null,
@@ -96,5 +102,5 @@
     "Débranche le malaxeur avant de toucher au fouet ou de le nettoyer ; garde ses connexions électriques éloignées des seaux d’eau."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-20"
+  "updatedAt": "2026-09-24"
 }

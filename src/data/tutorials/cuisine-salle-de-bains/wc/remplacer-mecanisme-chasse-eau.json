@@ -5,6 +5,12 @@
   "category": "cuisine-salle-de-bains",
   "topicPath": ["WC"],
   "journeys": ["renover-une-salle-de-bains"],
+  "tags": ["WC", "chasse d’eau"],
+  "relatedTutorials": [
+    "arreter-chasse-eau-qui-coule",
+    "reparer-fuite-joint-plat",
+    "refaire-joints-silicone"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 120,
   "cost": null,
@@ -89,7 +95,7 @@
     "Le réservoir est lourd et fragile : prévois une prise stable et de l’aide pour le lever si nécessaire."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-24",
   "relatedCategories": [
     {
       "category": "plomberie",

@@ -32,3 +32,14 @@ test("les résultats exacts précèdent les approximations, avec priorité au ti
   assert.equal(searchScore("Parquets", "", "parqeuts"), 2);
   assert.equal(searchScore("Préparer le sol", "Parquets", "parqeuts"), 3);
 });
+
+test("les acronymes techniques correspondent à des mots entiers sans approximation", () => {
+  assert.equal(searchScore("Couper et percer", "", "PER"), Infinity);
+  assert.equal(searchScore("Un tube PER", "", "per"), 0);
+  assert.equal(searchScore("Raccord", "PER cuivre", "PER cuivre"), 1);
+  assert.equal(searchScore("Panneau OSB/3", "", "OSB"), 0);
+  assert.equal(searchScore("Plaque BA18", "", "BA13"), Infinity);
+  assert.equal(searchScore("Tube PEHD", "", "PEHD"), 0);
+  assert.equal(searchScore("Tube PER", "", "PEHD"), Infinity);
+  assert.equal(searchScore("Évacuation PVC", "", "PVC"), 0);
+});

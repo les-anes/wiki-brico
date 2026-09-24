@@ -9,6 +9,12 @@
     { "category": "preparer-chantier", "topicPath": ["Diagnostic"] }
   ],
   "journeys": ["amenager-des-combles"],
+  "tags": ["bois", "tasseaux", "fixation"],
+  "relatedTutorials": [
+    "choisir-une-cheville",
+    "poser-une-etagere",
+    "regler-une-porte-de-placard"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 90,
   "cost": null,
@@ -99,5 +105,5 @@
     "Pour déposer un objet lourd au-dessus de ta tête, monte sur un marchepied stable et fais-toi aider ; ne te fie pas à la tablette comme appui."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

@@ -9,6 +9,12 @@
     { "category": "menuiseries", "topicPath": ["Quincaillerie"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["cheville", "fixation"],
+  "relatedTutorials": [
+    "poser-une-etagere",
+    "fixer-une-tringle-a-rideaux",
+    "poser-une-etagere-sur-tasseaux"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 45,
   "cost": null,
@@ -95,5 +101,5 @@
     "Vérifie que l’objet fixé ne peut pas tomber sur quelqu’un : pour un objet lourd, préfère un support plein ou un ancrage structurel plutôt qu’une cheville de doublage."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

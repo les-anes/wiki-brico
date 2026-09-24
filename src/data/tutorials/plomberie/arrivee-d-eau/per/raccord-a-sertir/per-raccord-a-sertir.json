@@ -4,6 +4,12 @@
   "description": "Le PER, ou polyéthylène réticulé, est un tuyau souple pour distribuer l’eau. Une sertisseuse écrase la bague du raccord pour le fixer au tube, sans soudure.",
   "category": "plomberie",
   "topicPath": ["Arrivée d’eau", "PER", "Raccord à sertir"],
+  "tags": ["PER", "sertissage"],
+  "relatedTutorials": [
+    "per-raccord-a-glissement",
+    "per-raccord-a-compression",
+    "raccord-per-vers-cuivre"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 30,
   "cost": null,
@@ -57,7 +63,7 @@
     "Si le sertissage s’interrompt ou si le raccord fuit, coupe l’eau et suis la procédure de reprise du raccord."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-24",
   "scope": "Assemblage local PER à sertir pour eau sanitaire, avec raccord à fenêtres de contrôle et outillage compatible. Hors dimensionnement et règles d’encastrement propres au système.",
   "sources": [
     {

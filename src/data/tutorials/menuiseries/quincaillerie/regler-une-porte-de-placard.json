@@ -9,6 +9,12 @@
     { "category": "preparer-chantier", "topicPath": ["Diagnostic"] }
   ],
   "journeys": ["amenager-des-combles"],
+  "tags": ["charnière", "placard"],
+  "relatedTutorials": [
+    "poser-une-etagere-sur-tasseaux",
+    "renover-un-meuble",
+    "raboter-une-porte-qui-frotte"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 30,
   "cost": null,
@@ -85,5 +91,5 @@
     "Repère les câbles et tuyaux éventuels avant d’ajouter de la visserie dans un caisson, et ne remplace jamais une charnière par un modèle d’angle d’ouverture différent sur le même panneau."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

@@ -4,6 +4,12 @@
   "description": "Le dispositif de connexion luminaire (DCL) permet de brancher une lampe au plafond avec une fiche. Ici, tu poses une suspension déjà équipée de sa fiche DCL sur une prise existante en bon état.",
   "category": "electricite",
   "topicPath": ["Éclairage"],
+  "tags": ["DCL", "éclairage"],
+  "relatedTutorials": [
+    "remplacer-une-ampoule",
+    "remplacer-un-interrupteur",
+    "dimensionner-son-tableau-electrique"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 20,
   "cost": null,
@@ -70,5 +76,5 @@
   "shoppingLinks": [],
   "dtuReferences": [],
   "status": "documented",
-  "updatedAt": "2026-09-11"
+  "updatedAt": "2026-09-24"
 }

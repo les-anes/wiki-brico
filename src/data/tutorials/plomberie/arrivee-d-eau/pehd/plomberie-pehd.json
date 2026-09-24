@@ -4,6 +4,12 @@
   "description": "Le PEHD, c’est le polyéthylène haute densité : le tuyau qui amène l’eau potable du compteur à la maison. Voici comment préparer le passage et le raccorder, sans soudure.",
   "category": "plomberie",
   "topicPath": ["Arrivée d’eau", "PEHD"],
+  "tags": ["PEHD", "eau potable", "compression"],
+  "relatedTutorials": [
+    "dimensionnement-plomberie",
+    "per-raccord-a-compression",
+    "plomberie-cuivre"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 120,
   "cost": null,
@@ -82,7 +88,7 @@
     "Protège du gel les parties exposées, y compris près du compteur."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-24",
   "scope": "Récapitulatif pour une alimentation privée enterrée en eau froide potable, en France, après compteur. La limite d’intervention et les équipements au compteur sont à confirmer avec le service des eaux. Le dimensionnement et le terrassement dépendent du terrain ; cette fiche ne constitue pas un plan d’exécution.",
   "sources": [
     {

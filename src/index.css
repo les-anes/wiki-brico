@@ -1437,6 +1437,85 @@ footer > span {
 .related-discovery {
   margin-top: 30px;
 }
+.tutorial-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+  list-style: none;
+  padding: 0;
+}
+.tutorial-tags a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #eaf0e2;
+  font-size: 13px;
+  color: #34452d;
+}
+.tutorial-links {
+  display: grid;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.tutorial-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid #dfe4d6;
+  border-radius: 10px;
+  background: #fdfcf8;
+}
+.tutorial-links a:hover {
+  background: #edf2e5;
+}
+.tutorial-links strong {
+  display: block;
+  font-size: 16px;
+}
+.tutorial-links small {
+  display: block;
+  margin-top: 6px;
+  color: #526148;
+  font-size: 13px;
+}
+.tutorial-links svg {
+  flex-shrink: 0;
+}
+.continue-reading {
+  margin-top: 40px;
+}
+.pillar-page {
+  max-width: 900px;
+  padding-block: 30px 60px;
+}
+.pillar-heading h1 {
+  font-size: clamp(28px, 5vw, 44px);
+  line-height: 1.15;
+  margin-top: 12px;
+  text-wrap: balance;
+}
+.pillar-heading p,
+.pillar-section > p {
+  margin-block: 18px;
+  line-height: 1.8;
+  color: #526148;
+}
+.pillar-heading a {
+  white-space: normal;
+  height: auto;
+}
+.pillar-section {
+  margin-top: 44px;
+}
+.pillar-section h2 {
+  font-size: 24px;
+  line-height: 1.3;
+}
 .related-discovery > div {
   display: flex;
   flex-wrap: wrap;

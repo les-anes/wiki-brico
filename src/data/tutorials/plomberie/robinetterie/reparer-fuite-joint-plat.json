@@ -8,6 +8,12 @@
     { "category": "techniques", "topicPath": ["Faire un joint"] }
   ],
   "journeys": ["renover-une-salle-de-bains"],
+  "tags": ["joint plat", "fuite"],
+  "relatedTutorials": [
+    "remplacer-mitigeur-lavabo",
+    "remplacer-flexible-et-douchette",
+    "arreter-chasse-eau-qui-coule"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 30,
   "cost": null,
@@ -80,5 +86,5 @@
     "Garde le raccord accessible pendant les essais et laisse l’arrivée fermée si la fuite persiste."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

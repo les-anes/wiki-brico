@@ -3,6 +3,12 @@
   "title": "Repeindre un mur intérieur au rouleau",
   "description": "Pour un mur net et sans grosses traces, le plus utile est de bien le préparer et de garder un rythme régulier au rouleau. Voici le déroulé pour un mur déjà peint, sec et en bon état.",
   "category": "finitions",
+  "tags": ["peinture", "rouleau"],
+  "relatedTutorials": [
+    "peindre-sans-bavures",
+    "peindre-un-plafond",
+    "poser-des-plinthes"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 180,
   "cost": null,
@@ -73,7 +79,7 @@
     "Ne gratte ni ne ponce un ancien revêtement suspect tant que la présence de plomb ou d’amiante n’est pas écartée."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-24",
   "relatedCategories": [],
   "journeys": ["renover-une-chambre", "amenager-des-combles"],
   "topicPath": ["Peinture"],

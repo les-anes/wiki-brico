@@ -9,6 +9,12 @@
     { "category": "techniques", "topicPath": ["Visser"] }
   ],
   "journeys": ["renover-une-salle-de-bains"],
+  "tags": ["douche", "joint plat"],
+  "relatedTutorials": [
+    "reparer-fuite-joint-plat",
+    "refaire-joints-silicone",
+    "remplacer-mitigeur-lavabo"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 30,
   "cost": null,
@@ -92,5 +98,5 @@
     "Vérifie l’état du mur derrière la robinetterie avant de refermer : une trace d’humidité ancienne signale un joint à remplacer plutôt qu’un simple flexible."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

@@ -1,0 +1,211 @@
+[
+  {
+    "id": "plomberie",
+    "title": "Plomberie : préparer, raccorder et entretenir ton réseau d’eau",
+    "description": "Des guides pour préparer ton réseau d’eau, raccorder le PEHD, le PER ou le cuivre, poser une évacuation et résoudre les petites fuites.",
+    "introduction": "Tu prépares une arrivée d’eau ou tu veux résoudre une fuite ? Commence par le guide qui correspond à ton besoin : les fiches de raccordement concernent un matériau précis, tandis que les réparations partent d’un problème visible. Chaque tutoriel précise son périmètre, les outils et les contrôles à effectuer.",
+    "sections": [
+      {
+        "title": "Préparer le réseau et l’arrivée d’eau",
+        "description": "Avant de choisir un raccord, situe le trajet de l’eau et les besoins des appareils. Ces deux fiches relient la préparation du réseau à l’arrivée depuis le compteur.",
+        "tutorials": ["dimensionnement-plomberie", "plomberie-pehd"]
+      },
+      {
+        "title": "Choisir la technique de raccordement",
+        "description": "Le PER, le polyéthylène réticulé, et le cuivre se raccordent avec des systèmes différents. Compare les outils et le montage décrits dans chaque fiche, puis suis celle qui correspond à ton système.",
+        "tutorials": [
+          "per-raccord-a-compression",
+          "per-raccord-a-glissement",
+          "per-raccord-a-sertir",
+          "plomberie-cuivre",
+          "raccord-per-vers-cuivre"
+        ]
+      },
+      {
+        "title": "Évacuer l’eau et entretenir les équipements",
+        "description": "Une évacuation lente, un robinet à remplacer ou une chasse qui coule ne demandent pas les mêmes gestes. Pars du symptôme ou de l’équipement, puis consulte les liens complémentaires en bas de la fiche.",
+        "tutorials": [
+          "gestion-evacuations",
+          "nettoyer-siphon-lavabo",
+          "remplacer-mitigeur-lavabo",
+          "reparer-fuite-joint-plat",
+          "arreter-chasse-eau-qui-coule"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "electricite",
+    "title": "Électricité : préparer tes circuits et remplacer tes équipements",
+    "description": "Repère les guides pour préparer ton tableau électrique, remplacer une prise ou un interrupteur, raccorder un luminaire et choisir une ampoule.",
+    "introduction": "Tu souhaites remplacer un équipement ou préparer une évolution de ton installation ? Ces guides distinguent les petites interventions à l’identique des travaux dans le tableau. Lis le périmètre et les précautions de la fiche avant de commencer : un guide de remplacement ne couvre pas la création complète d’un circuit.",
+    "sections": [
+      {
+        "title": "Préparer le tableau et les circuits",
+        "description": "Pars de l’inventaire des appareils et des circuits pour préparer le tableau. Le guide du contacteur concerne ensuite un cas précis : la commande d’un ballon d’eau chaude en heures creuses.",
+        "tutorials": [
+          "dimensionner-son-tableau-electrique",
+          "ajouter-un-contacteur-jour-nuit"
+        ]
+      },
+      {
+        "title": "Remplacer une prise ou un interrupteur",
+        "description": "Ces fiches traitent le remplacement à l’identique des équipements existants, avec les vérifications propres à chaque intervention.",
+        "tutorials": ["remplacer-une-prise-murale", "remplacer-un-interrupteur"]
+      },
+      {
+        "title": "S’occuper de l’éclairage",
+        "description": "Pour un éclairage existant, distingue le remplacement de l’ampoule du raccordement d’un luminaire sur un dispositif de connexion pour luminaire, appelé DCL.",
+        "tutorials": ["remplacer-une-ampoule", "brancher-un-luminaire-dcl"]
+      }
+    ]
+  },
+  {
+    "id": "cloisons",
+    "title": "Cloisons et murs : poser les plaques et préparer les finitions",
+    "description": "Monte une cloison en plaques de plâtre, pose les bandes à joint et prépare tes murs avec les guides de rebouchage et de lissage.",
+    "introduction": "Construire une petite cloison et préparer un mur existant sont deux points de départ différents. Choisis ton parcours ci-dessous : ossature et plaques pour une cloison neuve, ou réparation puis lissage pour un mur à rafraîchir. Les fiches de peinture prennent le relais une fois le support préparé.",
+    "sections": [
+      {
+        "title": "Monter une cloison et traiter les joints",
+        "description": "Le guide de cloison traite une séparation non porteuse en pièce sèche. Poursuis avec la fiche des bandes pour comprendre le traitement des jonctions entre plaques.",
+        "tutorials": [
+          "monter-une-petite-cloison-en-placo",
+          "poser-une-bande-a-joint"
+        ]
+      },
+      {
+        "title": "Réparer et lisser un mur existant",
+        "description": "Choisis la réparation selon le défaut rencontré. Lis notamment les limites du guide sur les fissures avant de passer au lissage de la surface.",
+        "tutorials": [
+          "reboucher-un-trou",
+          "reboucher-une-fissure",
+          "lisser-un-mur"
+        ]
+      },
+      {
+        "title": "Passer aux finitions",
+        "description": "Une fois la préparation terminée, retrouve les gestes de peinture ou la pose d’un papier peint intissé.",
+        "tutorials": ["peindre-un-mur", "poser-du-papier-peint-intisse"]
+      }
+    ]
+  },
+  {
+    "id": "menuiseries",
+    "title": "Menuiseries : ajuster les portes et aménager avec le bois",
+    "description": "Des guides pour régler une porte de placard, raboter une porte, remplacer un joint de fenêtre, poser une étagère et fabriquer des volets.",
+    "introduction": "Une porte qui frotte, une fenêtre qui laisse passer l’air ou un placard à aménager ? Ces guides couvrent des gestes ciblés sur les menuiseries et de petits ouvrages en bois. Commence par identifier la pièce en cause avant de choisir entre réglage, remplacement d’un joint et travail du bois.",
+    "sections": [
+      {
+        "title": "Régler les ouvertures et remplacer les joints",
+        "description": "Un réglage de charnière, un frottement en bas de porte et un joint de fenêtre usé demandent des diagnostics différents. Chaque fiche commence par les vérifications adaptées.",
+        "tutorials": [
+          "regler-une-porte-de-placard",
+          "raboter-une-porte-qui-frotte",
+          "remplacer-le-joint-d-une-fenetre"
+        ]
+      },
+      {
+        "title": "Aménager et assembler",
+        "description": "Pour une étagère sur tasseaux ou des volets en bois, retrouve le matériel et la progression du montage. Le choix des fixations fait l’objet d’un guide complémentaire.",
+        "tutorials": [
+          "poser-une-etagere-sur-tasseaux",
+          "fabriquer-des-volets-battants-en-bois",
+          "choisir-une-cheville"
+        ]
+      },
+      {
+        "title": "Soigner la finition intérieure",
+        "description": "Ces deux guides portent sur des supports intérieurs : une porte et un petit meuble. Ils permettent de prolonger un projet d’aménagement avec une finition adaptée au cas décrit.",
+        "tutorials": ["repeindre-une-porte", "renover-un-meuble"]
+      }
+    ]
+  },
+  {
+    "id": "finitions",
+    "title": "Sols, murs et finitions : préparer, poser et peindre",
+    "description": "Prépare tes supports, choisis ta peinture et découvre les guides de parquet, vinyle, carrelage, papier peint et finitions intérieures.",
+    "introduction": "Pour rafraîchir une pièce, pars du support et du revêtement que tu souhaites poser. Cette page rassemble les guides de préparation, de peinture et de pose, puis les réparations ciblées. Utilise les sections pour organiser ta lecture plutôt que d’aborder tous les travaux à la fois.",
+    "sections": [
+      {
+        "title": "Préparer et poser un sol",
+        "description": "Le ragréage concerne un support en béton ou en chape ciment. Choisis ensuite la fiche correspondant au revêtement envisagé ; les plinthes viennent compléter la finition.",
+        "tutorials": [
+          "ragreer-un-sol-en-beton",
+          "poser-du-parquet",
+          "poser-un-sol-vinyle-clipsable",
+          "poser-du-carrelage-au-sol",
+          "poser-des-plinthes"
+        ]
+      },
+      {
+        "title": "Préparer une mise en peinture",
+        "description": "Choix du produit, quantité et outils : ces guides t’aident à préparer les achats avant de passer au rouleau.",
+        "tutorials": [
+          "choisir-sa-peinture",
+          "calculer-sa-peinture",
+          "choisir-rouleau-et-pinceau"
+        ]
+      },
+      {
+        "title": "Peindre et décorer",
+        "description": "Commence par le guide du support concerné, puis approfondis les contours, les changements de couleur ou les motifs.",
+        "tutorials": [
+          "peindre-un-mur",
+          "peindre-un-plafond",
+          "repeindre-un-mur-fonce-en-clair",
+          "peindre-sans-bavures",
+          "peindre-deux-couleurs",
+          "peindre-un-motif-au-pochoir",
+          "repeindre-une-porte",
+          "renover-un-meuble"
+        ]
+      },
+      {
+        "title": "Poser du papier peint ou réparer le carrelage",
+        "description": "Ces fiches permettent de changer un revêtement mural ou de reprendre une zone carrelée sans refaire toute la pièce.",
+        "tutorials": [
+          "decoller-du-papier-peint",
+          "poser-du-papier-peint-intisse",
+          "remplacer-un-carreau-de-carrelage-casse",
+          "renover-les-joints-d-un-carrelage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cuisine-salle-de-bains",
+    "title": "Cuisine et salle de bains : entretenir, remplacer et finir",
+    "description": "Retrouve les guides pour refaire les joints, poser une crédence, remplacer une douchette, entretenir un lavabo et réparer une chasse d’eau.",
+    "introduction": "Dans la cuisine et la salle de bains, plusieurs métiers se croisent autour des mêmes équipements. Cette sélection réunit les gestes d’entretien, les remplacements courants et les finitions. Elle couvre ces interventions précises, pas la conception complète d’une nouvelle salle de bains.",
+    "sections": [
+      {
+        "title": "Soigner les joints et les surfaces",
+        "description": "Distingue le joint souple autour d’un équipement des joints entre carreaux. Pour une nouvelle finition murale en cuisine, consulte le guide de crédence.",
+        "tutorials": [
+          "refaire-joints-silicone",
+          "renover-les-joints-d-un-carrelage",
+          "poser-une-credence-carrelee"
+        ]
+      },
+      {
+        "title": "Entretenir le lavabo et la douche",
+        "description": "Pars du problème rencontré : écoulement lent, fuite sur un raccord ou équipement à remplacer. Les fiches conservent les arrivées et équipements compatibles avec le cas décrit.",
+        "tutorials": [
+          "nettoyer-siphon-lavabo",
+          "reparer-fuite-joint-plat",
+          "remplacer-mitigeur-lavabo",
+          "remplacer-flexible-et-douchette"
+        ]
+      },
+      {
+        "title": "Réparer la chasse d’eau",
+        "description": "Commence par repérer la cause de l’écoulement continu. Le remplacement du mécanisme est traité dans une fiche distincte.",
+        "tutorials": [
+          "arreter-chasse-eau-qui-coule",
+          "remplacer-mecanisme-chasse-eau"
+        ]
+      }
+    ]
+  }
+]

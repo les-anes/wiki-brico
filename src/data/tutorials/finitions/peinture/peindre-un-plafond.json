@@ -9,6 +9,12 @@
     { "category": "techniques", "topicPath": ["Poncer"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["peinture", "rouleau"],
+  "relatedTutorials": [
+    "peindre-un-mur",
+    "peindre-sans-bavures",
+    "calculer-sa-peinture"
+  ],
   "difficulty": "Intermédiaire",
   "durationMinutes": 120,
   "cost": null,
@@ -104,5 +110,5 @@
     "Protège les luminaires et coupe leur alimentation si tu les démontes, et ne masque pas les bouches de ventilation."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

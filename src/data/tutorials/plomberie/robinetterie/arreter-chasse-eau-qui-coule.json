@@ -5,6 +5,12 @@
   "category": "plomberie",
   "topicPath": ["Robinetterie"],
   "journeys": ["renover-une-salle-de-bains"],
+  "tags": ["WC", "chasse d’eau"],
+  "relatedTutorials": [
+    "remplacer-mecanisme-chasse-eau",
+    "reparer-fuite-joint-plat",
+    "nettoyer-siphon-lavabo"
+  ],
   "difficulty": "Débutant",
   "durationMinutes": 45,
   "cost": null,
@@ -79,7 +85,7 @@
     "Une fissure de céramique ou une fuite à l’extérieur du réservoir sort de ce nettoyage : garde l’eau coupée jusqu’à réparation."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17",
+  "updatedAt": "2026-09-24",
   "relatedCategories": [
     {
       "category": "cuisine-salle-de-bains",

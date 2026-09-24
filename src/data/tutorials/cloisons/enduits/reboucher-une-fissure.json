@@ -9,6 +9,8 @@
     { "category": "techniques", "topicPath": ["Faire un enduit"] }
   ],
   "journeys": ["renover-une-chambre"],
+  "tags": ["enduit", "fissure"],
+  "relatedTutorials": ["lisser-un-mur", "reboucher-un-trou", "peindre-un-mur"],
   "difficulty": "Débutant",
   "durationMinutes": 60,
   "cost": null,
@@ -103,5 +105,5 @@
     "Ne rebouche jamais une fissure sur un mur humide ou salpêtré : traite d’abord la cause de l’humidité, sinon l’enduit se décolle."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }

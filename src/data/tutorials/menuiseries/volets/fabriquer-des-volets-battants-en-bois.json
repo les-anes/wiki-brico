@@ -14,6 +14,12 @@
       "topicPath": ["Peinture"]
     }
   ],
+  "tags": ["bois", "volet"],
+  "relatedTutorials": [
+    "remplacer-le-joint-d-une-fenetre",
+    "choisir-une-cheville",
+    "repeindre-une-porte"
+  ],
   "difficulty": "Avancé",
   "durationMinutes": 600,
   "cost": null,
@@ -109,5 +115,5 @@
     "Pour la pose en hauteur, utilise un échafaudage ou un marchepied stable et fais-toi aider à présenter le volet : un panneau plein est lourd et prend le vent."
   ],
   "status": "documented",
-  "updatedAt": "2026-09-17"
+  "updatedAt": "2026-09-24"
 }
