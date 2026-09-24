@@ -1,0 +1,103 @@
+{
+  "id": "peindre-des-plaques-de-platre-neuves",
+  "title": "Peindre des plaques de plâtre neuves",
+  "description": "Les joints et le carton des plaques n’absorbent pas la peinture de la même façon. Prépare une surface régulière et applique une impression adaptée avant la finition.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [
+    {
+      "category": "cloisons",
+      "topicPath": ["Placo"]
+    }
+  ],
+  "journeys": [],
+  "tags": ["peinture", "BA13", "plaques de plâtre", "sous-couche"],
+  "relatedTutorials": [
+    "poser-une-bande-a-joint",
+    "appliquer-une-sous-couche",
+    "rattraper-des-traces-de-rouleau"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 180,
+  "cost": null,
+  "image": "/images/tutoriels/peindre-des-plaques-de-platre-neuves.png",
+  "imageAlt": "Un rouleau applique une couche claire sur une plaque de plâtre dont les joints sont visibles.",
+  "imageOrigin": "original",
+  "scope": "10 m² de plaques de plâtre standard non pré-imprimées en pièce sèche, joints achevés et secs.",
+  "estimatesNote": "Environ 180 minutes de travail actif pour le cas décrit, hors séchage et durcissement. Le budget dépend du support et des produits retenus.",
+  "tools": [
+    "Rouleau et bac adaptés à la peinture",
+    "Pinceau pour les angles et mélangeur manuel",
+    "Chiffons non pelucheux et escabeau stable",
+    "Cale à poncer, couteau à enduire et aspirateur adapté aux poussières fines"
+  ],
+  "materials": [
+    {
+      "name": "Impression pour plaques de plâtre",
+      "quantity": "Pour toute la surface, selon le rendement"
+    },
+    {
+      "name": "Peinture murale compatible",
+      "quantity": "Pour les couches prévues par sa notice"
+    },
+    {
+      "name": "Enduit de finition et abrasif fin",
+      "quantity": "Pour les petits défauts"
+    },
+    {
+      "name": "Bâche et ruban de masquage",
+      "quantity": "Pour le sol et les éléments voisins"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Contrôle les joints",
+      "description": "Attends le séchage à cœur de l’enduit à joint. Repère les bosses, les creux et les têtes de vis visibles avec une lumière rasante ; reprends les défauts avant la peinture."
+    },
+    {
+      "title": "Égalise sans abîmer le carton",
+      "description": "Ponce légèrement les surépaisseurs d’enduit sec avec une cale. Ne mets pas la bande à nu et ne peluche pas le carton des plaques."
+    },
+    {
+      "title": "Retire la poussière",
+      "description": "Aspire les poussières puis passe un chiffon propre adapté au support. Évite le lessivage abondant, qui détremperait le carton et les joints."
+    },
+    {
+      "title": "Applique l’impression",
+      "description": "Protège le sol et les contours, puis mélange l’impression. Couvre joints et carton sur toute la surface avec le rouleau prévu, après avoir peint les angles au pinceau."
+    },
+    {
+      "title": "Vérifie avant la finition",
+      "description": "Respecte le délai de recouvrement et regarde le mur en lumière rasante. Corrige un petit défaut restant avec l’enduit, laisse sécher, dépoussière et réimprime la reprise."
+    },
+    {
+      "title": "Passe les couches de finition",
+      "description": "Applique la peinture compatible en conservant une bordure humide entre les zones. Respecte les délais entre couches et contrôle le résultat une fois sec."
+    }
+  ],
+  "mistakes": [
+    "Peindre des joints encore humides.",
+    "Poncer jusqu’à arracher le carton.",
+    "Remplacer l’impression par une finition diluée sans indication du fabricant."
+  ],
+  "safety": [
+    "Aère pendant le travail et le séchage ; porte les protections indiquées par les produits utilisés.",
+    "Capte les poussières de ponçage et porte une protection respiratoire adaptée aux poussières fines."
+  ],
+  "sources": [
+    {
+      "title": "Placo — Peindre des carreaux et plaques de plâtre",
+      "url": "https://www.placo.fr/peindre-des-carreaux-et-des-plaques-de-platre",
+      "note": "Préparation des joints secs, dépoussiérage et traitement des différences d’absorption.",
+      "accessedAt": "2026-09-24"
+    },
+    {
+      "title": "Tollens — Sous-couches et impressions",
+      "url": "https://www.tollens.com/catalogue/sous-couches-et-impressions",
+      "note": "Choix d’une impression selon le support et le système de finition.",
+      "accessedAt": "2026-09-24"
+    }
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24"
+}

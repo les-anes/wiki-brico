@@ -1,0 +1,103 @@
+{
+  "id": "reparer-une-peinture-qui-s-ecaille",
+  "title": "Réparer une peinture qui s’écaille sur un mur",
+  "description": "Recouvrir une écaille ne rétablit pas l’adhérence. Sur un mur sec, retire les parties qui ne tiennent plus et raccorde la réparation avant de repeindre.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [],
+  "journeys": [],
+  "tags": ["peinture", "enduit", "ponçage"],
+  "relatedTutorials": [
+    "reboucher-un-trou",
+    "appliquer-une-sous-couche",
+    "peindre-un-mur"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 120,
+  "cost": null,
+  "image": "/images/tutoriels/reparer-une-peinture-qui-s-ecaille.png",
+  "imageAlt": "Une spatule soulève une écaille sur un mur vert, au-dessus d’une protection.",
+  "imageOrigin": "original",
+  "scope": "Décollement local de moins de 1 m² sur mur intérieur sec ; humidité active et revêtements à risque exclus.",
+  "estimatesNote": "Environ 120 minutes de travail actif pour le cas décrit, hors séchage et durcissement. Le budget dépend du support et des produits retenus.",
+  "tools": [
+    "Rouleau et bac adaptés à la peinture",
+    "Pinceau pour les angles et mélangeur manuel",
+    "Chiffons non pelucheux et escabeau stable",
+    "Spatule, couteau à enduire, cale à poncer et aspirateur adapté"
+  ],
+  "materials": [
+    {
+      "name": "Enduit de réparation compatible",
+      "quantity": "Pour raccorder le creux"
+    },
+    {
+      "name": "Abrasif fin",
+      "quantity": "Pour égaliser les reprises"
+    },
+    {
+      "name": "Primaire adapté au fond mis à nu",
+      "quantity": "Pour la zone réparée"
+    },
+    {
+      "name": "Peinture murale compatible",
+      "quantity": "Pour le pan de mur concerné"
+    },
+    {
+      "name": "Bâche et ruban de masquage",
+      "quantity": "Pour le sol et les éléments voisins"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Cherche la cause du décollement",
+      "description": "Repère une trace d’eau, un support mou ou des zones qui sonnent creux. Si le mur est humide, friable en profondeur ou se décolle largement, arrête cette réparation locale et traite la cause avant de peindre."
+    },
+    {
+      "title": "Enlève ce qui ne tient plus",
+      "description": "Protège le sol et retire doucement les écailles avec une spatule jusqu’au film adhérent. Ne ponce pas un ancien revêtement dont les risques ne sont pas identifiés."
+    },
+    {
+      "title": "Raccorde les niveaux",
+      "description": "Dépoussière le creux et applique un enduit compatible pour rejoindre la surface voisine. Respecte l’épaisseur admise et laisse sécher à cœur."
+    },
+    {
+      "title": "Égalise la reprise",
+      "description": "Ponce légèrement l’enduit sec et adoucis sa jonction avec l’ancienne peinture. Aspire les poussières et vérifie au toucher qu’aucune surépaisseur ne subsiste."
+    },
+    {
+      "title": "Prépare l’absorption",
+      "description": "Applique le primaire adapté à la partie mise à nu et à l’enduit. Attends son délai de recouvrement ; il ne doit pas provoquer de cloque ou de nouveau décollement."
+    },
+    {
+      "title": "Repeins et contrôle",
+      "description": "Pour éviter une auréole, reprends le pan de mur avec la finition compatible. Respecte les temps entre couches et vérifie après séchage que la réparation reste stable."
+    }
+  ],
+  "mistakes": [
+    "Recouvrir des écailles sans les retirer.",
+    "Masquer une humidité encore active.",
+    "Laisser une marche d’épaisseur autour de la réparation."
+  ],
+  "safety": [
+    "Ne gratte ni ne ponce un ancien revêtement tant qu’un risque de plomb ou d’amiante n’est pas écarté ; l’aspect visuel ne suffit pas.",
+    "Aère pendant le travail et le séchage ; porte les protections indiquées par les produits utilisés.",
+    "Capte les poussières et ferme les déchets de grattage dans un contenant adapté."
+  ],
+  "sources": [
+    {
+      "title": "Tollens — Peinture qui s’écaille",
+      "url": "https://www.tollens.com/conseils/sos-probleme-peinture/comment-lutter-contre-une-peinture-qui-s-ecaille",
+      "note": "Défaut d’adhérence, préparation et nécessité de traiter la cause avant remise en peinture.",
+      "accessedAt": "2026-09-24"
+    },
+    {
+      "title": "Tollens — Préparer les supports",
+      "url": "https://www.tollens.com/conseils/conseils-travaux/comment-preparer-votre-support",
+      "note": "Préparation des murs, réparations et impression selon le fond.",
+      "accessedAt": "2026-09-24"
+    }
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "lessiver-un-mur-avant-peinture",
+  "title": "Lessiver un mur avant de le peindre",
+  "description": "Avant de repeindre, retire le gras et les salissures qui empêchent la peinture d’adhérer. Cette méthode concerne un mur déjà peint, sain et lessivable.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [],
+  "journeys": [],
+  "tags": ["peinture", "lessivage"],
+  "relatedTutorials": [
+    "appliquer-une-sous-couche",
+    "reboucher-un-trou",
+    "peindre-un-mur"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 60,
+  "cost": null,
+  "image": "/images/tutoriels/lessiver-un-mur-avant-peinture.png",
+  "imageAlt": "Une main gantée nettoie un mur vert avec une éponge, au-dessus d’un seau bleu.",
+  "imageOrigin": "original",
+  "scope": "Mur peint lessivable de 10 m² ; hors papier peint, plâtre nu, peinture à la colle et mur humide.",
+  "estimatesNote": "Environ 60 minutes de travail actif pour le cas décrit, hors séchage et durcissement. Le budget dépend du support et des produits retenus.",
+  "tools": [
+    "Deux seaux, éponge douce et chiffons",
+    "Brosse douce et escabeau stable",
+    "Gants et lunettes de protection"
+  ],
+  "materials": [
+    {
+      "name": "Nettoyant pour murs avant peinture",
+      "quantity": "Dilution indiquée sur l’emballage"
+    },
+    {
+      "name": "Eau claire",
+      "quantity": "Pour le nettoyage et plusieurs rinçages"
+    },
+    {
+      "name": "Bâche et ruban de masquage",
+      "quantity": "Pour le sol et les éléments voisins"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie que le mur supporte le lavage",
+      "description": "Teste une petite zone discrète avec une éponge à peine humide. Si la couleur se dissout, si le film cloque ou si le support se ramollit, arrête le lessivage et identifie le revêtement."
+    },
+    {
+      "title": "Protège les alentours",
+      "description": "Dégage le mur, couvre le sol et dépoussière avec une brosse douce. Coupe le circuit des prises voisines et garde les appareillages protégés des projections, sans les démonter."
+    },
+    {
+      "title": "Prépare la solution",
+      "description": "Dose le nettoyant dans le premier seau selon son emballage et réserve le second au rinçage. Ne renforce pas le mélange en ajoutant un autre produit."
+    },
+    {
+      "title": "Nettoie par petites zones",
+      "description": "Passe l’éponge essorée du bas vers le haut pour limiter les coulures sur les parties encore sales. Insiste doucement sur les traces grasses et renouvelle la solution dès qu’elle est sale."
+    },
+    {
+      "title": "Rince sans détremper",
+      "description": "Reprends chaque zone avec une éponge propre et de l’eau claire, sans attendre que le nettoyant sèche. Change l’eau jusqu’à ne plus laisser de mousse ni de film glissant."
+    },
+    {
+      "title": "Laisse sécher et contrôle",
+      "description": "Attends le séchage complet du mur avant toute réparation ou peinture. Vérifie l’absence de dépôt, de tache grasse et de partie décollée à la lumière rasante."
+    }
+  ],
+  "mistakes": [
+    "Lessiver un support qui se dissout à l’eau.",
+    "Surdoser le nettoyant ou oublier son rinçage.",
+    "Peindre un mur encore humide."
+  ],
+  "safety": [
+    "Garde l’eau à distance des prises, même circuit coupé.",
+    "Porte des gants et protège tes yeux des éclaboussures ; ne mélange pas les nettoyants."
+  ],
+  "sources": [
+    {
+      "title": "Tollens — Préparer les supports",
+      "url": "https://www.tollens.com/conseils/conseils-travaux/comment-preparer-votre-support",
+      "note": "Préparation des murs, réparations et impression selon le fond.",
+      "accessedAt": "2026-09-24"
+    }
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24"
+}

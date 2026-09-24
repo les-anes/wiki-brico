@@ -55,6 +55,9 @@ try {
     await server.ssrLoadModule("/src/lib/catalog.ts");
   const { buildRoutes, matchRoute, pageMeta, tutorialPath } =
     await server.ssrLoadModule("/src/lib/routes.ts");
+  const { calculators } = await server.ssrLoadModule(
+    "/src/lib/calculators/index.ts",
+  );
   const { Document } = await server.ssrLoadModule("/src/document.tsx");
   const render = (path) =>
     renderToStaticMarkup(
@@ -70,8 +73,8 @@ try {
   // --- Contenu rendu par route ---
   assert.equal(categories.filter((c) => c.kind === "trade").length, 12);
   assert.equal(categories.filter((c) => c.kind === "transversal").length, 2);
-  assert.equal(tutorials.length, 62);
-  assert.equal(new Set(tutorials.map((t) => t.id)).size, 62);
+  assert.equal(tutorials.length, 72);
+  assert.equal(new Set(tutorials.map((t) => t.id)).size, 72);
   validateDiscovery(
     tutorials,
     tags,
@@ -159,7 +162,7 @@ try {
   assert(!home.includes("On s’y met ce week-end ?"));
   assert(home.includes("/favicon.svg"));
   assert(!home.includes("Tutoriel introuvable"));
-  assert.equal(countCards(render("/tutoriels/")), 62);
+  assert.equal(countCards(render("/tutoriels/")), 72);
   assert.equal(
     countCards(
       render(
@@ -364,6 +367,11 @@ try {
   // --- Build statique (dist/) : une page par route, métadonnées propres ---
   const routes = buildRoutes(tutorials);
   assert.equal(routes.filter((route) => route.kind === "theme").length, 6);
+  assert.equal(
+    routes.filter((route) => route.kind === "calculator").length,
+    calculators.length,
+    "une route par calculateur",
+  );
   const fileFor = (path) =>
     path === "/" ? "dist/index.html" : `dist${path}index.html`;
   for (const route of routes) {
@@ -416,6 +424,73 @@ try {
       assert.equal(breadcrumb["@type"], "BreadcrumbList");
       assert.equal(breadcrumb.itemListElement.length, 4);
       assert(!html.includes('"HowTo"'), `${route.path}: pas de balisage HowTo`);
+    }
+    if (route.kind === "calculators") {
+      const doc = JSDOM.fragment(html);
+      assert.deepEqual(
+        [...doc.querySelectorAll(".calculator-card")].map((card) =>
+          card.getAttribute("href"),
+        ),
+        calculators.map((tool) => `/calculateurs/${tool.slug}/`),
+        "le hub liste tous les outils",
+      );
+    }
+    if (route.kind === "calculator") {
+      const tool = calculators.find((entry) => entry.slug === route.id);
+      const doc = JSDOM.fragment(html);
+      const headline = doc.querySelector(".result-headline");
+      assert(
+        headline?.textContent.trim().length,
+        `${route.path}: résultat calculé au pré-rendu`,
+      );
+      assert.equal(
+        doc.querySelectorAll(
+          ".calculator-field input, .calculator-field select",
+        ).length,
+        tool.fields.filter(
+          (field) =>
+            !field.visibleWhen ||
+            field.visibleWhen.values.includes(
+              String(
+                tool.fields.find(
+                  (entry) => entry.name === field.visibleWhen.field,
+                ).default,
+              ),
+            ),
+        ).length,
+        `${route.path}: champs du formulaire`,
+      );
+      assert.deepEqual(
+        [...doc.querySelectorAll(".tutorial-links a")].map((link) =>
+          link.getAttribute("href"),
+        ),
+        tool.relatedTutorials.map(tutorialPath),
+        `${route.path}: tutos liés dans l’ordre`,
+      );
+      if (route.id === "escalier")
+        assert.equal(
+          doc.querySelectorAll(".stair-svg").length,
+          2,
+          "Plan et profil pré-rendus",
+        );
+      assert(
+        doc
+          .querySelector(".calculator-reference a")
+          ?.getAttribute("href")
+          .startsWith("https://"),
+        `${route.path}: référence consultable`,
+      );
+      assert(
+        html.includes("Limites du calcul") &&
+          html.includes("Hypothèses retenues"),
+        `${route.path}: méthode, hypothèses et limites affichées`,
+      );
+      if (tool.slug === "calpinage")
+        assert(
+          doc.querySelector(".calpinage-svg")?.querySelectorAll("rect").length >
+            0,
+          `${route.path}: plan de calpinage dessiné`,
+        );
     }
     if (route.kind === "theme") {
       const pillar = pillars.find((p) => p.id === route.id);
@@ -503,7 +578,13 @@ try {
   // L'origine servie est volontairement différente de SITE_URL (cas d'une URL de
   // prévisualisation) : le client doit reprendre l'origine du document, pas
   // `location.origin`, sinon les métadonnées absolues divergent (React #418).
-  for (const path of ["/", "/themes/plomberie/", "/tutoriel/plomberie-pehd/"]) {
+  for (const path of [
+    "/",
+    "/themes/plomberie/",
+    "/tutoriel/plomberie-pehd/",
+    "/calculateurs/calpinage/",
+    "/calculateurs/escalier/",
+  ]) {
     const dom = new JSDOM(await readFile(fileFor(path), "utf8"), {
       url: `https://apercu-deploiement.netlify.app${path}`,
       virtualConsole: new VirtualConsole(),
@@ -599,6 +680,102 @@ try {
             `${origin}/tutoriels/`,
           );
         }
+        if (path === "/calculateurs/calpinage/") {
+          // Le calcul doit se refaire dans le navigateur, sans requête réseau.
+          const input = document.querySelector("#champ-longueur");
+          assert(input, "Le champ de saisie est rendu");
+          const setter = Object.getOwnPropertyDescriptor(
+            dom.window.HTMLInputElement.prototype,
+            "value",
+          ).set;
+          const avant = document.querySelector(".result-headline").textContent;
+          await act(async () => {
+            setter.call(input, "6");
+            input.dispatchEvent(
+              new dom.window.Event("input", { bubbles: true }),
+            );
+          });
+          const apres = document.querySelector(".result-headline").textContent;
+          assert.notEqual(apres, avant, "Le résultat suit la saisie");
+          assert(
+            document.querySelector(".calpinage-svg"),
+            "Le plan reste dessiné après la saisie",
+          );
+          await act(async () => {
+            setter.call(input, "");
+            input.dispatchEvent(
+              new dom.window.Event("input", { bubbles: true }),
+            );
+          });
+          assert.equal(
+            document.querySelector(".result-headline"),
+            null,
+            "Une saisie vide ne laisse aucun résultat chiffré",
+          );
+          assert(
+            document
+              .querySelector(".result-warnings")
+              ?.textContent.includes("saisis un nombre"),
+            "Le message nomme le champ à corriger",
+          );
+          assert.equal(input.getAttribute("aria-invalid"), "true");
+          assert(
+            input
+              .getAttribute("aria-describedby")
+              .includes("champ-longueur-erreur"),
+          );
+        }
+        if (path === "/calculateurs/escalier/") {
+          const shape = document.querySelector("#champ-forme");
+          await act(async () => {
+            shape.value = "rayonnant";
+            shape.dispatchEvent(
+              new dom.window.Event("change", { bubbles: true }),
+            );
+          });
+          assert(
+            document.querySelector("#champ-jour"),
+            "Le quart tournant expose son jour",
+          );
+          assert.equal(document.querySelectorAll(".stair-svg").length, 2);
+          const before = document
+            .querySelector(".stair-walk")
+            .getAttribute("points");
+          const direction = document.querySelector("#champ-sens");
+          await act(async () => {
+            direction.value = "gauche";
+            direction.dispatchEvent(
+              new dom.window.Event("change", { bubbles: true }),
+            );
+          });
+          assert.notEqual(
+            document.querySelector(".stair-walk").getAttribute("points"),
+            before,
+            "Le plan reflète le sens du tournant",
+          );
+          await act(async () => {
+            dom.window.history.pushState(
+              {},
+              "",
+              "/calculateurs/pente-evacuation-pvc/",
+            );
+            dom.window.dispatchEvent(new dom.window.PopStateEvent("popstate"));
+          });
+          assert.equal(
+            document.querySelector("#champ-longueur").value,
+            "3",
+            "Changer d’outil réinitialise les valeurs",
+          );
+          assert(
+            document
+              .querySelector(".result-headline")
+              .textContent.includes("4,5 cm"),
+          );
+          assert.equal(
+            document.querySelector('link[rel="canonical"]').href,
+            `${origin}/calculateurs/pente-evacuation-pvc/`,
+          );
+        }
       } finally {
         await act(async () => root.unmount());
       }
@@ -620,7 +797,7 @@ try {
   await checkAutocomplete(server);
 
   console.log(
-    "Accueil, catalogue, 62 fiches, 6 thèmes, 70 URLs, tags, liens complémentaires, sitemap, robots, fil d’Ariane, 404, shim et hydratation : contrôles réussis.",
+    `Accueil, catalogue, ${tutorials.length} fiches, ${routes.filter((route) => route.kind === "theme").length} thèmes, ${calculators.length} calculateurs, ${routes.length} URLs, tags, liens complémentaires, sitemap, robots, fil d’Ariane, 404, shim, calcul et hydratation : contrôles réussis.`,
   );
 } finally {
   await server.close();

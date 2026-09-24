@@ -1,0 +1,98 @@
+{
+  "id": "peindre-un-carrelage-mural-de-cuisine",
+  "title": "Peindre un carrelage mural de cuisine",
+  "description": "Change l’aspect d’une crédence sans déposer les carreaux s’ils sont bien fixés. Une peinture prévue pour le carrelage demande surtout un dégraissage soigné et un durcissement respecté.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [
+    {
+      "category": "cuisine-salle-de-bains",
+      "topicPath": ["Crédences"]
+    }
+  ],
+  "journeys": [],
+  "tags": ["peinture", "carrelage", "crédence", "joint de carrelage"],
+  "relatedTutorials": [
+    "refaire-joints-silicone",
+    "poser-une-credence-carrelee",
+    "nettoyer-rouleaux-et-pinceaux"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 150,
+  "cost": null,
+  "image": "/images/tutoriels/peindre-un-carrelage-mural-de-cuisine.png",
+  "imageAlt": "Un mini-rouleau recouvre une petite crédence carrelée de peinture verte.",
+  "imageOrigin": "original",
+  "scope": "Crédence de cuisine de 3 m² saine, hors flamme directe ; hors sol, plan de travail, douche et réparation d’étanchéité.",
+  "estimatesNote": "Environ 150 minutes de travail actif pour le cas décrit, hors séchage et durcissement. Le budget dépend du support et des produits retenus.",
+  "tools": [
+    "Éponge, brosse à joints et chiffons",
+    "Grattoir plastique et outil de retrait du silicone",
+    "Mini-rouleau, pinceau, bac et mélangeur",
+    "Pistolet à cartouche pour le joint neuf"
+  ],
+  "materials": [
+    {
+      "name": "Système de peinture pour carrelage mural de cuisine",
+      "quantity": "Selon la surface, le primaire et les couches prescrites"
+    },
+    {
+      "name": "Dégraissant compatible et eau claire",
+      "quantity": "Pour nettoyer carreaux et joints"
+    },
+    {
+      "name": "Silicone sanitaire compatible",
+      "quantity": "Pour refaire le joint périphérique retiré"
+    },
+    {
+      "name": "Bâche et ruban de masquage",
+      "quantity": "Pour le sol et les éléments voisins"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie la surface à recouvrir",
+      "description": "Les carreaux doivent tenir, les joints rigides être sains et le support sec. Exclus une zone soumise à une flamme directe ou dont l’usage n’est pas admis par la peinture choisie."
+    },
+    {
+      "title": "Dégage les contours",
+      "description": "Protège le plan de travail et les équipements. Retire le silicone dans la zone à peindre et ses résidus avec une méthode compatible avec le support : la peinture n’y adhère pas."
+    },
+    {
+      "title": "Dégraisse les carreaux et les joints",
+      "description": "Brosse les joints et nettoie soigneusement les dépôts gras. Rince autant que nécessaire puis laisse sécher, en particulier les joints et la jonction avec le plan de travail."
+    },
+    {
+      "title": "Prépare le système prévu",
+      "description": "Relis la notice : primaire, égrenage et éventuel additif dépendent de la formule. Fais un essai discret et n’applique pas une sous-couche d’une autre gamme au hasard."
+    },
+    {
+      "title": "Peins en couches régulières",
+      "description": "Travaille les joints et les bords au pinceau puis raccorde au mini-rouleau sans laisser sécher les reprises. Respecte les délais entre couches et garde la surface à l’abri des projections."
+    },
+    {
+      "title": "Refais le joint et attends",
+      "description": "Après le délai prescrit pour la peinture, refais le joint périphérique au silicone compatible et respecte aussi son séchage. Attends la résistance finale du système avant le nettoyage courant et contrôle l’absence de décollement."
+    }
+  ],
+  "mistakes": [
+    "Peindre sur du silicone ou des joints gras.",
+    "Utiliser une peinture murale ordinaire sur le carrelage.",
+    "Considérer la peinture comme une réparation d’étanchéité."
+  ],
+  "safety": [
+    "Aère pendant le travail et le séchage ; porte les protections indiquées par les produits utilisés.",
+    "Coupe le circuit électrique des appareillages voisins et protège-les des liquides sans les démonter.",
+    "Éloigne les produits des flammes et respecte la résistance à la chaleur indiquée pour la peinture."
+  ],
+  "sources": [
+    {
+      "title": "V33 — Peinture de rénovation cuisine",
+      "url": "https://www.v33.fr/renovation-perfection-r-cuisine-peinture-meuble-credence-plan-de-travail.html",
+      "note": "Supports admis et préparation du système actuel ; les délais, primaires et éventuels additifs restent propres au produit retenu.",
+      "accessedAt": "2026-09-24"
+    }
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24"
+}

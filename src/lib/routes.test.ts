@@ -51,7 +51,7 @@ test("isPageChange distingue une nouvelle page d’un filtre", () => {
   assert.equal(isPageChange("/tutoriel/a/", "/tutoriel/b/"), true);
 });
 
-test("buildRoutes liste l'accueil, le catalogue, les tutoriels et les six thèmes", () => {
+test("buildRoutes liste l'accueil, le catalogue, les tutoriels, les six thèmes et les calculateurs", () => {
   const routes = buildRoutes(tutorials);
   assert.deepEqual(
     routes.map((r) => r.path),
@@ -66,7 +66,40 @@ test("buildRoutes liste l'accueil, le catalogue, les tutoriels et les six thème
       "/themes/menuiseries/",
       "/themes/finitions/",
       "/themes/cuisine-salle-de-bains/",
+      "/calculateurs/",
+      "/calculateurs/pente-evacuation-pvc/",
+      "/calculateurs/quantite-osb/",
+      "/calculateurs/isolant-panneaux/",
+      "/calculateurs/ossature-montants/",
+      "/calculateurs/dosage-materiaux/",
+      "/calculateurs/calpinage/",
+      "/calculateurs/escalier/",
     ],
+  );
+});
+
+test("les calculateurs ont des routes et des métadonnées propres", () => {
+  assert.equal(matchRoute(tutorials, "/calculateurs/").kind, "calculators");
+  const route = matchRoute(tutorials, "/calculateurs/calpinage/");
+  assert.deepEqual(route, {
+    kind: "calculator",
+    path: "/calculateurs/calpinage/",
+    id: "calpinage",
+  });
+  const meta = pageMeta(route, { tutorials, categories, siteUrl });
+  assert.equal(meta.canonical, "https://wikibrico.fr/calculateurs/calpinage/");
+  assert(meta.title.startsWith("Calepinage"));
+  assert.deepEqual(
+    meta.breadcrumb.map((item) => item.name),
+    [
+      "Accueil",
+      "Calculateurs de bricolage",
+      meta.title.replace(" — WikiBrico", ""),
+    ],
+  );
+  assert.equal(
+    matchRoute(tutorials, "/calculateurs/outil-inconnu/").kind,
+    "notFound",
   );
 });
 

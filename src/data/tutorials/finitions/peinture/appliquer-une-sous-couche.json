@@ -1,0 +1,89 @@
+{
+  "id": "appliquer-une-sous-couche",
+  "title": "Appliquer une sous-couche avant la peinture",
+  "description": "La sous-couche prépare l’accroche ou régularise un fond poreux. Choisis-la pour ton mur et ta peinture de finition, puis applique-la sur un support déjà propre et stable.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [],
+  "journeys": [],
+  "tags": ["peinture", "sous-couche", "rouleau"],
+  "relatedTutorials": [
+    "lessiver-un-mur-avant-peinture",
+    "peindre-des-plaques-de-platre-neuves",
+    "peindre-un-mur"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 60,
+  "cost": null,
+  "image": "/images/tutoriels/appliquer-une-sous-couche.png",
+  "imageAlt": "Un rouleau étale une sous-couche ivoire sur une portion de mur ocre.",
+  "imageOrigin": "original",
+  "scope": "Mur intérieur sain et sec de 10 m² ; hors traitement d’humidité, fonds farineux instables et blocage de taches persistantes.",
+  "estimatesNote": "Environ 60 minutes de travail actif pour le cas décrit, hors séchage et durcissement. Le budget dépend du support et des produits retenus.",
+  "tools": [
+    "Rouleau et bac adaptés à la peinture",
+    "Pinceau pour les angles et mélangeur manuel",
+    "Chiffons non pelucheux et escabeau stable"
+  ],
+  "materials": [
+    {
+      "name": "Sous-couche compatible avec le support et la finition",
+      "quantity": "Selon la surface et le rendement"
+    },
+    {
+      "name": "Bâche et ruban de masquage",
+      "quantity": "Pour le sol et les éléments voisins"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Identifie le support",
+      "description": "Distingue une plaque de plâtre neuve, un enduit et une ancienne peinture adhérente. Choisis une sous-couche dont la notice cite ton support et accepte la finition prévue."
+    },
+    {
+      "title": "Termine la préparation",
+      "description": "Le nettoyage, les réparations et leur séchage doivent être achevés. Passe un chiffon sec : si le mur continue à poudrer ou si la peinture se détache, ne recouvre pas ce fond en l’état."
+    },
+    {
+      "title": "Protège et mélange",
+      "description": "Couvre les sols et masque les éléments voisins. Mélange la sous-couche jusqu’à obtenir un produit homogène, sans dilution sauf indication explicite de la notice."
+    },
+    {
+      "title": "Couvre toute la zone prévue",
+      "description": "Peins les angles au pinceau, puis avance au rouleau sur de petites surfaces voisines. Répartis régulièrement le produit sans surcharger les raccords."
+    },
+    {
+      "title": "Respecte le délai de recouvrement",
+      "description": "Attends le délai prévu dans les conditions de température et d’humidité indiquées. Sec au toucher ne signifie pas nécessairement prêt à recevoir la finition."
+    },
+    {
+      "title": "Contrôle le fond préparé",
+      "description": "Vérifie qu’il n’y a ni coulure, ni manque, ni décollement. Une impression peut rester légèrement translucide : suis le nombre de couches prévu plutôt que de chercher à blanchir à tout prix."
+    }
+  ],
+  "mistakes": [
+    "Utiliser une sous-couche pour coller une peinture qui se décolle.",
+    "Diluer systématiquement le produit.",
+    "Appliquer la finition avant le délai de recouvrement."
+  ],
+  "safety": [
+    "Aère pendant le travail et le séchage ; porte les protections indiquées par les produits utilisés.",
+    "Protège les appareillages électriques sans les démonter et travaille depuis un escabeau stable."
+  ],
+  "sources": [
+    {
+      "title": "Tollens — Sous-couches et impressions",
+      "url": "https://www.tollens.com/catalogue/sous-couches-et-impressions",
+      "note": "Choix d’une impression selon le support et le système de finition.",
+      "accessedAt": "2026-09-24"
+    },
+    {
+      "title": "Placo — Peindre des carreaux et plaques de plâtre",
+      "url": "https://www.placo.fr/peindre-des-carreaux-et-des-plaques-de-platre",
+      "note": "Préparation des joints secs, dépoussiérage et traitement des différences d’absorption.",
+      "accessedAt": "2026-09-24"
+    }
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24"
+}

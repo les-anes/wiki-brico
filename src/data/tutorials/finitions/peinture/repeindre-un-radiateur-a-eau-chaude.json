@@ -1,0 +1,98 @@
+{
+  "id": "repeindre-un-radiateur-a-eau-chaude",
+  "title": "Repeindre un radiateur à eau chaude sans le déposer",
+  "description": "Rafraîchis la peinture d’un radiateur en acier ou en fonte déjà peint et en bon état. Travaille sur un appareil froid, avec une finition explicitement prévue pour les radiateurs.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [
+    {
+      "category": "chauffage",
+      "topicPath": ["Radiateurs"]
+    }
+  ],
+  "journeys": [],
+  "tags": ["peinture", "radiateur", "chauffage", "pinceau"],
+  "relatedTutorials": [
+    "purger-un-radiateur",
+    "choisir-rouleau-et-pinceau",
+    "nettoyer-rouleaux-et-pinceaux"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 120,
+  "cost": null,
+  "image": "/images/tutoriels/repeindre-un-radiateur-a-eau-chaude.png",
+  "imageAlt": "Une brosse coudée applique une peinture crème sur un radiateur à eau chaude.",
+  "imageOrigin": "original",
+  "scope": "Un radiateur à eau chaude en acier ou fonte, peinture adhérente ; hors appareil électrique, corrosion importante, fuite et décapage.",
+  "estimatesNote": "Environ 120 minutes de travail actif pour le cas décrit, hors séchage et durcissement. Le budget dépend du support et des produits retenus.",
+  "tools": [
+    "Brosse coudée pour radiateur et petit pinceau",
+    "Mini-rouleau, bac et mélangeur",
+    "Brosse de dépoussiérage, éponge et chiffons",
+    "Abrasif fin si prévu par le système"
+  ],
+  "materials": [
+    {
+      "name": "Peinture compatible avec le métal et l’usage radiateur",
+      "quantity": "Pour la surface accessible et les couches prescrites"
+    },
+    {
+      "name": "Nettoyant dégraissant compatible et eau claire",
+      "quantity": "Pour le nettoyage"
+    },
+    {
+      "name": "Primaire compatible",
+      "quantity": "Uniquement si le système le prescrit"
+    },
+    {
+      "name": "Bâche et ruban de masquage",
+      "quantity": "Pour le sol et les éléments voisins"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Arrête la chauffe",
+      "description": "Programme l’intervention pendant une période sans besoin de chauffage. Arrête la chauffe et attends que le radiateur soit complètement froid ; empêche une relance automatique pendant le chantier."
+    },
+    {
+      "title": "Protège sans démonter le circuit",
+      "description": "Couvre le mur et le sol puis masque le robinet, la tête thermostatique, le purgeur et les raccords. Ne desserre aucun raccord et ne peins pas les organes de réglage."
+    },
+    {
+      "title": "Nettoie les parties accessibles",
+      "description": "Retire la poussière entre les éléments puis dégraisse et rince selon le produit de nettoyage. Laisse sécher ; une fuite, une rouille étendue ou une peinture qui se détache sortent de ce simple rafraîchissement."
+    },
+    {
+      "title": "Prépare la finition",
+      "description": "Si la notice demande un égrenage, travaille légèrement sur la peinture identifiée puis dépoussière. Applique le primaire prescrit si nécessaire et attends son recouvrement."
+    },
+    {
+      "title": "Peins sans boucher les espaces",
+      "description": "Commence par les zones étroites avec la brosse coudée, puis les faces avec le pinceau ou le mini-rouleau. Répartis des couches fines sans coulures entre les éléments, en respectant les temps indiqués."
+    },
+    {
+      "title": "Attends avant de chauffer",
+      "description": "Retire les protections au moment adapté et vérifie que les commandes restent libres. Respecte le délai spécifique de remise en chauffe de la peinture, qui peut dépasser son séchage au toucher."
+    }
+  ],
+  "mistakes": [
+    "Peindre un radiateur encore tiède.",
+    "Recouvrir le purgeur ou la tête thermostatique.",
+    "Relancer le chauffage dès que la peinture paraît sèche."
+  ],
+  "safety": [
+    "Ne gratte ni ne ponce un ancien revêtement tant qu’un risque de plomb ou d’amiante n’est pas écarté ; l’aspect visuel ne suffit pas.",
+    "Aère pendant le travail et le séchage ; porte les protections indiquées par les produits utilisés.",
+    "Ne dépose pas le radiateur et n’ouvre pas le circuit pour cette opération ; vérifie qu’il reste froid pendant le travail."
+  ],
+  "sources": [
+    {
+      "title": "Benjamin Moore — Peindre un radiateur",
+      "url": "https://www.benjaminmoore.com/fr-ca/interieures-exterieures-peintures-teintures/conseils-pratiques/interieurs/comment-peindre-un-radiateur",
+      "note": "Travail sur appareil froid et préparation du métal ; système compatible et délais propres à sa notice.",
+      "accessedAt": "2026-09-24"
+    }
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24"
+}

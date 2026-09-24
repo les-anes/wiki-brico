@@ -13,7 +13,7 @@ Ce document centralise les idées de nouveaux tutos WikiBrico. Il sert à choisi
 - Revoir les priorités une fois par mois ou lors du choix d’un nouveau lot : demandes des lecteurs, recherches internes sans résultat et données de recherche disponibles passent avant les intuitions initiales.
 - Conserver les identifiants `T01`, `T02`, etc. lorsqu’une idée change de priorité. Ajouter les nouvelles idées à la suite de la numérotation.
 
-Les 44 idées de cette liste ont été **réalisées**. Les nouvelles idées viendront s’ajouter à partir de T45.
+Les 44 premières idées ont été **réalisées**. Dix tutoriels peinture demandés le 24 septembre 2026 sont en cours (T45 à T54).
 
 ## Pourquoi ces priorités
 
@@ -124,3 +124,16 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - **2026-09-20** : T44 réalisé à la demande d’un lecteur : ragréage sur béton ou chape ciment, rubrique « Finitions › Ragréage », sources Weber et Bostik consultées, illustration originale imagegen et variantes WebP. Validation des données, typage, lint, tests, build et contrôle du site réussis. Le catalogue contient 62 tutoriels ; aucune idée ne reste à faire.
 
 - **2026-09-24** : structuration des 62 fiches existantes avec trois liens « Pour continuer » et des tags éditoriaux par fiche ; ajout de six pages piliers. Aucun nouveau tutoriel ni changement de priorité.
+
+## Lot peinture — En cours
+
+- [ ] T45 — Lessiver un mur avant de le peindre — En cours
+- [ ] T46 — Peindre des plaques de plâtre neuves — En cours
+- [ ] T47 — Appliquer une sous-couche avant peinture — En cours
+- [ ] T48 — Réparer une peinture qui s’écaille sur un mur — En cours
+- [ ] T49 — Rattraper des traces de rouleau sur un mur — En cours
+- [ ] T50 — Faire une retouche de peinture sur un mur — En cours
+- [ ] T51 — Repeindre des portes de cuisine stratifiées — En cours
+- [ ] T52 — Repeindre un radiateur à eau chaude — En cours
+- [ ] T53 — Peindre un carrelage mural de cuisine — En cours
+- [ ] T54 — Nettoyer ses rouleaux et pinceaux après une peinture à l’eau — En cours

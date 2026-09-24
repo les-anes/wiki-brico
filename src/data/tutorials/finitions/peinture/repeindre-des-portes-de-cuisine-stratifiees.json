@@ -1,0 +1,103 @@
+{
+  "id": "repeindre-des-portes-de-cuisine-stratifiees",
+  "title": "Repeindre des portes de cuisine stratifiées",
+  "description": "Le stratifié est un revêtement lisse sur lequel une peinture murale ordinaire accroche mal. Prépare des portes en bon état et utilise un système prévu pour ce support.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [
+    {
+      "category": "cuisine-salle-de-bains",
+      "topicPath": ["Meubles"]
+    }
+  ],
+  "journeys": [],
+  "tags": ["peinture", "stratifié", "porte", "rouleau"],
+  "relatedTutorials": [
+    "regler-une-porte-de-placard",
+    "renover-un-meuble",
+    "nettoyer-rouleaux-et-pinceaux"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 180,
+  "cost": null,
+  "image": "/images/tutoriels/repeindre-des-portes-de-cuisine-stratifiees.png",
+  "imageAlt": "Une porte de cuisine déposée sur deux tréteaux reçoit une peinture verte au mini-rouleau.",
+  "imageOrigin": "original",
+  "scope": "Quatre façades planes stratifiées ou mélaminées intactes ; hors bois gonflé, film décollé, plan de travail et surfaces alimentaires.",
+  "estimatesNote": "Environ 180 minutes de travail actif pour le cas décrit, hors séchage et durcissement. Le budget dépend du support et des produits retenus.",
+  "tools": [
+    "Tournevis, tréteaux et repères adhésifs",
+    "Éponge, seaux, chiffons et gants",
+    "Mini-rouleau, pinceau fin, bac et mélangeur",
+    "Cale et abrasif fin si la notice prévoit un égrenage"
+  ],
+  "materials": [
+    {
+      "name": "Peinture de rénovation admise sur stratifié",
+      "quantity": "Pour les faces et chants concernés"
+    },
+    {
+      "name": "Nettoyant dégraissant compatible et eau claire",
+      "quantity": "Pour supprimer les dépôts de cuisine"
+    },
+    {
+      "name": "Primaire du système retenu",
+      "quantity": "Seulement s’il est prescrit"
+    },
+    {
+      "name": "Bâche et ruban de masquage",
+      "quantity": "Pour le sol et les éléments voisins"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie et repère les façades",
+      "description": "Vérifie que le revêtement ne se décolle pas et que les chants ne sont pas gonflés. Numérote les portes et leurs emplacements avant de déposer poignées et charnières selon leur montage."
+    },
+    {
+      "title": "Dégraisse soigneusement",
+      "description": "Lave les faces et les chants avec le nettoyant prévu, puis rince et laisse sécher. Insiste autour des poignées et des zones de cuisson, sans laisser l’eau pénétrer dans le panneau."
+    },
+    {
+      "title": "Prépare l’accroche prescrite",
+      "description": "Suis la notice du système choisi : certains demandent un égrenage ou un primaire, d’autres s’appliquent directement après nettoyage. Ne traverse pas la mince couche décorative et élimine toute poussière."
+    },
+    {
+      "title": "Teste sur une zone cachée",
+      "description": "Applique le système complet au dos d’une porte et attends son durcissement pour apprécier l’accroche. S’il se détache facilement, n’étends pas la peinture aux autres façades."
+    },
+    {
+      "title": "Peins les faces et les chants",
+      "description": "Pose la porte à plat sur des appuis stables et passe des couches régulières sans charger les chants. Respecte les délais et la préparation du produit, notamment un éventuel additif ; attends avant de retourner la porte."
+    },
+    {
+      "title": "Remonte après durcissement",
+      "description": "Attends le délai de remise en service prévu avant les poignées et le réglage des portes. Manipule sans choc et diffère le nettoyage appuyé jusqu’au durcissement complet."
+    }
+  ],
+  "mistakes": [
+    "Peindre un chant gonflé par l’eau.",
+    "Sauter le dégraissage sous prétexte que le produit est sans sous-couche.",
+    "Remonter et nettoyer les portes trop tôt."
+  ],
+  "safety": [
+    "Aère pendant le travail et le séchage ; porte les protections indiquées par les produits utilisés.",
+    "Stabilise les portes sur leurs appuis et garde les doigts hors des charnières pendant la dépose."
+  ],
+  "sources": [
+    {
+      "title": "V33 — Peinture de rénovation cuisine",
+      "url": "https://www.v33.fr/renovation-perfection-r-cuisine-peinture-meuble-credence-plan-de-travail.html",
+      "note": "Supports admis et préparation du système actuel ; les délais, primaires et éventuels additifs restent propres au produit retenu.",
+      "accessedAt": "2026-09-24"
+    },
+    {
+      "title": "V33 — Peindre des meubles de cuisine",
+      "url": "https://www.v33.fr/projet/comment-peindre-mes-meubles-de-cuisine.html",
+      "note": "Dépose des accessoires et nettoyage des façades ; ne pas transposer les délais d’une ancienne formule à une autre.",
+      "accessedAt": "2026-09-24"
+    }
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24"
+}

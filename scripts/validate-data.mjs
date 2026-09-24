@@ -233,6 +233,136 @@ validateDiscovery(
   await readJson(new URL("../src/data/pillars.json", import.meta.url)),
   categories,
 );
+
+// --- Outils de calcul ---
+const calculators = await readJson(
+  new URL("../src/data/calculators.json", import.meta.url),
+);
+const hub = calculators?.hub;
+assert(
+  text(hub?.title) &&
+    text(hub?.description) &&
+    text(hub?.heading) &&
+    text(hub?.introduction),
+  "calculateurs : présentation du hub incomplète",
+);
+const calculatriceSlugs = new Set();
+for (const tool of calculators.tools ?? []) {
+  const where = `calculateurs : ${tool.slug}`;
+  assert(
+    /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(tool.slug ?? "") &&
+      !calculatriceSlugs.has(tool.slug),
+    `${where} : identifiant invalide ou dupliqué`,
+  );
+  calculatriceSlugs.add(tool.slug);
+  for (const key of [
+    "title",
+    "description",
+    "heading",
+    "introduction",
+    "method",
+  ])
+    assert(text(tool[key]), `${where} : ${key} requis`);
+  assert(
+    /^\d{4}-\d{2}-\d{2}$/.test(tool.updatedAt ?? ""),
+    `${where} : date invalide`,
+  );
+  assert(categories.includes(tool.category), `${where} : catégorie invalide`);
+  for (const key of ["assumptions", "limits"])
+    assert(
+      Array.isArray(tool[key]) && tool[key].length && tool[key].every(text),
+      `${where} : ${key} requis`,
+    );
+  assert(
+    text(tool.reference?.title) &&
+      text(tool.reference?.note) &&
+      httpsUrl(tool.reference?.url) &&
+      /^\d{4}-\d{2}-\d{2}$/.test(tool.reference?.accessedAt ?? ""),
+    `${where} : référence invalide`,
+  );
+  assert(
+    Array.isArray(tool.relatedTutorials) &&
+      tool.relatedTutorials.length > 0 &&
+      tool.relatedTutorials.every((id) => ids.has(id)),
+    `${where} : tutoriels liés invalides`,
+  );
+  if (tool.catalogFilter !== undefined)
+    assert(
+      validClassification(
+        tool.catalogFilter.category,
+        tool.catalogFilter.topicPath,
+      ),
+      `${where} : filtre de catalogue invalide`,
+    );
+  const fieldNames = new Set();
+  assert(
+    Array.isArray(tool.fields) && tool.fields.length > 0,
+    `${where} : champs requis`,
+  );
+  for (const field of tool.fields) {
+    assert(
+      /^[a-z][a-zA-Z0-9]*$/.test(field.name ?? "") &&
+        !fieldNames.has(field.name),
+      `${where} : nom de champ invalide ou dupliqué`,
+    );
+    fieldNames.add(field.name);
+    if (field.visibleWhen) {
+      const controlling = tool.fields.find(
+        (entry) => entry.name === field.visibleWhen.field,
+      );
+      assert(
+        controlling?.type === "select" &&
+          Array.isArray(field.visibleWhen.values) &&
+          field.visibleWhen.values.length > 0 &&
+          field.visibleWhen.values.every((value) =>
+            controlling.options.some((option) => option.value === value),
+          ),
+        `${where}/${field.name} : condition d’affichage invalide`,
+      );
+    }
+    assert(text(field.label), `${where}/${field.name} : libellé requis`);
+    assert(
+      ["number", "select"].includes(field.type),
+      `${where}/${field.name} : type de champ inconnu`,
+    );
+    if (field.type === "number") {
+      assert(
+        Number.isFinite(field.default) &&
+          Number.isFinite(field.min) &&
+          Number.isFinite(field.max) &&
+          field.min < field.max &&
+          field.default >= field.min &&
+          field.default <= field.max,
+        `${where}/${field.name} : bornes ou valeur par défaut invalides`,
+      );
+      assert(text(field.unit), `${where}/${field.name} : unité requise`);
+      assert(
+        field.step === undefined ||
+          (Number.isFinite(field.step) && field.step > 0),
+        `${where}/${field.name} : pas invalide`,
+      );
+    } else {
+      const values = field.options?.map((option) => option.value) ?? [];
+      assert(
+        values.length >= 2 &&
+          new Set(values).size === values.length &&
+          field.options.every(
+            (option) => text(option.value) && text(option.label),
+          ) &&
+          values.includes(field.default),
+        `${where}/${field.name} : options invalides`,
+      );
+      // Les formules lisent les dimensions dans la valeur de l’option.
+      if (field.name === "format")
+        assert(
+          field.options.every((option) =>
+            /^(?:[a-z-]+-)?\d+x\d+$/.test(option.value),
+          ),
+          `${where}/${field.name} : dimensions en millimètres attendues`,
+        );
+    }
+  }
+}
 console.log(
-  `${ids.size} tutoriels JSON, tags, liens complémentaires et pages piliers validés.`,
+  `${ids.size} tutoriels JSON, tags, liens complémentaires et pages piliers validés, ${calculatriceSlugs.size} calculateurs validés.`,
 );

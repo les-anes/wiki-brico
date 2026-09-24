@@ -1,0 +1,98 @@
+{
+  "id": "rattraper-des-traces-de-rouleau",
+  "title": "Rattraper des traces de rouleau sur un mur",
+  "description": "Bandes mates, reprises ou cordons peuvent rester après séchage. Identifie le défaut avant de reprendre le pan de mur avec une charge régulière au rouleau.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [],
+  "journeys": [],
+  "tags": ["peinture", "rouleau", "ponçage"],
+  "relatedTutorials": [
+    "choisir-rouleau-et-pinceau",
+    "peindre-un-mur",
+    "faire-une-retouche-de-peinture"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 150,
+  "cost": null,
+  "image": "/images/tutoriels/rattraper-des-traces-de-rouleau.png",
+  "imageAlt": "Un rouleau reprend une peinture terracotta présentant quelques bandes irrégulières.",
+  "imageOrigin": "original",
+  "scope": "Mur intérieur de 10 m² récemment peint à l’eau, support stable ; hors humidité et décollement.",
+  "estimatesNote": "Environ 150 minutes de travail actif pour le cas décrit, hors séchage et durcissement. Le budget dépend du support et des produits retenus.",
+  "tools": [
+    "Rouleau et bac adaptés à la peinture",
+    "Pinceau pour les angles et mélangeur manuel",
+    "Chiffons non pelucheux et escabeau stable",
+    "Cale à poncer et aspirateur adapté"
+  ],
+  "materials": [
+    {
+      "name": "Peinture identique à la finition existante",
+      "quantity": "Pour une reprise du pan complet"
+    },
+    {
+      "name": "Abrasif fin",
+      "quantity": "Pour les surépaisseurs sèches"
+    },
+    {
+      "name": "Sous-couche compatible",
+      "quantity": "Uniquement pour une zone poreuse mise à nu"
+    },
+    {
+      "name": "Bâche et ruban de masquage",
+      "quantity": "Pour le sol et les éléments voisins"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Attends le séchage annoncé",
+      "description": "Ne juge pas le mur pendant que des zones sèchent encore. Observe-le ensuite sous plusieurs angles : une différence de teinte sans relief ne se traite pas comme un cordon de peinture."
+    },
+    {
+      "title": "Vérifie la peinture et le rouleau",
+      "description": "Relis le rendement, les délais et les conditions d’application. Utilise un manchon prévu pour le produit et le support ; un rouleau trop sec laisse une texture irrégulière."
+    },
+    {
+      "title": "Aplanis les reliefs",
+      "description": "Une fois le film suffisamment dur, ponce très légèrement les cordons et dépoussière. Si tu mets le fond à nu, prépare cette zone avec une sous-couche compatible avant de poursuivre."
+    },
+    {
+      "title": "Prépare une reprise continue",
+      "description": "Protège les contours et mélange assez de peinture pour le pan complet. Évite le soleil direct et le courant d’air qui font tirer la peinture trop vite."
+    },
+    {
+      "title": "Peins sans étirer à l’excès",
+      "description": "Charge régulièrement le rouleau et raccorde chaque zone à une bordure encore humide. Termine les passes dans le même sens, sans appuyer pour vider le manchon ni revenir sur une peinture qui tire."
+    },
+    {
+      "title": "Contrôle une fois sec",
+      "description": "Attends le délai annoncé avant d’évaluer l’uniformité. Si le défaut reste en relief ou révèle le support, corrige cette cause avant d’ajouter une nouvelle couche."
+    }
+  ],
+  "mistakes": [
+    "Retoucher une bande au milieu du séchage.",
+    "Appuyer très fort avec un rouleau presque vide.",
+    "Multiplier les couches pour cacher une surépaisseur."
+  ],
+  "safety": [
+    "Aère pendant le travail et le séchage ; porte les protections indiquées par les produits utilisés.",
+    "Ponce uniquement le film récent identifié ; ne traverse pas vers un ancien revêtement suspect."
+  ],
+  "sources": [
+    {
+      "title": "Tollens — Appliquer une peinture mate",
+      "url": "https://www.tollens.com/conseils/comprendre-la-peinture/comment-appliquer-une-peinture-mate",
+      "note": "Application au rouleau et continuité du travail par zones.",
+      "accessedAt": "2026-09-24"
+    },
+    {
+      "title": "Benjamin Moore — Faire des retouches de peinture",
+      "url": "https://www.benjaminmoore.com/fr-ca/interieures-exterieures-peintures-teintures/conseils-pratiques/peinture-101/retouches-de-peinture",
+      "note": "Accord de couleur, finition et texture ; limites de la retouche locale.",
+      "accessedAt": "2026-09-24"
+    }
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24"
+}

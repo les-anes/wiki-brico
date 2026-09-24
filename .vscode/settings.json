@@ -8,6 +8,10 @@
     "/^openspec instructions tasks --change \"ajouter-tutoriel-rejointoiement-chaux\" --json \\| python3 -c \"import json,sys; d=json\\.load\\(sys\\.stdin\\); print\\('INSTRUCTION:\\\\n'\\+d\\['instruction'\\]\\); print\\('TEMPLATE:\\\\n'\\+d\\['template'\\]\\)\"$/": {
       "approve": true,
       "matchCommandLine": true
+    },
+    "/^cd /Users/aymeric/Perso/wikibrico && python3 - <<'PY'\nimport json\nfor p in \\[\"src/data/tutorials/structure/planchers/poser-un-plancher-osb-sur-solives\\.json\",\n          \"src/data/tutorials/cloisons/placo/monter-une-petite-cloison-en-placo\\.json\",\n          \"src/data/tutorials/finitions/carrelage/poser-du-carrelage-au-sol\\.json\"\\]:\n    d=json\\.load\\(open\\(p\\)\\)\n    print\\(\"##\", d\\[\"id\"\\]\\)\n    for s in d\\.get\\(\"sources\",\\[\\]\\): print\\(\"  SRC\", s\\[\"url\"\\]\\)\n    for r in d\\.get\\(\"dtuReferences\",\\[\\]\\): print\\(\"  DTU\", r\\[\"reference\"\\], r\\[\"url\"\\]\\)\nPY$/": {
+      "approve": true,
+      "matchCommandLine": true
     }
   }
 }

@@ -1,0 +1,90 @@
+{
+  "id": "nettoyer-rouleaux-et-pinceaux",
+  "title": "Nettoyer rouleaux et pinceaux après une peinture à l’eau",
+  "description": "Nettoie les outils avant que la peinture sèche pour pouvoir les réutiliser. Travaille dans des bassines et récupère les eaux chargées de peinture au lieu de les verser dans l’évier.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [],
+  "journeys": [],
+  "tags": ["peinture", "rouleau", "pinceau", "nettoyage"],
+  "relatedTutorials": [
+    "choisir-rouleau-et-pinceau",
+    "peindre-un-mur",
+    "faire-une-retouche-de-peinture"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 30,
+  "cost": null,
+  "image": "/images/tutoriels/nettoyer-rouleaux-et-pinceaux.png",
+  "imageAlt": "Une main essore un rouleau au-dessus d’une bassine, près d’un pinceau et d’un récipient fermé.",
+  "imageOrigin": "original",
+  "scope": "Un rouleau et deux pinceaux utilisés avec une peinture dont la notice autorise le nettoyage à l’eau ; hors peinture durcie, solvants et résines bicomposants.",
+  "estimatesNote": "Environ 30 minutes de travail actif pour le cas décrit, hors séchage et durcissement. Le budget dépend du support et des produits retenus.",
+  "tools": [
+    "Deux bassines réservées au bricolage",
+    "Racloir à rouleau ou spatule et peigne à pinceau",
+    "Chiffons, gants et récipient fermé étiquetable"
+  ],
+  "materials": [
+    {
+      "name": "Eau tiède et savon compatible",
+      "quantity": "Petites quantités renouvelées dans les bassines"
+    },
+    {
+      "name": "Étiquette pour le récipient de collecte",
+      "quantity": "Une, indiquant eau de lavage de peinture"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie le mode de nettoyage",
+      "description": "Lis la notice du pot : cette méthode concerne seulement les outils nettoyables à l’eau. Ne rajoute pas de solvant dans une bassine préparée pour ce lavage."
+    },
+    {
+      "title": "Retire le plus de peinture possible",
+      "description": "Racle doucement le rouleau et essuie les pinceaux au-dessus d’un récipient de récupération. Sépare les résidus sales de la peinture propre conservée et garde les déchets de peinture pour la filière adaptée."
+    },
+    {
+      "title": "Lave avec peu d’eau",
+      "description": "Déclipse le manchon et travaille-le dans une première bassine d’eau tiède savonneuse. Masse doucement les poils du pinceau sans les plier et retire la peinture logée près de la virole, la bague métallique."
+    },
+    {
+      "title": "Rince dans une seconde bassine",
+      "description": "Renouvelle de petites quantités d’eau jusqu’à ce que l’outil ne relargue plus de peinture. Récupère aussi ces rinçages et nettoie séparément la monture du rouleau."
+    },
+    {
+      "title": "Remets les outils en forme",
+      "description": "Essore sans tordre les fibres, reforme les poils puis laisse sécher à plat dans un endroit ventilé. Ne range pas les pinceaux posés sur leurs pointes et n’enferme pas un manchon encore humide."
+    },
+    {
+      "title": "Ferme et identifie les déchets",
+      "description": "Transvase les eaux souillées dans un récipient étanche fermé portant leur contenu. Vérifie les modalités de ta déchèterie pour les remettre, puis stocke les outils secs à l’abri de la poussière."
+    }
+  ],
+  "mistakes": [
+    "Attendre que la peinture durcisse dans les fibres.",
+    "Verser les eaux de rinçage dans l’évier ou dehors.",
+    "Laisser tremper un pinceau plusieurs jours sur ses pointes."
+  ],
+  "safety": [
+    "Une peinture à l’eau peut contenir des substances indésirables : garde les eaux de lavage hors des canalisations et du sol.",
+    "Ne mélange pas ces eaux avec d’autres déchets chimiques et n’utilise pas une bouteille destinée aux boissons.",
+    "Garde le récipient de collecte fermé et hors de portée des enfants."
+  ],
+  "sources": [
+    {
+      "title": "Dulux Valentine — Nettoyer et ranger les outils",
+      "url": "https://www.duluxvalentine.com/fr/conseils-decos/comment-nettoyer-et-ranger-les-pinceaux-et-les-rouleaux",
+      "note": "Retrait de l’excédent et séchage des outils ; partie peinture à l’eau uniquement.",
+      "accessedAt": "2026-09-24"
+    },
+    {
+      "title": "ADEME — Eau souillée",
+      "url": "https://quefairedemesdechets.ademe.fr/dechet/eau-souillee/",
+      "note": "Eaux contaminées par de la peinture à remettre en déchèterie dans un récipient fermé.",
+      "accessedAt": "2026-09-24"
+    }
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24"
+}

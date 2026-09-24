@@ -1,0 +1,768 @@
+{
+  "hub": {
+    "title": "Calculateurs de bricolage",
+    "description": "Calcule les dimensions de ton escalier, les quantités de matériaux, une pente ou un calepinage : des outils et des plans pour préparer tes travaux.",
+    "heading": "Des repères pour préparer tes travaux",
+    "introduction": "Ces outils répondent aux questions qui arrivent avant le premier coup de scie : quelle descente pour une évacuation, combien de panneaux, combien de sacs, où tombent les coupes. Chacun affiche sa méthode, ses hypothèses et ses limites, puis renvoie vers le tutoriel qui montre le geste."
+  },
+  "tools": [
+    {
+      "slug": "pente-evacuation-pvc",
+      "title": "Pente d’une évacuation PVC : calculer la descente",
+      "description": "Calcule la descente d’un tuyau d’évacuation PVC à partir de sa longueur et de la pente choisie : dénivelé total, hauteur du point d’arrivée et repère à reporter au mètre.",
+      "heading": "Quelle descente pour ton évacuation PVC ?",
+      "introduction": "Un tuyau d’évacuation doit descendre régulièrement : une pente trop faible retient l’eau, une pente irrégulière crée un point bas. Donne la longueur de ton tronçon et la pente que tu vises, tu obtiendras la descente à reporter sur le mur.",
+      "category": "plomberie",
+      "fields": [
+        {
+          "name": "longueur",
+          "label": "Longueur du tronçon",
+          "help": "Distance horizontale du tronçon, et non longueur inclinée du tuyau.",
+          "type": "number",
+          "unit": "m",
+          "default": 3,
+          "min": 0.2,
+          "max": 50,
+          "step": 0.1
+        },
+        {
+          "name": "pente",
+          "label": "Pente retenue",
+          "help": "Le guide du fabricant recommande au moins 1 cm par mètre ; la fiche de pose retient 1 à 2 cm/m.",
+          "type": "number",
+          "unit": "cm/m",
+          "default": 1.5,
+          "min": 0.5,
+          "max": 10,
+          "step": 0.1
+        },
+        {
+          "name": "hauteurDepart",
+          "label": "Hauteur du point de départ",
+          "help": "Mesure départ et arrivée depuis le même niveau horizontal de référence.",
+          "type": "number",
+          "unit": "cm",
+          "default": 60,
+          "min": 0,
+          "max": 300,
+          "step": 1
+        }
+      ],
+      "method": "La descente totale, en centimètres, est égale à la longueur du tronçon en mètres multipliée par la pente en centimètres par mètre. Une pente de 1,5 cm/m sur 3 m descend donc de 4,5 cm. Exprimée en pourcentage, une pente de 1 cm/m vaut 1 % ; en degrés, elle vaut l’arc tangente de la pente divisée par cent.",
+      "assumptions": [
+        "Pente régulière sur tout le tronçon, sans creux ni contre-pente.",
+        "Tronçon intérieur gravitaire d’un appareil domestique.",
+        "Pente minimale de 1 cm/m reprise du guide Nicoll cité en référence."
+      ],
+      "limits": [
+        "Le calcul ne dimensionne pas le réseau : le diamètre se choisit selon l’appareil, le débit et le réseau existant.",
+        "La ventilation du réseau, les chutes collectives et l’assainissement extérieur ne sont pas traités.",
+        "La plage de 1 à 2 cm/m est un repère de la fiche liée, pas une limite universelle : vérifie la configuration et les prescriptions du système."
+      ],
+      "reference": {
+        "title": "Nicoll — Guide PVC évacuation GTEVAC12",
+        "url": "https://www.nicoll.fr/sites/default/files/products/GTEVAC12.pdf",
+        "note": "Guide du fabricant : pente minimale recommandée de 1 cm par mètre, page 23. Base de la pente retenue par défaut.",
+        "accessedAt": "2026-09-11"
+      },
+      "relatedTutorials": ["gestion-evacuations", "nettoyer-siphon-lavabo"],
+      "catalogFilter": {
+        "category": "plomberie",
+        "topicPath": ["Gestion des évacuations"]
+      },
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "quantite-osb",
+      "title": "Quantité de panneaux OSB pour un plancher",
+      "description": "Calcule le nombre de panneaux OSB nécessaires pour couvrir un plancher, rangées et panneaux par rangée compris, avec la marge de chute à prévoir.",
+      "heading": "Combien de panneaux OSB pour ton plancher ?",
+      "introduction": "Estime les panneaux nécessaires à partir d’une disposition en rangées. Le calcul ne connaît pas la position des solives : vérifie ensuite les appuis et le décalage des joints sur ton plan de pose.",
+      "category": "structure",
+      "fields": [
+        {
+          "name": "longueur",
+          "label": "Longueur de la surface",
+          "type": "number",
+          "unit": "m",
+          "default": 4,
+          "min": 0.5,
+          "max": 20,
+          "step": 0.1
+        },
+        {
+          "name": "largeur",
+          "label": "Largeur de la surface",
+          "type": "number",
+          "unit": "m",
+          "default": 3,
+          "min": 0.5,
+          "max": 20,
+          "step": 0.1
+        },
+        {
+          "name": "format",
+          "label": "Format des panneaux",
+          "help": "Le grand côté du panneau se pose en travers des solives.",
+          "type": "select",
+          "default": "2500x1250",
+          "options": [
+            {
+              "value": "2500x1250",
+              "label": "2 500 × 1 250 mm"
+            },
+            {
+              "value": "2440x1220",
+              "label": "2 440 × 1 220 mm"
+            },
+            {
+              "value": "2050x675",
+              "label": "2 050 × 675 mm"
+            }
+          ]
+        },
+        {
+          "name": "chute",
+          "label": "Marge de chute",
+          "help": "Couvre les coupes de rive et les chutes de calepinage.",
+          "type": "number",
+          "unit": "%",
+          "default": 10,
+          "min": 0,
+          "max": 25,
+          "step": 1
+        }
+      ],
+      "method": "Le grand côté de chaque panneau est posé en travers des solives. Le nombre de rangées est donc la largeur de la surface divisée par la largeur du panneau, arrondie à l’unité supérieure, et le nombre de panneaux par rangée, la longueur divisée par la longueur du panneau. Le total est majoré de la marge de chute, puis arrondi au panneau supérieur.",
+      "assumptions": [
+        "Solivage sain, régulier et vérifié avant la pose.",
+        "Grand côté du panneau posé en travers des solives.",
+        "Marge de 10 % reprise de la fiche de pose, joints de bout décalés compris.",
+        "Jeux de 3 mm entre panneaux et de 10 mm le long des murs."
+      ],
+      "limits": [
+        "Le calcul ne choisit pas l’épaisseur : elle se lit dans l’abaque du fabricant, en croisant l’entraxe des solives et la charge prévue.",
+        "Le solivage lui-même n’est pas dimensionné, ni les portées, ni les sections de bois.",
+        "Une pièce en L ou en angle demande un calepinage rangée par rangée que cet outil ne remplace pas."
+      ],
+      "reference": {
+        "title": "FCBA — Guide des applications des panneaux dans le bâtiment",
+        "url": "https://www.fcba.fr/wp-content/uploads/2025/10/guide-panneau-septembre-2025.pdf",
+        "note": "Guide technique de l’institut FCBA : classes OSB/2, OSB/3 et OSB/4 selon la norme NF EN 300, emploi en milieu sec ou humide, formats courants et usage en plancher.",
+        "accessedAt": "2026-09-17"
+      },
+      "relatedTutorials": ["poser-un-plancher-osb-sur-solives"],
+      "catalogFilter": {
+        "category": "structure",
+        "topicPath": ["Planchers"]
+      },
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "isolant-panneaux",
+      "title": "Quantité d’isolant : nombre de panneaux ou de rouleaux",
+      "description": "Calcule le nombre de panneaux ou de rouleaux d’isolant nécessaires pour couvrir une surface, avec la marge de chute, et renvoie vers la fiche de pose d’une cloison isolée.",
+      "heading": "Combien de panneaux d’isolant te faut-il ?",
+      "introduction": "Donne la surface à isoler et le format des panneaux ou rouleaux. Tu obtiens une estimation des quantités, avec une marge pour les découpes.",
+      "category": "isolation",
+      "fields": [
+        {
+          "name": "surface",
+          "label": "Surface à isoler",
+          "help": "Surface développée du mur, du plafond ou de la cloison, sans déduire les petites ouvertures.",
+          "type": "number",
+          "unit": "m²",
+          "default": 30,
+          "min": 1,
+          "max": 400,
+          "step": 0.5
+        },
+        {
+          "name": "format",
+          "label": "Conditionnement choisi",
+          "type": "select",
+          "default": "panneau-1200x600",
+          "options": [
+            {
+              "value": "panneau-1200x600",
+              "label": "Panneau 1 200 × 600 mm (0,72 m²)"
+            },
+            {
+              "value": "panneau-1350x600",
+              "label": "Panneau 1 350 × 600 mm (0,81 m²)"
+            },
+            {
+              "value": "rouleau-6000x1200",
+              "label": "Rouleau 6 000 × 1 200 mm (7,20 m²)"
+            },
+            {
+              "value": "rouleau-4000x1200",
+              "label": "Rouleau 4 000 × 1 200 mm (4,80 m²)"
+            }
+          ]
+        },
+        {
+          "name": "chute",
+          "label": "Marge de chute",
+          "help": "Compte au moins 5 % pour les coupes de rive, davantage autour des ouvertures.",
+          "type": "number",
+          "unit": "%",
+          "default": 10,
+          "min": 0,
+          "max": 25,
+          "step": 1
+        }
+      ],
+      "method": "La surface à couvrir est majorée de la marge de chute, puis divisée par la surface d’un panneau ou d’un rouleau. Le résultat est arrondi à l’unité supérieure, car un conditionnement entamé ne couvre plus la surface suivante.",
+      "assumptions": [
+        "Surface rectangulaire simple, sans déduction des ouvertures.",
+        "Marge de 10 % par défaut pour les coupes de rive.",
+        "Isolant posé en une seule épaisseur."
+      ],
+      "limits": [
+        "Le choix de l’épaisseur, du lambda et de la résistance thermique R dépend du produit et de l’exigence de ton projet : il se lit sur la fiche technique du produit, pas dans ce calcul.",
+        "Le calcul ne traite ni les ponts thermiques, ni le pare-vapeur, ni l’étanchéité à l’air.",
+        "Les découpes et leur réemploi dépendent du plan de pose. Ne comprime pas l’isolant dans son épaisseur ; respecte les dimensions de découpe prescrites par son fabricant."
+      ],
+      "reference": {
+        "title": "NF DTU 25.41 — Ouvrages en plaques de plâtre",
+        "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-2541-p11/travaux-de-batiment-ouvrages-en-plaques-de-platre-plaques-a-faces-cartonnee/fa194671/321485",
+        "note": "Partie 1-1, cahier des clauses techniques types : encadre la mise en œuvre des ouvrages en plaques de plâtre sur ossature, dont l’isolant placé entre les montants. Sert de repère pour le cas d’une cloison isolée ; fiche de présentation de l’éditeur consultée, texte intégral non consulté.",
+        "accessedAt": "2026-09-16"
+      },
+      "relatedTutorials": ["monter-une-petite-cloison-en-placo"],
+      "catalogFilter": {
+        "category": "cloisons",
+        "topicPath": ["Placo"]
+      },
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "ossature-montants",
+      "title": "Montants et rails d’ossature pour une cloison",
+      "description": "Calcule le nombre de montants, de rails et de vis à plaque d’une cloison en plaques de plâtre, à partir de sa longueur, de sa hauteur et de l’entraxe choisi.",
+      "heading": "Combien de montants et de rails pour ta cloison ?",
+      "introduction": "Estime les montants, les rails et la visserie d’une cloison simple. L’entraxe et la longueur des profilés doivent correspondre au système de cloison retenu.",
+      "category": "cloisons",
+      "fields": [
+        {
+          "name": "longueur",
+          "label": "Longueur de la cloison",
+          "type": "number",
+          "unit": "m",
+          "default": 4,
+          "min": 0.5,
+          "max": 30,
+          "step": 0.1
+        },
+        {
+          "name": "hauteur",
+          "label": "Hauteur sous plafond",
+          "type": "number",
+          "unit": "m",
+          "default": 2.5,
+          "min": 1,
+          "max": 6,
+          "step": 0.05
+        },
+        {
+          "name": "entraxe",
+          "label": "Entraxe des montants",
+          "help": "Entraxe à vérifier dans le tableau de hauteur admissible du système de cloison choisi.",
+          "type": "select",
+          "default": "60",
+          "options": [
+            {
+              "value": "60",
+              "label": "60 cm d’axe en axe"
+            },
+            {
+              "value": "40",
+              "label": "40 cm d’axe en axe"
+            }
+          ]
+        },
+        {
+          "name": "barre",
+          "label": "Longueur des barres",
+          "help": "Longueur des profilés vendus : 3 m est le format le plus courant.",
+          "type": "select",
+          "default": "3",
+          "options": [
+            {
+              "value": "3",
+              "label": "Barres de 3 m"
+            },
+            {
+              "value": "4",
+              "label": "Barres de 4 m"
+            }
+          ]
+        }
+      ],
+      "method": "Nombre de montants = plafond(longueur ÷ entraxe) + 1. Le dernier intervalle peut être plus court. Les montants sont d’un seul tenant ; le calcul est arrêté si une barre est trop courte. Les deux rails sont comptés séparément, sans réemploi des chutes. Les vis sont une estimation pour un parement simple sur chaque face, avec un espacement maximal de 27,5 cm et les deux extrémités comptées.",
+      "assumptions": [
+        "Cloison non porteuse, en pièce sèche, sans porte ni réseau encastré.",
+        "Montants et rails de même largeur, d’une même gamme.",
+        "Vis à plaque espacées d’environ 25 à 30 cm, sur les deux faces.",
+        "Entraxe de 60 cm d’axe en axe, comme la fiche de pose."
+      ],
+      "limits": [
+        "Le calcul ne traite pas les renforts de porte, les aboutages, ni les renforts pour un équipement lourd suspendu.",
+        "Une cloison en pièce humide ou un doublage de mur demandent une ossature et des fixations adaptées, hors de ce calcul.",
+        "L’entraxe réel dépend de la hauteur, de la charge et du fabricant de profilés : vérifie ses préconisations."
+      ],
+      "reference": {
+        "title": "NF DTU 25.41 — Ouvrages en plaques de plâtre",
+        "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-2541-p11/travaux-de-batiment-ouvrages-en-plaques-de-platre-plaques-a-faces-cartonnee/fa194671/321485",
+        "note": "Partie 1-1, cahier des clauses techniques types : encadre la mise en œuvre des ouvrages en plaques de plâtre sur ossature métallique, dont les fixations et les jeux en périphérie. Fiche de présentation de l’éditeur consultée, texte intégral non consulté.",
+        "accessedAt": "2026-09-16"
+      },
+      "relatedTutorials": [
+        "monter-une-petite-cloison-en-placo",
+        "poser-une-bande-a-joint"
+      ],
+      "catalogFilter": {
+        "category": "cloisons",
+        "topicPath": ["Placo"]
+      },
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "dosage-materiaux",
+      "title": "Béton et mortier : adapter les quantités d’une recette",
+      "description": "Calcule le volume de ton ouvrage et adapte les quantités de liant, d’eau et de granulats d’une recette déjà définie, sans inventer un dosage de chantier.",
+      "heading": "Combien de sacs pour ton béton ou ton mortier ?",
+      "introduction": "Renseigne les dosages d’une recette vérifiée pour ton usage, puis les dimensions du volume à réaliser. Les valeurs préremplies illustrent le calcul : elles ne définissent pas un béton ou un mortier adapté à ton ouvrage.",
+      "category": "structure",
+      "fields": [
+        {
+          "name": "famille",
+          "label": "Type de mélange",
+          "type": "select",
+          "default": "beton",
+          "options": [
+            {
+              "value": "beton",
+              "label": "Béton — liant, sable et gravier"
+            },
+            {
+              "value": "mortier",
+              "label": "Mortier — liant et sable"
+            }
+          ]
+        },
+        {
+          "name": "dosage",
+          "label": "Dosage en liant",
+          "help": "Masse de liant par m³ de mélange fini, issue de ta recette. Ne saisis pas un dosage exprimé par m³ de sable.",
+          "type": "number",
+          "unit": "kg/m³",
+          "default": 300,
+          "min": 100,
+          "max": 500,
+          "step": 10
+        },
+        {
+          "name": "longueur",
+          "label": "Longueur",
+          "type": "number",
+          "unit": "m",
+          "default": 4,
+          "min": 0.1,
+          "max": 30,
+          "step": 0.1
+        },
+        {
+          "name": "largeur",
+          "label": "Largeur",
+          "type": "number",
+          "unit": "m",
+          "default": 0.3,
+          "min": 0.05,
+          "max": 10,
+          "step": 0.05
+        },
+        {
+          "name": "epaisseur",
+          "label": "Épaisseur",
+          "type": "number",
+          "unit": "cm",
+          "default": 15,
+          "min": 1,
+          "max": 50,
+          "step": 1
+        },
+        {
+          "name": "sac",
+          "label": "Poids du sac",
+          "type": "select",
+          "default": "35",
+          "options": [
+            {
+              "value": "35",
+              "label": "Sacs de 35 kg"
+            },
+            {
+              "value": "25",
+              "label": "Sacs de 25 kg"
+            }
+          ]
+        },
+        {
+          "name": "eauDosage",
+          "label": "Eau de la recette",
+          "type": "number",
+          "unit": "L/m³",
+          "default": 150,
+          "min": 0,
+          "max": 2500,
+          "step": 1,
+          "help": "Quantité pour un m³ de mélange fini, à reprendre de ta recette."
+        },
+        {
+          "name": "sableDosage",
+          "label": "Sable de la recette",
+          "type": "number",
+          "unit": "kg/m³",
+          "default": 650,
+          "min": 0,
+          "max": 2500,
+          "step": 1,
+          "help": "Quantité pour un m³ de mélange fini, à reprendre de ta recette."
+        },
+        {
+          "name": "gravierDosage",
+          "label": "Gravier de la recette",
+          "type": "number",
+          "unit": "kg/m³",
+          "default": 1200,
+          "min": 0,
+          "max": 2500,
+          "step": 1,
+          "help": "Quantité pour un m³ de mélange fini, à reprendre de ta recette.",
+          "visibleWhen": {
+            "field": "famille",
+            "values": ["beton"]
+          }
+        }
+      ],
+      "method": "Volume = longueur × largeur × épaisseur en mètres. Chaque quantité est ce volume multiplié par le dosage renseigné pour un m³ de mélange fini. Le nombre de sacs de liant est arrondi à l’entier supérieur. Aucun constituant n’est déduit d’une densité supposée.",
+      "assumptions": [
+        "Recette déjà définie pour l’usage et les constituants retenus ; valeurs préremplies uniquement illustratives.",
+        "Tous les dosages sont exprimés par m³ de mélange fini.",
+        "Volume régulier, sans marge de perte de coulage."
+      ],
+      "limits": [
+        "L’outil ne formule pas un béton et ne vérifie ni sa résistance, ni le ferraillage, ni l’adéquation à un ouvrage porteur.",
+        "Les sacs comptés sont des sacs de liant seul, jamais des sacs de mortier ou de béton prémélangé. Pour ceux-ci, utilise le rendement indiqué par le fabricant.",
+        "La recette doit intégrer l’humidité des granulats et l’eau réellement à ajouter ; aucune correction d’humidité n’est calculée."
+      ],
+      "reference": {
+        "title": "Infociments — Ciments et bétons, formulation",
+        "url": "https://www.infociments.fr/sites/default/files/article/fichier/CT-B51.pdf",
+        "note": "Principes de formulation : les caractéristiques des constituants et le dosage en eau doivent être définis. Les valeurs d’exemple de l’outil ne sont pas une recette extraite de cette source.",
+        "accessedAt": "2026-09-24"
+      },
+      "relatedTutorials": [
+        "ceinturer-un-mur-en-pierre",
+        "ragreer-un-sol-en-beton",
+        "rejointoyer-un-mur-en-pierre"
+      ],
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "calpinage",
+      "title": "Calepinage : dessiner la pose d’un carrelage",
+      "description": "Dessine le calepinage d’une pièce rectangulaire à partir des dimensions de la pièce et du format des carreaux, compte les carreaux entiers et coupés, et signale les bandes de rive trop étroites.",
+      "heading": "Où tombent les coupes de ton carrelage ?",
+      "introduction": "Le calepinage se décide avant d’encoller : quelques centimètres de décalage changent la largeur des coupes le long des murs. Donne les dimensions de la pièce et le format des carreaux, le plan se dessine et les coupes se comptent.",
+      "category": "finitions",
+      "fields": [
+        {
+          "name": "longueur",
+          "label": "Longueur de la pièce",
+          "type": "number",
+          "unit": "m",
+          "default": 4,
+          "min": 0.5,
+          "max": 20,
+          "step": 0.1
+        },
+        {
+          "name": "largeur",
+          "label": "Largeur de la pièce",
+          "type": "number",
+          "unit": "m",
+          "default": 3,
+          "min": 0.5,
+          "max": 20,
+          "step": 0.1
+        },
+        {
+          "name": "carreauLargeur",
+          "label": "Largeur du carreau",
+          "type": "number",
+          "unit": "cm",
+          "default": 30,
+          "min": 2.5,
+          "max": 120,
+          "step": 0.5
+        },
+        {
+          "name": "carreauLongueur",
+          "label": "Longueur du carreau",
+          "help": "Égale à la largeur pour un carreau carré.",
+          "type": "number",
+          "unit": "cm",
+          "default": 30,
+          "min": 2.5,
+          "max": 120,
+          "step": 0.5
+        },
+        {
+          "name": "joint",
+          "label": "Largeur du joint",
+          "help": "De 2 à 5 mm pour un carrelage de sol courant, selon la notice du fabricant.",
+          "type": "number",
+          "unit": "mm",
+          "default": 3,
+          "min": 0,
+          "max": 10,
+          "step": 0.5
+        },
+        {
+          "name": "pose",
+          "label": "Sens de pose",
+          "type": "select",
+          "default": "droite",
+          "options": [
+            {
+              "value": "droite",
+              "label": "Pose droite"
+            },
+            {
+              "value": "decalee",
+              "label": "Pose décalée d’un demi-carreau"
+            }
+          ]
+        },
+        {
+          "name": "depart",
+          "label": "Départ de la pose",
+          "help": "Le départ centré répartit les coupes sur deux côtés opposés.",
+          "type": "select",
+          "default": "centre",
+          "options": [
+            {
+              "value": "centre",
+              "label": "Centré sur l’axe de la pièce"
+            },
+            {
+              "value": "angle",
+              "label": "Depuis un angle"
+            }
+          ]
+        },
+        {
+          "name": "marge",
+          "label": "Marge de coupe",
+          "help": "Couvre les carreaux cassés et les erreurs de coupe.",
+          "type": "number",
+          "unit": "%",
+          "default": 10,
+          "min": 0,
+          "max": 25,
+          "step": 1
+        },
+        {
+          "name": "trait",
+          "label": "Largeur du trait de coupe",
+          "type": "number",
+          "unit": "mm",
+          "default": 3,
+          "min": 0,
+          "max": 10,
+          "step": 0.1,
+          "help": "Matière perdue entre deux coupes réemployées dans un même carreau."
+        }
+      ],
+      "method": "Le plan avance par pas égaux au carreau plus le joint sur chaque axe, en conservant même les coupes très fines. Le départ centré répartit le dépassement entre les deux rives. La pose décalée avance une rangée sur deux d’un demi-pas. Deux coupes de rive d’une même rangée sont comptées dans un seul carreau seulement si leur somme et le trait de coupe y tiennent. Aucun réemploi entre rangées n’est supposé ; le total est majoré de la marge saisie.",
+      "assumptions": [
+        "Pièce rectangulaire, murs droits et parallèles.",
+        "Pose droite ou décalée d’un demi-carreau, dans le sens de la longueur de la pièce.",
+        "Joint de largeur constante, sans joint de dilatation périphérique compté dans le calepinage.",
+        "Marge de 10 % reprise de la fiche de pose, pour les coupes et la casse.",
+        "Trait de coupe de 3 mm par défaut, modifiable selon l’outil de coupe."
+      ],
+      "limits": [
+        "La pose diagonale, les pièces en L, les motifs et les plinthes ne sont pas traités.",
+        "Le plan suppose que la pièce est d’équerre : un mur qui fuit se rattrape en traçant l’axe principal au cordeau, comme dans la fiche de pose.",
+        "Au-delà de 2 000 pièces, l’aperçu passe en trame simplifiée pour ne pas alourdir la page ; le comptage estimatif reste identique au mode détaillé.",
+        "Le joint de dilatation périphérique et la planéité du support se traitent avant la pose, pas dans le calepinage.",
+        "Le compte est une estimation selon le réemploi décrit, pas une optimisation de toutes les chutes. Les coupes très fines sont affichées pour être corrigées, pas recommandées pour la pose."
+      ],
+      "reference": {
+        "title": "NF DTU 52.2 — Pose collée des revêtements céramiques et assimilés",
+        "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-522/travaux-de-batiment-pose-collee-des-revetements-ceramiques-et-assimiles-pie/fa166651/1037",
+        "note": "Partie 1-1, cahier des clauses techniques types : définit les exigences de support, de calepinage, de collage et de jointoiement des revêtements céramiques collés. Fiche de présentation de l’éditeur consultée, texte intégral non consulté.",
+        "accessedAt": "2026-09-16"
+      },
+      "relatedTutorials": [
+        "poser-du-carrelage-au-sol",
+        "poser-une-credence-carrelee",
+        "remplacer-un-carreau-de-carrelage-casse"
+      ],
+      "catalogFilter": {
+        "category": "finitions",
+        "topicPath": ["Carrelage"]
+      },
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "escalier",
+      "title": "Calculer un escalier droit ou quart tournant",
+      "description": "Compare les dimensions d’un escalier droit ou quart tournant : hauteurs, giron, reculements et relation de Blondel, avec plan coté et profil des marches.",
+      "heading": "Quelle forme et quelles marches pour ton escalier ?",
+      "introduction": "Mesure la hauteur entre les deux sols finis et l’espace disponible. Compare un escalier droit, un quart tournant avec palier ou des marches rayonnantes : le plan et le profil suivent tes dimensions.",
+      "category": "structure",
+      "fields": [
+        {
+          "name": "forme",
+          "label": "Forme de l’escalier",
+          "type": "select",
+          "default": "droit",
+          "options": [
+            {
+              "value": "droit",
+              "label": "Droit"
+            },
+            {
+              "value": "palier",
+              "label": "Quart tournant avec palier"
+            },
+            {
+              "value": "rayonnant",
+              "label": "Quart tournant à marches rayonnantes"
+            }
+          ]
+        },
+        {
+          "name": "hauteur",
+          "label": "Hauteur à franchir",
+          "unit": "cm",
+          "type": "number",
+          "default": 280,
+          "min": 60,
+          "max": 450,
+          "step": 1,
+          "help": "Du sol fini du bas au sol fini du haut, revêtements compris."
+        },
+        {
+          "name": "longueur",
+          "label": "Reculement disponible — branche de départ",
+          "unit": "cm",
+          "type": "number",
+          "default": 390,
+          "min": 50,
+          "max": 800,
+          "step": 1,
+          "help": "Distance horizontale maximale, du premier nez à l’arrivée pour un escalier droit ; tournant compris pour un quart tournant."
+        },
+        {
+          "name": "retour",
+          "label": "Reculement disponible — branche d’arrivée",
+          "unit": "cm",
+          "type": "number",
+          "default": 300,
+          "min": 50,
+          "max": 800,
+          "step": 1,
+          "help": "Distance horizontale sur le second axe, tournant compris. Ce n’est pas la longueur de la trémie.",
+          "visibleWhen": {
+            "field": "forme",
+            "values": ["palier", "rayonnant"]
+          }
+        },
+        {
+          "name": "largeur",
+          "label": "Largeur utile de passage",
+          "unit": "cm",
+          "type": "number",
+          "default": 90,
+          "min": 60,
+          "max": 120,
+          "step": 1,
+          "help": "Largeur des marches hors limons et garde-corps. L’encombrement réel sera supérieur."
+        },
+        {
+          "name": "jour",
+          "label": "Côté du jour intérieur",
+          "unit": "cm",
+          "type": "number",
+          "default": 10,
+          "min": 5,
+          "max": 60,
+          "step": 1,
+          "help": "Vide carré à l’intérieur du tournant. Le bloc tournant occupe largeur + jour sur chaque axe.",
+          "visibleWhen": {
+            "field": "forme",
+            "values": ["rayonnant"]
+          }
+        },
+        {
+          "name": "sens",
+          "label": "Sens du quart tournant en montant",
+          "type": "select",
+          "default": "droite",
+          "options": [
+            {
+              "value": "droite",
+              "label": "À droite"
+            },
+            {
+              "value": "gauche",
+              "label": "À gauche"
+            }
+          ],
+          "visibleWhen": {
+            "field": "forme",
+            "values": ["palier", "rayonnant"]
+          }
+        },
+        {
+          "name": "hauteurs",
+          "label": "Nombre de hauteurs imposé",
+          "unit": "hauteurs",
+          "type": "number",
+          "default": 0,
+          "min": 0,
+          "max": 36,
+          "step": 1,
+          "help": "0 : comparaison automatique. Sinon un entier de 4 à 36 ; le sol de l’étage forme l’arrivée."
+        }
+      ],
+      "method": "La hauteur d’une marche vaut H ÷ N, avec N entier. En droit, le giron vaut le reculement ÷ (N − 1). Avec palier carré, N − 2 marches sont réparties sur deux volées ; le giron commun est limité par la place disponible dans chaque branche. Avec marches rayonnantes, le quart de cercle au milieu de la largeur utile est divisé en 2 à 8 girons égaux, prolongés dans les deux volées droites. En automatique, l’outil compare les géométries possibles : hauteurs de 16 à 20 cm, girons de 24 à 32 cm et relation 2h + g de 60 à 64 cm sont des repères de comparaison, avec une cible de 63 cm. Ce sont des critères de ce simulateur, pas une attestation de conformité.",
+      "assumptions": [
+        "Toutes les hauteurs sont identiques ; l’étage supérieur constitue la dernière arrivée.",
+        "Les reculements sont des maxima : une branche peut être plus courte que l’espace saisi.",
+        "Le palier est carré, de côté égal à la largeur utile. Il remplace une marche intermédiaire.",
+        "Le modèle rayonnant utilise un jour carré et une ligne de foulée au milieu de la largeur utile ; il ne calcule pas des marches balancées."
+      ],
+      "limits": [
+        "Étude géométrique préliminaire : ne fabrique pas un escalier à partir de ce seul dessin.",
+        "Trémie, échappée au-dessus des marches, garde-corps, sections, appuis et fixations restent à vérifier et ne sont pas dimensionnés.",
+        "Les reculements excluent les dégagements nécessaires au départ et à l’arrivée, ainsi que l’épaisseur des limons et des finitions.",
+        "Une bonne valeur de Blondel ne suffit pas à valider un escalier. Le collet des marches rayonnantes et les règles propres à l’usage doivent être vérifiés sur une épure."
+      ],
+      "reference": {
+        "title": "Lapeyre — Préparer les dimensions d’un escalier",
+        "url": "https://www.lapeyre.fr/produits/escalier-rampe-main-courante/escalier",
+        "note": "Repère de Blondel de 60 à 64 cm et prise en compte de la hauteur, du giron et de l’espace disponible. Le modèle géométrique et son classement automatique sont propres à cet outil.",
+        "accessedAt": "2026-09-24"
+      },
+      "relatedTutorials": ["organiser-les-travaux-d-une-chambre"],
+      "updatedAt": "2026-09-24"
+    }
+  ]
+}

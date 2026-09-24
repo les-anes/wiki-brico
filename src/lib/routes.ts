@@ -1,12 +1,15 @@
 import type { Tutorial } from "@/types";
 
 import pillars from "../data/pillars.json" with { type: "json" };
+import { calculatorHub, calculators } from "./calculators/index.ts";
 
 export type Route =
   | { kind: "home"; path: "/" }
   | { kind: "catalog"; path: "/tutoriels/" }
   | { kind: "tutorial"; path: string; id: string }
   | { kind: "theme"; path: string; id: string }
+  | { kind: "calculators"; path: "/calculateurs/" }
+  | { kind: "calculator"; path: string; id: string }
   | { kind: "notFound"; path: string };
 
 interface CategoryRef {
@@ -35,12 +38,18 @@ export interface RouteContext {
 
 const HOME: Route = { kind: "home", path: "/" };
 const CATALOG: Route = { kind: "catalog", path: "/tutoriels/" };
+const CALCULATORS: Route = { kind: "calculators", path: "/calculateurs/" };
 
 export function tutorialPath(id: string): string {
   return `/tutoriel/${id}/`;
 }
 
-export function themePath(id: string): string {
+export function calculatorPath(slug: string): string {
+  return `/calculateurs/${slug}/`;
+}
+
+/** Chemin canonique d’un guide thématique, utilisé par le routeur et les métadonnées. */
+function themePath(id: string): string {
   return `/themes/${id}/`;
 }
 
@@ -72,6 +81,12 @@ export function buildRoutes(tutorials: Tutorial[]): Route[] {
       path: themePath(pillar.id),
       id: pillar.id,
     })),
+    CALCULATORS,
+    ...calculators.map((calculator): Route => ({
+      kind: "calculator",
+      path: calculatorPath(calculator.slug),
+      id: calculator.slug,
+    })),
   ];
 }
 
@@ -90,6 +105,13 @@ export function matchRoute(tutorials: Tutorial[], pathname: string): Route {
     pillars.some((p) => p.id === parts[1])
   )
     return { kind: "theme", path: themePath(parts[1]), id: parts[1] };
+  if (parts.length === 1 && parts[0] === "calculateurs") return CALCULATORS;
+  if (parts.length === 2 && parts[0] === "calculateurs") {
+    const slug = decodeURIComponent(parts[1]);
+    return calculators.some((calculator) => calculator.slug === slug)
+      ? { kind: "calculator", path: calculatorPath(slug), id: slug }
+      : { kind: "notFound", path: pathname };
+  }
   if (parts.length === 2 && parts[0] === "tutoriel") {
     const id = decodeURIComponent(parts[1]);
     return tutorials.some((t) => t.id === id)
@@ -154,6 +176,43 @@ export function pageMeta(route: Route, ctx: RouteContext): PageMeta {
           url: `${base}${categoryPath(tutorial.category)}`,
         },
         { name: tutorial.title, url: canonical },
+      ],
+    };
+  }
+
+  if (route.kind === "calculators") {
+    const canonical = `${base}/calculateurs/`;
+    const title = `${calculatorHub.title} — WikiBrico`;
+    return {
+      title,
+      description: calculatorHub.description,
+      canonical,
+      og: { title, description: calculatorHub.description, url: canonical },
+      breadcrumb: [
+        { name: "Accueil", url: `${base}/` },
+        { name: calculatorHub.title, url: canonical },
+      ],
+    };
+  }
+
+  if (route.kind === "calculator") {
+    const calculator = calculators.find((tool) => tool.slug === route.id);
+    if (!calculator)
+      return pageMeta({ kind: "notFound", path: route.path }, ctx);
+    const canonical = `${base}${route.path}`;
+    return {
+      title: `${calculator.title} — WikiBrico`,
+      description: calculator.description,
+      canonical,
+      og: {
+        title: calculator.title,
+        description: calculator.description,
+        url: canonical,
+      },
+      breadcrumb: [
+        { name: "Accueil", url: `${base}/` },
+        { name: calculatorHub.title, url: `${base}/calculateurs/` },
+        { name: calculator.title, url: canonical },
       ],
     };
   }

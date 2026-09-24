@@ -18,6 +18,8 @@ import {
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
+import { CalculatorPage } from "@/components/calculator-page";
+import { CalculatorsHub } from "@/components/calculators-hub";
 import { CatalogPage } from "@/components/catalog-page";
 import { CategoryNavigation } from "@/components/category-navigation";
 import { PillarPage } from "@/components/pillar-page";
@@ -86,9 +88,13 @@ export default function App({
         ? "tutoriels"
         : route.kind === "theme"
           ? `themes/${route.id}`
-          : route.kind === "home"
-            ? ""
-            : "introuvable";
+          : route.kind === "calculators"
+            ? "calculateurs"
+            : route.kind === "calculator"
+              ? `calculateurs/${route.id}`
+              : route.kind === "home"
+                ? ""
+                : "introuvable";
   useEffect(() => {
     initializeAnalytics();
     trackPage(trackedPage);
@@ -161,6 +167,10 @@ export default function App({
         />
       ) : route.kind === "theme" ? (
         <PillarPage id={route.id} />
+      ) : route.kind === "calculators" ? (
+        <CalculatorsHub />
+      ) : route.kind === "calculator" ? (
+        <CalculatorPage key={route.id} slug={route.id} />
       ) : isCatalog ? (
         <CatalogPage
           search={path}
@@ -336,6 +346,21 @@ export default function App({
                   </a>
                 ))}
             </div>
+            <div className="tool-strip">
+              <div>
+                <span className="eyebrow">CHIFFRER AVANT D’ACHETER</span>
+                <h2>Les calculateurs</h2>
+                <p>
+                  Pente d’évacuation, panneaux OSB, isolant, ossature, mortier,
+                  calpinage : les quantités avant le premier coup de scie.
+                </p>
+              </div>
+              <Button asChild>
+                <a href="/calculateurs/">
+                  Ouvrir les calculateurs <ArrowRight size={16} />
+                </a>
+              </Button>
+            </div>
             <div className="catalog-invitation">
               <div>
                 <h2>Votre prochain projet commence ici.</h2>
@@ -382,6 +407,7 @@ export default function App({
         </a>
         <p>Le plaisir d’apprendre. La fierté de faire.</p>
         <a href={catalogHref()}>Les tutoriels</a>
+        <a href="/calculateurs/">Les calculateurs</a>
         <span>Fait pour les mains curieuses. © {new Date().getFullYear()}</span>
       </footer>
     </>

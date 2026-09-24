@@ -1,0 +1,86 @@
+{
+  "id": "faire-une-retouche-de-peinture",
+  "title": "Faire une retouche de peinture sur un mur",
+  "description": "Un petit choc peut se reprendre sans repeindre immédiatement tout le mur. Retrouve la même peinture et la même texture, puis vérifie le raccord après séchage.",
+  "category": "finitions",
+  "topicPath": ["Peinture"],
+  "relatedCategories": [],
+  "journeys": [],
+  "tags": ["peinture", "retouche", "rouleau"],
+  "relatedTutorials": [
+    "reboucher-un-trou",
+    "rattraper-des-traces-de-rouleau",
+    "peindre-un-mur"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 45,
+  "cost": null,
+  "image": "/images/tutoriels/faire-une-retouche-de-peinture.png",
+  "imageAlt": "Un mini-rouleau couvre une petite marque sur un mur vert avec un raccord adouci.",
+  "imageOrigin": "original",
+  "scope": "Petite marque sur peinture intérieure saine ; résultat invisible non garanti, notamment sur finition satinée ou vieillie.",
+  "estimatesNote": "Environ 45 minutes de travail actif pour le cas décrit, hors séchage et durcissement. Le budget dépend du support et des produits retenus.",
+  "tools": [
+    "Mini-rouleau ou pinceau de même type que lors de la peinture initiale",
+    "Petit bac, mélangeur, chiffon et éponge douce"
+  ],
+  "materials": [
+    {
+      "name": "Peinture de même référence, teinte et finition",
+      "quantity": "Petite quantité, idéalement du pot d’origine"
+    },
+    {
+      "name": "Nettoyant doux compatible et eau claire",
+      "quantity": "Pour une marque superficielle"
+    },
+    {
+      "name": "Bâche et ruban de masquage",
+      "quantity": "Pour le sol et les éléments voisins"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie qu’une peinture est nécessaire",
+      "description": "Essaie d’abord de nettoyer doucement la marque sur une petite zone et laisse sécher. Si le mur est creusé ou le film se décolle, répare et prépare le support avant cette retouche."
+    },
+    {
+      "title": "Retrouve la bonne finition",
+      "description": "Compare la référence, la teinte et l’aspect mat, velours ou satiné. Un même nom de couleur ne suffit pas ; écarte une peinture qui sent mauvais, présente des moisissures ou ne se remélange plus."
+    },
+    {
+      "title": "Prépare une petite quantité",
+      "description": "Protège le sol et homogénéise le produit. Prends un outil qui reproduit la texture d’origine : une zone peinte au rouleau se retouche généralement avec un petit rouleau comparable."
+    },
+    {
+      "title": "Fais un essai discret",
+      "description": "Dépose peu de peinture sur une zone peu visible et laisse sécher selon sa notice. Si la teinte ou la brillance tranche déjà, prépare une reprise du pan complet plutôt que d’agrandir la tache."
+    },
+    {
+      "title": "Atténue les bords du raccord",
+      "description": "Pars du centre de la marque et termine les bords avec un outil moins chargé, sans dessiner un rectangle au ruban. Respecte le délai entre couches si une seconde est nécessaire."
+    },
+    {
+      "title": "Juge le résultat sec",
+      "description": "Observe en lumière du jour et en lumière rasante après séchage. Si une auréole reste visible, la solution régulière consiste à repeindre le pan entier d’angle à angle."
+    }
+  ],
+  "mistakes": [
+    "Choisir la même couleur avec une autre brillance.",
+    "Délimiter un carré de retouche au ruban.",
+    "Promettre un raccord invisible sur une peinture vieillie."
+  ],
+  "safety": [
+    "Aère pendant le travail et le séchage ; porte les protections indiquées par les produits utilisés.",
+    "Garde les restes de peinture identifiés et fermés, hors de portée des enfants."
+  ],
+  "sources": [
+    {
+      "title": "Benjamin Moore — Faire des retouches de peinture",
+      "url": "https://www.benjaminmoore.com/fr-ca/interieures-exterieures-peintures-teintures/conseils-pratiques/peinture-101/retouches-de-peinture",
+      "note": "Accord de couleur, finition et texture ; limites de la retouche locale.",
+      "accessedAt": "2026-09-24"
+    }
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24"
+}
