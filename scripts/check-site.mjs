@@ -738,6 +738,49 @@ try {
             "Le quart tournant expose son jour",
           );
           assert.equal(document.querySelectorAll(".stair-svg").length, 2);
+          const plan = document.querySelector(".stair-views figure");
+          const etiquettes = [...plan.querySelectorAll("g[aria-label]")].map(
+            (groupe) => groupe.getAttribute("aria-label"),
+          );
+          assert(
+            etiquettes.length > 0 &&
+              etiquettes.every((etiquette) =>
+                /(giron|de côté)/.test(etiquette),
+              ),
+            "Chaque marche du plan annonce ses cotes",
+          );
+          assert(
+            /^Marche 1 — marche de .* giron de .* du sol$/.test(etiquettes[0]),
+            `Libellé de marche inattendu : ${etiquettes[0]}`,
+          );
+          const premiere = document.querySelector(".stair-step");
+          await act(async () => {
+            premiere.dispatchEvent(
+              new dom.window.MouseEvent("click", { bubbles: true }),
+            );
+          });
+          assert(
+            document
+              .querySelector(".stair-cotes")
+              ?.textContent.includes("Hauteur de marche"),
+            "Le clic fige les cotes de la marche",
+          );
+          assert(
+            document
+              .querySelector(".stair-cote text")
+              ?.textContent.startsWith("Giron"),
+            "La cote est dessinée sur le plan",
+          );
+          await act(async () => {
+            premiere.dispatchEvent(
+              new dom.window.MouseEvent("click", { bubbles: true }),
+            );
+          });
+          assert.equal(
+            document.querySelector(".stair-cotes"),
+            null,
+            "Un second clic efface les cotes",
+          );
           const before = document
             .querySelector(".stair-walk")
             .getAttribute("points");

@@ -33,11 +33,8 @@ export function CalpinagePlanView({ plan }: { plan: CalpinagePlan }) {
       className="calpinage-svg"
       viewBox={`0 0 ${viewWidth} ${viewHeight}`}
       role="img"
-      aria-labelledby="calpinage-titre"
+      aria-label={`Plan de calpinage d’une pièce de ${fr(plan.room.width, 2)} m sur ${fr(plan.room.height, 2)} m, carreaux de ${fr(plan.tile.width * 100, 1)} cm`}
     >
-      <title id="calpinage-titre">
-        {`Plan de calpinage d’une pièce de ${fr(plan.room.width, 2)} m sur ${fr(plan.room.height, 2)} m, carreaux de ${fr(plan.tile.width * 100, 1)} cm`}
-      </title>
       <clipPath id="calpinage-piece">
         <rect x={MARGIN} y={MARGIN} width={width} height={height} />
       </clipPath>

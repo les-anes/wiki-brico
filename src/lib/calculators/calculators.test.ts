@@ -329,6 +329,45 @@ test("les quarts tournants rentrent dans les deux branches et se reflètent", ()
   }
 });
 
+test("les marches tournantes exposent leur collet, leur extérieur et leur nez", () => {
+  const plan = run("escalier", { forme: "rayonnant" }).stairPlan!;
+  const nombre = (label: string) =>
+    Number(/([\d]+,[\d]+)/.exec(label)![1].replace(",", "."));
+  const etiquettes = (etape: (typeof plan.steps)[number]) =>
+    (etape.cotes ?? []).map((cote) => cote.label);
+  const tournantes = plan.steps.filter((etape) =>
+    etiquettes(etape).some((label) => label.startsWith("Collet")),
+  );
+  assert(tournantes.length >= 2, "Le quart tournant comporte des tournantes");
+  for (const etape of tournantes) {
+    const cote = (nom: string) =>
+      nombre(etiquettes(etape).find((label) => label.startsWith(nom))!);
+    assert(
+      cote("Collet") < etape.length,
+      "Le collet est plus étroit que la ligne de foulée",
+    );
+    assert(
+      etape.length < cote("Extérieur"),
+      "L’extérieur est plus large que la ligne de foulée",
+    );
+    assert(
+      cote("Nez") > etape.length,
+      "Le nez traverse la largeur de la marche",
+    );
+  }
+  const droit = run("escalier", {
+    hauteur: 280,
+    longueur: 390,
+    hauteurs: 16,
+  }).stairPlan!;
+  assert.equal(droit.steps[0].cotes?.[0].label, "Giron 26,0 cm");
+  const palier = run("escalier", { forme: "palier" }).stairPlan!;
+  assert.equal(
+    palier.steps.find((etape) => etape.landing)?.cotes?.[0].label,
+    "Côté 90,0 cm",
+  );
+});
+
 test("un escalier impossible ne produit aucun plan et Blondel seul ne valide pas le confort", () => {
   assert.equal(
     run("escalier", { forme: "palier", longueur: 80 }).stairPlan,

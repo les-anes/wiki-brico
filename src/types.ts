@@ -164,6 +164,15 @@ export interface StairStep {
   points: [number, number][];
   length: number;
   landing?: boolean;
+  /** Cotes exactes de la marche, dessinées quand elle est sélectionnée. */
+  cotes?: StairDimension[];
+}
+
+/** Segment à coter sur un dessin, avec son libellé déjà mis en forme. */
+export interface StairDimension {
+  from: [number, number];
+  to: [number, number];
+  label: string;
 }
 
 export interface StairPlan {

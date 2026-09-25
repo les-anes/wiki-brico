@@ -697,14 +697,14 @@
         },
         {
           "name": "jour",
-          "label": "Côté du jour intérieur",
+          "label": "Vide carré dans l’angle du tournant",
           "unit": "cm",
           "type": "number",
           "default": 10,
           "min": 5,
           "max": 60,
           "step": 1,
-          "help": "Vide carré à l’intérieur du tournant. Le bloc tournant occupe largeur + jour sur chaque axe.",
+          "help": "Le « jour », c’est le vide carré laissé dans l’angle intérieur du tournant : les marches tournantes tournent autour, sans y descendre. Mesure son côté sur place — souvent l’épaisseur du poteau ou du limon intérieur, ou le dégagement entre les deux volées. Si tes marches se rejoignent dans l’angle (marches balancées), ce modèle n’est pas le bon : il travaille avec un vide d’au moins 5 cm.",
           "visibleWhen": {
             "field": "forme",
             "values": ["rayonnant"]
@@ -742,7 +742,7 @@
           "help": "0 : comparaison automatique. Sinon un entier de 4 à 36 ; le sol de l’étage forme l’arrivée."
         }
       ],
-      "method": "La hauteur d’une marche vaut H ÷ N, avec N entier. En droit, le giron vaut le reculement ÷ (N − 1). Avec palier carré, N − 2 marches sont réparties sur deux volées ; le giron commun est limité par la place disponible dans chaque branche. Avec marches rayonnantes, le quart de cercle au milieu de la largeur utile est divisé en 2 à 8 girons égaux, prolongés dans les deux volées droites. En automatique, l’outil compare les géométries possibles : hauteurs de 16 à 20 cm, girons de 24 à 32 cm et relation 2h + g de 60 à 64 cm sont des repères de comparaison, avec une cible de 63 cm. Ce sont des critères de ce simulateur, pas une attestation de conformité.",
+      "method": "La hauteur d’une marche vaut H ÷ N, avec N entier. En droit, le giron vaut le reculement ÷ (N − 1). Avec palier carré, N − 2 marches sont réparties sur deux volées ; le giron commun est limité par la place disponible dans chaque branche. Avec marches rayonnantes, le quart de cercle au milieu de la largeur utile est divisé en 2 à 8 girons égaux, prolongés dans les deux volées droites : ces marches tournent autour d’un vide carré, le jour, laissé dans l’angle intérieur. En automatique, l’outil compare les géométries possibles : hauteurs de 16 à 20 cm, girons de 24 à 32 cm et relation 2h + g de 60 à 64 cm sont des repères de comparaison, avec une cible de 63 cm. Ce sont des critères de ce simulateur, pas une attestation de conformité.",
       "assumptions": [
         "Toutes les hauteurs sont identiques ; l’étage supérieur constitue la dernière arrivée.",
         "Les reculements sont des maxima : une branche peut être plus courte que l’espace saisi.",

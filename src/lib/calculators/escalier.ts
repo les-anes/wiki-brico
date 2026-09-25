@@ -49,8 +49,21 @@ function rectangle(
     ],
     length,
     landing,
+    cotes: [
+      {
+        // Décalée du centre pour ne pas se superposer au numéro de la marche.
+        from: [x + width * 0.78, y],
+        to: [x + width * 0.78, y + height],
+        label: landing
+          ? `Côté ${fr(length, 1)} cm`
+          : `Giron ${fr(length, 1)} cm`,
+      },
+    ],
   };
 }
+
+const distance = (a: [number, number], b: [number, number]) =>
+  Math.hypot(b[0] - a[0], b[1] - a[1]);
 
 /** Géométrie préliminaire bornée à 36 hauteurs ; aucun dimensionnement de structure. */
 export function compute(inputs: CalculatorInputs): CalculatorOutput {
@@ -152,12 +165,40 @@ export function compute(inputs: CalculatorInputs): CalculatorOutput {
       const a = (i * Math.PI) / (2 * turn),
         b = ((i + 1) * Math.PI) / (2 * turn);
       const crossesCorner = a < Math.PI / 4 && b > Math.PI / 4;
-      const points: [number, number][] = [point(a, block)];
+      const dehorsA = point(a, block);
+      const dehorsB = point(b, block);
+      const dedansA = point(a, well);
+      const dedansB = point(b, well);
+      const points: [number, number][] = [dehorsA];
       if (crossesCorner) points.push([0, 0]);
-      points.push(point(b, block), point(b, well));
+      points.push(dehorsB, dedansB);
       if (crossesCorner) points.push([width, width]);
-      points.push(point(a, well));
-      steps.push({ points, length: g });
+      points.push(dedansA);
+      // Le giron d’une marche tournante varie du collet à l’extérieur :
+      // ce sont ces cotes qui décident si la marche est marchable.
+      steps.push({
+        points,
+        length: g,
+        cotes: [
+          {
+            from: dedansA,
+            to: dedansB,
+            label: `Collet ${fr(distance(dedansA, dedansB), 1)} cm`,
+          },
+          {
+            from: dehorsA,
+            to: dehorsB,
+            label: `Extérieur ${fr(distance(dehorsA, dehorsB), 1)} cm`,
+          },
+          {
+            // Le nez est le bord avant de la marche, celui qu’on franchit :
+            // c’est l’arête du côté vers lequel on monte.
+            from: dehorsB,
+            to: dedansB,
+            label: `Nez ${fr(distance(dehorsB, dedansB), 1)} cm`,
+          },
+        ],
+      });
     }
     for (let i = 0; i <= 24; i += 1) {
       const angle = (i * Math.PI) / 48;
@@ -172,8 +213,13 @@ export function compute(inputs: CalculatorInputs): CalculatorOutput {
   for (let i = 0; i < second; i += 1)
     steps.push(rectangle(block + i * g, 0, g, width, g));
   if (left) {
-    for (const step of steps)
+    for (const step of steps) {
       step.points = step.points.map(([x, y]) => [extent.x - x, y]);
+      for (const cote of step.cotes ?? []) {
+        cote.from = [extent.x - cote.from[0], cote.from[1]];
+        cote.to = [extent.x - cote.to[0], cote.to[1]];
+      }
+    }
     for (const point of walkingLine) point[0] = extent.x - point[0];
   }
   const warnings: string[] = [];

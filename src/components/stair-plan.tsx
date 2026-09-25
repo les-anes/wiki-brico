@@ -1,8 +1,103 @@
 /* oxlint-disable jsx-a11y/prefer-tag-over-role -- Les deux vues sont des dessins SVG accessibles avec titre et description. */
+import { useState } from "react";
+
 import { fr } from "@/lib/calculators/format";
-import type { StairPlan } from "@/types";
+import type { StairDimension, StairPlan, StairStep } from "@/types";
+
+/**
+ * Libellé d’une marche : cotes annoncées aux lecteurs d’écran sur les marches
+ * du plan, et reprises dans le panneau de cotes.
+ */
+function stepLabel(
+  index: number,
+  step: Pick<StairStep, "length" | "landing">,
+  rise: number,
+) {
+  const top = fr((index + 1) * rise, 1);
+  return step.landing
+    ? `Palier — ${fr(step.length, 1)} cm de côté, dessus à ${top} cm du sol`
+    : `Marche ${index + 1} — marche de ${fr(rise, 2)} cm, giron de ${fr(step.length, 1)} cm, dessus à ${top} cm du sol`;
+}
+
+/**
+ * Cotes que le libellé de la marche ne donne pas déjà : collet, extérieur et
+ * nez des marches tournantes, dont la largeur varie d’un bord à l’autre.
+ */
+const cotesEnPlus = (step: StairStep) =>
+  (step.cotes ?? []).filter((cote) => !/^(Giron|Côté)/.test(cote.label));
+
+/**
+ * Ancre du numéro de marche. La ligne de foulée passe au milieu des marches :
+ * sur une marche rectangulaire, le numéro se décale d’un quart de largeur pour
+ * ne pas la croiser. Les tournantes gardent leur centre de gravité.
+ */
+function ancreNumero(step: StairStep): [number, number] {
+  const xs = step.points.map((point) => point[0]);
+  const ys = step.points.map((point) => point[1]);
+  const centre: [number, number] = [
+    xs.reduce((total, x) => total + x, 0) / xs.length,
+    ys.reduce((total, y) => total + y, 0) / ys.length,
+  ];
+  const rectangulaire = step.points.every(([x, y], index) => {
+    const [nx, ny] = step.points[(index + 1) % step.points.length];
+    return x === nx || y === ny;
+  });
+  if (!rectangulaire) return centre;
+  const largeur = Math.max(...xs) - Math.min(...xs);
+  const profondeur = Math.max(...ys) - Math.min(...ys);
+  return largeur >= profondeur
+    ? [Math.min(...xs) + largeur * 0.25, centre[1]]
+    : [centre[0], Math.min(...ys) + profondeur * 0.25];
+}
+
+/** Cote dessinée : trait de cote, traits de rappel et libellé à côté du trait. */
+function Cote({ cote, font }: { cote: StairDimension; font: number }) {
+  const [x1, y1] = cote.from;
+  const [x2, y2] = cote.to;
+  const dx = x2 - x1;
+  const dy = y2 - y1;
+  const longueur = Math.hypot(dx, dy) || 1;
+  const nx = -dy / longueur;
+  const ny = dx / longueur;
+  // Marque de cote : un trait oblique à 45° à chaque extrémité, comme sur une
+  // épure. Un trait perpendiculaire croisé formait une petite étoile, et deux
+  // cotes voisines se superposaient sur leur sommet commun.
+  const obliquite = Math.atan2(dy, dx) + Math.PI / 4;
+  const sx = Math.cos(obliquite) * font * 0.5;
+  const sy = Math.sin(obliquite) * font * 0.5;
+  // Sur un trait plus court que la police, la marque se transforme en pâté :
+  // on la remplace par un simple trait de cote.
+  const avecMarques = longueur > font;
+  // Le libellé se pose à côté du trait, jamais dessus : son halo de lisibilité
+  // masquerait le trait et ne laisserait que des morceaux.
+  const ecart = font * 1.3;
+  // Il quitte aussi le milieu du trait, où passe la ligne de foulée.
+  const long = 0.3;
+  return (
+    <g className="stair-cote">
+      <line x1={x1} y1={y1} x2={x2} y2={y2} />
+      {avecMarques && (
+        <>
+          <line x1={x1 - sx} y1={y1 - sy} x2={x1 + sx} y2={y1 + sy} />
+          <line x1={x2 - sx} y1={y2 - sy} x2={x2 + sx} y2={y2 + sy} />
+        </>
+      )}
+      <text
+        x={x1 + dx * long + nx * ecart}
+        y={y1 + dy * long + ny * ecart}
+        fontSize={font * 0.75}
+        textAnchor="middle"
+        dominantBaseline="central"
+        strokeWidth={font * 0.2}
+      >
+        {cote.label}
+      </text>
+    </g>
+  );
+}
 
 export function StairPlanView({ plan }: { plan: StairPlan }) {
+  const [selection, setSelection] = useState<number | null>(null);
   const { extent, steps, rise, height } = plan;
   const margin = Math.max(extent.x, extent.y) * 0.15;
   const font = Math.max(extent.x, extent.y) / 28;
@@ -22,6 +117,13 @@ export function StairPlanView({ plan }: { plan: StairPlan }) {
     return { x, y, length: step.length, landing: step.landing };
   });
   profile.push([developed, 0], [developed + plan.going, 0]);
+  const choix =
+    selection === null
+      ? null
+      : { rang: selection + 1, etape: steps[selection] };
+  const surfaceChoisie = choix ? surfaces[choix.rang - 1] : null;
+  const basculer = (index: number) =>
+    setSelection((courante) => (courante === index ? null : index));
   return (
     <div className="stair-views">
       <figure>
@@ -30,9 +132,9 @@ export function StairPlanView({ plan }: { plan: StairPlan }) {
           className="stair-svg"
           viewBox={`${-margin} ${-margin} ${extent.x + 2 * margin} ${extent.y + 2 * margin}`}
           role="img"
-          aria-labelledby="escalier-plan-titre escalier-plan-description"
+          aria-label={`Plan de l’escalier : ${fr(extent.y, 1)} sur ${fr(extent.x, 1)} cm`}
+          aria-describedby="escalier-plan-description"
         >
-          <title id="escalier-plan-titre">{`Plan de l’escalier : ${fr(extent.y, 1)} sur ${fr(extent.x, 1)} cm`}</title>
           <desc id="escalier-plan-description">{`${steps.length} surfaces numérotées dans le sens de montée. La ligne pointillée montre le passage ; le sol de l’étage constitue l’arrivée.`}</desc>
           <defs>
             <marker
@@ -48,18 +150,34 @@ export function StairPlanView({ plan }: { plan: StairPlan }) {
             </marker>
           </defs>
           {steps.map((step, index) => {
-            const x =
-              step.points.reduce((sum, point) => sum + point[0], 0) /
-              step.points.length;
-            const y =
-              step.points.reduce((sum, point) => sum + point[1], 0) /
-              step.points.length;
+            const [x, y] = ancreNumero(step);
+            const cotes = stepLabel(index, step, rise);
             return (
-              <g key={step.points.map((point) => point.join(",")).join(" ")}>
-                <polygon
-                  className={
-                    step.landing ? "stair-step is-landing" : "stair-step"
+              <g
+                key={step.points.map((point) => point.join(",")).join(" ")}
+                role="button"
+                tabIndex={0}
+                aria-label={[
+                  cotes,
+                  ...cotesEnPlus(step).map((cote) => cote.label),
+                ].join(" · ")}
+                aria-pressed={selection === index}
+                onClick={() => basculer(index)}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    basculer(index);
                   }
+                }}
+              >
+                <polygon
+                  className={[
+                    "stair-step",
+                    step.landing ? "is-landing" : "",
+                    selection === index ? "is-selected" : "",
+                  ]
+                    .filter(Boolean)
+                    .join(" ")}
                   points={step.points.map((point) => point.join(",")).join(" ")}
                 />
                 <text
@@ -75,6 +193,9 @@ export function StairPlanView({ plan }: { plan: StairPlan }) {
               </g>
             );
           })}
+          {choix?.etape.cotes?.map((cote) => (
+            <Cote key={cote.label} cote={cote} font={font} />
+          ))}
           <polyline
             className="stair-walk"
             points={plan.walkingLine.map((point) => point.join(",")).join(" ")}
@@ -103,8 +224,9 @@ export function StairPlanView({ plan }: { plan: StairPlan }) {
           </g>
         </svg>
         <p>
-          Marches numérotées dans le sens de montée. Les cotes excluent les
-          limons, les garde-corps et les dégagements.
+          Marches numérotées dans le sens de montée. Clique une marche pour lire
+          ses cotes sur le dessin. Les cotes excluent les limons, les
+          garde-corps et les dégagements.
         </p>
       </figure>
       <figure>
@@ -113,25 +235,45 @@ export function StairPlanView({ plan }: { plan: StairPlan }) {
           className="stair-svg"
           viewBox={`${-profileMargin} ${-profileMargin} ${developed + plan.going + profileMargin * 2} ${height + profileMargin * 2}`}
           role="img"
-          aria-labelledby="escalier-profil-titre escalier-profil-description"
+          aria-label={`${plan.risers} hauteurs de ${fr(rise, 2)} cm pour franchir ${fr(height, 1)} cm`}
+          aria-describedby="escalier-profil-description"
         >
-          <title id="escalier-profil-titre">{`${plan.risers} hauteurs de ${fr(rise, 2)} cm pour franchir ${fr(height, 1)} cm`}</title>
           <desc id="escalier-profil-description">
             Le profil suit la ligne de montée déroulée. Il ne représente ni la
             trémie ni la hauteur libre au-dessus des marches.
           </desc>
-          {surfaces.map((surface) => (
+          {surfaces.map((surface, index) => (
             <rect
               key={surface.x}
-              className={
-                surface.landing ? "stair-step is-landing" : "stair-step"
-              }
+              className={[
+                "stair-step",
+                surface.landing ? "is-landing" : "",
+                selection === index ? "is-selected" : "",
+              ]
+                .filter(Boolean)
+                .join(" ")}
               x={surface.x}
               y={surface.y}
               width={surface.length}
               height={height - surface.y}
             />
           ))}
+          {surfaceChoisie && (
+            <Cote
+              cote={{
+                from: [
+                  surfaceChoisie.x + surfaceChoisie.length / 2,
+                  surfaceChoisie.y,
+                ],
+                to: [
+                  surfaceChoisie.x + surfaceChoisie.length / 2,
+                  surfaceChoisie.y + rise,
+                ],
+                label: `hauteur ${fr(rise, 2)} cm`,
+              }}
+              font={profileFont}
+            />
+          )}
           <polyline
             className="stair-profile"
             points={profile.map((point) => point.join(",")).join(" ")}
@@ -160,6 +302,50 @@ export function StairPlanView({ plan }: { plan: StairPlan }) {
           trémie et l’échappée restent à vérifier sur le bâtiment.
         </p>
       </figure>
+      {choix && (
+        <div className="stair-cotes" aria-live="polite">
+          <p className="stair-cotes-titre">
+            {choix.etape.landing ? "Palier" : `Marche ${choix.rang}`} — cotes
+            exactes
+          </p>
+          <ul>
+            <li>Hauteur de marche : {fr(rise, 2)} cm</li>
+            <li>
+              Giron sur la ligne de foulée : {fr(choix.etape.length, 1)} cm
+            </li>
+            {cotesEnPlus(choix.etape).map((cote) => (
+              <li key={cote.label}>{cote.label}</li>
+            ))}
+            <li>Dessus à {fr(choix.rang * rise, 1)} cm du sol</li>
+          </ul>
+          {cotesEnPlus(choix.etape).length > 0 && (
+            <dl className="stair-lexique">
+              <div>
+                <dt>Collet</dt>
+                <dd>
+                  le bord intérieur de la marche, le plus étroit. C’est lui qui
+                  décide si le pied trouve où se poser.
+                </dd>
+              </div>
+              <div>
+                <dt>Extérieur</dt>
+                <dd>
+                  le bord opposé, le plus large, du côté du mur ou du limon
+                  extérieur.
+                </dd>
+              </div>
+              <div>
+                <dt>Nez</dt>
+                <dd>
+                  le bord avant de la marche, celui qu’on franchit ; sa longueur
+                  va du collet jusqu’à l’extérieur.
+                </dd>
+              </div>
+            </dl>
+          )}
+          <p>Clique une autre marche pour changer, ou la même pour effacer.</p>
+        </div>
+      )}
     </div>
   );
 }
