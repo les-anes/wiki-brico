@@ -1938,12 +1938,12 @@ main[tabindex="-1"]:focus {
 .stair-lexique dd {
   margin: 0;
 }
-.stair-cote line {
+.plan-cote line {
   stroke: #6c7265;
   stroke-width: 1;
   vector-effect: non-scaling-stroke;
 }
-.stair-cote text {
+.plan-cote text {
   fill: #283b20;
   font-weight: 600;
   paint-order: stroke;

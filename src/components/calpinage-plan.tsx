@@ -1,5 +1,6 @@
 import { Fragment, useState } from "react";
 
+import { Cote } from "@/components/plan-cote";
 import { hexagone } from "@/lib/calculators/calpinage";
 import { fr } from "@/lib/calculators/format";
 /* oxlint-disable jsx-a11y/prefer-tag-over-role -- Le plan de calpinage est une image composée, dessinée en SVG ; une balise img ne peut pas la porter. */
@@ -48,31 +49,37 @@ function cle(piece: CalpinagePiece): string {
 }
 
 /**
- * Encombrement du morceau visible, en centimètres : pour un hexagone, les
- * pointes coupées par le mur sont ramenées au bord, ce qui donne la largeur et
- * la hauteur du morceau tel qu’il sera posé.
+ * Encombrement du morceau visible, en mètres dans le repère de la pièce : pour
+ * un hexagone, les pointes coupées par le mur sont ramenées au bord, ce qui
+ * donne le cadre du morceau tel qu’il sera posé. C’est ce cadre que cotent le
+ * plan et le panneau de format.
  */
 function morceau(
   piece: CalpinagePiece,
   plan: CalpinagePlan,
-): { largeur: number; hauteur: number } {
+): { x: number; y: number; largeur: number; hauteur: number } {
   const etendue = (valeurs: number[], bord: number) => {
     const dedans = valeurs.map((valeur) => Math.min(Math.max(valeur, 0), bord));
-    return (Math.max(...dedans) - Math.min(...dedans)) * 100;
+    const min = Math.min(...dedans);
+    return { min, taille: Math.max(...dedans) - min };
   };
+  const horizontal = etendue(
+    piece.points
+      ? piece.points.map(([x]) => x)
+      : [piece.x, piece.x + piece.width],
+    plan.room.width,
+  );
+  const vertical = etendue(
+    piece.points
+      ? piece.points.map(([, y]) => y)
+      : [piece.y, piece.y + piece.height],
+    plan.room.height,
+  );
   return {
-    largeur: etendue(
-      piece.points
-        ? piece.points.map(([x]) => x)
-        : [piece.x, piece.x + piece.width],
-      plan.room.width,
-    ),
-    hauteur: etendue(
-      piece.points
-        ? piece.points.map(([, y]) => y)
-        : [piece.y, piece.y + piece.height],
-      plan.room.height,
-    ),
+    x: horizontal.min,
+    y: vertical.min,
+    largeur: horizontal.taille,
+    hauteur: vertical.taille,
   };
 }
 
@@ -114,6 +121,11 @@ export function CalpinagePlanView({ plan }: { plan: CalpinagePlan }) {
   // celle qui est ouverte dans le panneau de format.
   const miseEnAvant =
     plan.pieces.find((piece) => cle(piece) === (focus ?? selection)) ?? null;
+  // Cadre du morceau mis en avant, en mètres dans la pièce : c’est lui qui est
+  // coté sur le plan.
+  const cadre = miseEnAvant ? morceau(miseEnAvant, plan) : null;
+  /** Position d’une cote en mètres, ramenée aux coordonnées du dessin. */
+  const enPlan = (metres: number) => MARGIN + metres * 100;
   const basculer = (piece: CalpinagePiece) =>
     setSelection((courante) => (courante === cle(piece) ? null : cle(piece)));
 
@@ -258,7 +270,7 @@ export function CalpinagePlanView({ plan }: { plan: CalpinagePlan }) {
                   key={cle(piece)}
                   role="button"
                   tabIndex={0}
-                  aria-label={`Carreau à couper : ${fr(cotes.largeur, 1)} sur ${fr(cotes.hauteur, 1)} cm`}
+                  aria-label={`Carreau à couper : ${fr(cotes.largeur * 100, 1)} sur ${fr(cotes.hauteur * 100, 1)} cm`}
                   aria-pressed={selection === cle(piece)}
                   onClick={() => basculer(piece)}
                   onFocus={() => setFocus(cle(piece))}
@@ -286,6 +298,46 @@ export function CalpinagePlanView({ plan }: { plan: CalpinagePlan }) {
                 <g clipPath="url(#calpinage-selection)">
                   {formeDe(miseEnAvant, { strokeWidth: RING * 2 })}
                 </g>
+              </g>
+            )}
+            {/* Les deux cotes du morceau, écrites dans le carreau : mêmes traits
+                de cote que le giron d’une marche, avec une police plus petite et
+                un libellé couché quand le trait est vertical. */}
+            {cadre && (
+              <g className="calpinage-mesure">
+                <Cote
+                  cote={{
+                    // Tracée de droite à gauche : le libellé monte au-dessus du
+                    // trait, à l’écart de celui de la hauteur.
+                    from: [
+                      enPlan(cadre.x + cadre.largeur),
+                      enPlan(cadre.y + cadre.hauteur * 0.42),
+                    ],
+                    to: [
+                      enPlan(cadre.x),
+                      enPlan(cadre.y + cadre.hauteur * 0.42),
+                    ],
+                    label: `${fr(cadre.largeur * 100, 1)} cm`,
+                  }}
+                  font={fontSize * 0.5}
+                />
+                <Cote
+                  cote={{
+                    // Tracée du bas vers le haut : le libellé se pose alors à
+                    // droite du trait, donc à l’intérieur du carreau.
+                    from: [
+                      enPlan(cadre.x + cadre.largeur * 0.42),
+                      enPlan(cadre.y + cadre.hauteur),
+                    ],
+                    to: [
+                      enPlan(cadre.x + cadre.largeur * 0.42),
+                      enPlan(cadre.y),
+                    ],
+                    label: `${fr(cadre.hauteur * 100, 1)} cm`,
+                  }}
+                  font={fontSize * 0.5}
+                  rotation
+                />
               </g>
             )}
           </g>
@@ -341,14 +393,15 @@ export function CalpinagePlanView({ plan }: { plan: CalpinagePlan }) {
       {choisie && format && (
         <div className="calpinage-format" aria-live="polite">
           <p className="calpinage-format-titre">
-            Carreau à couper — {fr(format.largeur, 1)} × {fr(format.hauteur, 1)}{" "}
-            cm
+            Carreau à couper — {fr(format.largeur * 100, 1)} ×{" "}
+            {fr(format.hauteur * 100, 1)} cm
           </p>
           <ul>
             <li>
-              {fr(format.largeur, 1)} cm dans le sens de la longueur de la pièce
+              {fr(format.largeur * 100, 1)} cm dans le sens de la longueur de la
+              pièce
             </li>
-            <li>{fr(format.hauteur, 1)} cm dans le sens de la largeur</li>
+            <li>{fr(format.hauteur * 100, 1)} cm dans le sens de la largeur</li>
             <li>
               {hexagonale
                 ? `Carreau d’origine : hexagone de ${fr(plat, 1)} cm de plat à plat, ${fr(2 * rayon, 1)} cm de pointe à pointe`

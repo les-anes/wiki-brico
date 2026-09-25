@@ -728,6 +728,18 @@ try {
               ?.querySelector("polygon, rect"),
             "L’anneau de sélection est découpé au contour de la pièce",
           );
+          // Les deux cotes du morceau sont écrites dans le carreau.
+          const cotesPiece = [
+            ...document.querySelectorAll(".calpinage-svg .plan-cote text"),
+          ].map((texte) => texte.textContent);
+          const morceau = /Carreau à couper : ([\d,]+) sur ([\d,]+) cm/.exec(
+            piece.getAttribute("aria-label"),
+          );
+          assert.deepEqual(
+            cotesPiece.toSorted(),
+            [`${morceau[1]} cm`, `${morceau[2]} cm`].toSorted(),
+            `Cotes du morceau inattendues : ${cotesPiece.join(" | ")}`,
+          );
           assert.match(
             formatPiece.textContent,
             /Carreau à couper — [\d,]+ × [\d,]+ cm/,
@@ -751,6 +763,11 @@ try {
             document.querySelector(".calpinage-ring"),
             null,
             "Un second clic efface l’anneau",
+          );
+          assert.equal(
+            document.querySelectorAll(".calpinage-svg .plan-cote").length,
+            0,
+            "Un second clic efface les cotes du morceau",
           );
           // Forme hexagonale : le format rectangulaire disparaît, le plan se
           // dessine en polygones et le format rappelle le plat à plat.
@@ -873,7 +890,7 @@ try {
           );
           assert(
             document
-              .querySelector(".stair-cote text")
+              .querySelector(".plan-cote text")
               ?.textContent.startsWith("Giron"),
             "La cote est dessinée sur le plan",
           );
