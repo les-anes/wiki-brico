@@ -85,7 +85,7 @@ export function compute(inputs: CalculatorInputs): CalculatorOutput {
   const block = width + well;
   if (turning && (length < block || back < block))
     return invalid([
-      `Le tournant occupe ${fr(block, 1)} cm sur chaque axe : les deux reculements doivent au moins couvrir cette dimension.`,
+      `Le tournant occupe ${fr(block, 1)} cm sur chaque axe : les deux longueurs au sol doivent au moins couvrir cette dimension.`,
     ]);
   const candidates: Candidate[] = [];
   const minimum = imposed || Math.max(4, Math.ceil(height / 22));
@@ -111,7 +111,7 @@ export function compute(inputs: CalculatorInputs): CalculatorOutput {
           (length - block) / first,
           (back - block) / second,
         );
-        // Les reculements sont des maxima : inutile d’allonger le pas au-delà de la cible.
+        // Les longueurs au sol sont des maxima : inutile d’allonger le pas au-delà de la cible.
         const g = Math.min(available, 63 - 2 * h);
         if (g > 0)
           candidates.push({ n, first, second, turn: 1, g, score: score(h, g) });
@@ -139,7 +139,7 @@ export function compute(inputs: CalculatorInputs): CalculatorOutput {
   const selected = candidates[0];
   if (!selected)
     return invalid([
-      "Aucune disposition de ce modèle ne tient dans les reculements indiqués. Augmente l’espace disponible, modifie la largeur ou compare une autre forme.",
+      "Aucune disposition de ce modèle ne tient dans les longueurs au sol indiquées. Augmente l’espace disponible, modifie la largeur ou compare une autre forme.",
     ]);
   const { n, first, second, turn, g } = selected;
   const rise = height / n;

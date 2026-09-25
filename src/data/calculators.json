@@ -622,7 +622,7 @@
     {
       "slug": "escalier",
       "title": "Calculer un escalier droit ou quart tournant",
-      "description": "Compare les dimensions d’un escalier droit ou quart tournant : hauteurs, giron, reculements et relation de Blondel, avec plan coté et profil des marches.",
+      "description": "Compare les dimensions d’un escalier droit ou quart tournant : hauteurs, giron, longueurs au sol et relation de Blondel, avec plan coté et profil des marches.",
       "heading": "Quelle forme et quelles marches pour ton escalier ?",
       "introduction": "Mesure la hauteur entre les deux sols finis et l’espace disponible. Compare un escalier droit, un quart tournant avec palier ou des marches rayonnantes : le plan et le profil suivent tes dimensions.",
       "category": "structure",
@@ -660,25 +660,25 @@
         },
         {
           "name": "longueur",
-          "label": "Reculement disponible — branche de départ",
+          "label": "Longueur au sol — branche de départ",
           "unit": "cm",
           "type": "number",
           "default": 390,
           "min": 50,
           "max": 800,
           "step": 1,
-          "help": "Distance horizontale maximale, du premier nez à l’arrivée pour un escalier droit ; tournant compris pour un quart tournant."
+          "help": "Distance horizontale mesurée au sol, du premier nez à l’arrivée pour un escalier droit ; tournant compris pour un quart tournant. C’est ce que le métier appelle le reculement."
         },
         {
           "name": "retour",
-          "label": "Reculement disponible — branche d’arrivée",
+          "label": "Longueur au sol — branche d’arrivée",
           "unit": "cm",
           "type": "number",
           "default": 300,
           "min": 50,
           "max": 800,
           "step": 1,
-          "help": "Distance horizontale sur le second axe, tournant compris. Ce n’est pas la longueur de la trémie.",
+          "help": "Distance horizontale mesurée au sol sur le second axe, tournant compris. Ce n’est pas la longueur de la trémie.",
           "visibleWhen": {
             "field": "forme",
             "values": ["palier", "rayonnant"]
@@ -742,17 +742,17 @@
           "help": "0 : comparaison automatique. Sinon un entier de 4 à 36 ; le sol de l’étage forme l’arrivée."
         }
       ],
-      "method": "La hauteur d’une marche vaut H ÷ N, avec N entier. En droit, le giron vaut le reculement ÷ (N − 1). Avec palier carré, N − 2 marches sont réparties sur deux volées ; le giron commun est limité par la place disponible dans chaque branche. Avec marches rayonnantes, le quart de cercle au milieu de la largeur utile est divisé en 2 à 8 girons égaux, prolongés dans les deux volées droites : ces marches tournent autour d’un vide carré, le jour, laissé dans l’angle intérieur. En automatique, l’outil compare les géométries possibles : hauteurs de 16 à 20 cm, girons de 24 à 32 cm et relation 2h + g de 60 à 64 cm sont des repères de comparaison, avec une cible de 63 cm. Ce sont des critères de ce simulateur, pas une attestation de conformité.",
+      "method": "La hauteur d’une marche vaut H ÷ N, avec N entier. En droit, le giron vaut la longueur au sol divisée par (N − 1). Avec palier carré, N − 2 marches sont réparties sur deux volées ; le giron commun est limité par la place disponible dans chaque branche. Avec marches rayonnantes, le quart de cercle au milieu de la largeur utile est divisé en 2 à 8 girons égaux, prolongés dans les deux volées droites : ces marches tournent autour d’un vide carré, le jour, laissé dans l’angle intérieur. En automatique, l’outil compare les géométries possibles : hauteurs de 16 à 20 cm, girons de 24 à 32 cm et relation 2h + g de 60 à 64 cm sont des repères de comparaison, avec une cible de 63 cm. Ce sont des critères de ce simulateur, pas une attestation de conformité.",
       "assumptions": [
         "Toutes les hauteurs sont identiques ; l’étage supérieur constitue la dernière arrivée.",
-        "Les reculements sont des maxima : une branche peut être plus courte que l’espace saisi.",
+        "Les longueurs au sol sont des maxima : une branche peut être plus courte que l’espace saisi.",
         "Le palier est carré, de côté égal à la largeur utile. Il remplace une marche intermédiaire.",
         "Le modèle rayonnant utilise un jour carré et une ligne de foulée au milieu de la largeur utile ; il ne calcule pas des marches balancées."
       ],
       "limits": [
         "Étude géométrique préliminaire : ne fabrique pas un escalier à partir de ce seul dessin.",
         "Trémie, échappée au-dessus des marches, garde-corps, sections, appuis et fixations restent à vérifier et ne sont pas dimensionnés.",
-        "Les reculements excluent les dégagements nécessaires au départ et à l’arrivée, ainsi que l’épaisseur des limons et des finitions.",
+        "Les longueurs au sol excluent les dégagements nécessaires au départ et à l’arrivée, ainsi que l’épaisseur des limons et des finitions.",
         "Une bonne valeur de Blondel ne suffit pas à valider un escalier. Le collet des marches rayonnantes et les règles propres à l’usage doivent être vérifiés sur une épure."
       ],
       "reference": {
