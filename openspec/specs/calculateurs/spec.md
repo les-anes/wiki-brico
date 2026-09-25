@@ -74,7 +74,7 @@ Chaque outil SHALL afficher le résultat principal utile au projet et les valeur
 
 ### Requirement: Calpinage dessiné
 
-L’outil de calpinage SHALL dessiner le plan de la surface à couvrir en SVG, à partir des dimensions de la surface, du format de l’élément à poser, de la largeur de joint et du sens de pose. Le dessin SHALL distinguer les éléments entiers des éléments coupés et coter la bande de rive de chaque côté.
+L’outil de calpinage SHALL dessiner le plan de la surface à couvrir en SVG, à partir des dimensions de la surface, de la forme et du format de l’élément à poser, de la largeur de joint et du sens de pose. Il SHALL accepter un carreau carré ou rectangle, et un carreau hexagonal saisi par son plat à plat, posé en nid d’abeille à plats horizontaux. Le dessin SHALL distinguer les éléments entiers des éléments coupés et coter la bande de rive de chaque côté.
 
 #### Scenario: Dessin à la saisie
 
@@ -83,13 +83,23 @@ L’outil de calpinage SHALL dessiner le plan de la surface à couvrir en SVG, �
 
 #### Scenario: Bande de rive trop faible
 
-- **WHEN** une bande de rive tombe sous un demi-carreau dans un sens
+- **WHEN** une bande de rive tombe sous un demi-carreau dans un sens, pour un carreau carré ou rectangle
 - **THEN** l’outil l’annonce, donne sa largeur, et indique de décaler le départ d’un demi-carreau ou de centrer la pose.
 
 #### Scenario: Décalage de rang
 
-- **WHEN** le visiteur choisit une pose décalée
+- **WHEN** le visiteur choisit une pose décalée pour un carreau carré ou rectangle
 - **THEN** le plan montre le décalage d’un demi-élément entre deux rangs et la page compte les éléments supplémentaires qu’il demande.
+
+#### Scenario: Pose hexagonale
+
+- **WHEN** le visiteur choisit un carreau hexagonal
+- **THEN** la page demande le plat à plat, masque le sens de pose, dessine le nid d’abeille, compte un carreau par pièce posée — chutes non réemployées — et rappelle que le mur recoupe la dentelure du motif, donc que des coupes fines subsistent quel que soit le départ.
+
+#### Scenario: Format d’une pièce coupée
+
+- **WHEN** le visiteur clique ou active une pièce à couper dans le plan
+- **THEN** la page affiche son encombrement dans les deux sens de la pièce, rappelle le format du carreau d’origine, et efface cet affichage au second clic.
 
 ### Requirement: Méthode, limites et références
 
@@ -135,7 +145,7 @@ Le hub des calculateurs SHALL être atteignable depuis l’accueil par un lien i
 
 ### Requirement: Escalier illustré
 
-Le calculateur `/calculateurs/escalier/` SHALL comparer la géométrie d’un escalier droit et d’un quart tournant avec palier ou marches rayonnantes. Il SHALL prendre en compte la hauteur de sol fini à sol fini, la largeur utile, les reculements disponibles, le sens du tournant et un nombre entier de hauteurs automatique ou imposé. Il SHALL afficher hauteur de marche, giron, nombre de hauteurs et de marches, pente, relation de Blondel et emprise utilisée. Un plan coté et un profil déroulé SHALL être pré-rendus en SVG et mis à jour à la saisie.
+Le calculateur `/calculateurs/escalier/` SHALL comparer la géométrie d’un escalier droit, d’un quart tournant et d’un demi-tour (U), chacun avec palier ou marches rayonnantes. Il SHALL prendre en compte la hauteur à franchir, la largeur utile, les reculements, le sens du tournant, le jour et le nombre de hauteurs. Il SHALL afficher hauteur de marche, giron, nombre de marches, pente, relation de Blondel et emprise utilisée. Un plan coté et un profil déroulé SHALL être pré-rendus en SVG.
 
 #### Scenario: Escalier droit
 - **WHEN** la hauteur vaut 280 cm, le reculement 390 cm et le nombre de hauteurs imposé 16
@@ -144,6 +154,10 @@ Le calculateur `/calculateurs/escalier/` SHALL comparer la géométrie d’un es
 #### Scenario: Quart tournant
 - **WHEN** un quart tournant est sélectionné
 - **THEN** les deux branches respectent leurs reculements, le palier ou le jour intérieur est explicite, le plan représente le sens de montée choisi et les cotes utilisées sont distinctes de l’espace disponible.
+
+#### Scenario: Demi-tour
+- **WHEN** un demi-tour est sélectionné
+- **THEN** les deux volées sont parallèles, de même largeur, séparées par le jour, la largeur totale vaut deux largeurs utiles plus le jour, le palier couvre toute cette largeur ou les tournantes balaient un demi-cercle entre les deux volées jusqu’aux coins du fond, et la ligne de foulée part et arrive sur le même bord.
 
 #### Scenario: Limites géométriques
 - **WHEN** aucune disposition du modèle ne tient dans l’espace saisi

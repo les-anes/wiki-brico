@@ -190,7 +190,8 @@ export function CalculatorPage({ slug }: { slug: string }) {
               <span className="legend-swatch" /> Carreau entier
             </li>
             <li>
-              <span className="legend-swatch is-cut" /> Carreau coupé
+              <span className="legend-swatch is-cut" /> Carreau coupé, clique
+              pour son format
             </li>
           </ul>
         </section>

@@ -132,6 +132,10 @@ interface CalpinageEdges {
 export interface CalpinagePlan {
   room: { width: number; height: number };
   tile: { width: number; height: number };
+  /** Carré ou rectangle, ou nid d’abeille. */
+  forme: "carre" | "hexagone";
+  /** Plat à plat d’un carreau hexagonal, en mètres. */
+  flat?: number;
   joint: number;
   /** Pièces posées, en mètres, dans le repère de la pièce. Vide si l’aperçu est simplifié. */
   pieces: CalpinagePiece[];
@@ -150,6 +154,8 @@ export interface CalpinagePiece {
   width: number;
   height: number;
   cut: boolean;
+  /** Sommets de la pièce, pour les formats non rectangulaires (hexagone). */
+  points?: [number, number][];
 }
 
 export interface CalculatorOutput {
@@ -176,7 +182,7 @@ export interface StairDimension {
 }
 
 export interface StairPlan {
-  kind: "droit" | "palier" | "rayonnant";
+  kind: "droit" | "palier" | "rayonnant" | "u-palier" | "u-rayonnant";
   left: boolean;
   height: number;
   rise: number;

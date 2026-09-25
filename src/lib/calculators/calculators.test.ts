@@ -199,6 +199,72 @@ test("le calpinage bascule en aperçu simplifié sur une pièce fine", () => {
   assert(output.warnings.some((w) => w.includes("Aperçu simplifié")));
 });
 
+test("le calpinage hexagonal pose un nid d’abeille sans réemployer les chutes", () => {
+  const output = run("calpinage", {
+    forme: "hexagone",
+    carreauHexagone: 20,
+    joint: 3,
+    depart: "centre",
+    marge: 10,
+  });
+  const plan = output.plan!;
+  assert.equal(plan.forme, "hexagone");
+  assert.equal(plan.flat, 0.2);
+  assert.equal(plan.tile.width, 0);
+  assert.equal(plan.tile.height, 0);
+  assert(
+    plan.pieces.every((piece) => piece.points?.length === 6),
+    "chaque pièce du plan est un hexagone",
+  );
+  assert(
+    plan.pieces.some((piece) => piece.cut),
+    "le mur recoupe forcément le nid d’abeille",
+  );
+  assert(
+    !/de 0 /.test(
+      output.values.find((valeur) => valeur.label === "Rangées")?.hint ?? "",
+    ),
+    "aucune rangée vide n’est comptée",
+  );
+  assert.equal(
+    output.values.find((valeur) => valeur.label === "Pièces posées")?.value,
+    fr(plan.pieces.length),
+    "une pièce coupée consomme un carreau entier",
+  );
+  assert.equal(
+    output.headline,
+    "427 carreaux hexagonaux de 20 cm de plat à plat",
+  );
+  assert.equal(
+    output.values.find((valeur) => valeur.label === "Carreau hexagonal")?.hint,
+    `Soit ${fr((2 * 0.2 * 100) / Math.sqrt(3), 1)} cm de pointe à pointe et ${fr((0.2 * 100) / Math.sqrt(3), 1)} cm de côté.`,
+  );
+  assert.equal(
+    output.warnings.some((warning) => warning.includes("bande de rive")),
+    false,
+    "l’alerte de bande de rive étroite ne s’applique pas au nid d’abeille",
+  );
+  // Deux carreaux voisins du nid d’abeille ont leurs centres à un plat plus le
+  // joint : en dessous, le motif se chevauche.
+  const centres = plan.pieces.map((piece) => {
+    const xs = piece.points!.map(([x]) => x);
+    const ys = piece.points!.map(([, y]) => y);
+    return [
+      (Math.min(...xs) + Math.max(...xs)) / 2,
+      (Math.min(...ys) + Math.max(...ys)) / 2,
+    ] as const;
+  });
+  const plusProche = Math.min(
+    ...centres.flatMap(([x1, y1], index) =>
+      centres.slice(index + 1).map(([x2, y2]) => Math.hypot(x1 - x2, y1 - y2)),
+    ),
+  );
+  assert(
+    Math.abs(plusProche - 0.203) < 1e-3,
+    `pas du nid d’abeille inattendu : ${plusProche}`,
+  );
+});
+
 test("une pièce plus courte qu’un carreau reste calculable", () => {
   const output = run("calpinage", {
     longueur: 0.5,
@@ -366,6 +432,73 @@ test("les marches tournantes exposent leur collet, leur extérieur et leur nez",
     palier.steps.find((etape) => etape.landing)?.cotes?.[0].label,
     "Côté 90,0 cm",
   );
+});
+
+test("un demi-tour pose deux volées parallèles de part et d’autre du jour", () => {
+  const palier = run("escalier", {
+    forme: "u-palier",
+    hauteurs: 17,
+  }).stairPlan!;
+  assert.equal(palier.kind, "u-palier");
+  assert.equal(palier.steps.length, palier.risers - 1);
+  assert.equal(palier.steps.filter((step) => step.landing).length, 1);
+  // Largeur totale : deux volées égales plus le jour qui les sépare.
+  assert.equal(palier.extent.x, 2 * palier.width + 10);
+  // La ligne de foulée part et arrive sur le même bord, de part et d’autre du jour.
+  const depart = palier.walkingLine[0];
+  const arrivee = palier.walkingLine.at(-1)!;
+  assert.equal(depart[1], arrivee[1]);
+  assert.equal(depart[0], palier.width / 2);
+  assert.equal(arrivee[0], palier.extent.x - palier.width / 2);
+  // La volée de départ monte côté mur, la volée d’arrivée de l’autre côté du jour.
+  const premiere = palier.steps[0].points;
+  const derniere = palier.steps.at(-1)!.points;
+  assert.equal(Math.max(...premiere.map(([x]) => x)), palier.width);
+  assert.equal(
+    Math.min(...derniere.map(([x]) => x)),
+    palier.extent.x - palier.width,
+  );
+  // Le palier occupe toute la largeur du U, sur la profondeur d’une volée.
+  const landing = palier.steps.find((step) => step.landing)!;
+  assert.equal(landing.cotes?.[0].label, "Côté 90,0 cm");
+  assert.equal(Math.max(...landing.points.map(([x]) => x)), palier.extent.x);
+  assert.equal(Math.max(...landing.points.map(([, y]) => y)), palier.width);
+  // Sans la profondeur du tournant, aucune disposition ne tient.
+  assert.equal(
+    run("escalier", { forme: "u-palier", longueur: 80 }).stairPlan,
+    undefined,
+  );
+
+  const rayonnant = run("escalier", { forme: "u-rayonnant" }).stairPlan!;
+  const cote = (etape: { cotes?: { label: string }[] }, nom: string) =>
+    Number(
+      /([\d]+,[\d]+)/
+        .exec(
+          etape.cotes!.find((entry) => entry.label.startsWith(nom))!.label,
+        )![1]
+        .replace(",", "."),
+    );
+  const tournantes = rayonnant.steps.filter((etape) =>
+    (etape.cotes ?? []).some((entry) => entry.label.startsWith("Collet")),
+  );
+  assert(
+    tournantes.length >= 2,
+    "Le demi-tour rayonnant comporte des tournantes",
+  );
+  const sommets = tournantes.flatMap((etape) => etape.points);
+  assert(
+    sommets.some(([x, y]) => x === 0 && y === 0),
+    "Le tournant va jusqu’au coin du fond",
+  );
+  assert(
+    sommets.some(([x, y]) => x === rayonnant.extent.x && y === 0),
+    "Les deux coins du fond sont couverts",
+  );
+  for (const etape of tournantes) {
+    assert(cote(etape, "Collet") < etape.length);
+    assert(cote(etape, "Extérieur") > etape.length);
+    assert(cote(etape, "Nez") > etape.length);
+  }
 });
 
 test("un escalier impossible ne produit aucun plan et Blondel seul ne valide pas le confort", () => {

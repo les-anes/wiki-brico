@@ -701,6 +701,108 @@ try {
             document.querySelector(".calpinage-svg"),
             "Le plan reste dessiné après la saisie",
           );
+          // Une pièce à couper se clique : son format utile s’affiche.
+          const piece = document.querySelector(
+            '.calpinage-svg g[role="button"]',
+          );
+          assert(piece, "Les carreaux à couper sont cliquables");
+          assert.match(
+            piece.getAttribute("aria-label"),
+            /^Carreau à couper : [\d,]+ sur [\d,]+ cm$/,
+          );
+          assert.equal(
+            piece.getAttribute("aria-pressed"),
+            "false",
+            "Aucune pièce n’est sélectionnée au départ",
+          );
+          await act(async () => {
+            piece.dispatchEvent(
+              new dom.window.MouseEvent("click", { bubbles: true }),
+            );
+          });
+          const formatPiece = document.querySelector(".calpinage-format");
+          assert(formatPiece, "Le clic affiche le format de la pièce");
+          assert(
+            document
+              .querySelector(".calpinage-ring")
+              ?.querySelector("polygon, rect"),
+            "L’anneau de sélection est découpé au contour de la pièce",
+          );
+          assert.match(
+            formatPiece.textContent,
+            /Carreau à couper — [\d,]+ × [\d,]+ cm/,
+          );
+          assert.match(
+            formatPiece.textContent,
+            /Carreau d’origine : 30,0 × 30,0 cm/,
+          );
+          assert.equal(piece.getAttribute("aria-pressed"), "true");
+          await act(async () => {
+            piece.dispatchEvent(
+              new dom.window.MouseEvent("click", { bubbles: true }),
+            );
+          });
+          assert.equal(
+            document.querySelector(".calpinage-format"),
+            null,
+            "Un second clic efface le format",
+          );
+          assert.equal(
+            document.querySelector(".calpinage-ring"),
+            null,
+            "Un second clic efface l’anneau",
+          );
+          // Forme hexagonale : le format rectangulaire disparaît, le plan se
+          // dessine en polygones et le format rappelle le plat à plat.
+          const forme = document.querySelector("#champ-forme");
+          await act(async () => {
+            forme.value = "hexagone";
+            forme.dispatchEvent(
+              new dom.window.Event("change", { bubbles: true }),
+            );
+          });
+          assert(
+            document.querySelector("#champ-carreauHexagone"),
+            "L’hexagone expose son plat à plat",
+          );
+          assert.equal(
+            document.querySelector("#champ-carreauLargeur"),
+            null,
+            "Le format rectangulaire disparaît",
+          );
+          assert.equal(
+            document.querySelector("#champ-pose"),
+            null,
+            "Le nid d’abeille n’a pas de sens de pose à choisir",
+          );
+          assert(
+            document
+              .querySelector(".result-headline")
+              .textContent.includes(
+                "carreaux hexagonaux de 20 cm de plat à plat",
+              ),
+            `Titre inattendu : ${document.querySelector(".result-headline").textContent}`,
+          );
+          assert.equal(
+            document.querySelectorAll(".calpinage-svg polygon").length > 0,
+            true,
+            "Le plan dessine des hexagones",
+          );
+          const pieceHexagonale = document.querySelector(
+            '.calpinage-svg g[role="button"] polygon',
+          );
+          assert(pieceHexagonale, "Les hexagones à couper sont cliquables");
+          await act(async () => {
+            pieceHexagonale.dispatchEvent(
+              new dom.window.MouseEvent("click", { bubbles: true }),
+            );
+          });
+          assert(
+            document
+              .querySelector(".calpinage-format")
+              ?.textContent.includes("hexagone de 20,0 cm de plat à plat"),
+            "Le format rappelle le carreau hexagonal d’origine",
+          );
           await act(async () => {
             setter.call(input, "");
             input.dispatchEvent(
@@ -766,6 +868,10 @@ try {
             "Le clic fige les cotes de la marche",
           );
           assert(
+            document.querySelector(".stair-ring polygon"),
+            "La marche sélectionnée porte un anneau intérieur",
+          );
+          assert(
             document
               .querySelector(".stair-cote text")
               ?.textContent.startsWith("Giron"),
@@ -781,6 +887,11 @@ try {
             null,
             "Un second clic efface les cotes",
           );
+          assert.equal(
+            document.querySelector(".stair-ring"),
+            null,
+            "Un second clic efface l’anneau",
+          );
           const before = document
             .querySelector(".stair-walk")
             .getAttribute("points");
@@ -795,6 +906,62 @@ try {
             document.querySelector(".stair-walk").getAttribute("points"),
             before,
             "Le plan reflète le sens du tournant",
+          );
+          // Demi-tour : deux volées parallèles, un jour entre elles et des
+          // tournantes qui vont chercher les deux coins du fond.
+          await act(async () => {
+            shape.value = "u-rayonnant";
+            shape.dispatchEvent(
+              new dom.window.Event("change", { bubbles: true }),
+            );
+          });
+          assert(
+            document.querySelector("#champ-jour"),
+            "Le demi-tour expose le jour entre les volées",
+          );
+          const etiquettesU = [
+            ...document.querySelectorAll(".stair-views figure g[aria-label]"),
+          ].map((groupe) => groupe.getAttribute("aria-label"));
+          assert(
+            etiquettesU.some(
+              (etiquette) =>
+                etiquette.includes("Collet") &&
+                etiquette.includes("Extérieur") &&
+                etiquette.includes("Nez"),
+            ),
+            `Aucune marche tournante annoncée : ${etiquettesU.slice(0, 3).join(" | ")}`,
+          );
+          const sommets = [...document.querySelectorAll("polygon.stair-step")]
+            .map((etape) => etape.getAttribute("points"))
+            .join(" ")
+            .split(" ");
+          const largeur = Math.max(
+            ...sommets.map((sommet) => Number(sommet.split(",")[0])),
+          );
+          assert(
+            sommets.includes("0,0") && sommets.includes(`${largeur},0`),
+            "Les tournantes couvrent les deux coins du fond",
+          );
+          const foulee = document
+            .querySelector(".stair-walk")
+            .getAttribute("points")
+            .split(" ")
+            .map((point) => point.split(",").map(Number));
+          assert.equal(
+            foulee[0][1],
+            foulee.at(-1)[1],
+            "Les deux volées repartent du même bord",
+          );
+          assert(
+            Math.abs(foulee[0][0] + foulee.at(-1)[0] - largeur) < 1e-6,
+            `Ligne de foulée au milieu de chaque volée : ${foulee[0][0]} et ${foulee.at(-1)[0]} pour ${largeur} cm`,
+          );
+          const etage = [
+            ...document.querySelectorAll(".stair-label text"),
+          ].find((texte) => texte.textContent === "Étage");
+          assert(
+            Number(etage.getAttribute("y")) > 0,
+            "Le libellé d’étage du demi-tour passe sous le plan",
           );
           await act(async () => {
             dom.window.history.pushState(

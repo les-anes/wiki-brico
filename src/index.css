@@ -1974,7 +1974,17 @@ main[tabindex="-1"]:focus {
 }
 .stair-step.is-selected {
   fill: #b7cfa3;
-  stroke-width: 2;
+}
+/* Même anneau intérieur que le calepinage, pour la marche ouverte : épaisseur
+   doublée puis découpée, ce qui laisse une bande de 1,6 cm à l’intérieur. */
+.stair-ring {
+  fill: none;
+  stroke: #96501d;
+  stroke-width: 3.2;
+  pointer-events: none;
+}
+.stair-svg g[role="button"] {
+  outline: none;
 }
 .stair-number,
 .stair-label {
@@ -2023,6 +2033,46 @@ main[tabindex="-1"]:focus {
 }
 .calpinage-piece.is-cut {
   fill: #f6e7c8;
+}
+.calpinage-piece.is-cut:hover {
+  fill: #eedaae;
+}
+.calpinage-piece.is-selected {
+  fill: #e2c37f;
+}
+/* Anneau découpé au contour de la pièce : même épaisseur sur les quatre côtés,
+   y compris le long des murs où un trait centré serait rogné de moitié. */
+.calpinage-ring {
+  fill: none;
+  stroke: #96501d;
+  pointer-events: none;
+}
+/* Le navigateur entoure le groupe focalisé d’un anneau bleu arrondi qui bave
+   hors du carreau. On le retire : l’indication de focus passe par .calpinage-ring. */
+.calpinage-svg g[role="button"] {
+  outline: none;
+}
+.calpinage-format {
+  margin-top: 14px;
+  padding: 14px 18px;
+  border: 1px solid #dfe4d6;
+  border-radius: 10px;
+  background: #fdfcf8;
+}
+.calpinage-format-titre {
+  font-weight: 700;
+  margin: 0;
+}
+.calpinage-format ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.calpinage-format p {
+  font-size: 0.85rem;
+  color: #6c7265;
+  margin: 10px 0 0;
 }
 .calpinage-band {
   fill: #f6e7c8;

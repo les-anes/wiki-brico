@@ -474,7 +474,7 @@
     {
       "slug": "calpinage",
       "title": "Calepinage : dessiner la pose d’un carrelage",
-      "description": "Dessine le calepinage d’une pièce rectangulaire à partir des dimensions de la pièce et du format des carreaux, compte les carreaux entiers et coupés, et signale les bandes de rive trop étroites.",
+      "description": "Dessine le calepinage d’une pièce rectangulaire à partir de ses dimensions et du format des carreaux — carré, rectangle ou hexagone —, compte les carreaux entiers et coupés, et signale les bandes de rive trop étroites.",
       "heading": "Où tombent les coupes de ton carrelage ?",
       "introduction": "Le calepinage se décide avant d’encoller : quelques centimètres de décalage changent la largeur des coupes le long des murs. Donne les dimensions de la pièce et le format des carreaux, le plan se dessine et les coupes se comptent.",
       "category": "finitions",
@@ -500,6 +500,16 @@
           "step": 0.1
         },
         {
+          "name": "forme",
+          "label": "Forme du carreau",
+          "type": "select",
+          "default": "carre",
+          "options": [
+            { "value": "carre", "label": "Carré ou rectangle" },
+            { "value": "hexagone", "label": "Hexagone" }
+          ]
+        },
+        {
           "name": "carreauLargeur",
           "label": "Largeur du carreau",
           "type": "number",
@@ -507,7 +517,8 @@
           "default": 30,
           "min": 2.5,
           "max": 120,
-          "step": 0.5
+          "step": 0.5,
+          "visibleWhen": { "field": "forme", "values": ["carre"] }
         },
         {
           "name": "carreauLongueur",
@@ -518,7 +529,20 @@
           "default": 30,
           "min": 2.5,
           "max": 120,
-          "step": 0.5
+          "step": 0.5,
+          "visibleWhen": { "field": "forme", "values": ["carre"] }
+        },
+        {
+          "name": "carreauHexagone",
+          "label": "Carreau hexagonal — plat à plat",
+          "help": "La cote donnée sur la boîte : un hexagone de 20 cm de plat à plat mesure 23,1 cm de pointe à pointe. Les plats sont posés à l’horizontale.",
+          "type": "number",
+          "unit": "cm",
+          "default": 20,
+          "min": 2.5,
+          "max": 60,
+          "step": 0.5,
+          "visibleWhen": { "field": "forme", "values": ["hexagone"] }
         },
         {
           "name": "joint",
@@ -536,6 +560,7 @@
           "label": "Sens de pose",
           "type": "select",
           "default": "droite",
+          "visibleWhen": { "field": "forme", "values": ["carre"] },
           "options": [
             {
               "value": "droite",
@@ -587,16 +612,18 @@
           "help": "Matière perdue entre deux coupes réemployées dans un même carreau."
         }
       ],
-      "method": "Le plan avance par pas égaux au carreau plus le joint sur chaque axe, en conservant même les coupes très fines. Le départ centré répartit le dépassement entre les deux rives. La pose décalée avance une rangée sur deux d’un demi-pas. Deux coupes de rive d’une même rangée sont comptées dans un seul carreau seulement si leur somme et le trait de coupe y tiennent. Aucun réemploi entre rangées n’est supposé ; le total est majoré de la marge saisie.",
+      "method": "Le plan avance par pas égaux au carreau plus le joint sur chaque axe, en conservant même les coupes très fines. En hexagonal, le motif est un nid d’abeille à plats horizontaux : les rangées avancent d’un plat à plat plus le joint, chaque rangée est décalée d’un demi-pas, et les cotes se lisent du plat à plat. Le départ centré répartit le dépassement entre les deux rives. La pose décalée avance une rangée sur deux d’un demi-pas. Deux coupes de rive d’une même rangée sont comptées dans un seul carreau seulement si leur somme et le trait de coupe y tiennent. Aucun réemploi entre rangées n’est supposé ; le total est majoré de la marge saisie.",
       "assumptions": [
         "Pièce rectangulaire, murs droits et parallèles.",
-        "Pose droite ou décalée d’un demi-carreau, dans le sens de la longueur de la pièce.",
+        "Pose droite ou décalée d’un demi-carreau dans le sens de la longueur pour un carreau carré ou rectangle ; nid d’abeille à plats horizontaux pour un hexagone, sans choix de calage.",
+        "Carreau hexagonal saisi par son plat à plat, sans joint de dilatation périphérique compté dans le calepinage.",
         "Joint de largeur constante, sans joint de dilatation périphérique compté dans le calepinage.",
         "Marge de 10 % reprise de la fiche de pose, pour les coupes et la casse.",
         "Trait de coupe de 3 mm par défaut, modifiable selon l’outil de coupe."
       ],
       "limits": [
         "La pose diagonale, les pièces en L, les motifs et les plinthes ne sont pas traités.",
+        "Le compte hexagonal n’optimise aucun réemploi : une pièce coupée, même une pointe, consomme un carreau entier.",
         "Le plan suppose que la pièce est d’équerre : un mur qui fuit se rattrape en traçant l’axe principal au cordeau, comme dans la fiche de pose.",
         "Au-delà de 2 000 pièces, l’aperçu passe en trame simplifiée pour ne pas alourdir la page ; le comptage estimatif reste identique au mode détaillé.",
         "Le joint de dilatation périphérique et la planéité du support se traitent avant la pose, pas dans le calepinage.",
@@ -621,10 +648,10 @@
     },
     {
       "slug": "escalier",
-      "title": "Calculer un escalier droit ou quart tournant",
-      "description": "Compare les dimensions d’un escalier droit ou quart tournant : hauteurs, giron, longueurs au sol et relation de Blondel, avec plan coté et profil des marches.",
+      "title": "Calculer un escalier droit, quart tournant ou demi-tour",
+      "description": "Compare les dimensions d’un escalier droit, quart tournant ou demi-tour : hauteurs, giron, longueurs au sol et relation de Blondel, avec plan coté et profil des marches.",
       "heading": "Quelle forme et quelles marches pour ton escalier ?",
-      "introduction": "Mesure la hauteur entre les deux sols finis et l’espace disponible. Compare un escalier droit, un quart tournant avec palier ou des marches rayonnantes : le plan et le profil suivent tes dimensions.",
+      "introduction": "Mesure la hauteur entre les deux sols finis et l’espace disponible. Compare un escalier droit, un quart tournant, un demi-tour, avec palier ou marches rayonnantes : le plan et le profil suivent tes dimensions.",
       "category": "structure",
       "fields": [
         {
@@ -644,6 +671,14 @@
             {
               "value": "rayonnant",
               "label": "Quart tournant à marches rayonnantes"
+            },
+            {
+              "value": "u-palier",
+              "label": "Demi-tour (U) avec palier"
+            },
+            {
+              "value": "u-rayonnant",
+              "label": "Demi-tour (U) à marches rayonnantes"
             }
           ]
         },
@@ -667,7 +702,7 @@
           "min": 50,
           "max": 800,
           "step": 1,
-          "help": "Distance horizontale mesurée au sol, du premier nez à l’arrivée pour un escalier droit ; tournant compris pour un quart tournant. C’est ce que le métier appelle le reculement."
+          "help": "Distance horizontale mesurée au sol, du premier nez à l’arrivée pour un escalier droit ; tournant compris pour un quart tournant, profondeur totale du U pour un demi-tour. C’est ce que le métier appelle le reculement."
         },
         {
           "name": "retour",
@@ -678,10 +713,10 @@
           "min": 50,
           "max": 800,
           "step": 1,
-          "help": "Distance horizontale mesurée au sol sur le second axe, tournant compris. Ce n’est pas la longueur de la trémie.",
+          "help": "Distance horizontale mesurée au sol sur le second axe, tournant compris. Dans un demi-tour, les deux volées sont parallèles : c’est la profondeur disponible pour la volée d’arrivée. Ce n’est pas la longueur de la trémie.",
           "visibleWhen": {
             "field": "forme",
-            "values": ["palier", "rayonnant"]
+            "values": ["palier", "rayonnant", "u-palier", "u-rayonnant"]
           }
         },
         {
@@ -697,22 +732,22 @@
         },
         {
           "name": "jour",
-          "label": "Vide carré dans l’angle du tournant",
+          "label": "Vide intérieur du tournant (jour)",
           "unit": "cm",
           "type": "number",
           "default": 10,
           "min": 5,
           "max": 60,
           "step": 1,
-          "help": "Le « jour », c’est le vide carré laissé dans l’angle intérieur du tournant : les marches tournantes tournent autour, sans y descendre. Mesure son côté sur place — souvent l’épaisseur du poteau ou du limon intérieur, ou le dégagement entre les deux volées. Si tes marches se rejoignent dans l’angle (marches balancées), ce modèle n’est pas le bon : il travaille avec un vide d’au moins 5 cm.",
+          "help": "Le « jour », c’est le vide que les marches tournantes contournent : un carré dans l’angle intérieur d’un quart tournant, l’écart entre les deux volées d’un demi-tour. Mesure-le sur place — souvent l’épaisseur du poteau ou du limon intérieur, ou le dégagement entre les volées. Si tes marches se rejoignent sans vide (marches balancées), ce modèle n’est pas le bon : il travaille avec un vide d’au moins 5 cm.",
           "visibleWhen": {
             "field": "forme",
-            "values": ["rayonnant"]
+            "values": ["rayonnant", "u-palier", "u-rayonnant"]
           }
         },
         {
           "name": "sens",
-          "label": "Sens du quart tournant en montant",
+          "label": "Sens du tournant en montant",
           "type": "select",
           "default": "droite",
           "options": [
@@ -727,7 +762,7 @@
           ],
           "visibleWhen": {
             "field": "forme",
-            "values": ["palier", "rayonnant"]
+            "values": ["palier", "rayonnant", "u-palier", "u-rayonnant"]
           }
         },
         {
@@ -742,18 +777,20 @@
           "help": "0 : comparaison automatique. Sinon un entier de 4 à 36 ; le sol de l’étage forme l’arrivée."
         }
       ],
-      "method": "La hauteur d’une marche vaut H ÷ N, avec N entier. En droit, le giron vaut la longueur au sol divisée par (N − 1). Avec palier carré, N − 2 marches sont réparties sur deux volées ; le giron commun est limité par la place disponible dans chaque branche. Avec marches rayonnantes, le quart de cercle au milieu de la largeur utile est divisé en 2 à 8 girons égaux, prolongés dans les deux volées droites : ces marches tournent autour d’un vide carré, le jour, laissé dans l’angle intérieur. En automatique, l’outil compare les géométries possibles : hauteurs de 16 à 20 cm, girons de 24 à 32 cm et relation 2h + g de 60 à 64 cm sont des repères de comparaison, avec une cible de 63 cm. Ce sont des critères de ce simulateur, pas une attestation de conformité.",
+      "method": "La hauteur d’une marche vaut H ÷ N, avec N entier. En droit, le giron vaut la longueur au sol divisée par (N − 1). Avec palier, N − 2 marches sont réparties sur deux volées ; le giron commun est limité par la place disponible dans chaque branche. Avec marches rayonnantes, le cercle de foulée au milieu de la largeur utile est divisé en 2 à 8 girons égaux, prolongés dans les deux volées droites : ces marches tournent autour d’un vide, le jour — un carré dans l’angle d’un quart tournant, l’écart entre les deux volées d’un demi-tour. En demi-tour, les deux volées sont parallèles et se font face : le tournant fait 180°, avec un palier pleine largeur ou des tournantes qui balaient un demi-cercle autour du milieu du jour. En automatique, l’outil compare les géométries possibles : hauteurs de 16 à 20 cm, girons de 24 à 32 cm et relation 2h + g de 60 à 64 cm sont des repères de comparaison, avec une cible de 63 cm. Ce sont des critères de ce simulateur, pas une attestation de conformité.",
       "assumptions": [
         "Toutes les hauteurs sont identiques ; l’étage supérieur constitue la dernière arrivée.",
         "Les longueurs au sol sont des maxima : une branche peut être plus courte que l’espace saisi.",
-        "Le palier est carré, de côté égal à la largeur utile. Il remplace une marche intermédiaire.",
-        "Le modèle rayonnant utilise un jour carré et une ligne de foulée au milieu de la largeur utile ; il ne calcule pas des marches balancées."
+        "Le palier d’un quart tournant est carré, de côté égal à la largeur utile ; dans un demi-tour, il occupe toute la largeur du U sur la profondeur d’une volée. Il remplace une marche intermédiaire.",
+        "Dans un demi-tour, les deux volées ont la même largeur et se font face de part et d’autre du jour : la largeur saisie est celle d’une volée, la largeur totale vaut deux fois celle-ci plus le jour.",
+        "Le modèle rayonnant tourne autour d’un vide, le jour, et suit une ligne de foulée au milieu de la largeur utile ; il ne calcule pas de marches balancées."
       ],
       "limits": [
         "Étude géométrique préliminaire : ne fabrique pas un escalier à partir de ce seul dessin.",
         "Trémie, échappée au-dessus des marches, garde-corps, sections, appuis et fixations restent à vérifier et ne sont pas dimensionnés.",
         "Les longueurs au sol excluent les dégagements nécessaires au départ et à l’arrivée, ainsi que l’épaisseur des limons et des finitions.",
-        "Une bonne valeur de Blondel ne suffit pas à valider un escalier. Le collet des marches rayonnantes et les règles propres à l’usage doivent être vérifiés sur une épure."
+        "Une bonne valeur de Blondel ne suffit pas à valider un escalier. Le collet des marches rayonnantes et les règles propres à l’usage doivent être vérifiés sur une épure.",
+        "Le demi-tour se dessine avec deux volées parallèles de même largeur et un tournant symétrique : les volées désaxées, évasées ou de largeurs différentes ne sont pas traitées."
       ],
       "reference": {
         "title": "Lapeyre — Préparer les dimensions d’un escalier",

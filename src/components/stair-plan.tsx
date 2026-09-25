@@ -98,6 +98,7 @@ function Cote({ cote, font }: { cote: StairDimension; font: number }) {
 
 export function StairPlanView({ plan }: { plan: StairPlan }) {
   const [selection, setSelection] = useState<number | null>(null);
+  const [focus, setFocus] = useState<number | null>(null);
   const { extent, steps, rise, height } = plan;
   const margin = Math.max(extent.x, extent.y) * 0.15;
   const font = Math.max(extent.x, extent.y) / 28;
@@ -124,6 +125,11 @@ export function StairPlanView({ plan }: { plan: StairPlan }) {
   const surfaceChoisie = choix ? surfaces[choix.rang - 1] : null;
   const basculer = (index: number) =>
     setSelection((courante) => (courante === index ? null : index));
+  // Contour d’une marche, en centimètres : sert au tracé et à l’anneau qui le
+  // découpe pour qu’il garde la même épaisseur sur tout le pourtour.
+  const contour = (index: number) =>
+    steps[index].points.map((point) => point.join(",")).join(" ");
+  const miseEnAvant = focus ?? selection;
   return (
     <div className="stair-views">
       <figure>
@@ -163,6 +169,18 @@ export function StairPlanView({ plan }: { plan: StairPlan }) {
                 ].join(" · ")}
                 aria-pressed={selection === index}
                 onClick={() => basculer(index)}
+                onFocus={(event) =>
+                  // :focus-visible distingue le clavier du clic : au clic, c’est
+                  // la sélection qui met la marche en avant, pas le focus.
+                  setFocus(
+                    event.currentTarget.matches(":focus-visible")
+                      ? index
+                      : null,
+                  )
+                }
+                onBlur={() =>
+                  setFocus((courant) => (courant === index ? null : courant))
+                }
                 onKeyDown={(event) => {
                   if (event.key === "Enter" || event.key === " ") {
                     event.preventDefault();
@@ -178,7 +196,7 @@ export function StairPlanView({ plan }: { plan: StairPlan }) {
                   ]
                     .filter(Boolean)
                     .join(" ")}
-                  points={step.points.map((point) => point.join(",")).join(" ")}
+                  points={contour(index)}
                 />
                 <text
                   className="stair-number"
@@ -193,6 +211,16 @@ export function StairPlanView({ plan }: { plan: StairPlan }) {
               </g>
             );
           })}
+          {miseEnAvant !== null && (
+            <g className="stair-ring">
+              <clipPath id="escalier-selection">
+                <polygon points={contour(miseEnAvant)} />
+              </clipPath>
+              <g clipPath="url(#escalier-selection)">
+                <polygon points={contour(miseEnAvant)} />
+              </g>
+            </g>
+          )}
           {choix?.etape.cotes?.map((cote) => (
             <Cote key={cote.label} cote={cote} font={font} />
           ))}
@@ -216,8 +244,18 @@ export function StairPlanView({ plan }: { plan: StairPlan }) {
             </text>
             <text
               x={last[0]}
-              y={plan.kind === "droit" ? -font * 0.5 : last[1] - font}
-              textAnchor={plan.kind === "droit" ? "middle" : "end"}
+              y={
+                plan.kind === "droit"
+                  ? -font * 0.5
+                  : plan.kind.startsWith("u-")
+                    ? extent.y + font * 1.6
+                    : last[1] - font
+              }
+              textAnchor={
+                plan.kind === "droit" || plan.kind.startsWith("u-")
+                  ? "middle"
+                  : "end"
+              }
             >
               Étage
             </text>

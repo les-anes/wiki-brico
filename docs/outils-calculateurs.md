@@ -9,7 +9,7 @@ Les pages `/calculateurs/` et `/calculateurs/<slug>/` répondent aux questions c
 - `src/data/calculators.json` porte le contenu : slug, titre, description, accroche, méthode, hypothèses, limites, champs bornés, référence et tutoriels liés.
 - `src/lib/calculators/<slug>.ts` porte la formule, en fonction pure `compute(inputs) → { headline, values, warnings }`. Le même appel sert au pré-rendu et au navigateur : la page affiche donc un exemple chiffré complet sans JavaScript.
 - `src/lib/calculators/index.ts` assemble les deux. Un outil déclaré sans formule fait échouer le chargement, exprès.
-- Le calpinage renvoie en plus un plan, dessiné en SVG par `src/components/calpinage-plan.tsx`.
+- Le calpinage renvoie en plus un plan, dessiné en SVG par `src/components/calpinage-plan.tsx` : carreaux carrés ou rectangles posés droit ou décalés, ou carreaux hexagonaux en nid d’abeille. Une pièce à couper se clique et affiche son encombrement.
 
 Contrôles : `pnpm validate:data` (champs, bornes, tutoriels liés), `pnpm test` (formules et cas limites), `pnpm check:site` (pages pré-rendues, résultat présent, plan dessiné, recalcul après saisie, saisie invalide).
 
@@ -23,18 +23,18 @@ Contrôles : `pnpm validate:data` (champs, bornes, tutoriels liés), `pnpm test`
 | Montants et rails | montants = plafond(longueur ÷ entraxe) + 1 ; rails = 2 longueurs ; vis espacées au plus de 27,5 cm sur deux faces, extrémités comprises | cloison non porteuse en pièce sèche, barres de 3 m | NF DTU 25.41, fiche éditeur, consultée le 16/09/2026 |
 | Dosage mortier et béton | volume × chaque dosage saisi | recette préalablement définie par m³ de mélange fini, sacs de liant seul | Infociments, Ciments et bétons B51, consulté le 24/09/2026 |
 | Calepinage | positions espacées d’un carreau + joint ; coupes conservées ; trait de coupe réservé pour le réemploi | pièce rectangulaire d’équerre, pose droite ou décalée d’un demi-carreau | NF DTU 52.2, fiche éditeur, consultée le 16/09/2026 |
-| Escalier | h = H/N ; droit : g = longueur au sol/(N−1) ; quart tournant : répartition entière dans deux branches | palier carré ou marches rayonnantes autour d’un jour carré, largeur utile hors limons | Lapeyre, dimensions d’un escalier, consulté le 24/09/2026 |
+| Escalier | h = H/N ; droit : g = longueur au sol/(N−1) ; tournant : répartition entière dans deux branches ou deux volées | palier carré ou pleine largeur, marches rayonnantes autour d’un jour, largeur utile hors limons | Lapeyre, dimensions d’un escalier, consulté le 24/09/2026 |
 | Rejointoiement à la chaux | part des joints = 1 − (H × L) ÷ ((H + j) × (L + j)) ; volume = surface × profondeur × part, majoré de la perte ; chaux et sable répartis au volume | appareillage assimilé à une trame régulière, profondeur constante, 1 volume de chaux pour 2 à 3 volumes de sable | Socli (Heidelberg Materials), rejointoiement et choix du mortier, consulté le 24/09/2026 |
 | Puissance d’un radiateur | puissance théorique = volume × coefficient d’isolation ; conseillée = théorique majorée de la marge ; modèle = puissance commerciale juste au-dessus | pièce rectangulaire, hauteur sous plafond connue, coefficient de 28 à 50 W/m³ selon l’isolation | choisir-son-chauffage.fr, chauffage électrique mural : guide du choix (d’après les guides Thermor), consulté le 24/09/2026 |
 
 ## Ce que les outils ne font pas
 
-- L’escalier compare la géométrie, sans calculer trémie, échappée, garde-corps ou résistance. Les marches rayonnantes ne sont pas des marches balancées.
+- L’escalier compare la géométrie, sans calculer trémie, échappée, garde-corps ou résistance. Les marches rayonnantes ne sont pas des marches balancées. Le demi-tour se dessine avec deux volées parallèles de même largeur, palier pleine largeur ou tournantes balayant un demi-cercle autour du milieu du jour ; les volées désaxées ou de largeurs différentes ne sont pas traitées.
 - Le rejointoiement donne un volume de mortier, pas une recette : le liant se choisit selon la dureté de la pierre et se convertit en sacs avec le volume indiqué sur l’emballage.
 - Aucun dimensionnement structurel : ni section de solive, ni calibre de circuit, ni diamètre d’évacuation, ni ferraillage.
 - Aucun prix : les quantités sont arrondies à l’unité vendable, pas chiffrées en euros.
 - Aucune sauvegarde de saisie : la valeur vit dans l’état de la page, pas dans l’URL ni dans le navigateur.
-- Le calpinage ne traite pas les pièces en L, la pose diagonale ni les motifs. Au-delà de 2 000 pièces, l’aperçu passe en trame simplifiée : les quantités estimées restent identiques, le dessin détaillé non.
+- Le calpinage ne traite pas les pièces en L, la pose diagonale ni les motifs. Au-delà de 2 000 pièces, l’aperçu passe en trame simplifiée : les quantités estimées restent identiques, le dessin détaillé non. Le compte hexagonal n’optimise aucun réemploi de chute : une pièce coupée consomme un carreau.
 
 ## Ajouter un outil
 
@@ -52,3 +52,9 @@ Corrections vérifiées : virgule conservée au formatage décimal, remise à z�
 Les URLs livrées restent stables, notamment `/calculateurs/calpinage/` malgré la correction orthographique du titre affiché. Les résultats et les liens internes existent dans le HTML pré-rendu. Les contrôles couvrent aussi le changement de forme et de sens de l’escalier, ainsi que le passage direct vers un autre outil.
 
 Vérification visuelle : captures Chrome local sur ordinateur et en mise en page mobile, plus les quatre variantes quart tournant (palier/rayonnant, gauche/droite). Le navigateur intégré était indisponible ; les interactions et l’hydratation sont contrôlées par `check:site`.
+
+## Relecture du 25 septembre 2026
+
+Le calepinage accepte un carreau hexagonal, saisi par son plat à plat et posé en nid d’abeille : la page compte un carreau par pièce posée, sans réemploi des chutes, et prévient que le mur recoupe la dentelure du motif. Une pièce à couper se clique et affiche son encombrement. Le maillage est vérifié par un test qui mesure le pas du nid d’abeille (`plat + joint`) : un motif qui se chevauche le fait échouer.
+
+L’escalier gagne deux formes en demi-tour, avec palier ou marches rayonnantes. La géométrie est couverte par `pnpm test` (largeur totale, palier pleine largeur, coins du fond, collet plus étroit que l’extérieur) et par `check:site` (champ de jour, libellés des tournantes, ligne de foulée des deux volées sur le même bord).
