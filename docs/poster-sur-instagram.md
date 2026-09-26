@@ -171,9 +171,22 @@ sautée. Supprime une ligne pour la remettre dans la file.
 
 ## Publication quotidienne
 
-`.github/workflows/instagram.yml` publie une fiche par jour et enregistre l’état dans
-le dépôt. Il faut créer **un seul secret de dépôt** : `INSTAGRAM_ACCESS_TOKEN`. Le
-déclenchement manuel du workflow accepte un nombre de fiches à publier.
+`.github/workflows/instagram.yml` publie une fiche par jour, et il n’a besoin d’aucune
+préparation préalable. Il commence par regarder si les visuels de la prochaine fiche sont
+déjà en ligne :
+
+- **oui** — cas courant, quand une réserve a été préparée d’avance : il publie, puis
+  commite l’état.
+- **non** — réserve épuisée : il fabrique les deux visuels, les pousse, laisse jusqu’à
+  10 minutes au déploiement Netlify pour les servir (`--check --attendre 10`), puis
+  publie.
+
+Une seule exécution peut donc générer, déployer et publier d’affilée. Le prix, quand la
+réserve est vide, est un commit de robot par jour (les deux visuels, quelques centaines
+de kilo-octets) et une à trois minutes d’attente de déploiement.
+
+`.github/workflows/instagram.yml` a besoin d’écrire dans le dépôt
+(`permissions: contents: write`, déjà en place) et d’un secret de dépôt :
 
 Où le mettre, dans GitHub : l’onglet **Settings** du dépôt → **Secrets and variables**
 → **Actions** → section **Repository secrets** → **New repository secret**. Pour ce

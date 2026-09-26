@@ -492,6 +492,35 @@ async function verifierMediaPublic(url) {
     );
 }
 
+/**
+ * Attend qu’un visuel soit servi par le site, le temps qu’un déploiement passe.
+ * C’est ce qui permet à une seule exécution de fabriquer les images, de les
+ * pousser puis de publier, sans intervention entre les deux.
+ */
+async function attendreMediaPublic(url, minutes) {
+  const fin = Date.now() + minutes * 60_000;
+  let essai = 0;
+  for (;;) {
+    essai += 1;
+    try {
+      await verifierMediaPublic(url);
+      if (essai > 1)
+        console.log(`Visuel en ligne après ${essai} tentative(s).`);
+      return;
+    } catch (erreur) {
+      if (Date.now() >= fin)
+        throw new Error(
+          `${erreur.message}\nDéploiement non constaté après ${minutes} min : le site sert-il bien public/images/social/ ?`,
+          { cause: erreur },
+        );
+      console.log(
+        `Pas encore en ligne (essai ${essai}) : ${url} — nouvelle tentative dans 15 s.`,
+      );
+      await new Promise((suite) => setTimeout(suite, 15_000));
+    }
+  }
+}
+
 async function publierFil(compte, fiche, categorie) {
   const conteneur = await appelApi(compte, "media", {
     image_url: urlPublique(nomImage(fiche.id, "fil")),
@@ -521,7 +550,8 @@ const AIDE = `Publication des tutoriels WikiBrico sur Instagram.
   pnpm instagram --compte                   vérifie le jeton et nomme le compte
   pnpm instagram --dry-run [--only <id>]    fiche, légende et URLs, sans publier
   pnpm instagram --media [--limit <n>]      visuels des <n> prochaines fiches
-  pnpm instagram --check [--only <id>]      visuels de la prochaine fiche en ligne ?
+  pnpm instagram --check [--only <id>]      visuels de la fiche à venir en ligne ?
+  pnpm instagram --check --attendre 10      … en laissant 10 min à un déploiement
   pnpm instagram --publish [--only <id>] [--limit <n>] [--sans-story]
 
 Option : --hasard tire une fiche au hasard (dont les visuels sont prêts, pour
@@ -540,6 +570,8 @@ function lireArguments(argv) {
     else if (argument === "--check") options.commande = "check";
     else if (argument === "--compte") options.commande = "compte";
     else if (argument === "--hasard") options.hasard = true;
+    else if (argument === "--attendre")
+      options.attendre = Number(argv[++index]);
     else if (argument === "--publish") options.commande = "publish";
     else if (argument === "--help" || argument === "-h")
       options.commande = "aide";
@@ -661,8 +693,14 @@ async function commandeVerifier(fichiers, publies, options) {
     console.log(rienAFaire(rienAPublier));
     return;
   }
-  await verifierMediaPublic(urlPublique(nomImage(fiche.id, "fil")));
-  await verifierMediaPublic(urlPublique(nomImage(fiche.id, "story")));
+  // --attendre laisse au déploiement le temps de servir les visuels qu’on vient
+  // de pousser : c’est ce qui rend l’action quotidienne autonome.
+  const verifier = (url) =>
+    options.attendre > 0
+      ? attendreMediaPublic(url, options.attendre)
+      : verifierMediaPublic(url);
+  await verifier(urlPublique(nomImage(fiche.id, "fil")));
+  await verifier(urlPublique(nomImage(fiche.id, "story")));
   console.log(`Visuels en ligne pour ${fiche.id}.`);
 }
 
