@@ -131,11 +131,18 @@ sait exactement ce qui part.
 
 ## Cycle d’une publication
 
-Les visuels se préparent **au fur et à mesure**, jamais les 152 d’un coup : on prépare
-les visuels des prochaines fiches de la file, on les committe, on déploie, et la
-publication quotidienne peut tourner plusieurs jours dessus. Quand la réserve est
-épuisée, `--check` le dit et le workflow s’arrête sans échec le temps d’en préparer
-d’autres.
+Les visuels se préparent **au fur et à mesure** : par défaut ceux des prochaines fiches
+de la file (`--limit 7` pour une semaine d’avance), qu’on committe, qu’on déploie, et sur
+lesquels la publication quotidienne tourne ensuite plusieurs jours. C’est ce qui évite de
+fabriquer 152 images d’avance pour rien.
+
+Rien n’interdit de tout préparer d’un coup, si tu préfères être tranquille : `pnpm
+instagram --media` sans `--limit` traite toute la file non publiée. Compte une vingtaine
+de mégaoctets dans le dépôt, servis par le site. Une fiche dont les visuels ne sont pas
+encore en ligne n’est simplement pas proposée à la publication : elle attend son tour.
+
+Quand la réserve est épuisée, `--check` le dit et le workflow s’arrête sans échec le temps
+d’en préparer d’autres.
 
 **Seules les fiches dont les visuels sont prêts sont proposées** à `--dry-run`, `--check`
 et `--publish` : une fiche dont les images n’existent pas encore attend son tour au lieu
