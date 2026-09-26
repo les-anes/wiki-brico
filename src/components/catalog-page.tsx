@@ -10,9 +10,11 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 
+import { CalculatorLinks } from "@/components/calculator-links";
 import { Button } from "@/components/ui/button";
 import { tutorials } from "@/data";
 import { categories, journeys } from "@/data/taxonomy";
+import { searchCalculators } from "@/lib/calculator-discovery";
 import {
   belongsToCategory,
   catalogHref,
@@ -48,6 +50,13 @@ export function CatalogPage({
   const setSavedOnly = (value: boolean) => update({ savedOnly: value });
   const selectedCategory = categories.find((c) => c.id === category);
   const activeJourney = journeys.find((j) => j.id === journey);
+  const toolResults =
+    category === "all" &&
+    journey === "all" &&
+    difficulty === "all" &&
+    !savedOnly
+      ? searchCalculators(query)
+      : [];
   const filtered = searchTutorials(
     tutorials.filter(
       (t) =>
@@ -266,6 +275,17 @@ export function CatalogPage({
               Effacer <X size={14} />
             </button>
           </div>
+        )}
+        {toolResults.length > 0 && (
+          <section
+            className="calculator-search-results"
+            aria-labelledby="calculator-results-title"
+          >
+            <h2 id="calculator-results-title">
+              Calculateurs pour cette recherche ({toolResults.length})
+            </h2>
+            <CalculatorLinks tools={toolResults} />
+          </section>
         )}
         <h2 className="visually-hidden">Les tutoriels</h2>
         <div className="tutorial-grid">

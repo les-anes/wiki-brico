@@ -70,6 +70,14 @@ try {
   const countCards = (html) =>
     (html.match(/class="tutorial-card"/g) ?? []).length;
 
+  assert(
+    render("/tutoriels/?q=escalier").includes('href="/calculateurs/escalier/"'),
+  );
+  assert(
+    !render("/tutoriels/?q=escalier&favoris=1").includes(
+      'class="calculator-search-results"',
+    ),
+  );
   // --- Contenu rendu par route ---
   assert.equal(categories.filter((c) => c.kind === "trade").length, 12);
   assert.equal(categories.filter((c) => c.kind === "transversal").length, 2);
@@ -416,6 +424,15 @@ try {
         tutorial.tags.map((tag) => catalogHref({ query: tag })),
         `${route.path}: tags vers la recherche`,
       );
+      assert.deepEqual(
+        [...doc.querySelectorAll(".related-calculators a")].map((a) =>
+          a.getAttribute("href"),
+        ),
+        calculators
+          .filter((tool) => tool.relatedTutorials.includes(tutorial.id))
+          .map((tool) => `/calculateurs/${tool.slug}/`),
+        `${route.path}: calculateurs associés`,
+      );
       const jsonld = html.match(
         /<script type="application\/ld\+json">([\s\S]*?)<\/script>/,
       );
@@ -434,6 +451,14 @@ try {
         calculators.map((tool) => `/calculateurs/${tool.slug}/`),
         "le hub liste tous les outils",
       );
+      assert.equal(
+        doc.querySelectorAll(".calculator-card picture source").length,
+        calculators.length,
+      );
+      for (const image of doc.querySelectorAll(".calculator-card img")) {
+        assert(image.getAttribute("alt")?.trim());
+        assert.equal(image.getAttribute("width"), "1536");
+      }
     }
     if (route.kind === "calculator") {
       const tool = calculators.find((entry) => entry.slug === route.id);

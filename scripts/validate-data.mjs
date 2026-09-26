@@ -265,6 +265,19 @@ for (const tool of calculators.tools ?? []) {
     `${where} : identifiant invalide ou dupliqué`,
   );
   calculatriceSlugs.add(tool.slug);
+  assert(
+    tool.image === `/images/calculateurs/${tool.slug}.png` &&
+      text(tool.imageAlt),
+    `${where} : illustration ou texte alternatif invalide`,
+  );
+  for (const image of [
+    tool.image,
+    ...[480, 720, 960].map((size) =>
+      tool.image.replace(/\.png$/, `-${size}.webp`),
+    ),
+  ]) {
+    await access(new URL(`../public${image}`, import.meta.url));
+  }
   for (const key of [
     "title",
     "description",

@@ -70,7 +70,9 @@
         "category": "plomberie",
         "topicPath": ["Gestion des évacuations"]
       },
-      "updatedAt": "2026-09-24"
+      "updatedAt": "2026-09-26",
+      "image": "/images/calculateurs/pente-evacuation-pvc.png",
+      "imageAlt": "Un tuyau d’évacuation incliné avec un niveau et un mètre."
     },
     {
       "slug": "quantite-osb",
@@ -156,7 +158,9 @@
         "category": "structure",
         "topicPath": ["Planchers"]
       },
-      "updatedAt": "2026-09-24"
+      "updatedAt": "2026-09-26",
+      "image": "/images/calculateurs/quantite-osb.png",
+      "imageAlt": "Des panneaux OSB posés sur des solives, avec un mètre."
     },
     {
       "slug": "isolant-panneaux",
@@ -235,7 +239,9 @@
         "category": "cloisons",
         "topicPath": ["Placo"]
       },
-      "updatedAt": "2026-09-24"
+      "updatedAt": "2026-09-26",
+      "image": "/images/calculateurs/isolant-panneaux.png",
+      "imageAlt": "Des panneaux de laine minérale entre des montants en bois."
     },
     {
       "slug": "ossature-montants",
@@ -326,7 +332,9 @@
         "category": "cloisons",
         "topicPath": ["Placo"]
       },
-      "updatedAt": "2026-09-24"
+      "updatedAt": "2026-09-26",
+      "image": "/images/calculateurs/ossature-montants.png",
+      "imageAlt": "Une ossature métallique composée de rails et de montants."
     },
     {
       "slug": "dosage-materiaux",
@@ -469,7 +477,9 @@
         "ragreer-un-sol-en-beton",
         "rejointoyer-un-mur-en-pierre"
       ],
-      "updatedAt": "2026-09-24"
+      "updatedAt": "2026-09-26",
+      "image": "/images/calculateurs/dosage-materiaux.png",
+      "imageAlt": "Un sac de ciment, du sable, des graviers et une truelle."
     },
     {
       "slug": "calpinage",
@@ -505,8 +515,14 @@
           "type": "select",
           "default": "carre",
           "options": [
-            { "value": "carre", "label": "Carré ou rectangle" },
-            { "value": "hexagone", "label": "Hexagone" }
+            {
+              "value": "carre",
+              "label": "Carré ou rectangle"
+            },
+            {
+              "value": "hexagone",
+              "label": "Hexagone"
+            }
           ]
         },
         {
@@ -518,7 +534,10 @@
           "min": 2.5,
           "max": 120,
           "step": 0.5,
-          "visibleWhen": { "field": "forme", "values": ["carre"] }
+          "visibleWhen": {
+            "field": "forme",
+            "values": ["carre"]
+          }
         },
         {
           "name": "carreauLongueur",
@@ -530,7 +549,10 @@
           "min": 2.5,
           "max": 120,
           "step": 0.5,
-          "visibleWhen": { "field": "forme", "values": ["carre"] }
+          "visibleWhen": {
+            "field": "forme",
+            "values": ["carre"]
+          }
         },
         {
           "name": "carreauHexagone",
@@ -542,7 +564,10 @@
           "min": 2.5,
           "max": 60,
           "step": 0.5,
-          "visibleWhen": { "field": "forme", "values": ["hexagone"] }
+          "visibleWhen": {
+            "field": "forme",
+            "values": ["hexagone"]
+          }
         },
         {
           "name": "joint",
@@ -560,7 +585,10 @@
           "label": "Sens de pose",
           "type": "select",
           "default": "droite",
-          "visibleWhen": { "field": "forme", "values": ["carre"] },
+          "visibleWhen": {
+            "field": "forme",
+            "values": ["carre"]
+          },
           "options": [
             {
               "value": "droite",
@@ -644,7 +672,9 @@
         "category": "finitions",
         "topicPath": ["Carrelage"]
       },
-      "updatedAt": "2026-09-24"
+      "updatedAt": "2026-09-26",
+      "image": "/images/calculateurs/calpinage.png",
+      "imageAlt": "Une surface carrelée avec ses coupes de rive et une règle."
     },
     {
       "slug": "escalier",
@@ -799,7 +829,9 @@
         "accessedAt": "2026-09-24"
       },
       "relatedTutorials": ["organiser-les-travaux-d-une-chambre"],
-      "updatedAt": "2026-09-24"
+      "updatedAt": "2026-09-26",
+      "image": "/images/calculateurs/escalier.png",
+      "imageAlt": "Un escalier en bois quart tournant accompagné d’un mètre."
     },
     {
       "slug": "rejointoiement-chaux",
@@ -921,7 +953,9 @@
         "category": "structure",
         "topicPath": ["Maçonnerie de pierre", "Rejointoiement"]
       },
-      "updatedAt": "2026-09-24"
+      "updatedAt": "2026-09-26",
+      "image": "/images/calculateurs/rejointoiement-chaux.png",
+      "imageAlt": "Un mur en pierre rejointoyé à la chaux, une truelle et un seau."
     },
     {
       "slug": "puissance-radiateur",
@@ -1014,8 +1048,13 @@
         "accessedAt": "2026-09-24"
       },
       "relatedTutorials": ["purger-un-radiateur", "radiateur-connecte"],
-      "catalogFilter": { "category": "chauffage", "topicPath": ["Radiateurs"] },
-      "updatedAt": "2026-09-24"
+      "catalogFilter": {
+        "category": "chauffage",
+        "topicPath": ["Radiateurs"]
+      },
+      "updatedAt": "2026-09-26",
+      "image": "/images/calculateurs/puissance-radiateur.png",
+      "imageAlt": "Un radiateur sous une fenêtre, près d’un thermomètre."
     }
   ]
 }

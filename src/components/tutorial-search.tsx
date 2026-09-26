@@ -5,8 +5,9 @@ import { useEffect, useId, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { tutorials } from "@/data";
 import { categories } from "@/data/taxonomy";
+import { searchCalculators } from "@/lib/calculator-discovery";
 import { catalogHref } from "@/lib/catalog";
-import { tutorialPath } from "@/lib/routes";
+import { calculatorPath, tutorialPath } from "@/lib/routes";
 import { searchTutorials } from "@/lib/search";
 
 export function TutorialSearch({
@@ -22,7 +23,21 @@ export function TutorialSearch({
   const results = query.trim()
     ? searchTutorials(tutorials, categories, query)
     : [];
-  const suggestions = results.slice(0, 5);
+  const toolResults = searchCalculators(query);
+  const suggestions = [
+    ...results.slice(0, 5).map((tutorial) => ({
+      id: `tutoriel-${tutorial.id}`,
+      title: tutorial.title,
+      href: tutorialPath(tutorial.id),
+      label: `Tutoriel · ${categories.find((category) => category.id === tutorial.category)?.name ?? ""}`,
+    })),
+    ...toolResults.slice(0, 3).map((tool) => ({
+      id: `calculateur-${tool.slug}`,
+      title: tool.title,
+      href: calculatorPath(tool.slug),
+      label: "Calculateur",
+    })),
+  ];
   const expanded = open && query.trim().length > 0;
   const selected = expanded ? suggestions[active] : undefined;
 
@@ -57,7 +72,7 @@ export function TutorialSearch({
         <Search size={20} aria-hidden="true" />
         <input
           role="combobox"
-          aria-label="Rechercher un tutoriel"
+          aria-label="Rechercher un tutoriel ou un calculateur"
           aria-autocomplete="list"
           aria-expanded={expanded}
           aria-controls={expanded ? listId : undefined}
@@ -89,7 +104,7 @@ export function TutorialSearch({
               );
             } else if (event.key === "Enter" && selected) {
               event.preventDefault();
-              go(tutorialPath(selected.id));
+              go(selected.href);
             } else if (event.key === "Tab") close();
           }}
         />
@@ -99,7 +114,7 @@ export function TutorialSearch({
       </form>
       <output className="sr-only">
         {expanded
-          ? `${results.length} tutoriel${results.length > 1 ? "s" : ""} trouvé${results.length > 1 ? "s" : ""}.`
+          ? `${results.length} tutoriel${results.length > 1 ? "s" : ""} et ${toolResults.length} calculateur${toolResults.length > 1 ? "s" : ""} trouvés.`
           : ""}
       </output>
       {expanded && (
@@ -108,7 +123,7 @@ export function TutorialSearch({
             id={listId}
             ref={list}
             role="listbox"
-            aria-label="Tutoriels suggérés"
+            aria-label="Tutoriels et calculateurs suggérés"
           >
             {suggestions.map((tutorial, index) => (
               <button
@@ -119,24 +134,18 @@ export function TutorialSearch({
                 tabIndex={-1}
                 aria-selected={active === index}
                 onMouseDown={(event) => event.preventDefault()}
-                onClick={() => go(tutorialPath(tutorial.id))}
+                onClick={() => go(tutorial.href)}
               >
                 <span>
                   {tutorial.title}
-                  <small>
-                    {
-                      categories.find(
-                        (category) => category.id === tutorial.category,
-                      )?.name
-                    }
-                  </small>
+                  <small>{tutorial.label} </small>
                 </span>
                 <ArrowRight size={16} aria-hidden="true" />
               </button>
             ))}
           </div>
           {!suggestions.length && (
-            <p>Aucun tutoriel trouvé. Essaie un autre mot.</p>
+            <p>Aucun tutoriel ni calculateur trouvé. Essaie un autre mot.</p>
           )}
           {!!suggestions.length && (
             <button
@@ -144,7 +153,7 @@ export function TutorialSearch({
               className="search-all"
               onClick={() => go(catalogHref({ query }))}
             >
-              Voir tous les résultats ({results.length})
+              Voir tous les résultats ({results.length + toolResults.length})
             </button>
           )}
         </div>

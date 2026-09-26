@@ -49,3 +49,11 @@
 - [x] 7.5 Vérifier calculs, pré-rendu, métadonnées, saisie, navigation et rendu mobile.
 
 Validation de l’extension : 39 tests, typage, lint, données (72 fiches / 7 outils), build (88 URLs), contrôle du site et specs réussis. Captures locales ordinateur/mobile et variantes quart tournant relues ; hydratation et interactions vérifiées par `check:site`. L’archivage 6.6 reste en attente.
+
+## 8. Illustrations et découverte — 26 septembre 2026
+
+- [x] 8.1 Illustrer les neuf cartes avec PNG et WebP responsives, et refaire l’image du radiateur connecté dans toutes ses résolutions ; vérifier les fichiers et leur rendu.
+- [x] 8.2 Intégrer les calculateurs aux suggestions et à la recherche générale, et afficher les liens inverses depuis les fiches associées ; vérifier le clavier, les filtres et les routes.
+- [x] 8.3 Synchroniser les specs et la documentation, puis vérifier typage, lint, tests, données, build et pré-rendu.
+
+Validation : 60 tests réussis, typage, lint, données (76 fiches / 9 outils), specs, build (94 URLs) et check:site réussis. Illustrations relues, dimensions 1536 × 1024 vérifiées, captures du hub à 1280 et 500 px contrôlées. Navigation clavier vers le calculateur, recherche générale, filtre favoris et liens inverses vérifiés automatiquement. Prompts : `docs/illustrations-calculateurs.md`.

@@ -18,7 +18,7 @@
   "durationMinutes": 120,
   "cost": null,
   "image": "/images/tutoriels/radiateur-connecte.png",
-  "imageAlt": "Un radiateur blanc vu de face, une tête thermostatique reliée à sa gauche et des ondes qui partent vers un téléphone posé sur une étagère, à la gouache sur fond ivoire.",
+  "imageAlt": "Hub domotique avec dongle radio USB et téléphone devant un radiateur équipé d’une tête thermostatique connectée.",
   "imageOrigin": "original",
   "scope": "Mise en place d’un pilotage de radiateurs par un hub domotique local : Home Assistant sur Raspberry Pi, clé radio USB Zigbee ou Thread, appairage des appareils et création des plages horaires. Hors intervention sur le tableau électrique, pose d’un fil pilote par un professionnel, chauffage collectif, réglage hydraulique d’un circuit à eau chaude et remplacement d’un radiateur.",
   "estimatesNote": "Compte une heure pour le hub et sa clé, puis une heure de plus pour appairer les appareils et régler les plages, sans compter la pose des modules derrière les radiateurs. Le budget part surtout dans le hub et sa clé radio ; côté radiateurs, tout dépend de ce qui est déjà en place, un module coûtant bien moins cher qu’un appareil neuf.",

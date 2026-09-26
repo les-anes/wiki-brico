@@ -89,6 +89,8 @@ interface CalculatorReference {
 /** Métadonnées éditoriales d’un outil, telles qu’elles vivent dans le JSON. */
 export interface CalculatorDefinition {
   slug: string;
+  image: string;
+  imageAlt: string;
   title: string;
   description: string;
   heading: string;

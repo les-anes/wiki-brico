@@ -80,9 +80,21 @@ export async function checkAutocomplete(server) {
       new dom.window.Event("submit", { bubbles: true, cancelable: true }),
     );
     assert.equal(navigations.at(-1), "/tutoriels/?q=parqet");
+    await type("escalier");
+    const options = [...container.querySelectorAll('[role="option"]')];
+    const calculatorIndex = options.findIndex((option) =>
+      option.textContent.includes("Calculateur"),
+    );
+    assert(calculatorIndex >= 0);
+    for (let index = 0; index <= calculatorIndex; index++)
+      await key("ArrowDown");
+    await key("Enter");
+    assert.equal(navigations.at(-1), "/calculateurs/escalier/");
     await type("zzzintrouvablezzz");
     assert.equal(container.querySelectorAll('[role="option"]').length, 0);
-    assert(container.textContent.includes("Aucun tutoriel trouvé"));
+    assert(
+      container.textContent.includes("Aucun tutoriel ni calculateur trouvé"),
+    );
     await type("");
     assert.equal(input.getAttribute("aria-expanded"), "false");
   } finally {

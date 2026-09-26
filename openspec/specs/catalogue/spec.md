@@ -71,7 +71,7 @@ Les résultats SHALL placer les correspondances sans faute avant les corresponda
 
 ### Requirement: Suggestions de recherche sur l’accueil
 
-Le champ « Rechercher un tutoriel » de l’accueil SHALL afficher sous la saisie jusqu’à cinq tutoriels issus du même moteur et du même classement que le catalogue. Chaque suggestion SHALL afficher le titre et la catégorie et ouvrir directement la fiche. Une saisie vide SHALL masquer la liste ; une saisie sans résultat SHALL afficher un message explicite. Un bouton SHALL permettre d’afficher tous les résultats dans le catalogue.
+Le champ « Rechercher un tutoriel ou un calculateur » de l’accueil SHALL afficher sous la saisie jusqu’à cinq tutoriels et trois calculateurs, issus du même moteur de correspondance locale. Chaque suggestion SHALL afficher le titre et le type de contenu, ainsi que la catégorie pour un tutoriel, et ouvrir directement la fiche ou le calculateur. Une saisie vide SHALL masquer la liste ; une saisie sans résultat SHALL afficher un message explicite. Un bouton SHALL permettre d’afficher tous les résultats dans le catalogue.
 
 #### Scenario: Sélectionner une suggestion au clavier
 
@@ -105,3 +105,19 @@ Chaque fiche SHALL afficher ses tags sous forme de liens vers la recherche du ca
 #### Scenario: Chercher un acronyme
 - **WHEN** un visiteur recherche « PER » ou « per »
 - **THEN** il trouve les fiches correspondantes sans faire correspondre les mots « couper » ou « percer » ; la recherche « BA13 » trouve les fiches explicitement taguées et « parqet » conserve la tolérance aux fautes.
+
+### Requirement: Calculateurs dans la recherche générale
+
+La recherche SHALL utiliser pour les calculateurs les mêmes règles d’accents, de fautes et d’acronymes que pour les tutoriels. Le catalogue SHALL afficher les calculateurs correspondants dans une section séparée lorsque la recherche ne comporte pas de filtre supplémentaire. Les compteurs et filtres de tutoriels SHALL conserver leur sens.
+
+#### Scenario: Ouvrir un calculateur depuis l’accueil
+- **WHEN** le visiteur saisit « escalier » puis sélectionne la suggestion du calculateur au clavier ou au pointeur
+- **THEN** `/calculateurs/escalier/` s’ouvre directement.
+
+#### Scenario: Soumettre la recherche
+- **WHEN** le visiteur soumet « escalier » sans sélectionner de suggestion
+- **THEN** le catalogue conserve la requête et affiche le calculateur correspondant dans une section distincte, même sans tutoriel correspondant.
+
+#### Scenario: Préserver les filtres
+- **WHEN** un filtre de catégorie, parcours, difficulté ou favoris est activé
+- **THEN** la section complémentaire de calculateurs est masquée et le catalogue continue à filtrer les tutoriels normalement.

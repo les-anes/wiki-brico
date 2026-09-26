@@ -4,6 +4,8 @@ Les visiteurs ont besoin de repères chiffrés pour préparer et comparer leurs 
 
 ## What Changes
 
+- Illustrer les neuf outils du hub et les rendre accessibles depuis les suggestions, la recherche générale et les fiches associées.
+
 - Ajouter un type de page `/calculateurs/` (le hub) et `/calculateurs/<slug>/` (un outil), pré-rendu au build comme le reste du site, avec `<title>`, `description`, `canonical`, fil d’Ariane et JSON-LD `BreadcrumbList`.
 - Livrer sept outils : pente d’évacuation PVC, quantité de panneaux OSB, isolant et nombre de panneaux, montants et rails d’ossature, dosage mortier-béton, calepinage et escalier illustré.
 - Décrire chaque outil dans une donnée JSON (libellés, unités, valeurs par défaut, bornes, formule à appliquer, tutos liés) ; les formules restent des fonctions TypeScript pures et testées.

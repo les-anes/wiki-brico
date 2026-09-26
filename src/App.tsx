@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
+import { CalculatorLinks } from "@/components/calculator-links";
 import { CalculatorPage } from "@/components/calculator-page";
 import { CalculatorsHub } from "@/components/calculators-hub";
 import { CatalogPage } from "@/components/catalog-page";
@@ -30,6 +31,7 @@ import { Button } from "@/components/ui/button";
 import { tutorials } from "@/data";
 import { categories, navigationCategories, journeys } from "@/data/taxonomy";
 import { initializeAnalytics, trackPage } from "@/lib/analytics";
+import { calculatorsForTutorial } from "@/lib/calculator-discovery";
 import { belongsToCategory, catalogHref, duration } from "@/lib/catalog";
 import { responsiveImage } from "@/lib/images";
 import { categoryPath, isPageChange, matchRoute } from "@/lib/routes";
@@ -435,6 +437,7 @@ function TutorialPage({
   returnHref: string;
 }) {
   const image = responsiveImage(t.image);
+  const relatedCalculators = calculatorsForTutorial(t.id);
   return (
     <main className="detail container" tabIndex={-1}>
       <nav className="breadcrumb" aria-label="Fil d’Ariane">
@@ -615,6 +618,17 @@ function TutorialPage({
                   </a>
                 ))}
               </div>
+            </section>
+          )}
+          {relatedCalculators.length > 0 && (
+            <section
+              className="related-calculators"
+              aria-labelledby="related-calculators-title"
+            >
+              <h2 id="related-calculators-title">
+                Les calculateurs utiles à ce projet
+              </h2>
+              <CalculatorLinks tools={relatedCalculators} />
             </section>
           )}
           <section

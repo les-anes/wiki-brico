@@ -24,7 +24,7 @@ Voir `proposal.md` — Why. Ce qui contraint l’approche :
 - Estimer un budget en euros, produire un devis ou un bon de commande.
 - Sauvegarder une saisie, la partager par URL ou la préremplir depuis une fiche.
 - Traiter les pièces non rectangulaires, la pose diagonale, les motifs et les pièces en L pour le calpinage.
-- Ajouter un lien inverse depuis les fiches vers les outils (contrainte de mise en page des fiches).
+- Maintenir une seconde liste d’associations dans les fiches : les liens inverses sont dérivés du registre des calculateurs.
 
 ## Decisions
 
@@ -89,3 +89,9 @@ Le moteur reste composé de fonctions pures. L’escalier renvoie un plan dédi�
 Les champs conditionnels utilisent `visibleWhen` avec une référence à un select du même outil. Les champs masqués n’entrent pas dans la validation du mode actif. Le composant est remonté au changement de slug pour éviter de transporter des valeurs entre outils.
 
 Le dosage met à l’échelle une recette renseignée par le visiteur ; aucune quantité d’eau ou de granulats n’est déduite d’une masse volumique arbitraire. L’ossature refuse les barres plus courtes que les montants ; aucun aboutage n’est proposé. Les quantités servent à préparer le projet et ne sont plus systématiquement décrites comme des achats.
+
+## Illustrations et découverte — 26 septembre 2026
+
+Chaque définition possède une illustration locale PNG et son texte alternatif ; `responsiveImage` fournit les WebP des cartes. Les associations `relatedTutorials` servent également aux liens inverses en bas des fiches.
+
+La recherche réutilise `searchScore` sans index distant ni nouvelle dépendance. L’accueil propose au plus cinq tutoriels et trois calculateurs, distingués par leur libellé et accessibles dans la même liste au clavier. Le catalogue affiche tous les calculateurs correspondants dans une section distincte pour une recherche générale sans filtre de catégorie, parcours, difficulté ou favoris. Les compteurs de tutoriels restent propres aux tutoriels.

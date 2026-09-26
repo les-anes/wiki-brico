@@ -174,3 +174,15 @@ Le passage d’un calculateur à un autre SHALL initialiser les champs avec les 
 #### Scenario: Changer d’outil
 - **WHEN** un visiteur quitte un calculateur modifié pour un autre outil
 - **THEN** le nouvel outil affiche son exemple initial et ses propres métadonnées, sans conserver les champs du précédent.
+
+### Requirement: Illustrations du hub et liens inverses
+
+Chaque carte du hub SHALL présenter une illustration locale avec texte alternatif, dimensions réservées, variantes WebP et repli PNG. Les fiches référencées par un calculateur SHALL afficher un lien inverse dans une section dédiée, dérivé de la même association éditoriale.
+
+#### Scenario: Outil illustré
+- **WHEN** le hub est pré-rendu
+- **THEN** chaque carte contient un élément picture avec une image et des variantes existantes ; une image absente fait échouer la validation des données.
+
+#### Scenario: Du tutoriel vers le calcul
+- **WHEN** le visiteur consulte la fiche du plancher OSB
+- **THEN** un lien mène directement au calculateur de quantité d’OSB ; une fiche sans outil associé ne contient pas de section vide.
