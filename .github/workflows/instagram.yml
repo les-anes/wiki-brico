@@ -1,0 +1,68 @@
+name: Publication Instagram
+
+# Une fiche par jour, puis l’état est enregistré dans le dépôt : c’est ce fichier
+# qui garantit qu’une fiche n’est pas publiée deux fois.
+on:
+  schedule:
+    - cron: "17 8 * * *"
+  workflow_dispatch:
+    inputs:
+      nombre:
+        description: Nombre de fiches à publier
+        default: "1"
+      sansStory:
+        description: Ne publier que le post, sans story
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      # sharp (dépendance de développement) sert à fabriquer les visuels : les
+      # visuels sont committés, la publication n’en a pas besoin.
+      - run: pnpm install --frozen-lockfile --prod
+
+      - name: Montrer la file d’attente
+        run: pnpm instagram --plan
+
+      # Les visuels se préparent au fur et à mesure : si ceux de la prochaine
+      # fiche ne sont pas encore déployés, on s’arrête sans échec, le temps de
+      # les fabriquer et de les committer.
+      - name: Vérifier que les visuels sont en ligne
+        id: visuels
+        run: |
+          if pnpm instagram --check >/dev/null 2>&1; then
+            echo "prets=oui" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::Visuels de la prochaine fiche absents en ligne : lancer pnpm instagram --media --limit 7, committer public/images/social/ et déployer."
+          fi
+
+      - name: Publier
+        if: steps.visuels.outputs.prets == 'oui'
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
+          SITE_URL: https://wikibrico.fr
+        run: pnpm instagram --publish --limit ${{ github.event.inputs.nombre || 1 }} ${{ github.event.inputs.sansStory == 'true' && '--sans-story' || '' }}
+
+      - name: Enregistrer l’état
+        if: steps.visuels.outputs.prets == 'oui'
+        run: |
+          git config user.name "wikibrico-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add output/instagram/publications.json
+          git diff --cached --quiet || git commit -m "chore(instagram): noter les publications du jour"
+          git push
