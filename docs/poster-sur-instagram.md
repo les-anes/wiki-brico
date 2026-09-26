@@ -1,9 +1,10 @@
-# Publier un tutoriel sur Instagram
+# Publier les pages du site sur Instagram
 
-`scripts/instagram.mjs` sort les tutoriels du catalogue sur Instagram : l’illustration
-en post du fil, avec une légende construite depuis la fiche, puis la même illustration
-en story avec le titre et le domaine incrustés. Le script lit `src/data/tutorials/` —
-la fiche reste la seule source du texte — et n’est jamais importé par le site.
+`scripts/instagram.mjs` sort les pages du site sur Instagram : les tutoriels et les
+calculateurs, un pour un. Chaque page part en post du fil, avec une légende construite
+depuis la donnée, puis en story avec le titre et le domaine incrustés. Le script lit
+`src/data/tutorials/` et `src/data/calculators.json` — la donnée reste la seule source
+du texte — et n’est jamais importé par le site.
 
 ## Ce que l’API impose
 
@@ -14,8 +15,9 @@ Ces quatre points expliquent la forme du script ; ils ne se contournent pas.
   fabriqués par `--media` et servis par le site déployé.
 - **Aucun sticker dans une story.** L’API publie une image nue : ni lien, ni texte, ni
   mention. Le titre et `wikibrico.fr` sont donc incrustés dans le visuel de story.
-- **Aucun lien cliquable dans une légende.** L’adresse du tutoriel est écrite en clair,
-  sans `https://` qui ne servirait à rien à l’écran (`wikibrico.fr/tutoriel/…`), et
+- **Aucun lien cliquable dans une légende.** L’adresse de la page est écrite en clair,
+  sans `https://` qui ne servirait à rien à l’écran (`wikibrico.fr/tutoriel/…`,
+  `wikibrico.fr/calculateurs/…`), et sans barre oblique finale, qui ne se lit pas. Elle
   renvoie vers la bio. L’API ne sait pas non plus modifier la bio : si tu veux que le
   lien en bio suive la dernière publication, c’est à la main dans l’application.
 - **100 publications par 24 h**, et un jeton qui expire. Un post et une story par jour
@@ -98,20 +100,23 @@ regarderais :
 Une fois le compte ajouté, l'invitation se refuse ou s'accepte depuis l'application
 Instagram du compte concerné : Paramètres → Applications et sites web → Invitations de
 testeur.
+
 ## Commandes
 
 ```sh
 pnpm instagram --plan                     # file d’attente, sans réseau
 pnpm instagram --compte                   # vérifie le jeton et nomme le compte
-pnpm instagram --dry-run                  # fiche, légende et URLs, sans publier
-pnpm instagram --media --limit 7          # visuels des 7 prochaines fiches
-pnpm instagram --check                    # visuels de la fiche à venir en ligne ?
+pnpm instagram --dry-run                  # page, légende et URLs, sans publier
+pnpm instagram --media --limit 7          # visuels des 7 prochaines pages
+pnpm instagram --media --type calculateurs  # les neuf calculateurs d’un coup
+pnpm instagram --check                    # visuels de la page à venir en ligne ?
+pnpm instagram --check --attendre 10      # … en laissant 10 min à un déploiement
 pnpm instagram --publish                  # publie le post puis la story
 ```
 
-Options : `--only <id>` pour viser une fiche, `--limit <n>` pour en traiter plusieurs,
-`--hasard` pour tirer au hasard dans la file plutôt que suivre le catalogue,
-`--sans-story` pour ne sortir que le post.
+Options : `--only <id>` pour viser une page, `--limit <n>` pour en traiter plusieurs,
+`--type tutoriels|calculateurs` pour ne traiter qu’une famille, `--hasard` pour tirer au
+hasard dans la file plutôt que suivre l’ordre, `--sans-story` pour ne sortir que le post.
 
 ## Premier essai
 
@@ -162,12 +167,29 @@ pnpm instagram --publish --only peindre-un-plafond    # 5. publier
 pas déployé, ou si les visuels n’ont pas été fabriqués, la publication s’arrête avec le
 message qui dit quoi faire. Rien n’est publié à moitié : l’état est écrit après chaque
 étape, donc une coupure ne fait pas republier le post.
+## Les deux familles
+
+La file mêle les deux, **un calculateur pour un tutoriel** : les neuf calculateurs passent
+donc en un peu plus de deux semaines, puis les tutoriels continuent seuls. Comme trois
+tutoriels sont déjà sortis, les calculateurs du début se suivent de près — le temps que
+l’alternance se remette d’aplomb.
+
+Les deux ne se ressemblent pas dans le fil, et c’est voulu :
+
+| | Tutoriel | Calculateur |
+| --- | --- | --- |
+| Post du fil | illustration pleine largeur, en paysage | illustration encadrée d’un filet vert, en portrait 4:5, titre et adresse écrits dans l’image |
+| Story | illustration en haut, titre et domaine dans un bandeau sombre | la même carte que le post, en 1080×1920 |
+| Légende | « le pas à pas illustré, étape par étape », `#tuto` | « le calculateur, avec le détail du calcul », `#calculateur` |
+
 ## Ordre et état
 
-L’ordre est celui du catalogue : catégories dans l’ordre de `src/data/categories.json`,
-puis identifiants. `output/instagram/publications.json` note, pour chaque fiche sortie,
-la date, l’identifiant du post et celui de la story ; une fiche déjà présente est
-sautée. Supprime une ligne pour la remettre dans la file.
+L’ordre est celui des sources : les tutoriels suivent `src/data/categories.json` puis
+leurs identifiants, les calculateurs suivent l’ordre du hub de `calculators.json`, et les
+deux alternent. `output/instagram/publications.json` note, pour chaque page sortie, la
+date, l’identifiant du post et celui de la story ; une page déjà présente est sautée,
+qu’elle soit un tutoriel ou un calculateur. Supprime une ligne pour la remettre dans la
+file.
 
 ## Publication quotidienne
 

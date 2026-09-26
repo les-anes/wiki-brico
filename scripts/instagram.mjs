@@ -1,38 +1,48 @@
 #!/usr/bin/env node
 /**
- * Publie les tutoriels WikiBrico sur Instagram : l’illustration en post, avec
- * une légende construite depuis la fiche, puis la même illustration en story
- * avec le titre et le domaine incrustés.
+ * Publie les pages WikiBrico sur Instagram : les tutoriels et les calculateurs.
+ * Chaque page sort en post, avec une légende bâtie depuis la donnée, puis en
+ * story avec le titre et le domaine incrustés.
+ *
+ * Les deux familles ne se ressemblent pas dans le fil : un tutoriel occupe tout
+ * le cadre avec son illustration, un calculateur l’encadre et écrit son titre
+ * dans l’image (`carteCalculateur`).
  *
  * Contraintes de l’API officielle, qui commandent ce fichier :
  *   - le média doit être un JPEG hébergé sur un serveur public, Meta le
  *     télécharge lui-même (PNG et WebP ne passent pas) ;
  *   - une story publiée par API ne peut porter ni sticker ni lien : le titre et
  *     le domaine sont donc incrustés dans l’image par `--media` ;
- *   - une légende n’a pas de lien cliquable : l’URL du tutoriel est écrite en
+ *   - une légende n’a pas de lien cliquable : l’URL de la page est écrite en
  *     clair et renvoie vers la bio.
  *
  * Rien de tout cela n’entre dans le site statique : ce script lit les fiches et
- * n’est jamais importé par l’application.
+ * les outils et n’est jamais importé par l’application.
  *
  * Commandes :
  *   --plan              liste la file d’attente, sans réseau
- *   --dry-run           montre la fiche, la légende et les URLs, sans publier
+ *   --dry-run           montre la page, la légende et les URLs, sans publier
  *   --media             fabrique les JPEG de `public/images/social/` (sharp)
  *   --publish           publie le post puis la story, et note l’état
- * Options : --only <id>, --limit <n>, --sans-story, --help */
+ * Options : --only <id>, --limit <n>, --type tutoriels|calculateurs,
+ * --sans-story, --help */
 
 import { access, mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const DOSSIER_FICHES = new URL("../src/data/tutorials/", import.meta.url);
 const DOSSIER_SOCIAL = new URL("../public/images/social/", import.meta.url);
+const DOSSIER_PUBLIC = new URL("../public/", import.meta.url);
 const FICHIER_ETAT = new URL(
   "../output/instagram/publications.json",
   import.meta.url,
 );
 const FICHIER_CATEGORIES = new URL(
   "../src/data/categories.json",
+  import.meta.url,
+);
+const FICHIER_CALCULATEURS = new URL(
+  "../src/data/calculators.json",
   import.meta.url,
 );
 
@@ -54,6 +64,15 @@ function origine(site) {
   return String(site).replace(/\/+$/, "");
 }
 
+/**
+ * URL du PNG source d’un élément, déduite de son `image` de données
+ * (`/images/tutoriels/x.png`) : les deux familles se lisent pareil, sans
+ * chemin écrit en dur dans le script.
+ */
+export function cheminImage(image) {
+  return new URL(`.${image}`, DOSSIER_PUBLIC);
+}
+
 /** Nom de fichier du visuel dérivé, tel qu’il sera servi par le site. */
 export function nomImage(id, type) {
   return `${id}-${type}.jpg`;
@@ -72,9 +91,14 @@ export function nomDeDomaine(site = SITE) {
   return new URL(site).host.replace(/^www\./, "");
 }
 
-/** Adresse du tutoriel, écrite sans schéma, pour la légende. */
-export function adresseTutoriel(id, site = SITE) {
-  return `${nomDeDomaine(site)}/tutoriel/${id}/`;
+/**
+ * Route publique d’une page, sans barre oblique finale : personne ne la tape,
+ * et Instagram n’en fait rien de cliquable, donc l’adresse la plus courte se lit
+ * mieux dans une légende comme dans une image.
+ */
+export function adresseDe(element, site = SITE) {
+  const famille = element.genre === "calculateur" ? "calculateurs" : "tutoriel";
+  return `${nomDeDomaine(site)}/${famille}/${element.id}`;
 }
 
 /** Durée lisible : « 2 h », « 1 h 30 », « 45 min », rien sous la minute. */
@@ -121,7 +145,7 @@ export function hashtags(fiche, categorie, maximum = 8) {
     ...(Array.isArray(fiche.tags) ? fiche.tags : []),
     motDeCategorie(categorie),
     "bricolage",
-    "tuto",
+    fiche.genre === "calculateur" ? "calculateur" : "tuto",
     "wikibrico",
   ];
   const vus = new Set();
@@ -149,9 +173,12 @@ export function legende(fiche, categorie, site = SITE) {
   const lignes = [fiche.title.trim(), "", fiche.description.trim()];
   const ligneReperes = reperes(fiche);
   if (ligneReperes) lignes.push("", ligneReperes);
+  const adresse = adresseDe(fiche, site);
   lignes.push(
     "",
-    `Le pas à pas illustré, étape par étape : ${adresseTutoriel(fiche.id, site)}`,
+    fiche.genre === "calculateur"
+      ? `Le calculateur, avec le détail du calcul : ${adresse}`
+      : `Le pas à pas illustré, étape par étape : ${adresse}`,
     "Le lien est aussi dans la bio.",
     "",
     hashtags(fiche, categorie).join(" "),
@@ -193,6 +220,26 @@ export function trierFiches(fiches, ordreCategories) {
         (rang.get(b.category) ?? ordreCategories.length) ||
       a.id.localeCompare(b.id, "fr"),
   );
+}
+
+/**
+ * Ordre de publication des deux familles : un calculateur pour un tutoriel. La
+ * réserve de tutoriels est longue, l’alternance fait donc circuler les neuf
+ * calculateurs en un peu plus de deux semaines, puis les tutoriels continuent
+ * seuls. Les deux files gardent leur ordre : catalogue d’un côté, ordre du hub
+ * de l’autre.
+ */
+export function entrelacer(tutoriels, calculateurs) {
+  const melange = [];
+  for (
+    let index = 0;
+    index < tutoriels.length || index < calculateurs.length;
+    index += 1
+  ) {
+    if (tutoriels[index]) melange.push(tutoriels[index]);
+    if (calculateurs[index]) melange.push(calculateurs[index]);
+  }
+  return melange;
 }
 
 /** Découpe un titre en lignes d’au plus `largeur` caractères, sans couper un mot. */
@@ -261,6 +308,65 @@ export function svgStory({
   ].join("");
 }
 
+/**
+ * Palette du site, pour qu’un visuel se lise comme une page : papier, encre,
+ * terre cuite des liens et sauge des mentions secondaires.
+ */
+const PAPIER = "#f8f7f3";
+const ENCRE = "#283c32";
+const TERRE = "#b16d3d";
+const SAUGE = "#6b8060";
+const FILET = "#dfbd87";
+const POLICE = "Helvetica, Arial, sans-serif";
+const MARGE = 84;
+
+/**
+ * Visuel d’un calculateur : l’illustration est encadrée d’un filet vert et le
+ * titre s’écrit dans l’image, là où un tutoriel occupe tout le cadre. C’est ce
+ * qui distingue les deux familles dans le fil.
+ *
+ * Le bloc est centré, donc la composition tient avec un titre d’une ligne comme
+ * avec un titre de trois. Renvoie aussi la géométrie, dont la fabrique a besoin
+ * pour poser l’illustration au bon endroit.
+ */
+export function carteCalculateur({
+  titre,
+  categorie,
+  adresse,
+  largeur,
+  hauteur,
+  marge = MARGE,
+}) {
+  const story = hauteur > largeur;
+  const largeurImage = largeur - marge * 2;
+  const hauteurImage = Math.round((largeurImage * 1024) / 1536);
+  const taille = story ? 74 : 62;
+  const interligne = taille * 1.22;
+  const lignes = decouperTitre(titre, story ? 22 : 24);
+  const hauteurTitre = lignes.length * interligne;
+  const contenu = 46 + hauteurImage + 190 + hauteurTitre + 150;
+  const haut = Math.max(90, Math.round((hauteur - contenu) / 2));
+  const hautImage = haut + 46;
+  const yTitre = hautImage + hauteurImage + 190;
+  const yFilet = yTitre + hauteurTitre - interligne * 0.5 + 70;
+  const svg = [
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${largeur}" height="${hauteur}">`,
+    `<text x="${marge}" y="${haut}" font-family="${POLICE}" font-size="30" font-weight="700" letter-spacing="7" fill="${TERRE}">CALCULATEUR</text>`,
+    `<text x="${largeur - marge}" y="${haut}" text-anchor="end" font-family="${POLICE}" font-size="30" fill="${SAUGE}">${echapperXml(categorie)}</text>`,
+    `<rect x="${marge - 2}" y="${hautImage - 2}" width="${largeurImage + 4}" height="${hauteurImage + 4}" fill="none" stroke="${SAUGE}" stroke-width="4" />`,
+    `<g font-family="${POLICE}" font-size="${taille}" font-weight="700" fill="${ENCRE}">`,
+    ...lignes.map(
+      (ligne, index) =>
+        `<text x="${largeur / 2}" y="${yTitre + index * interligne}" text-anchor="middle">${echapperXml(ligne)}</text>`,
+    ),
+    "</g>",
+    `<line x1="${largeur * 0.5 - 90}" y1="${yFilet}" x2="${largeur * 0.5 + 90}" y2="${yFilet}" stroke="${FILET}" stroke-width="6" />`,
+    `<text x="${largeur / 2}" y="${yFilet + 90}" text-anchor="middle" font-family="${POLICE}" font-size="${story ? 44 : 36}" fill="${SAUGE}">${echapperXml(adresse)}</text>`,
+    "</svg>",
+  ].join("");
+  return { svg, largeurImage, hauteurImage, hautImage, marge };
+}
+
 // ---------------------------------------------------------------------------
 // Lecture du dépôt
 // ---------------------------------------------------------------------------
@@ -282,8 +388,28 @@ async function lireFiches() {
     }
   };
   await parcourir(DOSSIER_FICHES);
-  const fiches = await Promise.all(chemins.map((chemin) => lireJson(chemin)));
-  return fiches.filter((fiche) => fiche.status !== "draft");
+  const fiches = (
+    await Promise.all(chemins.map((chemin) => lireJson(chemin)))
+  ).filter((fiche) => fiche.status !== "draft");
+  for (const fiche of fiches) fiche.genre = "tutoriel";
+  return fiches;
+}
+
+/**
+ * Outils du hub, ramenés à la forme commune : mêmes champs que les fiches, plus
+ * le genre. L’ordre du fichier est celui du hub, donc celui des publications.
+ */
+async function lireCalculateurs() {
+  const { tools } = await lireJson(FICHIER_CALCULATEURS);
+  return tools.map((outil) => ({
+    id: outil.slug,
+    genre: "calculateur",
+    title: outil.title,
+    description: outil.description,
+    category: outil.category,
+    image: outil.image,
+    imageAlt: outil.imageAlt,
+  }));
 }
 
 async function lireCategories() {
@@ -326,19 +452,39 @@ async function fichierExiste(url) {
 // ---------------------------------------------------------------------------
 
 /**
- * Fabrique les deux JPEG d’une fiche : la vignette du fil (illustration
- * entière, 1080 de large) et la story composée. Sans ce passage, rien n’est
- * publiable : l’API refuse les PNG.
+ * Fabrique les deux JPEG d’un élément : la vignette du fil et la story. Une mise
+ * en page par famille. Sans ce passage, rien n’est publiable : l’API refuse les
+ * PNG.
  */
-async function fabriquerMedias(fiche, categorie) {
+async function fabriquerMedias(element, categorie) {
   const { default: sharp } = await import("sharp");
-  const source = fileURLToPath(
-    new URL(`../public/images/tutoriels/${fiche.id}.png`, import.meta.url),
-  );
+  const source = fileURLToPath(cheminImage(element.image));
   await mkdir(DOSSIER_SOCIAL, { recursive: true });
-  const fil = new URL(nomImage(fiche.id, "fil"), DOSSIER_SOCIAL);
-  const story = new URL(nomImage(fiche.id, "story"), DOSSIER_SOCIAL);
+  const fil = new URL(nomImage(element.id, "fil"), DOSSIER_SOCIAL);
+  const story = new URL(nomImage(element.id, "story"), DOSSIER_SOCIAL);
 
+  if (element.genre === "calculateur")
+    await fabriquerCarte(sharp, { source, element, categorie, fil, story });
+  else
+    await fabriquerIllustration(sharp, {
+      source,
+      element,
+      categorie,
+      fil,
+      story,
+    });
+
+  return { fil: fileURLToPath(fil), story: fileURLToPath(story) };
+}
+
+/**
+ * Tutoriel : l’illustration pleine largeur dans le fil, puis l’illustration
+ * suivie du calque de titre dans la story.
+ */
+async function fabriquerIllustration(
+  sharp,
+  { source, element, categorie, fil, story },
+) {
   await sharp(source)
     .resize({ width: 1080, withoutEnlargement: false })
     .jpeg({ quality: 84, mozjpeg: true })
@@ -362,7 +508,7 @@ async function fabriquerMedias(fiche, categorie) {
       {
         input: Buffer.from(
           svgStory({
-            titre: fiche.title,
+            titre: element.title,
             categorie,
             domaine: nomDeDomaine(SITE),
             hauteur: 1920,
@@ -374,8 +520,55 @@ async function fabriquerMedias(fiche, categorie) {
     ])
     .jpeg({ quality: 88, mozjpeg: true })
     .toFile(fileURLToPath(story));
+}
 
-  return { fil: fileURLToPath(fil), story: fileURLToPath(story) };
+/**
+ * Calculateur : illustration encadrée sur fond papier, titre et adresse écrits
+ * dans l’image, dans les deux formats. Le fil est en portrait — les tutoriels
+ * restent en paysage —, ce qui achève de distinguer les deux familles.
+ */
+async function fabriquerCarte(
+  sharp,
+  { source, element, categorie, fil, story },
+) {
+  const formats = [
+    { cible: fil, largeur: 1080, hauteur: 1350 },
+    { cible: story, largeur: 1080, hauteur: 1920 },
+  ];
+  for (const { cible, largeur, hauteur } of formats) {
+    const geometrie = carteCalculateur({
+      titre: element.title,
+      categorie,
+      adresse: adresseDe(element),
+      largeur,
+      hauteur,
+    });
+    const illustration = await sharp(source)
+      .resize({
+        width: geometrie.largeurImage,
+        height: geometrie.hauteurImage,
+      })
+      .jpeg({ quality: 88, mozjpeg: true })
+      .toBuffer();
+    await sharp({
+      create: {
+        width: largeur,
+        height: hauteur,
+        channels: 3,
+        background: PAPIER,
+      },
+    })
+      .composite([
+        {
+          input: illustration,
+          top: geometrie.hautImage,
+          left: geometrie.marge,
+        },
+        { input: Buffer.from(geometrie.svg), top: 0, left: 0 },
+      ])
+      .jpeg({ quality: 88, mozjpeg: true })
+      .toFile(fileURLToPath(cible));
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -544,18 +737,19 @@ async function publierStory(compte, fiche) {
 // Commandes
 // ---------------------------------------------------------------------------
 
-const AIDE = `Publication des tutoriels WikiBrico sur Instagram.
+const AIDE = `Publication des pages WikiBrico sur Instagram : les tutoriels et
+les calculateurs, un pour un.
 
   pnpm instagram --plan                     file d’attente, sans réseau
   pnpm instagram --compte                   vérifie le jeton et nomme le compte
-  pnpm instagram --dry-run [--only <id>]    fiche, légende et URLs, sans publier
-  pnpm instagram --media [--limit <n>]      visuels des <n> prochaines fiches
-  pnpm instagram --check [--only <id>]      visuels de la fiche à venir en ligne ?
+  pnpm instagram --dry-run [--only <id>]    page, légende et URLs, sans publier
+  pnpm instagram --media [--limit <n>]      visuels des <n> prochaines pages
+  pnpm instagram --check [--only <id>]      visuels de la page à venir en ligne ?
   pnpm instagram --check --attendre 10      … en laissant 10 min à un déploiement
   pnpm instagram --publish [--only <id>] [--limit <n>] [--sans-story]
 
-Option : --hasard tire une fiche au hasard (dont les visuels sont prêts, pour
---dry-run et --publish) au lieu de suivre l’ordre du catalogue.
+Options : --type tutoriels|calculateurs pour ne traiter qu’une famille, --hasard
+pour tirer une page au hasard parmi celles dont les visuels sont prêts.
 
 Variables d’environnement : INSTAGRAM_ACCESS_TOKEN (obligatoire pour publier),
 INSTAGRAM_ACCOUNT_ID (facultatif), INSTAGRAM_GRAPH_VERSION, SITE_URL.`;
@@ -578,19 +772,35 @@ function lireArguments(argv) {
     else if (argument === "--sans-story") options.sansStory = true;
     else if (argument === "--only") options.only = argv[++index];
     else if (argument === "--limit") options.limit = Number(argv[++index]);
-    else throw new Error(`Option inconnue : ${argument} (essaie --help).`);
+    else if (argument === "--type") {
+      const valeur = argv[++index];
+      if (valeur !== "tutoriels" && valeur !== "calculateurs")
+        throw new Error(
+          `--type attend tutoriels ou calculateurs (reçu : ${valeur ?? "rien"}).`,
+        );
+      options.genre = valeur === "calculateurs" ? "calculateur" : "tutoriel";
+    } else throw new Error(`Option inconnue : ${argument} (essaie --help).`);
   }
   return options;
 }
 
-async function contexte() {
-  const [fiches, categories, etat] = await Promise.all([
+async function contexte(options) {
+  const [fiches, calculateurs, categories, etat] = await Promise.all([
     lireFiches(),
+    lireCalculateurs(),
     lireCategories(),
     lireEtat(),
   ]);
+  // Tutoriels dans l’ordre du catalogue, calculateurs dans celui du hub, puis
+  // un calculateur pour un tutoriel : les deux familles circulent ensemble.
+  const catalogue = entrelacer(
+    trierFiches(fiches, categories.ordre),
+    calculateurs,
+  );
   return {
-    fiches: trierFiches(fiches, categories.ordre),
+    fichiers: options.genre
+      ? catalogue.filter((fiche) => fiche.genre === options.genre)
+      : catalogue,
     categorieDe: (fiche) =>
       categories.noms.get(fiche.category) ?? fiche.category,
     etat,
@@ -600,10 +810,10 @@ async function contexte() {
 async function commandePlan(fichiers, publies, options) {
   const attente = fileDAttente(fichiers, publies, options);
   if (attente.length === 0) {
-    console.log("Rien à publier : toutes les fiches de la file sont sorties.");
+    console.log("Rien à publier : toutes les pages de la file sont sorties.");
     return;
   }
-  console.log(`${attente.length} fiche(s) en attente, dans l’ordre :\n`);
+  console.log(`${attente.length} page(s) en attente, dans l’ordre :\n`);
   for (const fiche of attente)
     console.log(
       `  ${fiche.id}  ${fiche.title}${fiche.image ? "" : "  (sans image)"}`,
@@ -627,7 +837,7 @@ async function fileDuTravail(fichiers, publies, options) {
 /** Message quand la file ne donne rien : dire laquelle des deux causes c’est. */
 function rienAFaire(rienAPublier) {
   return rienAPublier
-    ? "Aucune fiche à publier avec ces critères."
+    ? "Aucune page à publier avec ces critères."
     : "Aucun visuel prêt : lance pnpm instagram --media --limit 1 (ou --limit 7 pour une semaine) avant de publier.";
 }
 
@@ -643,7 +853,7 @@ async function commandeDryRun(fichiers, categorieDe, publies, options) {
     return;
   }
   const categorie = categorieDe(fiche);
-  console.log(`Fiche : ${fiche.id} — ${fiche.title}`);
+  console.log(`Page : ${fiche.id} — ${fiche.title}`);
   console.log(`Catégorie : ${categorie}`);
   console.log(`Post  : ${urlPublique(nomImage(fiche.id, "fil"))}`);
   if (!options.sansStory)
@@ -677,7 +887,7 @@ async function commandeMedia(fichiers, categorieDe, publies, options) {
     );
   }
   console.log(
-    `\n${fabriquees} fiche(s) traitée(s) dans public/images/social/. Committe ces visuels et déploie le site : Meta les télécharge depuis l’URL publique.`,
+    `\n${fabriquees} page(s) traitée(s) dans public/images/social/. Committe ces visuels et déploie le site : Meta les télécharge depuis l’URL publique.`,
   );
 }
 
@@ -767,7 +977,7 @@ async function commandePublish(fichiers, categorieDe, etat, options) {
     publiees += 1;
   }
   console.log(
-    `\n${publiees} fiche(s) publiée(s). État : output/instagram/publications.json — committe ce fichier pour garder la liste à jour.`,
+    `\n${publiees} page(s) publiée(s). État : output/instagram/publications.json — committe ce fichier pour garder la liste à jour.`,
   );
 }
 
@@ -777,16 +987,16 @@ async function main(argv) {
     console.log(AIDE);
     return;
   }
-  const { fiches, categorieDe, etat } = await contexte();
-  if (options.commande === "plan") return commandePlan(fiches, etat, options);
+  const { fichiers, categorieDe, etat } = await contexte(options);
+  if (options.commande === "plan") return commandePlan(fichiers, etat, options);
   if (options.commande === "dry-run")
-    return commandeDryRun(fiches, categorieDe, etat, options);
+    return commandeDryRun(fichiers, categorieDe, etat, options);
   if (options.commande === "media")
-    return commandeMedia(fiches, categorieDe, etat, options);
+    return commandeMedia(fichiers, categorieDe, etat, options);
   if (options.commande === "check")
-    return commandeVerifier(fiches, etat, options);
+    return commandeVerifier(fichiers, etat, options);
   if (options.commande === "compte") return commandeCompte();
-  return commandePublish(fiches, categorieDe, etat, options);
+  return commandePublish(fichiers, categorieDe, etat, options);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href)
