@@ -6,17 +6,20 @@
     "icon": "Hammer",
     "kind": "trade",
     "topics": [
-      ["Fondations"],
-      ["Murs porteurs"],
-      ["Maçonnerie de pierre", "Rejointoiement"],
-      ["Ouvertures"],
-      ["Linteaux"],
-      ["Chaînages"],
-      ["Poutres"],
-      ["Solives"],
-      ["Planchers"],
-      ["Trémies"],
-      ["Escaliers"]
+      ["Maçonnerie"],
+      ["Maçonnerie", "Fondations"],
+      ["Maçonnerie", "Murs porteurs"],
+      ["Maçonnerie", "Maçonnerie de pierre"],
+      ["Maçonnerie", "Rejointoiement de pierre"],
+      ["Maçonnerie", "Ouvertures dans un mur"],
+      ["Maçonnerie", "Linteaux"],
+      ["Maçonnerie", "Chaînages"],
+      ["Charpente & ossature bois"],
+      ["Charpente & ossature bois", "Solives"],
+      ["Planchers & escaliers"],
+      ["Planchers & escaliers", "Planchers"],
+      ["Planchers & escaliers", "Trémies"],
+      ["Planchers & escaliers", "Escaliers"]
     ]
   },
   {
@@ -87,16 +90,11 @@
     "icon": "Droplets",
     "kind": "trade",
     "topics": [
-      ["Arrivée d’eau", "PEHD"],
-      ["Arrivée d’eau", "PER", "Raccord à sertir"],
-      ["Arrivée d’eau", "PER", "Raccord à glissement"],
-      ["Arrivée d’eau", "PER", "Raccord à compression"],
-      ["Arrivée d’eau", "Cuivre"],
-      ["Arrivée d’eau", "Raccord PER vers cuivre"],
-      ["Arrivée d’eau", "Dimensionnage"],
-      ["Gestion des évacuations"],
-      ["Arrivée d’eau", "Multicouche"],
+      ["Arrivée d’eau"],
+      ["Arrivée d’eau", "Tuyaux"],
+      ["Arrivée d’eau", "Raccords"],
       ["Arrivée d’eau", "Nourrices"],
+      ["Gestion des évacuations"],
       ["Chauffe-eau"],
       ["Robinetterie"]
     ]
@@ -125,9 +123,8 @@
     "topics": [
       ["Radiateurs"],
       ["Plancher chauffant"],
-      ["PAC"],
+      ["Pompe à chaleur"],
       ["Poêle"],
-      ["VMC"],
       ["Ventilation"],
       ["Climatisation"]
     ]

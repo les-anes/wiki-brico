@@ -1,0 +1,96 @@
+{
+  "id": "faire-un-raccord-plomberie-avec-de-la-filasse",
+  "title": "Faire un raccord de plomberie avec de la filasse",
+  "description": "La filasse est une fibre de lin qui, associée à une pâte à joint, empêche l’eau de passer entre les filets d’un raccord métallique. Voici comment préparer ton raccord, enrouler les fibres et vérifier qu’il ne fuit pas.",
+  "category": "plomberie",
+  "topicPath": ["Arrivée d’eau", "Raccords"],
+  "tags": ["étanchéité", "eau potable", "fuite"],
+  "relatedTutorials": [
+    "reparer-fuite-joint-plat",
+    "per-raccord-a-compression",
+    "raccord-per-vers-cuivre"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 30,
+  "cost": null,
+  "image": "/images/tutoriels/faire-un-raccord-plomberie-avec-de-la-filasse.png",
+  "imageAlt": "Raccord en laiton enveloppé de filasse, écheveau de lin, pâte à joint et clé à molette dessinés sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Un assemblage accessible sur une conduite d’eau sanitaire, entre raccords métalliques compatibles dont le fabricant prévoit l’étanchéité dans le filetage avec filasse et pâte. Hors gaz, raccord plastique, joint plat ou torique, portée conique, raccord préétanché et canalisation encastrée.",
+  "estimatesNote": "Prévois environ 30 min pour un raccord accessible, préparation et contrôle compris, hors modification du réseau. Le budget dépend des raccords et des consommables choisis ; les outils restent à prévoir.",
+  "sources": [
+    {
+      "title": "GEB — GEBATOUT 2, pâte à joint",
+      "url": "https://www.geb.fr/pro/gebatout-2-pate-a-joint/",
+      "note": "Usage sur filetages métalliques, préparation, crantage éventuel, pâte avant et après filasse, sens d’enroulement et assemblage. Les conditions de service et de remise en pression restent propres au produit.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "GEB — Filasse de lin RT1",
+      "url": "https://www.geb.fr/pro/filasse-de-lin-rt1/",
+      "note": "Association filasse et pâte pour les raccords filetés métalliques d’eau chaude et froide sanitaire ; compatibilité eau potable à vérifier pour le couple de produits.",
+      "accessedAt": "2026-09-27"
+    }
+  ],
+  "tools": [
+    "Deux clés à molette adaptées aux plats des raccords",
+    "Petite brosse et lame de scie à métaux avec poignée pour les filets lisses",
+    "Bassine, chiffons propres et papier absorbant"
+  ],
+  "materials": [
+    {
+      "name": "Raccords métalliques mâle et femelle prévus pour une étanchéité sur filetage",
+      "quantity": "1 paire compatible avec la conduite, de même dimension et de filetages compatibles"
+    },
+    {
+      "name": "Filasse de lin pour plomberie",
+      "quantity": "1 petite mèche adaptée au raccord"
+    },
+    {
+      "name": "Pâte à joint compatible avec la filasse et l’eau potable",
+      "quantity": "1 petit tube ; vérifier la conformité de l’association avec la filasse choisie"
+    },
+    {
+      "name": "Nettoyant dégraissant adapté aux raccords",
+      "quantity": "Selon la notice, pour retirer les résidus avant montage"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie où se fait l’étanchéité",
+      "description": "Consulte la notice des raccords : ce montage convient uniquement si elle prévoit filasse et pâte dans un filetage métallique. Un écrou qui comprime un joint plat, un joint torique ou une portée conique n’a pas besoin de filasse sur ses filets. Vérifie aussi les dimensions, les filetages et la compatibilité eau potable de l’ensemble filasse et pâte."
+    },
+    {
+      "title": "Coupe l’eau et nettoie les filets",
+      "description": "Ferme l’arrivée d’eau, ouvre un robinet en aval pour faire tomber la pression et attends l’arrêt de l’écoulement avant de démonter au-dessus d’une bassine. Retire les anciennes fibres et la pâte avec la brosse, puis dégraisse suivant la notice du nettoyant et sèche les deux raccords. Remplace une pièce fissurée ou dont les filets sont abîmés."
+    },
+    {
+      "title": "Prépare l’accroche et applique la pâte",
+      "description": "Sur un filetage mâle lisse, si la notice l’autorise, passe légèrement les dents de la lame de scie en travers des filets pour créer de petites accroches, sans entailler profondément le métal ; un raccord déjà strié n’en a pas besoin. Élimine les particules, puis étale une fine couche de pâte sur le filetage extérieur, sans en mettre dans le passage d’eau."
+    },
+    {
+      "title": "Enroule une mèche régulière",
+      "description": "Prélève une petite mèche, étire-la pour répartir les fibres et enroule-la tendue dans le sens du vissage : pour un filetage courant à droite, dans le sens des aiguilles d’une montre en regardant l’extrémité mâle de face. Pars près de l’extrémité en laissant le premier filet dégagé, puis progresse vers la base en formant une couche régulière qui laisse deviner le relief des filets, sans fibres dans le trou. Lisse la filasse et recouvre-la d’une fine couche de pâte, selon sa notice."
+    },
+    {
+      "title": "Visse sans forcer de travers",
+      "description": "Engage les pièces à la main bien dans l’axe, puis tiens le corps fixe avec une clé pendant que l’autre serre le raccord, sans tordre la conduite. Respecte les indications de serrage du fabricant : si l’assemblage bloque dès l’entrée ou repousse la filasse en paquet, démonte et recommence avec des filets propres et une quantité adaptée. Arrête-toi à l’orientation voulue ; si tu dois dévisser pour la corriger, refais le joint."
+    },
+    {
+      "title": "Remets en eau et cherche les suintements",
+      "description": "Respecte le délai de remise en pression indiqué pour la pâte, ouvre l’eau progressivement et laisse l’air sortir au robinet avant de le refermer. Essuie le raccord et passe du papier absorbant autour pour repérer toute humidité sous pression, puis contrôle de nouveau après quelques minutes et après utilisation. Si une goutte apparaît, coupe l’eau, dépressurise et refais le joint ; garde le raccord accessible et rince la conduite avant usage."
+    }
+  ],
+  "mistakes": [
+    "Mettre de la filasse sur un raccord dont l’étanchéité repose sur un joint plat ou un joint intégré.",
+    "Enrouler les fibres à l’envers ou former une grosse boule qui empêche le vissage et peut fendre le raccord.",
+    "Desserrer pour orienter la pièce ou ajouter de la pâte par-dessus une fuite sans refaire le joint."
+  ],
+  "safety": [
+    "Sur l’eau chaude, laisse refroidir la conduite avant le démontage ; si l’eau continue à couler malgré la coupure et la vidange, rétablis une isolation efficace avant d’ouvrir le raccord.",
+    "N’applique pas cette méthode à une installation de gaz ni à un raccord plastique ; vérifie les limites de pression et de température de chaque pièce et du produit.",
+    "Ne serre pas avec une rallonge et ne rattrape pas un défaut d’alignement en tirant sur les tuyaux."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-27"
+}

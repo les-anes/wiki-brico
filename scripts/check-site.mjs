@@ -81,8 +81,8 @@ try {
   // --- Contenu rendu par route ---
   assert.equal(categories.filter((c) => c.kind === "trade").length, 12);
   assert.equal(categories.filter((c) => c.kind === "transversal").length, 2);
-  assert.equal(tutorials.length, 78);
-  assert.equal(new Set(tutorials.map((t) => t.id)).size, 78);
+  assert.equal(tutorials.length, 83);
+  assert.equal(new Set(tutorials.map((t) => t.id)).size, 83);
   validateDiscovery(
     tutorials,
     tags,
@@ -170,28 +170,29 @@ try {
   assert(!home.includes("On s’y met ce week-end ?"));
   assert(home.includes("/favicon.svg"));
   assert(!home.includes("Tutoriel introuvable"));
-  assert.equal(countCards(render("/tutoriels/")), 78);
+  assert.equal(countCards(render("/tutoriels/")), 83);
   assert.equal(
     countCards(
       render(
         catalogHref({
           category: "plomberie",
-          topicPath: ["Arrivée d’eau", "PER"],
+          topicPath: ["Arrivée d’eau"],
         }),
       ),
     ),
-    3,
+    9,
+    "le thème Arrivée d’eau ramasse tout son sous-arbre",
   );
   assert.equal(
     countCards(
       render(
         catalogHref({
           category: "plomberie",
-          topicPath: ["Arrivée d’eau", "PER", "Raccord à sertir"],
+          topicPath: ["Arrivée d’eau", "Raccords"],
         }),
       ),
     ),
-    1,
+    5,
   );
   assert.equal(
     countCards(
@@ -215,7 +216,7 @@ try {
     0,
     "La recherche approximative respecte le filtre de catégorie",
   );
-  assert.equal(countCards(render(catalogHref({ category: "electricite" }))), 7);
+  assert.equal(countCards(render(catalogHref({ category: "electricite" }))), 8);
   assert.equal(
     countCards(render(catalogHref({ query: "zzzintrouvablezzz" }))),
     0,

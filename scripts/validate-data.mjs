@@ -60,6 +60,15 @@ assert.equal(
   journeys.length,
   "Parcours dupliqués",
 );
+// Le menu ne montre qu’un niveau : un thème s’écrit en un ou deux segments, le
+// premier servant de préfixe à ses sous-thèmes. Au-delà, la navigation se
+// replierait sur deux crans, et l’arborescence des fiches avec elle.
+for (const category of taxonomy)
+  for (const topic of category.topics)
+    assert(
+      topic.length === 1 || topic.length === 2,
+      `${category.id} : thème « ${topic.join(" › ")} » : un ou deux segments attendus`,
+    );
 function validClassification(category, topicPath) {
   return taxonomy.some(
     (entry) =>

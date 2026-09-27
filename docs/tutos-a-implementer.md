@@ -13,7 +13,7 @@ Ce document centralise les idées de nouveaux tutos WikiBrico. Il sert à choisi
 - Revoir les priorités une fois par mois ou lors du choix d’un nouveau lot : demandes des lecteurs, recherches internes sans résultat et données de recherche disponibles passent avant les intuitions initiales.
 - Conserver les identifiants `T01`, `T02`, etc. lorsqu’une idée change de priorité. Ajouter les nouvelles idées à la suite de la numérotation.
 
-Les 44 premières idées ont été **réalisées**. Dix tutoriels peinture demandés le 24 septembre 2026 sont en cours (T45 à T54).
+Les 56 idées de cette liste ont été **réalisées**, dont les dix tutoriels peinture T45 à T54 et les deux tutoriels soudure T55 et T56.
 
 ## Pourquoi ces priorités
 
@@ -51,6 +51,17 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - [Relier du PER au cuivre](../src/data/tutorials/plomberie/arrivee-d-eau/raccord-per-vers-cuivre/raccord-per-vers-cuivre.json)
 
 ## Réalisés depuis cette liste
+
+- [x] T45 — Lessiver un mur avant de le peindre — réalisé le 2026-09-24 — [/tutoriel/lessiver-un-mur-avant-peinture/](/tutoriel/lessiver-un-mur-avant-peinture/)
+- [x] T46 — Peindre des plaques de plâtre neuves — réalisé le 2026-09-24 — [/tutoriel/peindre-des-plaques-de-platre-neuves/](/tutoriel/peindre-des-plaques-de-platre-neuves/)
+- [x] T47 — Appliquer une sous-couche avant peinture — réalisé le 2026-09-24 — [/tutoriel/appliquer-une-sous-couche/](/tutoriel/appliquer-une-sous-couche/)
+- [x] T48 — Réparer une peinture qui s’écaille sur un mur — réalisé le 2026-09-24 — [/tutoriel/reparer-une-peinture-qui-s-ecaille/](/tutoriel/reparer-une-peinture-qui-s-ecaille/)
+- [x] T49 — Rattraper des traces de rouleau sur un mur — réalisé le 2026-09-24 — [/tutoriel/rattraper-des-traces-de-rouleau/](/tutoriel/rattraper-des-traces-de-rouleau/)
+- [x] T50 — Faire une retouche de peinture sur un mur — réalisé le 2026-09-24 — [/tutoriel/faire-une-retouche-de-peinture/](/tutoriel/faire-une-retouche-de-peinture/)
+- [x] T51 — Repeindre des portes de cuisine stratifiées — réalisé le 2026-09-24 — [/tutoriel/repeindre-des-portes-de-cuisine-stratifiees/](/tutoriel/repeindre-des-portes-de-cuisine-stratifiees/)
+- [x] T52 — Repeindre un radiateur à eau chaude — réalisé le 2026-09-24 — [/tutoriel/repeindre-un-radiateur-a-eau-chaude/](/tutoriel/repeindre-un-radiateur-a-eau-chaude/)
+- [x] T53 — Peindre un carrelage mural de cuisine — réalisé le 2026-09-24 — [/tutoriel/peindre-un-carrelage-mural-de-cuisine/](/tutoriel/peindre-un-carrelage-mural-de-cuisine/)
+- [x] T54 — Nettoyer ses rouleaux et pinceaux après une peinture à l’eau — réalisé le 2026-09-24 — [/tutoriel/nettoyer-rouleaux-et-pinceaux/](/tutoriel/nettoyer-rouleaux-et-pinceaux/)
 
 - [x] **T55 — Souder un composant électronique à l’étain** — terminé le 2026-09-27 — [/tutoriel/souder-un-composant-electronique-a-l-etain/](/tutoriel/souder-un-composant-electronique-a-l-etain/)
 - [x] **T56 — Souder deux pièces d’acier à l’arc** — terminé le 2026-09-27 — [/tutoriel/souder-deux-pieces-d-acier-a-l-arc/](/tutoriel/souder-deux-pieces-d-acier-a-l-arc/)
@@ -104,7 +115,15 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Journal de mise à jour
 
-- **2026-09-27** : T55 et T56 réalisés à la demande du lecteur : brasage électronique sur carte d’essai non alimentée et soudage MMA de plats d’acier sans fonction porteuse. Deux illustrations originales, tags et liens complémentaires ; sources Adafruit, Miller, Lincoln Electric et HSE conservées dans les fiches. Le catalogue compte 78 tutoriels ; aucune idée soudure en attente, les dix entrées peinture restent à solder dans le suivi historique.
+- **2026-09-27** : ajout hors liste de [Ajouter une nourrice de distribution d’eau](/tutoriel/ajouter-une-nourrice-d-eau/), dans Plomberie › Arrivée d’eau › Nourrices, jusqu’ici vide. Montage accessible d’eau froide avec départs PER à compression, six étapes, notices fabricant et illustration originale avec variantes WebP. Le catalogue compte 83 tutoriels ; aucune des 56 idées historiques ne reste à faire. TypeScript, lint et 63 tests réussis ; page et filtre Nourrices vérifiés séparément. Les contrôles globaux restent bloqués par les erreurs préexistantes des fiches trémie et section des câbles.
+
+- **2026-09-27** : le gros œuvre est regroupé en trois familles : Maçonnerie, Charpente & ossature bois, Planchers & escaliers. Les onze thèmes existants deviennent leurs sous-catégories ; les six fiches et les filtres des calculateurs suivent ce classement, sans changement d’identifiant ni d’URL de tutoriel. Aucun tutoriel ajouté.
+
+- **2026-09-27** : ajout hors liste de [Faire un raccord de plomberie avec de la filasse](/tutoriel/faire-un-raccord-plomberie-avec-de-la-filasse/), dans Plomberie › Arrivée d’eau › Raccords. Six étapes, sources fabricant et illustration originale avec variantes WebP ; le catalogue compte 82 tutoriels, aucune des 56 idées historiques ne reste à faire. TypeScript, lint et 63 tests réussis ; validation globale bloquée par des données préexistantes (classement « Sciage » de la trémie et tags inconnus de la fiche sur la section des câbles).
+
+- **2026-09-27** : correction du suivi T45 à T54, déjà présents au catalogue depuis le 24 septembre avec leurs illustrations et variantes WebP. Déplacement dans les réalisations ; aucun nouveau tutoriel créé.
+
+- **2026-09-27** : T55 et T56 réalisés à la demande du lecteur : brasage électronique sur carte d’essai non alimentée et soudage MMA de plats d’acier sans fonction porteuse. Deux illustrations originales, tags et liens complémentaires ; sources Adafruit, Miller, Lincoln Electric et HSE conservées dans les fiches. Le catalogue compte 78 tutoriels ; aucune idée soudure en attente ; le suivi historique des dix entrées peinture a été régularisé le même jour.
 
 - **2026-09-11** : création de 30 idées, réparties en trois priorités, après comparaison avec les 18 fiches existantes. Priorisation qualitative, sans volumes de recherche.
 - **2026-09-11** : ajout de huit sujets peinture (T31 à T38), dont les trois demandes : éviter les bavures, choisir sa peinture et réaliser un motif au pochoir. La liste compte désormais 38 idées ; les volumes Google Trends n’ont pas été vérifiés.
@@ -132,15 +151,57 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 - **2026-09-24** : trois fiches de couverture demandées pour le thème Toiture, vide jusqu’ici : poser une couverture en ardoise, en tuile mécanique et en bac acier. Périmètre retenu : pose seule sur un support déjà en place, liteaux ou pannes, pour une annexe ou une dépendance, avec les garde-fous d’accès en hauteur. Sources : guide de pose Edilians adossé au DTU 40.21 et outil de détermination de la section des liteaux pour la tuile mécanique, Wikipédia et Bricoleur du dimanche pour l’ardoise, Bricoleur du dimanche et Joris Ide pour le bac acier. Les trois illustrations restent à générer : leurs prompts sont consignés dans `output/imagegen/`. Le catalogue contient 76 tutoriels.
 
-## Lot peinture — En cours
+- **2026-09-27** : le menu du haut garde **un niveau de repli**, et pas davantage. Les
+  thèmes de « Plomberie & eau » se rangent en familles : « Arrivée d’eau » (Tuyaux ·
+  Raccords · Nourrices), puis Gestion des évacuations, Chauffe-eau et Robinetterie. Les
+  fiches suivent — PEHD et cuivre sous Tuyaux, les quatre raccords PER sous Raccords, le
+  dimensionnement et le rejointoiement de pierre remontent d’un cran. Ménage dans les
+  doublons et les acronymes : `VMC` tombe au profit de `Ventilation`, `PAC` devient
+  `Pompe à chaleur`, `Ouvertures` devient `Ouvertures dans un mur`. `validate-data` refuse
+  désormais un thème de plus de deux segments, donc l’arbre ne peut plus se replier
+  au-delà d’un niveau. Relevé des thèmes sans fiche mis à jour : 68 sur 105.
 
-- [ ] T45 — Lessiver un mur avant de le peindre — En cours
-- [ ] T46 — Peindre des plaques de plâtre neuves — En cours
-- [ ] T47 — Appliquer une sous-couche avant peinture — En cours
-- [ ] T48 — Réparer une peinture qui s’écaille sur un mur — En cours
-- [ ] T49 — Rattraper des traces de rouleau sur un mur — En cours
-- [ ] T50 — Faire une retouche de peinture sur un mur — En cours
-- [ ] T51 — Repeindre des portes de cuisine stratifiées — En cours
-- [ ] T52 — Repeindre un radiateur à eau chaude — En cours
-- [ ] T53 — Peindre un carrelage mural de cuisine — En cours
-- [ ] T54 — Nettoyer ses rouleaux et pinceaux après une peinture à l’eau — En cours
+- **2026-09-27** : trois fiches écrites à la demande : le choix de la section des câbles
+  d’un circuit (`Électricité › Circuits`), l’ouverture d’une trémie dans un plancher à
+  solives (`Structure › Trémies`) et l’escalier droit à limon central
+  (`Structure › Escaliers`). Les trois thèmes étaient vides, dont `Escaliers` signalé
+  juste avant. Le thème `Poutres` est retiré : aucun sujet ne s’y rangeait. **Les trois
+  illustrations restent à générer** : prompts dans `output/imagegen/` et
+  `docs/illustrations-tutoriels.md`, et `validate:data` refuse les fiches tant que les PNG
+  manquent. Le catalogue compte 81 tutoriels ; 64 thèmes sans fiche sur 104. Reste à
+  écrire pour l’escalier : le double limon. Le colimaçon est écarté : il se monte à partir
+  d’un kit, ce n’est pas une fabrication, et le sujet ne sera pas traité.
+
+## Thèmes sans fiche — relevé du 27 septembre 2026
+
+Les 104 thèmes de `src/data/categories.json` alimentent le menu du site : chacun ouvre le
+catalogue filtré. **64 n’ont encore aucune fiche**, donc le clic mène à un catalogue vide.
+Trois univers entiers sont dans ce cas : l’isolation, l’assainissement et les extérieurs.
+
+| Catégorie (vides / total) | Thèmes sans fiche |
+| --- | --- |
+| Structure & gros œuvre (5/11) | Fondations · Murs porteurs · Maçonnerie de pierre · Ouvertures dans un mur · Solives |
+| Toiture & étanchéité (5/6) | Charpente · Gouttières · Fenêtres de toit · Étanchéité · Infiltrations |
+| Isolation & performance thermique (6/6) | Murs · Toiture · Sols · Ponts thermiques · Pare-vapeur · Étanchéité à l’air |
+| Cloisons, plafonds & doublages (4/6) | Ossatures bois · Ossatures métal · Faux plafonds · Gaines techniques |
+| Électricité (2/7) | Mise à la terre · Réseau informatique |
+| Plomberie & eau (1/7) | Chauffe-eau |
+| Assainissement & eaux pluviales (6/6) | Tout-à-l’égout · Fosse · Microstation · Drainage · Évacuations extérieures · Récupération d’eau |
+| Chauffage, ventilation & confort (4/6) | Plancher chauffant · Pompe à chaleur · Poêle · Climatisation |
+| Menuiseries (2/6) | Fenêtres · Portes coulissantes |
+| Sols, murs & finitions (2/9) | Tomettes · Enduits décoratifs |
+| Cuisine & salle de bains (5/9) | Baignoire · Lavabos · Meubles · Plans de travail · Étanchéité sous carrelage |
+| Extérieurs (8/8) | Terrasse · Façade · Clôture · Portail · Allées · Jardin · Dépendances · Éclairage extérieur |
+| Préparer son chantier (6/7) | Diagnostic · Budget · Plans · Métrés · Matériaux · Location d’outils |
+| Techniques & savoir-faire (7/10) | Visser · Scier · Faire du mortier · Faire un joint · Utiliser un niveau · Poncer · Faire un enduit |
+
+Deux doublons réglés au passage : `VMC` est tombé au profit de `Ventilation` (la fiche
+sur les bouches y descend) et `Ouvertures` est devenu `Ouvertures dans un mur`, pour ne
+plus croiser `Fenêtres` et `Fenêtres de toit`.
+
+Les trois thèmes qui posaient problème sont désormais servis : `Circuits` par la fiche
+sur la section des câbles, `Trémies` par l’ouverture dans un plancher et `Escaliers` par
+l’escalier à limon central. Le thème `Poutres` a disparu : aucun sujet ne s’y rangeait.
+
+À rafraîchir quand des fiches sont ajoutées : un thème passe de la colonne des vides à
+celle des réalisés dès qu’une fiche le prend pour `topicPath`.

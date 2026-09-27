@@ -1,0 +1,123 @@
+{
+  "id": "ajouter-une-nourrice-d-eau",
+  "title": "Ajouter une nourrice de distribution d’eau",
+  "description": "Une nourrice, aussi appelée collecteur, répartit une arrivée d’eau vers plusieurs tuyaux et permet de fermer chaque départ séparément. Tu vas poser un modèle d’eau froide avec des vannes intégrées et le raccorder à des tubes PER, le polyéthylène réticulé.",
+  "category": "plomberie",
+  "topicPath": ["Arrivée d’eau", "Nourrices"],
+  "journeys": ["renover-une-salle-de-bains"],
+  "tags": ["réseau d’eau", "eau potable", "PER", "compression"],
+  "relatedTutorials": [
+    "dimensionnement-plomberie",
+    "per-raccord-a-compression",
+    "faire-un-raccord-plomberie-avec-de-la-filasse",
+    "reparer-fuite-joint-plat"
+  ],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 120,
+  "cost": null,
+  "image": "/images/tutoriels/ajouter-une-nourrice-d-eau.png",
+  "imageAlt": "Nourrice en laiton fixée au mur, avec une vanne d’arrivée, trois départs à poignées bleues et trois tubes bleus séparés, dessinée sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Pose accessible d’une nourrice d’eau froide sanitaire à trois départs à portée plate et mini-vannes, alimentée par une arrivée déjà dimensionnée et équipée d’une vanne d’arrêt à sortie mâle compatible. Exemple de collecteur à entrée femelle 20/27 et départs mâles 15/21, raccordés au PER par compression et joints plats ; ces dimensions ne valent pas dimensionnement du réseau. Hors création d’un piquage sur la conduite principale, pose complète des canalisations jusqu’aux appareils, eau chaude, chauffage et assemblages encastrés.",
+  "estimatesNote": "Compte environ 2 h pour fixer et raccorder une nourrice près d’une arrivée et de départs déjà préparés, hors cheminement des tubes et essai complet du réseau. Le budget reste à préciser selon les vannes, raccords, supports et longueurs de tube, outils en plus.",
+  "sources": [
+    {
+      "title": "AYOR / Somatherm — Collecteur sanitaire à trois mini-vannes, référence 302520202",
+      "url": "https://cdn.manomano.com/pim-dam-img/131/40530954/6018d57783e4eccfa446e9a52aa18df775a1ea87.pdf",
+      "note": "Notice fabricant hébergée par un distributeur : entrée femelle 20/27, départs 15/21 à portée plate, fixation murale, nettoyage et maintien des tubes sans contrainte. Modèle de référence pour la disposition du montage.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "AYOR / Somatherm — Raccord PER à compression à écrou tournant, référence 303024503",
+      "url": "https://cdn.manomano.com/pim-dam-img/131/40530576/5758843d16e2d64919ba1b3720286a8179792f9e.pdf",
+      "note": "Notice fabricant hébergée par un distributeur : montage du tube, joint plat à l’écrou tournant, absence de filasse à cet endroit, accessibilité et limites propres au raccord. Le diamètre de cet exemple ne se généralise pas aux départs.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "GEB — GEBATOUT 2, étanchéité des filetages métalliques",
+      "url": "https://www.geb.fr/pro/gebatout-2-pate-a-joint/",
+      "note": "Association filasse et pâte compatible eau potable, préparation, sens d’enroulement et assemblage ; uniquement pour les liaisons prévues pour une étanchéité dans le filetage.",
+      "accessedAt": "2026-09-27"
+    }
+  ],
+  "tools": [
+    "Mètre, niveau, crayon et marqueur pour les départs",
+    "Détecteur de réseaux, perceuse, foret et tournevis adaptés au mur",
+    "Deux clés adaptées aux raccords et pince coupe-tube PER",
+    "Bassine, chiffons propres et papier absorbant",
+    "Manomètre et matériel d’essai d’étanchéité prévu par la notice du système"
+  ],
+  "materials": [
+    {
+      "name": "Nourrice pour eau potable avec trois vannes de départ et bouchon terminal compatible",
+      "quantity": "1, exemple à entrée femelle 20/27 et départs mâles 15/21 à portée plate"
+    },
+    {
+      "name": "Vanne d’arrêt d’arrivée avec sortie mâle compatible",
+      "quantity": "1 déjà raccordée à l’alimentation préparée"
+    },
+    {
+      "name": "Supports de nourrice, vis et chevilles adaptés au mur",
+      "quantity": "1 jeu selon le collecteur et le support"
+    },
+    {
+      "name": "Tubes PER pour eau potable et colliers de maintien",
+      "quantity": "3 départs ; diamètres, épaisseurs et longueurs selon les appareils et les trajets"
+    },
+    {
+      "name": "Raccords PER à compression à écrou tournant et joints plats compatibles",
+      "quantity": "1 ensemble par départ, adapté au tube et à la portée de la nourrice"
+    },
+    {
+      "name": "Filasse et pâte à joint dont l’association convient à l’eau potable",
+      "quantity": "Pour la liaison filetée d’arrivée uniquement"
+    },
+    {
+      "name": "Joint du bouchon terminal et bouchons de départ compatibles",
+      "quantity": "1 joint terminal ; 1 bouchon avec son joint par départ inutilisé"
+    },
+    {
+      "name": "Étiquettes résistantes à l’humidité",
+      "quantity": "1 par départ et 1 pour repérer l’eau froide"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prépare le plan des départs",
+      "description": "Liste les appareils à alimenter, repère leurs tuyaux et vérifie que l’arrivée, la nourrice et les diamètres prévus peuvent fournir leurs besoins simultanés : ajouter des sorties ne crée pas de débit supplémentaire. Le montage décrit part d’une arrivée déjà équipée d’une vanne à sortie mâle compatible ; si tu dois créer un piquage, prépare d’abord ce raccordement. Mesure la pression et compare-la aux conditions de pose de chaque composant, puis choisis un emplacement hors gel où les vannes et les raccords resteront accessibles."
+    },
+    {
+      "title": "Coupe l’eau et fixe les supports",
+      "description": "Ferme l’alimentation, ouvre un robinet en aval pour supprimer la pression et vérifie l’arrêt de l’écoulement avant de défaire un raccord au-dessus de la bassine. Repère les canalisations et câbles cachés avant de percer, puis fixe les supports de niveau avec les chevilles adaptées au mur. Garde assez de place pour tourner les clés, manœuvrer les vannes et amener les tubes sans les plier."
+    },
+    {
+      "title": "Raccorde l’arrivée et ferme l’extrémité",
+      "description": "Sur des pièces propres et sèches, prépare la liaison filetée entre la sortie mâle de la vanne et l’entrée femelle de la nourrice avec la filasse et la pâte compatibles, suivant leurs notices. Assemble avant de bloquer la nourrice dans ses supports et contre-maintiens les pièces avec deux clés pour ne pas tordre la conduite ; ne dévisse pas un joint terminé pour corriger son orientation. Pose le bouchon terminal avec le joint prévu par le fabricant, puis ferme les vannes de départ."
+    },
+    {
+      "title": "Prépare les tubes et leurs raccords",
+      "description": "Amène chaque PER dans l’axe de son départ, coupe-le droit à la pince et élimine les débris sans laisser entrer de saletés dans le tube. Pour le raccord à compression retenu, enfile l’écrou et la bague, puis engage le tube sur l’insert jusqu’à la position indiquée dans sa notice. Maintiens les tubes avec leurs colliers, sans traction, torsion ni coude serré, en laissant le mouvement nécessaire à leur dilatation."
+    },
+    {
+      "title": "Branche et repère chaque départ",
+      "description": "Place un joint plat neuf adapté dans chaque écrou tournant, engage-le à la main sur la sortie à portée plate, puis serre selon la notice en contre-maintenant les plats prévus sur la dérivation. N’ajoute ni filasse ni ruban sur ces connexions à joint plat ou à compression, et ferme tout départ inutilisé avec un bouchon et son joint, même si sa vanne est fermée. Étiquette chaque tuyau avec l’appareil desservi et vérifie que son autre extrémité est raccordée ou obturée avant toute mise en eau."
+    },
+    {
+      "title": "Teste la nourrice et chaque circuit",
+      "description": "Ouvre doucement l’arrivée avec les départs fermés et contrôle d’abord le corps, la liaison d’entrée et le bouchon, puis ouvre chaque départ séparément en purgeant l’air au robinet correspondant. Après fermeture des robinets, cherche les suintements avec du papier sec, réalise l’essai d’étanchéité à l’eau prévu par la notice avec son matériel, sa pression et sa durée, puis rince chaque circuit avant usage. Vérifie aussi qu’une vanne fermée coupe bien l’appareil étiqueté ; à la moindre fuite, ferme l’alimentation et dépressurise avant de reprendre le raccord."
+    }
+  ],
+  "mistakes": [
+    "Acheter une nourrice et des raccords sur la seule taille du filetage, sans vérifier les portées, les joints et les dimensions des tubes.",
+    "Laisser les tuyaux porter la nourrice ou les tirer de biais pour atteindre les départs.",
+    "Mettre en eau un départ non raccordé ou compter uniquement sur sa vanne pour fermer une sortie inutilisée."
+  ],
+  "safety": [
+    "Ne relie jamais les distributions d’eau chaude et d’eau froide à une même nourrice ; ce montage concerne uniquement l’eau froide sanitaire.",
+    "Si l’arrivée ne peut pas être isolée ou si la pression dépasse les conditions de pose d’un composant, traite ce point avant le montage.",
+    "Garde les raccords à compression accessibles et ne les noie pas dans un mur ; protège la nourrice du gel et du contact avec le ciment ou les produits corrosifs.",
+    "L’essai visuel de quelques minutes ne remplace pas l’essai d’étanchéité du réseau ; n’improvise pas une mise sous pression à l’air comprimé."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-27"
+}

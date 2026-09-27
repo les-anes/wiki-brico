@@ -1,0 +1,115 @@
+{
+  "id": "ouvrir-une-tremie-dans-un-plancher-en-bois",
+  "title": "Ouvrir une trémie dans un plancher en bois",
+  "description": "Une trémie, c’est l’ouverture percée dans un plancher pour laisser passer un escalier. Sur un plancher à solives, les solives coupées doivent être reprises par deux chevêtres : voici l’ordre des gestes, de l’étaiement au contrôle.",
+  "category": "structure",
+  "topicPath": ["Planchers & escaliers", "Trémies"],
+  "tags": ["trémie", "plancher", "solive", "chevêtre", "étaiement"],
+  "relatedTutorials": [
+    "poser-un-plancher-osb-sur-solives",
+    "remplacer-un-linteau",
+    "ceinturer-un-mur-en-pierre"
+  ],
+  "relatedCategories": [{ "category": "techniques", "topicPath": ["Sciage"] }],
+  "difficulty": "Avancé",
+  "durationMinutes": 420,
+  "cost": null,
+  "image": "/images/tutoriels/ouvrir-une-tremie-dans-un-plancher-en-bois.png",
+  "imageAlt": "Une ouverture rectangulaire découpée dans un plancher à solives, bordée de deux chevêtres, avec deux étais métalliques serrés sous les solives voisines, dessinée à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Ouverture d’une trémie dans un plancher à solives bois d’un logement, pour laisser passer un escalier ou un accès, avec reprise des solives coupées par deux chevêtres fixés sur les solives de rive. Hors plancher en béton, en acier ou à poutrelles et hourdis, hors toiture, hors mur porteur et hors plancher dont le sens de portée ou la composition est inconnu. Le dimensionnement des solives et des chevêtres selon les charges, et le calcul de l’escalier lui-même, ne sont pas traités ici.",
+  "estimatesNote": "Compte une grosse journée, étaiement et contrôle compris, pour une ouverture qui traverse deux solives. Le budget ne se limite pas au bois des chevêtres : étriers, boulonnerie, location éventuelle d’un étais et évacuation des chutes en font partie.",
+  "sources": [
+    {
+      "title": "Wikipédia — Solive",
+      "url": "https://fr.wikipedia.org/wiki/Solive",
+      "note": "Rôle des solives dans un plancher, portée et entraxe : de quoi comprendre ce que l’on coupe et ce que l’on reporte.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Wikipédia — Chevêtre",
+      "url": "https://fr.wikipedia.org/wiki/Chev%C3%AAtre",
+      "note": "Principe de la pièce perpendiculaire qui reprend les abouts d’éléments coupés, en plancher comme en charpente.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Wikipédia — Trémie",
+      "url": "https://fr.wikipedia.org/wiki/Tr%C3%A9mie",
+      "note": "Définition de l’ouverture et de ses usages : escalier, gaine, passage de conduit.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "CSTB — Centre scientifique et technique du bâtiment",
+      "url": "https://www.cstb.fr/",
+      "note": "Les planchers et leurs assemblages sont encadrés par des DTU que le CSTB publie ; c’est la référence à consulter pour la version en vigueur des règles.",
+      "accessedAt": "2026-09-27"
+    }
+  ],
+  "tools": [
+    "Deux étais métalliques télescopiques avec têtes plates, ou des bastaings et des cales pour un étaiement à la demande",
+    "Scie circulaire avec lame à bois, ou scie sabre, et scie à main pour finir les coupes",
+    "Équerre, crayon de charpentier, cordeau ou règle de maçon pour tracer l’ouverture",
+    "Niveau à bulle et fil à plomb, pour contrôler les bords et l’aplomb des chevêtres",
+    "Visseuse, clés plates ou à douilles pour les étriers, marteau",
+    "Lunettes, masque à poussière, gants et protection auditive",
+    "Aspirateur de chantier ou bâche comble pour limiter la poussière dans la pièce du dessous"
+  ],
+  "materials": [
+    {
+      "name": "Chevêtres en bois, section et qualité au moins équivalentes à celles des solives",
+      "quantity": "Deux pièces, longueur de l’ouverture plus les appuis de chaque côté"
+    },
+    {
+      "name": "Étriers ou sabots métalliques pour reprendre les abouts de solives sur les chevêtres",
+      "quantity": "Un par about de solive coupée, dans la largeur correspondante"
+    },
+    {
+      "name": "Boulons à bois, tirefonds et vis structurelles adaptés aux sections assemblées",
+      "quantity": "Selon le nombre de fixations par assemblage"
+    },
+    {
+      "name": "Bastaings, cales et plaques d’appui pour l’étaiement",
+      "quantity": "Deux points d’appui au minimum de chaque côté de la coupe"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Repère les solives et ce qui passe dedans",
+      "description": "Marque au sol la position des solives, leur sens et leur entraxe, puis repère sous le plancher ce qui court dans la zone : câbles électriques, canalisations d’eau, gaines de ventilation, voire une descente d’évacuation. Note au tableau les circuits concernés, puis coupe-les, et coupe l’eau si une canalisation traverse. Fais de même pour les charges au sol au-dessus : ce que tu vas ouvrir ne doit pas recevoir de meuble lourd pendant les travaux."
+    },
+    {
+      "title": "Décide l’emprise et l’implantation",
+      "description": "Rapporte l’emprise de l’escalier sur le plancher, en gardant à l’esprit que les solives coupées reposeront désormais sur les chevêtres, qui reportent leur charge sur les solives voisines. Place l’ouverture en respectant un appui franc en bout de chevêtre et en gardant une distance suffisante aux appuis des solives : plus l’ouverture s’approche d’un mur porteur ou d’une poutre, plus la reprise est délicate. Si l’emprise tombe sur une poutre, sur un about de solive ou sur une zone dont tu ne connais pas le sens de portée, arrête-toi : ce cas sort du périmètre de cette fiche."
+    },
+    {
+      "title": "Étaie avant de scier",
+      "description": "Monte les étais sous les solives voisines de part et d’autre de l’ouverture, sur une plaque d’appui pour répartir la pression, et serre-les jusqu’à sentir le contact franc sous le bois. Vérifie qu’ils ne peuvent pas se dérober sur le côté. Tant que ce point n’est pas fait, aucune coupe ne commence : c’est l’étaiement qui tient le plancher pendant que les solives sont coupées."
+    },
+    {
+      "title": "Trace proprement et coupe les solives",
+      "description": "Trace l’ouverture à l’équerre, tous les traits alignés au cordeau, et vérifie deux fois les cotes avant de scier. Coupe les solives à recouper en commençant par le milieu du bois, puis rejoins les traits : les traits de coupe doivent rester nets, car ils définiront les appuis des chevêtres. Retire les chutes et, si des clous ou des vis dépassent, replie-les ou coupe-les avant de continuer."
+    },
+    {
+      "title": "Pose les deux chevêtres et reprends les abouts",
+      "description": "Mets en place les deux chevêtres perpendiculaires aux solives, un de chaque côté de l’ouverture, et fixe-les solidement sur les solives de rive, avec la boulonnerie adaptée et au moins deux fixations par assemblage. Reprends ensuite chaque about de solive coupée sur le chevêtre avec un étrier ou un sabot, correctement plaqué : une solive simplement vissée en bout dans le chevêtre ne reprend pas sa charge. Contrôle l’équerre et l’alignement à mesure, puis vérifie que les étriers sont bien en appui sous les abouts."
+    },
+    {
+      "title": "Contrôle, protège l’ouverture et retire l’étaiement",
+      "description": "Vérifie les assemblages un par un, puis retire les étais en les desserrant doucement et en surveillant que rien ne bouge, en étapes plutôt qu’en une fois. Retire les morceaux de solives et les outils restés au-dessus, y compris ceux tombés entre les solives. Protège l’ouverture par un garde-corps provisoire ou un plancher de sécurité dès que tu quittes la pièce : une trémie non protégée est une chute en attente, surtout dans une pièce peu éclairée."
+    }
+  ],
+  "mistakes": [
+    "Commencer par scier et étayer ensuite : rien ne bouge pendant la coupe, c’est à la descente suivante que le plancher s’affaisse.",
+    "Reporter un about de solive coupée par quelques vis en bout, sans étrier ni appui franc sous le bois : la charge reprise devient une traction sur des vis.",
+    "Élargir l’ouverture au dernier moment pour rattraper un escalier mal coté, en sacrifiant une solive de plus : chaque solive coupée en plus élargit la reprise à faire."
+  ],
+  "safety": [
+    "Aucune coupe de solive avant l’étaiement, et jamais sous une charge en mouvement au-dessus : fais cesser les allées et venues dans les pièces concernées pendant les travaux.",
+    "Coupe les circuits électriques concernés au tableau et vérifie-le avant de scier ; si une canalisation d’eau traverse la zone, coupe l’arrivée et purge la ligne. Un câble entaillé ou un tuyau percé dans un plancher se répare après coup, à travers les travaux finis.",
+    "Ne circule pas sur des solives nues et ne t’accoude jamais au-dessus du vide : pose un panneau de travail, éclaire la zone et équipe l’ouverture d’un garde-corps dès qu’elle existe.",
+    "Si l’ouverture tombe sur une poutre, un about de solive ou un mur porteur, si le plancher est en béton ou en acier, ou si tu ne sais pas dans quel sens il porte, arrête-toi avant de couper.",
+    "Sciage : lunettes et masque contre la poussière, lame à bois en bon état, et attention aux clous et aux vis cachés dans un plancher ancien, qui arrachent la lame."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-27"
+}

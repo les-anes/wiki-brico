@@ -156,7 +156,7 @@
       "relatedTutorials": ["poser-un-plancher-osb-sur-solives"],
       "catalogFilter": {
         "category": "structure",
-        "topicPath": ["Planchers"]
+        "topicPath": ["Planchers & escaliers", "Planchers"]
       },
       "updatedAt": "2026-09-26",
       "image": "/images/calculateurs/quantite-osb.png",
@@ -951,7 +951,7 @@
       "relatedTutorials": ["rejointoyer-un-mur-en-pierre"],
       "catalogFilter": {
         "category": "structure",
-        "topicPath": ["Maçonnerie de pierre", "Rejointoiement"]
+        "topicPath": ["Maçonnerie", "Rejointoiement de pierre"]
       },
       "updatedAt": "2026-09-26",
       "image": "/images/calculateurs/rejointoiement-chaux.png",

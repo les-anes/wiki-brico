@@ -1,0 +1,114 @@
+{
+  "id": "per-raccord-a-glissement",
+  "title": "Assembler un tube PER avec un raccord à glissement",
+  "description": "Le PER, ou polyéthylène réticulé, est un tuyau souple pour distribuer l’eau. Ici, une pince fait coulisser une bague sur le tube pour le serrer autour du raccord.",
+  "category": "plomberie",
+  "topicPath": ["Arrivée d’eau", "Raccords"],
+  "tags": ["PER", "glissement"],
+  "relatedTutorials": [
+    "per-raccord-a-sertir",
+    "per-raccord-a-compression",
+    "raccord-per-vers-cuivre"
+  ],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 30,
+  "cost": null,
+  "image": "/images/tutoriels/per-raccord-a-glissement.png",
+  "imageAlt": "Un tube PER rouge avec sa bague coulissante et un raccord en laiton, dessinés sur fond ivoire.",
+  "tools": [
+    "Coupe-tube PER",
+    "Pince à évaser et tête compatible",
+    "Pince à glissement et embouts compatibles",
+    "Mètre et chiffon"
+  ],
+  "materials": [
+    {
+      "name": "Tube PER compatible avec le raccord",
+      "quantity": "Longueur mesurée, emboîtements compris"
+    },
+    {
+      "name": "Raccords et bagues à glissement du même système",
+      "quantity": "1 ensemble par jonction"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prépare ton montage",
+      "description": "Vérifie les dimensions du tube et la compatibilité des raccords, bagues et outils. Coupe l’eau, ouvre un robinet pour enlever la pression et coupe le tube bien droit."
+    },
+    {
+      "title": "Enfile la bague",
+      "description": "Passe la bague sur le tube dans le sens indiqué sur l’emballage. Éloigne-la un peu du bout pour laisser de la place à la pince."
+    },
+    {
+      "title": "Élargis le bout du tube",
+      "description": "Avec la tête adaptée, évase le tube : élargis son extrémité avec la pince selon le mouvement prévu. Enfonce ensuite le raccord à la position indiquée dans sa notice."
+    },
+    {
+      "title": "Fais glisser la bague",
+      "description": "Place les embouts de la pince sur le raccord et la bague. Garde l’ensemble aligné et pousse la bague jusqu’à sa position finale, sans coincer le tube."
+    },
+    {
+      "title": "Vérifie et remets en eau",
+      "description": "Contrôle la position de la bague, puis remets l’eau doucement et inspecte la jonction. Réalise l’essai d’étanchéité prévu par la notice du système avant de cacher le montage et rince la conduite avant utilisation."
+    }
+  ],
+  "mistakes": [
+    "Oublier la bague avant d’élargir le tube.",
+    "Mélanger les pièces ou les outils de systèmes différents.",
+    "S’arrêter avant que la bague atteigne sa position finale."
+  ],
+  "safety": [
+    "Garde les doigts loin des parties mobiles des pinces.",
+    "Laisse refroidir l’eau chaude et coupe toujours l’eau avant de reprendre un raccord."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24",
+  "scope": "Raccordement local PER par bague coulissante et expansion préalable. Les gestes d’expansion et la position finale dépendent du système ; hors encastrement et dimensionnement.",
+  "sources": [
+    {
+      "title": "L’Entrepôt du Bricolage — Démonstration de montage PER à glissement",
+      "url": "https://blog.entrepot-du-bricolage.fr/comment-poser-un-raccord-per-a-glissement/",
+      "note": "Tutoriel original : succession des opérations ; les cotes restent propres au raccord montré.",
+      "accessedAt": "2026-09-07"
+    },
+    {
+      "title": "REHAU — RAUTITAN à douilles coulissantes",
+      "url": "https://www.rehau.com/be-fr/rautitan-raccordement-a-douilles-coulissantes",
+      "note": "Particularités du système et des têtes QC1.",
+      "accessedAt": "2026-09-07"
+    },
+    {
+      "title": "Brico Cash — Réaliser un raccord PER",
+      "url": "https://www.bricocash.fr/conseils/comment-faire-un-raccordement-per",
+      "note": "Démonstration originale des trois méthodes ; les réglages précis ne sont pas généralisés.",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "title": "Leroy Merlin — Pince coupe-tube pour PER",
+      "url": "https://www.leroymerlin.fr/produits/coupe-tube-pour-per-42-mm-dexter-82111331.html",
+      "note": "Lien d’achat vérifié : offre directe de l’enseigne, sans affiliation ; disponibilité et vendeur à revérifier lors d’une future révision.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "estimatesNote": "Prévois environ 30 min pour un raccord accessible, hors essai complet du réseau. Le budget dépend aussi de l’achat ou de la location des deux pinces.",
+  "relatedCategories": [],
+  "journeys": ["renover-une-salle-de-bains"],
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 60.1",
+      "title": "Plomberie sanitaire pour bâtiments",
+      "url": "https://boutique.cstb.fr/detail/documents-techniques-unifies/dtu-nf-dtu/60-plomberie/nf-dtu-60-1-plomberie-sanitaire-pour-batiments",
+      "scope": "Cadre de la plomberie sanitaire du bâtiment. Pour les raccords PER et automatiques, les notices et évaluations propres au système restent nécessaires ; cette référence ne valide pas chaque assemblage. Présentation de l’éditeur consultée, texte intégral non consulté.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "shoppingLinks": [
+    {
+      "material": "Pince coupe-tube pour PER",
+      "retailer": "Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/coupe-tube-pour-per-42-mm-dexter-82111331.html"
+    }
+  ],
+  "imageOrigin": "original"
+}

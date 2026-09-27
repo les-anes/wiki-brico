@@ -1,8 +1,6 @@
 import { ChevronDown, ArrowRight, type LucideIcon } from "lucide-react";
 import { useEffect, useRef, useState, useId } from "react";
 
-import { childTopics } from "@/lib/topic-path";
-
 type Props = {
   categories: {
     id: string;
@@ -14,25 +12,41 @@ type Props = {
   onSelect: (category: string, path?: string[]) => void;
 };
 
-function TopicBranches({
+/**
+ * Thèmes d’une catégorie : un niveau de repli, jamais deux. Les thèmes d’un seul
+ * segment sont des entrées simples ; ceux qui en ont deux — « Arrivée d’eau ›
+ * Tuyaux » — se rangent sous leur parent, qui reste cliquable et ramasse tout
+ * son sous-arbre. Le menu n’énumère pas les segments au-delà : la donnée les
+ * refuse désormais, et rien ici ne se rappelle soi-même.
+ */
+function TopicList({
   paths,
-  prefix = [],
   onSelect,
 }: {
   paths: string[][];
-  prefix?: string[];
   onSelect: (path: string[]) => void;
 }) {
-  const children = childTopics(paths, prefix);
-  if (!children.length) return null;
+  const themes = [...new Set(paths.map((path) => path[0]))];
   return (
-    <ul className={prefix.length ? "category-subtopics" : undefined}>
-      {children.map((name) => {
-        const path = [...prefix, name];
+    <ul>
+      {themes.map((theme) => {
+        const enfants = paths
+          .filter((path) => path[0] === theme && path.length > 1)
+          .map((path) => path[1]);
         return (
-          <li key={name}>
-            <button onClick={() => onSelect(path)}>{name}</button>
-            <TopicBranches paths={paths} prefix={path} onSelect={onSelect} />
+          <li key={theme}>
+            <button onClick={() => onSelect([theme])}>{theme}</button>
+            {enfants.length > 0 && (
+              <ul className="category-subtopics">
+                {enfants.map((enfant) => (
+                  <li key={enfant}>
+                    <button onClick={() => onSelect([theme, enfant])}>
+                      {enfant}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
         );
       })}
@@ -150,7 +164,7 @@ export function CategoryNavigation({ categories, onSelect }: Props) {
                   Tout voir : {category.name}{" "}
                   <ArrowRight size={14} aria-hidden="true" />
                 </button>
-                <TopicBranches
+                <TopicList
                   paths={paths}
                   onSelect={(path) => select(category.id, path)}
                 />

@@ -1,0 +1,117 @@
+{
+  "id": "choisir-la-section-des-cables-d-un-circuit",
+  "title": "Choisir la section des câbles d’un circuit électrique",
+  "description": "La section d’un câble se décide avant de l’acheter : elle dépend de la puissance à alimenter, du calibre du disjoncteur qui protège la ligne et de sa longueur. Voici comment fixer les trois ensemble, sans se tromper.",
+  "category": "electricite",
+  "topicPath": ["Circuits"],
+  "tags": [
+    "électricité",
+    "câble",
+    "section",
+    "disjoncteur",
+    "chute de tension"
+  ],
+  "relatedTutorials": [
+    "remplacer-une-prise-murale",
+    "remplacer-un-interrupteur",
+    "dimensionner-son-tableau-electrique"
+  ],
+  "relatedCategories": [
+    { "category": "techniques", "topicPath": ["Percer et fixer"] }
+  ],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 60,
+  "cost": null,
+  "image": "/images/tutoriels/choisir-la-section-des-cables-d-un-circuit.png",
+  "imageAlt": "Trois câbles électriques de grosseurs différentes posés côte à côte, avec un disjoncteur modulaire et un mètre ruban, dessinés à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Choix de la section d’un câble pour un circuit domestique neuf ou modifié : intensité à transporter, calibre du disjoncteur et longueur de la ligne, à partir des tableaux publiés par les fabricants et les organismes de contrôle. Hors calcul de la puissance d’abonnement, remplacement d’un tableau complet, installation triphasée, locaux professionnels et bâtiments collectifs. Ne traite pas non plus la mise à la terre ni les circuits de communication.",
+  "estimatesNote": "Compte une heure pour relever les puissances, choisir les calibres et contrôler les longueurs avant d’acheter, sans compter le passage des câbles. Le prix du câble n’est qu’une part du circuit : disjoncteur, boîtes, gaines et accessoires s’ajoutent au budget.",
+  "sources": [
+    {
+      "title": "Wikipédia — Norme NF C 15-100",
+      "url": "https://fr.wikipedia.org/wiki/Norme_NF_C_15-100",
+      "note": "Vocabulaire de l’installation domestique et rôle de la norme : ce qu’elle encadre et ce qu’elle laisse aux guides pratiques.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Wikipédia — Chute de tension",
+      "url": "https://fr.wikipedia.org/wiki/Chute_de_tension",
+      "note": "Relation entre longueur, courant, section et perte de tension : c’est elle qui fait grossir la section sur une ligne longue.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Promotelec — L’installation électrique du logement",
+      "url": "https://www.promotelec.com/",
+      "note": "Organisme qui publie les repères applicables aux installations des logements, dont les calibres de protection et les schémas de circuits. À consulter pour la version en vigueur du texte.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Legrand — Catalogue protection modulaire et câbles",
+      "url": "https://www.legrand.fr/",
+      "note": "Les tableaux du fabricant donnent les couples section et calibre de disjoncteur, ainsi que la longueur maximale par circuit. C’est le document à utiliser au moment de l’achat.",
+      "accessedAt": "2026-09-27"
+    }
+  ],
+  "tools": [
+    "Mètre ruban souple et, si tu en as un, télémètre laser pour mesurer le trajet réel des câbles",
+    "Testeur de tension deux pôles, pour vérifier l’absence de tension avant toute intervention",
+    "Multimètre numérique avec pince ampèremétrique, pour mesurer l’intensité d’un circuit existant",
+    "Pince coupe-câble, pince à dénuder et tournevis isolés",
+    "Lampe frontale, étiquettes et marqueur pour repérer les départs et les circuits"
+  ],
+  "materials": [
+    {
+      "name": "Câble de section retenue, rigide sous gaine ou conducteur isolé dans un conduit, selon le mode de pose",
+      "quantity": "La longueur du trajet mesurée, plus une dizaine de pour cent"
+    },
+    {
+      "name": "Disjoncteur modulaire de calibre adapté au circuit",
+      "quantity": "Un par circuit concerné"
+    },
+    {
+      "name": "Boîtes de dérivation, gaines, colliers et accessoires de fixation",
+      "quantity": "Selon le trajet et le nombre de points"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Relève ce que chaque circuit doit alimenter",
+      "description": "Écris pour chaque ligne la liste de ses appareils et la puissance indiquée sur leur plaque, en watts, comme sur un circuit de prises de séjour ou un circuit de plaque de cuisson. Regroupe ce qui fonctionne en même temps : c’est cette somme qui compte, pas la puissance d’un appareil isolé. Note aussi la longueur du trajet en suivant le chemin réel du câble, pas la distance à vol d’oiseau."
+    },
+    {
+      "title": "Déduis l’intensité à transporter",
+      "description": "Divise la puissance en watts par la tension du secteur : à 230 volts, 2 000 watts font un peu moins de 9 ampères. Pour un appareil à moteur, comme un congélateur ou une pompe, majore le résultat d’environ un quart : le courant de démarrage dépasse le courant de marche. C’est cette intensité, arrondie au-dessus, qui guide la suite."
+    },
+    {
+      "title": "Choisis ensemble le calibre du disjoncteur et la section",
+      "description": "Pars du disjoncteur : un circuit d’éclairage se protège couramment par 10 ou 16 ampères, un circuit de prises par 16 ou 20 ampères, une plaque de cuisson par 32 ampères. La section est celle que ce calibre autorise, et elle ne peut jamais être inférieure : à 16 ampères correspond une section d’au moins 1,5 mm², et 2,5 mm² pour une ligne de prises, 6 mm² pour 32 ampères. Vérifie ce couple dans le tableau du fabricant avant d’acheter, et garde en tête qu’un disjoncteur plus gros que la section qu’il protège est un danger : il laisse chauffer le câble sans couper."
+    },
+    {
+      "title": "Contrôle la longueur et la chute de tension",
+      "description": "Reprends la longueur relevée à l’étape 1 et compare-la à la longueur maximale donnée pour ton couple section et calibre : sur les lignes longues, la tension baisse en chemin et fait chauffer les conducteurs. Les tableaux plafonnent cette perte à quelques pour cent, plafond plus serré pour l’éclairage que pour les autres usages, et c’est lui qui fait monter d’une section au-delà de quelques dizaines de mètres. Si ton trajet dépasse la valeur du tableau, passe à la section supérieure plutôt que d’espérer que ça tienne."
+    },
+    {
+      "title": "Achète et repère chaque départ",
+      "description": "Achète un câble neuf de la section retenue, avec la longueur calculée majorée d’une dizaine de pour cent pour les raccordements. Étiquette chaque départ dans le tableau avec son usage et son calibre, et note la section employée dans ta liste : au prochain dépannage, tu sauras ce qui est derrière chaque disjoncteur."
+    },
+    {
+      "title": "Vérifie avant de remettre sous tension",
+      "description": "Serre les bornes du disjoncteur selon le couple indiqué par le fabricant, contrôle que chaque conducteur est bien engagé et qu’aucune vis ne pince l’isolant, et vérifie qu’il ne reste aucun brin libre. Remets sous tension et mesure l’intensité du circuit en fonctionnement : si elle approche le calibre du disjoncteur, revois la répartition des appareils avant d’ajouter quoi que ce soit. Ce contrôle ne dispense pas de faire vérifier une installation ancienne dont tu ne connais ni la terre ni les protections."
+    }
+  ],
+  "mistakes": [
+    "Choisir la section d’après la puissance seule, sans regarder le disjoncteur qui protège la ligne : c’est le couple section et calibre qui rend un circuit sûr.",
+    "Traiter une longue ligne comme une courte : la chute de tension ne se voit pas à l’achat, elle se manifeste à l’usage par un éclairage qui faiblit ou un moteur qui chauffe.",
+    "Remonter le calibre du disjoncteur parce qu’il déclenche, au lieu de chercher pourquoi la ligne est trop chargée ou trop longue."
+  ],
+  "safety": [
+    "Coupe le disjoncteur du circuit concerné, vérifie l’absence de tension au testeur deux pôles avant de toucher un conducteur, et condamne le point de coupure pendant l’intervention.",
+    "Une section trop faible chauffe sans se voir, dans une gaine ou derrière un doublage : c’est l’incendie qui révèle l’erreur. Ne remplace jamais un protecteur par un calibre supérieur pour éviter un déclenchement.",
+    "Si l’installation existante est inconnue, avec des câbles anciens, une terre absente ou un tableau sans repérage, arrête-toi : tu ne peux pas garantir la protection de ce que tu ajoutes.",
+    "N’utilise que du câble neuf : un conducteur dont l’isolant est durci, entaillé ou noirci a déjà souffert et se remplace, il ne se réemploie pas.",
+    "Les règles de l’installation domestique sont fixées par la NF C 15-100. Cette fiche ne couvre ni les locaux professionnels, ni les bâtiments collectifs, ni l’appareillage de leur distribution."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-27"
+}

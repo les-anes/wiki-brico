@@ -986,10 +986,56 @@ Fichier : `public/images/tutoriels/souder-un-composant-electronique-a-l-etain.pn
 Use case: stylized-concept. Original WikiBrico French DIY tutorial cover, landscape exactly 1536x1024. Loose irregular pencil outlines, simplified gouache shapes and dry brush texture on warm ivory paper, muted sage and terracotta accents. Recognizable objects centered in central 70 percent, generous breathing room, readable mobile crop. No text, numbers, labels, arrows, logo, watermark or photorealism. No people or hands. A small green through-hole practice circuit board held in a miniature bench vise, a single beige axial resistor fitted through two holes, a soldering iron safely resting in its metal holder beside a spool of thin silvery solder wire and brass tip-cleaning wool. Clean coherent still life on a heat-resistant mat. Board unpowered, no batteries, no mains wiring. Distinguish the soldering iron insulated handle and metal tip clearly.
 ```
 
+## Escalier, trémie et câbles — 27 septembre 2026
+
+Trois fiches écrites ce jour-là : l’escalier droit à limon central, l’ouverture d’une
+trémie dans un plancher à solives et le choix de la section des câbles d’un circuit.
+**Les trois illustrations ont été générées le 27 septembre 2026 avec imagegen intégré** : PNG 1536 × 1024 et variantes WebP 480, 720 et 960 pixels, qualité 82. Les sources de travail et les prompts ci-dessous sont conservés dans `output/imagegen/<id>.png` et `<id>.txt`.
+
+### choisir-la-section-des-cables-d-un-circuit
+
+Fichier : `public/images/tutoriels/choisir-la-section-des-cables-d-un-circuit.png`.
+
+```text
+Use case: stylized-concept. Original WikiBrico French DIY tutorial cover, landscape exactly 1536x1024. Loose irregular pencil outlines, simplified gouache shapes and dry brush texture on warm ivory paper, muted sage and terracotta accents. Recognizable objects centered in central 70 percent, generous breathing room, readable mobile crop. No text, numbers, labels, arrows, logo, watermark or photorealism. No people or hands. Three electrical cables of clearly different thicknesses lying parallel as loose open coils, their stripped copper ends showing, next to a modular circuit breaker on its DIN rail section and a folded yellow tape measure. The three cables form one simple balanced still life on a plain surface, thickness difference clearly readable. No active sparks, no lighting fixture, no wall.
+```
+
+### ouvrir-une-tremie-dans-un-plancher-en-bois
+
+Fichier : `public/images/tutoriels/ouvrir-une-tremie-dans-un-plancher-en-bois.png`.
+
+```text
+Use case: stylized-concept. Original WikiBrico French DIY tutorial cover, landscape exactly 1536x1024. Loose irregular pencil outlines, simplified gouache shapes and dry brush texture on warm ivory paper, muted sage and terracotta accents. Recognizable objects centered in central 70 percent, generous breathing room, readable mobile crop. No text, numbers, labels, arrows, logo, watermark or photorealism. No people. A rectangular floor opening cut through a wooden joist floor, seen from a three-quarter angle: several parallel floor joists, two of them cut, the cut ends caught by metal joist hangers on two thicker perpendicular trimmer beams bolted to the surviving joists. Two telescopic steel props with flat plates stand under the neighbouring joists. Offcuts, a circular saw and a pencil are set aside on the boards. Dust and fresh saw cuts, no finished staircase, no railing, no cables.
+```
+
+### fabriquer-un-escalier-droit-a-limon-central
+
+Fichier : `public/images/tutoriels/fabriquer-un-escalier-droit-a-limon-central.png`.
+
+```text
+Use case: stylized-concept. Original WikiBrico French DIY tutorial cover, landscape exactly 1536x1024. Loose irregular pencil outlines, simplified gouache shapes and dry brush texture on warm ivory paper, muted sage and terracotta accents. Recognizable objects centered in central 70 percent, generous breathing room, readable mobile crop. No text, numbers, labels, arrows, logo, watermark or photorealism. No people or hands. A single thick wooden stringer beam cut with a staircase of notches along its upper edge, standing upright on an edge; two wooden treads presented loose in two of the notches, one on each side of the beam, held slightly above their seat. A wood chisel and a wooden mallet lie beside it with a carpenter square and a marking gauge. Plain workshop surface, warm ivory background, no assembled staircase, no railing, no screws or metal brackets.
+```
+
 ### souder-deux-pieces-d-acier-a-l-arc
 
 Fichier : `public/images/tutoriels/souder-deux-pieces-d-acier-a-l-arc.png`.
 
 ```text
 Use case: stylized-concept. Original WikiBrico French DIY tutorial cover, landscape exactly 1536x1024. Loose irregular pencil outlines, simplified gouache shapes and dry brush texture on warm ivory paper, muted sage and terracotta accents. Recognizable objects centered in central 70 percent, generous breathing room, readable mobile crop. No text, numbers, labels, arrows, logo, watermark or photorealism. No people or hands. A dark green welding helmet with dark rectangular viewing lens, thick leather gauntlet gloves and a stick-welding electrode holder lying safely on a grey steel workbench, next to two overlapping small flat steel coupons joined along the overlap edge with a short realistic weld bead. A compact inverter welder and return clamp attached to a coupon behind. No active arc, sparks, flame or smoke. This is stick welding with a straight coated electrode, not a MIG torch. All objects form one simple balanced still life.
+```
+
+## 2026-09-27 — Raccord de plomberie à la filasse
+
+Illustration originale générée avec l’outil intégré imagegen, PNG 1536 × 1024 et variantes WebP 480, 720 et 960 (qualité 82). Source et prompt : `output/imagegen/faire-un-raccord-plomberie-avec-de-la-filasse.png` et `.txt` ; image publiée : `public/images/tutoriels/faire-un-raccord-plomberie-avec-de-la-filasse.png`.
+
+```text
+Illustration pour un tutoriel de plomberie, format paysage 1536 × 1024. Dessin au crayon et à la gouache sur fond ivoire, traits irréguliers et formes simplifiées, pas une photographie ni un schéma technique. Nature morte centrée dans les 70 % de l’image : un raccord droit mâle en laiton avec hexagone, posé horizontalement en trois-quarts, son filetage extérieur enveloppé d’une couche fine de fibres de lin beiges, premier filet et ouverture intérieure dégagés. À côté, un petit écheveau de filasse de lin, un petit pot ouvert sans étiquette de pâte à joint beige et une clé à molette. Le raccord et sa filasse sont le sujet principal, bien lisibles. Aucun texte, chiffre, flèche, logo, filigrane ou légende. Pas de mains.
+```
+
+## 2026-09-27 — Ajouter une nourrice d’eau
+
+Illustration originale générée avec l’outil intégré imagegen. PNG 1536 × 1024 et variantes WebP 480, 720 et 960 (qualité 82). Source : `output/imagegen/ajouter-une-nourrice-d-eau.png` ; publication : `public/images/tutoriels/ajouter-une-nourrice-d-eau.png`.
+
+```text
+Illustration originale de tutoriel de bricolage, paysage 1536 × 1024. Dessin au crayon et à la gouache, traits irréguliers, formes simplifiées, fond ivoire clair, sans texte ni chiffres ni flèches ni logo ni légende. Sujet centré dans les 70 % de l’image avec marges généreuses : une seule nourrice de distribution d’eau froide en laiton fixée horizontalement sur deux supports muraux. Trois départs verticaux sous la barre, chacun avec une petite vanne à poignée bleue et un raccord métallique, puis un tube PER bleu descendant bien séparé des deux autres. Arrivée d’eau par un tube bleu à gauche avec une vanne d’arrêt, extrémité droite fermée par un bouchon en laiton. Géométrie de plomberie simple et crédible, trois branches parallèles sans croisement, aucune eau qui coule. Vue de trois-quarts très légère montrant les fixations et les écrous. Pas de mains, pas de personnes, pas de photoréalisme, pas de réseau de chauffage ni débitmètre.
 ```

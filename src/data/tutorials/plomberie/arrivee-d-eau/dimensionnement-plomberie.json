@@ -1,0 +1,97 @@
+{
+  "id": "dimensionnement-plomberie",
+  "title": "Préparer le dimensionnement de son réseau d’eau",
+  "description": "Avant d’acheter les tuyaux, dessine ce qu’ils doivent alimenter et mesure les trajets. Rassemble les besoins et la pression disponible pour comparer les diamètres dans les tableaux du fabricant.",
+  "category": "plomberie",
+  "topicPath": ["Arrivée d’eau"],
+  "tags": ["réseau d’eau", "diamètre"],
+  "relatedTutorials": [
+    "plomberie-pehd",
+    "per-raccord-a-sertir",
+    "gestion-evacuations"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 90,
+  "cost": null,
+  "image": "/images/tutoriels/dimensionnement-plomberie.png",
+  "imageAlt": "Trois bouts de tuyaux de diamètres différents avec un mètre ruban, dessinés sur fond ivoire.",
+  "tools": [
+    "Mètre",
+    "Papier, crayon ou plan numérique",
+    "Notices des équipements à alimenter",
+    "Manomètre pour eau avec raccord et joint adaptés à un robinet de service"
+  ],
+  "materials": [
+    {
+      "name": "Aucun tuyau à acheter à cette étape",
+      "quantity": "Prépare d’abord ton relevé"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Dessine ton réseau",
+      "description": "Place le compteur, le chauffe-eau et chaque point d’eau sur le plan. Trace séparément l’eau froide et l’eau chaude, avec les embranchements prévus."
+    },
+    {
+      "title": "Mesure les trajets",
+      "description": "Note la longueur de chaque tronçon et la hauteur à monter entre les étages. Ajoute les coudes, les vannes et les équipements traversés par l’eau."
+    },
+    {
+      "title": "Liste les besoins",
+      "description": "Relève dans les notices le débit et la pression demandés par tes équipements. Note les usages simultanés habituels, par exemple une douche pendant que l’évier coule."
+    },
+    {
+      "title": "Relève la pression disponible",
+      "description": "Ferme un robinet de service côté privé, raccorde le manomètre avec son joint, puis ouvre doucement le robinet. Note la pression, puis relève-la à nouveau pendant qu’un autre robinet coule : c’est cette seconde mesure qui décrit la pression disponible en usage. Referme le robinet et dépressurise le raccord selon la notice avant de retirer le manomètre."
+    },
+    {
+      "title": "Prépare ton choix de tubes",
+      "description": "Regroupe tes relevés avec le tableau de dimensionnement du fabricant : appareils alimentés, usages simultanés, longueurs et pression disponible. Note le matériau, le diamètre extérieur et l’épaisseur des tubes proposés : c’est leur diamètre intérieur qui détermine le passage de l’eau. Ce relevé prépare le choix ; pour les grandes longueurs ou plusieurs étages, le calcul des pertes de pression reste nécessaire."
+    }
+  ],
+  "mistakes": [
+    "Choisir tous les tuyaux d’après le diamètre de sortie du compteur.",
+    "Oublier les longues distances et les étages.",
+    "Confondre le diamètre extérieur indiqué en magasin avec le passage intérieur."
+  ],
+  "safety": [
+    "N’interviens pas sur les éléments réservés au service des eaux pour faire tes mesures.",
+    "Si le débit manque déjà, vérifie d’abord que les vannes sont ouvertes et que les filtres et mousseurs sont propres."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-24",
+  "scope": "Préparation des données de dimensionnement d’une distribution intérieure domestique. Cette fiche ne calcule pas les diamètres et ne constitue pas un plan d’exécution.",
+  "sources": [
+    {
+      "title": "Caleffi — Dimensionnement des réducteurs de pression",
+      "url": "https://www.caleffi.com/sites/default/files/media/external-file/01026_fr.pdf",
+      "note": "Méthode débit, simultanéité et pertes ; les tableaux concernent le composant décrit.",
+      "accessedAt": "2026-09-07"
+    },
+    {
+      "title": "Caleffi — Pipe Sizer",
+      "url": "https://www.caleffi.com/fr-be/news-events/29-04-2016/caleffi-pipe-sizer",
+      "note": "Paramètres nécessaires au calcul des conduites et pertes linéaires.",
+      "accessedAt": "2026-09-07"
+    }
+  ],
+  "estimatesNote": "Compte environ 1 h 30 pour relever un petit logement, hors calcul détaillé. Aucun tuyau à acheter à cette étape ; prévois seulement le manomètre et son raccord si tu n’en as pas.",
+  "relatedCategories": [
+    {
+      "category": "preparer-chantier",
+      "topicPath": ["Plans"]
+    }
+  ],
+  "journeys": ["renover-une-salle-de-bains"],
+  "dtuReferences": [
+    {
+      "reference": "NF DTU 60.11 P1-1",
+      "title": "Calcul des réseaux d’alimentation en eau froide et chaude sanitaire",
+      "url": "https://www.boutique.afnor.org/fr-fr/norme/nf-dtu-6011-p11/travaux-de-batiment-regles-de-calcul-des-installations-de-plomberie-sanitai/fa155244/323122",
+      "scope": "Édition août 2013. Réseaux intérieurs d’alimentation en eau froide et chaude ; la fiche prépare les relevés et ne remplace pas le calcul. Présentation de l’éditeur consultée, texte intégral non consulté.",
+      "accessedAt": "2026-09-08"
+    }
+  ],
+  "shoppingLinks": [],
+  "imageOrigin": "original"
+}

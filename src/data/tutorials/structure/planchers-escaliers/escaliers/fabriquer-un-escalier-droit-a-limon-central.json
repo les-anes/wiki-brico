@@ -1,0 +1,121 @@
+{
+  "id": "fabriquer-un-escalier-droit-a-limon-central",
+  "title": "Fabriquer un escalier droit à limon central",
+  "description": "Un limon central porte les marches des deux côtés : l’escalier paraît posé sur une seule poutre et libère l’espace en dessous. Voici comment fixer la ligne de marche, tracer le limon, embrever les marches et monter l’ensemble.",
+  "category": "structure",
+  "topicPath": ["Planchers & escaliers", "Escaliers"],
+  "tags": ["escalier", "limon", "bois", "marche", "embrevement"],
+  "relatedTutorials": [
+    "ouvrir-une-tremie-dans-un-plancher-en-bois",
+    "raboter-une-porte-qui-frotte",
+    "poser-des-plinthes"
+  ],
+  "relatedCategories": [
+    { "category": "techniques", "topicPath": ["Scier"] },
+    { "category": "techniques", "topicPath": ["Visser"] }
+  ],
+  "difficulty": "Avancé",
+  "durationMinutes": 1200,
+  "cost": null,
+  "image": "/images/tutoriels/fabriquer-un-escalier-droit-a-limon-central.png",
+  "imageAlt": "Un limon central en bois avec ses embrèvements, deux marches embrevées de part et d’autre et un ciseau à bois posé dessus, dessinés à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Escalier droit intérieur en bois, à limon central en bois massif ou lamellé-collé, avec marches embrevées de chaque côté du limon, entre deux planchers, la trémie étant déjà ouverte et ses appuis vérifiés. Hors escalier tournant, quart tournant, demi-tour, colimaçon et escalier extérieur, hors limon métallique et hors escalier dont la structure d’accueil doit être modifiée. Le choix de la section du limon, de la largeur des marches et de la reprise des charges n’est pas traité ici : il vient des abaques du fournisseur de bois, ou d’un calcul que tu dois pouvoir présenter.",
+  "estimatesNote": "Compte plusieurs week-ends : tracé, mortaises, façonnage des marches, montage et finition, avec des temps de séchage entre deux. Le budget couvre le bois, la quincaillerie et le garde-corps, sans l’outillage électroportatif ni l’échelle ou l’échafaudage éventuels.",
+  "sources": [
+    {
+      "title": "Wikipédia — Escalier",
+      "url": "https://fr.wikipedia.org/wiki/Escalier",
+      "note": "Vocabulaire de l’escalier, hauteur d’emmarchement et giron, et relation entre les deux.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Wikipédia — Limon",
+      "url": "https://fr.wikipedia.org/wiki/Limon",
+      "note": "Rôle de la pièce porteuse, limon latéral et limon central, embrèvement des marches.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "CSTB — Centre scientifique et technique du bâtiment",
+      "url": "https://www.cstb.fr/",
+      "note": "Repère pour retrouver les prescriptions qui encadrent les escaliers en bois, dimensions de marche et garde-corps compris.",
+      "accessedAt": "2026-09-27"
+    }
+  ],
+  "tools": [
+    "Établi ou tréteaux solides, serre-joints et cales de protection",
+    "Scie circulaire ou scie à main pour les traits de coupe, scie à dos pour les fonds de mortaise",
+    "Ciseau à bois de la largeur utile et maillet, plus une râpe ou une lame pour ajuster",
+    "Rabot, racloir et abrasif de grain moyen puis fin",
+    "Équerre, fausse équerre, trusquin et crayon de charpentier",
+    "Perceuse-visseuse, forets à bois et forêts longs pour les fixations de montage",
+    "Niveau, cordeau, mètre et grande règle",
+    "Lunettes, masque à poussière, gants et protection auditive"
+  ],
+  "materials": [
+    {
+      "name": "Limon en bois massif ou lamellé-collé, section issue des abaques du fournisseur pour ta portée et ta largeur de marche",
+      "quantity": "Une pièce, longueur de la volée plus les abouts d’appui"
+    },
+    {
+      "name": "Marchers en bois, épaisseur et largeur retenues pour la ligne de marche",
+      "quantity": "Autant que de marches, plus une chute d’essai pour régler les tracés"
+    },
+    {
+      "name": "Planches de contre-marche assorties",
+      "quantity": "Une par marche à fermer, sauf si l’escalier reste ouvert"
+    },
+    {
+      "name": "Colle à bois D3, chevilles ou coins en bois dur et vis structurelles adaptées aux sections",
+      "quantity": "Selon le nombre d’assemblages"
+    },
+    {
+      "name": "Quincaillerie de fixation haute et basse : sabots, équerres renforcées, patin ou platine d’appui au sol",
+      "quantity": "Selon les appuis relevés au montage"
+    },
+    {
+      "name": "Bois et quincaillerie du garde-corps, lisse et barreaudage compris",
+      "quantity": "Longueur mesurée sur la volée, plus les retours"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Mesure la hauteur réelle et fixe la ligne de marche",
+      "description": "Mesure la hauteur d’un sol fini à l’autre, à plusieurs endroits, en retenant la plus grande : un sol qui n’est pas de niveau se rattrape par le bas de l’escalier, jamais par la dernière marche. Choisis ensuite la hauteur d’emmarchement et le giron en respectant la relation deux hauteurs plus un giron comprise entre 60 et 64 cm, puis divise la hauteur par la hauteur retenue pour obtenir un nombre entier de marches. Tant que ce compte n’est pas entier, reprends la hauteur : c’est ce calcul qui tient tout l’escalier."
+    },
+    {
+      "title": "Trace le limon et prépare les embrèvements",
+      "description": "Reporte au trusquin, sur les deux faces du limon, les hauteurs d’emmarchement et les girons, en partant du bas, et vérifie que le tracé retombe exactement sur le niveau haut. Matérialise la profondeur d’embrèvement, qui doit laisser assez de matière sous chaque marche : c’est l’épaisseur restante du limon qui porte tout. Si la section de bois ne supporte pas ces embrèvements, mieux vaut repartir sur des étriers métalliques boulonnés que de réduire le limon."
+    },
+    {
+      "title": "Exécute les mortaises et présente l’assemblage",
+      "description": "Coupe en restant à l’intérieur du tracé, puis enlève la matière au ciseau en travaillant des deux côtés vers le centre de l’embrèvement, en plusieurs passages plutôt qu’en une fois. Les fonds de mortaise doivent être plans et réguliers : c’est là que la marche s’appuie. Prépare une marche d’essai et présente-la dans chacun des embrèvements, en corrigeant les jeux à la râpe jusqu’à ce qu’elle entre sans jeu et sans forcer."
+    },
+    {
+      "title": "Façonne et embreve les marches",
+      "description": "Débite les marches à la largeur utile, deux largeurs par marche puisque chacune se partage de part et d’autre du limon, et profile le bout côté limon pour qu’il s’inscrive dans l’embrèvement. Encollé et chevillé ou vissé par le dessous du limon, chaque assemblage se serre dans l’axe du bois, jamais en travers du fil. Monte les marches de bas en haut, en contrôlant à chaque fois la hauteur depuis le sol et l’aplomb de la face avant : une dérive d’un millimètre au départ se retrouve au palier."
+    },
+    {
+      "title": "Mets l’escalier en place et reprends ses appuis",
+      "description": "Deux personnes, et les passages dégagés : le limon monté devient lourd et encombrant. Pose le bas sur son patin ou son massif, correctement appuyé au sol, puis présente le haut au niveau du plancher haut, contre la face de la trémie, et reprends-le par des fixations traversantes dans une solive ou un chevêtre, jamais seulement dans le plancher, dont l’épaisseur ne résiste pas à l’arrachement. Cale ce qui doit l’être, contrôle l’aplomb du limon dans les deux sens et vérifie que l’escalier ne peut ni glisser au sol ni basculer en tête."
+    },
+    {
+      "title": "Pose le garde-corps et contrôle l’ensemble",
+      "description": "Pose le garde-corps du côté ouvert, fixé dans la structure du limon et non dans le seul nez des marches, et remonte la lisse au niveau de ton appui de main. Vérifie une dernière fois en montant et descendant : des hauteurs régulières, aucune marche qui sonne creux ou bouge, un appui franc en haut et en bas. Tant que ces contrôles ne sont pas passés, l’escalier reste interdit d’usage et barré, surtout avec des enfants dans la maison."
+    }
+  ],
+  "mistakes": [
+    "Débiter le limon d’après des cotes arrondies, sans mesurer la hauteur réelle d’un sol fini à l’autre : l’écart se retrouve en haut, par une dernière marche trop haute ou trop basse.",
+    "Réduire la matière du limon pour gagner de la profondeur d’embrèvement : c’est justement ce qui reste sous l’embrèvement qui porte l’escalier.",
+    "Fixer le haut de l’escalier dans le plancher seul, sans atteindre la solive ou le chevêtre : l’arrachement se produit dès les premiers passages chargés."
+  ],
+  "safety": [
+    "Un escalier en chantier est un piège : tant que le garde-corps n’est pas posé et les appuis vérifiés, ferme l’accès par une barrière ou un panneau, et ne laisse personne monter, à commencer par les enfants.",
+    "Manutention : le limon et l’escalier assemblé sont lourds et encombrants. Monte à deux, dégage les passages, et ne fais pas passer l’ensemble au-dessus de quelqu’un.",
+    "Sciage et mortaisage : protège-toi les yeux et les oreilles, pousse le bois avec un poussoir, lame à bois en bon état, et attention aux nœuds et aux vis cachés dans du bois de récupération.",
+    "Si tu ne peux pas justifier la section du limon et la reprise des charges avec les abaques du fournisseur, ne coupe pas le bois : une volée trop faible pour sa portée fléchit et se fissure, même si elle paraît tenir au montage.",
+    "Vérifie la trémie et ses appuis avant de monter : un limon reporte le poids de l’escalier et de ceux qui y passent sur le plancher d’arrivée, pas sur les marches."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-27"
+}

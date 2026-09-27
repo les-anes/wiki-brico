@@ -48,6 +48,25 @@ Le catalogue SHALL reconnaître les classements principaux et secondaires, ainsi
 - **WHEN** un tutoriel correspond au filtre par son champ `relatedCategories`
 - **THEN** il apparaît une seule fois dans les résultats.
 
+### Requirement: Familles du gros œuvre
+
+La catégorie `structure`, présentée comme « Gros œuvre » dans la navigation, SHALL regrouper ses thèmes dans trois familles : « Maçonnerie » (Fondations, Murs porteurs, Maçonnerie de pierre, Rejointoiement de pierre, Ouvertures dans un mur, Linteaux, Chaînages), « Charpente & ossature bois » (Solives) et « Planchers & escaliers » (Planchers, Trémies, Escaliers). Le menu SHALL afficher les sous-catégories sous leur famille en utilisant deux segments de classement au maximum. Les familles et leurs sous-catégories SHALL être sélectionnables ; une famille rassemble les fiches de ses sous-catégories. Le reclassement SHALL conserver les identifiants et les URL des tutoriels et mettre à jour les filtres associés aux calculateurs.
+
+#### Scenario: Parcourir une famille
+
+- **WHEN** un visiteur choisit « Maçonnerie » dans « Gros œuvre »
+- **THEN** le catalogue affiche les fiches de ses sous-catégories, notamment le rejointoiement de pierre, les linteaux et les chaînages.
+
+#### Scenario: Choisir une sous-catégorie
+
+- **WHEN** un visiteur choisit « Planchers & escaliers › Trémies »
+- **THEN** le catalogue affiche la fiche de trémie, sans inclure celles des planchers ou des escaliers.
+
+#### Scenario: Conserver l’accès depuis un calculateur
+
+- **WHEN** un visiteur suit le lien du calculateur vers les tutoriels de planchers ou de rejointoiement de pierre
+- **THEN** le filtre utilise le nouveau chemin complet et retrouve les fiches correspondantes.
+
 ### Requirement: Recherche tolérante aux fautes
 
 La recherche soumise depuis l’accueil et celle du catalogue SHALL utiliser le même moteur local, sans requête réseau. Elle SHALL ignorer la casse, les accents et l’ordre des mots, conserver les correspondances partielles et exiger une correspondance pour chaque mot saisi dans le titre, la description, les outils ou les classements. Elle SHALL tolérer une insertion, une suppression, une substitution ou une inversion de deux lettres adjacentes par mot saisi d’au moins quatre caractères ; les mots plus courts SHALL rester exacts ou partiels, sauf les acronymes techniques du référentiel de tags qui SHALL correspondre à un mot entier, sans approximation. Les tags SHALL être indexés par ce même moteur.
