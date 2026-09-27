@@ -1,0 +1,88 @@
+{
+  "category": "electricite",
+  "topicPath": ["Réseau informatique"],
+  "difficulty": "Débutant",
+  "cost": null,
+  "imageOrigin": "original",
+  "status": "documented",
+  "updatedAt": "2026-09-27",
+  "id": "installer-un-repeteur-wifi",
+  "title": "Étendre le Wi-Fi avec un répéteur",
+  "description": "Un répéteur reçoit le Wi-Fi de ta box et le rediffuse vers une pièce mal couverte. Tu vas le configurer, trouver sa bonne place et vérifier que la connexion s’améliore.",
+  "tags": ["Wi-Fi", "répéteur"],
+  "relatedTutorials": [
+    "relier-une-piece-en-ethernet",
+    "rallonger-le-cable-fibre-de-la-box",
+    "remplacer-une-prise-murale"
+  ],
+  "durationMinutes": 45,
+  "image": "/images/tutoriels/installer-un-repeteur-wifi.png",
+  "imageAlt": "Répéteur Wi-Fi blanc à deux antennes branché au mur, avec une box sur un meuble en arrière-plan, dessin au crayon et à la gouache.",
+  "scope": "Ajout d’un seul répéteur Wi-Fi intérieur sur une box fonctionnelle, depuis l’application ou l’interface indiquée par son fabricant. Hors réseau maillé complet, cascade de répéteurs, point d’accès câblé, configuration professionnelle et modification des prises électriques.",
+  "estimatesNote": "Prévois environ 45 min pour la configuration et quelques essais de placement. Le budget couvre le répéteur seul, sans changement de box ni travaux électriques.",
+  "sources": [
+    {
+      "title": "TP-Link — Configurer un répéteur avec l’application Tether",
+      "url": "https://www.tp-link.com/fr/support/faq/1373/",
+      "note": "Procédure fabricant : installation près de la box, accès à la configuration, réseau hôte, mot de passe et déplacement après association ; écrans propres à cette gamme.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "TP-Link — Bien placer son répéteur Wi-Fi",
+      "url": "https://www.tp-link.com/fr/support/faq/3103/",
+      "note": "Recherche d’un emplacement recevant encore un bon signal de la box, obstacles et vérification de la qualité de liaison.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "TP-Link — Configurer le mode point d’accès",
+      "url": "https://www.tp-link.com/fr/support/faq/1401/",
+      "note": "Le mode point d’accès exige une liaison Ethernet ; il ne se confond pas avec la répétition sans fil et dépend du modèle.",
+      "accessedAt": "2026-09-27"
+    }
+  ],
+  "tools": [
+    "Téléphone ou ordinateur pour configurer et tester",
+    "Notice du répéteur et identifiants du Wi-Fi de la box"
+  ],
+  "materials": [
+    {
+      "name": "Répéteur Wi-Fi compatible avec le réseau et la sécurité de la box",
+      "quantity": "1, avec son alimentation d’origine si elle est séparée"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie le problème près de la box",
+      "description": "Teste Internet avec le même appareil près de la box puis dans la pièce mal couverte, en coupant les données mobiles du téléphone pour éviter un faux résultat. Si Internet fonctionne déjà mal à côté de la box, résous ce problème avant d’ajouter un répéteur. Vérifie dans sa notice qu’il accepte les bandes et le mode de sécurité utilisés par ton Wi-Fi."
+    },
+    {
+      "title": "Démarre le répéteur près de la box",
+      "description": "Branche-le sur une prise existante en bon état, près de la box, et attends l’état de démarrage indiqué dans sa notice. Ouvre l’application officielle ou l’adresse de configuration fournie par le fabricant, puis rejoins le réseau provisoire du répéteur si demandé. Crée un mot de passe d’administration propre à cet appareil, distinct du mot de passe Wi-Fi."
+    },
+    {
+      "title": "Associe-le au bon réseau",
+      "description": "Choisis le mode répéteur, sélectionne ton réseau Wi-Fi et saisis son mot de passe ; si plusieurs bandes sont proposées, suis la procédure du modèle. Donne au réseau étendu un nom identifiable pendant les essais et garde une protection WPA2 avec chiffrement AES ou WPA3 compatible avec tes appareils. Enregistre, attends la confirmation de connexion à la box et applique les mises à jour proposées par le fabricant."
+    },
+    {
+      "title": "Trouve une prise à mi-parcours",
+      "description": "Déplace le répéteur vers une prise située entre la box et la pièce visée, à un endroit où le Wi-Fi de la box reste bien reçu. Attends sa reconnexion et lis l’indicateur de qualité de liaison dans la notice ou l’application ; rapproche-le de la box si cette liaison est faible. Évite les meubles fermés, les gros obstacles métalliques et le placement directement dans la zone sans signal."
+    },
+    {
+      "title": "Compare la connexion dans la pièce",
+      "description": "Connecte ton appareil au réseau étendu, données mobiles toujours coupées, puis teste la navigation, un appel vidéo et le débit au même endroit qu’au départ. Refais l’essai sur une autre prise si les coupures persistent, sans empiler des répéteurs au hasard. Un répéteur améliore surtout la couverture et peut réduire le débit disponible : si les murs bloquent trop le signal, une liaison Ethernet vers un point d’accès sera plus adaptée."
+    },
+    {
+      "title": "Enregistre le réglage retenu",
+      "description": "Note le nom du réseau et l’emplacement, puis conserve le mot de passe d’administration dans ton gestionnaire de mots de passe. Vérifie après un redémarrage que le répéteur se reconnecte et que les appareils habituels ont accès au réseau. Un nom Wi-Fi identique à celui de la box ne suffit pas à créer un système maillé : n’active cette fonction que si les deux appareils sont explicitement compatibles."
+    }
+  ],
+  "mistakes": [
+    "Brancher le répéteur au fond de la zone sans signal, trop loin de la box.",
+    "Choisir le mode point d’accès sans câble Ethernet vers la box.",
+    "Se fier seulement aux barres Wi-Fi du téléphone sans tester Internet et la liaison entre le répéteur et la box."
+  ],
+  "safety": [
+    "Ne désactive pas la protection du Wi-Fi pour réussir l’association et ne laisse pas le mot de passe d’administration par défaut.",
+    "Garde l’appareil ventilé, au sec, et utilise son alimentation prévue ; une prise abîmée doit être remise en état avant branchement."
+  ]
+}

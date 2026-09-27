@@ -1,0 +1,103 @@
+{
+  "category": "electricite",
+  "topicPath": ["Réseau informatique"],
+  "id": "rallonger-le-cable-fibre-de-la-box",
+  "title": "Rallonger le câble fibre entre la prise optique et la box",
+  "description": "Pour déplacer ta box, tu peux remplacer son cordon fibre par un modèle plus long compatible avec ses connecteurs. Tu vas préparer le trajet, protéger le câble et le rebrancher sans déplacer ni ouvrir la prise optique murale.",
+  "tags": ["fibre optique", "box internet"],
+  "relatedTutorials": [
+    "relier-une-piece-en-ethernet",
+    "installer-un-repeteur-wifi",
+    "radiateur-connecte"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 60,
+  "cost": null,
+  "image": "/images/tutoriels/rallonger-le-cable-fibre-de-la-box.png",
+  "imageAlt": "Long cordon fibre blanc en larges boucles, connecteurs verts protégés par leurs capuchons, prise optique et box dessinés sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Remplacement du cordon optique amovible entre la prise terminale optique existante et la box, ou son boîtier optique externe conservé, par un cordon préconnectorisé plus long explicitement compatible. Trajet intérieur accessible en goulotte dédiée, sans percement, soudure, ouverture de PTO, déplacement du point de branchement ni intervention sur le réseau opérateur. Hors liaison fibre entre pièces après la box et conversion Ethernet/fibre.",
+  "estimatesNote": "Compte environ 1 h pour un trajet simple et les tests, hors percement ou travaux de passage. Le budget comprend le cordon adapté et sa goulotte, sans déplacement de la prise optique par l’opérateur.",
+  "sources": [
+    {
+      "title": "Orange — Utiliser une rallonge optique fibre",
+      "url": "https://assistance.orange.fr/livebox-modem/toutes-les-livebox-et-modems/installer-et-utiliser/brancher-ou-debrancher-votre-livebox-modem/la-fibre-orange-utilisation-d-une-rallonge-optique-fibre_435455-965113",
+      "note": "Déport de la box ou du boîtier optique par un cordon plus long ; respect des courbures et absence de pliure.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Orange — Brancher le cordon sur la prise optique",
+      "url": "https://assistance.orange.fr/nid/462069",
+      "note": "Détrompeur, capuchons antipoussière, absence de pincement et interdiction de regarder dans les composants optiques.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Free — Installer une Freebox Ultra en fibre",
+      "url": "https://assistance.free.fr/articles/1511",
+      "note": "Exemple opérateur avec extrémités de couleurs différentes côté box et prise murale : ne pas supposer qu’un cordon vert-vert convient à toutes les box.",
+      "accessedAt": "2026-09-27"
+    }
+  ],
+  "tools": [
+    "Mètre et crayon",
+    "Téléphone pour photographier les branchements",
+    "Ordinateur et cordon Ethernet pour comparer la connexion",
+    "Scie fine et boîte à onglets pour la goulotte"
+  ],
+  "materials": [
+    {
+      "name": "Cordon fibre optique préconnectorisé compatible avec le modèle de box et la prise murale",
+      "quantity": "1 de la longueur du trajet, avec une réserve en boucles larges aux extrémités"
+    },
+    {
+      "name": "Goulotte adhésive dédiée à la fibre, angles et embouts adaptés",
+      "quantity": "Longueur du trajet sur un support compatible avec l’adhésif"
+    },
+    {
+      "name": "Attaches souples et capuchons de protection propres",
+      "quantity": "Pour guider le câble et protéger les embouts pendant le passage"
+    },
+    {
+      "name": "Chiffon pour nettoyer le support de la goulotte",
+      "quantity": "1 ; ne pas l’utiliser sur les faces optiques"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Identifie les deux extrémités",
+      "description": "Photographie le port utilisé sur la prise terminale optique, appelée PTO, et celui de la box ou du petit boîtier optique externe. Choisis un cordon explicitement compatible avec ces deux équipements, avec les mêmes types de connecteurs et de faces optiques à chaque bout ; les couleurs seules ne suffisent pas. Conserve le boîtier externe si ton installation en utilise un et ne remplace pas cette liaison par un câble Ethernet."
+    },
+    {
+      "title": "Mesure et prépare le passage",
+      "description": "Mesure le trajet réel jusqu’au nouvel emplacement en prévoyant les angles et des réserves en boucles larges, puis relève le rayon de courbure minimal du nouveau cordon. Nettoie le support et pose une goulotte dédiée assez large pour ses connecteurs, en faisant toutes les découpes avant d’y installer la fibre. Choisis un emplacement ventilé près d’une prise électrique existante et évite les passages sous les portes ou derrière des meubles qui écraseraient le câble."
+    },
+    {
+      "title": "Repère le fonctionnement avant de débrancher",
+      "description": "Teste la connexion avec un ordinateur relié à la box par Ethernet, puis note les voyants ou l’état affiché. Éteins la box et son boîtier optique externe éventuel, débranche délicatement l’ancien cordon en tenant le corps des connecteurs et en respectant leur verrouillage, puis protège aussitôt les embouts et ports ouverts. La fibre côté opérateur peut toujours émettre : ne regarde jamais dans un connecteur, même box éteinte."
+    },
+    {
+      "title": "Pose le nouveau cordon sans le contraindre",
+      "description": "Garde les capuchons en place pendant le passage et déroule le cordon sans tirer sur les connecteurs. Pose-le dans la goulotte avec des courbes souples, sans nœud, agrafe ni collier serré, puis range le surplus en larges boucles. Avant de fermer les couvercles, vérifie que rien ne pince le câble et que chaque extrémité atteint son port sans traction."
+    },
+    {
+      "title": "Rebranche sur les mêmes ports",
+      "description": "Retire les capuchons juste au moment de brancher et ne touche pas les faces optiques avec les doigts. Aligne le détrompeur et engage chaque connecteur dans le port repéré, selon la notice, sans forcer ni intervertir les extrémités lorsque leurs références diffèrent. Si un embout est tombé ou a été touché, n’improvise pas un nettoyage au chiffon : utilise uniquement la procédure et le matériel de nettoyage optique adaptés avant de le raccorder."
+    },
+    {
+      "title": "Vérifie la connexion après déplacement",
+      "description": "Rallume les équipements dans l’ordre prévu par leur notice et attends le retour de l’état normal de connexion. Reprends le test Ethernet avec le même ordinateur, puis vérifie les services utilisés et les courbures du câble si un voyant de perte optique apparaît. En cas d’échec, éteins de nouveau les équipements et essaie l’ancien cordon à son emplacement initial pour isoler le problème, sans ouvrir la PTO ni multiplier les débranchements."
+    }
+  ],
+  "mistakes": [
+    "Acheter un cordon au hasard en supposant que toutes les box utilisent les mêmes connecteurs.",
+    "Plier la fibre à angle vif, l’agrafer ou fermer une goulotte sur le câble.",
+    "Changer de port sur la PTO ou toucher les faces optiques pendant le remplacement."
+  ],
+  "safety": [
+    "Ne regarde jamais dans une fibre ou un port optique, avec l’œil, une loupe ou un instrument non prévu : la lumière émise peut être invisible et dangereuse.",
+    "N’ouvre pas la prise murale et ne coupe pas la fibre : les fragments de verre sont dangereux et un cordon endommagé doit être remplacé.",
+    "Ne touche pas aux conducteurs électriques pour créer le passage et n’utilise pas le compartiment des câbles 230 V."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-27"
+}

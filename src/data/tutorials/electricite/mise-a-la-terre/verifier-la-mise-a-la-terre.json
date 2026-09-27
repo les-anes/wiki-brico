@@ -1,0 +1,106 @@
+{
+  "category": "electricite",
+  "cost": null,
+  "imageOrigin": "original",
+  "status": "documented",
+  "updatedAt": "2026-09-27",
+  "id": "verifier-la-mise-a-la-terre",
+  "title": "Vérifier la mise à la terre d’une maison",
+  "description": "La mise à la terre relie les parties métalliques des équipements au sol et participe à la coupure du courant en cas de défaut. Tu vas contrôler les liaisons de protection et mesurer la prise de terre avec les appareils adaptés, sur une installation mise hors tension.",
+  "topicPath": ["Mise à la terre"],
+  "tags": ["mise à la terre", "mesure électrique"],
+  "relatedTutorials": [
+    "creer-une-prise-de-terre",
+    "remplacer-une-prise-murale",
+    "dimensionner-son-tableau-electrique"
+  ],
+  "difficulty": "Avancé",
+  "durationMinutes": 120,
+  "image": "/images/tutoriels/verifier-la-mise-a-la-terre.png",
+  "imageAlt": "Contrôleur de terre, cordons de mesure, deux piquets auxiliaires et barrette de coupure fermée, dessinés à la gouache sur un établi.",
+  "scope": "Contrôle de continuité et mesure trois pôles d’une terre privative de maison individuelle en schéma TT identifié, avec protection de tête 500 mA, barrette accessible et terrain permettant d’écarter les piquets auxiliaires. Prérequis : maîtrise de la mise hors tension, de la VAT et des notices des contrôleurs. Hors terre collective, photovoltaïque, groupe, onduleur, schémas TN ou IT, mesure de boucle sous tension et diagnostic complet de conformité. Les essais des différentiels et d’isolement ne sont pas traités.",
+  "estimatesNote": "Prévois environ 2 h selon le nombre de points et l’accès au terrain, hors correction des défauts. Le budget dépend surtout de la location ou de la disponibilité des contrôleurs et de leurs accessoires.",
+  "sources": [
+    {
+      "title": "INRS — Prévention du risque électrique",
+      "url": "https://www.inrs.fr/risques/electriques/prevention-risque-electrique",
+      "note": "Principes de séparation de toutes les sources, condamnation et vérification d’absence de tension. Source de prévention professionnelle utilisée pour les précautions, sans assimiler une fiche à une formation.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Chauvin Arnoux — Guide de la mesure de terre, édition 4",
+      "url": "https://www.group.chauvin-arnoux.com/sites/default/files/documents/dc_f_guide-terre_ed4.pdf",
+      "note": "Pages 6 et 7 : mesure trois pôles hors tension, barrette ouverte, positionnement à 62 % et contrôle à 52 % et 72 %. Guide de méthode ancien, sans prétention de consultation du texte normatif actuel.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Chauvin Arnoux / AEMC — Notice du contrôleur de continuité CA 6011",
+      "url": "https://www.aemc.com/userfiles/files/resources/usermanuals/Ground-Testers/CA_6011_FR.pdf",
+      "note": "Mesures hors tension sous 200 mA, compensation des cordons et seuils de contrôle. Un seuil d’appareil ne constitue pas à lui seul un critère universel de conformité.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Promotelec — Résistance de la prise de terre",
+      "url": "https://www.promotelec.com/faq/particuliers/quelle-est-la-resistance-minimale-de-la-prise-de-terre/",
+      "note": "Repère inférieur à 100 ohms pour une protection différentielle de 500 mA, à ne pas transposer sans vérifier le schéma et les protections.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Chauvin Arnoux — Contrôleurs CA 6422 et CA 6424",
+      "url": "https://www.chauvin-arnoux.com/sites/default/files/HLHBN9UV.PDF",
+      "note": "Contrôle de stabilité des mesures à 52 %, 62 % et 72 %, surveillance des tensions et des résistances des piquets auxiliaires.",
+      "accessedAt": "2026-09-27"
+    }
+  ],
+  "tools": [
+    "Vérificateur d’absence de tension bipolaire et son dispositif de contrôle",
+    "Dispositif de condamnation de l’alimentation et signalisation",
+    "Contrôleur de continuité sous au moins 200 mA avec cordon long compensable",
+    "Contrôleur de terre trois pôles avec ses deux piquets et ses cordons",
+    "Outils isolés, clé adaptée à la barrette, mètre, maillet et lampe autonome",
+    "Plan des circuits, notices des appareils et carnet de mesures"
+  ],
+  "materials": [
+    {
+      "name": "Étiquettes de repérage des points contrôlés",
+      "quantity": "1 par point ou circuit relevé"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Délimite le contrôle",
+      "description": "Identifie la terre privative, sa barrette de coupure et la borne principale reliée aux conducteurs vert et jaune des circuits. Ce guide concerne une maison en schéma TT, c’est-à-dire avec sa propre prise de terre distincte de celle du réseau, et une protection de tête de 500 mA : si ces éléments ne sont pas identifiés, ne poursuis pas la mesure. Vérifie les raccordements visibles et le trajet des liaisons, sans confondre une broche présente sur une prise avec une terre réellement raccordée."
+    },
+    {
+      "title": "Mets toute l’installation hors tension",
+      "description": "Coupe l’alimentation générale, condamne sa commande contre une remise en marche et préviens les occupants ; toute autre source d’énergie impose un protocole adapté avant de continuer. Avec un vérificateur d’absence de tension bipolaire contrôlé avant et après usage, vérifie l’absence de tension sur tous les conducteurs actifs aux points d’intervention, entre eux et par rapport à la terre, selon sa notice. N’utilise ni détecteur sans contact ni simple multimètre comme preuve de mise hors tension, et garde les parties amont du disjoncteur protégées."
+    },
+    {
+      "title": "Mesure les liaisons de protection",
+      "description": "Barrette encore fermée, débranche les appareils et compense les cordons du contrôleur de continuité selon sa notice. Mesure sous au moins 200 mA entre la borne principale de terre et chaque contact de terre des prises, puis les points de protection et liaisons équipotentielles accessibles identifiés sur le plan. Note les résistances et compare-les aux valeurs attendues selon les longueurs et sections : une liaison coupée ou instable est un défaut, mais une valeur faible peut masquer un chemin parallèle et ne suffit pas à valider un conducteur douteux."
+    },
+    {
+      "title": "Prépare la mesure dans le sol",
+      "description": "Après repérage des réseaux enterrés, place les deux piquets auxiliaires dans un terrain dégagé, à l’écartement prévu par la notice du contrôleur, en les alignant avec la prise de terre à tester. L’installation restant condamnée et hors tension, ouvre la barrette pour isoler la prise de terre, puis raccorde la borne E côté sol, H au piquet éloigné et S au piquet intermédiaire situé à 62 % de la distance E–H. Si le terrain ne permet pas cette disposition, si une tension est signalée ou si le contrôleur refuse les conditions de mesure, arrête cet essai."
+    },
+    {
+      "title": "Vérifie la stabilité du résultat",
+      "description": "Lance la mesure trois pôles, puis recommence en déplaçant S à 52 % et 72 % de la distance E–H, sans toucher aux piquets pendant l’essai. Les résultats doivent être proches selon le critère de la notice ; sinon éloigne H et recommence plutôt que de retenir la plus petite valeur. Pour le cas TT avec protection de tête 500 mA décrit ici, vise une résistance inférieure à 100 ohms avec une marge pour les variations saisonnières ; un résultat limite ou invalide ne permet pas de conclure."
+    },
+    {
+      "title": "Rétablis la terre avant toute remise sous tension",
+      "description": "Arrête le contrôleur, retire ses cordons, referme et serre la barrette selon sa notice, puis vérifie sa continuité et remets tous les capots avant de retirer la condamnation. Si un défaut de terre reste présent, garde l’installation ou le circuit concerné hors service jusqu’à sa correction et au nouveau contrôle. Conserve les valeurs, les points testés et l’état du sol : ces mesures ne remplacent ni les essais des protections différentielles ni une vérification complète de l’installation."
+    }
+  ],
+  "mistakes": [
+    "Croire qu’un testeur de prise à voyants, une mesure de tension ou le bouton Test d’un différentiel mesure la qualité de la terre.",
+    "Ouvrir la barrette sur une installation alimentée, ou oublier de la refermer avant la remise sous tension.",
+    "Retenir une seule valeur sans vérifier l’écartement des piquets, la stabilité et l’état du sol."
+  ],
+  "safety": [
+    "N’ouvre pas une terre collective et n’interviens pas si une source secondaire, un schéma de liaison à la terre inconnu ou des parties actives accessibles empêchent une mise hors tension certaine.",
+    "Ne mesure pas pendant un orage et repère les réseaux enterrés avant de planter les piquets, même auxiliaires.",
+    "Ne débranche pas au hasard les liaisons d’eau ou de gaz pour supprimer un chemin parallèle ; leur analyse demande un protocole de mesure adapté.",
+    "Sans maîtrise de la consignation, de la VAT et des appareils de mesure, limite-toi au repérage extérieur et aux documents de l’installation."
+  ]
+}

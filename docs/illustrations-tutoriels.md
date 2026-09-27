@@ -1039,3 +1039,59 @@ Illustration originale générée avec l’outil intégré imagegen. PNG 1536 ×
 ```text
 Illustration originale de tutoriel de bricolage, paysage 1536 × 1024. Dessin au crayon et à la gouache, traits irréguliers, formes simplifiées, fond ivoire clair, sans texte ni chiffres ni flèches ni logo ni légende. Sujet centré dans les 70 % de l’image avec marges généreuses : une seule nourrice de distribution d’eau froide en laiton fixée horizontalement sur deux supports muraux. Trois départs verticaux sous la barre, chacun avec une petite vanne à poignée bleue et un raccord métallique, puis un tube PER bleu descendant bien séparé des deux autres. Arrivée d’eau par un tube bleu à gauche avec une vanne d’arrêt, extrémité droite fermée par un bouchon en laiton. Géométrie de plomberie simple et crédible, trois branches parallèles sans croisement, aucune eau qui coule. Vue de trois-quarts très légère montrant les fixations et les écrous. Pas de mains, pas de personnes, pas de photoréalisme, pas de réseau de chauffage ni débitmètre.
 ```
+
+## 2026-09-27 — Répéteur Wi-Fi
+
+Illustration originale générée avec l’outil intégré imagegen, PNG 1536 × 1024 et variantes WebP 480, 720 et 960 (qualité 82). Source : `output/imagegen/installer-un-repeteur-wifi.png` ; publication : `public/images/tutoriels/installer-un-repeteur-wifi.png`.
+
+```text
+Illustration de tutoriel WikiBrico, paysage 1536 × 1024. Dessin au crayon et gouache sur fond ivoire clair, formes simples, traits irréguliers. Un répéteur Wi-Fi blanc compact avec deux petites antennes verticales, branché dans une prise murale française, au premier plan. En arrière-plan proche une petite box internet blanche posée sur une console en bois clair. Composition aérée, objets entièrement visibles centrés dans les 70 % de l’image, sans personnes. Aucun texte, logo, chiffre, flèche, symbole d’onde ou légende. Pas de photoréalisme.
+```
+
+## 2026-09-27 — Liaison Ethernet vers une pièce
+
+Illustration originale générée avec l’outil intégré imagegen, PNG 1536 × 1024 et variantes WebP 480, 720 et 960 (qualité 82). Source : `output/imagegen/relier-une-piece-en-ethernet.png` ; publication : `public/images/tutoriels/relier-une-piece-en-ethernet.png`.
+
+```text
+Illustration originale pour tutoriel de bricolage, format paysage 1536 × 1024. Crayon et gouache, traits irréguliers, formes simplifiées et fond ivoire. Sujet central entièrement visible dans les 70 % du cadre : un long cordon Ethernet bleu enroulé en larges boucles, avec ses deux fiches RJ45 transparentes à languette et huit petits contacts dorés clairement reconnaissables, près d’un ordinateur portable gris fermé et d’une petite box internet blanche. Petite section de goulotte blanche ouverte à côté pour évoquer le passage le long d’une plinthe. Nature morte aérée, pas de personne, aucun texte, logo, chiffre, flèche, légende ou filigrane, pas de photoréalisme.
+```
+
+## 2026-09-27 — Vérifier la mise à la terre
+
+Illustration originale générée avec l’outil intégré imagegen, PNG 1536 × 1024 et variantes WebP 480, 720 et 960 (qualité 82). Source : `output/imagegen/verifier-la-mise-a-la-terre.png` ; publication : `public/images/tutoriels/verifier-la-mise-a-la-terre.png`.
+
+```text
+Illustration originale pour WikiBrico, paysage 1536 × 1024. Dessin au crayon et gouache, traits irréguliers, formes simplifiées sur fond ivoire. Nature morte centrée dans les 70 % du cadre : un contrôleur de résistance de terre portable jaune et gris, écran éteint sans chiffres ni lettres, trois cordons de mesure isolés enroulés proprement et deux petits piquets auxiliaires métalliques posés à côté sur une planche en bois. Un conducteur vert et jaune et une petite barrette de coupure en cuivre fermée sur socle isolant complètent la scène. Pas de tableau électrique, pas de câbles sous tension, pas de mains, pas de raccordement technique à représenter. Aucun texte, symbole, logo, flèche ni légende. Pas de photoréalisme.
+```
+
+## 2026-09-27 — Créer une prise de terre
+
+Illustration originale générée avec l’outil intégré imagegen, PNG 1536 × 1024 et variantes WebP 480, 720 et 960 (qualité 82). Source : `output/imagegen/creer-une-prise-de-terre.png` ; publication : `public/images/tutoriels/creer-une-prise-de-terre.png`.
+
+```text
+Illustration originale de bricolage WikiBrico, format paysage 1536 × 1024. Crayon et gouache sur fond ivoire, traits irréguliers, formes simplifiées. Nature morte centrée dans les 70 % du cadre avec larges marges : un long piquet de terre en acier cuivré posé en diagonale, son collier de raccordement compatible en bronze, une couronne de câble cuivre nu épais, une barrette de coupure fermée sur socle isolant et un regard de visite vert avec son couvercle posé à côté. Quelques touches de terre brune sous le matériel évoquent le jardin, sans scène de chantier ni installation sous tension. Tous les objets sont détachés et non raccordés, pas de mains, pas de personne. Aucun texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
+```
+
+## 2026-09-27 — Rallonger le cordon fibre de la box
+
+Illustration originale générée avec l’outil intégré imagegen, PNG 1536 × 1024 et variantes WebP 480, 720 et 960 (qualité 82). Source : `output/imagegen/rallonger-le-cable-fibre-de-la-box.png` ; publication : `public/images/tutoriels/rallonger-le-cable-fibre-de-la-box.png`.
+
+```text
+Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Nature morte centrée dans les 70 % de l’image avec marges : un long cordon de fibre optique blanc fin, enroulé en larges boucles souples, deux connecteurs SC/APC verts rectangulaires avec capuchons de protection opaques blancs en place, une petite prise optique murale blanche fermée et une box internet blanche générique à côté. Connecteurs optiques, surtout pas des fiches RJ45 ni de cuivre apparent. Aucun rayon laser, aucune lumière sortant des connecteurs. Pas de mains ni de personnes. Aucun texte, chiffre, logo, flèche, légende ou filigrane, pas de photoréalisme.
+```
+
+## 2026-09-27 — Couler une chape à la chaux
+
+Prompt de l’illustration, à générer : PNG 1536 × 1024 puis variantes WebP 480, 720 et 960 (qualité 82). Source prévue : `output/imagegen/couler-une-chape-a-la-chaux.png` ; publication : `public/images/tutoriels/couler-une-chape-a-la-chaux.png`.
+
+```text
+Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Intérieur vide vu de trois quarts : une chape de mortier de chaux fraîchement tirée à la règle, encore humide, prise entre deux règles de guidage en bois dont une est restée en place. Une règle de maçon en aluminium, une taloche et une truelle posées sur la chape fraîche, une auge en bois et un seau de mortier de chaux clair à côté, un niveau à bulle par terre. Bords de murs en maçonnerie à l’arrière du cadre, pas de carrelage ni de revêtement posé, pas de mains ni de personne. Aucun texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
+```
+
+## 2026-09-27 — Couler une dalle en béton armé sur terre-plein
+
+Prompt de l’illustration, à générer : PNG 1536 × 1024 puis variantes WebP 480, 720 et 960 (qualité 82). Source prévue : `output/imagegen/couler-une-dalle-en-beton-arme.png` ; publication : `public/images/tutoriels/couler-une-dalle-en-beton-arme.png`.
+
+```text
+Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Dalle sur terre-plein vue de trois quarts en fin de coulage : un coffrage rectangulaire en planches rempli de béton gris frais, surface à peine tirée à la règle. Derrière le coffrage, un panneau de treillis soudé en acier posé sur de petits cavaliers plastique, une brouette de béton et une pelle rangées à côté. Sur le bord ouvert de la fouille, on distingue la couche de cailloux compactés et le film polyane noir qui remonte. Pas de bâtiment, pas de revêtement fini, pas de mains ni de personne. Aucun texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
+```

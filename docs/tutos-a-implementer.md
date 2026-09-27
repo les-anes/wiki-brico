@@ -115,6 +115,10 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Journal de mise à jour
 
+- **2026-09-27** : ajout hors liste de [Vérifier la mise à la terre d’une maison](/tutoriel/verifier-la-mise-a-la-terre/), [Créer une prise de terre avec un piquet](/tutoriel/creer-une-prise-de-terre/) et [Rallonger le câble fibre entre la prise optique et la box](/tutoriel/rallonger-le-cable-fibre-de-la-box/). La terre reste une rubrique indépendante avec un lien depuis la fiche de prise murale ; Réseau informatique contient désormais trois fiches. Sources, trois illustrations originales et variantes WebP ; le catalogue compte 88 tutoriels, aucune des 56 idées historiques ne reste à faire.
+
+- **2026-09-27** : ajout hors liste de [Étendre le Wi-Fi avec un répéteur](/tutoriel/installer-un-repeteur-wifi/) et [Relier une pièce à la box avec un câble Ethernet](/tutoriel/relier-une-piece-en-ethernet/), dans Électricité › Réseau informatique. Illustrations originales et variantes WebP ; le catalogue compte 85 tutoriels et aucune des 56 idées historiques ne reste à faire. Périmètres précisés et fiches ajoutées dans l’entrée suivante du même jour.
+
 - **2026-09-27** : ajout hors liste de [Ajouter une nourrice de distribution d’eau](/tutoriel/ajouter-une-nourrice-d-eau/), dans Plomberie › Arrivée d’eau › Nourrices, jusqu’ici vide. Montage accessible d’eau froide avec départs PER à compression, six étapes, notices fabricant et illustration originale avec variantes WebP. Le catalogue compte 83 tutoriels ; aucune des 56 idées historiques ne reste à faire. TypeScript, lint et 63 tests réussis ; page et filtre Nourrices vérifiés séparément. Les contrôles globaux restent bloqués par les erreurs préexistantes des fiches trémie et section des câbles.
 
 - **2026-09-27** : le gros œuvre est regroupé en trois familles : Maçonnerie, Charpente & ossature bois, Planchers & escaliers. Les onze thèmes existants deviennent leurs sous-catégories ; les six fiches et les filtres des calculateurs suivent ce classement, sans changement d’identifiant ni d’URL de tutoriel. Aucun tutoriel ajouté.
@@ -172,20 +176,31 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
   écrire pour l’escalier : le double limon. Le colimaçon est écarté : il se monte à partir
   d’un kit, ce n’est pas une fabrication, et le sujet ne sera pas traité.
 
+- **2026-09-27** : ménage dans le gros œuvre à la demande. Les thèmes `Maçonnerie de
+  pierre` et `Rejointoiement de pierre` disparaissent du menu : la fiche de rejointoiement
+  descend sous `Maçonnerie › Murs porteurs` (id, URL et fichiers image inchangés), et le
+  calculateur de rejointoiement suit le nouveau filtre. Deux fiches écrites dans la foulée
+  : `Couler une chape à la chaux` sous la famille `Maçonnerie`, et `Couler une dalle en
+  béton armé sur terre-plein` sous `Maçonnerie › Fondations`. **Les deux illustrations
+  restent à générer** : prompts dans `output/imagegen/` et `docs/illustrations-tutoriels.md`,
+  et `validate:data` refuse les fiches tant que les PNG manquent. Le catalogue compte
+  90 tutoriels ; 57 thèmes feuilles sans fiche sur 100.
+
 ## Thèmes sans fiche — relevé du 27 septembre 2026
 
-Les 104 thèmes de `src/data/categories.json` alimentent le menu du site : chacun ouvre le
-catalogue filtré. **64 n’ont encore aucune fiche**, donc le clic mène à un catalogue vide.
-Trois univers entiers sont dans ce cas : l’isolation, l’assainissement et les extérieurs.
+Les 104 entrées de `src/data/categories.json` alimentent le menu du site ; les 100 thèmes
+sans sous-thème ouvrent chacun le catalogue filtré. **57 n’ont encore aucune fiche**, donc
+le clic mène à un catalogue vide. Trois univers entiers sont dans ce cas : l’isolation,
+l’assainissement et les extérieurs.
 
 | Catégorie (vides / total) | Thèmes sans fiche |
 | --- | --- |
-| Structure & gros œuvre (5/11) | Fondations · Murs porteurs · Maçonnerie de pierre · Ouvertures dans un mur · Solives |
+| Structure & gros œuvre (1/8) | Solives |
 | Toiture & étanchéité (5/6) | Charpente · Gouttières · Fenêtres de toit · Étanchéité · Infiltrations |
 | Isolation & performance thermique (6/6) | Murs · Toiture · Sols · Ponts thermiques · Pare-vapeur · Étanchéité à l’air |
 | Cloisons, plafonds & doublages (4/6) | Ossatures bois · Ossatures métal · Faux plafonds · Gaines techniques |
-| Électricité (2/7) | Mise à la terre · Réseau informatique |
-| Plomberie & eau (1/7) | Chauffe-eau |
+| Électricité (0/7) | Aucun |
+| Plomberie & eau (1/6) | Chauffe-eau |
 | Assainissement & eaux pluviales (6/6) | Tout-à-l’égout · Fosse · Microstation · Drainage · Évacuations extérieures · Récupération d’eau |
 | Chauffage, ventilation & confort (4/6) | Plancher chauffant · Pompe à chaleur · Poêle · Climatisation |
 | Menuiseries (2/6) | Fenêtres · Portes coulissantes |

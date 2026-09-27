@@ -81,8 +81,8 @@ try {
   // --- Contenu rendu par route ---
   assert.equal(categories.filter((c) => c.kind === "trade").length, 12);
   assert.equal(categories.filter((c) => c.kind === "transversal").length, 2);
-  assert.equal(tutorials.length, 83);
-  assert.equal(new Set(tutorials.map((t) => t.id)).size, 83);
+  assert.equal(tutorials.length, 90);
+  assert.equal(new Set(tutorials.map((t) => t.id)).size, 90);
   validateDiscovery(
     tutorials,
     tags,
@@ -144,12 +144,13 @@ try {
       .map((t) => t.id)
       .toSorted(),
     [
+      "ajouter-une-nourrice-d-eau",
       "per-raccord-a-compression",
       "per-raccord-a-glissement",
       "per-raccord-a-sertir",
       "raccord-per-vers-cuivre",
     ],
-    "PER ne renvoie que les quatre fiches sur ce matériau",
+    "PER ne renvoie que les cinq fiches sur ce matériau",
   );
   assert(
     searchTutorials(tutorials, categories, "BA13").some(
@@ -170,7 +171,7 @@ try {
   assert(!home.includes("On s’y met ce week-end ?"));
   assert(home.includes("/favicon.svg"));
   assert(!home.includes("Tutoriel introuvable"));
-  assert.equal(countCards(render("/tutoriels/")), 83);
+  assert.equal(countCards(render("/tutoriels/")), 90);
   assert.equal(
     countCards(
       render(
@@ -216,7 +217,10 @@ try {
     0,
     "La recherche approximative respecte le filtre de catégorie",
   );
-  assert.equal(countCards(render(catalogHref({ category: "electricite" }))), 8);
+  assert.equal(
+    countCards(render(catalogHref({ category: "electricite" }))),
+    13,
+  );
   assert.equal(
     countCards(render(catalogHref({ query: "zzzintrouvablezzz" }))),
     0,

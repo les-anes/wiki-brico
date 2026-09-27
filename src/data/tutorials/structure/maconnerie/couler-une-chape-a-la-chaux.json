@@ -1,0 +1,111 @@
+{
+  "id": "couler-une-chape-a-la-chaux",
+  "title": "Couler une chape à la chaux",
+  "description": "Une chape, c’est la couche qui remet le sol de niveau avant le revêtement. Coulée à la chaux, elle reste souple, laisse respirer le support et convient bien aux bâtis anciens : voici comment la préparer, la couler à la bonne épaisseur et la faire sécher.",
+  "category": "structure",
+  "topicPath": ["Maçonnerie"],
+  "relatedCategories": [{ "category": "finitions", "topicPath": ["Ragréage"] }],
+  "tags": ["chaux", "mortier", "ragréage"],
+  "relatedTutorials": [
+    "ragreer-un-sol-en-beton",
+    "poser-du-carrelage-au-sol",
+    "poser-des-plinthes"
+  ],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 300,
+  "cost": null,
+  "image": "/images/tutoriels/couler-une-chape-a-la-chaux.png",
+  "imageAlt": "Une chape de chaux fraîchement tirée à la règle dans une petite pièce, une auge de mortier clair, une truelle et un niveau posés à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Chape de 5 à 8 cm coulée à la chaux sur un support minéral stable, sec et propre — dalle béton, hourdis ou ancien sol en terre — dans une pièce intérieure sèche, avant un revêtement collé ou scellé. Hors ouvrage qui doit porter des charges, qui relève d’une dalle et d’un ferraillage calculés ; hors plancher bois souple, chape sur isolant, plancher chauffant, chape de pente pour une évacuation, extérieur, local humide en permanence et local soumis au gel.",
+  "estimatesNote": "Prévois une grande journée pour 10 m² à deux, gâchage compris, puis plusieurs semaines avant le revêtement : une chape à la chaux durcit et sèche lentement. Le budget tient surtout au sable et à la chaux, l’outillage se loue ou s’emprunte.",
+  "sources": [
+    {
+      "title": "Wikipédia — Chape (construction)",
+      "url": "https://fr.wikipedia.org/wiki/Chape_(construction)",
+      "note": "Rôle de la chape : couche de stabilité à base de ciment, d’anhydrite, de résine ou de chaux, appliquée pour niveler un support avant le revêtement. L’article distingue la chape de la dalle et rappelle qu’une chape de compression peut être armée.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Socli (Heidelberg Materials) — Dalle à la chaux",
+      "url": "https://www.socli.heidelbergmaterials.fr/fr/produits-services/techniques-mise-en-oeuvre/maconnerie/dalle-chaux",
+      "note": "Intérêt du mortier de chaux en rénovation : souplesse, porosité, régulation de l’hygrométrie, préparation et compactage du sol. La page traite de la dalle qui reçoit la chape ; ses formulations ne sont pas transposées telles quelles à la chape.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "weber — Réaliser une chape adaptée à l’ouvrage",
+      "url": "https://www.fr.weber/realiser-une-chape-adaptee-louvrage",
+      "note": "Composition d’un sol de bas en haut, familles de chapes (adhérente, désolidarisée, flottante), désolidarisation périphérique de 8 à 10 mm, recouvrement des lés du film et cure de la chape. Guide d’un fabricant de mortiers.",
+      "accessedAt": "2026-09-27"
+    }
+  ],
+  "tools": [
+    "Bétonnière ou auge, pelle et seaux",
+    "Règle de maçon, taloche et truelle langue de chat",
+    "Niveau laser ou grande règle et niveau à bulle",
+    "Cales et règles de guidage pour l’épaisseur",
+    "Brouette, râteau et balai",
+    "Pulvérisateur ou arrosoir à pomme fine",
+    "Gants, lunettes, genouillères et planche à genoux"
+  ],
+  "materials": [
+    {
+      "name": "Chaux adaptée au support (chaux hydraulique naturelle pour une chape qui durcit à l’eau, ou chaux aérienne éteinte en poudre pour un bâti ancien qui doit respirer)",
+      "quantity": "Compte par exemple 1 volume de chaux pour 3 volumes de sable, à confirmer sur l’emballage du produit choisi"
+    },
+    {
+      "name": "Sable granuleux propre, de rivière lavé ou mélange à chape",
+      "quantity": "Compte environ 0,5 m³ de mortier pour 10 m² sur 5 cm, soit à peu près un quart de chaux pour trois quarts de sable en volume"
+    },
+    {
+      "name": "Eau claire",
+      "quantity": "Pour le gâchage et l’humidification du support"
+    },
+    {
+      "name": "Bande ou film de désolidarisation",
+      "quantity": "Sur tout le pourtour de la pièce et au passage des canalisations"
+    },
+    {
+      "name": "Bâche et cartons de protection",
+      "quantity": "Pour les murs, les seuils et les accès"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie le support et les niveaux",
+      "description": "Contrôle que le support est stable, sec, propre et qu’aucune zone ne sonne creux : une chape ne rattrape pas un support qui bouge. Repère la cote finie, revêtement compris, et déduis l’épaisseur disponible. Si de l’humidité remonte en permanence, arrête-toi et traite la cause avant de couler."
+    },
+    {
+      "title": "Prépare et désolidarise le pourtour",
+      "description": "Dépoussière, rebouche les trous et les fissures non évolutives, puis mouille légèrement le support sans le détremper : un support sec boirait l’eau du mortier. Pose une bande ou un film sur tout le pourtour et autour des passages de canalisations, pour que la chape ne soit pas bloquée par les murs."
+    },
+    {
+      "title": "Pose les repères d’épaisseur",
+      "description": "Mets en place des cales ou des règles de guidage au niveau de la cote finie, en vérifiant au niveau laser ou à la grande règle. Vise 5 à 8 cm d’épaisseur selon la charge prévue et la place disponible, et garde la même épaisseur sur toute la pièce plutôt qu’un rattrapage local."
+    },
+    {
+      "title": "Gâche un mortier de chaux souple",
+      "description": "Mélange 1 volume de chaux pour 2 à 3 volumes de sable, puis ajoute l’eau peu à peu jusqu’à une consistance de terre grasse qui se tient à la truelle. Travaille par gâchées successives et résiste à la tentation d’ajouter de l’eau : c’est l’excès d’eau qui fait fissurer la chape."
+    },
+    {
+      "title": "Coule, tire et serre la chape",
+      "description": "Coule par bandes entre les guides, en partant du fond de la pièce, et pousse le mortier au fond avec la truelle pour chasser les vides. Tire à la règle en t’appuyant sur les guides, puis tasse et lisse à la taloche. Retire les guides au fur et à mesure et rebouche les saignées avec le même mortier."
+    },
+    {
+      "title": "Protège la prise et contrôle avant le revêtement",
+      "description": "Laisse prendre à l’abri du soleil, du courant d’air et du gel, et garde la surface humide quelques jours : une chaux qui sèche trop vite croûte et fissure. Contrôle la planéité à la règle, puis attends le séchage complet avant de poser le revêtement, car une chape encore humide décolle ou faïence."
+    }
+  ],
+  "mistakes": [
+    "Forcer le dosage en chaux, ou ajouter du ciment pour que ça tire plus vite : le mortier devient plus dur que le support, se rétracte et fissure la chape.",
+    "Gâcher trop liquide ou couler d’un seul tenant sans repères : l’eau remonte en surface, le mortier se ressuie et le niveau part de travers.",
+    "Poser le carrelage ou le parquet avant le séchage complet, ou sécher la chape au soleil et au vent : la surface faïence et le revêtement se décolle."
+  ],
+  "safety": [
+    "La chaux est très basique : gants, lunettes et manches longues, et rinçage abondant à l’eau claire en cas de contact sur la peau ou dans les yeux.",
+    "Ne coule pas par temps de gel, sous une pluie battante ou sur un support détrempé : le mortier de chaux ne durcirait pas et perdrait sa cohésion.",
+    "Sacs de chaux, de sable et brouettes se portent à deux ou à la brouette, et le travail à genoux se fait sur une planche : ménage ton dos et tes genoux."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-27"
+}

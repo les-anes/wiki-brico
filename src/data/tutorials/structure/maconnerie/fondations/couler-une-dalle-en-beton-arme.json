@@ -1,0 +1,124 @@
+{
+  "id": "couler-une-dalle-en-beton-arme",
+  "title": "Couler une dalle en béton armé sur terre-plein",
+  "description": "Une dalle sur terre-plein repose sur un sol préparé, pas sur le sol nu. Tu vas décaisser, compacter un hérisson, poser le treillis soudé sur cales et couler un béton dosé pour obtenir une dalle stable, qui ne remonte pas l’humidité et qui fissure le moins possible.",
+  "category": "structure",
+  "topicPath": ["Maçonnerie", "Fondations"],
+  "relatedCategories": [
+    { "category": "techniques", "topicPath": ["Faire du mortier"] }
+  ],
+  "tags": ["béton", "mortier", "acier"],
+  "relatedTutorials": [
+    "couler-une-chape-a-la-chaux",
+    "ceinturer-un-mur-en-pierre",
+    "ragreer-un-sol-en-beton"
+  ],
+  "difficulty": "Avancé",
+  "durationMinutes": 600,
+  "cost": null,
+  "image": "/images/tutoriels/couler-une-dalle-en-beton-arme.png",
+  "imageAlt": "Une dalle en béton fraîchement tirée à la règle dans un coffrage, un panneau de treillis soudé posé sur ses cales à l’arrière-plan et une brouette de béton à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Dalle non porteuse sur terre-plein, jusqu’à environ 20 m², de 12 à 15 cm d’épaisseur, coulée de plain-pied ou sous un abri — local technique, dépendance, terrasse couverte — sur un sol en place régulier, avec fond de forme compacté, hérisson, film polyane et treillis soudé posé sur cales. Hors dalle de maison ou d’ouvrage qui reçoit des charges, dont le ferraillage se calcule selon les charges et le sol ; hors remblai non compacté, terrain en pente ou sol mou, nappe d’eau, dallage sur vide sanitaire, dalle sur isolant, dalle portant un plancher chauffant et béton décoratif.",
+  "estimatesNote": "Compte deux jours : un pour le terrassement, le hérisson et la pose du ferraillage, un pour le coulage et la finition, hors séchage. La livraison en camion toupie évite beaucoup de manutention ; en bétonnière, prévois une journée physique et une personne de plus.",
+  "sources": [
+    {
+      "title": "Wikipédia — Dallage (construction)",
+      "url": "https://fr.wikipedia.org/wiki/Dallage_(construction)",
+      "note": "Définition du dallage : un ouvrage de grandes dimensions, généralement en béton ou en béton armé, qui repose uniformément sur le sol.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Wikipédia — Hérisson (construction)",
+      "url": "https://fr.wikipedia.org/wiki/Hérisson_(construction)",
+      "note": "Le hérisson — cailloux posés sur chant ou concassés, environ 25 cm — sert d’assise à une dalle sur terre-plein et bloque les remontées d’humidité par capillarité ; un film polyane est tendu avant le coulage pour compléter la coupure.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Infociments — Les dallages industriels en béton (3) : principes de base du dallage",
+      "url": "https://www.infociments.fr/betons/les-dallages-industriels-en-beton-usage-industriel-3-principes-de-base-du-dallage",
+      "note": "Exigences reprises de la NF DTU 13.3 pour le béton de dallage : dosage minimal en ciment selon la classe, rapport eau/ciment, résistance minimale C25/30, et sensibilité du béton frais au soleil, au vent et au froid, qui joue sur le retrait et la fissuration. Contexte industriel, transposé ici pour le dosage et la cure.",
+      "accessedAt": "2026-09-27"
+    }
+  ],
+  "tools": [
+    "Pelle, pioche et ratisseau",
+    "Dame ou plaque vibrante (en location)",
+    "Bétonnière ou livraison en camion toupie",
+    "Règle de maçon, taloche, lisseuse et truelle",
+    "Niveau laser, cordeau et niveau à bulle",
+    "Coffrage : planches, chevrons, piquets et équerres",
+    "Cavaliers ou cales à treillis",
+    "Brouettes, seaux et râteau",
+    "Bottes, gants, lunettes et masque antipoussière"
+  ],
+  "materials": [
+    {
+      "name": "Béton prêt à l’emploi, livré en toupie, ou béton à gâcher",
+      "quantity": "Le volume de la dalle majoré de 5 à 10 %, soit environ 1,6 m³ pour 10 m² sur 15 cm"
+    },
+    {
+      "name": "Grave ou cailloux propres pour le hérisson",
+      "quantity": "Environ 2 m³ pour 10 m² sur 20 cm"
+    },
+    {
+      "name": "Treillis soudé en panneaux",
+      "quantity": "De quoi couvrir la surface avec un recouvrement d’au moins deux mailles entre panneaux"
+    },
+    {
+      "name": "Film polyane",
+      "quantity": "Un lé continu sur toute la surface, lés recouverts de 15 cm et remontés sur le pourtour"
+    },
+    {
+      "name": "Cavaliers ou cales plastique pour le treillis",
+      "quantity": "Un appui tous les 60 à 80 cm environ, pour tenir le treillis dans le tiers supérieur"
+    },
+    {
+      "name": "Planches et piquets de coffrage",
+      "quantity": "Pour le périmètre de la dalle et les réservations"
+    },
+    {
+      "name": "Bande souple pour les joints",
+      "quantity": "Pour désolidariser la dalle des murs et marquer les joints de retrait"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Trace l’emprise et décaisse",
+      "description": "Repère les limites au cordeau et enlève la terre végétale sur l’épaisseur de la dalle plus celle du hérisson, soit environ 35 cm, en mettant la bonne terre de côté. Avant de creuser, repère les réseaux enterrés, et si tu en découvres un, arrête et écarte la zone : ne creuse pas dedans."
+    },
+    {
+      "title": "Compacte le fond et forme le hérisson",
+      "description": "Compacte le fond de forme sur toute la surface, puis étale une couche de grave ou de cailloux propres d’environ 20 cm en la compactant par passes croisées. Ce hérisson coupe les remontées d’eau par capillarité. Vérifie le niveau et la planéité par rapport à la cote finie avant d’aller plus loin."
+    },
+    {
+      "title": "Pose le film et le coffrage",
+      "description": "Déroule le film polyane sur tout le hérisson, lés recouverts de 15 cm et remontés sur le pourtour : c’est lui qui empêche le béton de perdre son eau et l’humidité de remonter. Mets en place le coffrage périphérique à la cote, en prévoyant les réservations, les gaines et les joints de retrait."
+    },
+    {
+      "title": "Place le treillis soudé sur cales",
+      "description": "Pose les panneaux à plat avec un recouvrement d’au moins deux mailles, ligaturées ou croisées, et tiens-les sur des cavaliers pour qu’ils restent dans le tiers supérieur de l’épaisseur. Garde au moins 5 cm de béton au-dessus et en dessous : c’est cet enrobage qui protège l’acier de la rouille."
+    },
+    {
+      "title": "Approvisionne et coule le béton",
+      "description": "Fais livrer le béton prêt à l’emploi ou gâche-le par gâchées régulières, et mouille le hérisson sans faire de flaque. Coule par bandes en tirant le béton vers l’avant, pique la masse pour chasser les bulles, puis tire à la règle en t’appuyant sur les repères de niveau."
+    },
+    {
+      "title": "Fais la finition et la cure",
+      "description": "Dès que le béton commence à tirer, taloche ou lisse la surface sans la noyer d’eau. Protège ensuite la dalle du soleil, du vent et du gel pendant au moins trois à sept jours, en gardant la surface humide sous un film ou par brumisation : c’est la cure qui évite le faïençage et les fissures de retrait."
+    }
+  ],
+  "mistakes": [
+    "Couler sur un remblai ou un sol mal compacté : le sol se tasse sous la dalle, qui se fissure et se met à bouger quelques mois plus tard.",
+    "Laisser le treillis posé au fond, nu ou sans recouvrement entre panneaux : il ne reprend rien et rouille, faute d’enrobage de béton.",
+    "Sécher le béton au soleil et au vent, sans cure ni joint de retrait : la surface croûte, faïence et se fissure en quelques heures."
+  ],
+  "safety": [
+    "Béton et ciment brûlent la peau et les yeux : bottes, gants et lunettes, et rinçage abondant à l’eau claire en cas de projection.",
+    "Une dalle de 10 m² sur 15 cm, c’est environ 1,5 m³ de béton, soit plusieurs tonnes à la brouette : travaille à deux, plie les jambes et préfère une livraison en toupie si tu peux.",
+    "Ne coule pas par temps de gel, sous une pluie forte ou sur un sol détrempé : le béton ne durcirait pas et la surface serait perdue.",
+    "Ne touche pas aux réseaux enterrés que tu pourrais mettre au jour, et ne coule pas avant d’avoir traité la zone concernée."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-27"
+}

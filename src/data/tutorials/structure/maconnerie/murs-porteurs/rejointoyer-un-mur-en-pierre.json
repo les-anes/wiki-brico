@@ -3,7 +3,7 @@
   "title": "Rejointoyer un mur en pierre à la chaux",
   "description": "Tes joints de pierre se creusent et laissent passer l’eau ? Rejointoyer, c’est remplacer ce qui s’effrite entre les pierres : dégarnis les joints fatigués, garnis-les d’un mortier de chaux souple, qui laisse respirer la pierre, et finis la surface.",
   "category": "structure",
-  "topicPath": ["Maçonnerie", "Rejointoiement de pierre"],
+  "topicPath": ["Maçonnerie", "Murs porteurs"],
   "relatedCategories": [
     { "category": "techniques", "topicPath": ["Faire un joint"] },
     { "category": "techniques", "topicPath": ["Faire du mortier"] }

@@ -1,0 +1,133 @@
+{
+  "category": "electricite",
+  "cost": null,
+  "imageOrigin": "original",
+  "status": "documented",
+  "updatedAt": "2026-09-27",
+  "id": "creer-une-prise-de-terre",
+  "title": "Créer une prise de terre avec un piquet",
+  "description": "Une prise de terre est un conducteur enterré qui relie les protections électriques de la maison au sol. Tu vas poser un piquet, le relier à une barrette de coupure et contrôler le résultat avant d’utiliser cette terre.",
+  "topicPath": ["Mise à la terre"],
+  "tags": ["mise à la terre", "cuivre"],
+  "relatedTutorials": [
+    "verifier-la-mise-a-la-terre",
+    "dimensionner-son-tableau-electrique",
+    "remplacer-une-prise-murale"
+  ],
+  "difficulty": "Avancé",
+  "durationMinutes": 240,
+  "image": "/images/tutoriels/creer-une-prise-de-terre.png",
+  "imageAlt": "Piquet de terre cuivré, collier, câble de cuivre nu, barrette de coupure et regard de visite vert dessinés sur fond ivoire.",
+  "scope": "Création d’une électrode par piquet dans le terrain privatif d’une maison existante en schéma TT, avec borne principale, conducteurs de protection et liaisons équipotentielles déjà présents et identifiés. Le dimensionnement de la liaison principale et le contrôle final restent des prérequis, pas des conséquences automatiques de la pose. Hors terre collective, boucle de fond de fouille de construction neuve, paratonnerre, photovoltaïque, sources multiples et création des terres manquantes dans chaque circuit.",
+  "estimatesNote": "Prévois au moins une demi-journée pour un terrain accessible, hors repérage des réseaux, sol dur et éventuels piquets supplémentaires. Le budget comprend l’électrode, les conducteurs, les connexions, les protections et le matériel de mesure, pas seulement le piquet.",
+  "sources": [
+    {
+      "title": "Promotelec — Tout savoir sur la prise de terre",
+      "url": "https://www.promotelec.com/app/uploads/2020/06/Prise-de-terre.pdf",
+      "note": "Constitution d’une prise de terre, piquets d’au moins 2 m, cuivre nu de 25 mm² et interdiction d’utiliser une canalisation comme électrode. Document de principe ancien, sans consultation intégrale de la norme actuelle.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Promotelec — Réduire une résistance de terre trop élevée",
+      "url": "https://www.promotelec.com/faq/particuliers/comment-reduire-la-valeur-de-la-resistance-de-ma-prise-de-terre-qui-est-trop-elevee/",
+      "note": "Ajout de piquets reliés entre eux, longueur et espacement minimal de 2 m dans l’exemple proposé ; résultat à confirmer par mesure.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Promotelec — Section du conducteur principal de protection",
+      "url": "https://www.promotelec.com/faq/particuliers/quelle-doit-etre-la-section-du-cable-de-terre/",
+      "note": "La liaison principale de protection se dimensionne selon l’alimentation ; ne pas confondre cette liaison avec le conducteur nu enterré.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "INRS — Prévention du risque électrique",
+      "url": "https://www.inrs.fr/risques/electriques/prevention-risque-electrique",
+      "note": "Principes de séparation de toutes les sources, condamnation et vérification d’absence de tension. Source de prévention professionnelle utilisée pour les précautions, sans assimiler une fiche à une formation.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Promotelec — Résistance de la prise de terre",
+      "url": "https://www.promotelec.com/faq/particuliers/quelle-est-la-resistance-minimale-de-la-prise-de-terre/",
+      "note": "Repère inférieur à 100 ohms pour une protection différentielle de 500 mA, à ne pas transposer sans vérifier le schéma et les protections.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Service Public — Téléservice Réseaux et canalisations",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R23496",
+      "note": "Repérage préalable et démarches pour les travaux à proximité des réseaux ; applicable avant terrassement et enfoncement des piquets.",
+      "accessedAt": "2026-09-27"
+    }
+  ],
+  "tools": [
+    "Mètre, pelle et outil d’enfoncement avec tête de frappe adaptés au piquet",
+    "Coupe-câble et outil de dénudage adaptés aux sections retenues",
+    "Clés et tournevis isolés ; outil de serrage au couple demandé par les bornes",
+    "Vérificateur d’absence de tension bipolaire et son dispositif de contrôle",
+    "Dispositif de condamnation et signalisation",
+    "Contrôleur de terre trois pôles avec ses piquets et contrôleur de continuité 200 mA",
+    "Lunettes, gants de manutention et protections auditives pour l’enfoncement"
+  ],
+  "materials": [
+    {
+      "name": "Piquet de terre et collier compatibles avec un conducteur en cuivre",
+      "quantity": "1 d’au moins 2 m pour commencer ; nombre et longueur finale à adapter aux mesures"
+    },
+    {
+      "name": "Conducteur de terre en cuivre nu de 25 mm² minimum",
+      "quantity": "Longueur mesurée du piquet à la barrette, sans raccord improvisé"
+    },
+    {
+      "name": "Barrette de coupure et fixations adaptées",
+      "quantity": "1, accessible pour les mesures"
+    },
+    {
+      "name": "Conducteur principal de protection vert et jaune",
+      "quantity": "Longueur de la barrette à la borne principale ; section déterminée selon l’alimentation"
+    },
+    {
+      "name": "Regard de visite, fourreau de protection et colliers",
+      "quantity": "Pour protéger la connexion au piquet et les parties exposées du conducteur"
+    },
+    {
+      "name": "Repères durables",
+      "quantity": "Pour identifier la barrette et le trajet"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prépare le trajet et le dimensionnement",
+      "description": "Repère la borne principale de terre et vérifie que les conducteurs de protection des circuits et les liaisons équipotentielles existent déjà : un piquet ne remplace pas ces liaisons. Prévois un conducteur de cuivre nu d’au moins 25 mm² entre le piquet et la barrette, puis dimensionne séparément le conducteur vert et jaune vers la borne principale selon la section de l’alimentation. Consulte les plans, effectue les démarches de repérage des réseaux enterrés et choisis un terrain naturel peu exposé au dessèchement, avec de la place pour les futures mesures."
+    },
+    {
+      "title": "Sécurise l’intervention et pose la barrette",
+      "description": "Coupe et condamne l’alimentation générale, puis vérifie l’absence de tension avec un appareil bipolaire contrôlé avant et après usage, sur les conducteurs actifs aux points d’intervention, entre eux et par rapport à la terre. Ne poursuis pas si une autre source alimente le logement ou si des parties amont sous tension restent accessibles. Fixe la barrette dans un emplacement protégé et accessible, et prépare le cheminement jusqu’au regard et à la borne principale."
+    },
+    {
+      "title": "Enfonce le piquet dans le terrain",
+      "description": "Prépare le logement du regard, puis enfonce verticalement le piquet d’au moins 2 m suivant sa notice, avec la tête de frappe prévue pour ne pas abîmer sa connexion. Sa partie active doit rester en contact avec le sol naturel, sans fourreau ni béton autour ; seule la connexion supérieure reste visitable dans le regard. Si tu rencontres une résistance inexpliquée, arrête l’enfoncement et vérifie la cause plutôt que de forcer ou de raccourcir le piquet."
+    },
+    {
+      "title": "Relie le piquet à la protection de la maison",
+      "description": "Avec le collier compatible, raccorde le cuivre nu au piquet et au côté terre de la barrette, en respectant les couples de serrage des fabricants. Protège les portions exposées aux chocs, puis relie l’autre côté de la barrette à la borne principale avec le conducteur vert et jaune dimensionné, sans intervenir sur les parties réservées au distributeur. Si d’autres électrodes appartiennent déjà à la maison, prévois leur interconnexion : ne crée pas une terre indépendante pour un seul appareil."
+    },
+    {
+      "title": "Mesure avant de refermer",
+      "description": "L’installation restant hors tension, suis la fiche de vérification de terre pour mesurer l’électrode barrette ouverte, puis refermer la barrette et contrôler la continuité jusqu’aux circuits. Dans le cas TT avec protection de tête 500 mA, la résistance doit être inférieure à 100 ohms, avec une marge pour le gel et la sécheresse ; un seul piquet de 2 m ne garantit pas ce résultat. Si la valeur est trop élevée, adapte l’électrode, par exemple avec des piquets supplémentaires reliés entre eux et suffisamment espacés, puis refais les mesures."
+    },
+    {
+      "title": "Protège et conserve les résultats",
+      "description": "Barrette refermée et serrée, protège la connexion dans le regard, referme les cheminements et les capots, puis photographie le trajet et note les mesures ainsi que l’état du sol. Ne remets en service qu’une installation dont les terres de circuits et les protections sont vérifiées ; la nouvelle électrode ne valide pas à elle seule les différentiels ou l’état du reste du réseau. Garde la barrette et le regard accessibles pour les contrôles ultérieurs."
+    }
+  ],
+  "mistakes": [
+    "Penser qu’un piquet de 2 m garantit automatiquement une bonne résistance de terre.",
+    "Utiliser une canalisation d’eau ou de gaz comme électrode, ou créer une terre séparée pour un appareil.",
+    "Remettre sous tension sans avoir mesuré, refermé la barrette et vérifié les terres des circuits."
+  ],
+  "safety": [
+    "Aucun enfoncement ni terrassement sans repérage préalable des réseaux ; un détecteur de surface seul ne garantit pas l’absence d’une canalisation profonde.",
+    "Ce montage exige la maîtrise de la consignation, de la VAT et des contrôleurs ; une installation sans conducteurs de protection ni liaisons équipotentielles sort du périmètre.",
+    "N’ajoute ni sel ni produit corrosif et n’arrose pas le terrain pour obtenir artificiellement une bonne mesure.",
+    "N’interviens pas sur une terre collective, sur une installation de protection contre la foudre ou pendant un orage."
+  ]
+}

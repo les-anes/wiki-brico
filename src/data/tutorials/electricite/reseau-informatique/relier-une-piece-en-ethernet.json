@@ -1,0 +1,98 @@
+{
+  "category": "electricite",
+  "topicPath": ["Réseau informatique"],
+  "difficulty": "Débutant",
+  "cost": null,
+  "imageOrigin": "original",
+  "status": "documented",
+  "updatedAt": "2026-09-27",
+  "id": "relier-une-piece-en-ethernet",
+  "title": "Relier une pièce à la box avec un câble Ethernet",
+  "description": "Un câble Ethernet transporte le réseau entre ta box et un ordinateur sans dépendre du Wi-Fi. Tu vas poser un cordon déjà équipé de fiches RJ45 dans une petite goulotte, puis tester la liaison.",
+  "tags": ["Ethernet", "RJ45"],
+  "relatedTutorials": [
+    "installer-un-repeteur-wifi",
+    "rallonger-le-cable-fibre-de-la-box",
+    "poser-une-etagere"
+  ],
+  "durationMinutes": 90,
+  "image": "/images/tutoriels/relier-une-piece-en-ethernet.png",
+  "imageAlt": "Long câble Ethernet bleu enroulé avec deux fiches RJ45, un ordinateur portable, une box et une goulotte blanche sur fond ivoire.",
+  "scope": "Liaison intérieure de quelques mètres à une trentaine de mètres entre un port réseau local de box et un ordinateur, avec cordon cuivre préassemblé et goulotte dédiée. Hors raccordement de prises murales, sertissage des fiches, traversée à percer, passage extérieur, liaison entre bâtiments et conception d’un réseau complet.",
+  "estimatesNote": "Compte environ 1 h 30 pour un trajet simple en surface, hors percement et modification du réseau existant. Le budget dépend du cordon, de la goulotte et des fixations, sans changement de box ou d’ordinateur.",
+  "sources": [
+    {
+      "title": "Orange — Connecter un ordinateur à la Livebox en Ethernet",
+      "url": "https://assistance.orange.fr/oid/21861",
+      "note": "Connexion d’un cordon à un port Ethernet libre de la box et de l’ordinateur.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "TP-Link — Cordons Ethernet Cat 5e",
+      "url": "https://www.tp-link.com/fr/home-networking/computer-accessory/tl-ec505em-tl-ec510em-tl-ec515em-tl-ec530em/",
+      "note": "Exemples de cordons préassemblés jusqu’à 30 m pour une liaison Gigabit ; ne constitue pas une garantie de débit Internet.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Legrand — Distribution en goulotte",
+      "url": "https://www.legrand.fr/sites/default/files/cctp_goulotte_tertiaire_0.pdf",
+      "note": "Séparation des câbles de communication et d’alimentation électrique par des compartiments dédiés ; la fiche retient une goulotte réservée au réseau.",
+      "accessedAt": "2026-09-27"
+    }
+  ],
+  "tools": [
+    "Mètre, crayon et niveau",
+    "Scie fine et boîte à onglets pour la goulotte",
+    "Chiffon pour nettoyer le support",
+    "Ordinateur avec port Ethernet ou adaptateur compatible"
+  ],
+  "materials": [
+    {
+      "name": "Cordon Ethernet cuivre Cat 6 avec deux fiches RJ45 montées en usine",
+      "quantity": "1 de la longueur du trajet mesuré, avec une petite marge aux extrémités"
+    },
+    {
+      "name": "Goulotte adhésive dédiée au réseau, avec angles et embouts",
+      "quantity": "Longueur du trajet ; dimensions laissant passer le cordon et ses fiches"
+    },
+    {
+      "name": "Attaches souples et étiquettes",
+      "quantity": "Quelques-unes pour guider et repérer le câble sans le serrer"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Mesure un chemin protégé",
+      "description": "Repère un port de réseau local libre sur la box et l’entrée Ethernet de l’ordinateur, puis mesure le trajet réel le long des murs, avec les détours et une marge aux deux bouts. Choisis un passage intérieur qui ne traverse ni le sol d’une porte ni un endroit où le câble sera écrasé. Ce montage utilise une goulotte dédiée sur un support propre et adapté à son adhésif ; si une traversée doit être percée, prépare-la séparément après repérage des réseaux."
+    },
+    {
+      "title": "Teste le cordon avant la pose",
+      "description": "Déroule le cordon sans former de nœuds, puis branche ses fiches sur le port réseau local de la box et sur l’ordinateur. Coupe temporairement le Wi-Fi de l’ordinateur pour confirmer que la connexion Ethernet fonctionne et ouvre une page Internet. Vérifie la vitesse de liaison annoncée par le système : une valeur plus faible que prévu peut venir du câble, d’un port ou de l’adaptateur."
+    },
+    {
+      "title": "Pose la goulotte vide",
+      "description": "Débranche le cordon des appareils, nettoie et sèche le support, puis découpe la goulotte à la bonne longueur en dehors du trajet du câble. Colle-la suivant sa notice, avec des angles assez larges pour ne pas plier brutalement le cordon. N’ouvre pas une goulotte électrique existante pour y glisser le réseau : conserve un cheminement distinct."
+    },
+    {
+      "title": "Installe le câble sans le pincer",
+      "description": "Pose le cordon dans la goulotte en respectant le rayon de courbure de sa notice et garde un peu de jeu près des appareils. Utilise les attaches souples sans comprimer la gaine et n’agrafe jamais le câble. Ferme les couvercles en vérifiant qu’aucune fiche ni portion de gaine ne se retrouve coincée."
+    },
+    {
+      "title": "Rebranche les deux extrémités",
+      "description": "Enfonce chaque fiche jusqu’au clic, côté box sur un port de réseau local et non sur une entrée fibre, téléphone ou Internet dédiée. Relie l’autre bout à l’ordinateur ou à son adaptateur, puis vérifie que la liaison est détectée. Étiquette le cordon aux deux extrémités pour retrouver facilement la pièce desservie."
+    },
+    {
+      "title": "Contrôle la liaison après la pose",
+      "description": "Wi-Fi toujours coupé, refais le test de navigation et compare la vitesse de liaison à celle relevée avant la pose. Si la connexion a disparu ou ralenti, inspecte les fiches et les angles sans tirer sur le câble, puis essaie un autre port réseau local disponible. Le débit Internet reste limité par l’abonnement et les appareils : un câble plus performant ne les accélère pas à lui seul."
+    }
+  ],
+  "mistakes": [
+    "Mesurer la distance en ligne droite et oublier les détours le long des murs.",
+    "Coincer le cordon sous une porte, dans un angle serré ou sous une agrafe.",
+    "Faire les essais avec le Wi-Fi actif et croire que l’ordinateur utilise le câble."
+  ],
+  "safety": [
+    "Ne mélange pas le cordon réseau et les conducteurs 230 V dans une même gaine ou un même compartiment.",
+    "Ne laisse aucun câble traverser un passage au sol ; cette fiche ne couvre pas les liaisons extérieures ou entre bâtiments."
+  ]
+}
