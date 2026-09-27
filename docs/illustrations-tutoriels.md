@@ -1082,7 +1082,7 @@ Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon 
 
 ## 2026-09-27 — Couler une chape à la chaux
 
-Prompt de l’illustration, à générer : PNG 1536 × 1024 puis variantes WebP 480, 720 et 960 (qualité 82). Source prévue : `output/imagegen/couler-une-chape-a-la-chaux.png` ; publication : `public/images/tutoriels/couler-une-chape-a-la-chaux.png`.
+Illustration originale fournie et contrôlée visuellement, PNG 1536 × 1024 et variantes WebP 480, 720 et 960 (qualité 82). Source : `output/imagegen/couler-une-chape-a-la-chaux.png` ; publication : `public/images/tutoriels/couler-une-chape-a-la-chaux.png`.
 
 ```text
 Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Intérieur vide vu de trois quarts : une chape de mortier de chaux fraîchement tirée à la règle, encore humide, prise entre deux règles de guidage en bois dont une est restée en place. Une règle de maçon en aluminium, une taloche et une truelle posées sur la chape fraîche, une auge en bois et un seau de mortier de chaux clair à côté, un niveau à bulle par terre. Bords de murs en maçonnerie à l’arrière du cadre, pas de carrelage ni de revêtement posé, pas de mains ni de personne. Aucun texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
@@ -1090,7 +1090,7 @@ Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon 
 
 ## 2026-09-27 — Couler une dalle en béton armé sur terre-plein
 
-Prompt de l’illustration, à générer : PNG 1536 × 1024 puis variantes WebP 480, 720 et 960 (qualité 82). Source prévue : `output/imagegen/couler-une-dalle-en-beton-arme.png` ; publication : `public/images/tutoriels/couler-une-dalle-en-beton-arme.png`.
+Illustration originale fournie et contrôlée visuellement, PNG 1536 × 1024 et variantes WebP 480, 720 et 960 (qualité 82). Source : `output/imagegen/couler-une-dalle-en-beton-arme.png` ; publication : `public/images/tutoriels/couler-une-dalle-en-beton-arme.png`.
 
 ```text
 Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Dalle sur terre-plein vue de trois quarts en fin de coulage : un coffrage rectangulaire en planches rempli de béton gris frais, surface à peine tirée à la règle. Derrière le coffrage, un panneau de treillis soudé en acier posé sur de petits cavaliers plastique, une brouette de béton et une pelle rangées à côté. Sur le bord ouvert de la fouille, on distingue la couche de cailloux compactés et le film polyane noir qui remonte. Pas de bâtiment, pas de revêtement fini, pas de mains ni de personne. Aucun texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
