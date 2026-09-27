@@ -1,0 +1,110 @@
+{
+  "id": "fixer-une-solive-dans-un-sabot",
+  "title": "Fixer une solive dans un sabot",
+  "description": "Un sabot, ou étrier, est une pièce métallique qui reprend l’about d’une solive quand le bois ne peut pas s’appuyer directement sur la poutre ou sur le mur. Tu vas choisir le bon modèle, le présenter d’aplomb et le fixer avec les pointes prescrites par le fabricant.",
+  "category": "structure",
+  "topicPath": ["Charpente & ossature bois", "Solives"],
+  "relatedCategories": [
+    { "category": "techniques", "topicPath": ["Percer et fixer"] }
+  ],
+  "tags": ["solive", "bois", "fixation"],
+  "relatedTutorials": [
+    "poser-un-plancher-osb-sur-solives",
+    "ouvrir-une-tremie-dans-un-plancher-en-bois",
+    "fabriquer-un-escalier-droit-a-limon-central"
+  ],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 240,
+  "cost": null,
+  "image": "/images/tutoriels/fixer-une-solive-dans-un-sabot.png",
+  "imageAlt": "Deux sabots métalliques fixés sur une poutre en bois, une solive glissée dans le premier et une solive posée à côté avec un marteau et des pointes, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Fixation d’une ou de plusieurs solives bois dans des sabots métalliques, sur une poutre, une sablière ou un chevêtre en bois sain et déjà dimensionné pour la charge, dans un plancher intérieur sec. Hors calcul de section, de portée et d’entraxe du solivage ; hors appui sur maçonnerie sans pièce de reprise prévue pour cela, hors solive qui reçoit une charge ponctuelle importante, hors bois humide, dégradé ou entaillé, hors montage extérieur et milieu corrosif, où le modèle de sabot et sa protection se choisissent pour ce milieu.",
+  "estimatesNote": "Compte une demi-journée pour poser une rangée de solives, présentations et ajustements compris, hors séchage ou reprise du support. Le budget tient au nombre de sabots, aux pointes prescrites et aux chutes de bois ; l’étaiement et l’outillage se louent ou s’empruntent.",
+  "sources": [
+    {
+      "title": "Wikipédia — Étrier à solive",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89trier_%C3%A0_solive",
+      "note": "Définition du sabot ou étrier : un connecteur qui raccorde des éléments d’ossature bois, notamment pour faire porter une solive sur un mur quand elle ne peut pas s’y encastrer. Distinction entre les sabots à ailes extérieures, dont les fixations restent accessibles, et les sabots à ailes intérieures, plus discrets.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Etanco — Sabots (Bois › Connexions)",
+      "url": "https://www.etanco.fr/fr/Bois/Connexions/Sabots/c-G70.30.10",
+      "note": "Gamme de sabots d’un fabricant français : sabots à ailes extérieures ou intérieures, demi-sabots, et largeurs courantes de 28 à 140 mm pour des hauteurs de 95 mm et plus. Montre que la largeur et la hauteur du sabot se choisissent sur la section réelle de la solive.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Wikipédia — Solive",
+      "url": "https://fr.wikipedia.org/wiki/Solive",
+      "note": "Rôle des solives dans un plancher, portée et entraxe : de quoi comprendre ce que reprend le sabot et pourquoi l’appui du bois doit rester franc.",
+      "accessedAt": "2026-09-27"
+    }
+  ],
+  "tools": [
+    "Marteau, et massette si les sabots sont épais",
+    "Visseuse munie de l’embout adapté, si la notice du fabricant autorise la vis",
+    "Équerre, cordeau et niveau, ou niveau laser",
+    "Scie à main ou scie circulaire pour recouper les abouts",
+    "Serre-joint ou cale pour maintenir la solive dans le sabot",
+    "Étais, bastaings et plaques d’appui pour reprendre la charge pendant la pose",
+    "Échafaudage ou escabeau stable, gants, lunettes et bouchons d’oreille"
+  ],
+  "materials": [
+    {
+      "name": "Sabots métalliques de la largeur exacte de la solive, à ailes extérieures ou intérieures selon le montage",
+      "quantity": "Un sabot par about de solive, dans la hauteur correspondant à celle du bois"
+    },
+    {
+      "name": "Pointes crantées prescrites par le fabricant du sabot",
+      "quantity": "Le nombre et la dimension figurent sur la notice ou l’emballage, pour chaque largeur de sabot"
+    },
+    {
+      "name": "Solives en bois sec, de section au moins égale à celles déjà en place",
+      "quantity": "Des bois droits, sans fente ni entaille, coupés à la longueur d’appui prévue"
+    },
+    {
+      "name": "Bastaings et cales pour l’étaiement",
+      "quantity": "De quoi reprendre les solives voisines tant que la pose n’est pas terminée"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie ce que le sabot va reprendre",
+      "description": "Contrôle que la poutre, la sablière ou le chevêtre qui reçoit le sabot est sain, sec et déjà dimensionné pour la charge, et que les solives voisines sont en bon état. Un sabot transmet la charge à son support : si le support est trop faible, fissuré ou pourri, arrête-toi et reprends d’abord ce point, car aucune fixation ne le rattrapera."
+    },
+    {
+      "title": "Étaye avant de toucher à un appui",
+      "description": "Dès que tu remplaces une solive en place ou que tu en ajoutes une sous un plancher chargé, mets des étais sous les solives voisines, sur des bastaings et des plaques qui répartissent la pression, et serre jusqu’au contact franc. Ne desserre ces étais qu’à la toute fin, une fois tout recloué et contrôlé."
+    },
+    {
+      "title": "Choisis un sabot à la largeur réelle",
+      "description": "Mesure la largeur exacte de la solive, sur plusieurs points : un bois scié n’est jamais parfaitement à la cote. Prends un sabot de cette largeur, d’une hauteur au moins égale à celle de la solive pour qu’il la soutienne jusqu’en haut, et d’un modèle galvanisé prévu pour l’ambiance du local. Les ailes extérieures laissent les fixations accessibles, les ailes intérieures se voient moins."
+    },
+    {
+      "title": "Présente et pointe le sabot",
+      "description": "Place le sabot contre la face d’appui, son fond aligné avec le dessus du support : c’est ce calage qui rend le dessus des solives de niveau. Vérifie l’entraxe, l’aplomb et l’équerre par rapport au support, puis pointe provisoirement une fixation par aile. Contrôle le niveau sur plusieurs solives avant de clouer définitivement."
+    },
+    {
+      "title": "Mets la solive en place et contrôle l’appui",
+      "description": "Recoupe l’about de la solive droit, à la longueur qui laisse le bois reposer franchement sur le fond du sabot, sans jeu ni calage. Glisse la solive dans le sabot jusqu’au contact du fond, aligne-la avec ses voisines et vérifie le niveau. Si la solive flotte au-dessus du fond du sabot, elle ne porte pas : reprends la coupe."
+    },
+    {
+      "title": "Cloue selon la notice, puis retire les étais",
+      "description": "Cloue les ailes sur le support et les joues du sabot sur la solive en respectant le nombre, la dimension et l’emplacement des pointes donnés par la notice ou l’emballage : c’est cette fixation qui fait la capacité du sabot. Contrôle une dernière fois l’alignement et l’absence de jeu, puis desserre les étais par petits coups, en surveillant que rien ne bouge."
+    }
+  ],
+  "mistakes": [
+    "Mettre quelques pointes seulement, ou remplacer les pointes crantées par des vis ou des clous lisses : la résistance du sabot vient de sa fixation, et la notice donne le nombre et la dimension exacts.",
+    "Prendre un sabot trop large ou trop court, puis caler la solive : le bois travaille dans le jeu, l’appui n’est plus franc et la solive prend du mouvement.",
+    "Fixer le sabot dans un support faible ou dégradé — lambourde mince, bois pourri, maçonnerie sans reprise — : la charge finit par arracher la fixation."
+  ],
+  "safety": [
+    "Ne retire jamais un appui existant sans étaiement : reprends les solives voisines sur des plaques qui répartissent la charge, et ne les desserre qu’après avoir tout recloué et contrôlé.",
+    "Pose et lève les solives à deux, sur un escabeau ou un échafaudage stable : travaille à hauteur d’appui, sans tendre le bras au-dessus du vide, et porte des gants contre les échardes.",
+    "Ne cloue pas de sabot dans un bois humide ou dégradé, et vérifie la compatibilité entre le métal et le traitement du bois : une fixation qui rouille perd sa capacité.",
+    "Le clouage en hauteur fatigue les bras et fait rater les pointes : éclaire la zone et prends le temps de viser chaque trou plutôt que de forcer."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-27"
+}

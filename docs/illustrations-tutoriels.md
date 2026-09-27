@@ -1095,3 +1095,11 @@ Illustration originale fournie et contrôlée visuellement, PNG 1536 × 1024 et 
 ```text
 Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Dalle sur terre-plein vue de trois quarts en fin de coulage : un coffrage rectangulaire en planches rempli de béton gris frais, surface à peine tirée à la règle. Derrière le coffrage, un panneau de treillis soudé en acier posé sur de petits cavaliers plastique, une brouette de béton et une pelle rangées à côté. Sur le bord ouvert de la fouille, on distingue la couche de cailloux compactés et le film polyane noir qui remonte. Pas de bâtiment, pas de revêtement fini, pas de mains ni de personne. Aucun texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
 ```
+
+## 2026-09-27 — Fixer une solive dans un sabot
+
+Illustration originale fournie et contrôlée visuellement, PNG 1536 × 1024 et variantes WebP 480, 720 et 960 (qualité 82). Source : `output/imagegen/fixer-une-solive-dans-un-sabot.png` ; publication : `public/images/tutoriels/fixer-une-solive-dans-un-sabot.png`.
+
+```text
+Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Vue rapprochée de trois quarts sur une poutre en bois : deux sabots métalliques galvanisés cloués sur sa face, une solive engagée à fond dans le premier sabot, une seconde solive posée à plat à côté, prête à être mise en place. Un marteau et une petite réserve de pointes crantées sont posés sur la poutre, un niveau à bulle posé en travers du dessus des solives. Bois brut uniquement, pas de mur ni de revêtement de sol, pas de mains ni de personne. Aucun texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
+```

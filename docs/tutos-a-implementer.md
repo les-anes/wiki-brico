@@ -181,21 +181,26 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
   descend sous `Maçonnerie › Murs porteurs` (id, URL et fichiers image inchangés), et le
   calculateur de rejointoiement suit le nouveau filtre. Deux fiches écrites dans la foulée
   : `Couler une chape à la chaux` sous la famille `Maçonnerie`, et `Couler une dalle en
-  béton armé sur terre-plein` sous `Maçonnerie › Fondations`. **Les deux illustrations
-  restent à générer** : prompts dans `output/imagegen/` et `docs/illustrations-tutoriels.md`,
-  et `validate:data` refuse les fiches tant que les PNG manquent. Le catalogue compte
-  90 tutoriels ; 57 thèmes feuilles sans fiche sur 100.
+  béton armé sur terre-plein` sous `Maçonnerie › Fondations`. Leurs deux illustrations ont
+  été publiées le jour même (PNG 1536 × 1024 et variantes WebP) : les prompts restent
+  conservés dans `output/imagegen/` et `docs/illustrations-tutoriels.md`. Le catalogue
+  compte 90 tutoriels ; 57 thèmes feuilles sans fiche sur 100.
+
+- **2026-09-27** : nouvelle fiche à la demande : `Fixer une solive dans un sabot`
+  (`Structure › Charpente & ossature bois › Solives`), qui sert le thème `Solives` resté
+  vide. Son illustration a été publiée dans la foulée (PNG 1536 × 1024 et variantes WebP).
+  Le catalogue compte 91 tutoriels ; 56 thèmes feuilles sans fiche sur 100.
 
 ## Thèmes sans fiche — relevé du 27 septembre 2026
 
 Les 104 entrées de `src/data/categories.json` alimentent le menu du site ; les 100 thèmes
-sans sous-thème ouvrent chacun le catalogue filtré. **57 n’ont encore aucune fiche**, donc
+sans sous-thème ouvrent chacun le catalogue filtré. **56 n’ont encore aucune fiche**, donc
 le clic mène à un catalogue vide. Trois univers entiers sont dans ce cas : l’isolation,
 l’assainissement et les extérieurs.
 
 | Catégorie (vides / total) | Thèmes sans fiche |
 | --- | --- |
-| Structure & gros œuvre (1/8) | Solives |
+| Structure & gros œuvre (0/8) | Aucun |
 | Toiture & étanchéité (5/6) | Charpente · Gouttières · Fenêtres de toit · Étanchéité · Infiltrations |
 | Isolation & performance thermique (6/6) | Murs · Toiture · Sols · Ponts thermiques · Pare-vapeur · Étanchéité à l’air |
 | Cloisons, plafonds & doublages (4/6) | Ossatures bois · Ossatures métal · Faux plafonds · Gaines techniques |
