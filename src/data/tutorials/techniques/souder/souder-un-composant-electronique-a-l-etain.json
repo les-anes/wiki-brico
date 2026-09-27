@@ -1,0 +1,116 @@
+{
+  "id": "souder-un-composant-electronique-a-l-etain",
+  "title": "Souder un composant électronique à l’étain",
+  "description": "Apprends à fixer une résistance sur une carte d’essai avec un fer et du fil à base d’étain : c’est un brasage, où seul le métal d’apport fond. Tu t’entraînes sur une carte neuve non alimentée, avant de toucher à un montage utile.",
+  "category": "techniques",
+  "topicPath": ["Souder"],
+  "tags": ["soudure", "électronique", "étain", "brasage"],
+  "relatedTutorials": [
+    "souder-deux-pieces-d-acier-a-l-arc",
+    "radiateur-connecte",
+    "plomberie-cuivre"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 45,
+  "cost": null,
+  "image": "/images/tutoriels/souder-un-composant-electronique-a-l-etain.png",
+  "imageAlt": "Carte électronique d’essai avec une résistance, fer à souder sur son support et bobine de fil d’étain.",
+  "imageOrigin": "original",
+  "scope": "Initiation au brasage tendre d’une résistance traversante sur une carte neuve à pastilles isolées, sans alimentation. Hors réparation d’appareil secteur, batterie, condensateur chargé, circuit de sécurité, composant monté en surface ou câblage domestique 230 V.",
+  "estimatesNote": "Prévois 45 minutes pour préparer le poste et réaliser quelques points d’essai. Le budget dépend surtout de la station, de l’extraction et du multimètre déjà disponibles ; les consommables seuls ne représentent pas l’équipement complet.",
+  "sources": [
+    {
+      "title": "Adafruit — Preparation",
+      "url": "https://learn.adafruit.com/adafruit-guide-excellent-soldering/preparation",
+      "note": "Immobilisation de la carte, nettoyage et étamage de la panne ; les températures de l’article ne sont pas présentées comme universelles.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Adafruit — Making a good solder joint",
+      "url": "https://learn.adafruit.com/adafruit-guide-excellent-soldering/making-a-good-solder-joint",
+      "note": "Chauffer ensemble pastille et patte, apporter le fil sur le joint, refroidir sans mouvement et couper la patte.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Adafruit — Common Soldering Problems",
+      "url": "https://learn.adafruit.com/adafruit-guide-excellent-soldering/common-problems",
+      "note": "Défauts de mouillage, ponts, surchauffe et joints déplacés pendant le refroidissement.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "HSE — Solder fume and you",
+      "url": "https://www.hse.gov.uk/pubns/indg248.pdf",
+      "note": "Risques des fumées de flux et captage au point de soudure, y compris avec un alliage sans plomb.",
+      "accessedAt": "2026-09-27"
+    }
+  ],
+  "tools": [
+    "Station de soudage réglable avec petite panne biseautée et support stable",
+    "Extracteur de fumées de brasage avec captage près du joint",
+    "Petit étau porte-carte et tapis résistant à la chaleur",
+    "Pince coupante de précision et pince à bec",
+    "Multimètre avec mesure de résistance et continuité",
+    "Loupe et lunettes de protection"
+  ],
+  "materials": [
+    {
+      "name": "Carte d’essai neuve à trous et pastilles isolées",
+      "quantity": "1, sans alimentation ni batterie"
+    },
+    {
+      "name": "Résistances traversantes de 1 kΩ",
+      "quantity": "Quelques-unes pour les essais"
+    },
+    {
+      "name": "Fil de brasage électronique sans plomb à base d’étain, avec flux incorporé",
+      "quantity": "1 petite bobine, diamètre 0,5 à 0,8 mm"
+    },
+    {
+      "name": "Laine de laiton pour nettoyer la panne",
+      "quantity": "1 tampon dans son support"
+    },
+    {
+      "name": "Tresse à dessouder et flux compatible avec l’électronique",
+      "quantity": "Pour reprendre un point ou retirer un pont"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Installe un poste sans alimentation sur la carte",
+      "description": "Pose le tapis, le porte-carte et le support du fer sur un plan stable, dégagé de papier et de solvants. Place le captage près du futur joint, mets-le en marche et vérifie son fonctionnement avant de chauffer ; seule la station est branchée, la carte d’essai reste sans alimentation."
+    },
+    {
+      "title": "Place la résistance",
+      "description": "Mesure la résistance au multimètre : elle doit être proche de 1 kΩ, dans sa tolérance indiquée. Plie ses pattes avec la pince à bec sans forcer au ras du corps, insère-les dans deux pastilles propres et distinctes, puis immobilise la carte avec les pattes accessibles dessous."
+    },
+    {
+      "title": "Prépare la panne du fer",
+      "description": "Règle la station selon les indications du fil sans plomb et du fer, puis laisse-la atteindre sa température. Nettoie la panne sur la laine de laiton et couvre son extrémité d’une fine pellicule d’étain : cette opération, appelée étamage, facilite le transfert de chaleur sans former une grosse goutte."
+    },
+    {
+      "title": "Chauffe la patte et sa pastille ensemble",
+      "description": "Pose le côté de la panne à la jonction de la patte et de la pastille, puis amène le fil contre cette jonction chauffée. L’étain doit s’étaler sur les deux surfaces ; s’il reste en boule après quelques secondes, retire le fer, laisse refroidir et vérifie propreté, contact et réglage avant de recommencer."
+    },
+    {
+      "title": "Laisse figer puis coupe les pattes",
+      "description": "Dès qu’un petit congé relie la patte à la pastille sans déborder sur la voisine, retire d’abord le fil puis le fer et laisse refroidir sans bouger ni souffler. Répète sur l’autre patte, puis coupe les excédents au-dessus des joints avec tes lunettes et en retenant chaque chute pour éviter sa projection."
+    },
+    {
+      "title": "Contrôle et reprends les défauts",
+      "description": "À la loupe, cherche un joint régulier accroché aux deux surfaces, sans fissure ni pont vers une pastille voisine : un alliage sans plomb peut être mat sans être défectueux. Carte toujours non alimentée, mesure environ 1 kΩ entre les deux pastilles de la résistance et vérifie l’absence de continuité avec les pastilles voisines isolées. En cas de pont, ajoute un peu de flux électronique puis chauffe la tresse posée sur l’excédent et retire tresse et fer ensemble pendant que l’étain est fondu ; laisse refroidir et refais les contrôles."
+    }
+  ],
+  "mistakes": [
+    "Déposer une boule d’étain fondue sur une pastille froide : chauffe aussi la pastille, pas seulement le fil ou la patte.",
+    "Insister longtemps avec le fer : une pastille qui se décolle ou une carte qui brunit impose d’arrêter et de reprendre l’exercice sur une zone intacte.",
+    "Employer du décapant de plomberie : utilise exclusivement un flux prévu pour l’électronique et nettoie ses résidus si sa notice le demande."
+  ],
+  "safety": [
+    "Cet exercice se fait sur une carte neuve sans énergie stockée : ne l’applique pas à une alimentation secteur, une batterie ou un appareil simplement débranché, dont les condensateurs peuvent rester chargés.",
+    "Les fumées viennent notamment du flux, même avec du fil sans plomb : capte-les à la source et garde ton visage hors du panache ; un ventilateur qui les disperse dans la pièce ne remplace pas l’extraction.",
+    "Repose toujours le fer dans son support, tiens son câble loin de la panne et débranche la station après usage ; attends le refroidissement avant de ranger.",
+    "Garde les lunettes pour couper les pattes, collecte les chutes et lave-toi les mains avant de manger ; ne soude jamais directement sur une pile ou une cellule de batterie."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-27"
+}

@@ -973,3 +973,23 @@ Fichier : `public/images/tutoriels/poser-une-couverture-en-bac-acier.png`, 1536�
 ```text
 Use case: stylized-concept. Original French DIY tutorial cover, landscape 1536x1024 (3:2 aspect ratio). Subject: a ribbed coated steel roofing sheet in muted green lying across three horizontal steel purlins, seen at a low three-quarter angle so the corrugations and the purlins underneath are both readable; a cordless drill-driver with a screwdriver bit rests on the upper part of the sheet, with a few screws and sealing washers beside it. No people, no full person. Loose imperfect charcoal contours, flat gouache shapes, coarse dry brush texture on warm ivory paper. Simplified recognizable objects in central 70 percent with generous margins for mobile card crop. Natural subject colors: warm ivory paper, muted green coated steel, grey purlins, a dark accent. No text, numbers, labels, arrows, logos, watermark, photorealism or technical diagram.
 ```
+
+## 27 septembre 2026 — Initiation à la soudure
+
+Illustrations originales générées avec imagegen intégré, PNG 1536 × 1024 et WebP 480, 720, 960 à qualité 82. Sources de travail et prompts conservés dans `output/imagegen/`.
+
+### souder-un-composant-electronique-a-l-etain
+
+Fichier : `public/images/tutoriels/souder-un-composant-electronique-a-l-etain.png`.
+
+```text
+Use case: stylized-concept. Original WikiBrico French DIY tutorial cover, landscape exactly 1536x1024. Loose irregular pencil outlines, simplified gouache shapes and dry brush texture on warm ivory paper, muted sage and terracotta accents. Recognizable objects centered in central 70 percent, generous breathing room, readable mobile crop. No text, numbers, labels, arrows, logo, watermark or photorealism. No people or hands. A small green through-hole practice circuit board held in a miniature bench vise, a single beige axial resistor fitted through two holes, a soldering iron safely resting in its metal holder beside a spool of thin silvery solder wire and brass tip-cleaning wool. Clean coherent still life on a heat-resistant mat. Board unpowered, no batteries, no mains wiring. Distinguish the soldering iron insulated handle and metal tip clearly.
+```
+
+### souder-deux-pieces-d-acier-a-l-arc
+
+Fichier : `public/images/tutoriels/souder-deux-pieces-d-acier-a-l-arc.png`.
+
+```text
+Use case: stylized-concept. Original WikiBrico French DIY tutorial cover, landscape exactly 1536x1024. Loose irregular pencil outlines, simplified gouache shapes and dry brush texture on warm ivory paper, muted sage and terracotta accents. Recognizable objects centered in central 70 percent, generous breathing room, readable mobile crop. No text, numbers, labels, arrows, logo, watermark or photorealism. No people or hands. A dark green welding helmet with dark rectangular viewing lens, thick leather gauntlet gloves and a stick-welding electrode holder lying safely on a grey steel workbench, next to two overlapping small flat steel coupons joined along the overlap edge with a short realistic weld bead. A compact inverter welder and return clamp attached to a coupon behind. No active arc, sparks, flame or smoke. This is stick welding with a straight coated electrode, not a MIG torch. All objects form one simple balanced still life.
+```

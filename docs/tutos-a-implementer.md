@@ -1,6 +1,6 @@
 # Todo des prochains tutoriels
 
-Dernière mise à jour : **24 septembre 2026**.
+Dernière mise à jour : **27 septembre 2026**.
 
 Ce document centralise les idées de nouveaux tutos WikiBrico. Il sert à choisir le prochain sujet et à suivre sa réalisation ; il ne remplace pas les specs du tutoriel.
 
@@ -52,6 +52,9 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Réalisés depuis cette liste
 
+- [x] **T55 — Souder un composant électronique à l’étain** — terminé le 2026-09-27 — [/tutoriel/souder-un-composant-electronique-a-l-etain/](/tutoriel/souder-un-composant-electronique-a-l-etain/)
+- [x] **T56 — Souder deux pièces d’acier à l’arc** — terminé le 2026-09-27 — [/tutoriel/souder-deux-pieces-d-acier-a-l-arc/](/tutoriel/souder-deux-pieces-d-acier-a-l-arc/)
+
 - [x] **T44 — Ragréer un sol en béton avant de poser un revêtement** — terminé le 2026-09-20 — [/tutoriel/ragreer-un-sol-en-beton/](/tutoriel/ragreer-un-sol-en-beton/)
 
 - [x] **T43 — Poser un plancher OSB sur solives** — terminé le 2026-09-17 — [/tutoriel/poser-un-plancher-osb-sur-solives/](/tutoriel/poser-un-plancher-osb-sur-solives/)
@@ -100,6 +103,8 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - [x] **T03 — Déboucher un lavabo en nettoyant son siphon** — terminé le 2026-09-14 — [/tutoriel/nettoyer-siphon-lavabo/](/tutoriel/nettoyer-siphon-lavabo/)
 
 ## Journal de mise à jour
+
+- **2026-09-27** : T55 et T56 réalisés à la demande du lecteur : brasage électronique sur carte d’essai non alimentée et soudage MMA de plats d’acier sans fonction porteuse. Deux illustrations originales, tags et liens complémentaires ; sources Adafruit, Miller, Lincoln Electric et HSE conservées dans les fiches. Le catalogue compte 78 tutoriels ; aucune idée soudure en attente, les dix entrées peinture restent à solder dans le suivi historique.
 
 - **2026-09-11** : création de 30 idées, réparties en trois priorités, après comparaison avec les 18 fiches existantes. Priorisation qualitative, sans volumes de recherche.
 - **2026-09-11** : ajout de huit sujets peinture (T31 à T38), dont les trois demandes : éviter les bavures, choisir sa peinture et réaliser un motif au pochoir. La liste compte désormais 38 idées ; les volumes Google Trends n’ont pas été vérifiés.

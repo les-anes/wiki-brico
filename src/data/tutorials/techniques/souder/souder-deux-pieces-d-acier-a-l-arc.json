@@ -1,0 +1,107 @@
+{
+  "id": "souder-deux-pieces-d-acier-a-l-arc",
+  "title": "Souder deux pièces d’acier à l’arc",
+  "description": "Assemble deux plats d’acier par soudage manuel à l’arc (MMA), avec une électrode enrobée qui fond et relie leurs bords. Ce premier exercice à recouvrement sert à apprendre le geste, sans fabriquer de pièce porteuse.",
+  "category": "techniques",
+  "topicPath": ["Souder"],
+  "tags": ["soudure", "acier", "MMA", "électrode enrobée"],
+  "relatedTutorials": [
+    "souder-un-composant-electronique-a-l-etain",
+    "plomberie-cuivre",
+    "choisir-sa-peinture"
+  ],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 120,
+  "cost": null,
+  "image": "/images/tutoriels/souder-deux-pieces-d-acier-a-l-arc.png",
+  "imageAlt": "Masque de soudage, gants en cuir et porte-électrode près de deux plats d’acier assemblés sur un établi métallique.",
+  "imageOrigin": "original",
+  "scope": "Initiation au soudage manuel à l’arc avec électrode enrobée, dit MMA, sur deux plats neufs d’acier doux non revêtu de 3 mm, assemblés à recouvrement. Hors aluminium, inox, fonte, acier galvanisé, métal peint ou inconnu, réservoir, véhicule, garde-corps, escalier et assemblage structurel ; aucun dimensionnement ni qualification de résistance.",
+  "estimatesNote": "Prévois deux heures pour installer le poste, t’exercer et contrôler l’assemblage, hors surveillance finale de la zone chaude. Le budget inclut un poste et des protections complètes si tu ne les possèdes pas déjà ; les seules baguettes ne représentent pas ce coût.",
+  "sources": [
+    {
+      "title": "Miller — Five Steps to Improving Your Stick Welding Technique",
+      "url": "https://www.millerwelds.com/en-us/resources/knowledge-hub/stick-welding/five-steps-to-improving-your-stick-welding-technique",
+      "note": "Préparation du métal, plage de courant selon l’électrode, arc court, inclinaison et vitesse d’avance ; pas d’intensité universelle.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Miller — Welding Garage Safety Guide",
+      "url": "https://prod.millerwelds.com/en-us/resources/knowledge-hub/welding-safety/the-garage-guys-guide-to-welding-welding-safely-in-the-home-shop",
+      "note": "Équipements, protection du visage et du corps, zone sèche, pince de retour et manipulation des pièces chaudes. Pour les fumées, la fiche retient le captage à la source décrit par le HSE.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "HSE — Welding fume: control the risk",
+      "url": "https://www.hse.gov.uk/welding/protect-your-workers/avoid-reduce-exposure.htm",
+      "note": "Captage des fumées en intérieur, protection respiratoire adaptée si nécessaire et écrans protégeant les personnes alentour.",
+      "accessedAt": "2026-09-27"
+    },
+    {
+      "title": "Lincoln Electric — WELD-PAK 225i Stick DV, manuel d’utilisation",
+      "url": "https://ch-delivery.lincolnelectric.com/api/public/content/bdcb4039c52f4cc39821cfe7259dec34?v=f513fc5b",
+      "note": "Sections B-3 à B-6 : circuit de retour, rôle de l’électrode et du laitier, amorçage, avance, changement de baguette et arrêt du poste. Les caractéristiques électriques du modèle américain ne sont pas transposées au chantier français.",
+      "accessedAt": "2026-09-27"
+    }
+  ],
+  "tools": [
+    "Poste à souder MMA avec porte-électrode et pince de retour en bon état",
+    "Masque de soudage avec filtre adapté à l’arc et au courant utilisé, plus lunettes à protections latérales",
+    "Gants de soudeur en cuir secs, vêtements de soudage couvrants et chaussures de sécurité en cuir",
+    "Établi métallique stable, deux serre-joints et pince pour pièces chaudes",
+    "Lime, abrasif et brosse métallique manuelle",
+    "Marteau à piquer et protection auditive",
+    "Captage des fumées de soudage à la source, écrans de soudage et extincteur adapté"
+  ],
+  "materials": [
+    {
+      "name": "Plats d’acier doux neufs non revêtus de 3 mm d’épaisseur",
+      "quantity": "2 pièces d’environ 50 × 150 mm et une chute d’essai"
+    },
+    {
+      "name": "Électrodes rutiles pour acier doux, type E6013, diamètre 2 mm",
+      "quantity": "Quelques baguettes sèches, compatibles avec le poste"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Prépare la zone et toutes les protections",
+      "description": "Installe l’établi sur un sol sec, éloigne les combustibles y compris derrière les pièces, et mets en service le captage avec les écrans de soudage. Vérifie câbles, gants, masque et fonction de test de sa cellule selon sa notice ; règle la teinte pour le courant prévu et baisse le masque avant tout arc, même un simple point. Sans captage efficace ni protections en état, ne commence pas."
+    },
+    {
+      "title": "Mets l’acier à nu et bloque les pièces",
+      "description": "Sur ces plats neufs non revêtus, retire calamine et oxydation avec la lime, l’abrasif et la brosse jusqu’au métal propre, sur les deux faces autour du joint. Fais chevaucher leurs extrémités d’environ 20 mm et serre-les bien en contact sur l’établi, avec le bord à souder accessible ; ces dimensions servent uniquement à l’exercice."
+    },
+    {
+      "title": "Raccorde le poste et règle un essai",
+      "description": "Poste éteint, branche les câbles avec la polarité indiquée sur l’emballage des électrodes, serre l’extrémité dénudée de la baguette dans le porte-électrode, puis fixe la pince de retour directement sur une zone propre près du joint : elle ne remplace pas la terre de protection du poste. Choisis une intensité dans la plage du fabricant pour la baguette de 2 mm puis allume le poste et essaie sur la chute de même épaisseur. Masque baissé, amorce en frottant brièvement la pointe comme une allumette puis relève-la à peine ; si elle colle, coupe le poste avant de la dégager."
+    },
+    {
+      "title": "Pointe les deux extrémités",
+      "description": "Fais un petit point à chaque extrémité du bord de recouvrement pour maintenir l’assemblage. Coupe le poste, laisse les points refroidir puis retire leur croûte, appelée laitier, au marteau à piquer et à la brosse, avec tes lunettes. Vérifie que les pièces restent jointives avant de poursuivre."
+    },
+    {
+      "title": "Relie les points par un cordon",
+      "description": "Dirige la baguette dans l’angle formé par le bord du plat supérieur et la face du plat inférieur, à peu près à mi-angle, puis incline légèrement son haut dans le sens d’avance. Garde un arc court, sans dépasser environ le diamètre de l’âme métallique de la baguette, et avance régulièrement pour que le bain fondu prenne sur les deux pièces. Rapproche le porte-électrode à mesure que la baguette se consume, sans grand balayage, et respecte les pauses de refroidissement du poste prévues dans sa notice."
+    },
+    {
+      "title": "Laisse refroidir et examine le joint",
+      "description": "Éteins le poste, pose le porte-électrode isolé de toute pièce conductrice et laisse l’acier refroidir à l’air avant de retirer le laitier avec lunettes et brosse. Cherche fissures, trous, bords creusés ou cordon posé en relief sans raccord visible aux deux pièces ; si tu en vois, ajuste ton geste sur une nouvelle chute. Même un cordon régulier à l’œil ne prouve pas sa résistance : garde cet assemblage pour l’entraînement, sans charge ni fonction de sécurité."
+    }
+  ],
+  "mistakes": [
+    "Augmenter fortement l’intensité dès que la baguette colle : vérifie d’abord la pince de retour, l’arc et la plage de réglage de l’électrode.",
+    "Allonger l’arc pour mieux voir : replace ta tête hors des fumées et ajuste ta position plutôt que d’éloigner la baguette.",
+    "Recouvrir du laitier ou meuler le cordon pour masquer un défaut : retire la croûte entre les reprises et contrôle le joint avant toute finition."
+  ],
+  "safety": [
+    "Le masque protège des rayonnements, pas des fumées : utilise un captage à la source en intérieur et une protection respiratoire adaptée si le captage ne suffit pas ; une fenêtre ouverte ne suffit pas. Dehors, une protection respiratoire adaptée reste nécessaire : ce n’est pas une solution de remplacement au poste décrit.",
+    "Couvre toute la peau avec des vêtements de soudage non fusibles, garde les gants secs et les lunettes sous le masque ; protège aussi les personnes autour avec les écrans, jamais avec des lunettes de soleil.",
+    "N’utilise que l’acier doux nu identifié de l’exercice : ne soude pas un métal galvanisé, peint, dégraissé au solvant chloré, un récipient même vide ou une pièce fermée ayant contenu un produit.",
+    "Ne touche ni l’électrode ni les parties conductrices pendant que le poste fonctionne ; coupe-le avant de changer la baguette et ne travaille jamais sur sol humide ou dans un espace confiné.",
+    "Déplace les pièces avec une pince, même si elles ne rougissent plus ; après arrêt, surveille la zone et l’envers des supports pour déceler un départ de feu avant de quitter les lieux.",
+    "N’utilise pas cet exercice pour réparer un châssis, un garde-corps, un escalier ou une pièce porteuse : leur géométrie, leur procédé et leurs contrôles de résistance ne sont pas traités ici."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-27"
+}
