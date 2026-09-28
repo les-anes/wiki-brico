@@ -307,7 +307,10 @@ qu’à la sienne, donc `/me` répond la Page. S’il répond ton nom de profil,
   c’est que l’application a été créée pour un autre projet : seules les applications dont
   le portefeuille est propriétaire peuvent y être associées. Le dialogue propose alors
   **Créer un nouvel ID d’application**, ce qui en donne une au portefeuille — c’est la
-  voie à suivre, et l’Instagram garde la sienne, inchangée.
+  voie à suivre, et l’Instagram garde la sienne, inchangée. Vérifie aussi, dans le
+  sélecteur de portefeuille de Business Suite, que tu travailles bien dans **celui qui
+  détient la Page** : deux portefeuilles homonymes cohabitent facilement, et le bon est
+  celui dont le compteur d’éléments professionnels n’est pas à zéro.
 - **Le jeton d’utilisateur système**, pour ne plus jamais renouveler : Business Suite →
   **Paramètres → Utilisateurs → Utilisateurs système**, attribuer la Page en « Gérer la
   Page », puis **Générer un nouveau jeton** pour l’application avec `pages_manage_posts` et
