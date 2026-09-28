@@ -296,12 +296,20 @@ qu’à la sienne, donc `/me` répond la Page. S’il répond ton nom de profil,
   quelles que soient les permissions accordées (`GET /me/permissions` les liste). Reprendre
   l’étape 1 : soit le rôle manque, soit la Page est dans un portefeuille Business où il
   faut la rattacher au compte.
-- **Le portefeuille Business.** `GET /me/businesses?fields=id,name` (permission
-  `business_management`) nomme les portefeuilles du compte, et
-  `GET /<portefeuille>/owned_pages?fields=id,name` leurs Pages ; le jeton de l’une se
-  demande ensuite sur `GET /<page-id>?fields=access_token`. Pour un jeton qui ne périme
-  pas, le Business Manager sait aussi créer des **utilisateurs système** : c’est fait pour
-  un robot, et ça évite de refaire l’échange tous les deux mois.
+- **Le portefeuille Business.** C’est le cas quand la Page est un actif de portefeuille :
+  `GET /me/accounts` reste alors vide **même avec l’accès total sur la Page**, parce que
+  l’application n’est pas rattachée au portefeuille. Dans Business Suite :
+  **Paramètres → Comptes → Applications → Ajouter** l’application, puis lui donner accès à
+  la Page (**Ajouter des actifs → Pages → Gérer la Page**). Ensuite `GET /me/accounts`
+  doit lister la Page. `GET /me/businesses?fields=id,name` (permission
+  `business_management`) nomme le portefeuille, et `GET /<portefeuille>/owned_pages?fields=id,name`
+  ses Pages.
+- **Le jeton d’utilisateur système**, pour ne plus jamais renouveler : Business Suite →
+  **Paramètres → Utilisateurs → Utilisateurs système**, attribuer la Page en « Gérer la
+  Page », puis **Générer un nouveau jeton** pour l’application avec `pages_manage_posts` et
+  `pages_read_engagement`. Attention : `/me` répond alors l’utilisateur système, pas la
+  Page — il faut donc renseigner `FACEBOOK_PAGE_ID`, l’identifiant de la Page (Business
+  Suite → Comptes → Pages), en plus du jeton.
 - **Aucune Page du tout.** Si le compte n’a pas de Page et que le crossposting visait un
   profil personnel, l’API ne peut rien y publier : Graph n’expose plus d’endpoint pour
   publier sur un profil. Il faut créer une Page et y brancher l’Instagram, ou continuer à
