@@ -1,0 +1,102 @@
+{
+  "id": "poser-un-plan-de-travail",
+  "title": "Poser un plan de travail en cuisine",
+  "description": "Un plan de travail bien posé supporte l’évier, la plaque et les couteaux sans bouger. Voici comment le mesurer, le découper et le fixer en respectant les joints et l’étanchéité autour des ouvertures.",
+  "category": "cuisine-salle-de-bains",
+  "topicPath": ["Plans de travail"],
+  "tags": ["plan de travail", "stratifié"],
+  "relatedTutorials": [
+    "poser-une-credence-carrelee",
+    "nettoyer-siphon-lavabo",
+    "regler-une-porte-de-placard"
+  ],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 360,
+  "cost": null,
+  "image": "/images/tutoriels/poser-un-plan-de-travail.png",
+  "imageAlt": "Un plan de travail couleur bois posé sur des meubles de cuisine, avec une découpe pour évier, un niveau et une visseuse.",
+  "imageOrigin": "original",
+  "scope": "Plan de travail stratifié ou bois massif fixé sur des meubles de cuisine ou de salle de bains existants et de niveau, avec découpe d’évier ou de plaque. Hors pierre, granit et inox, hors pose d’évier ni de robinetterie, hors modification des meubles et hors plan de travail sur mesure à assembler.",
+  "estimatesNote": "Compte une journée pour un linéaire de trois mètres avec une découpe d’évier, mesures et séchage du joint compris. Le prix au mètre linéaire du plan ne dit rien du coût final : profil de rive, colle, silicone et agrément de chant tiennent dans la même fourchette que la planche elle-même.",
+  "sources": [
+    {
+      "title": "Maison & Habitat — Poser un plan de travail de cuisine",
+      "url": "https://maison-et-habitat.com/poser-plan-travail-cuisine/",
+      "note": "Décrit la méthode complète : choix du matériau, mesures et préparation du support, découpes pour évier et plaque, fixation et étanchéité, avec montage à blanc avant vissage définitif. Insiste sur la précision des mesures et la protection des découpes contre l’humidité. Sert de trame d’étapes.",
+      "accessedAt": "2026-09-28"
+    },
+    {
+      "title": "Rénovation et Travaux — Poser un plan de travail",
+      "url": "https://www.renovationettravaux.fr/poser-plan-travail",
+      "note": "Liste le matériel de pose et la séquence de fixation, et confirme que la pose est réalisable seul avec méthode et minutie, notamment sur plans en bois. Sert de liste de matériel et de vérification de la faisabilité du cas.",
+      "accessedAt": "2026-09-28"
+    }
+  ],
+  "tools": [
+    "Mètre ruban et crayon",
+    "Niveau à bulle",
+    "Scie circulaire ou scie à chantourner avec guide",
+    "Perceuse-visseuse et mèche pour le bois",
+    "Cartouche de silicone et pistolet à extracteur"
+  ],
+  "materials": [
+    {
+      "name": "Plan de travail en stratifié ou bois, plus les profilés de rive",
+      "quantity": "Longueur du linéaire, plus 5 cm de marge de coupe"
+    },
+    {
+      "name": "Vis inox pour fixation sous les meubles",
+      "quantity": "Un tous les 40 à 50 cm le long des façades"
+    },
+    {
+      "name": "Silicone sanitaire transparent ou assorti",
+      "quantity": "Un tube par joint périphérique et par découpe d’évier"
+    },
+    {
+      "name": "Colle de raccord et agrément d’about",
+      "quantity": "Pour le joint entre deux plans bout à bout"
+    },
+    {
+      "name": "Ruban de masquage et papier de protection",
+      "quantity": "Pour les découpes et le collage"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Mesure le linéaire et contrôle les meubles de niveau",
+      "description": "Mesure la longueur totale en tenant compte des retours et des joints bout à bout, puis vérifie le niveau de toutes les façades : un meuble qui plonge fait plonger le plan, et la découpe d’évier ne rattrapera pas le défaut. Repère les chants visibles, ceux qui vus de face, pour commander le bon nombre de profilés. Ajoute quelques centimètres de marge : on coupe toujours plus, jamais moins."
+    },
+    {
+      "title": "Trace les découpes sur le plan retourné",
+      "description": "Pose le plan à plat sur ses dessus protégés et reporte les cotes d’évier, de plaque et de retour de mur, en vérifiant chaque mesure à la fois depuis le bord et depuis le mur : l’écart se lit tout de suite. Trace au crayon fin avec la règle, et doubles la vérification avant de scier. Un trait de scie reporté à l’envers est la première cause de plan jeté."
+    },
+    {
+      "title": "Réalise les découpes et protège les chants",
+      "description": "Perce un angle de démarrage puis scie au guide en suivant le trait, en appuyant régulièrement pour éviter l’écaillage du stratifié. Ponce légèrement la tranche coupée et applique le traitement de bord fourni : c’est par la découpe que l’eau pénètre sous le stratifié. Essuie la poussière avant tout retournement."
+    },
+    {
+      "title": "Fais le montage à blanc avant de fixer",
+      "description": "Replace le plan sur les meubles sans vis, avec les profilés et l’évier posés à leur place, et observe les abouts, les jeux au mur et l’alignement des chants. Vérifie une dernière fois le niveau dans les deux sens. Tout défaut se corrige maintenant : une fois vissé, le plan se démonte en abîmant les façades."
+    },
+    {
+      "title": "Fixe le plan et réalise le joint périphérique",
+      "description": "Visse le plan par en dessous dans les façades, un vis tous les 40 à 50 cm, en faisant plaquer sans traverser le dessus. Colle et serre le joint entre deux plans si le linéaire est long. Masque le mur, coulis le silicone en un cordon continu, lisse à la spatule puis retire le masquage immédiatement. Laisse sécher avant de poser l’évier ou la plaque."
+    },
+    {
+      "title": "Contrôle l’étanchéité et le fonctionnement",
+      "description": "Fais couler de l’eau le long du joint arrière et autour de l’évier : aucun filet ne doit passer derrière les façades. Ouvre et ferme chaque porte et tiroir : le plan ne doit frotter nulle part. Essuie les traces de silicone et note la date de pose sur le dessous, à côté des cotes, pour la reprise ultérieure."
+    }
+  ],
+  "mistakes": [
+    "Couper sans marginer ni revérifier depuis deux repères : le plan trop court laisse un jour permanent au mur, et il n’y a pas de raccord possible.",
+    "Viser dans le dessus du plan : la vis traverse le stratifié et se voit, et l’eau finit par y entrer.",
+    "Oublier de traiter les chants de découpe : c’est par là que le bois gonfle au premier éclaboussure d’évier."
+  ],
+  "safety": [
+    "Fais couper l’eau et l’électricité des appareils concernés avant la découpe et la pose d’un évier : jamais de scie ni de visseuse sur un circuit ouvert.",
+    "Scie au guide avec lunettes : la poussière de stratifié et les copeaux volent plus loin que le masque ne les arrête au visage.",
+    "Ne charge pas le plan avant la fin du séchage du silicone : un joint sollicité trop tôt se décolle et laisse passer l’eau."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-28"
+}

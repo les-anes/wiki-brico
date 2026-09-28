@@ -1,6 +1,6 @@
 # Todo des prochains tutoriels
 
-Dernière mise à jour : **27 septembre 2026**.
+Dernière mise à jour : **28 septembre 2026**.
 
 Ce document centralise les idées de nouveaux tutos WikiBrico. Il sert à choisir le prochain sujet et à suivre sa réalisation ; il ne remplace pas les specs du tutoriel.
 
@@ -13,7 +13,7 @@ Ce document centralise les idées de nouveaux tutos WikiBrico. Il sert à choisi
 - Revoir les priorités une fois par mois ou lors du choix d’un nouveau lot : demandes des lecteurs, recherches internes sans résultat et données de recherche disponibles passent avant les intuitions initiales.
 - Conserver les identifiants `T01`, `T02`, etc. lorsqu’une idée change de priorité. Ajouter les nouvelles idées à la suite de la numérotation.
 
-Les 56 idées de cette liste ont été **réalisées**, dont les dix tutoriels peinture T45 à T54 et les deux tutoriels soudure T55 et T56.
+Les 65 idées de cette liste ont été **réalisées**, dont les dix tutoriels peinture T45 à T54, les deux tutoriels soudure T55 et T56 et le lot **T57 à T65** du 28 septembre 2026. Ce dernier lot est issu d’un relevé de popularité et de couverture : neuf sujets qui ouvrent les catégories isolation, assainissement et extérieurs, restées sans aucune fiche, et remplissent cinq thèmes vides déjà déclarés.
 
 ## Pourquoi ces priorités
 
@@ -51,6 +51,16 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - [Relier du PER au cuivre](../src/data/tutorials/plomberie/arrivee-d-eau/raccord-per-vers-cuivre/raccord-per-vers-cuivre.json)
 
 ## Réalisés depuis cette liste
+
+- [x] **T65 — Remplacer un chauffe-eau** — terminé le 2026-09-28 — [/tutoriel/remplacer-un-chauffe-eau/](/tutoriel/remplacer-un-chauffe-eau/)
+- [x] **T64 — Poser un faux plafond** — terminé le 2026-09-28 — [/tutoriel/poser-un-faux-plafond/](/tutoriel/poser-un-faux-plafond/)
+- [x] **T63 — Régler une fenêtre qui ferme mal** — terminé le 2026-09-28 — [/tutoriel/regler-une-fenetre-qui-ferme-mal/](/tutoriel/regler-une-fenetre-qui-ferme-mal/)
+- [x] **T62 — Poser un plan de travail** — terminé le 2026-09-28 — [/tutoriel/poser-un-plan-de-travail/](/tutoriel/poser-un-plan-de-travail/)
+- [x] **T61 — Nettoyer ses gouttières** — terminé le 2026-09-28 — [/tutoriel/nettoyer-ses-gouttieres/](/tutoriel/nettoyer-ses-gouttieres/)
+- [x] **T60 — Installer un récupérateur d’eau de pluie** — terminé le 2026-09-28 — [/tutoriel/installer-un-recuperateur-d-eau-de-pluie/](/tutoriel/installer-un-recuperateur-d-eau-de-pluie/)
+- [x] **T59 — Poser une terrasse en bois** — terminé le 2026-09-28 — [/tutoriel/poser-une-terrasse-en-bois/](/tutoriel/poser-une-terrasse-en-bois/)
+- [x] **T58 — Isoler un mur par l’intérieur** — terminé le 2026-09-28 — [/tutoriel/isoler-un-mur-par-l-interieur/](/tutoriel/isoler-un-mur-par-l-interieur/)
+- [x] **T57 — Isoler ses combles perdus** — terminé le 2026-09-28 — [/tutoriel/isoler-ses-combles-perdus/](/tutoriel/isoler-ses-combles-perdus/)
 
 - [x] T45 — Lessiver un mur avant de le peindre — réalisé le 2026-09-24 — [/tutoriel/lessiver-un-mur-avant-peinture/](/tutoriel/lessiver-un-mur-avant-peinture/)
 - [x] T46 — Peindre des plaques de plâtre neuves — réalisé le 2026-09-24 — [/tutoriel/peindre-des-plaques-de-platre-neuves/](/tutoriel/peindre-des-plaques-de-platre-neuves/)
@@ -114,6 +124,11 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 - [x] **T03 — Déboucher un lavabo en nettoyant son siphon** — terminé le 2026-09-14 — [/tutoriel/nettoyer-siphon-lavabo/](/tutoriel/nettoyer-siphon-lavabo/)
 
 ## Journal de mise à jour
+
+- **2026-09-28** : remplacement des neuf couvertures provisoires T57 à T65 par des illustrations originales générées avec imagegen intégré. PNG 1536×1024, 27 variantes WebP, textes alternatifs et prompts actualisés.
+
+- **2026-09-28** : lot **cent tutoriels** (T57 à T65), changement OpenSpec `lot-cent-tutoriels`. Neuf fiches nées d’un relevé de popularité et de couverture : isolation des combles et d’un mur par l’intérieur (catégorie isolation ouverte), terrasse en bois (extérieurs ouverts), récupérateur d’eau de pluie (assainissement ouvert), gouttières, plan de travail, réglage de fenêtre, faux plafond et remplacement de chauffe-eau (cinq thèmes vides servis). Le catalogue compte **100 tutoriels** ; les thèmes sans fiche passent de 56 à 47. Neuf illustrations provisoires avec prompts de remplacement consignés.
+
 
 - **2026-09-27** : ajout hors liste de [Vérifier la mise à la terre d’une maison](/tutoriel/verifier-la-mise-a-la-terre/), [Créer une prise de terre avec un piquet](/tutoriel/creer-une-prise-de-terre/) et [Rallonger le câble fibre entre la prise optique et la box](/tutoriel/rallonger-le-cable-fibre-de-la-box/). La terre reste une rubrique indépendante avec un lien depuis la fiche de prise murale ; Réseau informatique contient désormais trois fiches. Sources, trois illustrations originales et variantes WebP ; le catalogue compte 88 tutoriels, aucune des 56 idées historiques ne reste à faire.
 
@@ -191,37 +206,33 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
   vide. Son illustration a été publiée dans la foulée (PNG 1536 × 1024 et variantes WebP).
   Le catalogue compte 91 tutoriels ; 56 thèmes feuilles sans fiche sur 100.
 
-## Thèmes sans fiche — relevé du 27 septembre 2026
+## Thèmes sans fiche — relevé du 28 septembre 2026
 
 Les 104 entrées de `src/data/categories.json` alimentent le menu du site ; les 100 thèmes
-sans sous-thème ouvrent chacun le catalogue filtré. **56 n’ont encore aucune fiche**, donc
-le clic mène à un catalogue vide. Trois univers entiers sont dans ce cas : l’isolation,
-l’assainissement et les extérieurs.
+sans sous-thème ouvrent chacun le catalogue filtré. Après le lot T57 à T65, **47 n’ont
+encore aucune fiche**, donc le clic mène à un catalogue vide. Aucun univers entier n’est
+plus vide : l’isolation, l’assainissement et les extérieurs ont désormais au moins une fiche.
 
 | Catégorie (vides / total) | Thèmes sans fiche |
 | --- | --- |
-| Structure & gros œuvre (0/8) | Aucun |
-| Toiture & étanchéité (5/6) | Charpente · Gouttières · Fenêtres de toit · Étanchéité · Infiltrations |
-| Isolation & performance thermique (6/6) | Murs · Toiture · Sols · Ponts thermiques · Pare-vapeur · Étanchéité à l’air |
-| Cloisons, plafonds & doublages (4/6) | Ossatures bois · Ossatures métal · Faux plafonds · Gaines techniques |
+| Structure & gros œuvre (0/11) | Aucun |
+| Toiture & étanchéité (4/6) | Charpente · Fenêtres de toit · Étanchéité · Infiltrations |
+| Isolation & performance thermique (4/6) | Sols · Ponts thermiques · Pare-vapeur · Étanchéité à l’air |
+| Cloisons, plafonds & doublages (3/6) | Ossatures bois · Ossatures métal · Gaines techniques |
 | Électricité (0/7) | Aucun |
-| Plomberie & eau (1/6) | Chauffe-eau |
-| Assainissement & eaux pluviales (6/6) | Tout-à-l’égout · Fosse · Microstation · Drainage · Évacuations extérieures · Récupération d’eau |
+| Plomberie & eau (0/7) | Aucun |
+| Assainissement & eaux pluviales (5/6) | Tout-à-l’égout · Fosse · Microstation · Drainage · Évacuations extérieures |
 | Chauffage, ventilation & confort (4/6) | Plancher chauffant · Pompe à chaleur · Poêle · Climatisation |
-| Menuiseries (2/6) | Fenêtres · Portes coulissantes |
+| Menuiseries (1/6) | Portes coulissantes |
 | Sols, murs & finitions (2/9) | Tomettes · Enduits décoratifs |
-| Cuisine & salle de bains (5/9) | Baignoire · Lavabos · Meubles · Plans de travail · Étanchéité sous carrelage |
-| Extérieurs (8/8) | Terrasse · Façade · Clôture · Portail · Allées · Jardin · Dépendances · Éclairage extérieur |
+| Cuisine & salle de bains (4/9) | Baignoire · Lavabos · Meubles · Étanchéité sous carrelage |
+| Extérieurs (7/8) | Façade · Clôture · Portail · Allées · Jardin · Dépendances · Éclairage extérieur |
 | Préparer son chantier (6/7) | Diagnostic · Budget · Plans · Métrés · Matériaux · Location d’outils |
 | Techniques & savoir-faire (7/10) | Visser · Scier · Faire du mortier · Faire un joint · Utiliser un niveau · Poncer · Faire un enduit |
 
-Deux doublons réglés au passage : `VMC` est tombé au profit de `Ventilation` (la fiche
-sur les bouches y descend) et `Ouvertures` est devenu `Ouvertures dans un mur`, pour ne
-plus croiser `Fenêtres` et `Fenêtres de toit`.
-
-Les trois thèmes qui posaient problème sont désormais servis : `Circuits` par la fiche
-sur la section des câbles, `Trémies` par l’ouverture dans un plancher et `Escaliers` par
-l’escalier à limon central. Le thème `Poutres` a disparu : aucun sujet ne s’y rangeait.
-
 À rafraîchir quand des fiches sont ajoutées : un thème passe de la colonne des vides à
 celle des réalisés dès qu’une fiche le prend pour `topicPath`.
+
+## Known gaps
+
+- unknown: aucun volume de recherche n’a été mesuré pour arbitrer le lot ; le choix repose sur des guides d’enseignes et médias de la rénovation consultés le 2026-09-28.

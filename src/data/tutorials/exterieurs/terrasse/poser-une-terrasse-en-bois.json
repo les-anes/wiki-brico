@@ -1,0 +1,102 @@
+{
+  "id": "poser-une-terrasse-en-bois",
+  "title": "Poser une terrasse en bois",
+  "description": "Une terrasse en lames de bois vissées sur lambourdes transforme un bout de jardin en pièce de vie. Voici la méthode complète, du réceptionnement du terrain au vissage des lames, pour une surface qui reste plate et qui draine.",
+  "category": "exterieurs",
+  "topicPath": ["Terrasse"],
+  "tags": ["terrasse", "bois"],
+  "relatedTutorials": [
+    "couler-une-dalle-en-beton-arme",
+    "ragreer-un-sol-en-beton",
+    "poser-des-plinthes"
+  ],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 720,
+  "cost": null,
+  "image": "/images/tutoriels/poser-une-terrasse-en-bois.png",
+  "imageAlt": "Une terrasse en bois en cours de pose sur des lambourdes et des plots, avec une visseuse posée sur les lames.",
+  "imageOrigin": "original",
+  "scope": "Terrasse en lames de bois vissées sur lambourdes, sur un sol non meuble, des plots réglables ou une dalle béton existante, à hauteur de jardin. Hors dallage neuf de gros œuvre, hors rampes et marches, hors garde-corps, hors bois composite à clipsage et hors démontage d’une ancienne terrasse.",
+  "estimatesNote": "Compte deux journées pour 15 m² à deux avec les découpes de rive et les finitions. Le budget se lit en euros au mètre carré de lames et de lambourdes, auquel s’ajoutent vis, plots et huile éventuelle : la qualité du bois décide de la durée de vie, pas la pose.",
+  "sources": [
+    {
+      "title": "Castorama — Comment poser une terrasse en bois",
+      "url": "https://www.castorama.fr/idees-et-conseils/comment-poser-une-terrasse-en-bois/CF_CC_npcart_100360.art",
+      "note": "Guide en six étapes de la pose vissée sur lambourdes : préparation du support, pose des lambourdes, vissage des lames, découpe et finitions. Rappelle que la pose est accessible à un bricoleur équipé et décrit les alternatives de structure (plots, dalle, fondation). Sert de trame générale du chantier.",
+      "accessedAt": "2026-09-28"
+    },
+    {
+      "title": "Bois-expo — Poser une terrasse en bois sur lambourdes",
+      "url": "https://www.bois-expo.com/conseils-astuces/comment-poser-terrasse-bois-lambourdes/",
+      "note": "Donne les cotes de structure : section des lambourdes selon le bois, entraxe de 45 à 50 cm entre lambourdes, parallélisme, fixation selon le support (chevilles à frapper sur dalle, vis inox sur plots) et protection entre lambourdes et lames. Sert aux entraxes et aux fixations.",
+      "accessedAt": "2026-09-28"
+    }
+  ],
+  "tools": [
+    "Niveau à bulle long et niveau à bulle court",
+    "Visseuse et foret de perçage",
+    "Scie à onglet ou scie circulaire avec guide",
+    "Mètre, cordeau tracer et crayon",
+    "Pelle et dame si le terrain doit être mis à niveau"
+  ],
+  "materials": [
+    {
+      "name": "Lames de terrasse en bois traité classe 4",
+      "quantity": "Surface de la terrasse, plus 5 % pour les coupes"
+    },
+    {
+      "name": "Lambourdes en bois traité",
+      "quantity": "Longueur totale à l’entraxe de pose (environ 45 à 50 cm)"
+    },
+    {
+      "name": "Vis inox pour lames et vis pour lambourdes",
+      "quantity": "Deux vis par lame et par traversée de lambourde"
+    },
+    {
+      "name": "Plots réglables ou chevilles selon le support",
+      "quantity": "Un par point d’appui des lambourdes"
+    },
+    {
+      "name": "Bandes bitumineuses d’interposition",
+      "quantity": "Longueur des lambourdes, en dessous des lames"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Implante la terrasse et égalise le terrain",
+      "description": "Trace au cordeau les limites de la future terrasse et calcule la hauteur finie : le sol doit descendre d’au moins 15 cm sous la ligne pour loger la structure et le drainage. Égalise à la pelle et dame la terre, puis prévois une pente de 1 à 2 % vers l’extérieur pour que l’eau parte toute seule. Un terrain tassé au jugé se creuse sous la première hivernée."
+    },
+    {
+      "title": "Pose les appuis et les lambourdes de niveau",
+      "description": "Répartis les plots réglables ou les appuis sur un lit de sable, puis pose les lambourdes dessus à l’entraxe prescrit par les lames, en général 45 à 50 cm. Mets chaque lambourde de niveau au niveau à bulle, en rattrapant les écarts sur les plots plutôt qu’en glissant des cales sous le bois. Entre bois et support béton, glisse une bande bitumineuse : c’est elle qui empêche le capillaire de pourrir la lambourde."
+    },
+    {
+      "title": "Visse les premières lames en alignement",
+      "description": "Commence par la lame de rive la plus visible, alignée au cordeau et à l’équerre, avec le jeu au mur prescrit par le fabricant pour le gonflement du bois. Perce les trous de vis en décalant légèrement en largeur et visse à mi-corps, jamais à fond : la lame doit rester libre de bouger d’un cheveu. Vérifie la diagonale avant de continuer, sinon l’ensemble part de travers."
+    },
+    {
+      "title": "Continue jusqu’à la lame d’about",
+      "description": "Poursuis en gardant l’entraxe régulier et en recoupant les lames à la longueur utile. Sur la dernière lame, mesure la largeur restante sur place, taille à la scie et visse en respectant le retrait par rapport au mur. Entre deux lames, garde le jeu d’aération prévu : sans lui, l’eau stagne et le bois gonfle."
+    },
+    {
+      "title": "Réalise les finitions de rive",
+      "description": "Termine par les cornières, les marchepieds ou les bordures qui enferment les découpes et évitent les échardes apparentes. Visse les accessoires dans la structure, jamais dans les lames seules. Nettoie les copeaux et les limailles de perçage sur le bois : ils tachent au premier ruissellement."
+    },
+    {
+      "title": "Contrôle le niveau, les fixations et la pente",
+      "description": "Passe le niveau sur l’ensemble et fais couler un seau d’eau sur la pente : l’eau doit partir vers l’extérieur sans rester sur les lames. Serre une à une les vis qui dépassent, vérifie qu’aucune lame ne bouge sous le pied et rebaleie. Si une lame reste creuse, c’est la lambourde dessous qu’il faut reprendre avant la fin de chantier."
+    }
+  ],
+  "mistakes": [
+    "Poser les lambourdes directement sur la terre ou sur du béton nu : l’eau remonte dans le bois et la terrasse pourrit par le dessous avant d’être usée.",
+    "Visser les lames sans pré-perçage ni jeu entre elles : le bois se fend à la vis et gonfle au premier humide, soulevant toute la rangée.",
+    "Oublier la pente vers l’extérieur : l’eau stagne contre le mur de maison et les joints, et le parquet reste mouillé des jours."
+  ],
+  "safety": [
+    "Ne travaille pas seul avec des lames longues : la manutention à deux évite la chute et la torsion du dos.",
+    "Porte des gants et des chaussures fermées : les chants de bois traité et les découpes écaillent la peau.",
+    "Respecte le délai de séchage du support béton avant de couvrir : poser sur un support encore humide emprisonne l’eau sous la structure."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-28"
+}

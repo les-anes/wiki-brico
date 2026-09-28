@@ -1,0 +1,94 @@
+{
+  "id": "nettoyer-ses-gouttieres",
+  "title": "Nettoyer ses gouttières",
+  "description": "Des gouttières bouchées débordent, trempent la façade et font entrer l’eau sous la couverture. Voici comment les vider et les rincer en sécurité, deux fois par an, avec une échelle et des outils simples.",
+  "category": "toiture",
+  "topicPath": ["Gouttières"],
+  "tags": ["gouttière", "nettoyage"],
+  "relatedTutorials": [
+    "installer-un-recuperateur-d-eau-de-pluie",
+    "poser-une-couverture-en-bac-acier",
+    "nettoyer-les-bouches-de-vmc"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 180,
+  "cost": null,
+  "image": "/images/tutoriels/nettoyer-ses-gouttieres.png",
+  "imageAlt": "Une main gantée retire des feuilles mortes d’une gouttière métallique, près d’un seau contenant les débris.",
+  "imageOrigin": "original",
+  "scope": "Gouttières en zinc, PVC ou aluminium d’une maison d’habitation à un étage, accessibles depuis une échelle posée au sol ou sur un toit bas. Hors gouttières de bâtiment élevé, hors travail sur couverture inclinée, hors réparation de joints et d’écoulements, hors chute de neige gelée.",
+  "estimatesNote": "Compte deux à trois heures pour une maison simple à un étage, décrochage et rinçage compris. Le coût se limite à l’éventuel nouveau filtre ou à la réparation d’un accessoire : le nettoyage lui-même ne coûte que du temps et un stock de sacs.",
+  "sources": [
+    {
+      "title": "MesDépanneurs.fr — Nettoyage et entretien des gouttières",
+      "url": "https://www.mesdepanneurs.fr/blog/nettoyage-entretien-gouttiere",
+      "note": "Ordre de chantier du nettoyage : sécuriser l’accès avec une échelle en bon état et écartée du mur, seuls les outils simples, personne au sol pendant l’opération, puis décrochage des déchets et contrôle de l’écoulement. Sert aux règles d’accès et à la séquence des étapes.",
+      "accessedAt": "2026-09-28"
+    },
+    {
+      "title": "Maison & Travaux — Nettoyer la gouttière, étape par étape",
+      "url": "https://www.maison-travaux.fr/renover/petits-travaux/entretenir-sa-maison-au-quotidien/au-revoir-gouttieres-delaisses-sales-voici-remede-miracle-pour-nettoyer-sans-effort-571632.html",
+      "note": "Rappelle la fréquence (deux fois par an, printemps et automne), le rôle des gouttières dans l’évacuation des eaux pluviales et les points de contrôle après nettoyage. Sert de calendrier d’entretien et de justification des passages.",
+      "accessedAt": "2026-09-28"
+    }
+  ],
+  "tools": [
+    "Échelle suffisamment haute, en bon état, à bascule ou à pieds réglables",
+    "Gants de travail et seau accroche",
+    "Main gantée ou petite pelle souple pour les feuilles",
+    "Gardes-corps ou tuyau de rinçage à faible pression",
+    "Lunettes de protection"
+  ],
+  "materials": [
+    {
+      "name": "Sacs de collecte pour déchets de gouttière",
+      "quantity": "Deux ou trois, selon le nombre d’arbres autour de la maison"
+    },
+    {
+      "name": "Filtres ou garde-corps de gouttière neufs",
+      "quantity": "À remplacer si l’ancien est bouché ou cassé"
+    },
+    {
+      "name": "Joint de raccord ou ruban d’étanchéité",
+      "quantity": "Une longueur de raccord, si un about bouge pendant le nettoyage"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Choisis la journée et installe l’échelle",
+      "description": "Interviens par temps sec et sans vent, idéalement en deux passages : printemps et automne. Pose l’échelle à faible pente par rapport au mur, avec les montants bien écartés, et fais tenir quelqu’un au sol ou attache-la au point fixe. L’échelle doit dépasser le niveau de la gouttière pour que tu travailles debout, pas penché au-dessus du vide."
+    },
+    {
+      "title": "Prépare le seau et les outils en hauteur",
+      "description": "Accroche le seau au crochet de l’échelle ou à la gouttière elle-même, jamais au garde-corps : il doit tenir le poids des déchets mouillés. Garde la main gantée, le sac et le tuyau de rinçage à portée. Ne monte rien d’autre : une fois en hauteur, tu ne redescends pas pour chaque outil oublié."
+    },
+    {
+      "title": "Vide la gouttière par petites poignées",
+      "description": "Travaille dans le sens opposé à l’écoulement, en repoussant les feuilles vers l’aval où le seau les attend. Vide par poignées complètes plutôt qu’en balayant : les déchets partent dans le seau, pas sur la façade. Sors les branches et les nids entiers avant la poussière fine, sinon tu bouches le filtre en cours de route."
+    },
+    {
+      "title": "Décroche les descentes et rince l’ensemble",
+      "description": "Dévisse ou décroche chaque descente et vide le coude de dépôt, là où l’eau stagne et fermente. Rince à l’eau du tuyau à faible pression, en partant du fond vers le haut, et regarde l’eau ressortir au bout : si elle ne sort pas, le bouchon est dans le coude ou la colonne, pas dans la gouttière. Recommence jusqu’à ce que l’écoulement soit libre."
+    },
+    {
+      "title": "Contrôle les joints, les fixations et le dégagement",
+      "description": "Remonte les descentes et vérifie que les raccords reprennent leur place, que les brackets tiennent et que la pente reste dirigée vers la colonne. Repère une gouttière affaissée ou un joint ouvert pendant que tout est dégagé : c’est le moment de le noter, pas après la première pluie. Fais couler un seau d’eau dans la gouttière pour confirmer l’écoulement."
+    },
+    {
+      "title": "Descends propre et referme le chantier",
+      "description": "Rapporte le seau, les sacs et l’échelle, et balaie la zone en bas : les feuilles tombées sur les tuiles finissent dans la première averse. Note la date du passage sur un carnet d’entretien et la prochaine échéance, six mois plus tard. Range l’échelle à l’abri pour qu’elle ne prenne pas la pluie entre deux usages."
+    }
+  ],
+  "mistakes": [
+    "Travailler penché au-dessus de la gouttière depuis une échelle mal posée : la majorité des accidents de nettoyage viennent de la position, pas de la hauteur.",
+    "Vider vers le bas en balayant : les déchets se coincent dans la descente, où ils ferment l’écoulement au lieu de sortir.",
+    "Négliger les raccords de descente : une gouttière propre avec un coude bouché déborde comme avant, et l’eau retourne à la façade."
+  ],
+  "safety": [
+    "Ne monte jamais seul sans point de contact : fais tenir l’échelle par une personne au sol ou attache-la, et ne passe pas au-dessus du garde-corps.",
+    "Travaille sans vent et sous bonne visibilité : une échelle chargée d’outils sur sol mouillé glisse en un mouvement.",
+    "Porte gants et lunettes : les arêtes de zinc, les nids d’insectes et les déchets pourris se manipulent gantés."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-28"
+}

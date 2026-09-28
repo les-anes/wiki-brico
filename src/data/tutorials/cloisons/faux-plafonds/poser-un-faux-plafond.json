@@ -1,0 +1,96 @@
+{
+  "id": "poser-un-faux-plafond",
+  "title": "Poser un faux plafond en plaques de plâtre",
+  "description": "Un faux plafond suspendu redresse une surface irrégulière et prépare la peinture. Voici comment monter l’ossature sur suspentes, régler le niveau puis poser et jointer les plaques de plâtre.",
+  "category": "cloisons",
+  "topicPath": ["Faux plafonds"],
+  "tags": ["BA13", "ossature métallique"],
+  "relatedTutorials": [
+    "monter-une-petite-cloison-en-placo",
+    "poser-une-bande-a-joint",
+    "peindre-un-plafond"
+  ],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 480,
+  "cost": null,
+  "image": "/images/tutoriels/poser-un-faux-plafond.png",
+  "imageAlt": "Un faux plafond partiellement recouvert de plaques de plâtre, laissant voir les fourrures métalliques et leurs suspentes sous une dalle.",
+  "imageOrigin": "original",
+  "scope": "Faux plafond en plaques de plâtre BA13 suspendu sous une dalle existante, dans une pièce de plain-pied, sans découpe d’ouverture de service. Hors plafond hygrofite de salle de bains, hors habillage de poutres ou de combles très pentus, hors accessoires intégrés lourds et hors dépose de l’ancien revêtement.",
+  "estimatesNote": "Compte deux journées à deux pour 20 m² : ossature et suspentes le premier jour, plaques et joints le second. Le budget suit la surface en plaques et en ossature ; les suspentes et les profiles coûtent peu, mais c’est leur régularité qui décide du rendu final.",
+  "sources": [
+    {
+      "title": "Prix Faux Plafond — Pose d’un faux plafond suspendu en ossature BA13",
+      "url": "https://www.prix-faux-plafond.fr/guides/pose-faux-plafond-etapes-suspentes-rails",
+      "note": "Décrit les cinq étapes du chantier : traçage de la ligne de niveau, pose des rails périphériques, suspentes, montage des montants et pose des plaques, avec les exigences d’horizontabilité et d’entraxe. Sert de trame d’ossature et de rappel de la régularité exigée.",
+      "accessedAt": "2026-09-28"
+    }
+  ],
+  "tools": [
+    "Niveau laser ou niveau à bulle long, cordeau à tracer",
+    "Perceuse pour le perçage de la dalle",
+    "Visseuse et cisaill profiles",
+    "Échafaudage ou plateforme de travail stable",
+    "Lève-plaques ou aide humaine pour le levage"
+  ],
+  "materials": [
+    {
+      "name": "Rails et montants d’ossature métallique",
+      "quantity": "Périmètre de la pièce plus les montants à l’entraxe prescrit"
+    },
+    {
+      "name": "Suspentes et équerres de réglage",
+      "quantity": "Une tous les 1,20 m environ en surface"
+    },
+    {
+      "name": "Plaques de plâtre BA13",
+      "quantity": "Surface du plafond, plus 10 % pour les découpes"
+    },
+    {
+      "name": "Vis à métal pour plaques de plâtre",
+      "quantity": "Environ 20 à 25 vis par plaque"
+    },
+    {
+      "name": "Bande à joint et enduit",
+      "quantity": "Tous les joints, en rouleau de bande et deux passes d’enduit"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Trace la ligne de niveau et l’implantation",
+      "description": "Repère la hauteur finie sur les quatre murs avec le niveau laser ou le cordeau à tracer, en partant du point haut du plafond existant et en laissant la place aux gaines et aux spots. Contrôle que la dalle permet de percer là où seront les suspentes : le repérage des poutres et conduits se fait avant, pas après le premier trou. Marque l’entraxe des montants sur la ligne."
+    },
+    {
+      "title": "Fixe les rails périphériques",
+      "description": "Visse les rails de bord sur les murs le long de la ligne tracée, à l’aplomb et bien serrés, avec chevilles adaptées au support. Ce rail reçoit les bouts des montants et décide de la planéité du pourtour : un rail qui plonge fait onduler toute la pièce. Perce en respectant ce qui passe dans le mur : câbles et tuyaux se cherchent avant la cheville."
+    },
+    {
+      "title": "Pose les suspentes et règle la hauteur",
+      "description": "Fixe les suspentes dans la dalle à l’entraxe prévu, puis engages-les dans les montants et règle la hauteur à l’écrou de réglage. Vérifie au niveau laser le plan de montage : c’est ce réglage, et non les plaques, qui redresse le plafond. Les suspentes superflues se rabattent ou se coupent une fois le plan contrôlé."
+    },
+    {
+      "title": "Monte les montants et contrôle le plan",
+      "description": "Coupe les montants à la longueur, engage-les aux rails périphériques et visse-les aux suspentes. Passe le niveau dans les deux sens sur l’ensemble et rattrape les écarts au réglage des suspentes. Fixe un renfort de montants aux emplacements prévus pour une suspension : une plaque non doublée s’affaisse au premier poids."
+    },
+    {
+      "title": "Pose les plaques et visse à l’entraxe",
+      "description": "Leve les plaques à l’aide du lève-plaques ou à deux, en décalant les abouts, et visse toutes les 25 à 30 cm le long des montants, vis encastrée un millimètre sous le carton. Encastrer les spots dans le renfort prévu, jamais entre deux montants. Garde un jeu léger au mur : la plaque ne doit pas reprendre les efforts du bâtiment."
+    },
+    {
+      "title": "Bande, enduis et contrôle avant peinture",
+      "description": "Colle la bande à joint sur chaque about et vis, puis applique deux passes d’enduit en laissant sécher entre les passes et en ponçant doucement. Passe la main sur tous les joints à contre-jour : la moindre arête se voit sous la peinture blanche. Contrôle le niveau final et l’absence de plaque qui bouge avant de déclarer le plafond prêt."
+    }
+  ],
+  "mistakes": [
+    "Plancher sur l’œil au lieu du niveau laser : un faux plafond de travers se voit à la moindre lumière rasante et ne se rattrape pas une fois les joints faits.",
+    "Oublier les renforts sous les spots et les suspensions : la plaque se fissure en anneau autour de l’ouverture au premier chargement.",
+    "Visser trop près du bord ou avec la vis qui dépasse : le carton éclate, la vis traverse, et la tenue de la plaque au joint est perdue."
+  ],
+  "safety": [
+    "Travaille depuis un échafaudage ou une plateforme, jamais depuis une chaise : le levage des plaques à bout de bras se fait les pieds stables.",
+    "Fais repérer les réseaux dans la dalle avant perçage : un trou dans un câble ou un tuyau chauffant se paie à la reprise du plafond.",
+    "Ne soulève pas une plaque seul au-dessus de la tête : à deux ou au lève-plaques, la plaque se pose sans forcer les épaules."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-28"
+}
