@@ -33,7 +33,6 @@ Ces quatre points expliquent la forme du script ; ils ne se contournent pas.
 
 ```sh
 INSTAGRAM_ACCESS_TOKEN=…
-FACEBOOK_PAGE_ID=…          # facultatif, pour recopier sur la Page
 FACEBOOK_PAGE_TOKEN=…       # facultatif, jeton de Page (voir « La Page Facebook »)
 SITE_URL=https://wikibrico.fr # facultatif, c’est déjà la valeur par défaut
 ```
@@ -212,9 +211,8 @@ réserve est vide, est un commit de robot par jour (les deux visuels, quelques c
 de kilo-octets) et une à trois minutes d’attente de déploiement.
 
 `.github/workflows/instagram.yml` a besoin d’écrire dans le dépôt
-(`permissions: contents: write`, déjà en place) et de trois secrets de dépôt :
-`INSTAGRAM_ACCESS_TOKEN`, et les deux de la Page, `FACEBOOK_PAGE_ID` et
-`FACEBOOK_PAGE_TOKEN`.
+(`permissions: contents: write`, déjà en place) et de deux secrets de dépôt :
+`INSTAGRAM_ACCESS_TOKEN`, et `FACEBOOK_PAGE_TOKEN` pour la Page.
 
 Où le mettre, dans GitHub : l’onglet **Settings** du dépôt → **Secrets and variables**
 → **Actions** → section **Repository secrets** → **New repository secret**. Pour ce
@@ -239,8 +237,9 @@ Quand la Page est configurée, le script la publie lui-même : la même fiche pa
 Instagram (fil puis story) **et** sur la Page, avec le visuel du fil et une légende
 adaptée. Sur Facebook un lien est cliquable, donc la légende y écrit l’adresse en entier
 (`https://wikibrico.fr/tutoriel/<id>`) au lieu de renvoyer à la bio, qui n’existe pas de
-ce côté ; les hashtags restent. Si `FACEBOOK_PAGE_ID` ou `FACEBOOK_PAGE_TOKEN` manque, la
-Page est simplement ignorée, et rien ne change côté Instagram.
+ce côté ; les hashtags restent. Si `FACEBOOK_PAGE_TOKEN` manque, la Page est
+simplement ignorée, et rien ne change côté Instagram. Le jeton suffit : l’identifiant
+de la Page est lu dedans, et `FACEBOOK_PAGE_ID` ne sert qu’à la figer.
 
 ### Obtenir le jeton de Page
 
@@ -264,16 +263,37 @@ curl -s "https://graph.facebook.com/v25.0/oauth/access_token?grant_type=fb_excha
 curl -s "https://graph.facebook.com/v25.0/me/accounts?fields=id,name,access_token&access_token=<JETON_60J>"
 ```
 
-4. Recopier l’`id` de la Page dans `FACEBOOK_PAGE_ID` et son `access_token` dans
-   `FACEBOOK_PAGE_TOKEN`. Les deux valeurs vont aussi dans les secrets du dépôt, avec le
-   jeton Instagram. Un jeton de Page issu d’un jeton utilisateur longue durée ne se
-   périme pas tant que celui-ci vit : au bout de deux mois, refaire les étapes 2 à 4.
+4. Recopier l’`access_token` de la Page dans `FACEBOOK_PAGE_TOKEN`, et le mettre aussi
+   dans les secrets du dépôt, avec le jeton Instagram. L’identifiant n’est pas
+   nécessaire : un jeton de Page ne donne accès qu’à la sienne, et `pnpm instagram
+   --compte` le rappelle. Un jeton de Page issu d’un jeton utilisateur longue durée ne
+   se périme pas tant que celui-ci vit : au bout de deux mois, refaire les étapes 2 à 4.
 
 Vérifier les deux jetons d’un coup, sans rien publier :
 
 ```sh
 pnpm instagram --compte
 ```
+
+### Si `--compte` nomme ton profil et non la Page
+
+`pnpm instagram --compte` lit la Page **dans le jeton** : un jeton de Page ne donne accès
+qu’à la sienne, donc `/me` répond la Page. S’il répond ton nom de profil, le jeton est un
+**jeton utilisateur** — celui que le Graph API Explorer affiche en haut de la page. Trois
+causes, dans l’ordre où je les regarderais :
+
+1. **Ce n’est pas le jeton de la Page.** Générer le jeton dans l’Explorer avec
+   `pages_show_list`, `pages_read_engagement` et `pages_manage_posts`, puis demander
+   `GET /me/accounts?fields=id,name,access_token` : la réponse donne l’`id` de chaque Page
+   et **son propre** `access_token`. C’est cette valeur-là qu’il faut recopier, pas le
+   jeton utilisateur du haut de l’Explorer. Ce qu’un jeton a réellement obtenu se lit sur
+   `GET /me/permissions`.
+2. **Le compte Facebook n’a pas de rôle sur la Page.** `/me/accounts` renvoie alors une
+   liste vide, même avec les bonnes permissions : vérifie dans les paramètres de la Page
+   (Accès à la Page → Rôles) que le compte est bien administrateur.
+3. **La Page appartient à un portefeuille Business.** Les rôles se gèrent alors dans le
+   Business Manager, pas dans le tableau de bord développeur — le même piège que pour le
+   testeur Instagram.
 
 ### Quand une copie échoue
 

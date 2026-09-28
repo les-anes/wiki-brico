@@ -16,8 +16,8 @@
  *   - une légende n’a pas de lien cliquable : l’URL de la page est écrite en
  *     clair et renvoie vers la bio.
  *
- * Quand `FACEBOOK_PAGE_ID` et `FACEBOOK_PAGE_TOKEN` sont renseignés, la fiche
- * publiée est recopiée sur la Page Facebook dans la foulée. Le crossposting
+ * Quand `FACEBOOK_PAGE_TOKEN` est renseigné, la fiche publiée est recopiée sur la
+ * Page Facebook dans la foulée. Le crossposting
  * Instagram → Facebook n’existe qu’en application, jamais en API : la Page se
  * publie donc à part, avec une légende où le lien est écrit en entier, parce
  * que sur Facebook il est cliquable.
@@ -782,11 +782,33 @@ async function publierStory(compte, fiche) {
 // API de la Page Facebook
 // ---------------------------------------------------------------------------
 
-/** Identifiant et jeton de la Page, ou null si la Page n’est pas branchée. */
-function configPage() {
-  const id = process.env.FACEBOOK_PAGE_ID;
-  const valeur = process.env.FACEBOOK_PAGE_TOKEN;
-  return id && valeur ? { id, jeton: valeur } : null;
+/** Jeton de la Page, ou null si la Page n’est pas branchée. */
+function jetonPage() {
+  return process.env.FACEBOOK_PAGE_TOKEN || null;
+}
+
+/**
+ * Page visée : celle de `FACEBOOK_PAGE_ID` s’il est renseigné, sinon celle du
+ * jeton — un jeton de Page ne donne accès qu’à la sienne, donc il suffit, et le
+ * nom relu confirme où l’on publie. Résolu une seule fois par exécution.
+ */
+let pageMemoisee = null;
+async function pageVisee(valeur) {
+  if (pageMemoisee) return pageMemoisee;
+  const cible = process.env.FACEBOOK_PAGE_ID ?? "me";
+  const url = new URL(`${HOTE_PAGE}/${VERSION_PAGE}/${cible}`);
+  url.search = new URLSearchParams({ fields: "id,name", access_token: valeur });
+  const charge = await (await fetch(url)).json().catch(() => ({}));
+  if (!charge.id)
+    throw new Error(
+      `Page Facebook injoignable avec ce jeton : ${charge.error?.message ?? "réponse vide"} (voir docs/poster-sur-instagram.md).`,
+    );
+  pageMemoisee = {
+    id: String(charge.id),
+    nom: charge.name ?? null,
+    jeton: valeur,
+  };
+  return pageMemoisee;
 }
 
 /**
@@ -828,8 +850,9 @@ Options : --type tutoriels|calculateurs pour ne traiter qu’une famille, --hasa
 pour tirer une page au hasard parmi celles dont les visuels sont prêts.
 
 Variables d’environnement : INSTAGRAM_ACCESS_TOKEN (obligatoire pour publier),
-FACEBOOK_PAGE_ID et FACEBOOK_PAGE_TOKEN (pour la Page), INSTAGRAM_ACCOUNT_ID
-(facultatif), INSTAGRAM_GRAPH_VERSION, FACEBOOK_GRAPH_VERSION, SITE_URL.`;
+FACEBOOK_PAGE_TOKEN (pour la Page, l’identifiant est lu dans le jeton),
+INSTAGRAM_ACCOUNT_ID (facultatif), INSTAGRAM_GRAPH_VERSION,
+FACEBOOK_GRAPH_VERSION, SITE_URL.`;
 
 function lireArguments(argv) {
   const options = { sansStory: false };
@@ -952,14 +975,14 @@ async function commandeDryRun(fichiers, categorieDe, publies, options) {
       `\nVisuels manquants (${absents.join(", ")}) : lance pnpm instagram --media${options.only ? ` --only ${fiche.id}` : ""} puis déploie le site.`,
     );
   console.log(`\n— Légende —\n${legende(fiche, categorie)}\n`);
-  if (configPage()) {
+  if (jetonPage()) {
     console.log(`Page Facebook : ${urlPublique(nomImage(fiche.id, "fil"))}`);
     console.log(
       `\n— Légende de la Page —\n${legendeFacebook(fiche, categorie)}\n`,
     );
   } else
     console.log(
-      "Page Facebook non configurée : rien n’y sera publié (FACEBOOK_PAGE_ID, FACEBOOK_PAGE_TOKEN).\n",
+      "Page Facebook non branchée : rien n’y sera publié (FACEBOOK_PAGE_TOKEN).\n",
     );
   console.log("Rien n’a été publié (--dry-run).");
 }
@@ -1013,20 +1036,17 @@ async function commandeCompte() {
   console.log(
     `Jeton valide pour @${compte.username ?? "inconnu"} (compte ${compte.id}).`,
   );
-  const page = configPage();
-  if (!page) {
-    console.log(
-      "Page Facebook : non configurée (FACEBOOK_PAGE_ID, FACEBOOK_PAGE_TOKEN).",
-    );
+  const valeur = jetonPage();
+  if (!valeur) {
+    console.log("Page Facebook : pas de jeton (FACEBOOK_PAGE_TOKEN).");
     return;
   }
-  const url = new URL(`${HOTE_PAGE}/${VERSION_PAGE}/${page.id}`);
-  url.search = new URLSearchParams({
-    fields: "name",
-    access_token: page.jeton,
-  });
-  const charge = await reponseJson(await fetch(url), "Page Facebook");
-  console.log(`Page Facebook : ${charge.name ?? "sans nom"} (${page.id}).`);
+  const page = await pageVisee(valeur);
+  console.log(`Page Facebook : ${page.nom ?? "sans nom"} (${page.id}).`);
+  if (!process.env.FACEBOOK_PAGE_ID)
+    console.log(
+      "Si ce nom est celui de ton profil et non d’une Page, le jeton est un jeton utilisateur : prends celui de la Page dans la réponse de « GET /me/accounts » (voir docs/poster-sur-instagram.md). L’identifiant, lui, n’est pas nécessaire.",
+    );
 }
 
 /**
@@ -1034,11 +1054,12 @@ async function commandeCompte() {
  * le jeton de Page a pu expirer, ou la Page vient d’être branchée.
  */
 async function commandeFacebook(fichiers, categorieDe, etat, options) {
-  const page = configPage();
-  if (!page)
+  const valeur = jetonPage();
+  if (!valeur)
     throw new Error(
-      "La Page n’est pas configurée : renseigne FACEBOOK_PAGE_ID et FACEBOOK_PAGE_TOKEN (voir docs/poster-sur-instagram.md).",
+      "La Page n’est pas branchée : renseigne FACEBOOK_PAGE_TOKEN (voir docs/poster-sur-instagram.md).",
     );
+  const page = await pageVisee(valeur);
   const parId = new Map(fichiers.map((fiche) => [fiche.id, fiche]));
   const retard = options.only ? [options.only] : retardPage(etat);
   const ids =
@@ -1122,9 +1143,10 @@ async function commandePublish(fichiers, categorieDe, etat, options) {
         console.error(`  story non publiée : ${erreur.message}`);
       }
     }
-    const page = configPage();
-    if (page) {
+    const valeur = jetonPage();
+    if (valeur) {
       try {
+        const page = await pageVisee(valeur);
         const copie = await publierSurLaPage(page, fiche, categorie);
         etat[fiche.id].facebook = copie.post_id ?? copie.id;
         await ecrireEtat(etat);
