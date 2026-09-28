@@ -230,3 +230,8 @@ plus vide : l’isolation, l’assainissement et les extérieurs ont désormais 
 
 À rafraîchir quand des fiches sont ajoutées : un thème passe de la colonne des vides à
 celle des réalisés dès qu’une fiche le prend pour `topicPath`.
+
+## Known gaps
+
+- not done: les 9 couvertures du lot T57–T65 sont provisoires (SVG rastérisé) : régénérer les PNG définitifs avec l’outil imagegen puis les variantes WebP — les prompts de remplacement sont dans `docs/illustrations-tutoriels.md`.
+- unknown: aucun volume de recherche n’a été mesuré pour arbitrer le lot ; le choix repose sur des guides d’enseignes et médias de la rénovation consultés le 2026-09-28.
