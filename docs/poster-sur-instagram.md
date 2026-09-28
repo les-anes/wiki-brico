@@ -303,7 +303,11 @@ qu’à la sienne, donc `/me` répond la Page. S’il répond ton nom de profil,
   la Page (**Ajouter des actifs → Pages → Gérer la Page**). Ensuite `GET /me/accounts`
   doit lister la Page. `GET /me/businesses?fields=id,name` (permission
   `business_management`) nomme le portefeuille, et `GET /<portefeuille>/owned_pages?fields=id,name`
-  ses Pages.
+  ses Pages. Si Business Suite répond **« Cette application ne vous appartient pas »**,
+  c’est que l’application a été créée pour un autre projet : seules les applications dont
+  le portefeuille est propriétaire peuvent y être associées. Le dialogue propose alors
+  **Créer un nouvel ID d’application**, ce qui en donne une au portefeuille — c’est la
+  voie à suivre, et l’Instagram garde la sienne, inchangée.
 - **Le jeton d’utilisateur système**, pour ne plus jamais renouveler : Business Suite →
   **Paramètres → Utilisateurs → Utilisateurs système**, attribuer la Page en « Gérer la
   Page », puis **Générer un nouveau jeton** pour l’application avec `pages_manage_posts` et
