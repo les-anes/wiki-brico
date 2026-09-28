@@ -17,11 +17,13 @@
 - [x] 3.3 Écrire `remplacer-un-chauffe-eau.json`.
 - [x] 3.4 Contrôler `pnpm validate:data` sur les cinq fiches du lot B.
 
-## 4. Illustrations provisoires
+## 4. Illustrations
 
 - [x] 4.1 Produire les neuf PNG 1536×1024 et les 27 variantes WebP (480/720/960, qualité 82) dans `public/images/tutoriels/`.
 - [x] 4.2 Consigner les prompts de remplacement dans `docs/illustrations-tutoriels.md` et les sources PNG/prompts dans `output/imagegen/`.
 - [x] 4.3 Contrôler visuellement chaque couverture (sujet lisible, aucun texte, cadrage mobile).
+
+- [x] 4.4 Remplacer les neuf couvertures provisoires par des illustrations imagegen, renouveler les 27 WebP et les prompts, ajuster les textes alternatifs (demande du 28 septembre 2026).
 
 ## 5. Suivi et contrôles figés
 

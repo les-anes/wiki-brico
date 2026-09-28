@@ -125,6 +125,8 @@ Ces 18 fiches existaient à la création de cette liste. Elles ne sont pas des t
 
 ## Journal de mise à jour
 
+- **2026-09-28** : remplacement des neuf couvertures provisoires T57 à T65 par des illustrations originales générées avec imagegen intégré. PNG 1536×1024, 27 variantes WebP, textes alternatifs et prompts actualisés.
+
 - **2026-09-28** : lot **cent tutoriels** (T57 à T65), changement OpenSpec `lot-cent-tutoriels`. Neuf fiches nées d’un relevé de popularité et de couverture : isolation des combles et d’un mur par l’intérieur (catégorie isolation ouverte), terrasse en bois (extérieurs ouverts), récupérateur d’eau de pluie (assainissement ouvert), gouttières, plan de travail, réglage de fenêtre, faux plafond et remplacement de chauffe-eau (cinq thèmes vides servis). Le catalogue compte **100 tutoriels** ; les thèmes sans fiche passent de 56 à 47. Neuf illustrations provisoires avec prompts de remplacement consignés.
 
 
@@ -233,5 +235,4 @@ celle des réalisés dès qu’une fiche le prend pour `topicPath`.
 
 ## Known gaps
 
-- not done: les 9 couvertures du lot T57–T65 sont provisoires (SVG rastérisé) : régénérer les PNG définitifs avec l’outil imagegen puis les variantes WebP — les prompts de remplacement sont dans `docs/illustrations-tutoriels.md`.
 - unknown: aucun volume de recherche n’a été mesuré pour arbitrer le lot ; le choix repose sur des guides d’enseignes et médias de la rénovation consultés le 2026-09-28.
