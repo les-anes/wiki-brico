@@ -33,6 +33,8 @@ Ces quatre points expliquent la forme du script ; ils ne se contournent pas.
 
 ```sh
 INSTAGRAM_ACCESS_TOKEN=…
+FACEBOOK_PAGE_ID=…          # facultatif, pour recopier sur la Page
+FACEBOOK_PAGE_TOKEN=…       # facultatif, jeton de Page (voir « La Page Facebook »)
 SITE_URL=https://wikibrico.fr # facultatif, c’est déjà la valeur par défaut
 ```
 
@@ -105,13 +107,14 @@ testeur.
 
 ```sh
 pnpm instagram --plan                     # file d’attente, sans réseau
-pnpm instagram --compte                   # vérifie le jeton et nomme le compte
+pnpm instagram --compte                   # vérifie les jetons, nomme le compte et la Page
 pnpm instagram --dry-run                  # page, légende et URLs, sans publier
 pnpm instagram --media --limit 7          # visuels des 7 prochaines pages
 pnpm instagram --media --type calculateurs  # les neuf calculateurs d’un coup
 pnpm instagram --check                    # visuels de la page à venir en ligne ?
 pnpm instagram --check --attendre 10      # … en laissant 10 min à un déploiement
 pnpm instagram --publish                  # publie le post puis la story
+pnpm instagram --facebook                 # recopie sur la Page ce qui attend
 ```
 
 Options : `--only <id>` pour viser une page, `--limit <n>` pour en traiter plusieurs,
@@ -187,7 +190,8 @@ Les deux ne se ressemblent pas dans le fil, et c’est voulu :
 L’ordre est celui des sources : les tutoriels suivent `src/data/categories.json` puis
 leurs identifiants, les calculateurs suivent l’ordre du hub de `calculators.json`, et les
 deux alternent. `output/instagram/publications.json` note, pour chaque page sortie, la
-date, l’identifiant du post et celui de la story ; une page déjà présente est sautée,
+date, l’identifiant du post, celui de la story et celui de la copie sur la Page
+(`facebook`, `null` tant qu’elle n’est pas passée) ; une page déjà présente est sautée,
 qu’elle soit un tutoriel ou un calculateur. Supprime une ligne pour la remettre dans la
 file.
 
@@ -208,7 +212,9 @@ réserve est vide, est un commit de robot par jour (les deux visuels, quelques c
 de kilo-octets) et une à trois minutes d’attente de déploiement.
 
 `.github/workflows/instagram.yml` a besoin d’écrire dans le dépôt
-(`permissions: contents: write`, déjà en place) et d’un secret de dépôt :
+(`permissions: contents: write`, déjà en place) et de trois secrets de dépôt :
+`INSTAGRAM_ACCESS_TOKEN`, et les deux de la Page, `FACEBOOK_PAGE_ID` et
+`FACEBOOK_PAGE_TOKEN`.
 
 Où le mettre, dans GitHub : l’onglet **Settings** du dépôt → **Secrets and variables**
 → **Actions** → section **Repository secrets** → **New repository secret**. Pour ce
@@ -220,6 +226,76 @@ jobs qui déclarent un environnement de déploiement (ce n’est pas notre cas),
 *Organization secrets* vaut pour plusieurs dépôts, et c’est **Repository secrets**
 qu’il faut utiliser. L’onglet *Variables*, à côté de *Secrets*, convient aux valeurs en
 clair — le workflow lit `secrets.…`, donc le jeton va bien dans **Secrets**.
+
+## La Page Facebook
+
+Le réglage de crossposting d’Instagram (« Publier aussi sur Facebook ») ne s’applique
+qu’aux publications faites **depuis l’application** : l’API Content Publishing n’a aucun
+paramètre pour le déclencher, et `/<IG_ID>/media` ne connaît que `share_to_feed`, qui
+concerne le fil Instagram. Une publication d’API reste donc sur Instagram, quel que soit
+le réglage du compte.
+
+Quand la Page est configurée, le script la publie lui-même : la même fiche part sur
+Instagram (fil puis story) **et** sur la Page, avec le visuel du fil et une légende
+adaptée. Sur Facebook un lien est cliquable, donc la légende y écrit l’adresse en entier
+(`https://wikibrico.fr/tutoriel/<id>`) au lieu de renvoyer à la bio, qui n’existe pas de
+ce côté ; les hashtags restent. Si `FACEBOOK_PAGE_ID` ou `FACEBOOK_PAGE_TOKEN` manque, la
+Page est simplement ignorée, et rien ne change côté Instagram.
+
+### Obtenir le jeton de Page
+
+Le jeton Instagram ne donne accès à rien côté Facebook : il faut un jeton de **Page**,
+obtenu avec une connexion Facebook. Le compte qui autorise doit pouvoir publier sur la
+Page (tâche `CREATE_CONTENT`), et l’application doit pouvoir demander `pages_show_list`,
+`pages_read_engagement` et `pages_manage_posts`.
+
+1. Dans <https://developers.facebook.com/tools/explorer>, choisir l’application, puis
+   générer un jeton utilisateur avec ces trois permissions. En mode développement, ça
+   suffit pour ses propres Pages : pas d’App Review.
+2. Échanger ce jeton court contre un jeton utilisateur de **60 jours** :
+
+```sh
+curl -s "https://graph.facebook.com/v25.0/oauth/access_token?grant_type=fb_exchange_token&client_id=<APP_ID>&client_secret=<SECRET_APP>&fb_exchange_token=<JETON_COURT>"
+```
+
+3. Lire les Pages de ce compte, avec leurs jetons :
+
+```sh
+curl -s "https://graph.facebook.com/v25.0/me/accounts?fields=id,name,access_token&access_token=<JETON_60J>"
+```
+
+4. Recopier l’`id` de la Page dans `FACEBOOK_PAGE_ID` et son `access_token` dans
+   `FACEBOOK_PAGE_TOKEN`. Les deux valeurs vont aussi dans les secrets du dépôt, avec le
+   jeton Instagram. Un jeton de Page issu d’un jeton utilisateur longue durée ne se
+   périme pas tant que celui-ci vit : au bout de deux mois, refaire les étapes 2 à 4.
+
+Vérifier les deux jetons d’un coup, sans rien publier :
+
+```sh
+pnpm instagram --compte
+```
+
+### Quand une copie échoue
+
+Une copie ratée — jeton de Page périmé, Page injoignable — n’empêche pas la publication
+Instagram : le fil et la story partent, l’erreur s’affiche, et le champ `facebook` de la
+fiche reste `null`. C’est ce champ vide qui marque le retard : `pnpm instagram --plan` le
+rappelle, et
+
+```sh
+pnpm instagram --facebook              # tout ce qui attend
+pnpm instagram --facebook --only <id>  # une seule fiche
+```
+
+le rattrape. Le compte du retard part de la première copie réussie : les fiches sorties
+avant que la Page soit branchée, et celles du jour même de la mise en service, restent
+sur Instagram.
+
+```sh
+pnpm instagram --compte                       # 1. les deux jetons répondent ?
+pnpm instagram --dry-run --only <id>          # 2. relire les deux légendes
+pnpm instagram --facebook --only <id>         # 3. recopier une fiche déjà sortie
+```
 
 ## Ce que l’outil ne fait pas
 

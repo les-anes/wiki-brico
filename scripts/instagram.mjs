@@ -16,6 +16,12 @@
  *   - une légende n’a pas de lien cliquable : l’URL de la page est écrite en
  *     clair et renvoie vers la bio.
  *
+ * Quand `FACEBOOK_PAGE_ID` et `FACEBOOK_PAGE_TOKEN` sont renseignés, la fiche
+ * publiée est recopiée sur la Page Facebook dans la foulée. Le crossposting
+ * Instagram → Facebook n’existe qu’en application, jamais en API : la Page se
+ * publie donc à part, avec une légende où le lien est écrit en entier, parce
+ * que sur Facebook il est cliquable.
+ *
  * Rien de tout cela n’entre dans le site statique : ce script lit les fiches et
  * les outils et n’est jamais importé par l’application.
  *
@@ -24,6 +30,7 @@
  *   --dry-run           montre la page, la légende et les URLs, sans publier
  *   --media             fabrique les JPEG de `public/images/social/` (sharp)
  *   --publish           publie le post puis la story, et note l’état
+ *   --facebook          recopie sur la Page les fiches qui attendent
  * Options : --only <id>, --limit <n>, --type tutoriels|calculateurs,
  * --sans-story, --help */
 
@@ -49,6 +56,8 @@ const FICHIER_CALCULATEURS = new URL(
 const SITE = origine(process.env.SITE_URL ?? "https://wikibrico.fr");
 const VERSION_API = process.env.INSTAGRAM_GRAPH_VERSION ?? "v25.0";
 const HOTE_API = "https://graph.instagram.com";
+const VERSION_PAGE = process.env.FACEBOOK_GRAPH_VERSION ?? "v25.0";
+const HOTE_PAGE = "https://graph.facebook.com";
 /** L’API accepte 100 publications par 24 h ; au-delà, mieux vaut étaler. */
 const PLAFOND_QUOTIDIEN = 100;
 
@@ -168,22 +177,38 @@ export function reperes(fiche) {
   return morceaux.join(" · ");
 }
 
-/** Légende du post : accroche, description, repères, lien et hashtags. */
-export function legende(fiche, categorie, site = SITE) {
+/** Phrase qui dit ce que la page apporte, suivie de son adresse. */
+function phraseLien(fiche, adresse) {
+  return fiche.genre === "calculateur"
+    ? `Le calculateur, avec le détail du calcul : ${adresse}`
+    : `Le pas à pas illustré, étape par étape : ${adresse}`;
+}
+
+/** Corps commun aux deux réseaux : accroche, description, repères, puis lien. */
+function corpsLegende(fiche, categorie, lignesLien) {
   const lignes = [fiche.title.trim(), "", fiche.description.trim()];
   const ligneReperes = reperes(fiche);
   if (ligneReperes) lignes.push("", ligneReperes);
-  const adresse = adresseDe(fiche, site);
-  lignes.push(
-    "",
-    fiche.genre === "calculateur"
-      ? `Le calculateur, avec le détail du calcul : ${adresse}`
-      : `Le pas à pas illustré, étape par étape : ${adresse}`,
-    "Le lien est aussi dans la bio.",
-    "",
-    hashtags(fiche, categorie).join(" "),
-  );
+  lignes.push("", ...lignesLien, "", hashtags(fiche, categorie).join(" "));
   return lignes.join("\n");
+}
+
+/** Légende du post : accroche, description, repères, lien et hashtags. */
+export function legende(fiche, categorie, site = SITE) {
+  return corpsLegende(fiche, categorie, [
+    phraseLien(fiche, adresseDe(fiche, site)),
+    "Le lien est aussi dans la bio.",
+  ]);
+}
+
+/**
+ * Légende de la Page Facebook : le lien y est cliquable, donc écrit en entier,
+ * et sans renvoi à la bio, qui n’existe pas de ce côté.
+ */
+export function legendeFacebook(fiche, categorie, site = SITE) {
+  return corpsLegende(fiche, categorie, [
+    phraseLien(fiche, `https://${adresseDe(fiche, site)}`),
+  ]);
 }
 
 /** Mélange une liste, pour tirer une fiche au hasard au lieu de suivre l’ordre. */
@@ -209,6 +234,26 @@ export function fileDAttente(
   const ordonnees = hasard ? melanger(restantes, alea) : restantes;
   if (hasard) return ordonnees.slice(0, typeof limit === "number" ? limit : 1);
   return typeof limit === "number" ? ordonnees.slice(0, limit) : ordonnees;
+}
+
+/**
+ * Fiches sorties sur Instagram qui attendent leur copie sur la Page. Le retard se
+ * compte à partir de la première copie réussie : celles publiées avant que la
+ * Page soit branchée ne sont pas rattrapées, ni celles du jour même de la mise
+ * en service.
+ */
+export function retardPage(etat) {
+  const copies = Object.values(etat)
+    .filter((entree) => entree.facebook && entree.publieLe)
+    .map((entree) => entree.publieLe)
+    .toSorted();
+  if (copies.length === 0) return [];
+  const debut = copies[0];
+  return Object.entries(etat)
+    .filter(
+      ([, entree]) => entree.fil && !entree.facebook && entree.publieLe > debut,
+    )
+    .map(([id]) => id);
 }
 
 /** Ordre du catalogue : catégories puis fiches, comme sur le site. */
@@ -734,6 +779,36 @@ async function publierStory(compte, fiche) {
 }
 
 // ---------------------------------------------------------------------------
+// API de la Page Facebook
+// ---------------------------------------------------------------------------
+
+/** Identifiant et jeton de la Page, ou null si la Page n’est pas branchée. */
+function configPage() {
+  const id = process.env.FACEBOOK_PAGE_ID;
+  const valeur = process.env.FACEBOOK_PAGE_TOKEN;
+  return id && valeur ? { id, jeton: valeur } : null;
+}
+
+/**
+ * Recopie le visuel du fil sur la Page : une seule requête, Facebook télécharge
+ * l’URL lui-même, comme Meta pour Instagram. La légende y porte le lien en
+ * entier, et l’illustration garde sa description pour les lecteurs d’écran.
+ */
+async function publierSurLaPage(page, fiche, categorie) {
+  const url = new URL(`${HOTE_PAGE}/${VERSION_PAGE}/${page.id}/photos`);
+  const reponse = await fetch(url, {
+    method: "POST",
+    body: new URLSearchParams({
+      url: urlPublique(nomImage(fiche.id, "fil")),
+      caption: legendeFacebook(fiche, categorie),
+      alt_text_custom: String(fiche.imageAlt ?? fiche.title).slice(0, 1000),
+      access_token: page.jeton,
+    }),
+  });
+  return reponseJson(reponse, "Page Facebook (photos)");
+}
+
+// ---------------------------------------------------------------------------
 // Commandes
 // ---------------------------------------------------------------------------
 
@@ -747,12 +822,14 @@ les calculateurs, un pour un.
   pnpm instagram --check [--only <id>]      visuels de la page à venir en ligne ?
   pnpm instagram --check --attendre 10      … en laissant 10 min à un déploiement
   pnpm instagram --publish [--only <id>] [--limit <n>] [--sans-story]
+  pnpm instagram --facebook [--only <id>]   copie sur la Page des fiches qui attendent
 
 Options : --type tutoriels|calculateurs pour ne traiter qu’une famille, --hasard
 pour tirer une page au hasard parmi celles dont les visuels sont prêts.
 
 Variables d’environnement : INSTAGRAM_ACCESS_TOKEN (obligatoire pour publier),
-INSTAGRAM_ACCOUNT_ID (facultatif), INSTAGRAM_GRAPH_VERSION, SITE_URL.`;
+FACEBOOK_PAGE_ID et FACEBOOK_PAGE_TOKEN (pour la Page), INSTAGRAM_ACCOUNT_ID
+(facultatif), INSTAGRAM_GRAPH_VERSION, FACEBOOK_GRAPH_VERSION, SITE_URL.`;
 
 function lireArguments(argv) {
   const options = { sansStory: false };
@@ -767,6 +844,7 @@ function lireArguments(argv) {
     else if (argument === "--attendre")
       options.attendre = Number(argv[++index]);
     else if (argument === "--publish") options.commande = "publish";
+    else if (argument === "--facebook") options.commande = "facebook";
     else if (argument === "--help" || argument === "-h")
       options.commande = "aide";
     else if (argument === "--sans-story") options.sansStory = true;
@@ -821,6 +899,11 @@ async function commandePlan(fichiers, publies, options) {
   const restantes = attente.length - 1;
   if (restantes > 0)
     console.log(`\n${restantes} autres suivront. Rien n’a été publié.`);
+  const retard = retardPage(publies);
+  if (retard.length > 0)
+    console.log(
+      `\n${retard.length} fiche(s) attendent leur copie sur la Page : pnpm instagram --facebook.`,
+    );
 }
 
 /**
@@ -869,6 +952,15 @@ async function commandeDryRun(fichiers, categorieDe, publies, options) {
       `\nVisuels manquants (${absents.join(", ")}) : lance pnpm instagram --media${options.only ? ` --only ${fiche.id}` : ""} puis déploie le site.`,
     );
   console.log(`\n— Légende —\n${legende(fiche, categorie)}\n`);
+  if (configPage()) {
+    console.log(`Page Facebook : ${urlPublique(nomImage(fiche.id, "fil"))}`);
+    console.log(
+      `\n— Légende de la Page —\n${legendeFacebook(fiche, categorie)}\n`,
+    );
+  } else
+    console.log(
+      "Page Facebook non configurée : rien n’y sera publié (FACEBOOK_PAGE_ID, FACEBOOK_PAGE_TOKEN).\n",
+    );
   console.log("Rien n’a été publié (--dry-run).");
 }
 
@@ -921,6 +1013,62 @@ async function commandeCompte() {
   console.log(
     `Jeton valide pour @${compte.username ?? "inconnu"} (compte ${compte.id}).`,
   );
+  const page = configPage();
+  if (!page) {
+    console.log(
+      "Page Facebook : non configurée (FACEBOOK_PAGE_ID, FACEBOOK_PAGE_TOKEN).",
+    );
+    return;
+  }
+  const url = new URL(`${HOTE_PAGE}/${VERSION_PAGE}/${page.id}`);
+  url.search = new URLSearchParams({
+    fields: "name",
+    access_token: page.jeton,
+  });
+  const charge = await reponseJson(await fetch(url), "Page Facebook");
+  console.log(`Page Facebook : ${charge.name ?? "sans nom"} (${page.id}).`);
+}
+
+/**
+ * Recopie sur la Page les fiches sorties sur Instagram qui attendent leur copie :
+ * le jeton de Page a pu expirer, ou la Page vient d’être branchée.
+ */
+async function commandeFacebook(fichiers, categorieDe, etat, options) {
+  const page = configPage();
+  if (!page)
+    throw new Error(
+      "La Page n’est pas configurée : renseigne FACEBOOK_PAGE_ID et FACEBOOK_PAGE_TOKEN (voir docs/poster-sur-instagram.md).",
+    );
+  const parId = new Map(fichiers.map((fiche) => [fiche.id, fiche]));
+  const retard = options.only ? [options.only] : retardPage(etat);
+  const ids =
+    typeof options.limit === "number" ? retard.slice(0, options.limit) : retard;
+  if (ids.length === 0) {
+    console.log("Rien à recopier : la Page a toutes les fiches déjà sorties.");
+    return;
+  }
+  let copiees = 0;
+  for (const id of ids) {
+    const entree = etat[id];
+    const fiche = parId.get(id);
+    if (!entree || !fiche) {
+      console.log(`  ${id} : ignorée, elle n’est pas sortie sur Instagram.`);
+      continue;
+    }
+    try {
+      const copie = await publierSurLaPage(page, fiche, categorieDe(fiche));
+      entree.facebook = copie.post_id ?? copie.id;
+      // Écrit après chaque copie : une coupure ne fait pas republier la Page.
+      await ecrireEtat(etat);
+      copiees += 1;
+      console.log(`  ${fiche.title} — post ${entree.facebook}`);
+    } catch (erreur) {
+      console.error(`  ${id} : ${erreur.message}`);
+    }
+  }
+  console.log(
+    `\n${copiees} fiche(s) recopiée(s) sur la Page. État : output/instagram/publications.json — committe-le.`,
+  );
 }
 
 async function commandePublish(fichiers, categorieDe, etat, options) {
@@ -958,21 +1106,34 @@ async function commandePublish(fichiers, categorieDe, etat, options) {
       publieLe: new Date().toISOString().slice(0, 10),
       fil: post.id,
       story: null,
+      facebook: null,
     };
     // Écrit après chaque étape : une coupure ne fait pas republier le fil.
     await ecrireEtat(etat);
     if (options.sansStory) {
       console.log(`  post ${post.id} publié.`);
-      publiees += 1;
-      continue;
+    } else {
+      try {
+        const story = await publierStory(compte.id, fiche);
+        etat[fiche.id].story = story.id;
+        await ecrireEtat(etat);
+        console.log(`  post ${post.id}, story ${story.id} publiés.`);
+      } catch (erreur) {
+        console.error(`  story non publiée : ${erreur.message}`);
+      }
     }
-    try {
-      const story = await publierStory(compte.id, fiche);
-      etat[fiche.id].story = story.id;
-      await ecrireEtat(etat);
-      console.log(`  post ${post.id}, story ${story.id} publiés.`);
-    } catch (erreur) {
-      console.error(`  story non publiée : ${erreur.message}`);
+    const page = configPage();
+    if (page) {
+      try {
+        const copie = await publierSurLaPage(page, fiche, categorie);
+        etat[fiche.id].facebook = copie.post_id ?? copie.id;
+        await ecrireEtat(etat);
+        console.log(`  Page Facebook : post ${etat[fiche.id].facebook}.`);
+      } catch (erreur) {
+        console.error(
+          `  Page Facebook non publiée : ${erreur.message}\n  « pnpm instagram --facebook » rattrapera cette copie.`,
+        );
+      }
     }
     publiees += 1;
   }
@@ -996,6 +1157,8 @@ async function main(argv) {
   if (options.commande === "check")
     return commandeVerifier(fichiers, etat, options);
   if (options.commande === "compte") return commandeCompte();
+  if (options.commande === "facebook")
+    return commandeFacebook(fichiers, categorieDe, etat, options);
   return commandePublish(fichiers, categorieDe, etat, options);
 }
 

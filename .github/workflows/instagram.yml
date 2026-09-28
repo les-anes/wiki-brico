@@ -75,8 +75,21 @@ jobs:
         env:
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
           INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
           SITE_URL: https://wikibrico.fr
         run: pnpm instagram --publish --limit ${{ github.event.inputs.nombre || 1 }} ${{ github.event.inputs.sansStory == 'true' && '--sans-story' || '' }}
+
+      # Le jeton de Page peut périmer sans que rien ne casse côté Instagram : ce
+      # passage recopie les fiches qui attendent, et ne fait pas échouer le job.
+      - name: Rattraper la Page Facebook
+        if: always()
+        continue-on-error: true
+        env:
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
+          SITE_URL: https://wikibrico.fr
+        run: pnpm instagram --facebook
 
       # La publication a pu s’interrompre : l’état est écrit après chaque étape,
       # donc on enregistre ce qui a été publié, même en cas d’échec plus haut.

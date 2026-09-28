@@ -13,11 +13,13 @@ import {
   fileDAttente,
   hashtags,
   legende,
+  legendeFacebook,
   melanger,
   motDeCategorie,
   nomDeDomaine,
   nomImage,
   reperes,
+  retardPage,
   svgStory,
   trierFiches,
   urlPublique,
@@ -302,4 +304,53 @@ test("le calque de story contient le titre échappé, le domaine et la catégori
   );
   assert(svg.includes("Agencement"));
   assert.equal(echapperXml('<a href="x">'), "&lt;a href=&quot;x&quot;&gt;");
+});
+
+test("la légende de la Page écrit le lien en entier, sans renvoi à la bio", () => {
+  const texte = legendeFacebook(
+    ficheExemple,
+    "Finitions",
+    "https://wikibrico.fr",
+  );
+  assert(
+    texte.includes("https://wikibrico.fr/tutoriel/peindre-un-plafond"),
+    "sur Facebook, le lien est cliquable : il s’écrit avec son schéma",
+  );
+  assert.equal(
+    texte.includes("dans la bio"),
+    false,
+    "une Page n’a pas de bio vers laquelle renvoyer",
+  );
+  assert(
+    texte.endsWith("#peinture #rouleau #finitions #bricolage #tuto #wikibrico"),
+    "les hashtags suivent, comme sur Instagram",
+  );
+  const outil = legendeFacebook(
+    outilExemple,
+    "Finitions",
+    "https://wikibrico.fr",
+  );
+  assert(outil.includes("https://wikibrico.fr/calculateurs/calpinage"));
+  assert(outil.includes("Le calculateur, avec le détail du calcul"));
+});
+
+test("le retard de la Page se compte depuis la première copie réussie", () => {
+  assert.deepEqual(
+    retardPage({}),
+    [],
+    "sans copie réussie, aucun retard ne se compte : les fiches sorties avant la Page restent sur Instagram",
+  );
+  assert.deepEqual(retardPage({ a: { fil: "1", publieLe: "2026-09-26" } }), []);
+  const etat = {
+    ancienne: { fil: "1", publieLe: "2026-09-26" },
+    jourMeme: { fil: "2", publieLe: "2026-09-28", facebook: "p2" },
+    avant: { fil: "3", publieLe: "2026-09-28" },
+    ratee: { fil: "4", publieLe: "2026-09-29" },
+    jamaisSortie: { fil: null, publieLe: "2026-09-29" },
+  };
+  assert.deepEqual(
+    retardPage(etat),
+    ["ratee"],
+    "le jour de la mise en service et avant ne sont pas rattrapés, une ficelle jamais sortie non plus",
+  );
 });
