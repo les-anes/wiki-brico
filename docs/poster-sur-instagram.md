@@ -244,32 +244,43 @@ de la Page est lu dedans, et `FACEBOOK_PAGE_ID` ne sert qu’à la figer.
 ### Obtenir le jeton de Page
 
 Le jeton Instagram ne donne accès à rien côté Facebook : il faut un jeton de **Page**,
-obtenu avec une connexion Facebook. Le compte qui autorise doit pouvoir publier sur la
-Page (tâche `CREATE_CONTENT`), et l’application doit pouvoir demander `pages_show_list`,
-`pages_read_engagement` et `pages_manage_posts`.
+obtenu avec une connexion Facebook. Un jeton de Page n’existe que si le compte Facebook
+qui le demande a un rôle sur cette Page : c’est la seule condition vraiment bloquante, et
+elle se règle dans Facebook, pas dans la console développeur.
 
-1. Dans <https://developers.facebook.com/tools/explorer>, choisir l’application, puis
-   générer un jeton utilisateur avec ces trois permissions. En mode développement, ça
-   suffit pour ses propres Pages : pas d’App Review.
-2. Échanger ce jeton court contre un jeton utilisateur de **60 jours** :
+1. **Vérifier le rôle, et trouver l’identifiant de la Page.** Dans l’application
+   Facebook : **Menu → Pages → la Page → Paramètres → Accès à la Page → Rôles**. Le compte
+   doit y figurer comme **administrateur** (ou avoir accès aux contenus). L’identifiant de
+   la Page se lit sur la Page, dans **À propos → Transparence de la Page**. Si la Page
+   appartient à un **portefeuille Business**, c’est dans le Business Manager que le compte
+   doit l’avoir en tant qu’actif : ça ne se règle pas depuis la Page elle-même.
+2. **Générer un jeton utilisateur** dans
+   <https://developers.facebook.com/tools/explorer>, en choisissant l’application et en
+   cochant `pages_show_list`, `pages_read_engagement` et `pages_manage_posts`. En mode
+   développement, ça suffit pour ses propres Pages : pas d’App Review. Le menu déroulant
+   « User or Page » de l’Explorer liste les Pages sur lesquelles le compte a un rôle :
+   s’il n’en affiche aucune, l’étape 1 est à reprendre, inutile de continuer.
+3. **Échanger ce jeton court contre un jeton utilisateur de 60 jours.** L’ordre compte :
+   un jeton de Page tiré d’un jeton court ne vit qu’une heure ou deux.
 
 ```sh
 curl -s "https://graph.facebook.com/v25.0/oauth/access_token?grant_type=fb_exchange_token&client_id=<APP_ID>&client_secret=<SECRET_APP>&fb_exchange_token=<JETON_COURT>"
 ```
 
-3. Lire les Pages de ce compte, avec leurs jetons :
+4. **Lire les Pages de ce compte, avec leurs jetons.** `tasks` dit ce que le compte a le
+   droit d’y faire : la réponse doit contenir `CREATE_CONTENT`.
 
 ```sh
-curl -s "https://graph.facebook.com/v25.0/me/accounts?fields=id,name,access_token&access_token=<JETON_60J>"
+curl -s "https://graph.facebook.com/v25.0/me/accounts?fields=id,name,tasks,access_token&access_token=<JETON_60J>"
 ```
 
-4. Recopier l’`access_token` de la Page dans `FACEBOOK_PAGE_TOKEN`, et le mettre aussi
-   dans les secrets du dépôt, avec le jeton Instagram. L’identifiant n’est pas
-   nécessaire : un jeton de Page ne donne accès qu’à la sienne, et `pnpm instagram
-   --compte` le rappelle. Un jeton de Page issu d’un jeton utilisateur longue durée ne
-   se périme pas tant que celui-ci vit : au bout de deux mois, refaire les étapes 2 à 4.
+5. **Recopier l’`access_token` de la Page** dans `FACEBOOK_PAGE_TOKEN`, et dans les
+   secrets du dépôt (`Settings → Secrets and variables → Actions`). L’identifiant n’est
+   pas nécessaire : un jeton de Page ne donne accès qu’à la sienne. Un jeton de Page issu
+   d’un jeton utilisateur longue durée ne se périme pas tant que celui-ci vit : au bout de
+   deux mois, refaire les étapes 2 à 5.
 
-Vérifier les deux jetons d’un coup, sans rien publier :
+Vérifier sans rien publier — la réponse doit nommer la **Page**, pas le profil :
 
 ```sh
 pnpm instagram --compte
@@ -279,21 +290,22 @@ pnpm instagram --compte
 
 `pnpm instagram --compte` lit la Page **dans le jeton** : un jeton de Page ne donne accès
 qu’à la sienne, donc `/me` répond la Page. S’il répond ton nom de profil, le jeton est un
-**jeton utilisateur** — celui que le Graph API Explorer affiche en haut de la page. Trois
-causes, dans l’ordre où je les regarderais :
+**jeton utilisateur** — celui que l’Explorer affiche en haut de la page.
 
-1. **Ce n’est pas le jeton de la Page.** Générer le jeton dans l’Explorer avec
-   `pages_show_list`, `pages_read_engagement` et `pages_manage_posts`, puis demander
-   `GET /me/accounts?fields=id,name,access_token` : la réponse donne l’`id` de chaque Page
-   et **son propre** `access_token`. C’est cette valeur-là qu’il faut recopier, pas le
-   jeton utilisateur du haut de l’Explorer. Ce qu’un jeton a réellement obtenu se lit sur
-   `GET /me/permissions`.
-2. **Le compte Facebook n’a pas de rôle sur la Page.** `/me/accounts` renvoie alors une
-   liste vide, même avec les bonnes permissions : vérifie dans les paramètres de la Page
-   (Accès à la Page → Rôles) que le compte est bien administrateur.
-3. **La Page appartient à un portefeuille Business.** Les rôles se gèrent alors dans le
-   Business Manager, pas dans le tableau de bord développeur — le même piège que pour le
-   testeur Instagram.
+- **`GET /me/accounts` renvoie `{"data":[]}`** : ce compte n’a de rôle sur aucune Page,
+  quelles que soient les permissions accordées (`GET /me/permissions` les liste). Reprendre
+  l’étape 1 : soit le rôle manque, soit la Page est dans un portefeuille Business où il
+  faut la rattacher au compte.
+- **Le portefeuille Business.** `GET /me/businesses?fields=id,name` (permission
+  `business_management`) nomme les portefeuilles du compte, et
+  `GET /<portefeuille>/owned_pages?fields=id,name` leurs Pages ; le jeton de l’une se
+  demande ensuite sur `GET /<page-id>?fields=access_token`. Pour un jeton qui ne périme
+  pas, le Business Manager sait aussi créer des **utilisateurs système** : c’est fait pour
+  un robot, et ça évite de refaire l’échange tous les deux mois.
+- **Aucune Page du tout.** Si le compte n’a pas de Page et que le crossposting visait un
+  profil personnel, l’API ne peut rien y publier : Graph n’expose plus d’endpoint pour
+  publier sur un profil. Il faut créer une Page et y brancher l’Instagram, ou continuer à
+  dupliquer les publications à la main dans Business Suite.
 
 ### Quand une copie échoue
 
