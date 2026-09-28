@@ -16,6 +16,79 @@ Variantes utiles, à ajouter au cas par cas :
 
 Fichiers : `public/images/tutoriels/<id>.png` en 1536×1024, plus les variantes `-480`, `-720` et `-960` en WebP qualité 82. Le prompt réellement utilisé est conservé dans `output/imagegen/<id>.txt` et recopié ci-dessous dans la section de son lot.
 
+## Lot cent tutoriels — 28 septembre 2026
+
+Les neuf couvertures du lot T57 à T65 sont des **illustrations provisoires** produites
+dans l’environnement de rédaction (SVG rastérisé en PNG 1536×1024), faute d’outil de
+génération d’images. Elles respectent le contrat du projet : fond ivoire, formes plates,
+aucun texte, `imageOrigin: "original"` et variantes WebP 480, 720 et 960 en qualité 82.
+Sources PNG et prompts dans `output/imagegen/`. Chaque prompt ci-dessous permet de
+régénérer la couverture définitive sans toucher à la fiche.
+
+### isoler-ses-combles-perdus
+
+Fichier : `public/images/tutoriels/isoler-ses-combles-perdus.png`
+
+```text
+Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Vue de trois quarts sur un plancher de comble : un rouleau de laine déroulé entre deux solives en bois, un mètre ruban et un cutter posés à côté. Bois brut et laine claire uniquement, pas de personne, pas de texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
+```
+### isoler-un-mur-par-l-interieur
+
+Fichier : `public/images/tutoriels/isoler-un-mur-par-l-interieur.png`
+
+```text
+Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Coupe rapprochée d’un mur doublé : montants métalliques verticaux, panneau isolant posé entre eux et plaque de plâtre prête à fixer. Aucune personne, aucun texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
+```
+### poser-une-terrasse-en-bois
+
+Fichier : `public/images/tutoriels/poser-une-terrasse-en-bois.png`
+
+```text
+Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Trois lames de terrasse en bois alignées sur deux lambourdes, une visseuse posée dessus, une lame à mi-distance pour montrer la pose. Bois naturel uniquement, pas de jardin ni de personne, aucun texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
+```
+### installer-un-recuperateur-d-eau-de-pluie
+
+Fichier : `public/images/tutoriels/installer-un-recuperateur-d-eau-de-pluie.png`
+
+```text
+Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Une cuve de récupération d’eau de pluie grise posée sur son socle, raccordée à une descente de gouttière par un coude, avec son robinet en bas. Pas de maison ni de personne, aucun texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
+```
+### nettoyer-ses-gouttieres
+
+Fichier : `public/images/tutoriels/nettoyer-ses-gouttieres.png`
+
+```text
+Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Une gouttière en métal garnie de feuilles mortes, une main gantée qui les décroche, un seau posé sur une planche en dessous. Personne visible jusqu’à la main seulement, aucun texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
+```
+### poser-un-plan-de-travail
+
+Fichier : `public/images/tutoriels/poser-un-plan-de-travail.png`
+
+```text
+Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Un plan de travail en stratifié posé sur deux meubles de cuisine, avec une découpe d’évier déjà réalisée et un robinet courbé à côté. Aucune personne, aucun texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
+```
+### regler-une-fenetre-qui-ferme-mal
+
+Fichier : `public/images/tutoriels/regler-une-fenetre-qui-ferme-mal.png`
+
+```text
+Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Une fenêtre blanche entrebâillée vue de face, deux paumelles métalliques sur le cadre et un tournevis à poignée rouge engagé dans une vis de réglage. Aucune personne, aucun texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
+```
+### poser-un-faux-plafond
+
+Fichier : `public/images/tutoriels/poser-un-faux-plafond.png`
+
+```text
+Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Une ossature de faux plafond : rail fixé en haut, montants suspendus, et une plaque de plâtre inclinée que l’on lève vers l’ossature. Aucune personne, aucun texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
+```
+### remplacer-un-chauffe-eau
+
+Fichier : `public/images/tutoriels/remplacer-un-chauffe-eau.png`
+
+```text
+Illustration originale WikiBrico, format paysage 1536 × 1024. Dessin au crayon et à la gouache, formes simplifiées, traits irréguliers et fond ivoire clair. Un ballon d’eau chaude blanc mural avec ses deux arrivées d’eau en haut, et un seau de vidange bleu posé en dessous. Aucune personne, aucun texte, chiffre, logo, flèche, légende ou filigrane. Pas de photoréalisme.
+```
+
 ## Remplacement des 42 couvertures de la liste — 17 septembre 2026
 
 Les 42 tutoriels réalisés depuis `docs/tutos-a-implementer.md` disposent de nouvelles illustrations générées avec l’outil intégré imagegen et contrôlées visuellement. Ces images remplacent notamment les couvertures provisoires mentionnées dans l’historique ci-dessous. Sources PNG et prompts dans `output/imagegen/`, PNG publiés en 1536×1024 et variantes WebP 480, 720 et 960 pixels à qualité 82. Les textes alternatifs sont ajustés aux images retenues.
