@@ -1,0 +1,83 @@
+{
+  "id": "regler-une-fenetre-qui-ferme-mal",
+  "title": "Régler une fenêtre qui ferme mal",
+  "description": "Poignée dure, battant qui frotte ou air qui passe : une fenêtre mal fermée se règle le plus souvent aux paumelles et à la crémone. Voici comment diagnostiquer puis reprendre les réglages sans remplacer la menuiserie.",
+  "category": "menuiseries",
+  "topicPath": ["Fenêtres"],
+  "tags": ["fenêtre", "charnière"],
+  "relatedTutorials": [
+    "remplacer-le-joint-d-une-fenetre",
+    "raboter-une-porte-qui-frotte",
+    "regler-une-porte-de-placard"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 90,
+  "cost": null,
+  "image": "/images/tutoriels/regler-une-fenetre-qui-ferme-mal.png",
+  "imageAlt": "Une paumelle de fenêtre en métal visée sur le cadre, un tournevis plat engagé dans sa vis de réglage et le battant entrebâillé, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Fenêtre à ouvrant oscillo-battant, PVC, bois ou alu, dont le battant touche le cadre, dont la poignée résiste ou dont le test de feuille révèle un jeu irrégulier. Hors remplacement de vitrage, de crémone ou de joint, hors cadre déformé au point de toucher en travers, hors volet roulant et hors fenêtre de toit.",
+  "estimatesNote": "Compte une heure pour une fenêtre : diagnostic, réglages puis essais, un ouvrant à la fois. Le réglage ne coûte rien en matériel, seule une vis de rechange peut être utile si une visse est évidée.",
+  "sources": [
+    {
+      "title": "Store2000 — Réparer le mécanisme de fermeture d’une fenêtre",
+      "url": "https://store2000.fr/blog/comment-reparer-mecanisme-fermeture-fenetre-tout-savoir/",
+      "note": "Rappelle le rôle des composants (crémone, paumelles, poignée, gâches), les causes de déréglage (usure, manipulation brutale, mauvais réglage initial, déformation du cadre) et la méthode de diagnostic avant toute pièce de remplacement. Sert au diagnostic et au vocabulaire des pièces.",
+      "accessedAt": "2026-09-28"
+    }
+  ],
+  "tools": [
+    "Tournevis plat et cruciforme adaptés aux vis de réglage",
+    "Clé Allen si les paumelles en sont équipées",
+    "Feuille de papier A4 pour le test d’étanchéité",
+    "Crayon pour repérer les points de frottement"
+  ],
+  "materials": [
+    {
+      "name": "Graisse technique ou vaseline pour mécanismes",
+      "quantity": "Une petite quantité, pour les points de friction"
+    },
+    {
+      "name": "Vis de rechange du même pas",
+      "quantity": "Quelques unes, si une vis de réglage est évidée"
+    },
+    {
+      "name": "Chiffon propre",
+      "quantity": "Pour nettoyer les rainures de la crémone avant réglage"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Identifie le symptôme précis",
+      "description": "Ouvre et ferme lentement en observant : la poignée force-t-elle à mi-course, le battant touche-t-il un coin du cadre, ou la fermeture est-elle molle sans butée ? Passe la feuille de papier entre le battant et le cadre à chaque zone, en fermant sur elle : le papier qui résiste marque le point de contact, le papier qui glisse partout marque un jeu. Le diagnostic guide le réglage, il ne se devine pas."
+    },
+    {
+      "title": "Reprends les vis des paumelles",
+      "description": "Repère les vis de réglage des paumelles : une vis axiale fait monter ou descendre le battant, une vis latérale le rapproche ou l’écarte du cadre. Tourne d’un quart ou d’un demi-tour seulement, puis referme et refais le test de la feuille. Un réglage se lit par petites touches : un quart de tour déjà déplace le battant visiblement."
+    },
+    {
+      "title": "Ajuste la gâche et la crémone côté poignée",
+      "description": "Si la poignée force à la fermeture, observe la languette de la gâche : elle entre souvent de travers dans son écusson. Desserre l’écusson, recale-le pour que la languette entre plein, puis resserre. Nettoie la rainure de la crémone du chiffon avant de graisser légèrement les pièces mobiles, sans excès : le surplus ramène la poussière."
+    },
+    {
+      "title": "Contrôle l’appui sur tout le pourtour",
+      "description": "Referme sur la feuille de papier le long des quatre côtés : la traction doit être comparable partout. Si un angle tire plus fort, reprends la paumelle de ce côté seulement. Vérifie la ligne du battant à l’œil, alignée avec le cadre, avant de resserrer toute vis à fond."
+    },
+    {
+      "title": "Teste la poignée et le verrouillage en conditions réelles",
+      "description": "Ouvre et ferme dix fois d’affilée : la poignée doit tomber seule en butée, sans à-coup ni bruit métallique. Verrouille puis déverrouille pour sentir l’entrée du pêne dans la gâche. Une poignée qui reste dure après réglage signale une crémone usée : c’est une pièce à remplacer, pas un réglage à forcer."
+    }
+  ],
+  "mistakes": [
+    "Forcer la poignée au lieu de regarder où ça coince : la manivelle de crémone casse, et la fenêtre ne se ferme plus du tout.",
+    "Tourner toutes les vis à la fois : le battant part de travers et le diagnostic initial ne veut plus rien dire.",
+    "Graisser à excès les mécanismes : la graisse accumule la poussière et transforme un réglage correct en poignée qui colle."
+  ],
+  "safety": [
+    "Ne travaille pas en équilibre sur un appui de fenêtre : règle la fenêtre depuis l’intérieur, pieds sur le sol.",
+    "Ne démonte pas la crémone en position ouverte sans tenir le battant : une fois la vis retirée, le battant pivote d’un coup.",
+    "N’ajuste pas une fenêtre dont le cadre est déformé ou fissuré : la limite du réglage est atteinte quand le cadre bouge, et le constat se fait avant, pas en forçant."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-28"
+}

@@ -1,0 +1,96 @@
+{
+  "id": "isoler-un-mur-par-l-interieur",
+  "title": "Isoler un mur par l’intérieur",
+  "description": "Un mur paroi froide refroidit la pièce et salit les angles de fenêtre. Voici comment poser un doublage isolant sur ossature métallique pour gagner en confort thermique sans toucher à la façade.",
+  "category": "isolation",
+  "topicPath": ["Murs"],
+  "tags": ["isolation"],
+  "relatedTutorials": [
+    "isoler-ses-combles-perdus",
+    "monter-une-petite-cloison-en-placo",
+    "lisser-un-mur"
+  ],
+  "difficulty": "Intermédiaire",
+  "durationMinutes": 480,
+  "cost": null,
+  "image": "/images/tutoriels/isoler-un-mur-par-l-interieur.png",
+  "imageAlt": "Une section de mur doublée : montants métalliques vissés dans le mur, panneau isolant gris entre les montants et plaque de plâtre prête à poser, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Doublage isolant sur ossature métallique vissée dans un mur intérieur sain et porteur, en pièce de vie. Hors murs humides ou friables, hors isolation par l’extérieur, hors cloison complète avec traversée de réseaux, et hors murs dont le support craque ou se déforme.",
+  "estimatesNote": "Compte deux journées pour un mur de 3 m sur 2,4 m à deux : ossature, isolant, parement puis joints. Le budget dépend surtout de l’épaisseur d’isolant retenue ; le doublage vissé ajoute une épaisseur au mur et un coût de plaque en plus de l’isolant.",
+  "sources": [
+    {
+      "title": "Selectra — Isolation des murs intérieurs",
+      "url": "https://selectra.info/energie/renovation-energetique/isolation/murs-interieurs",
+      "note": "Compare les isolants employés en doublage intérieur (laine de verre, ouate de cellulose, polyuréthane) avec leurs épaisseurs courantes et leurs contraintes d’humidité, et rappelle que le choix dépend du support et de la pièce. Sert au choix du matériau et aux limites d’humidité.",
+      "accessedAt": "2026-09-28"
+    }
+  ],
+  "tools": [
+    "Visseuse et mèche béton",
+    "Niveau à bulle ou niveau laser",
+    "Mètre, crayon et fil à plomb",
+    "Cutter et règle métallique",
+    "Scie à métaux ou scie à onglet"
+  ],
+  "materials": [
+    {
+      "name": "Montants et rails d’ossature métallique",
+      "quantity": "Hauteur du mur en montants, plus deux rails de longueur"
+    },
+    {
+      "name": "Panneaux ou rouleaux d’isolant adapté au doublage",
+      "quantity": "Surface du mur, à l’épaisseur choisie entre montants"
+    },
+    {
+      "name": "Plaques de plâtre pour parement",
+      "quantity": "Surface du mur"
+    },
+    {
+      "name": "Vis à béton et chevilles adaptées au support",
+      "quantity": "Un tous les 40 cm environ le long des rails"
+    },
+    {
+      "name": "Bande à joint et enduit de rebouchage",
+      "quantity": "Pour les joints et vis du parement"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Vérifie le mur et trace l’ossature",
+      "description": "Tape le mur à la main : un enduit qui sonne creux ou des fissures qui bougent mettent le chantier en pause tant que la cause n’est pas traitée. Trace au niveau les rails haut et bas, à la ligne, en laissant l’isolant épouser le mur sans le plaquer. Relève la planéité du mur : c’est elle qui décide de l’écart entre l’ossature et le support."
+    },
+    {
+      "title": "Visse les rails dans le mur",
+      "description": "Pose le rail haut et le rail bas, percer, cheviller, visser : un rail desserré se traduit en jonction creuse sur toute la hauteur. Mets une bande de feutre ou de mousse entre le rail et un support irrégulier si besoin, pour que le métal ne résonne pas et que l’ossature repose franc."
+    },
+    {
+      "title": "Place les montants à l’entraxe de l’isolant",
+      "description": "Scie les montants à la hauteur utile et visse-les aux rails avec une entraxe légèrement inférieure à la largeur de l’isolant : le matériau reste coincé de lui-même et ne glisse pas. Vérifie le level de chaque montant avant de serrer, sinon le parement suivra la courbe."
+    },
+    {
+      "title": "Glisse l’isolant entre les montants",
+      "description": "Introduis l’isolant panneau par panneau ou déroulé, en épousant le support sans l’écraser et sans laisser de creux derrière. Autour des prises et interrupteurs, découpe à la cutter pour que l’isolant contourne la boîte au lieu de la comprimer, et garde les gaines dégagées."
+    },
+    {
+      "title": "Pose le parement et refais les joints",
+      "description": "Visse les plaques de plâtre dans les montants, vis encastrée sous la surface, en décalant les abouts des plaques. Mets les bandes à joint puis deux passes d’enduit, en laissant sécher entre chaque. Garde les plaques à distance du sol d’un centimètre pour qu’elles ne boivent pas l’eau de lavage."
+    },
+    {
+      "title": "Contrôle la continuité et la planéité",
+      "description": "Passe la main le long des joints et des angles : aucune crevasse, aucune plaque qui bouge. Vérifie que les prises restent alignées avec le parement et que les obturateurs se vissent. Contrôle au niveau un dernier passage avant de peindre, car c’est le dernier moment où la correction reste simple."
+    }
+  ],
+  "mistakes": [
+    "Poser l’isolant en le comprimant contre un mur bosselé : les zones tassées isolent moins et repoussent la plaque, qui ondule une fois jointe.",
+    "Oublier les prises et les gaines : une boîte enfouie dans l’isolant sans dégagement ne se raccorde pas correctement et oblige à casser le parement.",
+    "Monter l’ossature sur un mur humide ou un enduit qui s’effrite : l’humidité reste piégée derrière le parement et l’ensemble se dégrade en quelques mois."
+  ],
+  "safety": [
+    "Fais couper l’électricité des circuits concernés avant d’ouvrir une boîte : le doublage passe toujours à côté d’une arrivée, jamais dessus.",
+    "Traite la cause d’un mur humide ou d’une fissure évolutive avant tout doublage : tant que l’eau entre, aucun isolant ne tient.",
+    "Porte masque et lunettes lors de la découpe des plaques et de l’isolant : les poussières de plâtre et de fibre irritent immédiatement."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-28"
+}

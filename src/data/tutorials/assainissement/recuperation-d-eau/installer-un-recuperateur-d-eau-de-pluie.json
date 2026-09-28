@@ -1,0 +1,96 @@
+{
+  "id": "installer-un-recuperateur-d-eau-de-pluie",
+  "title": "Installer un récupérateur d’eau de pluie",
+  "description": "Une cuve reliée à la gouttière stocke l’eau de pluie pour l’arrosage et le nettoyage. Voici comment choisir l’emplacement, raccorder la descente et mettre la cuve en eau sans laisser l’eau stagnante.",
+  "category": "assainissement",
+  "topicPath": ["Récupération d’eau"],
+  "tags": ["eau de pluie", "gouttière"],
+  "relatedTutorials": [
+    "nettoyer-ses-gouttieres",
+    "poser-une-terrasse-en-bois",
+    "creer-une-prise-de-terre"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 240,
+  "cost": null,
+  "image": "/images/tutoriels/installer-un-recuperateur-d-eau-de-pluie.png",
+  "imageAlt": "Une cuve de récupération d’eau de pluie posée sur son socle, reliée au déversoir d’une gouttière par un tuyau, avec un robinet à sa base, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Cuve aérienne posée sur son socle, raccordée à une descente de gouttière existante par un diverticule avec trop-plein et filtre, pour l’arrosage et le nettoyage extérieur. Hors cuve enterrée, hors alimentation domestique en eau potable, hors forage, pompe immergée ou traitement de l’eau.",
+  "estimatesNote": "Compte une demi-journée à deux : implantation, découpe de la descente, raccordement et mise en eau. Le budget se lit en kit complet (cuve, socle, kit de raccordement) ; la cuve la plus grande n’est pas la meilleure si la gouttière qui l’alimente reste petite.",
+  "sources": [
+    {
+      "title": "Atout Loisir — Installer un récupérateur d’eau de pluie, guide complet",
+      "url": "https://www.atoutloisir.com/blog/installer-recuperateur-eau-de-pluie-guide-complet/",
+      "note": "Décrit le choix de l’emplacement et du support, le raccordement à la gouttière avec déversoir et filtre, l’installation sans gouttière, la mise en eau et l’entretien (moustiques, débordement, capacité). Sert d’ordre de chantier et de liste des pièces du raccordement.",
+      "accessedAt": "2026-09-28"
+    }
+  ],
+  "tools": [
+    "Scie à métaux ou scie égoïne et coupe-tube",
+    "Niveau à bulle",
+    "Mètre et crayon",
+    "Tournevis et clé plate pour les raccords",
+    "Seau et chiffon pour la mise en eau"
+  ],
+  "materials": [
+    {
+      "name": "Cuve de récupération avec socle et couvercle",
+      "quantity": "Une, dimensionnée à la surface de toiture qui l’alimente"
+    },
+    {
+      "name": "Kit de raccordement à la gouttière (diverticule, filtre, tuyau)",
+      "quantity": "Un kit correspondant au diamètre de la descente"
+    },
+    {
+      "name": "Trop-plein et raccord de trop-plein",
+      "quantity": "Un, évacué vers le réseau d’eaux pluviales ou le jardin"
+    },
+    {
+      "name": "Robinet de vidange avec raccord",
+      "quantity": "Un, monté à la base de la cuve"
+    },
+    {
+      "name": "Bac de décantation ou filtre à panier",
+      "quantity": "Un, entre la descente et la cuve"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Choisis l’emplacement et calcule le volume",
+      "description": "Pose la cuve près d’un point d’eau et à proximité du mur qui l’alimente, sur un sol plat et non creusant. Calcule le volume utile à la surface de toiture qui draine vers la descente : une grande cuve mal alimentée reste vide, une petite cuve bien placée se remplit à chaque pluie. Garde l’accès au robinet et au bac de filtrage dégagé en toute saison."
+    },
+    {
+      "title": "Monte la cuve sur son socle de niveau",
+      "description": "Pose le socle sur un sol bien tassé, éventuellement sur une dalle ou des pavés, puis contrôle le niveau dans les deux sens : la cuve pleine pèse lourd et un socle qui tasse fait basculer l’ensemble. Visse ou cale selon le modèle pour que le fond repose partout, sinon la paroi travaille de travers."
+    },
+    {
+      "title": "Découpe la descente et pose le diverticule",
+      "description": "Coupe la descente de gouttière à la hauteur prévue et insère le diverticule qui bascule l’eau vers la cuve, avec le filtre en amont pour retenir les feuilles. Vérifie la pente du tuyau d’alimentation : l’eau doit tomber gravitairement, sans coude inutile ni creux où l’eau reste. Le filtre doit rester accessible pour être vidé."
+    },
+    {
+      "title": "Raccorde le trop-plein et le robinet de vidange",
+      "description": "Fixe le trop-plein en haut de cuve et évacue-le vers le jardin ou le réseau pluvial, jamais contre la façade ni vers la fondation. Monte le robinet de vidange à la base avec son joint, en laissant la place de placer un seau dessous. Tous les raccords se serrent à la main plus un quart de tour, pas à la clé en force."
+    },
+    {
+      "title": "Remplis la cuve et teste les niveaux",
+      "description": "Ouvre l’arrivée, laisse remplir et observe : le filtre s’écoule, le trop-plein déborde vers sa sortie quand la cuve est pleine, le robinet coule sans fuiter. Fais un essai au seau en bouchant la sortie du diverticule pour vérifier le basculement. Corrige tout coulage avant de laisser la cuve seul une semaine."
+    },
+    {
+      "title": "Protège l’eau et note l’entretien",
+      "description": "Garde le couvercle fermé pour empêcher les moustiques et la lumière, et vide le bac de filtrage à chaque saison de feuilles. Prévois la vidange de nettoyage une fois par an, avant l’hiver si le gel est possible chez toi. Note la date de mise en service et la capacité sur le couvercle : cela évite de deviner au printemps suivant."
+    }
+  ],
+  "mistakes": [
+    "Oublier le trop-plein ou l’évacuer contre la fondation : à la première grosse pluie, l’eau revient au mur et remonte dans la maison.",
+    "Poser la cuve sur un socle non nivelé : le poids à plein tire la cuve de côté, le raccord se desserre et la paroi se fissure.",
+    "Laisser la cuve ouverte ou sans filtre : les moustiques s’y installent et les feuilles pourrissent au fond en quelques semaines."
+  ],
+  "safety": [
+    "Ne remplis jamais la cuve avant d’avoir vérifié le socle : une cuve de plusieurs centaines de litres vide se bascule, remplie elle ne se rattrape pas.",
+    "Ne raccorde pas cette eau à un robinet d’eau potable : elle reste réservée à l’arrosage et au nettoyage, comme l’indique le raccordement physique avec un déversoir.",
+    "Vide et nettoie la cuve en te tenant hors du bassin, avec des chaussures non glissantes sur un sol mouillé."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-28"
+}

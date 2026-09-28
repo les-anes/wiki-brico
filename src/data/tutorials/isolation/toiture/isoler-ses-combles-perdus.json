@@ -1,0 +1,94 @@
+{
+  "id": "isoler-ses-combles-perdus",
+  "title": "Isoler ses combles perdus",
+  "description": "Les combles perdus laissent partir jusqu’à un tiers de la chaleur d’une maison. Voici comment poser un isolant en rouleaux sur le plancher de comble pour couvrir la surface en une journée, sans matériel spécialisé.",
+  "category": "isolation",
+  "topicPath": ["Toiture"],
+  "tags": ["isolation", "toiture"],
+  "relatedTutorials": [
+    "isoler-un-mur-par-l-interieur",
+    "nettoyer-les-bouches-de-vmc",
+    "poser-un-faux-plafond"
+  ],
+  "difficulty": "Débutant",
+  "durationMinutes": 300,
+  "cost": null,
+  "image": "/images/tutoriels/isoler-ses-combles-perdus.png",
+  "imageAlt": "Un rouleau de laine déroulé entre deux solives de comble, un mètre ruban et un cutter posés à côté, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Combles perdus accessibles par une trappe, plancher de comble porteur, pose d’un isolant en rouleaux posé librement entre les solives. Hors combles aménagés ou perdus à souffler, hors isolation par soufflage, hors reprise de la ventilation et des points électriques encastrés dans le plancher.",
+  "estimatesNote": "Compte une journée pour 40 m² à deux, la découpe et les alentours des points sensibles compris. Le budget se lit au mètre carré d’isolant acheté en rouleaux ; l’épaisseur retenue selon la résistance visée change le prix, pas le temps de pose.",
+  "sources": [
+    {
+      "title": "Bricolage Zone — Comment isoler ses combles soi-même",
+      "url": "https://bricolage-zone.com/comment-isoler-ses-combles-soi-meme/",
+      "note": "Rappelle que les combles mal isolés représentent jusqu’à 30 % des déperditions d’une maison individuelle (donnée ADEME) et détaille la pose en rouleaux sur plancher de comble : préparation, découpe, épaisseur et erreurs fréquentes. Sert au cadrage du chantier et à la liste des précautions.",
+      "accessedAt": "2026-09-28"
+    },
+    {
+      "title": "Travaux.com — Isolation des combles : 6 règles d’or",
+      "url": "https://www.travaux.com/isolation/articles/reussir-son-isolation-de-combles",
+      "note": "Donne la résistance thermique minimale en rénovation pour les combles perdus (R ≥ 7 m².K/W), le prix au mètre carré et le fait que la pose soi-même reste possible sur combles perdus accessibles. Sert de repère de performance et de budget.",
+      "accessedAt": "2026-09-28"
+    }
+  ],
+  "tools": [
+    "Mètre ruban ou décamètre",
+    "Cutter à lame neuve et règle droite",
+    "Genouillères et lampe frontale",
+    "Masque anti-poussières et gants",
+    "Échelle d’accès à la trappe"
+  ],
+  "materials": [
+    {
+      "name": "Rouleaux d’isolant pour combles perdus",
+      "quantity": "Surface du plancher de comble, avec la largeur de la laize qui couvre l’entraxe des solives"
+    },
+    {
+      "name": "Ruban adhésif large pour isolant",
+      "quantity": "Longueur des jonctions entre deux rouleaux"
+    },
+    {
+      "name": "Disques de découpe ou cartons de protection",
+      "quantity": "Un par point sensible traversant le plancher"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Mesure la surface et choisis l’épaisseur",
+      "description": "Mesure le plancher de comble hors encombrements et calcule la surface à couvrir. En rénovation, le repère de performance pour des combles perdus est une résistance d’au moins 7 m².K/W, soit souvent 20 cm ou plus selon l’isolant : lis la fiche du rouleau pour convertir en épaisseur. Ajoute 5 % de déchet pour les découpes."
+    },
+    {
+      "title": "Prépare le plancher et repère les points sensibles",
+      "description": "Dégage le plancher, aspire la poussière et repère tout ce qui traverse : cheminée, arrivée d’évier, spots, câbles, trappe. Couvre les zones autour d’une source de chaleur avec un disque de découpe : l’isolant reste à distance, jamais au contact. Mets la lampe frontale et les genouillères avant d’entrer."
+    },
+    {
+      "title": "Déroule la première couche entre les solives",
+      "description": "Déroule le rouleau dans le sens de la longueur, entre les solives, en serrant l’isolant sans le comprimer : un rouleau tassé ou laissé en creux isole moins que sa valeur annoncée. Taille à la cutter sur une règle les découpes autour des obstacles, en gardant l’isolant au contact du support sans le plaquer."
+    },
+    {
+      "title": "Continue en recouvrant les jonctions",
+      "description": "Passe au rouleau suivant bord à bord, puis colmate chaque jonction avec le ruban large : tout passage d’air entre deux bandes crée un pont thermique qui annule la couche. Entre deux rangées, décale les abouts plutôt que de les aligner sur la même ligne de solives."
+    },
+    {
+      "title": "Protège les passages et garde les accès",
+      "description": "Repeins ou recouvre les sorties de câbles et garde dégagés les bords de trappe, les grilles de ventilation et l’accès au tableau : on doit pouvoir poser un pied sans marcher sur l’isolant ni sur les câbles. Rabats proprement les lisières pour que rien ne dépasse au-dessus de la trappe."
+    },
+    {
+      "title": "Contrôle l’épaisseur et la continuité",
+      "description": "Fais le tour des combles à la frontale : aucune bande creuse, aucun jonction ouverte, aucune zone oubliée près des murs. Vérifie que la ventilation des combles reste dégagée et que l’isolant ne bouche aucune sortie. Note l’épaisseur posée et la marque de l’isolant pour la suite des travaux."
+    }
+  ],
+  "mistakes": [
+    "Comprimer l’isolant pour le faire tenir dans l’entraxe : l’épaisseur perdue se paie en performance, et le rouleau reprend mal une fois tassé.",
+    "Coller l’isolant contre une cheminée, un conduit ou un spot encastré : la source de chaleur doit rester dégagée d’un disque de protection, pas entourée de laine.",
+    "Boucher la ventilation des combles ou marcher sur les câbles en sortant : le plancher de comble n’est pas un plan de circulation, et l’isolant ne se piétine pas."
+  ],
+  "safety": [
+    "Descends la trappe sur une échelle stable, en trois points d’appui, et ne saute jamais du bord de la trappe : la plupart des accidents de comble se jouent à l’entrée.",
+    "Ne travaille pas près d’une installation électrique sous tension : fais couper l’alimentation des points traversants avant d’y passer la main, et ne referme rien sans avoir vérifié l’absence de câble nu.",
+    "Porte masque, gants et lunettes : les poussières d’isolant et les échardes de solive irritent les voies respiratoires et les mains en quelques minutes."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-28"
+}

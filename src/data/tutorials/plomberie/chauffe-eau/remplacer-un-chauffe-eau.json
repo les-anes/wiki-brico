@@ -1,0 +1,92 @@
+{
+  "id": "remplacer-un-chauffe-eau",
+  "title": "Remplacer un chauffe-eau électrique",
+  "description": "Quand le ballon ne chauffe plus ou fuit au fond, le changer soi-même est un chantier d’une demi-journée. Voici la séquence complète : consignation, vidange, dépose, remontage du nouveau ballon et remise en service.",
+  "category": "plomberie",
+  "topicPath": ["Chauffe-eau"],
+  "tags": ["chauffe-eau", "électricité"],
+  "relatedTutorials": [
+    "dimensionnement-plomberie",
+    "ajouter-un-contacteur-jour-nuit",
+    "verifier-la-mise-a-la-terre"
+  ],
+  "difficulty": "Avancé",
+  "durationMinutes": 360,
+  "cost": null,
+  "image": "/images/tutoriels/remplacer-un-chauffe-eau.png",
+  "imageAlt": "Un ballon d’eau chaude blanc suspendu à ses pattes de fixation, avec un tuyau d’arrivée d’eau et un seau de vidange posés en dessous, à la gouache sur fond ivoire.",
+  "imageOrigin": "original",
+  "scope": "Remplacement à identique d’un chauffe-eau électrique vertical mural, même capacité et même implantation, dans une installation existante en bon état. Hors modification du tableau électrique ou du calibre du disjoncteur, hors pose d’un ballon horizontal ou au sol, hors nouvelle arrivée d’eau, hors remplacement du groupe de sécurité et hors travail sur la VMC.",
+  "estimatesNote": "Compte une demi-journée à deux pour la dépose et la remontée, vidange et mise en eau comprises. Le budget principal est le ballon neuf : le reste (joint, flexible, anodes éventuelles) pèse peu mais se vérifie avant de remonter, une fois le vieux ballon sorti.",
+  "sources": [
+    {
+      "title": "Selectra — Changer son chauffe-eau : les étapes",
+      "url": "https://selectra.info/energie/renovation-energetique/chauffe-eau/changer",
+      "note": "Décrit la séquence complète en sept temps : disjoncter le ballon, le vidanger, le débrancher, déposer la cuve, installer et raccorder le nouveau, puis la mise en service, avec la durée (4 à 6 heures) et les prérequis d’équipement. Sert d’ordre de chantier et de repère de durée.",
+      "accessedAt": "2026-09-28"
+    }
+  ],
+  "tools": [
+    "Clé à molette ou clé à tuyau pour les raccords",
+    "Clé plate pour le purgeur et les flexibles",
+    "Tournevis et multimètre pour la consignation",
+    "Seau et tuyau souple pour la vidange",
+    "Diabolo ou chaîne de levage selon le poids du ballon"
+  ],
+  "materials": [
+    {
+      "name": "Ballon de remplacement de même capacité et hauteur",
+      "quantity": "Un, avec ses pattes de fixation et son anode fournie"
+    },
+    {
+      "name": "Joints neufs et flexibles d’arrivée d’eau",
+      "quantity": "Un jeu complet, jamais repris de l’ancien ballon"
+    },
+    {
+      "name": "Groupe de sécurité neuf si l’ancien est encrassé",
+      "quantity": "Un, du même débit que l’ancien"
+    },
+    {
+      "name": "Anode de protection",
+      "quantity": "Une, à remplacer à chaque changement de ballon"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Consigne l’électricité et coupe l’eau",
+      "description": "Descends au tableau, ouvre le disjoncteur du chauffe-eau et marque le calibre ou le cadenas pour que personne ne le rétablisse en cours de chantier. Vérifie l’absence de tension au multimètre sur les bornes du ballon avant de toucher quoi que ce soit : ce test se fait, il ne se suppose pas. Ferme ensuite l’arrivée d’eau froide au robinet d’arrêt du ballon."
+    },
+    {
+      "title": "Vide le ballon par la vidange",
+      "description": "Raccorde un tuyau au purgeur ou à la vanne de vidange du bas et fais descendre l’autre bout dans un seau ou un caniveau, puis ouvre. Sors progressivement l’eau chaude restante : vide le ballon à froid, jamais sous pression ni à chaud. Ouvre un robinet d’eau chaude en amont pour laisser rentrer l’air, sinon la cuve vide fait le vide et ne se vide plus."
+    },
+    {
+      "title": "Dépose l’ancien ballon",
+      "description": "Débranche le bloc électrique en dévissant le cache bornes, en repérant l’ordre des conducteurs sur une photo avant de toucher. Dévisse les raccords d’eau froide et chaude, repère l’état du groupe de sécurité, puis détache les pattes. Aide à deux pour descendre la cuve pleine d’eau : elle pèse encore son poids, même vidangée."
+    },
+    {
+      "title": "Prépare l’implantation du nouveau",
+      "description": "Contrôle l’état du mur, la hauteur des pattes et la planéité du support neuf : un ballon mal accroché travaille sur ses fixations pendant dix ans. Nettoie les raccords d’arrivée et vérifie que le groupe de sécurité et le robinet d’arrêt restent manœuvrables. Garde l’ordre des couleurs électrique identique à la photo prise à l’étape 3."
+    },
+    {
+      "title": "Monte le nouveau ballon et raccorde l’eau",
+      "description": "Suspends la cuve sur ses pattes, avec le diabolo ou la chaîne si le poids l’exige, puis raccorde l’eau froide avec un joint neuf en veillant au sens du groupe de sécurité. Raccorde l’eau chaude et le tuyau de trop-plein vers le sol. Ne serre qu’à la main plus un quart de tour sur les joints neufs : forcer un joint neuf le défonce."
+    },
+    {
+      "title": "Remets sous tension et fais la mise en eau",
+      "description": "Rebranche le bloc électrique dans l’ordre repéré, referme le cache bornes, puis ouvre l’arrivée d’eau : laisse le ballon se remplir en purgant l’air au groupe de sécurité jusqu’à ce que l’eau coule sans bulle. Contrôle l’absence de fuite à chaque raccord, rétablis le disjoncteur et vérifie la chauffe au bout d’une heure. Note la date et le modèle sur le ballon."
+    }
+  ],
+  "mistakes": [
+    "Ouvrir un raccord ou débrancher le bloc avant d’avoir testé l’absence de tension et coupé l’eau : le ballon reste sous pression et sous courant jusqu’au dernier moment.",
+    "Réutiliser les anciens joints et flexibles : c’est au remontage que l’ancienne usure produit la première fuite, quelques heures après la remise en service.",
+    "Remonter sans purger l’air au groupe de sécurité : le ballon se remplit mal, la résistance chauffe à vide et le disjoncteur saute."
+  ],
+  "safety": [
+    "La consignation électrique se vérifie au multimètre avant toute manipulation des bornes : tant que l’absence de tension n’est pas constatée, le cache reste fermé.",
+    "Ne romps jamais la vidange sur un ballon sous pression : ouvre le robinet d’arrêt et dépressurise avant de dévisser le purgeur.",
+    "Prévois l’aide d’une seconde personne pour la descente et la remontée de la cuve : un ballon de 50 litres plein dépasse aisément ce qu’on porte seul en hauteur."
+  ],
+  "status": "documented",
+  "updatedAt": "2026-09-28"
+}
