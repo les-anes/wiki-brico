@@ -310,7 +310,11 @@ qu’à la sienne, donc `/me` répond la Page. S’il répond ton nom de profil,
   voie à suivre, et l’Instagram garde la sienne, inchangée. Vérifie aussi, dans le
   sélecteur de portefeuille de Business Suite, que tu travailles bien dans **celui qui
   détient la Page** : deux portefeuilles homonymes cohabitent facilement, et le bon est
-  celui dont le compteur d’éléments professionnels n’est pas à zéro.
+  celui dont le compteur d’éléments professionnels n’est pas à zéro. Enfin, dans la fiche
+  de la Page, l’**ID** affiché en haut est celui de la Page : la liste des Pages montre
+  souvent une ligne voisine pour le compte Instagram, et son identifiant ne répond pas
+  sur `/<page-id>` — la requête renvoie alors « does not exist, cannot be loaded due to
+  missing permissions ».
 - **Le jeton d’utilisateur système**, pour ne plus jamais renouveler : Business Suite →
   **Paramètres → Utilisateurs → Utilisateurs système**, attribuer la Page en « Gérer la
   Page », puis **Générer un nouveau jeton** pour l’application avec `pages_manage_posts` et
