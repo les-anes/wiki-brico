@@ -827,7 +827,17 @@ async function publierSurLaPage(page, fiche, categorie) {
       access_token: page.jeton,
     }),
   });
-  return reponseJson(reponse, "Page Facebook (photos)");
+  try {
+    return await reponseJson(reponse, "Page Facebook (photos)");
+  } catch (erreur) {
+    // Meta répond « publish_actions » quand la cible est un profil : c’est le
+    // symptôme d’un jeton utilisateur, et le seul cas où ce message arrive.
+    throw /publish_actions/.test(erreur.message)
+      ? new Error(
+          `la cible est un profil, pas une Page (${erreur.message}). FACEBOOK_PAGE_TOKEN doit être le jeton d’une Page — ou renseigne FACEBOOK_PAGE_ID, l’identifiant de la Page, à côté du jeton (voir docs/poster-sur-instagram.md).`,
+        )
+      : erreur;
+  }
 }
 
 // ---------------------------------------------------------------------------
