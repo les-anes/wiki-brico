@@ -33,7 +33,11 @@ const fakeDocument = {
 Object.assign(globalThis, {
   window: fakeWindow,
   document: fakeDocument,
-  location: { origin: "https://wikibrico.fr", pathname: "/tutoriels/" },
+  location: {
+    origin: "https://wikibrico.fr",
+    hostname: "wikibrico.fr",
+    pathname: "/tutoriels/",
+  },
 });
 
 /** Chaque appel gtag est un tuple poussé dans dataLayer. */
@@ -67,6 +71,15 @@ test("refus : rien n’est chargé et la mesure reste éteinte", () => {
   trackPage("tutoriels");
   assert.equal(fakeWindow.gtag, undefined, "aucun gtag après refus");
   assert.equal(scripts.length, 0, "aucun script après refus");
+});
+
+test("hors domaine de production : acceptation sans effet", () => {
+  // Régression main (fix(analytics)) : previews et localhost ne mesurent pas.
+  (location as { hostname: string }).hostname = "preview.netlify.app";
+  applyConsent("granted", MEASUREMENT_ID);
+  assert.equal(fakeWindow.gtag, undefined, "aucun gtag hors wikibrico.fr");
+  assert.equal(scripts.length, 0, "aucun script hors wikibrico.fr");
+  (location as { hostname: string }).hostname = "wikibrico.fr";
 });
 
 test("acceptation : consent default refus puis accord, script chargé après load", () => {
