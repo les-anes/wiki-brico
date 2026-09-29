@@ -243,10 +243,12 @@ de la Page est lu dedans, et `FACEBOOK_PAGE_ID` ne sert qu’à la figer.
 
 ### Obtenir le jeton de Page
 
-Le jeton Instagram ne donne accès à rien côté Facebook : il faut un jeton de **Page**,
-obtenu avec une connexion Facebook. Un jeton de Page n’existe que si le compte Facebook
-qui le demande a un rôle sur cette Page : c’est la seule condition vraiment bloquante, et
-elle se règle dans Facebook, pas dans la console développeur.
+Le jeton Instagram ne donne accès à rien côté Facebook : il faut un jeton d’accès
+Facebook. Un jeton de Page n’existe que si le compte qui le demande a un rôle sur cette
+Page : c’est la seule condition vraiment bloquante, et elle se règle dans Facebook, pas
+dans la console développeur. Le script se contente d’**un seul jeton d’accès** : celui de
+la Page, ou celui d’une personne qui l’administre — dans ce second cas, il demande à la
+Page le sien à chaque exécution, et il n’y a donc que le jeton d’accès à renouveler.
 
 1. **Vérifier le rôle, et trouver l’identifiant de la Page.** Dans l’application
    Facebook : **Menu → Pages → la Page → Paramètres → Accès à la Page → Rôles**. Le compte
@@ -261,36 +263,41 @@ elle se règle dans Facebook, pas dans la console développeur.
    « User or Page » de l’Explorer liste les Pages sur lesquelles le compte a un rôle :
    s’il n’en affiche aucune, l’étape 1 est à reprendre, inutile de continuer.
 3. **Échanger ce jeton court contre un jeton utilisateur de 60 jours.** L’ordre compte :
-   un jeton de Page tiré d’un jeton court ne vit qu’une heure ou deux.
+   le jeton de Page que la Page délivre ne vit pas plus longtemps que le jeton d’accès
+   qui l’a demandé, donc un jeton d’une heure ou deux ne tient pas jusqu’au lendemain.
 
 ```sh
 curl -s "https://graph.facebook.com/v25.0/oauth/access_token?grant_type=fb_exchange_token&client_id=<APP_ID>&client_secret=<SECRET_APP>&fb_exchange_token=<JETON_COURT>"
 ```
 
-4. **Lire les Pages de ce compte, avec leurs jetons.** `tasks` dit ce que le compte a le
-   droit d’y faire : la réponse doit contenir `CREATE_CONTENT`.
+4. **Poser les deux valeurs** dans `.env` :
 
 ```sh
-curl -s "https://graph.facebook.com/v25.0/me/accounts?fields=id,name,tasks,access_token&access_token=<JETON_60J>"
+FACEBOOK_PAGE_TOKEN=<le jeton de 60 jours>
+FACEBOOK_PAGE_ID=<l’identifiant de la Page>
 ```
 
-5. **Recopier l’`access_token` de la Page** dans `FACEBOOK_PAGE_TOKEN`, et dans les
-   secrets du dépôt (`Settings → Secrets and variables → Actions`). L’identifiant n’est
-   pas nécessaire : un jeton de Page ne donne accès qu’à la sienne. Un jeton de Page issu
-   d’un jeton utilisateur longue durée ne se périme pas tant que celui-ci vit : au bout de
-   deux mois, refaire les étapes 2 à 5.
+`FACEBOOK_PAGE_ID` est **nécessaire** ici : quand la Page appartient à un portefeuille
+Business, un jeton de personne ne la liste pas dans `GET /me/accounts`. Avec un jeton de
+Page, il est facultatif, le jeton ne donnant accès qu’à la sienne. Si tu préfères poser
+directement le jeton de la Page, `GET /<page-id>?fields=access_token` le renvoie et le
+script l’utilise tel quel — c’est équivalent.
 
-Vérifier sans rien publier — la réponse doit nommer la **Page**, pas le profil :
+5. **Vérifier sans rien publier** — la réponse doit nommer la Page et annoncer le jeton
+de Page :
 
 ```sh
 pnpm instagram --compte
 ```
 
-### Si `--compte` nomme ton profil et non la Page
+Les deux valeurs vont aussi dans les secrets du dépôt (`Settings → Secrets and
+variables → Actions`). Au bout de deux mois, refaire les étapes 2 à 4.
 
-`pnpm instagram --compte` lit la Page **dans le jeton** : un jeton de Page ne donne accès
-qu’à la sienne, donc `/me` répond la Page. S’il répond ton nom de profil, le jeton est un
-**jeton utilisateur** — celui que l’Explorer affiche en haut de la page.
+### Quand la Page ne répond pas
+
+`pnpm instagram --compte` résout la Page avec `FACEBOOK_PAGE_ID`, puis lui demande son
+propre jeton. Si la Page reste muette, ou si le jeton de Page ne vient pas, voici les
+causes, dans l’ordre où je les regarderais :
 
 - **`GET /me/accounts` renvoie `{"data":[]}`** : ce compte n’a de rôle sur aucune Page,
   quelles que soient les permissions accordées (`GET /me/permissions` les liste). Reprendre

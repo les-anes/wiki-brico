@@ -788,9 +788,10 @@ function jetonPage() {
 }
 
 /**
- * Page visée : celle de `FACEBOOK_PAGE_ID` s’il est renseigné, sinon celle du
- * jeton — un jeton de Page ne donne accès qu’à la sienne, donc il suffit, et le
- * nom relu confirme où l’on publie. Résolu une seule fois par exécution.
+ * Page visée et jeton qui publie. Le jeton d’accès peut être celui d’une Page ou
+ * celui d’une personne qui l’administre : dans le second cas, la Page en délivre
+ * un pour elle, qu’on demande ici — comme ça, seul le jeton d’accès se renouvelle
+ * à la main. Résolu une seule fois par exécution.
  */
 let pageMemoisee = null;
 async function pageVisee(valeur) {
@@ -803,11 +804,25 @@ async function pageVisee(valeur) {
     throw new Error(
       `Page Facebook injoignable avec ce jeton : ${charge.error?.message ?? "réponse vide"} (voir docs/poster-sur-instagram.md).`,
     );
-  pageMemoisee = {
+  const page = {
     id: String(charge.id),
     nom: charge.name ?? null,
     jeton: valeur,
+    jetonDePage: false,
   };
+  // Un jeton de personne ne peut pas publier sur une Page, et Meta le dit mal :
+  // la Page délivre donc le sien, valable tant que le jeton d’accès vit.
+  const pourPage = new URL(`${HOTE_PAGE}/${VERSION_PAGE}/${page.id}`);
+  pourPage.search = new URLSearchParams({
+    fields: "access_token",
+    access_token: valeur,
+  });
+  const derive = await (await fetch(pourPage)).json().catch(() => ({}));
+  if (derive.access_token) {
+    page.jeton = derive.access_token;
+    page.jetonDePage = true;
+  }
+  pageMemoisee = page;
   return pageMemoisee;
 }
 
@@ -1051,18 +1066,15 @@ async function commandeCompte() {
     console.log("Page Facebook : pas de jeton (FACEBOOK_PAGE_TOKEN).");
     return;
   }
-  // Un jeton utilisateur sait lire la Page visée, quand `FACEBOOK_PAGE_ID` est
-  // renseigné, mais Meta refuse qu’il y publie : on compare donc l’identité du
-  // jeton à la Page pour le dire tout de suite.
-  const moi = new URL(`${HOTE_PAGE}/${VERSION_PAGE}/me`);
-  moi.search = new URLSearchParams({ fields: "id,name", access_token: valeur });
-  const identite = await (await fetch(moi)).json().catch(() => ({}));
+  // Un jeton utilisateur sait lire la Page visée, mais pas y publier :
+  // `pageVisee` demande donc à la Page son propre jeton, et on le dit ici.
   const page = await pageVisee(valeur);
   console.log(`Page Facebook : ${page.nom ?? "sans nom"} (${page.id}).`);
-  if (identite.id && identite.id !== page.id)
-    console.log(
-      `Attention : ce jeton appartient à « ${identite.name} » (${identite.id}), pas à la Page — publier dessus demande le jeton de la Page. « GET /${page.id}?fields=access_token » le renvoie (voir docs/poster-sur-instagram.md).`,
-    );
+  console.log(
+    page.jetonDePage
+      ? "Jeton de Page obtenu : c’est lui qui publiera."
+      : "Attention : ce jeton ne permet pas de publier sur la Page — il faut un jeton de Page, ou celui d’une personne qui l’administre (voir docs/poster-sur-instagram.md).",
+  );
 }
 
 /**
