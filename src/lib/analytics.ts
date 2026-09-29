@@ -12,6 +12,9 @@ declare global {
 
 export function initializeAnalytics() {
   if (!analyticsConfigured || initialized) return;
+  // Les deploy previews et le localhost partagent l'ID de build : on ne
+  // mesure que le domaine de production, sinon les vues sont gonflées.
+  if (location.hostname !== "wikibrico.fr") return;
   initialized = true;
   window.dataLayer ??= [];
   window.gtag = function () {
@@ -47,7 +50,9 @@ export function trackPage(route: string) {
   window.gtag?.("event", "page_view", {
     page_location: page,
     page_title: document.title,
-    page_referrer: lastPage,
+    // Omet au premier page_view : gtag retombe sur document.referrer et
+    // l'entrée de session garde son vrai referrant externe.
+    page_referrer: lastPage || undefined,
   });
   lastPage = page;
 }
