@@ -211,8 +211,8 @@ réserve est vide, est un commit de robot par jour (les deux visuels, quelques c
 de kilo-octets) et une à trois minutes d’attente de déploiement.
 
 `.github/workflows/instagram.yml` a besoin d’écrire dans le dépôt
-(`permissions: contents: write`, déjà en place) et de deux secrets de dépôt :
-`INSTAGRAM_ACCESS_TOKEN`, et `FACEBOOK_PAGE_TOKEN` pour la Page.
+(`permissions: contents: write`, déjà en place) et de trois secrets de dépôt :
+`INSTAGRAM_ACCESS_TOKEN`, puis `FACEBOOK_PAGE_TOKEN` et `FACEBOOK_PAGE_ID` pour la Page.
 
 Où le mettre, dans GitHub : l’onglet **Settings** du dépôt → **Secrets and variables**
 → **Actions** → section **Repository secrets** → **New repository secret**. Pour ce
