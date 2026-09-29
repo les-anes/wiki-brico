@@ -18,6 +18,7 @@ import {
   motDeCategorie,
   nomDeDomaine,
   nomImage,
+  poserVariableEnv,
   reperes,
   retardPage,
   svgStory,
@@ -352,5 +353,35 @@ test("le retard de la Page se compte depuis la première copie réussie", () => 
     retardPage(etat),
     ["ratee"],
     "le jour de la mise en service et avant ne sont pas rattrapés, une ficelle jamais sortie non plus",
+  );
+});
+
+test("poserVariableEnv remplace la ligne existante, ou l’ajoute à la fin", () => {
+  assert.equal(
+    poserVariableEnv(
+      "A=1\nFACEBOOK_PAGE_TOKEN=perime\nB=2",
+      "FACEBOOK_PAGE_TOKEN",
+      "neuf",
+    ),
+    "A=1\nFACEBOOK_PAGE_TOKEN=neuf\nB=2",
+    "le reste du fichier est rendu tel quel, saut de ligne final compris",
+  );
+  assert.equal(
+    poserVariableEnv("A=1", "FACEBOOK_PAGE_TOKEN", "neuf"),
+    "A=1\nFACEBOOK_PAGE_TOKEN=neuf\n",
+    "une ligne ajoutée commence par un saut de ligne",
+  );
+  assert.equal(
+    poserVariableEnv("", "FACEBOOK_PAGE_TOKEN", "neuf"),
+    "FACEBOOK_PAGE_TOKEN=neuf\n",
+  );
+  assert.equal(
+    poserVariableEnv(
+      "FACEBOOK_PAGE_TOKEN=a\nA=$&1",
+      "FACEBOOK_PAGE_TOKEN",
+      "$&",
+    ),
+    "FACEBOOK_PAGE_TOKEN=$&\nA=$&1",
+    "un « $ » dans la valeur reste littéral",
   );
 });

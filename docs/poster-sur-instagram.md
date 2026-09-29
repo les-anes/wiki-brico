@@ -20,8 +20,10 @@ Ces quatre points expliquent la forme du script ; ils ne se contournent pas.
   `wikibrico.fr/calculateurs/…`), et sans barre oblique finale, qui ne se lit pas. Elle
   renvoie vers la bio. L’API ne sait pas non plus modifier la bio : si tu veux que le
   lien en bio suive la dernière publication, c’est à la main dans l’application.
-- **100 publications par 24 h**, et un jeton qui expire. Un post et une story par jour
-  tiennent largement dans le plafond ; le jeton longue durée se renouvelle dans Meta.
+- **100 publications par 24 h**, et des jetons dont la vie diffère. Un post et une story
+  par jour tiennent largement dans le plafond. Un jeton utilisateur expire au bout de
+  60 jours ; un jeton de Page dérivé d’un jeton utilisateur longue durée, non (voir « La
+  Page Facebook »).
 
 ## Prérequis
 
@@ -33,7 +35,7 @@ Ces quatre points expliquent la forme du script ; ils ne se contournent pas.
 
 ```sh
 INSTAGRAM_ACCESS_TOKEN=…
-FACEBOOK_PAGE_TOKEN=…       # facultatif, jeton de Page (voir « La Page Facebook »)
+FACEBOOK_PAGE_TOKEN=…       # jeton de Page, sans expiration (voir « La Page Facebook »)
 SITE_URL=https://wikibrico.fr # facultatif, c’est déjà la valeur par défaut
 ```
 
@@ -114,6 +116,7 @@ pnpm instagram --check                    # visuels de la page à venir en ligne
 pnpm instagram --check --attendre 10      # … en laissant 10 min à un déploiement
 pnpm instagram --publish                  # publie le post puis la story
 pnpm instagram --facebook                 # recopie sur la Page ce qui attend
+pnpm instagram --jeton-page               # jeton de Page sans expiration, posé dans .env
 ```
 
 Options : `--only <id>` pour viser une page, `--limit <n>` pour en traiter plusieurs,
@@ -246,9 +249,16 @@ de la Page est lu dedans, et `FACEBOOK_PAGE_ID` ne sert qu’à la figer.
 Le jeton Instagram ne donne accès à rien côté Facebook : il faut un jeton d’accès
 Facebook. Un jeton de Page n’existe que si le compte qui le demande a un rôle sur cette
 Page : c’est la seule condition vraiment bloquante, et elle se règle dans Facebook, pas
-dans la console développeur. Le script se contente d’**un seul jeton d’accès** : celui de
-la Page, ou celui d’une personne qui l’administre — dans ce second cas, il demande à la
-Page le sien à chaque exécution, et il n’y a donc que le jeton d’accès à renouveler.
+dans la console développeur.
+
+Le script accepte les deux formes — jeton de Page, ou jeton d’une personne qui
+l’administre et à qui la Page prête le sien — mais c’est **le jeton de Page qu’il faut
+poser**. La documentation Meta dit qu’un jeton de Page dérivé d’un jeton utilisateur
+longue durée n’a pas de date d’expiration, là où un jeton utilisateur meurt au bout de
+60 jours. C’est un jeton utilisateur qui était posé ici : il a expiré le 29 septembre
+2026 et la copie sur la Page s’est arrêtée sans prévenir. Le jeton de Page, lui, ne se
+renouvelle plus — à condition de sortir d’un jeton utilisateur **longue durée**, sinon il
+hérite de sa courte vie.
 
 1. **Vérifier le rôle, et trouver l’identifiant de la Page.** Dans l’application
    Facebook : **Menu → Pages → la Page → Paramètres → Accès à la Page → Rôles**. Le compte
@@ -263,36 +273,57 @@ Page le sien à chaque exécution, et il n’y a donc que le jeton d’accès à
    « User or Page » de l’Explorer liste les Pages sur lesquelles le compte a un rôle :
    s’il n’en affiche aucune, l’étape 1 est à reprendre, inutile de continuer.
 3. **Échanger ce jeton court contre un jeton utilisateur de 60 jours.** L’ordre compte :
-   le jeton de Page que la Page délivre ne vit pas plus longtemps que le jeton d’accès
-   qui l’a demandé, donc un jeton d’une heure ou deux ne tient pas jusqu’au lendemain.
+   un jeton de Page ne vit pas plus longtemps que le jeton utilisateur qui l’a demandé.
+   C’est l’étape qui rend le jeton de Page immortel ; sautée, on retombe sur un jeton qui
+   meurt le lendemain.
 
 ```sh
 curl -s "https://graph.facebook.com/v25.0/oauth/access_token?grant_type=fb_exchange_token&client_id=<APP_ID>&client_secret=<SECRET_APP>&fb_exchange_token=<JETON_COURT>"
 ```
 
-4. **Poser les deux valeurs** dans `.env` :
+4. **Demander à la Page son propre jeton** — c’est celui-là qu’on pose, pas celui de
+   l’étape 3 :
 
 ```sh
-FACEBOOK_PAGE_TOKEN=<le jeton de 60 jours>
+curl -s "https://graph.facebook.com/v25.0/me/accounts?access_token=<JETON_60_JOURS>"
+# repli, quand /me/accounts reste vide (Page d’un portefeuille Business) :
+curl -s "https://graph.facebook.com/v25.0/<PAGE_ID>?fields=access_token&access_token=<JETON_60_JOURS>"
+```
+
+5. **Vérifier qu’il n’expire pas** — `expires_at` doit valoir `0` :
+
+```sh
+curl -s "https://graph.facebook.com/v25.0/debug_token?input_token=<JETON_PAGE>&access_token=<APP_ID>|<SECRET_APP>"
+```
+
+6. **Poser les deux valeurs** dans `.env` :
+
+```sh
+FACEBOOK_PAGE_TOKEN=<le jeton de Page>
 FACEBOOK_PAGE_ID=<l’identifiant de la Page>
 ```
 
-`FACEBOOK_PAGE_ID` est **nécessaire** ici : quand la Page appartient à un portefeuille
-Business, un jeton de personne ne la liste pas dans `GET /me/accounts`. Avec un jeton de
-Page, il est facultatif, le jeton ne donnant accès qu’à la sienne. Si tu préfères poser
-directement le jeton de la Page, `GET /<page-id>?fields=access_token` le renvoie et le
-script l’utilise tel quel — c’est équivalent.
+`FACEBOOK_PAGE_ID` est **nécessaire** avec un jeton de personne : quand la Page
+appartient à un portefeuille Business, il ne la liste pas dans `GET /me/accounts`. Avec
+un jeton de Page il est facultatif, le jeton ne donnant accès qu’à la sienne ; le figer
+reste plus sûr, il évite les confusions de portefeuilles homonymes.
 
-5. **Vérifier sans rien publier** — la réponse doit nommer la Page et annoncer le jeton
-de Page :
+7. **Vérifier sans rien publier** — la réponse doit nommer la Page :
 
 ```sh
 pnpm instagram --compte
 ```
 
-Les deux valeurs vont aussi dans les secrets du dépôt (`Settings → Secrets and
-variables → Actions`). Au bout de deux mois, refaire les étapes 2 à 4.
+`--compte` doit alors répondre « Jeton de Page obtenu : c’est lui qui publiera. »
 
+Les étapes 3 à 6 sont ce que fait `pnpm instagram --jeton-page` : il lit `APP_ID`,
+`APP_SECRET` et `JETON_COURT` (le jeton de l’étape 2) dans `.env`, fait l’échange, demande
+son jeton à la Page, le contrôle, et remplace la ligne `FACEBOOK_PAGE_TOKEN` sans jamais
+afficher la valeur — c’est à toi de la recopier ensuite vers le secret du dépôt.
+
+Le jeton utilisateur de l’étape 3 peut expirer au bout de deux mois sans conséquence : la
+Page ne dépend plus de lui. Les deux valeurs vont aussi dans les secrets du dépôt
+(`Settings → Secrets and variables → Actions`), et là il n’y a plus rien à renouveler.
 ### Quand la Page ne répond pas
 
 `pnpm instagram --compte` résout la Page avec `FACEBOOK_PAGE_ID`, puis lui demande son
@@ -335,10 +366,10 @@ causes, dans l’ordre où je les regarderais :
 
 ### Quand une copie échoue
 
-Une copie ratée — jeton de Page périmé, Page injoignable — n’empêche pas la publication
-Instagram : le fil et la story partent, l’erreur s’affiche, et le champ `facebook` de la
-fiche reste `null`. C’est ce champ vide qui marque le retard : `pnpm instagram --plan` le
-rappelle, et
+Une copie ratée — jeton de Page révoqué ou invalidé, Page injoignable — n’empêche pas la
+publication Instagram : le fil et la story partent, l’erreur s’affiche, et le champ
+`facebook` de la fiche reste `null`. C’est ce champ vide qui marque le retard :
+`pnpm instagram --plan` le rappelle, et
 
 ```sh
 pnpm instagram --facebook              # tout ce qui attend

@@ -31,6 +31,8 @@
  *   --media             fabrique les JPEG de `public/images/social/` (sharp)
  *   --publish           publie le post puis la story, et note l’état
  *   --facebook          recopie sur la Page les fiches qui attendent
+ *   --jeton-page        échange le jeton court de l’Explorer contre un jeton de
+ *                       Page sans expiration, et le pose dans .env
  * Options : --only <id>, --limit <n>, --type tutoriels|calculateurs,
  * --sans-story, --help */
 
@@ -855,6 +857,98 @@ async function publierSurLaPage(page, fiche, categorie) {
   }
 }
 
+/**
+ * Remplace la valeur d’une variable dans un `.env`, ou l’ajoute à la fin si la
+ * ligne manque. Le reste du fichier est rendu tel quel ; une ligne ajoutée
+ * termine le fichier par un saut de ligne.
+ */
+export function poserVariableEnv(texte, cle, valeur) {
+  const ligne = `${cle}=${valeur}`;
+  const motif = new RegExp(`^${cle}=.*$`, "m");
+  // Le remplacement passe par une fonction : un « $ » dans la valeur serait
+  // sinon lu comme un motif de remplacement.
+  if (motif.test(texte)) return texte.replace(motif, () => ligne);
+  const fin = texte === "" || texte.endsWith("\n") ? "" : "\n";
+  return `${texte}${fin}${ligne}\n`;
+}
+
+/**
+ * Échange le jeton court de l’Explorer contre un jeton utilisateur de 60 jours,
+ * en tire le jeton de la Page — celui que Meta ne fait pas expirer — le contrôle
+ * et le pose dans `.env`. Le jeton lui-même n’est jamais affiché : c’est `.env`
+ * qui le garde, à recopier vers le secret du dépôt (voir docs/poster-sur-instagram.md).
+ */
+async function commandeJetonPage() {
+  const appId = process.env.FACEBOOK_APP_ID ?? process.env.APP_ID;
+  const secret = process.env.FACEBOOK_APP_SECRET ?? process.env.APP_SECRET;
+  const court = process.env.FACEBOOK_SHORT_TOKEN ?? process.env.JETON_COURT;
+  if (!appId || !secret || !court)
+    throw new Error(
+      "Il faut APP_ID, APP_SECRET et JETON_COURT dans .env : les deux premiers sont dans « Paramètres de l’application → Général », le troisième vient de developers.facebook.com/tools/explorer (permissions pages_show_list, pages_read_engagement, pages_manage_posts). Voir docs/poster-sur-instagram.md.",
+    );
+  if (!process.env.FACEBOOK_PAGE_ID)
+    throw new Error(
+      "FACEBOOK_PAGE_ID est nécessaire : un portefeuille Business ne liste pas ses Pages dans /me/accounts, donc sans identifiant la Page reste introuvable (voir docs/poster-sur-instagram.md).",
+    );
+
+  const echange = new URL(`${HOTE_PAGE}/${VERSION_PAGE}/oauth/access_token`);
+  echange.search = new URLSearchParams({
+    grant_type: "fb_exchange_token",
+    client_id: appId,
+    client_secret: secret,
+    fb_exchange_token: court,
+  });
+  const long = await reponseJson(
+    await fetch(echange),
+    "Échange contre un jeton de 60 jours",
+  );
+  if (!long.access_token)
+    throw new Error("Meta n’a pas renvoyé de jeton longue durée.");
+  console.log(
+    `Jeton utilisateur : ${Math.round((long.expires_in ?? 0) / 86_400)} jour(s).`,
+  );
+
+  const page = await pageVisee(long.access_token);
+  if (!page.jetonDePage)
+    throw new Error(
+      `La Page ${page.nom ?? page.id} n’a pas livré son jeton : le compte qui a généré le jeton doit y avoir un rôle (voir docs/poster-sur-instagram.md).`,
+    );
+
+  const controle = new URL(`${HOTE_PAGE}/${VERSION_PAGE}/debug_token`);
+  controle.search = new URLSearchParams({
+    input_token: page.jeton,
+    access_token: `${appId}|${secret}`,
+  });
+  const infos =
+    (await reponseJson(await fetch(controle), "Contrôle du jeton")).data ?? {};
+  console.log(
+    `Jeton de Page pour « ${page.nom ?? page.id} » (${infos.type ?? "type inconnu"}).`,
+  );
+  if (infos.expires_at)
+    console.warn(
+      `Attention : ce jeton expire le ${new Date(infos.expires_at * 1000).toLocaleDateString("fr-FR")}, il n’a donc pas la vie longue attendue — l’échange de l’étape précédente n’a pas dû aboutir.`,
+    );
+  else console.log("Sans date d’expiration, comme attendu.");
+
+  const fichierEnv = new URL("../.env", import.meta.url);
+  const texteEnv = await readFile(fichierEnv, "utf8").catch(() => null);
+  if (texteEnv === null)
+    throw new Error(
+      ".env est introuvable à la racine du dépôt : pose FACEBOOK_PAGE_TOKEN à la main (voir docs/poster-sur-instagram.md).",
+    );
+  await writeFile(
+    fichierEnv,
+    poserVariableEnv(texteEnv, "FACEBOOK_PAGE_TOKEN", page.jeton),
+  );
+  console.log("FACEBOOK_PAGE_TOKEN remplacé dans .env (valeur non affichée).");
+  console.log(
+    "Recopie cette valeur vers le secret FACEBOOK_PAGE_TOKEN du dépôt — Settings → Secrets and variables → Actions.",
+  );
+  console.log(
+    "Ensuite : pnpm instagram --compte, puis pnpm instagram --facebook.",
+  );
+}
+
 // ---------------------------------------------------------------------------
 // Commandes
 // ---------------------------------------------------------------------------
@@ -870,6 +964,7 @@ les calculateurs, un pour un.
   pnpm instagram --check --attendre 10      … en laissant 10 min à un déploiement
   pnpm instagram --publish [--only <id>] [--limit <n>] [--sans-story]
   pnpm instagram --facebook [--only <id>]   copie sur la Page des fiches qui attendent
+  pnpm instagram --jeton-page               jeton de Page sans expiration, posé dans .env
 
 Options : --type tutoriels|calculateurs pour ne traiter qu’une famille, --hasard
 pour tirer une page au hasard parmi celles dont les visuels sont prêts.
@@ -877,7 +972,8 @@ pour tirer une page au hasard parmi celles dont les visuels sont prêts.
 Variables d’environnement : INSTAGRAM_ACCESS_TOKEN (obligatoire pour publier),
 FACEBOOK_PAGE_TOKEN (pour la Page, l’identifiant est lu dans le jeton),
 INSTAGRAM_ACCOUNT_ID (facultatif), INSTAGRAM_GRAPH_VERSION,
-FACEBOOK_GRAPH_VERSION, SITE_URL.`;
+FACEBOOK_GRAPH_VERSION, SITE_URL. --jeton-page lit en plus APP_ID, APP_SECRET
+et JETON_COURT, les trois valeurs de la régénération.`;
 
 function lireArguments(argv) {
   const options = { sansStory: false };
@@ -893,6 +989,7 @@ function lireArguments(argv) {
       options.attendre = Number(argv[++index]);
     else if (argument === "--publish") options.commande = "publish";
     else if (argument === "--facebook") options.commande = "facebook";
+    else if (argument === "--jeton-page") options.commande = "jeton-page";
     else if (argument === "--help" || argument === "-h")
       options.commande = "aide";
     else if (argument === "--sans-story") options.sansStory = true;
@@ -1198,6 +1295,9 @@ async function main(argv) {
     console.log(AIDE);
     return;
   }
+  // Régénérer le jeton de la Page ne lit aucune fiche : inutile de charger le
+  // catalogue pour ça.
+  if (options.commande === "jeton-page") return commandeJetonPage();
   const { fichiers, categorieDe, etat } = await contexte(options);
   if (options.commande === "plan") return commandePlan(fichiers, etat, options);
   if (options.commande === "dry-run")
