@@ -1051,11 +1051,17 @@ async function commandeCompte() {
     console.log("Page Facebook : pas de jeton (FACEBOOK_PAGE_TOKEN).");
     return;
   }
+  // Un jeton utilisateur sait lire la Page visée, quand `FACEBOOK_PAGE_ID` est
+  // renseigné, mais Meta refuse qu’il y publie : on compare donc l’identité du
+  // jeton à la Page pour le dire tout de suite.
+  const moi = new URL(`${HOTE_PAGE}/${VERSION_PAGE}/me`);
+  moi.search = new URLSearchParams({ fields: "id,name", access_token: valeur });
+  const identite = await (await fetch(moi)).json().catch(() => ({}));
   const page = await pageVisee(valeur);
   console.log(`Page Facebook : ${page.nom ?? "sans nom"} (${page.id}).`);
-  if (!process.env.FACEBOOK_PAGE_ID)
+  if (identite.id && identite.id !== page.id)
     console.log(
-      "Si ce nom est celui de ton profil et non d’une Page, le jeton est un jeton utilisateur : prends celui de la Page dans la réponse de « GET /me/accounts » (voir docs/poster-sur-instagram.md). L’identifiant, lui, n’est pas nécessaire.",
+      `Attention : ce jeton appartient à « ${identite.name} » (${identite.id}), pas à la Page — publier dessus demande le jeton de la Page. « GET /${page.id}?fields=access_token » le renvoie (voir docs/poster-sur-instagram.md).`,
     );
 }
 
