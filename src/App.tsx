@@ -24,15 +24,19 @@ import { CalculatorPage } from "@/components/calculator-page";
 import { CalculatorsHub } from "@/components/calculators-hub";
 import { CatalogPage } from "@/components/catalog-page";
 import { CategoryNavigation } from "@/components/category-navigation";
+import { ConfidentialitePage } from "@/components/confidentialite-page";
+import { CookieBanner } from "@/components/cookie-banner";
+import { MentionsLegalesPage } from "@/components/mentions-legales-page";
 import { PillarPage } from "@/components/pillar-page";
 import { TutorialLinks } from "@/components/tutorial-links";
 import { TutorialSearch } from "@/components/tutorial-search";
 import { Button } from "@/components/ui/button";
 import { tutorials } from "@/data";
 import { categories, navigationCategories, journeys } from "@/data/taxonomy";
-import { initializeAnalytics, trackPage } from "@/lib/analytics";
+import { applyConsent, trackPage } from "@/lib/analytics";
 import { calculatorsForTutorial } from "@/lib/calculator-discovery";
 import { belongsToCategory, catalogHref, duration } from "@/lib/catalog";
+import { readConsent, writeConsent, type ConsentState } from "@/lib/consent";
 import { responsiveImage } from "@/lib/images";
 import { categoryPath, isPageChange, matchRoute } from "@/lib/routes";
 import type { Tutorial } from "@/types";
@@ -57,6 +61,8 @@ export default function App({
 }) {
   const [saved, setSaved] = useState<string[]>([]);
   const [menu, setMenu] = useState(false);
+  const [bannerVisible, setBannerVisible] = useState(true);
+  const [consentState, setConsentState] = useState<ConsentState | null>(null);
   const [lastCatalog, setLastCatalog] = useState(catalogHref());
   const previousPath = useRef(path);
   const route = matchRoute(tutorials, path);
@@ -68,6 +74,14 @@ export default function App({
   useEffect(() => {
     // Les favoris vivent dans localStorage : on les charge après l’hydratation.
     setSaved(readSaved());
+    // Le bandeau est pré-rendu visible ; un choix déjà tranché le masque et
+    // démarre (ou maintient éteinte) la mesure d’audience.
+    const consent = readConsent();
+    if (consent) {
+      setBannerVisible(false);
+      setConsentState(consent.state);
+      applyConsent(consent.state, import.meta.env.VITE_GA_MEASUREMENT_ID);
+    }
   }, []);
   useEffect(() => {
     setMenu(false);
@@ -97,11 +111,22 @@ export default function App({
               ? `calculateurs/${route.id}`
               : route.kind === "home"
                 ? ""
-                : "introuvable";
+                : route.kind === "mentions-legales"
+                  ? "mentions-legales"
+                  : route.kind === "confidentialite"
+                    ? "confidentialite"
+                    : "introuvable";
   useEffect(() => {
-    initializeAnalytics();
     trackPage(trackedPage);
   }, [trackedPage]);
+  function decideConsent(state: ConsentState) {
+    writeConsent(state);
+    applyConsent(state, import.meta.env.VITE_GA_MEASUREMENT_ID);
+    setConsentState(state);
+    setBannerVisible(false);
+    // La page où l’utilisateur tranche le choix : comptée s’il accepte.
+    trackPage(trackedPage);
+  }
   function toggleSaved(id: string) {
     setSaved((current) => {
       const next = current.includes(id)
@@ -180,6 +205,10 @@ export default function App({
         <PillarPage id={route.id} />
       ) : route.kind === "calculators" ? (
         <CalculatorsHub />
+      ) : route.kind === "mentions-legales" ? (
+        <MentionsLegalesPage />
+      ) : route.kind === "confidentialite" ? (
+        <ConfidentialitePage />
       ) : route.kind === "calculator" ? (
         <CalculatorPage key={route.id} slug={route.id} />
       ) : isCatalog ? (
@@ -413,15 +442,25 @@ export default function App({
           </section>
         </main>
       )}
-      <footer className="container">
+      <footer className={bannerVisible ? "banner-open container" : "container"}>
         <a className="logo" href="/">
           Wiki<span>Brico</span>.
         </a>
         <p>Le plaisir d’apprendre. La fierté de faire.</p>
         <a href={catalogHref()}>Les tutoriels</a>
         <a href="/calculateurs/">Les calculateurs</a>
+        <a href="/mentions-legales/">Mentions légales</a>
+        <a href="/confidentialite/">Confidentialité</a>
+        <button type="button" onClick={() => setBannerVisible(true)}>
+          Gérer les cookies
+        </button>
         <span>Fait pour les mains curieuses. © {new Date().getFullYear()}</span>
       </footer>
+      <CookieBanner
+        visible={bannerVisible}
+        current={consentState}
+        onDecide={decideConsent}
+      />
     </>
   );
 }

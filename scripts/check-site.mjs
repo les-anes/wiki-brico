@@ -391,6 +391,18 @@ try {
     const html = await readFile(fileFor(route.path), "utf8");
     const meta = pageMeta(route, { tutorials, categories, siteUrl: origin });
     assert(
+      html.includes('class="cookie-banner"'),
+      `${route.path}: bandeau de consentement pré-rendu`,
+    );
+    assert(
+      html.includes("Gérer les cookies"),
+      `${route.path}: lien de révocation en pied de page`,
+    );
+    assert(
+      !html.includes("googletagmanager.com"),
+      `${route.path}: aucun script GA4 dans le HTML servi sans consentement`,
+    );
+    assert(
       html.includes(`<title>${escapeText(meta.title)}</title>`),
       `${route.path}: titre de page`,
     );

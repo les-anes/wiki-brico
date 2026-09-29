@@ -76,6 +76,8 @@ test("buildRoutes liste l'accueil, le catalogue, les tutoriels, les six thèmes 
       "/calculateurs/escalier/",
       "/calculateurs/rejointoiement-chaux/",
       "/calculateurs/puissance-radiateur/",
+      "/mentions-legales/",
+      "/confidentialite/",
     ],
   );
 });
@@ -202,4 +204,22 @@ test("pageMeta d'une fiche introuvable porte un titre dédié", () => {
     { tutorials, categories, siteUrl },
   );
   assert.match(meta.title, /introuvable/i);
+});
+test("pageMeta des pages légales : titre, canonical, og et fil d’Ariane complets", () => {
+  for (const [kind, path] of [
+    ["mentions-legales", "/mentions-legales/"],
+    ["confidentialite", "/confidentialite/"],
+  ] as const) {
+    const route = matchRoute(tutorials, path);
+    assert.equal(route.kind, kind);
+    const meta = pageMeta(route, { tutorials, categories, siteUrl });
+    assert.ok(meta.title && meta.description, `${path}: titre et description`);
+    assert.equal(meta.canonical, `${siteUrl}${path}`);
+    assert.equal(meta.og.url, meta.canonical);
+    assert.deepEqual(
+      meta.breadcrumb.map((b) => b.url),
+      [`${siteUrl}/`, meta.canonical],
+      `${path}: fil d’Ariane accueil › page`,
+    );
+  }
 });

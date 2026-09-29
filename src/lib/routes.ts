@@ -10,6 +10,8 @@ export type Route =
   | { kind: "theme"; path: string; id: string }
   | { kind: "calculators"; path: "/calculateurs/" }
   | { kind: "calculator"; path: string; id: string }
+  | { kind: "mentions-legales"; path: "/mentions-legales/" }
+  | { kind: "confidentialite"; path: "/confidentialite/" }
   | { kind: "notFound"; path: string };
 
 interface CategoryRef {
@@ -39,6 +41,14 @@ export interface RouteContext {
 const HOME: Route = { kind: "home", path: "/" };
 const CATALOG: Route = { kind: "catalog", path: "/tutoriels/" };
 const CALCULATORS: Route = { kind: "calculators", path: "/calculateurs/" };
+const MENTIONS_LEGALES: Route = {
+  kind: "mentions-legales",
+  path: "/mentions-legales/",
+};
+const CONFIDENTIALITE: Route = {
+  kind: "confidentialite",
+  path: "/confidentialite/",
+};
 
 export function tutorialPath(id: string): string {
   return `/tutoriel/${id}/`;
@@ -87,6 +97,8 @@ export function buildRoutes(tutorials: Tutorial[]): Route[] {
       path: calculatorPath(calculator.slug),
       id: calculator.slug,
     })),
+    MENTIONS_LEGALES,
+    CONFIDENTIALITE,
   ];
 }
 
@@ -106,6 +118,10 @@ export function matchRoute(tutorials: Tutorial[], pathname: string): Route {
   )
     return { kind: "theme", path: themePath(parts[1]), id: parts[1] };
   if (parts.length === 1 && parts[0] === "calculateurs") return CALCULATORS;
+  if (parts.length === 1 && parts[0] === "mentions-legales")
+    return MENTIONS_LEGALES;
+  if (parts.length === 1 && parts[0] === "confidentialite")
+    return CONFIDENTIALITE;
   if (parts.length === 2 && parts[0] === "calculateurs") {
     const slug = decodeURIComponent(parts[1]);
     return calculators.some((calculator) => calculator.slug === slug)
@@ -213,6 +229,40 @@ export function pageMeta(route: Route, ctx: RouteContext): PageMeta {
         { name: "Accueil", url: `${base}/` },
         { name: calculatorHub.title, url: `${base}/calculateurs/` },
         { name: calculator.title, url: canonical },
+      ],
+    };
+  }
+
+  if (route.kind === "mentions-legales") {
+    const canonical = `${base}/mentions-legales/`;
+    const title = "Mentions légales — WikiBrico";
+    const description =
+      "Éditeur, hébergeur, propriété intellectuelle et responsabilité du site WikiBrico.";
+    return {
+      title,
+      description,
+      canonical,
+      og: { title, description, url: canonical },
+      breadcrumb: [
+        { name: "Accueil", url: `${base}/` },
+        { name: "Mentions légales", url: canonical },
+      ],
+    };
+  }
+
+  if (route.kind === "confidentialite") {
+    const canonical = `${base}/confidentialite/`;
+    const title = "Politique de confidentialité — WikiBrico";
+    const description =
+      "Données traitées, mesure d’audience, durées de conservation et exercice de vos droits sur WikiBrico.";
+    return {
+      title,
+      description,
+      canonical,
+      og: { title, description, url: canonical },
+      breadcrumb: [
+        { name: "Accueil", url: `${base}/` },
+        { name: "Politique de confidentialité", url: canonical },
       ],
     };
   }
