@@ -37,13 +37,13 @@ Ces quatre points expliquent la forme du script ; ils ne se contournent pas.
 INSTAGRAM_ACCESS_TOKEN=…
 APP_SECRET_IG=…             # secret de l’application Instagram, pour --jeton-ig
 FACEBOOK_PAGE_TOKEN=…       # jeton de Page, sans expiration (voir « La Page Facebook »)
+FACEBOOK_PAGE_ID=…          # l’identifiant de la Page (idem)
 SITE_URL=https://wikibrico.fr # facultatif, c’est déjà la valeur par défaut
 ```
 
-`INSTAGRAM_ACCOUNT_ID` n’est pas nécessaire : un jeton Instagram ne donne accès qu’à son
-propre compte, et le script le lit lui-même dans le jeton. Si tu renseignes quand même
-cette variable avec un autre identifiant — le tableau de bord Meta en montre un, mais qui
-n’est pas celui attendu par la connexion Instagram — le script te prévient et l’ignore.
+Aucun identifiant de compte n’est à renseigner : un jeton Instagram ne donne accès qu’à
+son propre compte, et le script le lit lui-même dans le jeton. Le tableau de bord Meta en
+affiche un autre, qui n’est pas celui attendu — ne t’en sers pas.
 
 ## Obtenir le jeton
 
@@ -68,7 +68,7 @@ sur tout compte professionnel ajouté comme testeur. Sinon, dans le tableau de b
    l’application, visible dans **Paramètres de l’application → Général**) :
 
 ```sh
-curl -s "https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret=<SECRET_APP>&access_token=<JETON_COURT>"
+curl -s "https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret=<SECRET_APP>&access_token=<JETON_DU_BOUTON>"
 ```
 
 5. Mettre la valeur de `access_token` renvoyée dans `INSTAGRAM_ACCESS_TOKEN`. Le jeton

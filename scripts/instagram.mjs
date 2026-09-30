@@ -646,8 +646,8 @@ async function reponseJson(reponse, etape) {
 
 /**
  * Compte visé, lu dans le jeton : c’est la seule source fiable, un jeton
- * Instagram ne donnant accès qu’à son propre compte. `INSTAGRAM_ACCOUNT_ID`
- * n’est conservé que pour prévenir s’il désigne autre chose.
+ * Instagram ne donnant accès qu’à son propre compte — aucun identifiant n’est à
+ * renseigner, celui que montre le tableau de bord n’est pas le bon.
  *
  * Un jeton peut être passé en argument : `--jeton-ig` contrôle le sien avant
  * de l’écrire dans `.env`, donc avant qu’il ne soit celui de l’environnement.
@@ -663,15 +663,6 @@ async function compteInstagram(valeur = jeton()) {
   if (!identifiant)
     throw new Error("Instagram n’a renvoyé aucun identifiant de compte.");
   return { id: String(identifiant), username: charge.username ?? null };
-}
-
-/** Signale un INSTAGRAM_ACCOUNT_ID qui ne correspond pas au jeton. */
-function verifierIdentifiantConfigure(compte) {
-  const configure = process.env.INSTAGRAM_ACCOUNT_ID;
-  if (configure && configure !== compte.id)
-    console.warn(
-      `Attention : INSTAGRAM_ACCOUNT_ID vaut ${configure}, alors que le jeton appartient au compte ${compte.id}. La variable est ignorée (le jeton fait foi) ; supprime-la pour éviter la confusion.`,
-    );
 }
 
 /** Fiches dont les deux visuels sont déjà fabriqués : elles seules se publient. */
@@ -882,9 +873,9 @@ export function poserVariableEnv(texte, cle, valeur) {
  * qui le garde, à recopier vers le secret du dépôt (voir docs/poster-sur-instagram.md).
  */
 async function commandeJetonPage() {
-  const appId = process.env.FACEBOOK_APP_ID ?? process.env.APP_ID;
-  const secret = process.env.FACEBOOK_APP_SECRET ?? process.env.APP_SECRET;
-  const court = process.env.FACEBOOK_SHORT_TOKEN ?? process.env.JETON_COURT;
+  const appId = process.env.APP_ID;
+  const secret = process.env.APP_SECRET;
+  const court = process.env.JETON_COURT;
   if (!appId || !secret || !court)
     throw new Error(
       "Il faut APP_ID, APP_SECRET et JETON_COURT dans .env : les deux premiers sont dans « Paramètres de l’application → Général », le troisième vient de developers.facebook.com/tools/explorer (permissions pages_show_list, pages_read_engagement, pages_manage_posts). Voir docs/poster-sur-instagram.md.",
@@ -984,9 +975,8 @@ async function joursRestants(valeur) {
  * rafraîchissement n’existant que pour les jetons longue durée.
  */
 async function commandeJetonInstagram() {
-  const secret = process.env.INSTAGRAM_APP_SECRET ?? process.env.APP_SECRET_IG;
-  const court =
-    process.env.INSTAGRAM_SHORT_TOKEN ?? process.env.INSTAGRAM_ACCESS_TOKEN;
+  const secret = process.env.APP_SECRET_IG;
+  const court = process.env.INSTAGRAM_ACCESS_TOKEN;
   if (!secret || !court)
     throw new Error(
       "Il faut APP_SECRET_IG, le secret de l’application (tableau de bord Instagram, « Paramètres de l’application → Général »), et le jeton court du bouton « Générer un jeton » posé sur la ligne INSTAGRAM_ACCESS_TOKEN de .env. Voir docs/poster-sur-instagram.md.",
@@ -1021,7 +1011,6 @@ async function commandeJetonInstagram() {
   );
 
   const compte = await compteInstagram(long.access_token);
-  verifierIdentifiantConfigure(compte);
   console.log(
     `Contrôle : jeton valide pour @${compte.username ?? "inconnu"} (compte ${compte.id}).`,
   );
@@ -1066,11 +1055,11 @@ Options : --type tutoriels|calculateurs pour ne traiter qu’une famille, --hasa
 pour tirer une page au hasard parmi celles dont les visuels sont prêts.
 
 Variables d’environnement : INSTAGRAM_ACCESS_TOKEN (obligatoire pour publier),
-FACEBOOK_PAGE_TOKEN (pour la Page, l’identifiant est lu dans le jeton),
-INSTAGRAM_ACCOUNT_ID (facultatif), INSTAGRAM_GRAPH_VERSION,
-FACEBOOK_GRAPH_VERSION, SITE_URL. --jeton-page lit en plus APP_ID, APP_SECRET
-et JETON_COURT, les trois valeurs de la régénération ; --jeton-ig lit
-APP_SECRET_IG et échange le jeton court posé dans INSTAGRAM_ACCESS_TOKEN.`;
+FACEBOOK_PAGE_TOKEN (pour la Page), FACEBOOK_PAGE_ID (l’identifiant de la Page),
+SITE_URL, INSTAGRAM_GRAPH_VERSION, FACEBOOK_GRAPH_VERSION. --jeton-page lit en
+plus APP_ID, APP_SECRET et JETON_COURT, les trois valeurs de la régénération ;
+--jeton-ig lit APP_SECRET_IG et échange le jeton court posé dans
+INSTAGRAM_ACCESS_TOKEN.`;
 
 function lireArguments(argv) {
   const options = { sansStory: false };
@@ -1252,7 +1241,6 @@ async function commandeVerifier(fichiers, publies, options) {
 /** Vérifie le jeton et nomme le compte visé, sans rien publier. */
 async function commandeCompte() {
   const compte = await compteInstagram();
-  verifierIdentifiantConfigure(compte);
   console.log(
     `Jeton valide pour @${compte.username ?? "inconnu"} (compte ${compte.id}).`,
   );
@@ -1330,7 +1318,6 @@ async function commandePublish(fichiers, categorieDe, etat, options) {
       `Instagram plafonne à ${PLAFOND_QUOTIDIEN} publications par 24 h : réduis avec --limit.`,
     );
   const compte = await compteInstagram();
-  verifierIdentifiantConfigure(compte);
   let publiees = 0;
   for (const fiche of attente) {
     const categorie = categorieDe(fiche);
