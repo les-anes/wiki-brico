@@ -22,8 +22,8 @@ Ces quatre points expliquent la forme du script ; ils ne se contournent pas.
   lien en bio suive la dernière publication, c’est à la main dans l’application.
 - **100 publications par 24 h**, et des jetons dont la vie diffère. Un post et une story
   par jour tiennent largement dans le plafond. Un jeton utilisateur expire au bout de
-  60 jours ; un jeton de Page dérivé d’un jeton utilisateur longue durée, non (voir « La
-  Page Facebook »).
+  60 jours ; un jeton de Page dérivé d’un jeton utilisateur longue durée, non — mais une
+  invalidation de session emporte les deux (voir « La Page Facebook »).
 
 ## Prérequis
 
@@ -260,6 +260,16 @@ longue durée n’a pas de date d’expiration, là où un jeton utilisateur meu
 renouvelle plus — à condition de sortir d’un jeton utilisateur **longue durée**, sinon il
 hérite de sa courte vie.
 
+**« Sans date d’expiration » ne veut pas dire « à l’abri ».** Vérifié le 30 septembre
+2026 : un changement de mot de passe du compte Facebook — ou toute invalidation de
+session décidée par Meta — tue d’un coup **tous** les jetons qui en dérivent, jeton de
+Page compris malgré son `expires_at: 0`. Le jeton Instagram meurt au même moment, avec le
+même `code 190` ; côté Facebook, `error_subcode: 460` dit exactement pourquoi
+(`The session has been invalidated because the user changed their password…`). Aucun
+rafraîchissement ne rattrape ça : `ig_refresh_token` comme `fb_exchange_token` refusent
+un jeton invalidé. Ce jour-là, ce ne sont donc pas un mais **deux** jetons qu’il faut
+régénérer, dans la foulée.
+
 1. **Vérifier le rôle, et trouver l’identifiant de la Page.** Dans l’application
    Facebook : **Menu → Pages → la Page → Paramètres → Accès à la Page → Rôles**. Le compte
    doit y figurer comme **administrateur** (ou avoir accès aux contenus). L’identifiant de
@@ -323,7 +333,9 @@ afficher la valeur — c’est à toi de la recopier ensuite vers le secret du d
 
 Le jeton utilisateur de l’étape 3 peut expirer au bout de deux mois sans conséquence : la
 Page ne dépend plus de lui. Les deux valeurs vont aussi dans les secrets du dépôt
-(`Settings → Secrets and variables → Actions`), et là il n’y a plus rien à renouveler.
+(`Settings → Secrets and variables → Actions`) : le quotidien n’a plus rien à renouveler.
+Il reste un point de fragilité, la session du compte Facebook, qui emporte les deux
+jetons le jour où elle est invalidée (voir plus haut).
 ### Quand la Page ne répond pas
 
 `pnpm instagram --compte` résout la Page avec `FACEBOOK_PAGE_ID`, puis lui demande son
