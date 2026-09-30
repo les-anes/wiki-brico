@@ -648,12 +648,15 @@ async function reponseJson(reponse, etape) {
  * Compte visé, lu dans le jeton : c’est la seule source fiable, un jeton
  * Instagram ne donnant accès qu’à son propre compte. `INSTAGRAM_ACCOUNT_ID`
  * n’est conservé que pour prévenir s’il désigne autre chose.
+ *
+ * Un jeton peut être passé en argument : `--jeton-ig` contrôle le sien avant
+ * de l’écrire dans `.env`, donc avant qu’il ne soit celui de l’environnement.
  */
-async function compteInstagram() {
+async function compteInstagram(valeur = jeton()) {
   const url = apiUrl("me");
   url.search = new URLSearchParams({
     fields: "user_id,username",
-    access_token: jeton(),
+    access_token: valeur,
   });
   const charge = await reponseJson(await fetch(url), "Compte Instagram");
   const identifiant = charge.user_id ?? charge.id;
@@ -949,6 +952,69 @@ async function commandeJetonPage() {
   );
 }
 
+/**
+ * Échange le jeton court du tableau de bord contre un jeton de 60 jours, le
+ * contrôle et le remplace dans `.env`. La valeur n’est jamais affichée : c’est
+ * `.env` qui la garde, à recopier vers le secret du dépôt.
+ *
+ * Le jeton court se pose sur la ligne qu’on remplace, `INSTAGRAM_ACCESS_TOKEN` :
+ * l’interface Instagram ne l’affiche qu’une fois. Il ne vit qu’une heure, et
+ * passé ce délai l’échange répond « Session key invalid » — le message le dit
+ * plutôt que de laisser croire à un problème de secret.
+ */
+async function commandeJetonInstagram() {
+  const secret = process.env.INSTAGRAM_APP_SECRET ?? process.env.APP_SECRET_IG;
+  const court =
+    process.env.INSTAGRAM_SHORT_TOKEN ?? process.env.INSTAGRAM_ACCESS_TOKEN;
+  if (!secret || !court)
+    throw new Error(
+      "Il faut APP_SECRET_IG, le secret de l’application (tableau de bord Instagram, « Paramètres de l’application → Général »), et le jeton court du bouton « Générer un jeton » posé sur la ligne INSTAGRAM_ACCESS_TOKEN de .env. Voir docs/poster-sur-instagram.md.",
+    );
+
+  const echange = new URL(`${HOTE_API}/access_token`);
+  echange.search = new URLSearchParams({
+    grant_type: "ig_exchange_token",
+    client_secret: secret,
+    access_token: court,
+  });
+  const long = await reponseJson(
+    await fetch(echange),
+    "Échange contre un jeton de 60 jours",
+  ).catch((erreur) => {
+    throw new Error(
+      `${erreur.message}\nLe jeton court ne vit qu’une heure : génère-en un neuf, repose-le dans .env et relance tout de suite.`,
+    );
+  });
+  if (!long.access_token)
+    throw new Error("Instagram n’a pas renvoyé de jeton longue durée.");
+  console.log(
+    `Jeton valable ${Math.round((long.expires_in ?? 0) / 86_400)} jour(s).`,
+  );
+
+  const compte = await compteInstagram(long.access_token);
+  verifierIdentifiantConfigure(compte);
+  console.log(
+    `Contrôle : jeton valide pour @${compte.username ?? "inconnu"} (compte ${compte.id}).`,
+  );
+
+  const fichierEnv = new URL("../.env", import.meta.url);
+  const texteEnv = await readFile(fichierEnv, "utf8").catch(() => null);
+  if (texteEnv === null)
+    throw new Error(
+      ".env est introuvable à la racine du dépôt : pose INSTAGRAM_ACCESS_TOKEN à la main (voir docs/poster-sur-instagram.md).",
+    );
+  await writeFile(
+    fichierEnv,
+    poserVariableEnv(texteEnv, "INSTAGRAM_ACCESS_TOKEN", long.access_token),
+  );
+  console.log(
+    "INSTAGRAM_ACCESS_TOKEN remplacé dans .env (valeur non affichée).",
+  );
+  console.log(
+    "Recopie cette valeur vers le secret INSTAGRAM_ACCESS_TOKEN du dépôt — Settings → Secrets and variables → Actions.",
+  );
+}
+
 // ---------------------------------------------------------------------------
 // Commandes
 // ---------------------------------------------------------------------------
@@ -965,6 +1031,7 @@ les calculateurs, un pour un.
   pnpm instagram --publish [--only <id>] [--limit <n>] [--sans-story]
   pnpm instagram --facebook [--only <id>]   copie sur la Page des fiches qui attendent
   pnpm instagram --jeton-page               jeton de Page sans expiration, posé dans .env
+  pnpm instagram --jeton-ig                 jeton Instagram de 60 jours, posé dans .env
 
 Options : --type tutoriels|calculateurs pour ne traiter qu’une famille, --hasard
 pour tirer une page au hasard parmi celles dont les visuels sont prêts.
@@ -973,7 +1040,8 @@ Variables d’environnement : INSTAGRAM_ACCESS_TOKEN (obligatoire pour publier),
 FACEBOOK_PAGE_TOKEN (pour la Page, l’identifiant est lu dans le jeton),
 INSTAGRAM_ACCOUNT_ID (facultatif), INSTAGRAM_GRAPH_VERSION,
 FACEBOOK_GRAPH_VERSION, SITE_URL. --jeton-page lit en plus APP_ID, APP_SECRET
-et JETON_COURT, les trois valeurs de la régénération.`;
+et JETON_COURT, les trois valeurs de la régénération ; --jeton-ig lit
+APP_SECRET_IG et échange le jeton court posé dans INSTAGRAM_ACCESS_TOKEN.`;
 
 function lireArguments(argv) {
   const options = { sansStory: false };
@@ -990,6 +1058,7 @@ function lireArguments(argv) {
     else if (argument === "--publish") options.commande = "publish";
     else if (argument === "--facebook") options.commande = "facebook";
     else if (argument === "--jeton-page") options.commande = "jeton-page";
+    else if (argument === "--jeton-ig") options.commande = "jeton-ig";
     else if (argument === "--help" || argument === "-h")
       options.commande = "aide";
     else if (argument === "--sans-story") options.sansStory = true;
@@ -1295,9 +1364,9 @@ async function main(argv) {
     console.log(AIDE);
     return;
   }
-  // Régénérer le jeton de la Page ne lit aucune fiche : inutile de charger le
-  // catalogue pour ça.
+  // Régénérer un jeton ne lit aucune fiche : inutile de charger le catalogue.
   if (options.commande === "jeton-page") return commandeJetonPage();
+  if (options.commande === "jeton-ig") return commandeJetonInstagram();
   const { fichiers, categorieDe, etat } = await contexte(options);
   if (options.commande === "plan") return commandePlan(fichiers, etat, options);
   if (options.commande === "dry-run")

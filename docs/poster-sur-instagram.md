@@ -35,6 +35,7 @@ Ces quatre points expliquent la forme du script ; ils ne se contournent pas.
 
 ```sh
 INSTAGRAM_ACCESS_TOKEN=…
+APP_SECRET_IG=…             # secret de l’application Instagram, pour --jeton-ig
 FACEBOOK_PAGE_TOKEN=…       # jeton de Page, sans expiration (voir « La Page Facebook »)
 SITE_URL=https://wikibrico.fr # facultatif, c’est déjà la valeur par défaut
 ```
@@ -72,6 +73,13 @@ curl -s "https://graph.instagram.com/access_token?grant_type=ig_exchange_token&c
 
 5. Mettre la valeur de `access_token` renvoyée dans `INSTAGRAM_ACCESS_TOKEN`. Le jeton
    renvoie aussi `expires_in` (5 184 000 secondes, soit 60 jours).
+
+Les étapes 4 et 5 sont ce que fait `pnpm instagram --jeton-ig` : garde `APP_SECRET_IG`
+dans `.env` (le secret de l’application de l’étape 4), pose le jeton court du bouton
+« Générer un jeton » sur la ligne `INSTAGRAM_ACCESS_TOKEN`, et la commande échange,
+contrôle et remplace la valeur sans jamais l’afficher. **Le jeton court ne vit qu’une
+heure** : passé ce délai l’échange répond `Session key invalid`, et il faut en générer
+un neuf — d’où l’intérêt de lancer la commande juste après le bouton.
 
 Vérifier un jeton sans rien publier :
 
@@ -117,6 +125,7 @@ pnpm instagram --check --attendre 10      # … en laissant 10 min à un déploi
 pnpm instagram --publish                  # publie le post puis la story
 pnpm instagram --facebook                 # recopie sur la Page ce qui attend
 pnpm instagram --jeton-page               # jeton de Page sans expiration, posé dans .env
+pnpm instagram --jeton-ig                 # échange le jeton d’une heure contre un jeton de 60 jours
 ```
 
 Options : `--only <id>` pour viser une page, `--limit <n>` pour en traiter plusieurs,
