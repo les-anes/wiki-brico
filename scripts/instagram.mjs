@@ -953,14 +953,35 @@ async function commandeJetonPage() {
 }
 
 /**
+ * Jours restants d’un jeton longue durée, ou `null` quand le jeton n’a pas cette
+ * vie. Le rafraîchissement renvoie un jeton neuf, qu’on laisse tomber : la
+ * question posée ici est « combien de temps reste-t-il », pas « donne-m’en un
+ * autre », et le jeton posé reste valide.
+ */
+async function joursRestants(valeur) {
+  const url = new URL(`${HOTE_API}/refresh_access_token`);
+  url.search = new URLSearchParams({
+    grant_type: "ig_refresh_token",
+    access_token: valeur,
+  });
+  const charge = await reponseJson(await fetch(url), "Rafraîchissement").catch(
+    () => null,
+  );
+  return charge?.expires_in ? Math.round(charge.expires_in / 86_400) : null;
+}
+
+/**
  * Échange le jeton court du tableau de bord contre un jeton de 60 jours, le
  * contrôle et le remplace dans `.env`. La valeur n’est jamais affichée : c’est
  * `.env` qui la garde, à recopier vers le secret du dépôt.
  *
  * Le jeton court se pose sur la ligne qu’on remplace, `INSTAGRAM_ACCESS_TOKEN` :
- * l’interface Instagram ne l’affiche qu’une fois. Il ne vit qu’une heure, et
- * passé ce délai l’échange répond « Session key invalid » — le message le dit
- * plutôt que de laisser croire à un problème de secret.
+ * l’interface Instagram ne l’affiche qu’une fois, et il ne vit qu’une heure.
+ *
+ * Meta répond « Session key invalid » dans deux cas opposés : jeton court périmé,
+ * et jeton **déjà** longue durée, qu’on ne peut pas échanger. Vérifié le
+ * 30 septembre 2026 sur un jeton valable 60 jours. `joursRestants` tranche, le
+ * rafraîchissement n’existant que pour les jetons longue durée.
  */
 async function commandeJetonInstagram() {
   const secret = process.env.INSTAGRAM_APP_SECRET ?? process.env.APP_SECRET_IG;
@@ -980,11 +1001,19 @@ async function commandeJetonInstagram() {
   const long = await reponseJson(
     await fetch(echange),
     "Échange contre un jeton de 60 jours",
-  ).catch((erreur) => {
+  ).catch(async (erreur) => {
+    const reste = await joursRestants(court);
+    if (reste !== null) {
+      console.log(
+        `Ce jeton est déjà longue durée, valable ${reste} jour(s) : il n’y a rien à échanger, et rien à changer.`,
+      );
+      return null;
+    }
     throw new Error(
       `${erreur.message}\nLe jeton court ne vit qu’une heure : génère-en un neuf, repose-le dans .env et relance tout de suite.`,
     );
   });
+  if (long === null) return;
   if (!long.access_token)
     throw new Error("Instagram n’a pas renvoyé de jeton longue durée.");
   console.log(

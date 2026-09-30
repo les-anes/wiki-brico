@@ -79,7 +79,9 @@ dans `.env` (le secret de l’application de l’étape 4), pose le jeton court 
 « Générer un jeton » sur la ligne `INSTAGRAM_ACCESS_TOKEN`, et la commande échange,
 contrôle et remplace la valeur sans jamais l’afficher. **Le jeton court ne vit qu’une
 heure** : passé ce délai l’échange répond `Session key invalid`, et il faut en générer
-un neuf — d’où l’intérêt de lancer la commande juste après le bouton.
+un neuf — d’où l’intérêt de lancer la commande juste après le bouton. Ce même message
+sort quand le jeton posé est **déjà** longue durée, seul cas où il n’y a rien à échanger :
+la commande le détecte, annonce les jours restants et ne touche à rien.
 
 Vérifier un jeton sans rien publier :
 
