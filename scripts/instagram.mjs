@@ -422,7 +422,7 @@ async function lireJson(url) {
   return JSON.parse(await readFile(url, "utf8"));
 }
 
-async function lireFiches() {
+export async function lireFiches() {
   const chemins = [];
   const parcourir = async (dossier) => {
     for (const entree of await readdir(dossier, { withFileTypes: true })) {
@@ -446,7 +446,7 @@ async function lireFiches() {
  * Outils du hub, ramenés à la forme commune : mêmes champs que les fiches, plus
  * le genre. L’ordre du fichier est celui du hub, donc celui des publications.
  */
-async function lireCalculateurs() {
+export async function lireCalculateurs() {
   const { tools } = await lireJson(FICHIER_CALCULATEURS);
   return tools.map((outil) => ({
     id: outil.slug,
@@ -459,7 +459,7 @@ async function lireCalculateurs() {
   }));
 }
 
-async function lireCategories() {
+export async function lireCategories() {
   const categories = await lireJson(FICHIER_CATEGORIES);
   return {
     ordre: categories.map((categorie) => categorie.id),
