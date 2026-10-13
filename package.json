@@ -17,6 +17,7 @@
     "validate:data": "node scripts/validate-data.mjs",
     "check:site": "node scripts/check-site.mjs",
     "instagram": "node --env-file-if-exists=.env scripts/instagram.mjs",
+    "pinterest": "node --env-file-if-exists=.env scripts/pinterest.mjs",
     "openspec": "openspec",
     "validate:specs": "openspec validate --all --strict --no-interactive",
     "prepare": "lefthook install"
