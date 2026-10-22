@@ -5,6 +5,7 @@ import {
   adresseDe,
   carteCalculateur,
   cheminImage,
+  commandeVerifier,
   decouperTitre,
   dureeLisible,
   echapperXml,
@@ -49,6 +50,17 @@ const outilExemple = {
   image: "/images/calculateurs/calpinage.png",
   imageAlt: "Un carrelage posé dans une pièce, à la gouache.",
 };
+
+test("--check échoue quand des fiches attendent sans visuels préparés", async () => {
+  await assert.rejects(
+    commandeVerifier(
+      [{ ...ficheExemple, id: "test-visuels-absents", image: "/absente.png" }],
+      {},
+      { limit: 1 },
+    ),
+    /Aucun visuel prêt/,
+  );
+});
 
 test("les visuels dérivés portent le type dans leur nom et une URL publique", () => {
   assert.equal(

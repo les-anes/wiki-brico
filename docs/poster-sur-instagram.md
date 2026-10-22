@@ -162,8 +162,8 @@ instagram --media` sans `--limit` traite toute la file non publiée. Compte une 
 de mégaoctets dans le dépôt, servis par le site. Une fiche dont les visuels ne sont pas
 encore en ligne n’est simplement pas proposée à la publication : elle attend son tour.
 
-Quand la réserve est épuisée, `--check` le dit et le workflow s’arrête sans échec le temps
-d’en préparer d’autres.
+Quand la réserve est épuisée, `--check` renvoie un échec : le workflow déclenche
+alors la fabrication des visuels, leur déploiement puis la publication.
 
 **Seules les fiches dont les visuels sont prêts sont proposées** à `--dry-run`, `--check`
 et `--publish` : une fiche dont les images n’existent pas encore attend son tour au lieu
@@ -240,6 +240,10 @@ qu’il faut utiliser. L’onglet *Variables*, à côté de *Secrets*, convient 
 clair — le workflow lit `secrets.…`, donc le jeton va bien dans **Secrets**.
 
 ## La Page Facebook
+
+**Publications automatiques en pause depuis le 22 octobre 2026.** Le workflow ne
+transmet plus les secrets Facebook et ne lance plus le rattrapage. Les secrets et
+l’historique sont conservés ; les commandes manuelles restent disponibles.
 
 Le réglage de crossposting d’Instagram (« Publier aussi sur Facebook ») ne s’applique
 qu’aux publications faites **depuis l’application** : l’API Content Publishing n’a aucun

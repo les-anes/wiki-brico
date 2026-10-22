@@ -1216,7 +1216,7 @@ async function commandeMedia(fichiers, categorieDe, publies, options) {
 }
 
 /** Contrôle sans jeton que les visuels de la prochaine fiche sont en ligne. */
-async function commandeVerifier(fichiers, publies, options) {
+export async function commandeVerifier(fichiers, publies, options) {
   const { attente, rienAPublier } = await fileDuTravail(
     fichiers,
     publies,
@@ -1224,6 +1224,7 @@ async function commandeVerifier(fichiers, publies, options) {
   );
   const fiche = attente[0];
   if (!fiche) {
+    if (!rienAPublier) throw new Error(rienAFaire(false));
     console.log(rienAFaire(rienAPublier));
     return;
   }
