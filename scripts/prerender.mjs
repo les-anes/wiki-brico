@@ -69,6 +69,10 @@ try {
   const { Document } = await server.ssrLoadModule("/src/document.tsx");
   const { buildRoutes } = await server.ssrLoadModule("/src/lib/routes.ts");
   const { tutorials } = await server.ssrLoadModule("/src/data/index.ts");
+  const { categories } = await server.ssrLoadModule("/src/data/taxonomy.ts");
+  const { llmsTxt, tutorialMarkdown, tutorialMarkdownPath } =
+    await server.ssrLoadModule("/src/lib/geo.ts");
+  const geoContext = { tutorials, categories, siteUrl: origin };
 
   const render = async (path) => {
     const { prelude } = await prerenderToNodeStream(
@@ -86,6 +90,15 @@ try {
     await writeFile(file, await render(route.path));
   }
   await writeFile("dist/404.html", await render("/404/"));
+
+  // Versions lisibles par les moteurs génératifs : index llms.txt et une fiche
+  // Markdown à côté de chaque page de tutoriel.
+  for (const tutorial of tutorials)
+    await writeFile(
+      join("dist", tutorialMarkdownPath(tutorial.id)),
+      tutorialMarkdown(tutorial, geoContext),
+    );
+  await writeFile("dist/llms.txt", llmsTxt(geoContext));
 
   const updatedAt = new Map(
     tutorials.map((tutorial) => [
@@ -110,7 +123,7 @@ try {
   );
 
   console.log(
-    `Prerendu : ${routes.length} pages + 404.html, sitemap (${routes.length} URLs) et robots.txt pour ${origin}.`,
+    `Prerendu : ${routes.length} pages + 404.html, sitemap (${routes.length} URLs), robots.txt, llms.txt et ${tutorials.length} fiches Markdown pour ${origin}.`,
   );
 } finally {
   await server.close();
