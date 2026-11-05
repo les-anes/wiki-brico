@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import App from "@/App";
 import { tutorials } from "@/data";
 import { categories } from "@/data/taxonomy";
+import { siteJsonLd, tutorialJsonLd, tutorialMarkdownPath } from "@/lib/geo";
 import { responsiveImage } from "@/lib/images";
 import { isPageChange, matchRoute, pageMeta } from "@/lib/routes";
 
@@ -95,6 +96,12 @@ export function Document({
       ? tutorials.find((t) => t.id === route.id)
       : undefined;
   const preloadImage = tutorial ? responsiveImage(tutorial.image) : null;
+  // Le fil d’Ariane reste le premier JSON-LD de la page (contrôlé par check:site).
+  const structuredData = tutorial
+    ? tutorialJsonLd(tutorial, { tutorials, categories, siteUrl })
+    : route.kind === "home"
+      ? siteJsonLd(siteUrl)
+      : null;
 
   return (
     <html lang="fr" data-site-url={siteUrl}>
@@ -131,6 +138,13 @@ export function Document({
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
         <link rel="canonical" href={meta.canonical} />
+        {tutorial && (
+          <link
+            rel="alternate"
+            type="text/markdown"
+            href={`${siteUrl.replace(/\/+$/, "")}${tutorialMarkdownPath(tutorial.id)}`}
+          />
+        )}
         {route.kind === "notFound" && <meta name="robots" content="noindex" />}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="WikiBrico" />
@@ -148,6 +162,11 @@ export function Document({
         {breadcrumb && (
           <script type="application/ld+json">
             {JSON.stringify(breadcrumb)}
+          </script>
+        )}
+        {structuredData && (
+          <script type="application/ld+json">
+            {JSON.stringify(structuredData)}
           </script>
         )}
       </head>

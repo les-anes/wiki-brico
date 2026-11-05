@@ -591,6 +591,20 @@ try {
   const robots = await readFile("dist/robots.txt", "utf8");
   assert(robots.includes(`Sitemap: ${origin}/sitemap.xml`));
 
+  // --- Lisibilité par les moteurs génératifs ---
+  const llms = await readFile("dist/llms.txt", "utf8");
+  for (const tutorial of tutorials) {
+    const md = `/tutoriel/${tutorial.id}/index.md`;
+    assert(llms.includes(`](${origin}${md})`), `llms.txt: ${tutorial.id}`);
+    assert(
+      (await readFile(`dist${md}`, "utf8")).startsWith(`# ${tutorial.title}\n`),
+      `${md}: version Markdown`,
+    );
+    const html = await readFile(fileFor(tutorialPath(tutorial.id)), "utf8");
+    assert(html.includes(`href="${origin}${md}"`), `${md}: lien alternate`);
+    assert(html.includes('"@type":"TechArticle"'), `${md}: TechArticle`);
+  }
+
   // --- Shim des anciens liens à fragment ---
   {
     const html = await readFile("dist/index.html", "utf8");
